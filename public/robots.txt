@@ -1,0 +1,49 @@
+# MCI Eyelashes - robots.txt
+# https://www.mci-eyelashes.com
+
+# Allow all standard search engine crawlers
+User-agent: *
+Allow: /
+Disallow: /private/
+Disallow: /admin/
+
+# Google
+User-agent: Googlebot
+Allow: /
+
+# Bing / Microsoft Copilot
+User-agent: Bingbot
+Allow: /
+
+# Google Gemini & AI Overviews
+User-agent: Google-Extended
+Allow: /
+
+# OpenAI ChatGPT (search citations)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Anthropic Claude
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Apple
+User-agent: Applebot
+Allow: /
+
+# Common Crawl (training data only — blocked to prevent scraping without citation)
+User-agent: CCBot
+Disallow: /
+
+# Sitemap location
+Sitemap: https://www.mci-eyelashes.com/sitemap.xml

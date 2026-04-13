@@ -100,46 +100,37 @@ export default function Hero() {
               Premium Lash Manufacturer
             </motion.p>
 
-            <motion.h1
-              {...fadeUp(0.35)}
+            <h1
               style={{
                 fontFamily: 'Cormorant Garamond, serif',
                 fontSize: 'clamp(52px, 7vw, 108px)',
                 lineHeight: 0.95,
-                color: '#fff',
-                fontWeight: 300,
-                marginBottom: '6px',
-              }}
-            >
-              World-Class
-            </motion.h1>
-            <motion.h1
-              {...fadeUp(0.45)}
-              style={{
-                fontFamily: 'Cormorant Garamond, serif',
-                fontSize: 'clamp(52px, 7vw, 108px)',
-                lineHeight: 0.95,
-                color: 'var(--teal-light)',
-                fontStyle: 'italic',
-                fontWeight: 300,
-                marginBottom: '6px',
-              }}
-            >
-              Eyelash
-            </motion.h1>
-            <motion.h1
-              {...fadeUp(0.55)}
-              style={{
-                fontFamily: 'Cormorant Garamond, serif',
-                fontSize: 'clamp(52px, 7vw, 108px)',
-                lineHeight: 0.95,
-                color: '#fff',
                 fontWeight: 300,
                 marginBottom: '42px',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '6px',
               }}
             >
-              Manufacturer
-            </motion.h1>
+              <motion.span
+                {...fadeUp(0.35)}
+                style={{ color: '#fff', display: 'block' }}
+              >
+                World-Class
+              </motion.span>
+              <motion.span
+                {...fadeUp(0.45)}
+                style={{ color: 'var(--teal-light)', fontStyle: 'italic', display: 'block' }}
+              >
+                Eyelash
+              </motion.span>
+              <motion.span
+                {...fadeUp(0.55)}
+                style={{ color: '#fff', display: 'block' }}
+              >
+                Manufacturer
+              </motion.span>
+            </h1>
 
             <motion.p
               {...fadeUp(0.65)}

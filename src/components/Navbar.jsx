@@ -27,6 +27,7 @@ export default function Navbar() {
 
   return (
     <motion.nav
+      aria-label="Main navigation"
       initial={{ y: -90, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
@@ -45,7 +46,7 @@ export default function Navbar() {
       }}
     >
       {/* Logo */}
-      <motion.a href="#" style={{ display: 'flex', flexDirection: 'column', gap: '2px', flexShrink: 0 }}>
+      <motion.a href="#" aria-label="MCI Eyelashes — back to top" style={{ display: 'flex', flexDirection: 'column', gap: '2px', flexShrink: 0 }}>
         <span style={{
           fontFamily: 'Cormorant Garamond, serif',
           fontSize: '24px',
