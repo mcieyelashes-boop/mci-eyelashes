@@ -1,11 +1,25 @@
 // Lightweight markdown renderer for blog post bodies.
-// Handles: paragraphs, **bold**, tables, bullet lists, numbered lists.
+// Handles: paragraphs, **bold**, [text](url) links, tables, bullet lists, numbered lists.
 
-function parseBold(text) {
-  const parts = text.split(/\*\*(.*?)\*\*/g)
-  return parts.map((part, i) =>
-    i % 2 === 1 ? <strong key={i} style={{ fontWeight: 600, color: 'var(--text-dark)' }}>{part}</strong> : part
-  )
+import { Link } from 'react-router-dom'
+
+function parseInline(text) {
+  // Split on **bold** and [text](url) patterns
+  const parts = text.split(/(\*\*.*?\*\*|\[.*?\]\(.*?\))/g)
+  return parts.map((part, i) => {
+    if (/^\*\*(.*)\*\*$/.test(part)) {
+      return <strong key={i} style={{ fontWeight: 600, color: 'var(--text-dark)' }}>{part.slice(2, -2)}</strong>
+    }
+    const linkMatch = part.match(/^\[(.*?)\]\((.*?)\)$/)
+    if (linkMatch) {
+      const [, label, href] = linkMatch
+      if (href.startsWith('/')) {
+        return <Link key={i} to={href} style={{ color: 'var(--teal-dark)', textDecoration: 'underline', textDecorationColor: 'rgba(0,150,160,0.3)', textUnderlineOffset: '3px' }}>{label}</Link>
+      }
+      return <a key={i} href={href} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--teal-dark)', textDecoration: 'underline', textDecorationColor: 'rgba(0,150,160,0.3)', textUnderlineOffset: '3px' }}>{label}</a>
+    }
+    return part
+  })
 }
 
 function renderTable(lines) {
@@ -44,7 +58,7 @@ function renderTable(lines) {
                     padding: '12px 16px', color: 'var(--text-mid)',
                     verticalAlign: 'top',
                   }}>
-                    {parseBold(cell)}
+                    {parseInline(cell)}
                   </td>
                 ))}
               </tr>
@@ -87,7 +101,7 @@ export function renderBody(body) {
           {items.map((item, j) => (
             <li key={j} style={{ display: 'flex', gap: '12px', alignItems: 'flex-start', fontSize: '14px', color: 'var(--text-mid)', lineHeight: 1.8 }}>
               <span style={{ width: '5px', height: '5px', borderRadius: '50%', background: 'var(--teal)', flexShrink: 0, marginTop: '9px' }} />
-              <span>{parseBold(item)}</span>
+              <span>{parseInline(item)}</span>
             </li>
           ))}
         </ul>
@@ -114,7 +128,7 @@ export function renderBody(body) {
               }}>
                 {j + 1}
               </span>
-              <span style={{ paddingTop: '2px' }}>{parseBold(item)}</span>
+              <span style={{ paddingTop: '2px' }}>{parseInline(item)}</span>
             </li>
           ))}
         </ol>
@@ -131,7 +145,7 @@ export function renderBody(body) {
     // Regular paragraph
     elements.push(
       <p key={i} style={{ fontSize: '14px', color: 'var(--text-mid)', lineHeight: 1.9, marginBottom: '16px' }}>
-        {parseBold(line)}
+        {parseInline(line)}
       </p>
     )
     i++

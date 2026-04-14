@@ -80,7 +80,7 @@ Private label clients who add custom packaging typically retail at 20–40% abov
 4. **Place your first order** — MOQ starts at 50 units per style
 5. **Receive your order** — standard lead time 3–7 business days
 
-We ship to 50+ countries with full tracking and insured international shipping.`,
+We ship to 50+ countries with full tracking and insured international shipping. For a full breakdown of costs, see our [wholesale eyelash pricing guide](/blog/wholesale-eyelash-pricing-guide). If you're considering custom branding, read our [private label OEM guide](/blog/private-label-eyelashes-oem-guide).`,
       },
     ],
     faq: [
@@ -146,7 +146,7 @@ Most successful lash businesses combine models 1 and 2 — starting with wholesa
 - **Private label capability:** Can they add your branding?
 - **International shipping:** Full tracking and insurance for overseas orders
 
-MCI Eyelashes supplies 500+ beauty businesses worldwide with mink, silk, synthetic, and volume lash lines. MOQ starts at 30 units. Contact hello@mci-eyelashes.com for a wholesale catalog.`,
+MCI Eyelashes supplies 500+ beauty businesses worldwide with mink, silk, synthetic, and volume lash lines. MOQ starts at 30 units. Contact hello@mci-eyelashes.com for a wholesale catalog. For a detailed supplier evaluation checklist, read [how to choose an eyelash manufacturer](/blog/how-to-choose-eyelash-manufacturer).`,
       },
       {
         heading: 'Step 3: Set Your Pricing Strategy',
@@ -320,7 +320,7 @@ Rush production is available for qualifying orders. Contact us for availability.
     sections: [
       {
         heading: 'Wholesale Eyelash Price Ranges by Type (2026)',
-        body: `Wholesale prices vary significantly based on fiber type, quality tier, and order volume. Here are typical ranges based on factory-direct pricing:
+        body: `Wholesale prices vary significantly based on fiber type, quality tier, and order volume. Here are typical ranges based on factory-direct pricing. Not sure which lash type to stock? Read our [mink vs silk lashes guide](/blog/mink-vs-silk-lashes-wholesale-guide) first.
 
 | Product Type | Wholesale Price/Pair | Retail Price/Pair | Gross Margin |
 |---|---|---|---|
@@ -586,7 +586,7 @@ Do they provide commercial invoices, packing lists, and origin certificates? The
 - **Capacity**: Scalable from boutique orders to container-load volumes
 - **Lead times**: 3–7 business days standard, 6–10 weeks OEM
 - **Test orders**: MOQ starts at 30 units — no large commitment required
-- **Private label**: Full custom packaging and branding available
+- **Private label**: Full custom packaging and branding available — see our [private label OEM guide](/blog/private-label-eyelashes-oem-guide) for details
 - **References**: 500+ active wholesale partners globally
 
 Contact hello@mci-eyelashes.com to start a conversation.`,
@@ -734,7 +734,7 @@ Lash quality is everything. A $0.80/pair synthetic lash from an unverified sourc
         heading: 'Mistake 3: Skipping Private Label',
         body: `Selling unbranded lashes means you are building equity for your supplier, not your business. Every sale is a one-time transaction — there is no brand recognition, no repeat purchase loyalty, and no ability to charge a premium.
 
-**The fix:** Even a simple custom-printed box with your logo transforms a generic product into a branded experience. Private label MOQ is lower than most people think — often starting at 100–200 units. The margin improvement from branded packaging typically pays for the investment within the first order cycle.`,
+**The fix:** Even a simple custom-printed box with your logo transforms a generic product into a branded experience. Private label MOQ is lower than most people think — often starting at 100–200 units. Read our [complete private label OEM guide](/blog/private-label-eyelashes-oem-guide) and [eyelash packaging design guide](/blog/eyelash-packaging-guide) to get started. The margin improvement from branded packaging typically pays for the investment within the first order cycle.`,
       },
       {
         heading: 'Mistake 4: Ignoring Photography',
