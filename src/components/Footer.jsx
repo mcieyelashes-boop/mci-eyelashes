@@ -1,10 +1,18 @@
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 
 const footerLinks = {
   Products: ['Mink Lashes', 'Silk Lashes', 'Synthetic Lashes', '3D / 5D Volume', 'Colored Collection', 'Private Label'],
   Company: ['About Us', 'Manufacturing Process', 'Gallery', 'Testimonials', 'Careers'],
   Support: ['Wholesale Inquiry', 'Sample Request', 'Shipping & Lead Times', 'FAQ', 'Returns Policy'],
 }
+
+const blogLinks = [
+  { label: 'Mink vs Silk Lashes Guide', slug: 'mink-vs-silk-lashes-wholesale-guide' },
+  { label: 'How to Start a Lash Business', slug: 'how-to-start-lash-business' },
+  { label: 'Private Label OEM Guide', slug: 'private-label-eyelashes-oem-guide' },
+  { label: 'Wholesale Pricing Guide', slug: 'wholesale-eyelash-pricing-guide' },
+]
 
 const socials = [
   { label: 'IG', href: '#', icon: <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="12" height="12" rx="3.5" stroke="currentColor" strokeWidth="1.2"/><circle cx="8" cy="8" r="2.5" stroke="currentColor" strokeWidth="1.2"/><circle cx="11.5" cy="4.5" r="0.7" fill="currentColor"/></svg> },
@@ -79,7 +87,7 @@ export default function Footer() {
 
       {/* Main footer */}
       <div className="container" style={{ padding: '80px 48px 50px' }}>
-        <div style={{ display: 'grid', gridTemplateColumns: '1.6fr 1fr 1fr 1fr', gap: '60px', marginBottom: '60px' }}
+        <div style={{ display: 'grid', gridTemplateColumns: '1.6fr 1fr 1fr 1fr 1fr', gap: '48px', marginBottom: '60px' }}
           className="footer-grid"
         >
           {/* Brand */}
@@ -114,7 +122,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Link columns */}
+          {/* Standard link columns */}
           {Object.entries(footerLinks).map(([title, items]) => (
             <div key={title}>
               <p style={{ fontSize: '10px', letterSpacing: '3px', color: 'var(--teal)', textTransform: 'uppercase', marginBottom: '22px', fontWeight: 500 }}>
@@ -135,6 +143,35 @@ export default function Footer() {
               </ul>
             </div>
           ))}
+
+          {/* Blog column */}
+          <div>
+            <p style={{ fontSize: '10px', letterSpacing: '3px', color: 'var(--teal)', textTransform: 'uppercase', marginBottom: '22px', fontWeight: 500 }}>
+              Blog
+            </p>
+            <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '13px' }}>
+              {blogLinks.map(({ label, slug }) => (
+                <li key={slug}>
+                  <Link
+                    to={`/blog/${slug}`}
+                    style={{ fontSize: '13px', color: 'rgba(255,255,255,0.3)', display: 'block', transition: 'color 0.25s' }}
+                    onMouseEnter={e => e.target.style.color = 'rgba(255,255,255,0.75)'}
+                    onMouseLeave={e => e.target.style.color = 'rgba(255,255,255,0.3)'}
+                  >
+                    {label}
+                  </Link>
+                </li>
+              ))}
+              <li>
+                <Link
+                  to="/blog"
+                  style={{ fontSize: '11px', color: 'var(--teal)', letterSpacing: '1.5px', textTransform: 'uppercase', display: 'block', marginTop: '4px' }}
+                >
+                  All Articles →
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
 
         {/* Bottom bar */}

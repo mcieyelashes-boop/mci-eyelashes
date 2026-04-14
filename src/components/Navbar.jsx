@@ -1,12 +1,14 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { Link, useLocation } from 'react-router-dom'
 
 const links = [
-  { label: 'Products', href: '#products' },
-  { label: 'Process', href: '#process' },
-  { label: 'Gallery', href: '#gallery' },
-  { label: 'About', href: '#about' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Products', href: '/#products' },
+  { label: 'Process', href: '/#process' },
+  { label: 'Gallery', href: '/#gallery' },
+  { label: 'About', href: '/#about' },
+  { label: 'Blog', href: '/blog', isRoute: true },
+  { label: 'Contact', href: '/#contact' },
 ]
 
 export default function Navbar() {
@@ -69,36 +71,55 @@ export default function Navbar() {
 
       {/* Desktop Links */}
       <ul className="desktop-nav" style={{ display: 'flex', gap: '44px', listStyle: 'none', alignItems: 'center' }}>
-        {links.map(({ label, href }) => (
+        {links.map(({ label, href, isRoute }) => (
           <li key={label} style={{ position: 'relative' }}>
-            <a
-              href={href}
-              onMouseEnter={() => setActiveLink(label)}
-              onMouseLeave={() => setActiveLink('')}
-              style={{
-                fontSize: '10px',
-                letterSpacing: '3px',
-                textTransform: 'uppercase',
-                color: activeLink === label ? textHover : textColor,
-                transition: 'color 0.3s',
-                fontWeight: 500,
-                display: 'block',
-                paddingBottom: '4px',
-              }}
-            >
-              {label}
-              <motion.div
-                animate={{ scaleX: activeLink === label ? 1 : 0, opacity: activeLink === label ? 1 : 0 }}
-                transition={{ duration: 0.25 }}
+            {isRoute ? (
+              <Link
+                to={href}
+                onMouseEnter={() => setActiveLink(label)}
+                onMouseLeave={() => setActiveLink('')}
                 style={{
-                  position: 'absolute',
-                  bottom: 0, left: 0, right: 0,
-                  height: '1px',
-                  background: scrolled ? 'var(--teal)' : 'var(--teal-light)',
-                  transformOrigin: 'left',
+                  fontSize: '10px', letterSpacing: '3px', textTransform: 'uppercase',
+                  color: activeLink === label ? textHover : textColor,
+                  transition: 'color 0.3s', fontWeight: 500,
+                  display: 'block', paddingBottom: '4px',
                 }}
-              />
-            </a>
+              >
+                {label}
+                <motion.div
+                  animate={{ scaleX: activeLink === label ? 1 : 0, opacity: activeLink === label ? 1 : 0 }}
+                  transition={{ duration: 0.25 }}
+                  style={{
+                    position: 'absolute', bottom: 0, left: 0, right: 0, height: '1px',
+                    background: scrolled ? 'var(--teal)' : 'var(--teal-light)',
+                    transformOrigin: 'left',
+                  }}
+                />
+              </Link>
+            ) : (
+              <a
+                href={href}
+                onMouseEnter={() => setActiveLink(label)}
+                onMouseLeave={() => setActiveLink('')}
+                style={{
+                  fontSize: '10px', letterSpacing: '3px', textTransform: 'uppercase',
+                  color: activeLink === label ? textHover : textColor,
+                  transition: 'color 0.3s', fontWeight: 500,
+                  display: 'block', paddingBottom: '4px',
+                }}
+              >
+                {label}
+                <motion.div
+                  animate={{ scaleX: activeLink === label ? 1 : 0, opacity: activeLink === label ? 1 : 0 }}
+                  transition={{ duration: 0.25 }}
+                  style={{
+                    position: 'absolute', bottom: 0, left: 0, right: 0, height: '1px',
+                    background: scrolled ? 'var(--teal)' : 'var(--teal-light)',
+                    transformOrigin: 'left',
+                  }}
+                />
+              </a>
+            )}
           </li>
         ))}
         <li>
@@ -175,27 +196,39 @@ export default function Navbar() {
               boxShadow: '0 20px 60px rgba(13,30,42,0.1)',
             }}
           >
-            {links.map(({ label, href }, i) => (
-              <motion.a
-                key={label}
-                href={href}
-                onClick={() => setMenuOpen(false)}
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: i * 0.06 }}
-                style={{
-                  fontSize: '11px',
-                  letterSpacing: '3px',
-                  textTransform: 'uppercase',
-                  color: 'var(--text-dark)',
-                  fontWeight: 500,
-                  padding: '16px 0',
-                  borderBottom: '1px solid var(--border-soft)',
-                  display: 'block',
-                }}
-              >
-                {label}
-              </motion.a>
+            {links.map(({ label, href, isRoute }, i) => (
+              isRoute ? (
+                <Link
+                  key={label}
+                  to={href}
+                  onClick={() => setMenuOpen(false)}
+                  style={{
+                    fontSize: '11px', letterSpacing: '3px', textTransform: 'uppercase',
+                    color: 'var(--text-dark)', fontWeight: 500,
+                    padding: '16px 0', borderBottom: '1px solid var(--border-soft)',
+                    display: 'block',
+                  }}
+                >
+                  {label}
+                </Link>
+              ) : (
+                <motion.a
+                  key={label}
+                  href={href}
+                  onClick={() => setMenuOpen(false)}
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: i * 0.06 }}
+                  style={{
+                    fontSize: '11px', letterSpacing: '3px', textTransform: 'uppercase',
+                    color: 'var(--text-dark)', fontWeight: 500,
+                    padding: '16px 0', borderBottom: '1px solid var(--border-soft)',
+                    display: 'block',
+                  }}
+                >
+                  {label}
+                </motion.a>
+              )
             ))}
             <motion.a
               href="#contact"
