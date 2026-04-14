@@ -11,6 +11,7 @@ import Gallery from './components/Gallery'
 import About from './components/About'
 import Testimonials from './components/Testimonials'
 import Contact from './components/Contact'
+import FAQ from './components/FAQ'
 
 // Blog pages
 import BlogList from './pages/BlogList'
@@ -25,6 +26,7 @@ function Home() {
       <Gallery />
       <About />
       <Testimonials />
+      <FAQ />
       <Contact />
     </main>
   )
