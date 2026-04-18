@@ -3,6 +3,9 @@ import { useParams, Link, Navigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { blogPosts } from '../data/blogPosts'
 import { renderBody } from '../utils/renderMarkdown'
+import { setMeta, HOME_META } from '../utils/setMeta'
+
+const BASE_URL = 'https://www.mci-eyelashes.com'
 
 export default function BlogPost() {
   const { slug } = useParams()
@@ -11,9 +14,22 @@ export default function BlogPost() {
   useEffect(() => {
     if (post) {
       window.scrollTo(0, 0)
-      document.title = `${post.title} | MCI Eyelashes Blog`
+      const url = `${BASE_URL}/blog/${post.slug}`
 
-      // Inject BlogPosting JSON-LD
+      // Update all head meta tags for this article
+      setMeta({
+        title:               `${post.title} | MCI Eyelashes Blog`,
+        description:         post.metaDescription,
+        canonical:           url,
+        ogTitle:             post.title,
+        ogDescription:       post.metaDescription,
+        ogUrl:               url,
+        ogImage:             `${BASE_URL}/hero-lashes.jpg`,
+        twitterTitle:        post.title,
+        twitterDescription:  post.metaDescription,
+      })
+
+      // Inject BlogPosting + BreadcrumbList JSON-LD
       const existing = document.getElementById('blog-ld')
       if (existing) existing.remove()
       const script = document.createElement('script')
@@ -21,29 +37,45 @@ export default function BlogPost() {
       script.type = 'application/ld+json'
       script.text = JSON.stringify({
         '@context': 'https://schema.org',
-        '@type': 'BlogPosting',
-        headline: post.title,
-        description: post.metaDescription,
-        datePublished: post.date,
-        dateModified: post.date,
-        author: { '@type': 'Organization', name: 'MCI Eyelashes' },
-        publisher: {
-          '@type': 'Organization',
-          name: 'MCI Eyelashes',
-          logo: { '@type': 'ImageObject', url: 'https://www.mci-eyelashes.com/favicon.svg' },
-        },
-        mainEntityOfPage: { '@type': 'WebPage', '@id': `https://www.mci-eyelashes.com/blog/${post.slug}` },
-        ...(post.faq && {
-          mainEntity: post.faq.map(({ q, a }) => ({
-            '@type': 'Question',
-            name: q,
-            acceptedAnswer: { '@type': 'Answer', text: a },
-          })),
-        }),
+        '@graph': [
+          {
+            '@type': 'BlogPosting',
+            '@id': url,
+            headline: post.title,
+            description: post.metaDescription,
+            datePublished: post.date,
+            dateModified: post.date,
+            author: { '@type': 'Organization', name: 'MCI Eyelashes', url: BASE_URL },
+            publisher: {
+              '@type': 'Organization',
+              name: 'MCI Eyelashes',
+              logo: { '@type': 'ImageObject', url: `${BASE_URL}/favicon.svg` },
+            },
+            mainEntityOfPage: { '@type': 'WebPage', '@id': url },
+            ...(post.faq && {
+              mainEntity: post.faq.map(({ q, a }) => ({
+                '@type': 'Question',
+                name: q,
+                acceptedAnswer: { '@type': 'Answer', text: a },
+              })),
+            }),
+          },
+          {
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home',  item: `${BASE_URL}/` },
+              { '@type': 'ListItem', position: 2, name: 'Blog',  item: `${BASE_URL}/blog` },
+              { '@type': 'ListItem', position: 3, name: post.title, item: url },
+            ],
+          },
+        ],
       })
       document.head.appendChild(script)
     }
+
     return () => {
+      // Restore homepage defaults when navigating away
+      setMeta(HOME_META)
       const el = document.getElementById('blog-ld')
       if (el) el.remove()
     }

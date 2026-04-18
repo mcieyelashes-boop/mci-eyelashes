@@ -1,7 +1,9 @@
+import { useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import './index.css'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import { setMeta, HOME_META } from './utils/setMeta'
 
 // Home page sections
 import Hero from './components/Hero'
@@ -18,6 +20,11 @@ import BlogList from './pages/BlogList'
 import BlogPost from './pages/BlogPost'
 
 function Home() {
+  useEffect(() => {
+    setMeta(HOME_META)
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <main>
       <Hero />

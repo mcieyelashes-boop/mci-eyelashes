@@ -2,6 +2,9 @@ import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { blogPosts } from '../data/blogPosts'
+import { setMeta, HOME_META } from '../utils/setMeta'
+
+const BASE_URL = 'https://www.mci-eyelashes.com'
 
 const cardVariants = {
   hidden: { opacity: 0, y: 30 },
@@ -11,7 +14,18 @@ const cardVariants = {
 export default function BlogList() {
   useEffect(() => {
     window.scrollTo(0, 0)
-    document.title = 'Blog | MCI Eyelashes — Wholesale Lash Industry Guides'
+    setMeta({
+      title:              'Blog | MCI Eyelashes — Wholesale Lash Industry Guides',
+      description:        'Expert guides for wholesale lash buyers, salon owners, and beauty entrepreneurs — from MOQ and pricing to private label manufacturing and brand building.',
+      canonical:          `${BASE_URL}/blog`,
+      ogTitle:            'Wholesale Lash Industry Guides | MCI Eyelashes Blog',
+      ogDescription:      'Practical guides on starting a lash business, choosing a manufacturer, private label OEM, pricing strategy, and more.',
+      ogUrl:              `${BASE_URL}/blog`,
+      ogImage:            `${BASE_URL}/hero-lashes.jpg`,
+      twitterTitle:       'Wholesale Lash Industry Guides | MCI Eyelashes Blog',
+      twitterDescription: 'Expert guides on private label lashes, wholesale pricing, MOQ, and lash business strategy.',
+    })
+    return () => setMeta(HOME_META)
   }, [])
 
   return (
