@@ -1,7 +1,7 @@
 // setMeta — updates <head> meta tags in-place for SPA navigation.
 // Works by finding existing elements (set in index.html) and mutating their attributes.
 
-const BASE_URL = 'https://www.mci-eyelashes.com'
+const BASE_URL = 'https://mci-eyelashes.vercel.app'
 
 function setAttr(selector, attrKey, value) {
   const el = document.querySelector(selector)
