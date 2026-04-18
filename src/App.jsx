@@ -15,9 +15,10 @@ import Testimonials from './components/Testimonials'
 import Contact from './components/Contact'
 import FAQ from './components/FAQ'
 
-// Blog pages
+// Pages
 import BlogList from './pages/BlogList'
 import BlogPost from './pages/BlogPost'
+import Catalogue from './pages/Catalogue'
 
 function Home() {
   useEffect(() => {
@@ -45,6 +46,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/catalogue" element={<Catalogue />} />
         <Route path="/blog" element={<BlogList />} />
         <Route path="/blog/:slug" element={<BlogPost />} />
         <Route path="*" element={<Home />} />

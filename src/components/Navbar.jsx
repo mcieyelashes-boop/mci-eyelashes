@@ -4,6 +4,7 @@ import { Link, useLocation } from 'react-router-dom'
 
 const links = [
   { label: 'Products', href: '/#products' },
+  { label: 'Catalogue', href: '/catalogue', isRoute: true },
   { label: 'Process', href: '/#process' },
   { label: 'Gallery', href: '/#gallery' },
   { label: 'About', href: '/#about' },
