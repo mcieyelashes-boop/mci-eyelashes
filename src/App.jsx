@@ -5,17 +5,13 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import { setMeta, HOME_META } from './utils/setMeta'
 
-// Home page sections
 import Hero from './components/Hero'
 import Products from './components/Products'
-import Process from './components/Process'
-import Gallery from './components/Gallery'
 import About from './components/About'
 import Testimonials from './components/Testimonials'
 import Contact from './components/Contact'
 import FAQ from './components/FAQ'
 
-// Pages
 import BlogList from './pages/BlogList'
 import BlogPost from './pages/BlogPost'
 import Catalogue from './pages/Catalogue'
@@ -30,8 +26,6 @@ function Home() {
     <main>
       <Hero />
       <Products />
-      <Process />
-      <Gallery />
       <About />
       <Testimonials />
       <FAQ />
