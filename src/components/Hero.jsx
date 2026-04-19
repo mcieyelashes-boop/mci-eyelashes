@@ -31,7 +31,7 @@ export default function Hero() {
       id="hero"
       ref={ref}
       style={{
-        minHeight: '100svh',
+        minHeight: '100svh', marginTop: '-64px', paddingTop: '64px',
         position: 'relative',
         overflow: 'hidden',
         padding: 0,
@@ -48,7 +48,7 @@ export default function Hero() {
           scale: smoothScale,
           backgroundImage: `url(/hero-lashes.jpg)`,
           backgroundSize: 'cover',
-          backgroundPosition: 'center 30%',
+          backgroundPosition: 'center center',
           backgroundRepeat: 'no-repeat',
         }}
       />
