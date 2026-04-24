@@ -1314,4 +1314,274 @@ To request a product catalog, samples, or a wholesale pricing quote, visit our C
       },
     ],
   },
+
+,
+  {
+    slug: 'best-wholesale-eyelash-supplier-usa',
+    title: 'Best Wholesale Eyelash Suppliers in the USA (2026): Complete Buyer's Guide',
+    metaDescription: 'Looking for the best wholesale eyelash supplier? Compare top manufacturers, MOQs, pricing, and quality. Updated for 2026 with expert buying tips.',
+    category: 'Buying Guide',
+    date: '2026-04-15',
+    readTime: '10 min read',
+    excerpt: 'Finding the right wholesale eyelash supplier can make or break your beauty business. This guide compares the key factors — quality, MOQ, pricing, and reliability — so you can make the right call.',
+    coverAlt: 'Best wholesale eyelash suppliers comparison guide 2026',
+    sections: [
+      {
+        heading: 'What to Look for in a Wholesale Eyelash Supplier',
+        body: `Before comparing suppliers, you need to know what matters. The five most important factors for salon owners and beauty brands are:
+
+**1. Consistent quality across batches**
+The #1 complaint about lash suppliers is inconsistency — a great first order followed by a subpar reorder. Always ask for samples from multiple production batches, not just one showcase batch.
+
+**2. Realistic MOQ (Minimum Order Quantity)**
+Suppliers with MOQs above 500 units per style are impractical for most small to mid-size businesses. Look for suppliers who allow mix-and-match across styles at a single MOQ threshold.
+
+**3. Private label capability**
+If you plan to build a brand, verify the supplier offers custom packaging at a reasonable MOQ (typically 500+ units per style). Get samples of their packaging quality before committing.
+
+**4. Shipping reliability**
+A 20-day shipping window can kill your inventory planning. Confirm actual lead times, not quoted times — ask for references from buyers in your region.
+
+**5. Communication and responsiveness**
+You'll have questions, quality concerns, and urgent reorders. A supplier who responds within 24 hours is worth more than a 10% cheaper supplier who takes a week to reply.`,
+      },
+      {
+        heading: 'Types of Wholesale Eyelash Suppliers',
+        body: `**Manufacturers (Direct)**
+Buy directly from the factory. Best pricing, full customization capability, but typically higher MOQs and longer lead times. Ideal if you're ordering 500+ units per style consistently.
+
+**Trading Companies**
+Act as intermediaries between factories and buyers. Lower MOQs but higher per-unit costs. Useful for variety, but you sacrifice some quality control.
+
+**Domestic Distributors**
+US/EU-based distributors who import and hold inventory. Fast shipping, lower MOQs, but significantly higher prices — often 2–3x the factory price.
+
+**Best approach for most buyers:** Start with a manufacturer direct relationship if you can commit to 100+ units per style. The cost savings and quality control are worth the effort.`,
+      },
+      {
+        heading: 'Key Regions for Eyelash Manufacturing',
+        body: `**China**
+The largest volume of global eyelash production. Strong on synthetic and 3D volume styles. Price-competitive, but quality varies significantly between manufacturers. Dominant for high-volume orders.
+
+**Indonesia**
+Growing reputation for premium quality, particularly for Soft Touch and Protein Silk collections. Strong craftsmanship tradition. MCI Eyelashes is based in Purbalingga, Central Java — a region known for its skilled lash artisans.
+
+**South Korea**
+Known for high-end innovation in lash fiber technology. Korean synthetic fiber is considered among the best globally. Often used as a raw material by top manufacturers in other countries.
+
+**Vietnam**
+Competitive pricing, growing quality. Strong in human hair lash segments.`,
+      },
+      {
+        heading: 'What to Ask Before Placing Your First Order',
+        body: `Use this checklist when evaluating any wholesale lash supplier:
+
+- Can you send samples from 3 different production batches?
+- What is the actual lead time from payment to shipping?
+- Do you offer mix-and-match across styles at the stated MOQ?
+- Can I see examples of your private label packaging?
+- What is your defect/return policy?
+- Do you have references from buyers in my country?
+- What payment methods do you accept?
+- Are your materials certified (cruelty-free, safety tested)?
+
+Any reputable supplier will answer all of these without hesitation. Evasive answers on quality or references are red flags.`,
+      },
+      {
+        heading: 'Why MCI Eyelashes for Wholesale',
+        body: `MCI Eyelashes is a manufacturer based in Purbalingga, Indonesia, supplying wholesale lash collections to salons, distributors, and beauty brands across 30+ countries.
+
+**What sets MCI apart:**
+- 200+ styles across 5 collections (Soft Touch, 3D Luxe, Faux Mink, Human Hair, Under Lashes)
+- MOQ from 100 pairs — mix and match styles
+- Private label from 500 units
+- 7–14 day worldwide shipping
+- Quality tested, 100% sterilized human hair options
+- Dedicated account management
+
+Contact: denis@mci-eyelashes.com | mci-eyelashes.com`,
+      },
+    ],
+    faqs: [
+      { q: 'What is a typical MOQ for wholesale eyelashes?', a: 'Most manufacturers set MOQs between 100–500 pairs per style. MCI Eyelashes offers MOQ from 100 pairs with mix-and-match across all styles.' },
+      { q: 'How do I verify a wholesale supplier's quality?', a: 'Always request samples from multiple production batches. Inspect curl consistency, band flexibility, and fiber softness. Ask for references from existing buyers in your region.' },
+      { q: 'Is it better to buy from a manufacturer or distributor?', a: 'For orders above 100 units per style, buying direct from a manufacturer is almost always more cost-effective. Distributors charge a 30–100% markup for the convenience of lower MOQs.' },
+    ],
+  },
+  {
+    slug: 'under-lashes-wholesale-guide',
+    title: 'Under Lashes: The Overlooked Wholesale Category That Boosts Salon Revenue',
+    metaDescription: 'Under lashes (lower lash line falsies) are the fastest-growing niche in wholesale lashes. Learn what they are, who buys them, and how to stock them profitably.',
+    category: 'Product Guide',
+    date: '2026-04-16',
+    readTime: '7 min read',
+    excerpt: 'Under lashes — designed specifically for the lower lash line — are one of the most underserved categories in wholesale beauty. Here's why smart salon owners are adding them to their inventory.',
+    coverAlt: 'Under lashes lower lash line wholesale guide',
+    sections: [
+      {
+        heading: 'What Are Under Lashes?',
+        body: `Under lashes (also called lower lash falsies or sublashes) are strip lashes designed specifically for the lower lash line. Unlike standard upper lashes, they are:
+
+- Shorter (typically 3–8mm versus 10–14mm for upper lashes)
+- More flexible to conform to the curved lower lid
+- Designed with tapered ends for a natural blending effect
+- Applied with a small amount of lash glue along the lower lash line
+
+They complete a "full lash look" by framing the eye from below — a technique that's become increasingly popular in editorial, bridal, and everyday glam applications.`,
+      },
+      {
+        heading: 'Why Under Lashes Are a Smart Wholesale Addition',
+        body: `**1. Low competition, high demand**
+Most wholesale suppliers don't carry under lashes, or carry only 2–3 styles. Salons that stock them become the go-to source for clients who want a complete look.
+
+**2. Natural upsell at point of purchase**
+When a client buys upper lashes, offering under lashes as a companion is a natural upsell. Average upsell conversion rate reported by MCI partners: 28–35%.
+
+**3. Editorial and bridal applications**
+For bridal prep, photo shoots, and special events, under lashes are increasingly requested. Stocking them makes your salon or brand the one-stop solution.
+
+**4. Low MOQ entry point**
+MCI's Under Lashes collection starts at 100 pairs MOQ with 18 styles available — meaning you can test the category with a minimal investment.`,
+      },
+      {
+        heading: 'MCI Under Lashes: 18 Styles with Tapered-End Technology',
+        body: `MCI Eyelashes offers 18 under lash styles using our Soft Touch Tapered-End Technology — the same fiber technology used in our bestselling Soft Touch upper lash collection.
+
+**Available styles:**
+IBC 1052-U, IBC 6082-U through IBC 6098-U
+
+**Technology highlights:**
+- Tapered ends create seamless blending with natural lower lashes
+- Ultra-soft fiber — comfortable for all-day wear
+- Flexible band conforms to varied lower lid shapes
+- Consistent quality across all 18 styles
+
+**MOQ:** 100 pairs (mix across all 18 styles)
+**Best paired with:** Soft Touch Natural Series for upper lashes`,
+      },
+      {
+        heading: 'How to Retail Under Lashes in Your Salon',
+        body: `**Display them alongside upper lashes**
+Create a "Complete Look" section in your retail display — upper lash + matching under lash as a set. Price the set at a slight discount versus buying separately to encourage the bundle.
+
+**Mention them at checkout**
+Train staff to ask: "Would you like to complete the look with lower lashes?" — this single question, asked consistently, can add meaningful revenue per transaction.
+
+**Use them in your social content**
+Before/after photos with and without under lashes are high-performing content. The visual difference is striking and creates organic interest.
+
+**Include them in your client consultations**
+For bridal and event clients especially, mentioning under lashes as part of a full eye design positions you as a thorough, knowledgeable professional.`,
+      },
+    ],
+    faqs: [
+      { q: 'Are under lashes applied differently than upper lashes?', a: 'Yes. Under lashes use the same lash glue but are applied to the lower lash line. The application takes about 30 seconds with practice and the effect is significant.' },
+      { q: 'What is the MOQ for under lashes at MCI?', a: 'MCI Under Lashes have an MOQ of 100 pairs, and you can mix across all 18 available styles within a single order.' },
+      { q: 'Do clients wear upper and lower lashes together?', a: 'Many do, particularly for special occasions, editorial work, or clients who want a full glamour look. For everyday wear, either upper or lower alone is common.' },
+    ],
+  },
+  {
+    slug: 'private-label-lashes-minimum-order',
+    title: 'Private Label Eyelashes: Real MOQs, Costs, and What No One Tells You (2026)',
+    metaDescription: 'Thinking about launching your own lash brand? Here's the honest breakdown of private label eyelash MOQs, costs, timeline, and what to watch out for.',
+    category: 'Business Guide',
+    date: '2026-04-17',
+    readTime: '9 min read',
+    excerpt: 'Private label lashes look glamorous from the outside. The reality involves MOQs, packaging lead times, and supplier relationships. Here's what you actually need to know before you start.',
+    coverAlt: 'Private label eyelash brand guide MOQ costs 2026',
+    sections: [
+      {
+        heading: 'What Private Label Eyelashes Actually Means',
+        body: `Private label lashes = a manufacturer's product sold under your brand name and packaging.
+
+You are NOT creating a new lash product from scratch. You are selecting from existing lash styles (or occasionally requesting minor customizations), providing your brand artwork, and the manufacturer produces the product in your branded packaging.
+
+This is how 90%+ of independent lash brands work — including many brands that appear to be large, established companies.
+
+**What you control:**
+- Brand name and logo
+- Packaging design (box, tray, insert card)
+- Price point and retail positioning
+- Which styles you carry
+
+**What the manufacturer controls:**
+- The actual lash product
+- Production quality
+- Raw materials`,
+      },
+      {
+        heading: 'Real MOQs for Private Label Lashes',
+        body: `The internet is full of "50 pairs MOQ private label!" claims. Here's the reality:
+
+**50–100 pairs MOQ:**
+Usually means generic packaging (blank box with sticker). Not true private label. Fine for testing, bad for brand building.
+
+**500 pairs MOQ per style:**
+The realistic entry point for proper custom-printed packaging. This is where you get a printed box with your logo, brand colors, and custom insert card. This is what MCI Eyelashes offers for private label.
+
+**1,000+ pairs MOQ per style:**
+Unlocks full customization — unique tray shapes, custom lash band colors, debossed/foil packaging, net payment terms. This is the scale where private label becomes highly profitable.
+
+**MCI Private Label MOQs:**
+- 500 pairs per style → Custom printed packaging, private label
+- 1,000 pairs per style → Full branding, 20% discount, exclusive style reservation`,
+      },
+      {
+        heading: 'The Full Cost Breakdown',
+        body: `Here's an honest cost model for launching a private label lash line:
+
+**Product costs (500 pairs at starter tier):**
+- Lashes: ~$2.50–4.00 per pair (depending on collection)
+- Custom packaging: ~$0.80–1.50 per unit (500 MOQ)
+- Total landed cost: ~$3.30–5.50 per pair
+
+**One-time setup costs:**
+- Packaging artwork/design: $200–500 (if hiring a designer)
+- Sample order (test run): $100–200
+- Shipping for samples: $30–60
+
+**Realistic launch budget:** $2,000–4,000 for a starter private label line (3–4 styles, 500 pairs each)
+
+**Retail pricing and margins:**
+- Typical retail price: $15–35 per pair
+- Gross margin at $20 retail / $4 cost: 80%
+- At $500 investment, breakeven at ~85 units sold`,
+      },
+      {
+        heading: 'Timeline: What to Expect',
+        body: `**Week 1–2:** Sample selection and approval
+Order samples of the lash styles you're considering. Test thoroughly — apply, wear, photograph.
+
+**Week 3–4:** Packaging design
+Work with a graphic designer or use Canva to create your box design. Submit to manufacturer for mockup approval.
+
+**Week 5–6:** Production
+Most manufacturers need 2–4 weeks for a private label production run of 500 units.
+
+**Week 7:** Shipping
+7–14 days from Indonesia to USA/EU via air freight.
+
+**Total timeline:** 6–8 weeks from first contact to inventory in hand.
+
+MCI Eyelashes typical timeline: 5–6 weeks for first private label orders.`,
+      },
+      {
+        heading: 'The 3 Mistakes That Kill Private Label Lash Brands',
+        body: `**Mistake 1: Over-ordering before testing**
+Starting with 10 styles at 500 pairs each = $15,000+ investment before you know what sells. Start with 2–3 styles maximum. Learn what your customers buy, then expand.
+
+**Mistake 2: Choosing packaging over product**
+Beautiful boxes with mediocre lashes = high return rates and no repeat customers. The lash quality is the brand. Spend more time selecting the right lash than designing the box.
+
+**Mistake 3: No exclusivity agreement**
+If your manufacturer sells the exact same lash in the same packaging to your competitor, your brand differentiation disappears. Ask about exclusive style options or register custom elements where possible.`,
+      },
+    ],
+    faqs: [
+      { q: 'How much does it cost to start a private label lash line?', a: 'A realistic starter budget is $2,000–4,000 for 3–4 styles at 500 pairs each, including packaging design and shipping. At MCI, private label starts from 500 pairs per style.' },
+      { q: 'How long does private label production take?', a: 'From first contact to receiving inventory: typically 6–8 weeks. This includes sample approval (1–2 weeks), packaging design (1–2 weeks), production (2–4 weeks), and shipping (1–2 weeks).' },
+      { q: 'Can I mix styles in my private label order?', a: 'Yes, with most manufacturers including MCI. You can order different styles at 500 pairs each within the same private label program — they don't all need to be the same style.' },
+    ],
+  }
+
 ]
