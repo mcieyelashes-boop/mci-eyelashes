@@ -1315,10 +1315,9 @@ To request a product catalog, samples, or a wholesale pricing quote, visit our C
     ],
   },
 
-,
   {
     slug: 'best-wholesale-eyelash-supplier-usa',
-    title: 'Best Wholesale Eyelash Suppliers in the USA (2026): Complete Buyer's Guide',
+    title: 'Best Wholesale Eyelash Suppliers in the USA (2026): Complete Buyer\'s Guide',
     metaDescription: 'Looking for the best wholesale eyelash supplier? Compare top manufacturers, MOQs, pricing, and quality. Updated for 2026 with expert buying tips.',
     category: 'Buying Guide',
     date: '2026-04-15',
