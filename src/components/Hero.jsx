@@ -26,13 +26,6 @@ export default function Hero() {
     { number: '24h',  label: 'Quote Reply' },
   ]
 
-  const stats = [
-    { number: '200+', label: 'Styles' },
-    { number: '5',    label: 'Collections' },
-    { number: '100',  label: 'MOQ Pairs' },
-    { number: '24h',  label: 'Quote Reply' },
-  ]
-
   return (
     <>
       {/* Hero */}
