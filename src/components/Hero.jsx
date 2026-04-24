@@ -1,8 +1,14 @@
 import { useRef } from 'react'
 import { motion, useScroll, useTransform, useSpring } from 'framer-motion'
 
+const MARQUEE_ITEMS = [
+  'Premium Wholesale Lashes', 'ISO 9001 Certified', '200+ Styles',
+  'Private Label Available', 'Ships to 50+ Countries', 'MOQ 100 Pairs',
+  'CE Certified', 'OEM Manufacturing', '24h Quote Reply', 'Cruelty Free Options',
+]
+
 const fadeUp = (delay = 0) => ({
-  initial: { opacity: 0, y: 36 },
+  initial: { opacity: 0, y: 28 },
   animate: { opacity: 1, y: 0 },
   transition: { duration: 0.9, delay, ease: [0.22, 1, 0.36, 1] },
 })
@@ -10,244 +16,138 @@ const fadeUp = (delay = 0) => ({
 export default function Hero() {
   const ref = useRef(null)
   const { scrollYProgress } = useScroll({ target: ref, offset: ['start start', 'end start'] })
-  const y = useTransform(scrollYProgress, [0, 1], [0, 120])
-  const opacity = useTransform(scrollYProgress, [0, 0.75], [1, 0])
-  const scale = useTransform(scrollYProgress, [0, 1], [1, 1.08])
-  const smoothY = useSpring(y, { damping: 20, stiffness: 80 })
-  const smoothScale = useSpring(scale, { damping: 20, stiffness: 80 })
+  const opacity = useTransform(scrollYProgress, [0, 0.7], [1, 0])
+
+  const doubled = [...MARQUEE_ITEMS, ...MARQUEE_ITEMS]
+  const stats = [
+    { number: '200+', label: 'Styles' },
+    { number: '5',    label: 'Collections' },
+    { number: '100',  label: 'MOQ Pairs' },
+    { number: '24h',  label: 'Quote Reply' },
+  ]
 
   return (
-    <section
-      id="hero"
-      ref={ref}
-      style={{
-        minHeight: '100vh',
-        position: 'relative',
-        overflow: 'hidden',
-        padding: 0,
-        display: 'flex',
-        alignItems: 'center',
-      }}
-    >
-      {/* Parallax background image */}
-      <motion.div
-        style={{
-          position: 'absolute',
-          inset: '-10%',
-          y: smoothY,
-          scale: smoothScale,
-          backgroundImage: `url(/hero-lashes.jpg)`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center center',
-          backgroundRepeat: 'no-repeat',
-          /* Fallback gradient if image not yet placed */
-          background: `url(/hero-lashes.jpg) center/cover no-repeat,
-            linear-gradient(135deg, #B8E6EE 0%, #7DCFDD 30%, #48B8CA 60%, #1A7A8A 100%)`,
-        }}
-      />
+    <>
+      {/* Hero */}
+      <section id="hero" className="hero-section" ref={ref} style={{ marginTop: '-70px' }}>
+        {/* Background */}
+        <div className="hero-bg-grid" />
+        <div className="hero-orb" style={{ width: '900px', height: '900px', top: '-280px', right: '-200px', background: 'radial-gradient(circle, rgba(72,184,202,.085) 0%, transparent 65%)', filter: 'blur(1px)' }} />
+        <div className="hero-orb" style={{ width: '500px', height: '500px', bottom: '-100px', left: '28%', background: 'radial-gradient(circle, rgba(45,151,169,.06) 0%, transparent 70%)' }} />
 
-      {/* Left gradient — for text readability */}
-      <div style={{
-        position: 'absolute', inset: 0,
-        background: `linear-gradient(
-          105deg,
-          rgba(13,30,42,0.82) 0%,
-          rgba(13,30,42,0.65) 45%,
-          rgba(13,30,42,0.15) 70%,
-          transparent 100%
-        )`,
-        pointerEvents: 'none',
-      }} />
-
-      {/* Top vignette for navbar */}
-      <div style={{
-        position: 'absolute', top: 0, left: 0, right: 0, height: '180px',
-        background: 'linear-gradient(to bottom, rgba(13,30,42,0.5) 0%, transparent 100%)',
-        pointerEvents: 'none',
-      }} />
-
-      {/* Bottom fade to white */}
-      <div style={{
-        position: 'absolute', bottom: 0, left: 0, right: 0, height: '200px',
-        background: 'linear-gradient(to top, rgba(246,250,251,1) 0%, rgba(246,250,251,0.3) 60%, transparent 100%)',
-        pointerEvents: 'none',
-      }} />
-
-      {/* Content */}
-      <motion.div style={{ opacity, width: '100%', position: 'relative', zIndex: 2 }}>
-        <div className="container">
-          <div style={{
-            maxWidth: '620px',
-            paddingTop: '120px',
-            paddingBottom: '120px',
-          }}>
-            <motion.p
-              className="section-label"
-              {...fadeUp(0.2)}
-              style={{
-                fontSize: '10px',
-                letterSpacing: '5px',
-                textTransform: 'uppercase',
-                color: 'var(--teal-light)',
-                marginBottom: '18px',
-                fontWeight: 500,
-                display: 'flex',
-                alignItems: 'center',
-                gap: '14px',
-              }}
-            >
-              <span style={{ display: 'inline-block', width: '30px', height: '1px', background: 'var(--teal-light)', opacity: 0.7 }} />
-              Premium Lash Manufacturer
-            </motion.p>
-
-            <h1
-              style={{
-                fontFamily: 'Cormorant Garamond, serif',
-                fontSize: 'clamp(52px, 7vw, 108px)',
-                lineHeight: 0.95,
-                fontWeight: 300,
-                marginBottom: '42px',
-                display: 'flex',
-                flexDirection: 'column',
-                gap: '6px',
-              }}
-            >
-              <motion.span
-                {...fadeUp(0.35)}
-                style={{ color: '#fff', display: 'block' }}
-              >
-                World-Class
-              </motion.span>
-              <motion.span
-                {...fadeUp(0.45)}
-                style={{ color: 'var(--teal-light)', fontStyle: 'italic', display: 'block' }}
-              >
-                Eyelash
-              </motion.span>
-              <motion.span
-                {...fadeUp(0.55)}
-                style={{ color: '#fff', display: 'block' }}
-              >
-                Manufacturer
-              </motion.span>
-            </h1>
-
-            <motion.p
-              {...fadeUp(0.65)}
-              style={{
-                fontSize: '14px',
-                color: 'rgba(255,255,255,0.65)',
-                lineHeight: 2,
-                maxWidth: '440px',
-                letterSpacing: '0.3px',
-                marginBottom: '52px',
-              }}
-            >
-              Supplying premium handcrafted eyelashes to salons, distributors,
-              and beauty brands worldwide. Private label & OEM services available
-              with competitive wholesale pricing.
-            </motion.p>
-
-            <motion.div
-              {...fadeUp(0.75)}
-              style={{ display: 'flex', gap: '14px', flexWrap: 'wrap', alignItems: 'center' }}
-            >
-              <motion.a
-                href="#products"
-                className="btn-primary"
-                whileHover={{ scale: 1.03 }}
-                whileTap={{ scale: 0.97 }}
-                style={{ background: 'var(--teal)', color: '#fff' }}
-              >
-                View Products
-                <span className="btn-arrow">→</span>
-              </motion.a>
-              <motion.a
-                href="#contact"
-                className="btn-outline--light btn-outline"
-                whileHover={{ scale: 1.03 }}
-                whileTap={{ scale: 0.97 }}
-              >
-                Request Wholesale
-              </motion.a>
-            </motion.div>
-
-            {/* Stats */}
-            <motion.div
-              {...fadeUp(0.9)}
-              style={{
-                display: 'flex',
-                gap: '40px',
-                marginTop: '72px',
-                paddingTop: '36px',
-                borderTop: '1px solid rgba(255,255,255,0.15)',
-                flexWrap: 'wrap',
-              }}
-            >
-              {[
-                { number: '500+', label: 'Global Partners' },
-                { number: '50+', label: 'Countries' },
-                { number: '15+', label: 'Product Lines' },
-                { number: '10M+', label: 'Units Shipped' },
-              ].map(({ number, label }) => (
-                <div key={label}>
-                  <p style={{
-                    fontFamily: 'Cormorant Garamond, serif',
-                    fontSize: 'clamp(28px, 4vw, 46px)',
-                    color: 'var(--teal-light)',
-                    fontWeight: 300,
-                    lineHeight: 1,
-                    marginBottom: '6px',
-                  }}>{number}</p>
-                  <p style={{
-                    fontSize: '9px',
-                    letterSpacing: '2px',
-                    color: 'rgba(255,255,255,0.4)',
-                    textTransform: 'uppercase',
-                  }}>
-                    {label}
-                  </p>
-                </div>
-              ))}
-            </motion.div>
-          </div>
+        {/* Lash illustration */}
+        <div className="lash-illustration">
+          <svg viewBox="0 0 600 700" xmlns="http://www.w3.org/2000/svg" style={{ width: '100%', height: '100%', position: 'absolute', top: 0, right: 0 }}>
+            <defs>
+              <radialGradient id="lashGlow" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stopColor="#48B8CA" stopOpacity=".18"/>
+                <stop offset="100%" stopColor="#48B8CA" stopOpacity="0"/>
+              </radialGradient>
+              <filter id="softBlur"><feGaussianBlur stdDeviation="2.5"/></filter>
+            </defs>
+            <ellipse cx="320" cy="360" rx="220" ry="240" fill="url(#lashGlow)"/>
+            <path d="M 60 370 Q 320 290 560 370" stroke="#48B8CA" strokeWidth="1.4" fill="none" strokeLinecap="round" opacity=".55"/>
+            {/* Upper lashes */}
+            {[
+              ['M 96 363 Q 80 310 72 272', '50'],
+              ['M 130 350 Q 118 294 114 254', '55'],
+              ['M 170 337 Q 162 278 161 236', '60'],
+              ['M 215 324 Q 212 262 214 218', '65'],
+              ['M 265 315 Q 266 252 270 206', '70'],
+              ['M 320 312 Q 322 248 326 200', '75'],
+              ['M 375 315 Q 380 252 387 204', '70'],
+              ['M 425 324 Q 434 262 442 218', '65'],
+              ['M 468 337 Q 480 278 490 236', '60'],
+              ['M 505 350 Q 520 294 528 254', '55'],
+              ['M 534 363 Q 550 310 556 272', '50'],
+            ].map(([d, op], i) => (
+              <path key={i} d={d} stroke="#79CFDD" strokeWidth={i === 5 ? 1.3 : 1.1} fill="none" strokeLinecap="round" opacity={parseFloat(op)/100}/>
+            ))}
+            {/* Tip glows */}
+            {[
+              [72,272,2,'40'],
+              [114,254,2.2,'45'],
+              [161,236,2.4,'50'],
+              [214,218,2.6,'55'],
+              [270,206,2.8,'60'],
+              [326,200,3,'65'],
+              [387,204,2.8,'60'],
+              [442,218,2.6,'55'],
+              [490,236,2.4,'50'],
+              [528,254,2.2,'45'],
+              [556,272,2,'40'],
+            ].map(([cx,cy,r,op],i) => (
+              <circle key={i} cx={cx} cy={cy} r={r} fill={i===5?'#48B8CA':'#79CFDD'} opacity={parseFloat(op)/100} filter="url(#softBlur)"/>
+            ))}
+            {/* Lower lashes */}
+            {[[120,378,448],[185,375,446],[260,372,444],[320,371,443],[380,372,444],[455,375,446],[510,378,448]].map(([x1,y1,y2],i)=>(
+              <path key={i} d={`M ${x1} ${y1} Q ${x1+(i<3?-4:i>3?4:0)} ${(y1+y2)/2} ${x1+(i<3?-5:i>3?5:0)} ${y2}`} stroke="rgba(72,184,202,.22)" strokeWidth="1" fill="none" strokeLinecap="round"/>
+            ))}
+            {/* Floating product card */}
+            <rect x="360" y="80" width="188" height="140" fill="rgba(17,31,44,.88)" stroke="rgba(72,184,202,.22)" strokeWidth="1"/>
+            <text x="376" y="104" fontFamily="Montserrat,sans-serif" fontSize="8" fill="#48B8CA" letterSpacing="2" fontWeight="600">01 · BESTSELLER</text>
+            <line x1="376" y1="112" x2="532" y2="112" stroke="rgba(72,184,202,.15)" strokeWidth="1"/>
+            <text x="376" y="132" fontFamily="Cormorant Garamond,serif" fontSize="20" fill="white" fontWeight="300">Soft Touch</text>
+            <text x="376" y="152" fontFamily="Cormorant Garamond,serif" fontSize="20" fill="white" fontWeight="300">Lashes</text>
+            <text x="376" y="172" fontFamily="Montserrat,sans-serif" fontSize="8.5" fill="rgba(255,255,255,.38)" fontWeight="300">60+ styles · Korean fiber</text>
+            <text x="376" y="188" fontFamily="Montserrat,sans-serif" fontSize="8.5" fill="rgba(255,255,255,.38)" fontWeight="300">Tapered-end technology</text>
+            <text x="376" y="206" fontFamily="Montserrat,sans-serif" fontSize="8" fill="#48B8CA" letterSpacing="2" fontWeight="600">MOQ 100 PAIRS</text>
+            {/* 5-star badge */}
+            <rect x="420" y="490" width="90" height="72" fill="#48B8CA"/>
+            <text x="465" y="522" fontFamily="Cormorant Garamond,serif" fontSize="24" fill="white" textAnchor="middle" fontWeight="400">5★</text>
+            <text x="465" y="540" fontFamily="Montserrat,sans-serif" fontSize="7" fill="rgba(255,255,255,.85)" textAnchor="middle" letterSpacing="2" fontWeight="700">TOP RATED</text>
+            {/* 50+ countries badge */}
+            <rect x="98" y="475" width="110" height="68" fill="rgba(14,28,39,.96)" stroke="rgba(72,184,202,.18)" strokeWidth="1"/>
+            <text x="153" y="505" fontFamily="Cormorant Garamond,serif" fontSize="28" fill="#79CFDD" textAnchor="middle" fontWeight="300">50+</text>
+            <text x="153" y="523" fontFamily="Montserrat,sans-serif" fontSize="7.5" fill="rgba(255,255,255,.3)" textAnchor="middle" letterSpacing="2">COUNTRIES</text>
+          </svg>
         </div>
-      </motion.div>
 
-      {/* Scroll indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 2.5, duration: 1 }}
-        style={{
-          position: 'absolute',
-          bottom: '80px',
-          left: '50%',
-          transform: 'translateX(-50%)',
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          gap: '10px',
-          zIndex: 3,
-        }}
-      >
-        <motion.div
-          animate={{ y: [0, 12, 0] }}
-          transition={{ duration: 1.8, repeat: Infinity, ease: 'easeInOut' }}
-          style={{
-            width: '1px', height: '55px',
-            background: 'linear-gradient(to bottom, rgba(121,207,221,0.8), transparent)',
-          }}
-        />
-        <span style={{
-          fontSize: '8px',
-          letterSpacing: '3px',
-          color: 'rgba(255,255,255,0.3)',
-          textTransform: 'uppercase',
-        }}>
-          Scroll
-        </span>
-      </motion.div>
-    </section>
+        {/* Left gradient overlay */}
+        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(100deg, rgba(10,23,32,.98) 38%, rgba(10,23,32,.55) 65%, rgba(10,23,32,.1) 100%)', pointerEvents: 'none' }} />
+
+        {/* Content */}
+        <motion.div style={{ opacity, width: '100%', position: 'relative', zIndex: 5 }}>
+          <div className="container">
+            <div className="hero-content">
+              <motion.p className="hero-eyebrow" {...fadeUp(0.2)}>
+                <span className="hero-eyebrow-line" />Premium Wholesale Lashes
+              </motion.p>
+              <h1 className="hero-title">
+                <motion.span className="line-white" {...fadeUp(0.3)}>World-Class</motion.span>
+                <motion.span className="line-accent" {...fadeUp(0.4)}>Eyelash</motion.span>
+                <motion.span className="line-white" {...fadeUp(0.5)}>Manufacturer</motion.span>
+              </h1>
+              <motion.p className="hero-desc" {...fadeUp(0.6)}>
+                Supplying premium handcrafted eyelashes to salons, distributors, and beauty brands worldwide. Private label &amp; OEM services with competitive wholesale pricing.
+              </motion.p>
+              <motion.div className="hero-btns" {...fadeUp(0.7)}>
+                <motion.a href="#products" className="btn-primary" whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>View Products →</motion.a>
+                <motion.a href="#contact" className="btn-outline" whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>Request Wholesale</motion.a>
+              </motion.div>
+              <motion.div className="hero-stats" {...fadeUp(0.85)}>
+                {stats.map(({ number, label }) => (
+                  <div key={label}>
+                    <p className="hero-stat-num">{number}</p>
+                    <p className="hero-stat-label">{label}</p>
+                  </div>
+                ))}
+              </motion.div>
+            </div>
+          </div>
+        </motion.div>
+      </section>
+
+      {/* Marquee */}
+      <div className="marquee-band">
+        <div className="marquee-track">
+          {doubled.map((item, i) => (
+            <span key={i} className="marquee-item">
+              {item}<span className="marquee-dot" />
+            </span>
+          ))}
+        </div>
+      </div>
+    </>
   )
 }
