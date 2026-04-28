@@ -19,6 +19,7 @@ import FAQ from './components/FAQ'
 import BlogList from './pages/BlogList'
 import BlogPost from './pages/BlogPost'
 import Catalogue from './pages/Catalogue'
+import Dashboard from './pages/Dashboard'
 
 function Home() {
   useEffect(() => {
@@ -49,6 +50,7 @@ function App() {
         <Route path="/catalogue" element={<Catalogue />} />
         <Route path="/blog" element={<BlogList />} />
         <Route path="/blog/:slug" element={<BlogPost />} />
+        <Route path="/dashboard" element={<Dashboard />} />
         <Route path="*" element={<Home />} />
       </Routes>
       <Footer />

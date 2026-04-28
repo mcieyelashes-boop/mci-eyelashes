@@ -10,6 +10,7 @@ const links = [
   { label: 'About', href: '/#about' },
   { label: 'Blog', href: '/blog', isRoute: true },
   { label: 'Contact', href: '/#contact' },
+  { label: 'Dashboard', href: '/dashboard', isRoute: true },
 ]
 
 export default function Navbar() {
