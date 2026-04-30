@@ -2,24 +2,70 @@ import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 
 const services = [
-  { name: 'Classic Lashes',      tag: 'Natural',       price: 'From $80',  dur: '90 min',  desc: 'One extension per natural lash for a clean, polished look. Perfect for everyday elegance.' },
-  { name: 'Volume Lashes',       tag: 'Popular',       price: 'From $120', dur: '120 min', desc: 'Multiple ultra-fine extensions fanned out for a full, dramatic effect that lasts.' },
-  { name: 'Hybrid Lashes',       tag: 'Bestseller',    price: 'From $100', dur: '105 min', desc: 'The perfect blend of classic and volume for a textured, wispy appearance.' },
-  { name: 'Mega Volume',         tag: 'Glamour',       price: 'From $150', dur: '150 min', desc: 'Maximum drama with the most voluminous fans — bold, striking, unforgettable.' },
-  { name: 'Lash Lift & Tint',    tag: 'No Extensions', price: 'From $60',  dur: '60 min',  desc: 'Curl and darken your natural lashes for a mascara-free, low-maintenance look.' },
-  { name: 'Infills / Touch Up',  tag: 'Maintenance',   price: 'From $50',  dur: '60 min',  desc: 'Maintain the fullness of your lashes every 2–3 weeks to keep them looking fresh.' },
+  {
+    id: '01',
+    name: 'Private Label',
+    tag: 'Most Popular',
+    desc: 'Your brand on our premium lashes. Custom labels, inserts, and packaging from 500 units. Full artwork support included.',
+    highlights: ['Custom branding', 'From 500 units', 'Artwork support'],
+  },
+  {
+    id: '02',
+    name: 'OEM Manufacturing',
+    tag: 'Custom',
+    desc: 'Bring your own lash design or work with our team to engineer entirely new styles, materials, and specifications.',
+    highlights: ['Custom designs', 'Material sourcing', 'Prototype samples'],
+  },
+  {
+    id: '03',
+    name: 'Bulk Wholesale',
+    tag: 'Ready to Ship',
+    desc: 'Order from 200+ in-stock styles across 5 collections. Mix and match. MOQ 100 pairs. Ships within 5–7 business days.',
+    highlights: ['200+ styles', 'MOQ 100 pairs', '5–7 day shipping'],
+  },
+  {
+    id: '04',
+    name: 'Sample Program',
+    tag: 'Try First',
+    desc: 'Test quality before committing to bulk. Curated sample kits available for new wholesale partners with fast turnaround.',
+    highlights: ['Quality assurance', 'Fast turnaround', 'All collections'],
+  },
+  {
+    id: '05',
+    name: 'Custom Packaging',
+    tag: 'Brand Ready',
+    desc: 'Full packaging design service — branded boxes, trays, inserts, and gift sets. Minimum runs from 1,000 units.',
+    highlights: ['Box & insert design', 'From 1,000 units', 'Gift set options'],
+  },
+  {
+    id: '06',
+    name: 'Express Production',
+    tag: 'Fast Track',
+    desc: 'Rush orders fulfilled in 7–10 business days. Priority manufacturing slot with dedicated quality inspection.',
+    highlights: ['7–10 day lead time', 'Priority slot', 'QC inspection'],
+  },
 ]
 
 export default function Services() {
   const ref = useRef(null)
   const inView = useInView(ref, { once: true, margin: '-80px' })
+
   return (
     <section id="services" className="services-section" ref={ref}>
       <div className="container">
-        <motion.div initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} style={{ marginBottom: 0 }}>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.7 }}
+          style={{ marginBottom: 0 }}
+        >
           <p className="section-label">What We Offer</p>
-          <h2 className="section-title">Our <span className="accent-light">Services</span></h2>
+          <h2 className="section-title">Wholesale <span className="accent-light">Services</span></h2>
+          <p className="section-subtitle" style={{ marginBottom: 0 }}>
+            From ready-to-ship bulk orders to full private label programs — we support every stage of your beauty business.
+          </p>
         </motion.div>
+
         <motion.div
           className="services-grid"
           initial="hidden"
@@ -27,13 +73,24 @@ export default function Services() {
           variants={{ hidden: {}, show: { transition: { staggerChildren: 0.08 } } }}
         >
           {services.map(s => (
-            <motion.div key={s.name} className="service-card" variants={{ hidden: { opacity: 0, y: 24 }, show: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] } } }}>
-              <span className="service-tag">{s.tag}</span>
+            <motion.div
+              key={s.name}
+              className="service-card"
+              variants={{ hidden: { opacity: 0, y: 24 }, show: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] } } }}
+            >
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '10px' }}>
+                <span style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: '13px', color: 'rgba(72,184,202,.35)', letterSpacing: '2px' }}>{s.id}</span>
+                <span className="service-tag">{s.tag}</span>
+              </div>
               <h3 className="service-name">{s.name}</h3>
               <p className="service-desc">{s.desc}</p>
+              <ul className="service-highlights">
+                {s.highlights.map(h => (
+                  <li key={h}><span className="service-highlight-dot">—</span>{h}</li>
+                ))}
+              </ul>
               <div className="service-footer">
-                <span className="service-price">{s.price}</span>
-                <span className="service-duration">{s.dur}</span>
+                <a href="#contact" className="service-cta">Get Quote →</a>
               </div>
             </motion.div>
           ))}

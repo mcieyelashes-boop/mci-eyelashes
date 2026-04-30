@@ -35,7 +35,13 @@ export default function Hero() {
         <div className="hero-orb" style={{ width: '900px', height: '900px', top: '-280px', right: '-200px', background: 'radial-gradient(circle, rgba(72,184,202,.085) 0%, transparent 65%)', filter: 'blur(1px)' }} />
         <div className="hero-orb" style={{ width: '500px', height: '500px', bottom: '-100px', left: '28%', background: 'radial-gradient(circle, rgba(45,151,169,.06) 0%, transparent 70%)' }} />
 
-        {/* Lash illustration */}
+        {/* Real photo background */}
+        <div className="hero-photo-wrap">
+          <img src="/hero-lashes.jpg" alt="Premium MCI Eyelashes" className="hero-photo" />
+          <div className="hero-photo-fade" />
+        </div>
+
+        {/* Lash illustration overlay */}
         <div className="lash-illustration">
           <svg viewBox="0 0 600 700" xmlns="http://www.w3.org/2000/svg" style={{ width: '100%', height: '100%', position: 'absolute', top: 0, right: 0 }}>
             <defs>

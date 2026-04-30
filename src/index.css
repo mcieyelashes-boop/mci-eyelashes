@@ -450,6 +450,102 @@ section { padding: 120px 0; }
 /* ── BLOG ── */
 .blog-section { background: var(--navy); min-height: 100vh; padding: 120px 0; }
 
+/* ── HERO PHOTO ── */
+.hero-photo-wrap {
+  position: absolute; right: 0; top: 0; bottom: 0;
+  width: 58%; overflow: hidden; pointer-events: none;
+}
+.hero-photo {
+  width: 100%; height: 100%; object-fit: cover; object-position: center top;
+  opacity: 0.45; display: block;
+}
+.hero-photo-fade {
+  position: absolute; inset: 0;
+  background: linear-gradient(90deg, var(--navy) 0%, rgba(10,23,32,0.2) 60%, rgba(10,23,32,0.5) 100%);
+}
+
+/* ── LASH ILLUSTRATION ── */
+.lash-illustration {
+  position: absolute; right: 0; top: 0; bottom: 0; width: 55%;
+  pointer-events: none; z-index: 2;
+}
+
+/* ── ABOUT CENTER ── */
+.about-center {
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex; flex-direction: column;
+  align-items: center; gap: 12px; text-align: center;
+}
+
+/* ── SERVICES (wholesale) ── */
+.service-highlights {
+  list-style: none; margin-bottom: 16px; display: flex; flex-direction: column; gap: 5px;
+}
+.service-highlights li {
+  font-size: 11px; color: rgba(255,255,255,.38); display: flex; align-items: center; gap: 8px;
+}
+.service-highlight-dot {
+  color: var(--teal); font-weight: 700; font-size: 10px; flex-shrink: 0;
+}
+.service-cta {
+  font-size: 10px; letter-spacing: .18em; text-transform: uppercase; font-weight: 600;
+  color: var(--teal); border-bottom: 1px solid rgba(72,184,202,.3);
+  padding-bottom: 2px; transition: color .2s, border-color .2s;
+}
+.service-cta:hover { color: var(--teal-light); border-color: var(--teal-light); }
+
+/* ── CTA BANNER ── */
+.cta-banner {
+  background: var(--navy-light); position: relative; overflow: hidden;
+  border-top: 1px solid rgba(72,184,202,.1); border-bottom: 1px solid rgba(72,184,202,.1);
+  padding: 96px 0;
+}
+.cta-banner-glow {
+  position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+  width: 800px; height: 500px; border-radius: 50%;
+  background: radial-gradient(ellipse, rgba(72,184,202,.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+.cta-banner-inner {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center;
+}
+.cta-banner-title {
+  font-size: clamp(36px, 4vw, 54px); line-height: 1.05;
+  color: #fff; margin-bottom: 14px;
+}
+.cta-banner-title em { color: var(--teal-light); font-style: italic; }
+.cta-banner-sub {
+  font-size: 14px; color: var(--text-on-dark-mid); line-height: 1.85;
+  font-weight: 300; max-width: 460px;
+}
+.cta-banner-actions {
+  display: flex; flex-direction: column; gap: 14px; align-items: flex-start;
+}
+.cta-trust-signals {
+  display: flex; flex-wrap: wrap; gap: 12px; margin-top: 4px;
+}
+.cta-trust-item {
+  font-size: 11px; color: rgba(255,255,255,.38); letter-spacing: .04em;
+}
+
+/* ── WHATSAPP BUTTON ── */
+.whatsapp-float {
+  position: fixed; bottom: 28px; right: 28px; z-index: 9999;
+  display: flex; align-items: center; gap: 10px;
+  background: #25D366; color: #fff;
+  padding: 13px 20px 13px 16px;
+  border-radius: 50px;
+  box-shadow: 0 8px 28px rgba(37,211,102,.35), 0 2px 8px rgba(0,0,0,.2);
+  font-size: 12px; font-weight: 700; letter-spacing: .06em;
+  text-decoration: none; transition: all .3s var(--ease-mci);
+}
+.whatsapp-float:hover {
+  background: #1ebe5d; transform: translateY(-3px);
+  box-shadow: 0 12px 36px rgba(37,211,102,.48), 0 4px 12px rgba(0,0,0,.25);
+}
+.whatsapp-label { font-family: 'Montserrat', sans-serif; }
+
 /* ── RESPONSIVE ── */
 @media (max-width: 1024px) {
   .about-grid { grid-template-columns: 1fr; gap: 52px; }
@@ -458,6 +554,8 @@ section { padding: 120px 0; }
   .prod-visual { display: none; }
   .services-grid { grid-template-columns: 1fr 1fr; }
   .process-steps { grid-template-columns: 1fr 1fr; }
+  .cta-banner-inner { grid-template-columns: 1fr; gap: 40px; }
+  .hero-photo-wrap { width: 52%; }
 }
 @media (max-width: 768px) {
   .container, .nav-inner, .footer-inner, .footer-bottom, .prod-inner, .cat-hero { padding-left: 20px; padding-right: 20px; }
@@ -480,4 +578,9 @@ section { padding: 120px 0; }
   .t-stat { min-width: 50%; border-right: none; }
   .gallery-grid { grid-template-columns: 1fr 1fr; gap: 4px; }
   .lash-illustration { display: none; }
+  .hero-photo-wrap { display: none; }
+  .cta-banner-inner { grid-template-columns: 1fr; gap: 36px; }
+  .cta-banner { padding: 64px 0; }
+  .whatsapp-label { display: none; }
+  .whatsapp-float { padding: 14px; border-radius: 50%; }
 }

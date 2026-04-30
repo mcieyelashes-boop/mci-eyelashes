@@ -14,7 +14,7 @@ export default function Contact() {
     { moq: '1,000+',label: 'Distributor', desc: 'Dedicated account manager, custom packaging, container rates.' },
   ]
   const details = [
-    { label: 'Email',     value: 'hello@mci-eyelashes.com' },
+    { label: 'Email',     value: 'denis@mci-eyelashes.com' },
     { label: 'Location',  value: 'Purbalingga, Indonesia' },
     { label: 'Response',  value: 'Within 24 hours' },
     { label: 'Languages', value: 'English · Indonesian' },
@@ -60,7 +60,7 @@ export default function Contact() {
                   <p style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: '54px', color: '#48B8CA', lineHeight: 1 }}>✓</p>
                   <h3 style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: '32px', color: '#fff', fontWeight: 400 }}>Inquiry Sent</h3>
                   <p style={{ fontSize: '13px', color: 'rgba(255,255,255,.48)', lineHeight: 1.8, fontWeight: 300, maxWidth: '280px' }}>Thank you! Our team will respond within 24 hours with your personalized wholesale package.</p>
-                  <div className="form-success">hello@mci-eyelashes.com</div>
+                  <div className="form-success">denis@mci-eyelashes.com</div>
                 </div>
               ) : (
                 <form onSubmit={e => { e.preventDefault(); setSent(true); }}>

@@ -8,17 +8,14 @@ import Services from './components/Services'
 import Testimonials from './components/Testimonials'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import CTABanner from './components/CTABanner'
+import WhatsAppButton from './components/WhatsAppButton'
 
-// Lazy-loaded pages (unchanged)
+// Lazy-loaded pages
 const Catalogue  = lazy(() => import('./pages/Catalogue'))
 const BlogList   = lazy(() => import('./pages/BlogList'))
 const BlogPost   = lazy(() => import('./pages/BlogPost'))
-
-// Keep existing components that don't need restyling
-const Process    = lazy(() => import('./components/Process'))
-const Gallery    = lazy(() => import('./components/Gallery'))
 const FAQ        = lazy(() => import('./components/FAQ'))
-const Booking    = lazy(() => import('./components/Booking'))
 
 function Home() {
   return (
@@ -28,6 +25,8 @@ function Home() {
       <About />
       <Services />
       <Testimonials />
+      <FAQ />
+      <CTABanner />
       <Contact />
     </>
   )
@@ -46,6 +45,7 @@ export default function App() {
         </Routes>
       </Suspense>
       <Footer />
+      <WhatsAppButton />
     </BrowserRouter>
   )
 }
