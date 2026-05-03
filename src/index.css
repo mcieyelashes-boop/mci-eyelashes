@@ -27,6 +27,12 @@
   --border-dark:   rgba(72,184,202,0.12);
   --border-teal:   rgba(72,184,202,0.22);
   --border-white:  rgba(255,255,255,0.06);
+  --border-soft:   rgba(72,184,202,0.10);
+
+  /* Aliases used in FAQ / Gallery (dark theme) */
+  --text-dark:     rgba(255,255,255,0.88);
+  --text-mid:      rgba(255,255,255,0.52);
+  --text-light:    rgba(255,255,255,0.30);
 
   --shadow-glow:   0 0 40px rgba(72,184,202,0.22);
   --shadow-glow-lg:0 0 60px rgba(72,184,202,0.38);
@@ -221,8 +227,9 @@ section { padding: 120px 0; }
 }
 .hero-eyebrow-line { width: 28px; height: 1px; background: var(--teal-light); opacity: .65; flex-shrink: 0; }
 .hero-title {
-  font-size: clamp(54px, 7.5vw, 108px); line-height: .91;
+  font-size: clamp(42px, 7.5vw, 108px); line-height: .91;
   font-weight: 300; margin-bottom: 30px;
+  overflow-wrap: break-word; word-break: break-word;
 }
 .hero-title .line-white { display: block; color: #fff; }
 .hero-title .line-accent { display: block; color: var(--teal-light); font-style: italic; }
@@ -510,6 +517,7 @@ section { padding: 120px 0; }
 .cta-banner-inner {
   display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center;
 }
+.cta-banner-left { display: flex; flex-direction: column; }
 .cta-banner-title {
   font-size: clamp(36px, 4vw, 54px); line-height: 1.05;
   color: #fff; margin-bottom: 14px;

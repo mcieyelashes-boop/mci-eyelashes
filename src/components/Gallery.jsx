@@ -2,14 +2,14 @@ import { useRef, useState } from 'react'
 import { motion, useInView } from 'framer-motion'
 
 const items = [
-  { id: 1, label: 'Classic Set', sub: 'Natural & Defined', span: 'tall', gradient: 'linear-gradient(145deg, #C8DDE8 0%, #A8C8D8 100%)' },
-  { id: 2, label: 'Volume Set', sub: 'Full & Dramatic', span: 'normal', gradient: 'linear-gradient(145deg, #B8D8E5 0%, #8FC0D0 100%)' },
-  { id: 3, label: 'Mega Volume', sub: 'Bold & Striking', span: 'normal', gradient: 'linear-gradient(145deg, #A0C8D8 0%, #78B0C5 100%)' },
-  { id: 4, label: 'Hybrid Set', sub: 'Wispy & Textured', span: 'wide', gradient: 'linear-gradient(145deg, #C0D8E5 0%, #90BCCC 100%)' },
-  { id: 5, label: 'Lash Lift', sub: 'Natural Enhancement', span: 'normal', gradient: 'linear-gradient(145deg, #B0CFDE 0%, #7DB5C8 100%)' },
-  { id: 6, label: 'Colored Lashes', sub: 'Editorial & Fashion', span: 'tall', gradient: 'linear-gradient(145deg, #8EC0D5 0%, #5A9DB8 100%)' },
-  { id: 7, label: 'Strip Lashes', sub: 'Ready to Wear', span: 'normal', gradient: 'linear-gradient(145deg, #BEDAE8 0%, #8EC2D5 100%)' },
-  { id: 8, label: 'Before & After', sub: 'Real Transformation', span: 'wide', gradient: 'linear-gradient(145deg, #A8CCDA 0%, #72AFCA 100%)' },
+  { id: 1, label: 'Soft Touch', sub: 'Natural & Defined', span: 'tall', gradient: 'linear-gradient(145deg, #0e2535 0%, #163347 100%)' },
+  { id: 2, label: 'Volume Set', sub: 'Full & Dramatic', span: 'normal', gradient: 'linear-gradient(145deg, #0d2030 0%, #1a3a4f 100%)' },
+  { id: 3, label: 'Mega Volume', sub: 'Bold & Striking', span: 'normal', gradient: 'linear-gradient(145deg, #0c1e2e 0%, #163345 100%)' },
+  { id: 4, label: '3D Luxe', sub: 'Wispy & Textured', span: 'wide', gradient: 'linear-gradient(145deg, #0e2434 0%, #1c3d52 100%)' },
+  { id: 5, label: 'Faux Mink', sub: 'Cruelty-Free Luxury', span: 'normal', gradient: 'linear-gradient(145deg, #0d2233 0%, #183648 100%)' },
+  { id: 6, label: 'Human Hair', sub: 'Ultra Natural', span: 'tall', gradient: 'linear-gradient(145deg, #0c1f2f 0%, #153042 100%)' },
+  { id: 7, label: 'Under Lashes', sub: 'Lower Lash Specialty', span: 'normal', gradient: 'linear-gradient(145deg, #0e2030 0%, #1a3447 100%)' },
+  { id: 8, label: 'Private Label', sub: 'Your Brand, Our Craft', span: 'wide', gradient: 'linear-gradient(145deg, #0d2232 0%, #1b3a50 100%)' },
 ]
 
 const containerVariants = {
@@ -130,7 +130,7 @@ export default function Gallery() {
   const inView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
-    <section id="gallery" style={{ background: 'var(--light)' }}>
+    <section id="gallery" style={{ background: 'var(--navy-light)' }}>
       <div className="container">
         <motion.div
           ref={ref}

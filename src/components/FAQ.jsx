@@ -20,7 +20,7 @@ const faqs = [
   },
   {
     q: 'Can I request samples before placing a wholesale order?',
-    a: 'Yes. We offer sample kits for qualified wholesale buyers. Contact hello@mci-eyelashes.com with your business details. Sample kits are available for all product lines and are credited toward your first full order.',
+    a: 'Yes. We offer sample kits for qualified wholesale buyers. Contact denis@mci-eyelashes.com with your business details. Sample kits are available for all product lines and are credited toward your first full order.',
   },
   {
     q: 'What certifications do your products carry?',
@@ -28,7 +28,7 @@ const faqs = [
   },
   {
     q: 'How do I get wholesale pricing?',
-    a: 'Submit an inquiry via the contact form or email hello@mci-eyelashes.com. Our team will respond within 24 hours with a full product catalog, wholesale price sheet, and MOQ details tailored to your requirements.',
+    a: 'Submit an inquiry via the contact form or email denis@mci-eyelashes.com. Our team will respond within 24 hours with a full product catalog, wholesale price sheet, and MOQ details tailored to your requirements.',
   },
   {
     q: 'What is the lead time for custom OEM orders?',
@@ -108,7 +108,7 @@ export default function FAQ() {
   const half = Math.ceil(faqs.length / 2)
 
   return (
-    <section id="faq" style={{ background: 'var(--off-white)' }} ref={ref}>
+    <section id="faq" style={{ background: 'var(--navy-mid)' }} ref={ref}>
       <div className="container">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -127,7 +127,7 @@ export default function FAQ() {
               </p>
             </div>
             <motion.a
-              href="mailto:hello@mci-eyelashes.com"
+              href="mailto:denis@mci-eyelashes.com"
               className="btn-outline"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.97 }}
