@@ -147,7 +147,7 @@ section { padding: 120px 0; }
   height: 70px; display: flex; align-items: center; justify-content: space-between;
 }
 .nav-logo { cursor: pointer; flex-shrink: 0; }
-.nav-logo img { height: 44px; display: block; }
+.nav-logo img { height: 36px; display: block; width: auto; }
 .nav-links { display: flex; align-items: center; gap: 36px; }
 .nav-link {
   font-size: 10px; letter-spacing: .2em; text-transform: uppercase;

@@ -1,29 +1,50 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 88" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 158 44" fill="none">
 
-  <!-- Eyelid base curve -->
-  <path d="M 30 52 Q 110 30 190 52" stroke="#79CFDD" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <!-- ── Icon mark (36×36 in 4,4 offset) ── -->
+  <g transform="translate(4, 4)">
 
-  <!-- Eyelashes fanning upward from the lid (curved outward) -->
-  <!-- Far left lash -->
-  <path d="M 36 50 Q 22 32 18 18" stroke="#79CFDD" stroke-width="1.4" stroke-linecap="round"/>
-  <!-- Left-center lash -->
-  <path d="M 58 41 Q 50 24 48 10" stroke="#79CFDD" stroke-width="1.4" stroke-linecap="round"/>
-  <!-- Left lash -->
-  <path d="M 82 34 Q 78 17 78 4" stroke="#79CFDD" stroke-width="1.4" stroke-linecap="round"/>
-  <!-- Center-left lash -->
-  <path d="M 100 31 Q 98 14 100 2" stroke="#79CFDD" stroke-width="1.4" stroke-linecap="round"/>
-  <!-- Center lash -->
-  <path d="M 118 31 Q 118 14 120 2" stroke="#79CFDD" stroke-width="1.4" stroke-linecap="round"/>
-  <!-- Right-center lash -->
-  <path d="M 138 34 Q 142 17 144 4" stroke="#79CFDD" stroke-width="1.4" stroke-linecap="round"/>
-  <!-- Right lash -->
-  <path d="M 160 40 Q 168 24 172 11" stroke="#79CFDD" stroke-width="1.4" stroke-linecap="round"/>
-  <!-- Far right lash -->
-  <path d="M 180 48 Q 196 32 202 18" stroke="#79CFDD" stroke-width="1.4" stroke-linecap="round"/>
+    <!-- Eye outline: almond/lens shape, teal stroke -->
+    <path d="M 2 24 Q 18 14 34 24 Q 18 30 2 24 Z"
+          stroke="#48B8CA" stroke-width="1.5"
+          fill="none" stroke-linejoin="round" stroke-linecap="round"/>
 
-  <!-- MCI text -->
-  <text x="110" y="72" font-family="'Cormorant Garamond', Georgia, serif" font-size="28" font-weight="400" fill="#FFFFFF" text-anchor="middle" letter-spacing="10">MCI</text>
+    <!-- 4 lashes, mathematically placed on upper arc, curving upward -->
+    <!-- Lash 1 — far left, fans outward -->
+    <path d="M 8.4 20.8 Q 6 13 5 5"
+          stroke="#48B8CA" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+    <!-- Lash 2 — left-center, near vertical -->
+    <path d="M 13.5 19.4 Q 12.5 11 12 3"
+          stroke="#48B8CA" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+    <!-- Lash 3 — right-center, near vertical -->
+    <path d="M 22.5 19.4 Q 23.5 11 24 3"
+          stroke="#48B8CA" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+    <!-- Lash 4 — far right, fans outward -->
+    <path d="M 27.6 20.8 Q 30 13 31 5"
+          stroke="#48B8CA" stroke-width="1.3" fill="none" stroke-linecap="round"/>
 
-  <!-- EYELASHES subtext -->
-  <text x="110" y="84" font-family="'Montserrat', Arial, sans-serif" font-size="6.5" font-weight="500" fill="#79CFDD" text-anchor="middle" letter-spacing="6">EYELASHES</text>
+    <!-- Iris: soft glow ring + sharp pupil dot -->
+    <circle cx="18" cy="24" r="4"   fill="#48B8CA" opacity="0.18"/>
+    <circle cx="18" cy="24" r="1.6" fill="#48B8CA"/>
+
+  </g>
+
+  <!-- ── Vertical separator ── -->
+  <line x1="50" y1="9" x2="50" y2="35"
+        stroke="#48B8CA" stroke-width="0.75" opacity="0.35"/>
+
+  <!-- ── Wordmark ── -->
+  <!-- MCI — bold geometric -->
+  <text x="60" y="27"
+        font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif"
+        font-size="18" font-weight="700"
+        letter-spacing="3"
+        fill="#ffffff">MCI</text>
+
+  <!-- EYELASHES — light, widely tracked -->
+  <text x="61" y="36"
+        font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif"
+        font-size="7" font-weight="300"
+        letter-spacing="3.5"
+        fill="rgba(121,207,221,0.85)">EYELASHES</text>
+
 </svg>
