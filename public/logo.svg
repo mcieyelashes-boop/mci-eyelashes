@@ -1,41 +1,51 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168 44" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 188 52" fill="none">
+  <defs>
+    <linearGradient id="gm" x1="3" y1="3" x2="49" y2="49" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#B8891E"/>
+      <stop offset="38%"  stop-color="#D4A843"/>
+      <stop offset="100%" stop-color="#9A7018"/>
+    </linearGradient>
+  </defs>
 
-  <!-- ── Lash mark ── -->
-  <g transform="translate(4, 2)">
+  <!-- Outer square border -->
+  <rect x="2" y="2" width="48" height="48" rx="5.5"
+        stroke="url(#gm)" stroke-width="2.5" fill="none"/>
+  <!-- Inner square border -->
+  <rect x="6.5" y="6.5" width="39" height="39" rx="3"
+        stroke="url(#gm)" stroke-width="1" fill="none" opacity="0.5"/>
 
-    <path d="M 3 36 Q 18 34 33 36"
-          stroke="#2D97A9" stroke-width="1.2"
-          fill="none" stroke-linecap="round" opacity="0.45"/>
+  <!-- M -->
+  <polyline points="10,42 10,10 26,28 42,10 42,42"
+            stroke="url(#gm)" stroke-width="5"
+            fill="none" stroke-linecap="round"
+            stroke-linejoin="miter" stroke-miterlimit="12"/>
 
-    <path d="M 9 35.4 Q 6 19 3 4"
-          stroke="#2D97A9" stroke-width="2.2"
-          fill="none" stroke-linecap="round"/>
+  <!-- C -->
+  <path d="M 35.5 20.5 A 11 11 0 1 0 35.5 31.5"
+        stroke="url(#gm)" stroke-width="4.5"
+        fill="none" stroke-linecap="round"/>
 
-    <path d="M 18 35 Q 17 18 17 2"
-          stroke="#2D97A9" stroke-width="2.6"
-          fill="none" stroke-linecap="round"/>
+  <!-- I -->
+  <line x1="26" y1="20" x2="26" y2="32"
+        stroke="url(#gm)" stroke-width="3.5" stroke-linecap="round"/>
+  <line x1="21.5" y1="20" x2="30.5" y2="20"
+        stroke="url(#gm)" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="21.5" y1="32" x2="30.5" y2="32"
+        stroke="url(#gm)" stroke-width="2.5" stroke-linecap="round"/>
 
-    <path d="M 27 35.4 Q 30 19 33 4"
-          stroke="#2D97A9" stroke-width="2.2"
-          fill="none" stroke-linecap="round"/>
+  <!-- Separator -->
+  <line x1="62" y1="10" x2="62" y2="42"
+        stroke="#C09030" stroke-width="0.75" opacity="0.4"/>
 
-  </g>
-
-  <!-- ── Separator ── -->
-  <line x1="54" y1="9" x2="54" y2="35"
-        stroke="#2D97A9" stroke-width="0.75" opacity="0.35"/>
-
-  <!-- ── Wordmark — dark text for light backgrounds ── -->
-  <text x="64" y="28"
+  <!-- Wordmark — dark text for light backgrounds -->
+  <text x="72" y="30"
         font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif"
-        font-size="20" font-weight="800"
-        letter-spacing="4"
+        font-size="21" font-weight="800" letter-spacing="4"
         fill="#0a1720">MCI</text>
 
-  <text x="65.5" y="37.5"
+  <text x="73.5" y="42.5"
         font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif"
-        font-size="6.5" font-weight="300"
-        letter-spacing="4"
-        fill="rgba(45,151,169,0.85)">EYELASHES</text>
+        font-size="7" font-weight="300" letter-spacing="4"
+        fill="rgba(176,133,30,0.85)">EYELASHES</text>
 
 </svg>

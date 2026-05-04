@@ -1,27 +1,39 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <defs>
+    <linearGradient id="gf" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#D4A843"/>
+      <stop offset="40%"  stop-color="#F5DC78"/>
+      <stop offset="100%" stop-color="#C09030"/>
+    </linearGradient>
+  </defs>
 
   <!-- Dark navy background -->
   <rect width="32" height="32" rx="7" fill="#0a1720"/>
 
-  <!-- Three lash strokes — centered in 32×32 -->
-  <g transform="translate(5, 2)">
+  <!-- Outer frame -->
+  <rect x="1.5" y="1.5" width="29" height="29" rx="4"
+        stroke="url(#gf)" stroke-width="1.5" fill="none"/>
+  <!-- Inner frame -->
+  <rect x="4" y="4" width="24" height="24" rx="2.5"
+        stroke="url(#gf)" stroke-width="0.7" fill="none" opacity="0.5"/>
 
-    <!-- Eyelid base -->
-    <path d="M 1 27 Q 11 25.5 21 27"
-          stroke="#48B8CA" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.45"/>
+  <!-- M — scaled to 32×32 space -->
+  <polyline points="6,26 6,6 16,17 26,6 26,26"
+            stroke="url(#gf)" stroke-width="3"
+            fill="none" stroke-linecap="round"
+            stroke-linejoin="miter" stroke-miterlimit="12"/>
 
-    <!-- Left lash -->
-    <path d="M 5 26.8 Q 3 17 1 5"
-          stroke="#48B8CA" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- C — centre (16,16) radius 6.8 -->
+  <path d="M 21.8 12.6 A 6.8 6.8 0 1 0 21.8 19.4"
+        stroke="url(#gf)" stroke-width="2.8"
+        fill="none" stroke-linecap="round"/>
 
-    <!-- Center lash -->
-    <path d="M 11 26.2 Q 10 15 10 2"
-          stroke="#48B8CA" stroke-width="2.4" fill="none" stroke-linecap="round"/>
-
-    <!-- Right lash -->
-    <path d="M 17 26.8 Q 19 17 21 5"
-          stroke="#48B8CA" stroke-width="2" fill="none" stroke-linecap="round"/>
-
-  </g>
+  <!-- I — vertical bar + serifs -->
+  <line x1="16" y1="12.3" x2="16" y2="19.7"
+        stroke="url(#gf)" stroke-width="2.2" stroke-linecap="round"/>
+  <line x1="13" y1="12.3" x2="19" y2="12.3"
+        stroke="url(#gf)" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="13" y1="19.7" x2="19" y2="19.7"
+        stroke="url(#gf)" stroke-width="1.5" stroke-linecap="round"/>
 
 </svg>
