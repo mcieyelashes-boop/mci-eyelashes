@@ -208,106 +208,101 @@ section { padding: 120px 0; }
 .hero-orb { position: absolute; border-radius: 50%; pointer-events: none; }
 
 /* ══════════════════════════════════════════
-   ROBOT IMAGE — 3-D stage
+   PAGE 1 — FULL-SCREEN ROBOT SPLASH
 ══════════════════════════════════════════ */
 
-/* Outer stage: right half of hero, flex-column centred */
-.hero-robot-stage {
-  position: absolute;
-  right: 0; top: 0;
-  width: 56%; height: 100%;
-  display: flex; flex-direction: column;
-  align-items: center; justify-content: center;
-  gap: 28px;
-  pointer-events: none;
-  z-index: 2;
-}
-
-/* Perspective shell — must NOT have overflow:hidden */
-.hero-robot-perspective {
-  perspective: 1100px;
-  perspective-origin: 50% 45%;
-  pointer-events: auto;
-}
-
-/* The card that tilts */
-.hero-robot-card {
+.hero-splash {
   position: relative;
-  width: clamp(300px, 38vw, 520px);
-  border-radius: 6px;
+  width: 100%;
+  height: 100vh;
   overflow: hidden;
-  transform-style: preserve-3d;
-  box-shadow:
-    0 50px 130px rgba(0, 0, 0, 0.75),
-    0 0 0 1px rgba(72,184,202,0.12),
-    0 0 90px rgba(72,184,202,0.07);
-  cursor: default;
-  will-change: transform;
+  background: #060e14;
 }
 
-/* The image itself */
-.hero-robot-img {
+/* Perspective wrapper — no overflow:hidden so tilt works */
+.hero-splash-perspective {
+  position: absolute;
+  inset: 0;
+  perspective: 1400px;
+  perspective-origin: 50% 40%;
+}
+
+/* Tilting card — 6% bleed on all sides so edges never show */
+.hero-splash-card {
+  position: absolute;
+  inset: -6%;
+  will-change: transform;
+  transform-style: preserve-3d;
+}
+
+/* Full-cover image */
+.hero-splash-img {
   width: 100%;
-  height: auto;
-  display: block;
+  height: 100%;
   object-fit: cover;
+  object-position: center 18%;
+  display: block;
   user-select: none;
   -webkit-user-drag: none;
 }
 
-/* Specular highlight — moves opposite to tilt, fakes depth */
-.hero-robot-specular {
+/* Specular sheen */
+.hero-splash-specular {
   position: absolute; inset: 0;
   background: radial-gradient(
-    ellipse at 30% 25%,
-    rgba(255,255,255,0.10) 0%,
-    rgba(255,255,255,0.03) 35%,
-    transparent 65%
+    ellipse at 35% 28%,
+    rgba(255,255,255,0.09) 0%,
+    rgba(255,255,255,0.02) 40%,
+    transparent 70%
   );
   pointer-events: none;
   mix-blend-mode: screen;
 }
 
-/* Bottom fade: image melts into dark bg */
-.hero-robot-fade-bottom {
-  position: absolute; bottom: 0; left: 0; right: 0;
-  height: 45%;
-  background: linear-gradient(to top, rgba(10,23,32,0.72) 0%, transparent 100%);
+/* Vignette — darkens all edges for cinematic look */
+.hero-splash-vignette {
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse at 50% 50%, transparent 40%, rgba(6,14,20,0.7) 100%),
+    linear-gradient(to bottom, rgba(6,14,20,0.35) 0%, transparent 25%, transparent 65%, rgba(6,14,20,0.75) 100%);
   pointer-events: none;
 }
 
-/* Left fade: image melts toward text column */
-.hero-robot-fade-left-edge {
-  position: absolute; top: 0; left: 0; bottom: 0;
-  width: 30%;
-  background: linear-gradient(to right, rgba(10,23,32,0.55) 0%, transparent 100%);
-  pointer-events: none;
-}
-
-/* Glow pool: teal ellipse beneath the floating card */
-.hero-robot-glow-pool {
-  width: clamp(200px, 28vw, 400px);
-  height: 24px;
-  border-radius: 50%;
-  background: radial-gradient(ellipse, rgba(72,184,202,0.32) 0%, transparent 70%);
-  filter: blur(16px);
-  margin-top: -14px;
-}
-
-/* Tagline */
-.hero-robot-tagline {
+/* "robot need lashes too" — bottom-centre */
+.hero-splash-tagline {
+  position: absolute;
+  bottom: 13%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
   font-family: 'Cormorant Garamond', Georgia, serif;
-  font-size: clamp(16px, 1.7vw, 24px);
+  font-size: clamp(22px, 3vw, 42px);
   font-style: italic;
   font-weight: 300;
-  color: rgba(255,255,255,0.80);
-  letter-spacing: 0.10em;
+  color: rgba(255, 255, 255, 0.88);
+  letter-spacing: 0.12em;
   text-align: center;
   pointer-events: none;
-  text-shadow: 0 2px 24px rgba(0,0,0,0.5);
+  z-index: 10;
+  text-shadow: 0 4px 40px rgba(0,0,0,0.6);
 }
 
-/* Second ambient orb */
+/* Scroll hint arrow */
+.hero-splash-scroll-hint {
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+.hero-splash-scroll-line {
+  width: 1px;
+  height: 48px;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.6), transparent);
+  margin: 0 auto;
+}
+
+/* Second ambient orb (used in page 2) */
 .hero-orb-2 {
   width: 500px; height: 500px;
   bottom: -80px; left: 25%;

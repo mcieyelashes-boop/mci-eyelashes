@@ -5,7 +5,7 @@ import {
   useMotionValue, useSpring,
 } from 'framer-motion'
 
-/* ── data ── */
+/* ── marquee data ── */
 const MARQUEE = [
   'Premium Wholesale Lashes','ISO 9001 Certified','200+ Styles',
   'Private Label Available','Ships to 50+ Countries','MOQ 100 Pairs',
@@ -20,152 +20,135 @@ const STATS = [
 ]
 
 const fadeUp = (delay = 0) => ({
-  initial:    { opacity: 0, y: 36 },
+  initial:    { opacity: 0, y: 40 },
   animate:    { opacity: 1, y: 0  },
   transition: { duration: 1.1, delay, ease: [0.22, 1, 0.36, 1] },
 })
 
 export default function Hero() {
-  const sectionRef = useRef(null)
-
-  /* Scroll fade-out */
-  const { scrollYProgress } = useScroll({ target: sectionRef, offset: ['start start','end start'] })
-  const scrollOpacity = useTransform(scrollYProgress, [0, 0.6], [1, 0])
-  const scrollY       = useTransform(scrollYProgress, [0, 1],   [0, 60])
+  const splashRef = useRef(null)
 
   /* Mouse parallax */
   const mouseX = useMotionValue(0)
   const mouseY = useMotionValue(0)
-  const springX = useSpring(mouseX, { stiffness: 55, damping: 18 })
-  const springY = useSpring(mouseY, { stiffness: 55, damping: 18 })
+  const springX = useSpring(mouseX, { stiffness: 40, damping: 16 })
+  const springY = useSpring(mouseY, { stiffness: 40, damping: 16 })
 
   const handleMouseMove = (e) => {
-    const { width, height, left, top } = sectionRef.current.getBoundingClientRect()
+    const { width, height, left, top } = splashRef.current.getBoundingClientRect()
     mouseX.set((e.clientX - left - width  / 2) / (width  / 2))
     mouseY.set((e.clientY - top  - height / 2) / (height / 2))
   }
   const handleMouseLeave = () => { mouseX.set(0); mouseY.set(0) }
 
-  /* 3-D tilt for robot image — top-level hooks */
-  const robotRotateY = useTransform(springX, [-1, 1], [-16, 16])
-  const robotRotateX = useTransform(springY, [-1, 1], [10, -10])
-  const robotX       = useTransform(springX, [-1, 1], [-12, 12])
-  const robotY       = useTransform(springY, [-1, 1], [-8, 8])
-  const specX        = useTransform(springX, [-1, 1], [30, -30])
-  const specY        = useTransform(springY, [-1, 1], [20, -20])
+  /* 3-D tilt — subtle on full-screen image so edges don't show */
+  const rotateY = useTransform(springX, [-1, 1], [-7, 7])
+  const rotateX = useTransform(springY, [-1, 1], [4, -4])
 
-  /* Ambient parallax helpers */
-  const px = (s) => useTransform(springX, [-1, 1], [-s, s])
-  const py = (s) => useTransform(springY, [-1, 1], [-s, s])
+  /* Specular light that shifts opposite to tilt */
+  const specX = useTransform(springX, [-1, 1], [60, -60])
+  const specY = useTransform(springY, [-1, 1], [40, -40])
 
   const doubled = [...MARQUEE, ...MARQUEE]
 
   return (
     <>
+      {/* ═══════════════════════════════════════════════════════
+          PAGE 1 — Full-screen robot image, 3-D motion, tagline
+      ═══════════════════════════════════════════════════════ */}
       <section
-        id="hero"
-        ref={sectionRef}
-        className="hero-section"
+        ref={splashRef}
+        className="hero-splash"
         style={{ marginTop: '-70px' }}
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
       >
-        {/* ── Ambient glows ── */}
-        <motion.div
-          style={{ x: px(18), y: py(14) }}
-          animate={{ scale: [1, 1.12, 1], opacity: [.06, .10, .06] }}
-          transition={{ duration: 9, repeat: Infinity, ease: 'easeInOut' }}
-          className="hero-orb"
-        />
-        <div className="hero-orb hero-orb-2" />
+        {/* Perspective shell */}
+        <div className="hero-splash-perspective">
 
-        {/* ── Dot grid ── */}
-        <div className="hero-dot-grid" />
-
-        {/* ══════════════════════════════════════════
-            ROBOT IMAGE — right side, full 3-D stage
-        ══════════════════════════════════════════ */}
-        <div className="hero-robot-stage">
-
-          {/* Perspective wrapper */}
-          <div className="hero-robot-perspective">
-
-            {/* Tilting + floating card */}
-            <motion.div
-              className="hero-robot-card"
-              style={{
-                rotateY: robotRotateY,
-                rotateX: robotRotateX,
-                x: robotX,
-                y: robotY,
-              }}
-              animate={{ y: [0, -18, 0] }}
-              transition={{ duration: 7, repeat: Infinity, ease: 'easeInOut' }}
-            >
-              <img
-                src="/hero-robot.jpg"
-                alt=""
-                className="hero-robot-img"
-                draggable={false}
-              />
-
-              {/* Specular highlight shifts opposite to tilt */}
-              <motion.div
-                className="hero-robot-specular"
-                style={{ x: specX, y: specY }}
-              />
-
-              {/* Edge blends */}
-              <div className="hero-robot-fade-bottom" />
-              <div className="hero-robot-fade-left-edge" />
-            </motion.div>
-
-          </div>
-
-          {/* Glow pool beneath */}
+          {/* Tilting image card — slightly oversized to hide edges during tilt */}
           <motion.div
-            className="hero-robot-glow-pool"
-            animate={{ opacity: [0.5, 0.85, 0.5], scaleX: [1, 1.2, 1] }}
-            transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
-          />
-
-          {/* ── tagline — enters after 1 s ── */}
-          <motion.p
-            className="hero-robot-tagline"
-            initial={{ opacity: 0, y: 32, filter: 'blur(12px)' }}
-            animate={{ opacity: 1, y: 0,  filter: 'blur(0px)'  }}
-            transition={{ delay: 1, duration: 1.6, ease: [0.22, 1, 0.36, 1] }}
+            className="hero-splash-card"
+            style={{ rotateY, rotateX }}
           >
-            robot need lashes too
-          </motion.p>
+            <img
+              src="/hero-robot.jpg"
+              alt=""
+              className="hero-splash-img"
+              draggable={false}
+            />
+
+            {/* Specular sheen moves opposite to tilt */}
+            <motion.div
+              className="hero-splash-specular"
+              style={{ x: specX, y: specY }}
+            />
+
+            {/* Dark vignette to ground the image */}
+            <div className="hero-splash-vignette" />
+          </motion.div>
 
         </div>
 
-        {/* ── Left content fade ── */}
+        {/* Tagline — blank for 1s, then glides in */}
+        <motion.p
+          className="hero-splash-tagline"
+          initial={{ opacity: 0, y: 40, filter: 'blur(14px)' }}
+          animate={{ opacity: 1, y: 0,  filter: 'blur(0px)'  }}
+          transition={{ delay: 1, duration: 1.8, ease: [0.22, 1, 0.36, 1] }}
+        >
+          robot need lashes too
+        </motion.p>
+
+        {/* Scroll hint */}
+        <motion.div
+          className="hero-splash-scroll-hint"
+          animate={{ y: [0, 8, 0], opacity: [0.4, 0.8, 0.4] }}
+          transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut', delay: 2.5 }}
+        >
+          <div className="hero-splash-scroll-line" />
+        </motion.div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════════════
+          PAGE 2 — Brand content: headline, desc, CTAs, stats
+      ═══════════════════════════════════════════════════════ */}
+      <section id="hero" className="hero-section">
+
+        {/* Ambient glows */}
+        <div className="hero-orb" style={{ width:'700px', height:'700px', top:'-200px', right:'5%',
+          background:'radial-gradient(circle, rgba(72,184,202,.09) 0%, transparent 65%)',
+          position:'absolute', borderRadius:'50%', pointerEvents:'none' }} />
+        <div className="hero-orb hero-orb-2" />
+        <div className="hero-dot-grid" />
         <div className="hero-fade-left" />
 
-        {/* ── Text content ── */}
         <motion.div
-          style={{ opacity: scrollOpacity, y: scrollY, width: '100%', position: 'relative', zIndex: 5 }}
+          style={{ width: '100%', position: 'relative', zIndex: 5 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
         >
           <div className="container">
             <div className="hero-content">
-              <motion.p className="hero-eyebrow" {...fadeUp(0.15)}>
+
+              <motion.p className="hero-eyebrow" {...fadeUp(0.1)}>
                 <span className="hero-eyebrow-line" />Premium Wholesale Lashes
               </motion.p>
 
               <h1 className="hero-title">
-                <motion.span className="line-white"  {...fadeUp(0.25)}>World-Class</motion.span>
-                <motion.span className="line-accent" {...fadeUp(0.38)}>Eyelash</motion.span>
-                <motion.span className="line-white"  {...fadeUp(0.50)}>Manufacturer</motion.span>
+                <motion.span className="line-white"  {...fadeUp(0.20)}>World-Class</motion.span>
+                <motion.span className="line-accent" {...fadeUp(0.33)}>Eyelash</motion.span>
+                <motion.span className="line-white"  {...fadeUp(0.45)}>Manufacturer</motion.span>
               </h1>
 
-              <motion.p className="hero-desc" {...fadeUp(0.62)}>
+              <motion.p className="hero-desc" {...fadeUp(0.56)}>
                 Supplying premium handcrafted eyelashes to salons, distributors, and beauty
                 brands worldwide. Private label &amp; OEM services with competitive wholesale pricing.
               </motion.p>
 
-              <motion.div className="hero-btns" {...fadeUp(0.74)}>
+              <motion.div className="hero-btns" {...fadeUp(0.68)}>
                 <motion.a href="#products" className="btn-primary"
                   whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.97 }}>
                   View Products →
@@ -176,7 +159,7 @@ export default function Hero() {
                 </motion.a>
               </motion.div>
 
-              <motion.div className="hero-stats" {...fadeUp(0.88)}>
+              <motion.div className="hero-stats" {...fadeUp(0.80)}>
                 {STATS.map(({ number, label }) => (
                   <div key={label} className="hero-stat-item">
                     <p className="hero-stat-num">{number}</p>
@@ -184,6 +167,7 @@ export default function Hero() {
                   </div>
                 ))}
               </motion.div>
+
             </div>
           </div>
         </motion.div>
