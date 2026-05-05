@@ -322,9 +322,27 @@ section { padding: 120px 0; }
 .hero-photo-wrap { display: none !important; }
 .lash-illustration { display: none !important; }
 .hero-3d-wrap { display: none !important; }
+/* MCI EYELASHES — large gold display heading on page 2 */
+.hero-brand-title {
+  font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+  font-size: clamp(52px, 7vw, 96px);
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  line-height: 1;
+  margin: 0 0 32px 0;
+  background: linear-gradient(135deg, #D4A843 0%, #F5DC78 45%, #C09030 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.hero-brand-title-thin {
+  font-weight: 300;
+  letter-spacing: 0.18em;
+}
+
 .hero-content {
   position: relative; z-index: 5;
-  max-width: 580px; padding: 140px 0 100px;
+  max-width: 680px; padding: 140px 0 100px;
 }
 .hero-eyebrow {
   font-size: 10px; letter-spacing: .42em; text-transform: uppercase;

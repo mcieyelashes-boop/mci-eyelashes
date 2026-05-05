@@ -132,6 +132,17 @@ export default function Hero() {
           <div className="container">
             <div className="hero-content">
 
+              {/* MCI EYELASHES — large gold display title */}
+              <motion.h2
+                className="hero-brand-title"
+                initial={{ opacity: 0, y: 48 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1.1, delay: 0.05, ease: [0.22, 1, 0.36, 1] }}
+              >
+                MCI <span className="hero-brand-title-thin">EYELASHES</span>
+              </motion.h2>
+
               <motion.p className="hero-eyebrow" {...fadeUp(0.1)}>
                 <span className="hero-eyebrow-line" />Premium Wholesale Lashes
               </motion.p>
