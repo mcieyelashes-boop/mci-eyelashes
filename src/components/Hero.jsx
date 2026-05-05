@@ -59,7 +59,6 @@ export default function Hero() {
       <section
         ref={splashRef}
         className="hero-splash"
-        style={{ marginTop: '-70px' }}
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
       >
@@ -113,7 +112,7 @@ export default function Hero() {
       {/* ═══════════════════════════════════════════════════════
           PAGE 2 — Brand content: headline, desc, CTAs, stats
       ═══════════════════════════════════════════════════════ */}
-      <section id="hero" className="hero-section">
+      <section id="hero" className="hero-section" style={{ marginTop: '-70px' }}>
 
         {/* Ambient glows */}
         <div className="hero-orb" style={{ width:'700px', height:'700px', top:'-200px', right:'5%',
