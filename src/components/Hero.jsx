@@ -72,7 +72,7 @@ export default function Hero() {
             style={{ rotateY, rotateX }}
           >
             <img
-              src="/hero-robot.jpg"
+              src="/robot.jpeg"
               alt=""
               className="hero-splash-img"
               draggable={false}

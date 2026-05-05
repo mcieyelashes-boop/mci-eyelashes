@@ -11,13 +11,19 @@ const links = [
 ]
 
 export default function Navbar() {
-  const [scrolled, setScrolled] = useState(false)
-  const [menuOpen, setMenuOpen] = useState(false)
+  const [scrolled,   setScrolled]   = useState(false)
+  const [pastSplash, setPastSplash] = useState(false)
+  const [menuOpen,   setMenuOpen]   = useState(false)
   const location = useLocation()
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 80)
-    window.addEventListener('scroll', onScroll)
+    const onScroll = () => {
+      const y = window.scrollY
+      setScrolled(y > 80)
+      // Show navbar only after user scrolls past the full-screen splash (100vh)
+      setPastSplash(y > window.innerHeight * 0.75)
+    }
+    window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
@@ -38,11 +44,16 @@ export default function Navbar() {
   }
 
   return (
-    <header className={`navbar ${scrolled ? 'scrolled' : ''}`}>
+    <motion.header
+      className={`navbar ${scrolled ? 'scrolled' : ''}`}
+      animate={{ opacity: pastSplash ? 1 : 0, y: pastSplash ? 0 : -20 }}
+      transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
+      style={{ pointerEvents: pastSplash ? 'auto' : 'none' }}
+    >
       <div className="nav-inner">
         {/* Logo */}
         <Link to="/" className="nav-logo">
-          <img src="/logo-light.svg" alt="MCI Eyelashes" />
+          <img src="/logo.png" alt="MCI Eyelashes" />
         </Link>
 
         {/* Desktop links */}
@@ -83,6 +94,6 @@ export default function Navbar() {
           </motion.div>
         )}
       </AnimatePresence>
-    </header>
+    </motion.header>
   )
 }
