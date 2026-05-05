@@ -207,94 +207,111 @@ section { padding: 120px 0; }
 }
 .hero-orb { position: absolute; border-radius: 50%; pointer-events: none; }
 
-/* ── 3D FLOATING SCENE ── */
-.hero-scene {
-  position: absolute; inset: 0;
-  pointer-events: none; z-index: 2;
-  perspective: 1000px;
-}
+/* ══════════════════════════════════════════
+   ROBOT IMAGE — 3-D stage
+══════════════════════════════════════════ */
 
-/* Central glow orb */
-.hero-scene-orb {
+/* Outer stage: right half of hero, flex-column centred */
+.hero-robot-stage {
   position: absolute;
-  width: 380px; height: 380px;
-  border-radius: 50%;
-  top: 50%; left: 62%;
-  transform: translate(-50%, -50%);
-  background: radial-gradient(circle, rgba(72,184,202,.14) 0%, rgba(45,151,169,.07) 45%, transparent 70%);
-  filter: blur(2px);
-}
-
-/* Lash SVG decorations */
-.hero-lash-deco {
-  position: absolute;
+  right: 0; top: 0;
+  width: 56%; height: 100%;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  gap: 28px;
   pointer-events: none;
-  overflow: visible;
+  z-index: 2;
 }
 
-/* Collection floating cards */
-.hero-col-card {
-  position: absolute;
-  background: rgba(13, 28, 40, 0.82);
-  border: 1px solid rgba(72,184,202,.22);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  padding: 14px 18px;
+/* Perspective shell — must NOT have overflow:hidden */
+.hero-robot-perspective {
+  perspective: 1100px;
+  perspective-origin: 50% 45%;
+  pointer-events: auto;
+}
+
+/* The card that tilts */
+.hero-robot-card {
+  position: relative;
+  width: clamp(300px, 38vw, 520px);
   border-radius: 6px;
-  display: flex; flex-direction: column; gap: 4px;
-  pointer-events: auto; cursor: default;
-  min-width: 160px;
+  overflow: hidden;
+  transform-style: preserve-3d;
   box-shadow:
-    0 16px 48px rgba(0,0,0,.45),
-    0 0 0 1px rgba(72,184,202,.1),
-    inset 0 1px 0 rgba(255,255,255,.05);
-  transform-origin: center center;
-}
-.hero-col-card::before {
-  content: '';
-  position: absolute; top: 0; left: 0; right: 0; height: 2px;
-  background: linear-gradient(90deg, var(--card-color, #48B8CA), transparent);
-  border-radius: 6px 6px 0 0;
-  opacity: .7;
-}
-.hero-col-id {
-  font-size: 8px; letter-spacing: 3px; font-weight: 600;
-  color: var(--card-color, #48B8CA);
-  font-family: 'Montserrat', sans-serif;
-}
-.hero-col-name {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 18px; color: #fff; font-weight: 300; line-height: 1.1;
-}
-.hero-col-sub {
-  font-size: 9px; color: rgba(255,255,255,.38); letter-spacing: .03em;
-}
-.hero-col-bar {
-  height: 1px; background: rgba(72,184,202,.15); margin-top: 6px;
+    0 50px 130px rgba(0, 0, 0, 0.75),
+    0 0 0 1px rgba(72,184,202,0.12),
+    0 0 90px rgba(72,184,202,0.07);
+  cursor: default;
+  will-change: transform;
 }
 
-/* Stat badges */
-.hero-scene-badge {
-  position: absolute;
-  display: flex; flex-direction: column; align-items: center; gap: 3px;
-  padding: 14px 18px; border-radius: 6px;
-  background: var(--teal);
-  box-shadow: 0 8px 32px rgba(72,184,202,.4), 0 2px 8px rgba(0,0,0,.3);
+/* The image itself */
+.hero-robot-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* Specular highlight — moves opposite to tilt, fakes depth */
+.hero-robot-specular {
+  position: absolute; inset: 0;
+  background: radial-gradient(
+    ellipse at 30% 25%,
+    rgba(255,255,255,0.10) 0%,
+    rgba(255,255,255,0.03) 35%,
+    transparent 65%
+  );
+  pointer-events: none;
+  mix-blend-mode: screen;
+}
+
+/* Bottom fade: image melts into dark bg */
+.hero-robot-fade-bottom {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  height: 45%;
+  background: linear-gradient(to top, rgba(10,23,32,0.72) 0%, transparent 100%);
   pointer-events: none;
 }
-.hero-scene-badge.glass {
-  background: rgba(13,30,42,.88);
-  border: 1px solid rgba(72,184,202,.22);
-  box-shadow: 0 12px 40px rgba(0,0,0,.45);
+
+/* Left fade: image melts toward text column */
+.hero-robot-fade-left-edge {
+  position: absolute; top: 0; left: 0; bottom: 0;
+  width: 30%;
+  background: linear-gradient(to right, rgba(10,23,32,0.55) 0%, transparent 100%);
+  pointer-events: none;
 }
-.hero-badge-num {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 24px; color: #fff; line-height: 1;
+
+/* Glow pool: teal ellipse beneath the floating card */
+.hero-robot-glow-pool {
+  width: clamp(200px, 28vw, 400px);
+  height: 24px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse, rgba(72,184,202,0.32) 0%, transparent 70%);
+  filter: blur(16px);
+  margin-top: -14px;
 }
-.hero-badge-lbl {
-  font-size: 7px; letter-spacing: 2.5px; font-weight: 700;
-  color: rgba(255,255,255,.75); font-family: 'Montserrat', sans-serif;
-  text-transform: uppercase;
+
+/* Tagline */
+.hero-robot-tagline {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(16px, 1.7vw, 24px);
+  font-style: italic;
+  font-weight: 300;
+  color: rgba(255,255,255,0.80);
+  letter-spacing: 0.10em;
+  text-align: center;
+  pointer-events: none;
+  text-shadow: 0 2px 24px rgba(0,0,0,0.5);
+}
+
+/* Second ambient orb */
+.hero-orb-2 {
+  width: 500px; height: 500px;
+  bottom: -80px; left: 25%;
+  background: radial-gradient(circle, rgba(45,151,169,.055) 0%, transparent 70%);
 }
 
 /* Left gradient fade */
@@ -731,7 +748,7 @@ section { padding: 120px 0; }
   .t-stats-row { flex-wrap: wrap; }
   .t-stat { min-width: 50%; border-right: none; }
   .gallery-grid { grid-template-columns: 1fr 1fr; gap: 4px; }
-  .hero-scene { display: none; }
+  .hero-robot-stage { display: none; }
   .hero-dot-grid { display: none; }
   .hero-fade-left { background: linear-gradient(180deg, var(--navy) 0%, rgba(10,23,32,.6) 100%); }
   .service-card:hover { transform: none; }
