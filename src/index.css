@@ -147,7 +147,7 @@ section { padding: 120px 0; }
   height: 70px; display: flex; align-items: center; justify-content: space-between;
 }
 .nav-logo { cursor: pointer; flex-shrink: 0; }
-.nav-logo img { height: 54px; display: block; width: auto; }
+.nav-logo img { height: 48px; display: block; width: auto; object-fit: contain; }
 .nav-links { display: flex; align-items: center; gap: 36px; }
 .nav-link {
   font-size: 10px; letter-spacing: .2em; text-transform: uppercase;
@@ -227,10 +227,13 @@ section { padding: 120px 0; }
   perspective-origin: 50% 40%;
 }
 
-/* Tilting card — 6% bleed on all sides so edges never show */
+/* Tilting card — side + bottom bleed only, NO top bleed so head never clips */
 .hero-splash-card {
   position: absolute;
-  inset: -6%;
+  top: 0;
+  left: -8%;
+  right: -8%;
+  bottom: -10%;
   will-change: transform;
   transform-style: preserve-3d;
 }
@@ -240,7 +243,7 @@ section { padding: 120px 0; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 5%;
+  object-position: center top;
   display: block;
   user-select: none;
   -webkit-user-drag: none;
