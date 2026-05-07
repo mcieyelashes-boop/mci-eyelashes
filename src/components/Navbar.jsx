@@ -54,10 +54,6 @@ export default function Navbar() {
         {/* Logo */}
         <Link to="/" className="nav-logo">
           <img src="/logo-mci.png" alt="MCI Eyelashes" />
-          <div className="nav-logo-text">
-            <span className="nav-logo-mci">MCI</span>
-            <span className="nav-logo-sub">Eyelashes</span>
-          </div>
         </Link>
 
         {/* Desktop links */}
