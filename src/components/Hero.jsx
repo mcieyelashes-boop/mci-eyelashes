@@ -1,9 +1,5 @@
-import { useRef } from 'react'
-import {
-  motion,
-  useScroll, useTransform,
-  useMotionValue, useSpring,
-} from 'framer-motion'
+import { motion } from 'framer-motion'
+import HeroFuturistic from './HeroFuturistic'
 
 /* ── marquee data ── */
 const MARQUEE = [
@@ -25,89 +21,15 @@ const fadeUp = (delay = 0) => ({
   transition: { duration: 1.1, delay, ease: [0.22, 1, 0.36, 1] },
 })
 
+const doubled = [...MARQUEE, ...MARQUEE]
+
 export default function Hero() {
-  const splashRef = useRef(null)
-
-  /* Mouse parallax */
-  const mouseX = useMotionValue(0)
-  const mouseY = useMotionValue(0)
-  const springX = useSpring(mouseX, { stiffness: 40, damping: 16 })
-  const springY = useSpring(mouseY, { stiffness: 40, damping: 16 })
-
-  const handleMouseMove = (e) => {
-    const { width, height, left, top } = splashRef.current.getBoundingClientRect()
-    mouseX.set((e.clientX - left - width  / 2) / (width  / 2))
-    mouseY.set((e.clientY - top  - height / 2) / (height / 2))
-  }
-  const handleMouseLeave = () => { mouseX.set(0); mouseY.set(0) }
-
-  /* 3-D tilt — subtle on full-screen image so edges don't show */
-  const rotateY = useTransform(springX, [-1, 1], [-7, 7])
-  const rotateX = useTransform(springY, [-1, 1], [4, -4])
-
-  /* Specular light that shifts opposite to tilt */
-  const specX = useTransform(springX, [-1, 1], [60, -60])
-  const specY = useTransform(springY, [-1, 1], [40, -40])
-
-  const doubled = [...MARQUEE, ...MARQUEE]
-
   return (
     <>
       {/* ═══════════════════════════════════════════════════════
-          PAGE 1 — Full-screen robot image, 3-D motion, tagline
+          PAGE 1 — Futuristic WebGPU hero
       ═══════════════════════════════════════════════════════ */}
-      <section
-        ref={splashRef}
-        className="hero-splash"
-        onMouseMove={handleMouseMove}
-        onMouseLeave={handleMouseLeave}
-      >
-        {/* Perspective shell */}
-        <div className="hero-splash-perspective">
-
-          {/* Tilting image card — slightly oversized to hide edges during tilt */}
-          <motion.div
-            className="hero-splash-card"
-            style={{ rotateY, rotateX }}
-          >
-            <img
-              src="/robot.jpeg"
-              alt=""
-              className="hero-splash-img"
-              draggable={false}
-            />
-
-            {/* Specular sheen moves opposite to tilt */}
-            <motion.div
-              className="hero-splash-specular"
-              style={{ x: specX, y: specY }}
-            />
-
-            {/* Dark vignette to ground the image */}
-            <div className="hero-splash-vignette" />
-          </motion.div>
-
-        </div>
-
-        {/* Tagline — blank for 1s, then glides in */}
-        <motion.p
-          className="hero-splash-tagline"
-          initial={{ opacity: 0, y: 40, filter: 'blur(14px)' }}
-          animate={{ opacity: 1, y: 0,  filter: 'blur(0px)'  }}
-          transition={{ delay: 1, duration: 1.8, ease: [0.22, 1, 0.36, 1] }}
-        >
-          robot need lashes too
-        </motion.p>
-
-        {/* Scroll hint */}
-        <motion.div
-          className="hero-splash-scroll-hint"
-          animate={{ y: [0, 8, 0], opacity: [0.4, 0.8, 0.4] }}
-          transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut', delay: 2.5 }}
-        >
-          <div className="hero-splash-scroll-line" />
-        </motion.div>
-      </section>
+      <HeroFuturistic />
 
       {/* ═══════════════════════════════════════════════════════
           PAGE 2 — Brand content: headline, desc, CTAs, stats
