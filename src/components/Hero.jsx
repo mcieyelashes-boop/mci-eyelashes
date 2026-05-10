@@ -3,14 +3,15 @@ import HeroFuturistic from './HeroFuturistic'
 
 /* ── marquee data ── */
 const MARQUEE = [
-  'Premium Wholesale Lashes','ISO 9001 Certified','200+ Styles',
+  'Premium Wholesale Lashes','ISO 9001 Certified','300+ Styles',
   'Private Label Available','Ships to 50+ Countries','MOQ 100 Pairs',
   'CE Certified','OEM Manufacturing','24h Quote Reply','Cruelty Free Options',
+  '10 Collections','Magnetic Lashes','Bridal Couture','Sport & Waterproof',
 ]
 
 const STATS = [
-  { number:'200+', label:'Styles' },
-  { number:'5',    label:'Collections' },
+  { number:'300+', label:'Styles' },
+  { number:'10',   label:'Collections' },
   { number:'100',  label:'MOQ Pairs' },
   { number:'24h',  label:'Quote Reply' },
 ]
