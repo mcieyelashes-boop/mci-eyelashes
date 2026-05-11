@@ -1,15 +1,49 @@
 import { useRef, useState } from 'react'
 import { motion, useInView } from 'framer-motion'
 
+// Free Pexels beauty/lash photos — high-res, crop-to-fit
+const PX = 'https://images.pexels.com/photos'
 const items = [
-  { id: 1, label: 'Soft Touch', sub: 'Natural & Defined', span: 'tall', gradient: 'linear-gradient(145deg, #0e2535 0%, #163347 100%)' },
-  { id: 2, label: 'Volume Set', sub: 'Full & Dramatic', span: 'normal', gradient: 'linear-gradient(145deg, #0d2030 0%, #1a3a4f 100%)' },
-  { id: 3, label: 'Mega Volume', sub: 'Bold & Striking', span: 'normal', gradient: 'linear-gradient(145deg, #0c1e2e 0%, #163345 100%)' },
-  { id: 4, label: '3D Luxe', sub: 'Wispy & Textured', span: 'wide', gradient: 'linear-gradient(145deg, #0e2434 0%, #1c3d52 100%)' },
-  { id: 5, label: 'Faux Mink', sub: 'Cruelty-Free Luxury', span: 'normal', gradient: 'linear-gradient(145deg, #0d2233 0%, #183648 100%)' },
-  { id: 6, label: 'Human Hair', sub: 'Ultra Natural', span: 'tall', gradient: 'linear-gradient(145deg, #0c1f2f 0%, #153042 100%)' },
-  { id: 7, label: 'Under Lashes', sub: 'Lower Lash Specialty', span: 'normal', gradient: 'linear-gradient(145deg, #0e2030 0%, #1a3447 100%)' },
-  { id: 8, label: 'Private Label', sub: 'Your Brand, Our Craft', span: 'wide', gradient: 'linear-gradient(145deg, #0d2232 0%, #1b3a50 100%)' },
+  {
+    id: 1, label: 'Soft Touch',    sub: 'Natural & Defined',
+    span: 'tall',
+    img: `${PX}/3762802/pexels-photo-3762802.jpeg?auto=compress&cs=tinysrgb&w=600&h=900&fit=crop`,
+  },
+  {
+    id: 2, label: 'Volume Set',    sub: 'Full & Dramatic',
+    span: 'normal',
+    img: `${PX}/1820716/pexels-photo-1820716.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop`,
+  },
+  {
+    id: 3, label: 'Mega Volume',   sub: 'Bold & Striking',
+    span: 'normal',
+    img: `${PX}/2395253/pexels-photo-2395253.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop`,
+  },
+  {
+    id: 4, label: '3D Luxe',       sub: 'Wispy & Textured',
+    span: 'wide',
+    img: `${PX}/3373736/pexels-photo-3373736.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop`,
+  },
+  {
+    id: 5, label: 'Faux Mink',     sub: 'Cruelty-Free Luxury',
+    span: 'normal',
+    img: `${PX}/4622947/pexels-photo-4622947.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop`,
+  },
+  {
+    id: 6, label: 'Human Hair',    sub: 'Ultra Natural',
+    span: 'tall',
+    img: `${PX}/3985141/pexels-photo-3985141.jpeg?auto=compress&cs=tinysrgb&w=600&h=900&fit=crop`,
+  },
+  {
+    id: 7, label: 'Under Lashes',  sub: 'Lower Lash Specialty',
+    span: 'normal',
+    img: `${PX}/4373751/pexels-photo-4373751.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop`,
+  },
+  {
+    id: 8, label: 'Private Label', sub: 'Your Brand, Our Craft',
+    span: 'wide',
+    img: `${PX}/6476776/pexels-photo-6476776.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop`,
+  },
 ]
 
 const containerVariants = {
@@ -19,13 +53,13 @@ const containerVariants = {
 
 const itemVariants = {
   hidden: { opacity: 0, scale: 0.96, y: 20 },
-  show: { opacity: 1, scale: 1, y: 0, transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] } },
+  show:   { opacity: 1, scale: 1, y: 0, transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] } },
 }
 
 function GalleryItem({ item }) {
   const [hovered, setHovered] = useState(false)
-  const height = item.span === 'tall' ? '440px' : item.span === 'wide' ? '200px' : '280px'
-  const colSpan = item.span === 'wide' ? 'span 2' : 'span 1'
+  const height  = item.span === 'tall'   ? '440px' : item.span === 'wide' ? '200px' : '280px'
+  const colSpan = item.span === 'wide'   ? 'span 2' : 'span 1'
 
   return (
     <motion.div
@@ -35,19 +69,34 @@ function GalleryItem({ item }) {
       style={{
         gridColumn: colSpan,
         height,
-        background: item.gradient,
         position: 'relative',
         overflow: 'hidden',
         cursor: 'pointer',
         borderRadius: '2px',
+        background: '#0e2535',
       }}
     >
+      {/* Photo */}
+      <motion.img
+        src={item.img}
+        alt={`${item.label} eyelash collection — MCI Eyelashes`}
+        loading="lazy"
+        animate={{ scale: hovered ? 1.06 : 1 }}
+        transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+        style={{
+          position: 'absolute', inset: 0,
+          width: '100%', height: '100%',
+          objectFit: 'cover',
+          display: 'block',
+        }}
+      />
+
       {/* Shimmer top line */}
       <motion.div
         animate={{ scaleX: hovered ? 1 : 0, opacity: hovered ? 1 : 0 }}
         transition={{ duration: 0.5 }}
         style={{
-          position: 'absolute', top: 0, left: 0, right: 0,
+          position: 'absolute', top: 0, left: 0, right: 0, zIndex: 3,
           height: '3px',
           background: 'linear-gradient(to right, transparent, rgba(255,255,255,0.8), transparent)',
           transformOrigin: 'left',
@@ -56,37 +105,30 @@ function GalleryItem({ item }) {
 
       {/* Corner accents */}
       {[
-        { top: '14px', left: '14px', borderTop: '1.5px solid', borderLeft: '1.5px solid' },
+        { top: '14px',    left: '14px',  borderTop: '1.5px solid', borderLeft: '1.5px solid' },
         { bottom: '14px', right: '14px', borderBottom: '1.5px solid', borderRight: '1.5px solid' },
       ].map((style, i) => (
         <motion.div
           key={i}
-          animate={{ opacity: hovered ? 0.8 : 0.25, width: hovered ? '28px' : '18px', height: hovered ? '28px' : '18px' }}
+          animate={{ opacity: hovered ? 0.9 : 0.3, width: hovered ? '28px' : '18px', height: hovered ? '28px' : '18px' }}
           transition={{ duration: 0.4 }}
-          style={{ position: 'absolute', width: '18px', height: '18px', borderColor: 'rgba(255,255,255,0.7)', ...style }}
+          style={{ position: 'absolute', width: '18px', height: '18px', borderColor: 'rgba(255,255,255,0.8)', zIndex: 3, ...style }}
         />
       ))}
 
-      {/* Label tag */}
-      <motion.div
-        animate={{ opacity: hovered ? 0 : 0.7 }}
-        transition={{ duration: 0.25 }}
-        style={{
-          position: 'absolute', top: '16px', right: '16px',
-          fontSize: '9px', letterSpacing: '2px', color: 'rgba(13,30,42,0.6)',
-          textTransform: 'uppercase', fontFamily: 'Montserrat, sans-serif', fontWeight: 500,
-        }}
-      >
-        {item.label}
-      </motion.div>
+      {/* Always-visible dark gradient base */}
+      <div style={{
+        position: 'absolute', inset: 0, zIndex: 1,
+        background: 'linear-gradient(to top, rgba(10,23,32,0.55) 0%, transparent 55%)',
+      }} />
 
       {/* Hover overlay */}
       <motion.div
         animate={{ opacity: hovered ? 1 : 0 }}
         transition={{ duration: 0.35 }}
         style={{
-          position: 'absolute', inset: 0,
-          background: 'linear-gradient(to top, rgba(13,30,42,0.65) 0%, rgba(13,30,42,0.1) 60%, transparent 100%)',
+          position: 'absolute', inset: 0, zIndex: 2,
+          background: 'linear-gradient(to top, rgba(10,23,32,0.82) 0%, rgba(10,23,32,0.2) 60%, transparent 100%)',
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'flex-end',
@@ -109,24 +151,24 @@ function GalleryItem({ item }) {
         </motion.p>
       </motion.div>
 
-      {/* Water ripple effect */}
+      {/* Default label (visible when not hovered) */}
       <motion.div
-        animate={{ opacity: hovered ? 0 : 0.08, scale: hovered ? 1.15 : 1 }}
-        transition={{ duration: 0.5 }}
+        animate={{ opacity: hovered ? 0 : 1 }}
+        transition={{ duration: 0.25 }}
         style={{
-          position: 'absolute', top: '50%', left: '50%',
-          transform: 'translate(-50%, -50%)',
-          width: '80px', height: '80px',
-          borderRadius: '50%',
-          border: '1px solid rgba(255,255,255,0.6)',
+          position: 'absolute', bottom: '16px', left: '18px', zIndex: 2,
+          fontSize: '11px', letterSpacing: '2px', color: 'rgba(255,255,255,0.8)',
+          textTransform: 'uppercase', fontFamily: 'Montserrat, sans-serif', fontWeight: 600,
         }}
-      />
+      >
+        {item.label}
+      </motion.div>
     </motion.div>
   )
 }
 
 export default function Gallery() {
-  const ref = useRef(null)
+  const ref    = useRef(null)
   const inView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
