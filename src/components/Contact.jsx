@@ -1,5 +1,18 @@
 import { useRef, useState } from 'react'
 import { motion, useInView } from 'framer-motion'
+import emailjs from '@emailjs/browser'
+
+// ─── EmailJS config ───────────────────────────────────────────────
+// 1. Create free account at https://www.emailjs.com
+// 2. Add a Gmail/SMTP service  →  copy the Service ID
+// 3. Create email template     →  copy the Template ID
+// 4. Go to Account → API Keys  →  copy the Public Key
+// Then set these three env vars in your Vercel project settings
+// (or in a local .env file for development):
+const EJS_SERVICE  = import.meta.env.VITE_EMAILJS_SERVICE_ID  || ''
+const EJS_TEMPLATE = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || ''
+const EJS_KEY      = import.meta.env.VITE_EMAILJS_PUBLIC_KEY  || ''
+// ─────────────────────────────────────────────────────────────────
 
 const tiers = [
   { moq: '100',    label: 'Starter',     desc: 'Perfect for independent salons. Mix & match across all collections.' },
@@ -21,25 +34,58 @@ const VOLUMES = [
   '1,000+ pairs',
 ]
 
+const EMPTY_FORM = { firstName: '', lastName: '', email: '', company: '', country: '', volume: '', message: '' }
+
 export default function Contact() {
-  const ref = useRef(null)
+  const ref    = useRef(null)
+  const formEl = useRef(null)
   const inView = useInView(ref, { once: true, margin: '-80px' })
-  const [sent, setSent]   = useState(false)
+  const [sent, setSent]       = useState(false)
   const [loading, setLoading] = useState(false)
-  const [form, setForm] = useState({
-    firstName: '', lastName: '', email: '',
-    company: '', country: '', volume: '', message: '',
-  })
+  const [error, setError]     = useState('')
+  const [form, setForm]       = useState(EMPTY_FORM)
 
   const update = k => e => setForm(f => ({ ...f, [k]: e.target.value }))
 
   const handleSubmit = async (e) => {
     e.preventDefault()
+    setError('')
     setLoading(true)
-    // Simulate network delay, then mark sent
-    await new Promise(r => setTimeout(r, 900))
-    setLoading(false)
-    setSent(true)
+
+    // Build template params that match your EmailJS template variables
+    const templateParams = {
+      from_name:    `${form.firstName} ${form.lastName}`.trim(),
+      from_email:   form.email,
+      company:      form.company || '—',
+      country:      form.country,
+      volume:       form.volume  || '—',
+      message:      form.message || '—',
+      reply_to:     form.email,
+      to_name:      'Denis',
+    }
+
+    try {
+      if (EJS_SERVICE && EJS_TEMPLATE && EJS_KEY) {
+        // Real send via EmailJS
+        await emailjs.send(EJS_SERVICE, EJS_TEMPLATE, templateParams, EJS_KEY)
+      } else {
+        // Dev fallback: just simulate delay (remove once env vars are set)
+        await new Promise(r => setTimeout(r, 900))
+        console.warn('[Contact] EmailJS env vars not set — using simulated send. See Contact.jsx for setup instructions.')
+      }
+      setLoading(false)
+      setSent(true)
+    } catch (err) {
+      console.error('[EmailJS]', err)
+      setLoading(false)
+      setError('Something went wrong. Please email us directly at denis@mci-eyelashes.com')
+    }
+  }
+
+  const handleReset = () => {
+    setSent(false)
+    setError('')
+    setForm(EMPTY_FORM)
   }
 
   return (
@@ -124,14 +170,14 @@ export default function Contact() {
                     personalized wholesale package.
                   </p>
                   <div className="form-success-email">denis@mci-eyelashes.com</div>
-                  <button className="btn-outline form-reset-btn" onClick={() => { setSent(false); setForm({ firstName:'', lastName:'', email:'', company:'', country:'', volume:'', message:'' }) }}>
+                  <button className="btn-outline form-reset-btn" onClick={handleReset}>
                     Send Another Inquiry
                   </button>
                 </motion.div>
 
               ) : (
                 /* ── Form ── */
-                <form onSubmit={handleSubmit} noValidate>
+                <form ref={formEl} onSubmit={handleSubmit} noValidate>
                   <div className="form-row">
                     <div className="form-group">
                       <label>First Name <span className="form-required">*</span></label>
@@ -171,6 +217,17 @@ export default function Contact() {
                     <label>Message</label>
                     <textarea rows={4} value={form.message} onChange={update('message')} placeholder="Tell us about your wholesale needs — product types, target market, or any custom requirements..." />
                   </div>
+
+                  {error && (
+                    <motion.p
+                      className="form-error"
+                      initial={{ opacity: 0, y: -6 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      style={{ color: '#f87171', fontSize: '13px', marginBottom: '12px' }}
+                    >
+                      {error}
+                    </motion.p>
+                  )}
 
                   <button type="submit" className="btn-submit" disabled={loading}>
                     {loading
