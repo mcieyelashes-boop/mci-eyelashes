@@ -74,18 +74,18 @@ export default function Hero() {
 
               <motion.p className="hero-eyebrow" {...fadeUp(0.1)}>
                 <span className="hero-eyebrow-line" />
-                Premium Wholesale Lashes
+                Future-Ready Wholesale Lashes
               </motion.p>
 
               <h1 className="hero-title">
-                <motion.span className="line-white" {...fadeUp(0.2)}>World-Class</motion.span>
-                <motion.span className="line-accent" {...fadeUp(0.33)}>Eyelash</motion.span>
-                <motion.span className="line-white" {...fadeUp(0.45)}>Manufacturer</motion.span>
+                <motion.span className="line-white" {...fadeUp(0.2)}>Beauty</motion.span>
+                <motion.span className="line-accent" {...fadeUp(0.33)}>Engineered</motion.span>
+                <motion.span className="line-white" {...fadeUp(0.45)}>For Brands</motion.span>
               </h1>
 
               <motion.p className="hero-desc" {...fadeUp(0.56)}>
-                Supplying premium handcrafted eyelashes to salons, distributors, and beauty
-                brands worldwide. Private label and OEM services with competitive wholesale pricing.
+                Premium eyelashes for salons, distributors, and beauty labels building the next
+                generation of lash products. OEM, private label, and wholesale supply from one maker.
               </motion.p>
 
               <motion.div className="hero-btns" {...fadeUp(0.68)}>
@@ -123,15 +123,10 @@ export default function Hero() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1.1, delay: 0.28, ease: [0.22, 1, 0.36, 1] }}
             >
-              <div className="hero-image-card">
-                <img src="/hero-lashes.jpg" alt="Premium MCI eyelash products" />
-                <div className="hero-image-shine" />
-              </div>
-
               <div className="hero-quality-card">
-                <p className="hero-quality-kicker">Wholesale ready</p>
+                <p className="hero-quality-kicker">Precision made</p>
                 <p className="hero-quality-title">
-                  Custom lashes, labels, inserts, and retail packaging from one manufacturer.
+                  Cinematic beauty, factory-direct production, and retail-ready packaging.
                 </p>
                 <div className="hero-quality-list">
                   {TRUST.map(item => <span key={item}>{item}</span>)}
