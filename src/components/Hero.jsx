@@ -24,13 +24,6 @@ const STATS = [
   { number: '24h', label: 'Quote Reply' },
 ]
 
-const TRUST = [
-  'Factory-direct pricing',
-  'Private label packaging',
-  'Sample kits available',
-  'Tracked global shipping',
-]
-
 const fadeUp = (delay = 0) => ({
   initial: { opacity: 0, y: 40 },
   animate: { opacity: 1, y: 0 },
@@ -63,29 +56,20 @@ export default function Hero() {
         <div className="container">
           <div className="hero-layout">
             <div className="hero-content">
-              <motion.h2
-                className="hero-brand-title"
-                initial={{ opacity: 0, y: 48 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1.1, delay: 0.05, ease: [0.22, 1, 0.36, 1] }}
-              >
-                MCI <span className="hero-brand-title-thin">EYELASHES</span>
-              </motion.h2>
-
               <motion.p className="hero-eyebrow" {...fadeUp(0.1)}>
                 <span className="hero-eyebrow-line" />
-                Future-Ready Wholesale Lashes
+                OEM and Private Label Eyelashes
               </motion.p>
 
               <h1 className="hero-title">
-                <motion.span className="line-white" {...fadeUp(0.2)}>Beauty</motion.span>
-                <motion.span className="line-accent" {...fadeUp(0.33)}>Engineered</motion.span>
-                <motion.span className="line-white" {...fadeUp(0.45)}>For Brands</motion.span>
+                <motion.span className="line-white" {...fadeUp(0.2)}>Future-Ready</motion.span>
+                <motion.span className="line-accent" {...fadeUp(0.33)}>Lash</motion.span>
+                <motion.span className="line-white" {...fadeUp(0.45)}>Supply</motion.span>
               </h1>
 
               <motion.p className="hero-desc" {...fadeUp(0.56)}>
-                Premium eyelashes for salons, distributors, and beauty labels building the next
-                generation of lash products. OEM, private label, and wholesale supply from one maker.
+                Premium eyelashes for salons, distributors, and beauty labels. Factory-direct
+                wholesale, custom packaging, and OEM production from one maker.
               </motion.p>
 
               <motion.div className="hero-btns" {...fadeUp(0.68)}>
@@ -117,22 +101,7 @@ export default function Hero() {
               </motion.div>
             </div>
 
-            <motion.div
-              className="hero-showcase"
-              initial={{ opacity: 0, x: 46 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1.1, delay: 0.28, ease: [0.22, 1, 0.36, 1] }}
-            >
-              <div className="hero-quality-card">
-                <p className="hero-quality-kicker">Precision made</p>
-                <p className="hero-quality-title">
-                  Cinematic beauty, factory-direct production, and retail-ready packaging.
-                </p>
-                <div className="hero-quality-list">
-                  {TRUST.map(item => <span key={item}>{item}</span>)}
-                </div>
-              </div>
-            </motion.div>
+            <div className="hero-showcase" aria-hidden="true" />
           </div>
         </div>
       </section>

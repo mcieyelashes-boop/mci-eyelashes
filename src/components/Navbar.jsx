@@ -51,7 +51,11 @@ export default function Navbar() {
       <div className="nav-inner">
         {/* Logo */}
         <Link to="/" className="nav-logo">
-          <img src="/logo-light.svg" alt="MCI Eyelashes" />
+          <img src="/brand-mark.svg" alt="" aria-hidden="true" />
+          <span className="nav-logo-text">
+            <span className="nav-logo-name">MCI</span>
+            <span className="nav-logo-sub">Eyelashes</span>
+          </span>
         </Link>
 
         {/* Desktop links */}
