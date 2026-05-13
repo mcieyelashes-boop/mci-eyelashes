@@ -2,12 +2,13 @@ import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 
 export default function WhatsAppButton() {
-  const [pastSplash, setPastSplash] = useState(false)
+  const [visible, setVisible] = useState(false)
 
   useEffect(() => {
     const onScroll = () => {
-      setPastSplash(window.scrollY > window.innerHeight * 0.75)
+      setVisible(window.scrollY > 160)
     }
+    onScroll()
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
@@ -19,14 +20,14 @@ export default function WhatsAppButton() {
 
   return (
     <motion.div
-      animate={{ opacity: pastSplash ? 1 : 0, scale: pastSplash ? 1 : 0.8 }}
+      animate={{ opacity: visible ? 1 : 0, scale: visible ? 1 : 0.8 }}
       transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
       style={{
         position: 'fixed',
         bottom: '28px',
         right: '28px',
         zIndex: 9999,
-        pointerEvents: pastSplash ? 'auto' : 'none',
+        pointerEvents: visible ? 'auto' : 'none',
       }}
     >
       {/* Pulse rings */}

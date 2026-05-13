@@ -1,46 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 230 68" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 286 82" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">MCI Eyelashes</title>
+  <desc id="desc">Elegant MCI Eyelashes wordmark with a lash-inspired monogram.</desc>
   <defs>
-    <linearGradient id="gm" x1="4" y1="4" x2="60" y2="60" gradientUnits="userSpaceOnUse">
-      <stop offset="0%"   stop-color="#B8891E"/>
-      <stop offset="38%"  stop-color="#D4A843"/>
-      <stop offset="100%" stop-color="#9A7018"/>
+    <linearGradient id="gold" x1="12" y1="7" x2="82" y2="76" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E9C95D"/>
+      <stop offset="0.5" stop-color="#B8891E"/>
+      <stop offset="1" stop-color="#D9B54A"/>
+    </linearGradient>
+    <linearGradient id="teal" x1="10" y1="74" x2="94" y2="14" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2D97A9"/>
+      <stop offset="1" stop-color="#48B8CA"/>
     </linearGradient>
   </defs>
 
-  <g transform="translate(0,2)">
-    <rect x="3" y="3" width="58" height="58" rx="7"
-          stroke="url(#gm)" stroke-width="3" fill="none"/>
-    <rect x="8.5" y="8.5" width="47" height="47" rx="4"
-          stroke="url(#gm)" stroke-width="1.2" fill="none" opacity="0.5"/>
-    <polyline points="12,55 12,12 32,33 52,12 52,55"
-              stroke="url(#gm)" stroke-width="6.5"
-              fill="none" stroke-linecap="round"
-              stroke-linejoin="miter" stroke-miterlimit="12"/>
-    <path d="M 44.1 25 A 14 14 0 1 0 44.1 39"
-          stroke="url(#gm)" stroke-width="5.5"
-          fill="none" stroke-linecap="round"/>
-    <line x1="32" y1="24" x2="32" y2="40"
-          stroke="url(#gm)" stroke-width="4" stroke-linecap="round"/>
-    <line x1="26" y1="24" x2="38" y2="24"
-          stroke="url(#gm)" stroke-width="3" stroke-linecap="round"/>
-    <line x1="26" y1="40" x2="38" y2="40"
-          stroke="url(#gm)" stroke-width="3" stroke-linecap="round"/>
-  </g>
+  <path d="M13 43C22 24 39 13 58 13C76 13 90 22 99 38" stroke="url(#gold)" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M19 48C32 60 50 66 69 61C82 58 93 50 101 39" stroke="url(#teal)" stroke-width="1.6" stroke-linecap="round" opacity="0.9"/>
+  <path d="M30 44C35 52 42 56 51 57" stroke="url(#gold)" stroke-width="2" stroke-linecap="round"/>
+  <path d="M42 41C48 51 58 55 70 52" stroke="url(#gold)" stroke-width="2" stroke-linecap="round"/>
+  <path d="M55 37C63 48 75 49 88 42" stroke="url(#gold)" stroke-width="2" stroke-linecap="round"/>
+  <path d="M37 26V55M37 26L55 48L73 26V55" stroke="url(#gold)" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M89 30C83 22 72 18 61 21C49 24 41 35 43 47C45 59 57 66 70 63C78 61 84 56 88 50" stroke="url(#gold)" stroke-width="3.8" stroke-linecap="round"/>
+  <path d="M61 32V53M54 32H68M54 53H68" stroke="url(#teal)" stroke-width="2.6" stroke-linecap="round"/>
 
-  <line x1="74" y1="10" x2="74" y2="58"
-        stroke="#C09030" stroke-width="0.8" opacity="0.35"/>
+  <path d="M118 16V66" stroke="#B8891E" stroke-width="1" opacity="0.28"/>
 
-  <text x="86" y="38"
+  <text x="134" y="40"
         font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif"
-        font-size="32" font-weight="900" letter-spacing="6"
-        fill="#0a1720">MCI</text>
-
-  <line x1="87" y1="43" x2="224" y2="43"
-        stroke="#B8891E" stroke-width="0.6" opacity="0.3"/>
-
-  <text x="87.5" y="57"
+        font-size="31" font-weight="800" letter-spacing="7"
+        fill="#0A1720">MCI</text>
+  <path d="M135 47H276" stroke="#B8891E" stroke-width="0.8" opacity="0.32"/>
+  <text x="135" y="63"
         font-family="Montserrat, 'Helvetica Neue', Arial, sans-serif"
-        font-size="11" font-weight="400" letter-spacing="6"
-        fill="rgba(176,133,30,0.9)">EYELASHES</text>
-
+        font-size="10.5" font-weight="500" letter-spacing="5.7"
+        fill="#9A7018">EYELASHES</text>
 </svg>

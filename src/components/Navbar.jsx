@@ -13,17 +13,14 @@ const links = [
 
 export default function Navbar() {
   const [scrolled,   setScrolled]   = useState(false)
-  const [pastSplash, setPastSplash] = useState(false)
   const [menuOpen,   setMenuOpen]   = useState(false)
   const location = useLocation()
 
   useEffect(() => {
     const onScroll = () => {
-      const y = window.scrollY
-      setScrolled(y > 80)
-      // Show navbar only after user scrolls past the full-screen splash (100vh)
-      setPastSplash(y > window.innerHeight * 0.75)
+      setScrolled(window.scrollY > 24)
     }
+    onScroll()
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
@@ -47,14 +44,14 @@ export default function Navbar() {
   return (
     <motion.header
       className={`navbar ${scrolled ? 'scrolled' : ''}`}
-      animate={{ opacity: pastSplash ? 1 : 0, y: pastSplash ? 0 : -20 }}
+      initial={{ opacity: 0, y: -16 }}
+      animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
-      style={{ pointerEvents: pastSplash ? 'auto' : 'none' }}
     >
       <div className="nav-inner">
         {/* Logo */}
         <Link to="/" className="nav-logo">
-          <img src="/logo-mci.png" alt="MCI Eyelashes" />
+          <img src="/logo-light.svg" alt="MCI Eyelashes" />
         </Link>
 
         {/* Desktop links */}

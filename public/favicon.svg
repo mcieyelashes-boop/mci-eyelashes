@@ -1,39 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" fill="none">
+  <rect width="96" height="96" rx="22" fill="#0A1720"/>
   <defs>
-    <linearGradient id="gf" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse">
-      <stop offset="0%"   stop-color="#D4A843"/>
-      <stop offset="40%"  stop-color="#F5DC78"/>
-      <stop offset="100%" stop-color="#C09030"/>
+    <linearGradient id="gold" x1="15" y1="13" x2="80" y2="82" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFF0A8"/>
+      <stop offset="0.45" stop-color="#E7C75A"/>
+      <stop offset="1" stop-color="#B98624"/>
+    </linearGradient>
+    <linearGradient id="teal" x1="14" y1="82" x2="82" y2="18" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#48B8CA"/>
+      <stop offset="1" stop-color="#9CE7EF"/>
     </linearGradient>
   </defs>
-
-  <!-- Dark navy background -->
-  <rect width="32" height="32" rx="7" fill="#0a1720"/>
-
-  <!-- Outer frame -->
-  <rect x="1.5" y="1.5" width="29" height="29" rx="4"
-        stroke="url(#gf)" stroke-width="1.5" fill="none"/>
-  <!-- Inner frame -->
-  <rect x="4" y="4" width="24" height="24" rx="2.5"
-        stroke="url(#gf)" stroke-width="0.7" fill="none" opacity="0.5"/>
-
-  <!-- M — scaled to 32×32 space -->
-  <polyline points="6,26 6,6 16,17 26,6 26,26"
-            stroke="url(#gf)" stroke-width="3"
-            fill="none" stroke-linecap="round"
-            stroke-linejoin="miter" stroke-miterlimit="12"/>
-
-  <!-- C — centre (16,16) radius 6.8 -->
-  <path d="M 21.8 12.6 A 6.8 6.8 0 1 0 21.8 19.4"
-        stroke="url(#gf)" stroke-width="2.8"
-        fill="none" stroke-linecap="round"/>
-
-  <!-- I — vertical bar + serifs -->
-  <line x1="16" y1="12.3" x2="16" y2="19.7"
-        stroke="url(#gf)" stroke-width="2.2" stroke-linecap="round"/>
-  <line x1="13" y1="12.3" x2="19" y2="12.3"
-        stroke="url(#gf)" stroke-width="1.5" stroke-linecap="round"/>
-  <line x1="13" y1="19.7" x2="19" y2="19.7"
-        stroke="url(#gf)" stroke-width="1.5" stroke-linecap="round"/>
-
+  <path d="M16 50C25 29 42 19 59 20C74 21 84 30 88 41" stroke="url(#gold)" stroke-width="3.2" stroke-linecap="round"/>
+  <path d="M20 56C32 68 50 73 66 67C76 63 84 55 89 44" stroke="url(#teal)" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M33 51C38 59 45 63 54 63" stroke="url(#gold)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M45 47C52 58 62 60 74 53" stroke="url(#gold)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M29 32V69M29 32L48 55L67 32V69" stroke="url(#gold)" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M79 36C73 27 61 24 51 28C40 32 34 43 37 54C40 66 52 73 64 69C72 67 78 61 81 54" stroke="url(#gold)" stroke-width="4.6" stroke-linecap="round"/>
+  <path d="M52 38V64M44 38H60M44 64H60" stroke="url(#teal)" stroke-width="3.2" stroke-linecap="round"/>
 </svg>
