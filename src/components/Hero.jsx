@@ -17,11 +17,11 @@ const MARQUEE = [
   'Sport & Waterproof',
 ]
 
-const STATS = [
-  { number: '300+', label: 'Styles' },
-  { number: '10', label: 'Collections' },
-  { number: '100', label: 'MOQ Pairs' },
-  { number: '24h', label: 'Quote Reply' },
+const PROOF = [
+  '300+ lash styles',
+  'MOQ from 100 pairs',
+  'Private label ready',
+  '24h quote reply',
 ]
 
 const fadeUp = (delay = 0) => ({
@@ -58,13 +58,13 @@ export default function Hero() {
             <div className="hero-content">
               <motion.p className="hero-eyebrow" {...fadeUp(0.1)}>
                 <span className="hero-eyebrow-line" />
-                OEM and Private Label Eyelashes
+                Wholesale OEM and Private Label Eyelashes
               </motion.p>
 
               <h1 className="hero-title">
-                <motion.span className="line-white" {...fadeUp(0.2)}>Future-Ready</motion.span>
-                <motion.span className="line-accent" {...fadeUp(0.33)}>Lash</motion.span>
-                <motion.span className="line-white" {...fadeUp(0.45)}>Supply</motion.span>
+                <motion.span className="line-white" {...fadeUp(0.2)}>Lashes Made</motion.span>
+                <motion.span className="line-accent" {...fadeUp(0.33)}>For Tomorrow's</motion.span>
+                <motion.span className="line-white" {...fadeUp(0.45)}>Beauty Brands</motion.span>
               </h1>
 
               <motion.p className="hero-desc" {...fadeUp(0.56)}>
@@ -91,12 +91,9 @@ export default function Hero() {
                 </motion.a>
               </motion.div>
 
-              <motion.div className="hero-stats" {...fadeUp(0.8)}>
-                {STATS.map(({ number, label }) => (
-                  <div key={label} className="hero-stat-item">
-                    <p className="hero-stat-num">{number}</p>
-                    <p className="hero-stat-label">{label}</p>
-                  </div>
+              <motion.div className="hero-proof" {...fadeUp(0.8)}>
+                {PROOF.map(item => (
+                  <span key={item}>{item}</span>
                 ))}
               </motion.div>
             </div>
