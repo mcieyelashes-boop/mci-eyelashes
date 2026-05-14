@@ -65,10 +65,10 @@ export default function About() {
 
           {/* Text */}
           <motion.div initial={{ opacity: 0, x: 40 }} animate={inView ? { opacity: 1, x: 0 } : {}} transition={{ duration: 0.9, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}>
-            <p className="section-label light">Our Story</p>
-            <h2 className="section-title">Built on <span className="accent-light">Passion</span><br />& Precision</h2>
-            <p className="section-subtitle" style={{ marginBottom: '16px' }}>Founded in 2015, MCI Eyelashes began with a single mission: to manufacture the world's finest eyelashes and make them accessible to beauty professionals everywhere.</p>
-            <p className="section-subtitle" style={{ marginBottom: '44px' }}>Today we supply 500+ salons, distributors, and beauty brands across 50+ countries with consistent, certified quality.</p>
+            <p className="section-label light">Manufacturing Identity</p>
+            <h2 className="section-title">Beauty Supply With <span className="accent-light">Future Discipline</span></h2>
+            <p className="section-subtitle" style={{ marginBottom: '16px' }}>MCI Eyelashes helps salons, distributors, and founders build lash products that feel premium from first sample to final packaging.</p>
+            <p className="section-subtitle" style={{ marginBottom: '44px' }}>Today we support 500+ beauty partners across 50+ countries with repeatable quality, OEM flexibility, and factory-direct pricing.</p>
             <div className="values-grid">
               {values.map(({ title, desc }, i) => (
                 <motion.div key={title} className="value-item" initial={{ opacity: 0, y: 16 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6, delay: 0.3 + i * 0.1 }}>

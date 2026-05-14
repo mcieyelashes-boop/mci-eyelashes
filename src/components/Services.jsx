@@ -123,10 +123,10 @@ export default function Services() {
           transition={{ duration: 0.7 }}
           className="services-header"
         >
-          <p className="section-label">What We Offer</p>
-          <h2 className="section-title">Wholesale <span className="accent-light">Services</span></h2>
+          <p className="section-label">Factory Capabilities</p>
+          <h2 className="section-title">Everything Your <span className="accent-light">Lash Brand Needs</span></h2>
           <p className="section-subtitle">
-            From ready-to-ship bulk orders to full private label programs — we support every stage of your beauty business.
+            From ready-to-ship wholesale styles to full private-label programs, MCI supports every stage from first sample to repeat production.
           </p>
         </motion.div>
 

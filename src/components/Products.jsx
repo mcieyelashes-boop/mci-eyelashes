@@ -24,9 +24,9 @@ export default function Products() {
     <section id="products" className="prod-section" style={{ padding: '120px 0' }}>
       <div className="prod-inner">
         <motion.div className="prod-header" initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} ref={ref}>
-          <p className="section-label">Our Collections</p>
-          <h2 className="section-title">Ten <span className="accent-light">Collections</span></h2>
-          <p className="prod-subtitle">300+ SKUs across 10 professional collections — from everyday natural to bridal couture and sport-proof wear. Mix & match within the same order.</p>
+          <p className="section-label">Product Architecture</p>
+          <h2 className="section-title">Lash Systems <span className="accent-light">For Tomorrow's Brands</span></h2>
+          <p className="prod-subtitle">A focused wholesale matrix for salons, distributors, and private-label founders. Choose the finish, define the packaging, approve samples, then scale through one factory-direct partner.</p>
         </motion.div>
 
         {/* Tabs */}
@@ -86,8 +86,8 @@ export default function Products() {
         </AnimatePresence>
 
         <div className="prod-bottom">
-          <span>Private label from 500 units · Worldwide shipping 7–14 days</span>
-          <a href="#contact" className="prod-bottom-link">View all pricing →</a>
+          <span>OEM design support · Private label packaging · Sample kits before production</span>
+          <a href="#contact" className="prod-bottom-link">Build your lash line</a>
         </div>
       </div>
     </section>
