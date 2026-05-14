@@ -35,7 +35,7 @@ export default function Gallery() {
           {galleryImages.map((item, index) => (
             <motion.article
               key={item.image}
-              className="brand-gallery-card"
+              className={`brand-gallery-card brand-gallery-card--${index + 1}`}
               initial={{ opacity: 0, y: 24 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, delay: index * 0.08, ease: [0.22, 1, 0.36, 1] }}

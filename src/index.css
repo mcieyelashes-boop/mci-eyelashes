@@ -811,6 +811,9 @@ section { padding: 120px 0; }
 }
 
 .brand-gallery-card {
+  --gallery-y: 0%;
+  --gallery-scale: 1.045;
+  --gallery-hover-scale: 1.085;
   min-height: 0;
   aspect-ratio: 9 / 16;
   position: relative;
@@ -826,14 +829,20 @@ section { padding: 120px 0; }
   height: 100%;
   object-fit: cover;
   display: block;
-  transform: scale(1.01);
+  transform: translateY(var(--gallery-y)) scale(var(--gallery-scale));
   filter: brightness(.78) saturate(.82) contrast(.94);
   transition: transform .55s var(--ease-mci), filter .55s var(--ease-mci);
 }
 
+.brand-gallery-card--1 { --gallery-y: .6%; }
+.brand-gallery-card--2 { --gallery-y: .5%; }
+.brand-gallery-card--3 { --gallery-y: -5.2%; }
+.brand-gallery-card--4 { --gallery-y: 4.4%; }
+.brand-gallery-card--5 { --gallery-y: 4.9%; }
+
 .brand-gallery-card:hover img,
 .brand-gallery-card:focus-within img {
-  transform: scale(1.055);
+  transform: translateY(var(--gallery-y)) scale(var(--gallery-hover-scale));
   filter: brightness(1.08) saturate(1.2) contrast(1.08);
 }
 
