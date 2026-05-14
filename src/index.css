@@ -1375,6 +1375,10 @@ section { padding: 120px 0; }
   background: linear-gradient(to bottom, rgba(10,23,32,.9), rgba(10,23,32,.52) 65%, transparent);
 }
 
+.navbar--home-preview {
+  display: none;
+}
+
 .hero-section {
   min-height: clamp(760px, 100svh, 980px);
   padding: 92px 0 52px;
@@ -1404,6 +1408,22 @@ section { padding: 120px 0; }
   background:
     linear-gradient(90deg, rgba(5,12,18,.74) 0%, rgba(5,12,18,.56) 24%, rgba(5,12,18,.2) 42%, rgba(5,12,18,.03) 62%, rgba(5,12,18,0) 100%),
     linear-gradient(180deg, rgba(5,12,18,.18) 0%, rgba(5,12,18,0) 42%, rgba(5,12,18,.2) 100%);
+}
+
+.hero-section--image-only {
+  min-height: 100svh;
+  padding: 0;
+  background: #d6e6ea;
+}
+
+.hero-section--image-only::before {
+  background-size: contain;
+  background-position: center center;
+  filter: saturate(1.28) contrast(1.06) brightness(1.08);
+}
+
+.hero-section--image-only::after {
+  display: none;
 }
 
 .hero-layout {
