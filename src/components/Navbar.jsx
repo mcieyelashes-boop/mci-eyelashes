@@ -6,8 +6,6 @@ const links = [
   { label: 'Products',  href: '/#products' },
   { label: 'Gallery',   href: '/#gallery' },
   { label: 'Catalogue', href: '/catalogue', isRoute: true },
-  { label: 'About',     href: '/#about' },
-  { label: 'Blog',      href: '/blog', isRoute: true },
   { label: 'Contact',   href: '/#contact' },
 ]
 
@@ -15,7 +13,7 @@ export default function Navbar() {
   const [scrolled,   setScrolled]   = useState(false)
   const [menuOpen,   setMenuOpen]   = useState(false)
   const location = useLocation()
-  const isHomePreview = location.pathname === '/'
+  const isHome = location.pathname === '/'
 
   useEffect(() => {
     const onScroll = () => {
@@ -44,7 +42,7 @@ export default function Navbar() {
 
   return (
     <motion.header
-      className={`navbar ${scrolled ? 'scrolled' : ''} ${isHomePreview ? 'navbar--home-preview' : ''}`}
+      className={`navbar ${scrolled ? 'scrolled' : ''} ${isHome ? 'navbar--home' : ''}`}
       initial={{ opacity: 0, y: -16 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
