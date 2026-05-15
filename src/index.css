@@ -1915,17 +1915,17 @@ section { padding: 120px 0; }
 .prod-visual {
   padding: 32px;
   background:
-    linear-gradient(180deg, rgba(121,207,221,.16), rgba(255,255,255,.03)),
-    url('/gallery-1.png');
+    linear-gradient(180deg, rgba(121,207,221,.08), rgba(6,16,24,.18)),
+    url('/product-packaging-wide.png');
   background-size: cover;
-  background-position: center 18%;
+  background-position: 58% center;
 }
 
 .prod-visual::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(6,16,24,.18), rgba(6,16,24,.82));
+  background: linear-gradient(180deg, rgba(6,16,24,.04), rgba(6,16,24,.5));
   pointer-events: none;
 }
 
@@ -1933,8 +1933,8 @@ section { padding: 120px 0; }
   margin-top: auto;
   position: relative;
   z-index: 1;
-  background: rgba(6,16,24,.55);
-  backdrop-filter: blur(18px);
+  background: rgba(6,16,24,.42);
+  backdrop-filter: blur(12px);
 }
 
 .process-section {
@@ -2002,10 +2002,10 @@ section { padding: 120px 0; }
 .about-visual {
   aspect-ratio: 4 / 5;
   background:
-    linear-gradient(180deg, rgba(6,16,24,.12), rgba(6,16,24,.84)),
-    url('/hero-cinematic.png');
+    linear-gradient(180deg, rgba(6,16,24,.02), rgba(6,16,24,.78)),
+    url('/product-packaging-square.png');
   background-size: cover;
-  background-position: 58% center;
+  background-position: center center;
 }
 
 .about-certs {
@@ -2034,7 +2034,12 @@ section { padding: 120px 0; }
 .services-section {
   padding: clamp(92px, 10vw, 152px) 0;
   background:
+    linear-gradient(90deg, rgba(7,19,27,.92) 0%, rgba(7,19,27,.84) 46%, rgba(7,19,27,.42) 100%),
+    url('/product-packaging-wide.png'),
     linear-gradient(180deg, #07131b 0%, #091a23 58%, #07131b 100%);
+  background-size: cover, min(900px, 62vw) auto, cover;
+  background-position: center, right top, center;
+  background-repeat: no-repeat;
 }
 
 .services-header {
@@ -2101,8 +2106,13 @@ section { padding: 120px 0; }
 .cta-banner {
   padding: clamp(78px, 8vw, 128px) 0;
   background:
+    linear-gradient(135deg, rgba(7,19,27,.9), rgba(7,19,27,.48)),
+    url('/product-packaging-wide.png'),
     linear-gradient(135deg, rgba(121,207,221,.16), rgba(235,180,82,.08)),
     #081821;
+  background-size: cover, min(920px, 64vw) auto, cover, cover;
+  background-position: center, right center, center, center;
+  background-repeat: no-repeat;
 }
 
 .cta-banner-inner {
