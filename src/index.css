@@ -1039,7 +1039,43 @@ section { padding: 120px 0; }
 .footer { background: #070f16; border-top: 1px solid rgba(72,184,202,.08); }
 .footer-inner { max-width: 1280px; margin: 0 auto; padding: 60px 52px 44px; display: flex; gap: 64px; flex-wrap: wrap; }
 .footer-brand { min-width: 240px; max-width: 280px; }
-.footer-logo img { height: 48px; margin-bottom: 18px; display: block; }
+.footer-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+  text-decoration: none;
+}
+.footer-logo img {
+  height: 44px;
+  width: 68px;
+  display: block;
+  object-fit: contain;
+  filter: drop-shadow(0 0 12px rgba(212,168,67,.3));
+}
+.footer-logo-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  transform: translateY(1px);
+}
+.footer-logo-name {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  color: #f2d874;
+  font-size: 24px;
+  line-height: .86;
+  font-weight: 500;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+.footer-logo-sub {
+  color: rgba(247,231,164,.78);
+  font-size: 8px;
+  line-height: 1;
+  letter-spacing: .36em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
 .footer-tagline { font-size: 12px; color: var(--text-on-dark-muted); line-height: 1.85; margin-bottom: 14px; font-weight: 300; }
 .footer-contact { font-size: 11px; color: var(--text-on-dark-muted); display: flex; gap: 8px; flex-wrap: wrap; }
 .footer-contact a { color: var(--teal); }
@@ -1664,6 +1700,20 @@ section { padding: 120px 0; }
 
 .navbar--home .nav-inner {
   height: 72px;
+  position: relative;
+  justify-content: center;
+}
+
+.navbar--home:not(.scrolled) .nav-logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navbar--home:not(.scrolled) .nav-links {
+  position: absolute;
+  right: 52px;
+  gap: 34px;
 }
 
 .navbar--home .nav-logo img {
@@ -1703,6 +1753,15 @@ section { padding: 120px 0; }
   box-shadow: 0 1px 0 rgba(255,255,255,.08);
 }
 
+.navbar--home.scrolled .nav-inner {
+  justify-content: space-between;
+}
+
+.navbar--home.scrolled .nav-logo {
+  position: static;
+  transform: none;
+}
+
 .navbar--home.scrolled .nav-link {
   color: rgba(255,255,255,.66);
   text-shadow: none;
@@ -1714,6 +1773,17 @@ section { padding: 120px 0; }
 
 .navbar--home.scrolled .nav-logo-sub {
   color: rgba(247,231,164,.78);
+}
+
+@media (max-width: 768px) {
+  .navbar--home .nav-inner {
+    justify-content: space-between;
+  }
+
+  .navbar--home:not(.scrolled) .nav-logo {
+    position: static;
+    transform: none;
+  }
 }
 
 .hero-section {

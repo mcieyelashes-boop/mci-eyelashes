@@ -1,7 +1,5 @@
-import { Link } from 'react-router-dom'
-
 const footerLinks = {
-  Collections: ['Soft Touch Lashes', '3D Luxe Lashes', 'Faux Mink — Protein Silk', 'Classic Human Hair', 'Under Lashes'],
+  Collections: ['Soft Touch Lashes', '3D Luxe Lashes', 'Faux Mink - Protein Silk', 'Classic Human Hair', 'Under Lashes'],
   Company:     ['About Us', 'Manufacturing Process', 'Gallery', 'Testimonials'],
   Support:     ['Wholesale Inquiry', 'Sample Request', 'Shipping & Lead Times', 'FAQ'],
 }
@@ -12,14 +10,18 @@ export default function Footer() {
       <div className="footer-inner">
         <div className="footer-brand">
           <div className="footer-logo">
-            <img src="/logo-light.svg" alt="MCI Eyelashes" />
+            <img src="/brand-mark.svg" alt="" aria-hidden="true" />
+            <span className="footer-logo-text">
+              <span className="footer-logo-name">MCI</span>
+              <span className="footer-logo-sub">Eyelashes</span>
+            </span>
           </div>
           <p className="footer-tagline">
             Premium wholesale eyelash collections for salons, spas, and distributors worldwide. MOQ 100 pairs. Private label from 500 units.
           </p>
           <div className="footer-contact">
             <a href="mailto:denis@mci-eyelashes.com">denis@mci-eyelashes.com</a>
-            <span>·</span>
+            <span>-</span>
             <span>Purbalingga, Indonesia</span>
           </div>
         </div>
@@ -35,8 +37,8 @@ export default function Footer() {
         </div>
       </div>
       <div className="footer-bottom">
-        <span>© 2025 MCI Eyelashes · Purbalingga, Central Java, Indonesia</span>
-        <span>Worldwide wholesale · mci-eyelashes.com</span>
+        <span>Copyright 2025 MCI Eyelashes - Purbalingga, Central Java, Indonesia</span>
+        <span>Worldwide wholesale - mci-eyelashes.com</span>
       </div>
     </footer>
   )
