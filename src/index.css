@@ -807,13 +807,13 @@ section { padding: 120px 0; }
   z-index: 1;
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
-  grid-auto-rows: clamp(520px, 42vw, 720px);
+  grid-auto-rows: calc(100svh - 72px);
   align-items: stretch;
   gap: 0;
 }
 
 .brand-gallery-card {
-  --gallery-y: 0%;
+  --gallery-pos-y: 50%;
   --gallery-scale: 1.045;
   --gallery-hover-scale: 1.085;
   min-height: 0;
@@ -831,21 +831,22 @@ section { padding: 120px 0; }
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center var(--gallery-pos-y);
   display: block;
-  transform: translateY(var(--gallery-y)) scale(var(--gallery-scale));
+  transform: scale(var(--gallery-scale));
   filter: brightness(.78) saturate(.82) contrast(.94);
   transition: transform .55s var(--ease-mci), filter .55s var(--ease-mci);
 }
 
-.brand-gallery-card--1 { --gallery-y: .6%; }
-.brand-gallery-card--2 { --gallery-y: .5%; }
-.brand-gallery-card--3 { --gallery-y: -5.2%; }
-.brand-gallery-card--4 { --gallery-y: 4.4%; }
-.brand-gallery-card--5 { --gallery-y: 4.9%; }
+.brand-gallery-card--1 { --gallery-pos-y: 52%; }
+.brand-gallery-card--2 { --gallery-pos-y: 52%; }
+.brand-gallery-card--3 { --gallery-pos-y: 44%; }
+.brand-gallery-card--4 { --gallery-pos-y: 57%; }
+.brand-gallery-card--5 { --gallery-pos-y: 58%; }
 
 .brand-gallery-card:hover img,
 .brand-gallery-card:focus-within img {
-  transform: translateY(var(--gallery-y)) scale(var(--gallery-hover-scale));
+  transform: scale(var(--gallery-hover-scale));
   filter: brightness(1.08) saturate(1.2) contrast(1.08);
 }
 
@@ -2043,11 +2044,11 @@ section { padding: 120px 0; }
 .services-section {
   padding: clamp(92px, 10vw, 152px) 0;
   background:
-    linear-gradient(90deg, rgba(7,19,27,.92) 0%, rgba(7,19,27,.84) 46%, rgba(7,19,27,.42) 100%),
+    linear-gradient(90deg, rgba(7,19,27,.96) 0%, rgba(7,19,27,.88) 48%, rgba(7,19,27,.68) 100%),
     url('/product-packaging-wide.png'),
     linear-gradient(180deg, #07131b 0%, #091a23 58%, #07131b 100%);
-  background-size: cover, min(900px, 62vw) auto, cover;
-  background-position: center, right top, center;
+  background-size: cover, min(780px, 50vw) auto, cover;
+  background-position: center, calc(100% - 190px) 12%, center;
   background-repeat: no-repeat;
 }
 
@@ -2172,6 +2173,16 @@ section { padding: 120px 0; }
 }
 
 @media (max-width: 1024px) {
+  .services-section {
+    background:
+      linear-gradient(180deg, rgba(7,19,27,.98), rgba(7,19,27,.88)),
+      url('/product-packaging-wide.png'),
+      linear-gradient(180deg, #07131b 0%, #091a23 58%, #07131b 100%);
+    background-size: cover, min(680px, 86vw) auto, cover;
+    background-position: center, center 20px, center;
+    background-repeat: no-repeat;
+  }
+
   .process-header,
   .services-header {
     grid-template-columns: 1fr;

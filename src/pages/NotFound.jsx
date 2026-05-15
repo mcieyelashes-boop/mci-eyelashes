@@ -9,7 +9,7 @@ export default function NotFound() {
   useEffect(() => {
     document.title = '404 — Page Not Found | MCI Eyelashes'
     return () => {
-      document.title = 'MCI Eyelashes | Premium Wholesale Eyelash Manufacturer & OEM Supplier'
+      document.title = 'MCI Eyelashes'
     }
   }, [])
 

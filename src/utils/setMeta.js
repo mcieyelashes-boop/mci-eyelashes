@@ -22,7 +22,7 @@ export function setMeta({ title, description, canonical, ogTitle, ogDescription,
 
 // Default homepage values — used to restore on route leave
 export const HOME_META = {
-  title:               'MCI Eyelashes | Premium Wholesale Eyelash Manufacturer & OEM Supplier',
+  title:               'MCI Eyelashes',
   description:         'MCI Eyelashes is a premium wholesale eyelash manufacturer supplying mink, silk, synthetic, and volume lashes to salons, distributors, and beauty brands in 50+ countries. Private label & OEM services available.',
   canonical:           `${BASE_URL}/`,
   ogTitle:             'MCI Eyelashes | Premium Wholesale Eyelash Manufacturer & OEM Supplier',
