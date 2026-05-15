@@ -1,7 +1,6 @@
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 
-/* ── SVG icons — thin-line luxury aesthetic ── */
 const IconPrivateLabel = () => (
   <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
     <rect x="4" y="8" width="18" height="22" rx="1" stroke="currentColor" strokeWidth="1.2"/>
@@ -60,54 +59,12 @@ const IconExpress = () => (
 )
 
 const services = [
-  {
-    id: '01',
-    Icon: IconPrivateLabel,
-    name: 'Private Label',
-    tag: 'Most Popular',
-    desc: 'Your brand on our premium lashes. Custom labels, inserts, and packaging from 500 units. Full artwork support included.',
-    highlights: ['Custom branding', 'From 500 units', 'Artwork support'],
-  },
-  {
-    id: '02',
-    Icon: IconOEM,
-    name: 'OEM Manufacturing',
-    tag: 'Custom',
-    desc: 'Bring your own lash design or work with our team to engineer entirely new styles, materials, and specifications.',
-    highlights: ['Custom designs', 'Material sourcing', 'Prototype samples'],
-  },
-  {
-    id: '03',
-    Icon: IconBulk,
-    name: 'Bulk Wholesale',
-    tag: 'Ready to Ship',
-    desc: 'Order from 200+ in-stock styles across 5 collections. Mix and match. MOQ 100 pairs. Ships within 5–7 business days.',
-    highlights: ['200+ styles', 'MOQ 100 pairs', '5–7 day shipping'],
-  },
-  {
-    id: '04',
-    Icon: IconSample,
-    name: 'Sample Program',
-    tag: 'Try First',
-    desc: 'Test quality before committing to bulk. Curated sample kits available for new wholesale partners with fast turnaround.',
-    highlights: ['Quality assurance', 'Fast turnaround', 'All collections'],
-  },
-  {
-    id: '05',
-    Icon: IconPackaging,
-    name: 'Custom Packaging',
-    tag: 'Brand Ready',
-    desc: 'Full packaging design service — branded boxes, trays, inserts, and gift sets. Minimum runs from 1,000 units.',
-    highlights: ['Box & insert design', 'From 1,000 units', 'Gift set options'],
-  },
-  {
-    id: '06',
-    Icon: IconExpress,
-    name: 'Express Production',
-    tag: 'Fast Track',
-    desc: 'Rush orders fulfilled in 7–10 business days. Priority manufacturing slot with dedicated quality inspection.',
-    highlights: ['7–10 day lead time', 'Priority slot', 'QC inspection'],
-  },
+  { id: '01', Icon: IconPrivateLabel, name: 'Private Label', tag: 'Most Popular', desc: 'Your brand on our premium lashes. Custom labels, inserts, and packaging from 500 units. Full artwork support included.', highlights: ['Custom branding', 'From 500 units', 'Artwork support'] },
+  { id: '02', Icon: IconOEM, name: 'OEM Manufacturing', tag: 'Custom', desc: 'Bring your own lash design or work with our team to engineer entirely new styles, materials, and specifications.', highlights: ['Custom designs', 'Material sourcing', 'Prototype samples'] },
+  { id: '03', Icon: IconBulk, name: 'Bulk Wholesale', tag: 'Ready to Ship', desc: 'Order from 200+ in-stock styles across 5 collections. Mix and match. MOQ 100 pairs. Ships within 5-7 business days.', highlights: ['200+ styles', 'MOQ 100 pairs', '5-7 day shipping'] },
+  { id: '04', Icon: IconSample, name: 'Sample Program', tag: 'Try First', desc: 'Test quality before committing to bulk. Curated sample kits available for new wholesale partners with fast turnaround.', highlights: ['Quality assurance', 'Fast turnaround', 'All collections'] },
+  { id: '05', Icon: IconPackaging, name: 'Custom Packaging', tag: 'Brand Ready', desc: 'Full packaging design service for branded boxes, trays, inserts, and gift sets. Minimum runs from 1,000 units.', highlights: ['Box and insert design', 'From 1,000 units', 'Gift set options'] },
+  { id: '06', Icon: IconExpress, name: 'Express Production', tag: 'Fast Track', desc: 'Rush orders fulfilled in 7-10 business days. Priority manufacturing slot with dedicated quality inspection.', highlights: ['7-10 day lead time', 'Priority slot', 'QC inspection'] },
 ]
 
 export default function Services() {
@@ -117,12 +74,7 @@ export default function Services() {
   return (
     <section id="services" className="services-section" ref={ref}>
       <div className="container">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.7 }}
-          className="services-header"
-        >
+        <motion.div initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="services-header">
           <p className="section-label">Factory Capabilities</p>
           <h2 className="section-title">Everything Your <span className="accent-light">Lash Brand Needs</span></h2>
           <p className="section-subtitle">
@@ -130,42 +82,21 @@ export default function Services() {
           </p>
         </motion.div>
 
-        <motion.div
-          className="services-grid"
-          initial="hidden"
-          animate={inView ? 'show' : 'hidden'}
-          variants={{ hidden: {}, show: { transition: { staggerChildren: 0.08 } } }}
-        >
+        <motion.div className="services-grid" initial="hidden" animate={inView ? 'show' : 'hidden'} variants={{ hidden: {}, show: { transition: { staggerChildren: 0.08 } } }}>
           {services.map(s => (
-            <motion.div
-              key={s.name}
-              className="service-card"
-              variants={{ hidden: { opacity: 0, y: 24 }, show: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] } } }}
-            >
-              {/* Icon */}
-              <div className="service-icon-wrap">
-                <s.Icon />
-              </div>
-
-              {/* Header row */}
+            <motion.div key={s.name} className="service-card" variants={{ hidden: { opacity: 0, y: 24 }, show: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] } } }}>
+              <div className="service-icon-wrap"><s.Icon /></div>
               <div className="service-header-row">
                 <span className="service-id">{s.id}</span>
                 <span className="service-tag">{s.tag}</span>
               </div>
-
               <h3 className="service-name">{s.name}</h3>
               <p className="service-desc">{s.desc}</p>
-
               <ul className="service-highlights">
-                {s.highlights.map(h => (
-                  <li key={h}>
-                    <span className="service-highlight-dot">—</span>{h}
-                  </li>
-                ))}
+                {s.highlights.map(h => <li key={h}><span className="service-highlight-dot">-</span>{h}</li>)}
               </ul>
-
               <div className="service-footer">
-                <a href="#contact" className="service-cta">Get Quote →</a>
+                <a href="#contact" className="service-cta">Get Quote</a>
               </div>
             </motion.div>
           ))}

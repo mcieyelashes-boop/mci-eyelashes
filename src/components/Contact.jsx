@@ -2,17 +2,9 @@ import { useRef, useState } from 'react'
 import { motion, useInView } from 'framer-motion'
 import emailjs from '@emailjs/browser'
 
-// ─── EmailJS config ───────────────────────────────────────────────
-// 1. Create free account at https://www.emailjs.com
-// 2. Add a Gmail/SMTP service  →  copy the Service ID
-// 3. Create email template     →  copy the Template ID
-// 4. Go to Account → API Keys  →  copy the Public Key
-// Then set these three env vars in your Vercel project settings
-// (or in a local .env file for development):
 const EJS_SERVICE  = import.meta.env.VITE_EMAILJS_SERVICE_ID  || ''
 const EJS_TEMPLATE = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || ''
 const EJS_KEY      = import.meta.env.VITE_EMAILJS_PUBLIC_KEY  || ''
-// ─────────────────────────────────────────────────────────────────
 
 const tiers = [
   { moq: '100',    label: 'Starter',     desc: 'Perfect for independent salons. Mix & match across all collections.' },
@@ -22,15 +14,15 @@ const tiers = [
 
 const details = [
   { label: 'Email',     value: 'denis@mci-eyelashes.com', href: 'mailto:denis@mci-eyelashes.com' },
-  { label: 'WhatsApp',  value: '+62 · Chat Now',          href: 'https://wa.me/6285743531798' },
+  { label: 'WhatsApp',  value: '+62 - Chat Now',          href: 'https://wa.me/6285743531798' },
   { label: 'Location',  value: 'Purbalingga, Indonesia' },
   { label: 'Response',  value: 'Within 24 hours' },
 ]
 
 const VOLUMES = [
-  '100–300 pairs',
-  '300–500 pairs',
-  '500–1,000 pairs',
+  '100-300 pairs',
+  '300-500 pairs',
+  '500-1,000 pairs',
   '1,000+ pairs',
 ]
 
@@ -52,26 +44,23 @@ export default function Contact() {
     setError('')
     setLoading(true)
 
-    // Build template params that match your EmailJS template variables
     const templateParams = {
       from_name:    `${form.firstName} ${form.lastName}`.trim(),
       from_email:   form.email,
-      company:      form.company || '—',
+      company:      form.company || '-',
       country:      form.country,
-      volume:       form.volume  || '—',
-      message:      form.message || '—',
+      volume:       form.volume  || '-',
+      message:      form.message || '-',
       reply_to:     form.email,
       to_name:      'Denis',
     }
 
     try {
       if (EJS_SERVICE && EJS_TEMPLATE && EJS_KEY) {
-        // Real send via EmailJS
         await emailjs.send(EJS_SERVICE, EJS_TEMPLATE, templateParams, EJS_KEY)
       } else {
-        // Dev fallback: just simulate delay (remove once env vars are set)
         await new Promise(r => setTimeout(r, 900))
-        console.warn('[Contact] EmailJS env vars not set — using simulated send. See Contact.jsx for setup instructions.')
+        console.warn('[Contact] EmailJS env vars not set; using simulated send.')
       }
       setLoading(false)
       setSent(true)
@@ -93,29 +82,16 @@ export default function Contact() {
       <div className="contact-glow" />
       <div className="contact-glow-2" />
       <div className="container">
-        <motion.div
-          style={{ marginBottom: '52px' }}
-          initial={{ opacity: 0, y: 20 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.7 }}
-        >
+        <motion.div style={{ marginBottom: '52px' }} initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }}>
           <p className="section-label">Get In Touch</p>
           <h2 className="section-title">Start Your <span className="accent-light">Wholesale</span> Partnership</h2>
           <p className="section-subtitle">
-            Our team responds within 24 hours with a full product catalog, wholesale
-            price sheet, and MOQ details tailored to your requirements.
+            Our team responds within 24 hours with a full product catalog, wholesale price sheet, and MOQ details tailored to your requirements.
           </p>
         </motion.div>
 
         <div className="contact-grid">
-
-          {/* ── Left column ── */}
-          <motion.div
-            initial={{ opacity: 0, x: -24 }}
-            animate={inView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.8, delay: 0.1 }}
-          >
-            {/* Contact details */}
+          <motion.div initial={{ opacity: 0, x: -24 }} animate={inView ? { opacity: 1, x: 0 } : {}} transition={{ duration: 0.8, delay: 0.1 }}>
             <div className="contact-details">
               {details.map(d => (
                 <div key={d.label} className="contact-detail-item">
@@ -128,7 +104,6 @@ export default function Contact() {
               ))}
             </div>
 
-            {/* MOQ tiers */}
             <div className="contact-tiers">
               {tiers.map(t => (
                 <div key={t.label} className={`tier-card${t.featured ? ' tier-featured' : ''}`}>
@@ -139,7 +114,6 @@ export default function Contact() {
               ))}
             </div>
 
-            {/* Certifications strip */}
             <div className="contact-certs">
               {['ISO 9001', 'CE Certified', 'FDA Compliant', 'Cruelty Free'].map(c => (
                 <span key={c} className="contact-cert-pill">{c}</span>
@@ -147,36 +121,19 @@ export default function Contact() {
             </div>
           </motion.div>
 
-          {/* ── Form column ── */}
-          <motion.div
-            initial={{ opacity: 0, x: 24 }}
-            animate={inView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.8, delay: 0.15 }}
-          >
+          <motion.div initial={{ opacity: 0, x: 24 }} animate={inView ? { opacity: 1, x: 0 } : {}} transition={{ duration: 0.8, delay: 0.15 }}>
             <div className="contact-form">
-
               {sent ? (
-                /* ── Success state ── */
-                <motion.div
-                  className="form-success-state"
-                  initial={{ opacity: 0, scale: 0.94 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5 }}
-                >
-                  <div className="form-success-check">✓</div>
+                <motion.div className="form-success-state" initial={{ opacity: 0, scale: 0.94 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }}>
+                  <div className="form-success-check">OK</div>
                   <h3 className="form-success-title">Inquiry Sent</h3>
                   <p className="form-success-desc">
-                    Thank you! Our team will respond within 24 hours with your
-                    personalized wholesale package.
+                    Thank you. Our team will respond within 24 hours with your personalized wholesale package.
                   </p>
                   <div className="form-success-email">denis@mci-eyelashes.com</div>
-                  <button className="btn-outline form-reset-btn" onClick={handleReset}>
-                    Send Another Inquiry
-                  </button>
+                  <button className="btn-outline form-reset-btn" onClick={handleReset}>Send Another Inquiry</button>
                 </motion.div>
-
               ) : (
-                /* ── Form ── */
                 <form ref={formEl} onSubmit={handleSubmit} noValidate>
                   <div className="form-row">
                     <div className="form-group">
@@ -215,33 +172,24 @@ export default function Contact() {
 
                   <div className="form-group">
                     <label>Message</label>
-                    <textarea rows={4} value={form.message} onChange={update('message')} placeholder="Tell us about your wholesale needs — product types, target market, or any custom requirements..." />
+                    <textarea rows={4} value={form.message} onChange={update('message')} placeholder="Tell us about your wholesale needs: product types, target market, or any custom requirements..." />
                   </div>
 
                   {error && (
-                    <motion.p
-                      className="form-error"
-                      initial={{ opacity: 0, y: -6 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      style={{ color: '#f87171', fontSize: '13px', marginBottom: '12px' }}
-                    >
+                    <motion.p className="form-error" initial={{ opacity: 0, y: -6 }} animate={{ opacity: 1, y: 0 }} style={{ color: '#f87171', fontSize: '13px', marginBottom: '12px' }}>
                       {error}
                     </motion.p>
                   )}
 
                   <button type="submit" className="btn-submit" disabled={loading}>
-                    {loading
-                      ? <span className="btn-submit-spinner" />
-                      : 'Send Inquiry →'
-                    }
+                    {loading ? <span className="btn-submit-spinner" /> : 'Send Inquiry'}
                   </button>
 
                   <p className="form-privacy">
-                    🔒 Your information is kept private and never shared with third parties.
+                    Your information is kept private and never shared with third parties.
                   </p>
                 </form>
               )}
-
             </div>
           </motion.div>
         </div>
