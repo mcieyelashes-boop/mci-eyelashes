@@ -3,11 +3,10 @@ import { Link, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 
 const links = [
-  { label: 'Products',       href: '/#products' },
-  { label: 'Gallery',        href: '/#gallery' },
-  { label: 'Catalogue',      href: '/catalogue',   isRoute: true },
-  { label: 'Virality Score', href: '/ad-virality', isRoute: true },
-  { label: 'Contact',        href: '/#contact' },
+  { label: 'Products',  href: '/#products' },
+  { label: 'Gallery',   href: '/#gallery' },
+  { label: 'Catalogue', href: '/catalogue', isRoute: true },
+  { label: 'Contact',   href: '/#contact' },
 ]
 
 export default function Navbar() {

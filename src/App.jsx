@@ -14,12 +14,11 @@ import CTABanner from './components/CTABanner'
 import WhatsAppButton from './components/WhatsAppButton'
 
 // Lazy-loaded pages
-const Catalogue       = lazy(() => import('./pages/Catalogue'))
-const BlogList        = lazy(() => import('./pages/BlogList'))
-const BlogPost        = lazy(() => import('./pages/BlogPost'))
-const FAQ             = lazy(() => import('./components/FAQ'))
-const AdViralityScore = lazy(() => import('./pages/AdViralityScore'))
-const NotFound        = lazy(() => import('./pages/NotFound'))
+const Catalogue  = lazy(() => import('./pages/Catalogue'))
+const BlogList   = lazy(() => import('./pages/BlogList'))
+const BlogPost   = lazy(() => import('./pages/BlogPost'))
+const FAQ        = lazy(() => import('./components/FAQ'))
+const NotFound   = lazy(() => import('./pages/NotFound'))
 
 function Home() {
   return (
@@ -48,7 +47,6 @@ export default function App() {
           <Route path="/catalogue" element={<Catalogue />} />
           <Route path="/blog" element={<BlogList />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
-          <Route path="/ad-virality" element={<AdViralityScore />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>
