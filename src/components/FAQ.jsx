@@ -111,8 +111,8 @@ export default function FAQ() {
     <section id="faq" style={{ background: 'var(--navy-mid)' }} ref={ref}>
       <div className="container">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
+          initial={false}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           style={{ marginBottom: '72px' }}
         >
@@ -137,20 +137,18 @@ export default function FAQ() {
           </div>
         </motion.div>
 
-        {inView && (
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0 80px' }} className="faq-grid">
-            <div>
-              {faqs.slice(0, half).map((faq, i) => (
-                <FAQItem key={i} faq={faq} index={i} />
-              ))}
-            </div>
-            <div>
-              {faqs.slice(half).map((faq, i) => (
-                <FAQItem key={i} faq={faq} index={i + half} />
-              ))}
-            </div>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0 80px' }} className="faq-grid">
+          <div>
+            {faqs.slice(0, half).map((faq, i) => (
+              <FAQItem key={i} faq={faq} index={i} />
+            ))}
           </div>
-        )}
+          <div>
+            {faqs.slice(half).map((faq, i) => (
+              <FAQItem key={i} faq={faq} index={i + half} />
+            ))}
+          </div>
+        </div>
       </div>
 
       <style>{`

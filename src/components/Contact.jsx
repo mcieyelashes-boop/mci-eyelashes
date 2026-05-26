@@ -82,7 +82,7 @@ export default function Contact() {
       <div className="contact-glow" />
       <div className="contact-glow-2" />
       <div className="container">
-        <motion.div style={{ marginBottom: '52px' }} initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }}>
+        <motion.div style={{ marginBottom: '52px' }} initial={false} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
           <p className="section-label">Get In Touch</p>
           <h2 className="section-title">Start Your <span className="accent-light">Wholesale</span> Partnership</h2>
           <p className="section-subtitle">
@@ -91,7 +91,7 @@ export default function Contact() {
         </motion.div>
 
         <div className="contact-grid">
-          <motion.div initial={{ opacity: 0, x: -24 }} animate={inView ? { opacity: 1, x: 0 } : {}} transition={{ duration: 0.8, delay: 0.1 }}>
+          <motion.div initial={false} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.1 }}>
             <div className="contact-details">
               {details.map(d => (
                 <div key={d.label} className="contact-detail-item">
@@ -121,7 +121,7 @@ export default function Contact() {
             </div>
           </motion.div>
 
-          <motion.div initial={{ opacity: 0, x: 24 }} animate={inView ? { opacity: 1, x: 0 } : {}} transition={{ duration: 0.8, delay: 0.15 }}>
+          <motion.div initial={false} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.15 }}>
             <div className="contact-form">
               {sent ? (
                 <motion.div className="form-success-state" initial={{ opacity: 0, scale: 0.94 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }}>

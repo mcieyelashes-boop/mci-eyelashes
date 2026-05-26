@@ -2539,6 +2539,68 @@ section { padding: 120px 0; }
   display: none;
 }
 
+@media (max-width: 768px) {
+  .hero-section--image-only {
+    min-height: 82svh;
+    background: #dceff3;
+  }
+
+  .hero-section--image-only::before {
+    background-size: cover;
+    background-position: 55% center;
+  }
+
+  .hero-section--image-only::after {
+    display: none;
+  }
+
+  .brand-gallery-section {
+    padding: 0 0 54px;
+  }
+
+  .brand-gallery-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(500px, 124vw);
+    gap: 0;
+  }
+
+  .brand-gallery-card {
+    min-height: 0;
+  }
+
+  .brand-gallery-card img {
+    object-fit: cover;
+  }
+
+  .brand-gallery-card--1,
+  .brand-gallery-card--2,
+  .brand-gallery-card--3,
+  .brand-gallery-card--4,
+  .brand-gallery-card--5 {
+    --gallery-pos-y: 50%;
+  }
+
+  .process-section,
+  .about-section,
+  .services-section,
+  .testimonials-section,
+  .cta-banner,
+  .contact-section {
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section--image-only {
+    min-height: 78svh;
+  }
+
+  .brand-gallery-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: clamp(440px, 122vw, 560px);
+  }
+}
+
 .hero-layout {
   position: relative;
   z-index: 5;
@@ -2718,5 +2780,152 @@ section { padding: 120px 0; }
     min-height: 278px;
   }
 
+}
+
+/* Final mobile composition overrides */
+@media (max-width: 768px) {
+  .navbar,
+  .navbar--home {
+    background: linear-gradient(180deg, rgba(219,239,244,.88) 0%, rgba(219,239,244,.54) 70%, rgba(219,239,244,0) 100%);
+    box-shadow: none;
+  }
+
+  .navbar.scrolled,
+  .navbar--home.scrolled {
+    background: rgba(8, 19, 27, .88);
+    backdrop-filter: blur(18px);
+  }
+
+  .nav-inner,
+  .navbar--home .nav-inner,
+  .navbar--home.scrolled .nav-inner {
+    height: 64px;
+    padding-left: 14px;
+    padding-right: 14px;
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .nav-logo,
+  .navbar--home:not(.scrolled) .nav-logo,
+  .navbar--home.scrolled .nav-logo {
+    position: static;
+    transform: none;
+    gap: 8px;
+    min-width: 0;
+  }
+
+  .nav-logo img,
+  .navbar--home .nav-logo img {
+    width: 48px;
+    height: 32px;
+  }
+
+  .nav-logo-name,
+  .navbar--home .nav-logo-name {
+    font-size: 18px;
+    letter-spacing: .12em;
+  }
+
+  .nav-logo-sub,
+  .navbar--home .nav-logo-sub {
+    font-size: 6px;
+    letter-spacing: .28em;
+  }
+
+  .nav-hamburger {
+    width: 42px;
+    height: 42px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(6,24,31,.18);
+    border-radius: 999px;
+    background: rgba(255,255,255,.2);
+  }
+
+  .navbar.scrolled .nav-hamburger,
+  .navbar--home.scrolled .nav-hamburger {
+    border-color: rgba(255,255,255,.14);
+    background: rgba(255,255,255,.04);
+  }
+
+  .navbar--home:not(.scrolled) .ham-line,
+  .navbar:not(.scrolled) .ham-line {
+    background: #08202a;
+  }
+
+  .navbar.scrolled .ham-line,
+  .navbar--home.scrolled .ham-line {
+    background: #fff;
+  }
+
+  .nav-mobile-menu {
+    margin: 0 12px;
+    border: 1px solid rgba(255,255,255,.1);
+    border-radius: 18px;
+    background: rgba(8,19,27,.94);
+  }
+
+  .hero-section--image-only,
+  .hero-section.hero-section--image-only {
+    min-height: 78svh;
+    padding: 0;
+    background: #dceff3;
+  }
+
+  .hero-section--image-only::before,
+  .hero-section.hero-section--image-only::before {
+    background: url('/hero-cinematic.png');
+    background-size: cover;
+    background-position: 55% center;
+    filter: saturate(1.3) contrast(1.06) brightness(1.08);
+  }
+
+  .hero-section--image-only::after,
+  .hero-section.hero-section--image-only::after {
+    display: none;
+  }
+
+  .prod-header .section-title {
+    max-width: 330px;
+    font-size: clamp(30px, 8.2vw, 38px);
+    line-height: 1.18;
+    margin-bottom: 12px;
+  }
+
+  .prod-header {
+    display: block;
+    grid-template-columns: 1fr;
+    margin-bottom: 30px;
+  }
+
+  .prod-header .section-label {
+    margin-bottom: 18px;
+  }
+
+  .prod-header .section-title .accent-light {
+    display: inline;
+  }
+
+  .prod-subtitle {
+    max-width: 340px;
+  }
+
+  .brand-gallery-section {
+    padding: 0 0 54px;
+  }
+
+  .brand-gallery-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(500px, 124vw);
+    gap: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-gallery-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: clamp(440px, 122vw, 560px);
+  }
 }
 

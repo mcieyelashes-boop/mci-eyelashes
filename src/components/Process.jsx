@@ -34,8 +34,8 @@ export default function Process() {
         <motion.div
           ref={ref}
           className="process-header"
-          initial={{ opacity: 0, y: 30 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
+          initial={false}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
         >
           <p className="section-label light">Production Flow</p>
@@ -52,8 +52,8 @@ export default function Process() {
             <motion.article
               key={step.number}
               className="process-card"
-              initial={{ opacity: 0, y: 28 }}
-              animate={inView ? { opacity: 1, y: 0 } : {}}
+              initial={false}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.12 + i * 0.1, ease: [0.22, 1, 0.36, 1] }}
             >
               <span className="process-number">{step.number}</span>
@@ -65,8 +65,8 @@ export default function Process() {
 
         <motion.div
           className="process-banner"
-          initial={{ opacity: 0, y: 24 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
+          initial={false}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.55, ease: [0.22, 1, 0.36, 1] }}
         >
           <div>

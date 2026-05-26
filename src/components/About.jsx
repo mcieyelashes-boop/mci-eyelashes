@@ -37,7 +37,7 @@ export default function About() {
       <div className="about-glow" style={{ width: '380px', height: '380px', bottom: '-140px', left: '-120px' }} />
       <div className="container">
         <div className="about-grid">
-          <motion.div initial={{ opacity: 0, x: -40 }} animate={inView ? { opacity: 1, x: 0 } : {}} transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }} style={{ position: 'relative' }}>
+          <motion.div initial={false} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }} style={{ position: 'relative' }}>
             <div className="about-visual">
               <div className="about-center">
                 <motion.p className="about-mci-bg" animate={{ opacity: [0.06, 0.12, 0.06] }} transition={{ duration: 4, repeat: Infinity }}>MCI</motion.p>
@@ -51,14 +51,14 @@ export default function About() {
             </div>
           </motion.div>
 
-          <motion.div initial={{ opacity: 0, x: 40 }} animate={inView ? { opacity: 1, x: 0 } : {}} transition={{ duration: 0.9, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}>
+          <motion.div initial={false} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.9, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}>
             <p className="section-label light">Manufacturing Identity</p>
             <h2 className="section-title">Beauty Supply With <span className="accent-light">Future Discipline</span></h2>
             <p className="section-subtitle" style={{ marginBottom: '16px' }}>MCI Eyelashes helps salons, distributors, and founders build lash products that feel premium from first sample to final packaging.</p>
             <p className="section-subtitle" style={{ marginBottom: '44px' }}>Today we support 500+ beauty partners across 50+ countries with repeatable quality, OEM flexibility, and factory-direct pricing.</p>
             <div className="values-grid">
               {values.map(({ title, desc }, i) => (
-                <motion.div key={title} className="value-item" initial={{ opacity: 0, y: 16 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6, delay: 0.3 + i * 0.1 }}>
+                <motion.div key={title} className="value-item" initial={false} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.3 + i * 0.1 }}>
                   <p className="value-title">{title}</p>
                   <p className="value-desc">{desc}</p>
                 </motion.div>

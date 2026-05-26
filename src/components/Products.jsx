@@ -23,7 +23,7 @@ export default function Products() {
   return (
     <section id="products" className="prod-section" style={{ padding: '120px 0' }}>
       <div className="prod-inner">
-        <motion.div className="prod-header" initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} ref={ref}>
+        <motion.div className="prod-header" initial={false} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} ref={ref}>
           <p className="section-label">Product Architecture</p>
           <h2 className="section-title">Lash Systems <span className="accent-light">For Tomorrow's Brands</span></h2>
           <p className="prod-subtitle">A focused wholesale matrix for salons, distributors, and private-label founders. Choose the finish, define the packaging, approve samples, then scale through one factory-direct partner.</p>

@@ -74,7 +74,7 @@ export default function Services() {
   return (
     <section id="services" className="services-section" ref={ref}>
       <div className="container">
-        <motion.div initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }} className="services-header">
+        <motion.div initial={false} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} className="services-header">
           <p className="section-label">Factory Capabilities</p>
           <h2 className="section-title">Everything Your <span className="accent-light">Lash Brand Needs</span></h2>
           <p className="section-subtitle">
@@ -82,7 +82,7 @@ export default function Services() {
           </p>
         </motion.div>
 
-        <motion.div className="services-grid" initial="hidden" animate={inView ? 'show' : 'hidden'} variants={{ hidden: {}, show: { transition: { staggerChildren: 0.08 } } }}>
+        <motion.div className="services-grid" initial={false} animate="show" variants={{ hidden: {}, show: { transition: { staggerChildren: 0.08 } } }}>
           {services.map(s => (
             <motion.div key={s.name} className="service-card" variants={{ hidden: { opacity: 0, y: 24 }, show: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] } } }}>
               <div className="service-icon-wrap"><s.Icon /></div>

@@ -15,20 +15,20 @@ export default function CTABanner() {
       <div className="cta-banner-glow cta-banner-glow--2" />
 
       <div className="container">
-        <motion.div className="cta-banner-inner" initial={{ opacity: 0, y: 28 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-60px' }} transition={{ duration: 0.85, ease: [0.22, 1, 0.36, 1] }}>
+        <motion.div className="cta-banner-inner" initial={false} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.85, ease: [0.22, 1, 0.36, 1] }}>
           <div className="cta-banner-left">
-            <motion.p className="section-label light" initial={{ opacity: 0, x: -16 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.1 }}>
+            <motion.p className="section-label light" initial={false} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.6, delay: 0.1 }}>
               Ready to Start?
             </motion.p>
-            <motion.h2 className="cta-banner-title" initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.2 }}>
+            <motion.h2 className="cta-banner-title" initial={false} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.2 }}>
               Get Your Wholesale<br />
               <em>Price Sheet Today</em>
             </motion.h2>
-            <motion.p className="cta-banner-sub" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.35 }}>
+            <motion.p className="cta-banner-sub" initial={false} animate={{ opacity: 1 }} transition={{ duration: 0.7, delay: 0.35 }}>
               Our team responds within 24 hours with pricing, MOQ details, and a full product catalog tailored to your market and order volume.
             </motion.p>
 
-            <motion.div className="cta-trust-grid" initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.45 }}>
+            <motion.div className="cta-trust-grid" initial={false} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.45 }}>
               {TRUST.map(({ icon, text }) => (
                 <div key={text} className="cta-trust-pill">
                   <span className="cta-trust-icon">{icon}</span>
@@ -38,7 +38,7 @@ export default function CTABanner() {
             </motion.div>
           </div>
 
-          <motion.div className="cta-banner-actions" initial={{ opacity: 0, x: 24 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.75, delay: 0.3 }}>
+          <motion.div className="cta-banner-actions" initial={false} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.75, delay: 0.3 }}>
             <div className="cta-stat-block">
               <div className="cta-stat">
                 <span className="cta-stat-num">24h</span>

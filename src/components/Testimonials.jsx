@@ -39,7 +39,7 @@ export default function Testimonials() {
   return (
     <section ref={ref} className="testimonials-section">
       <div className="container">
-        <motion.div initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7 }}>
+        <motion.div initial={false} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
           <p className="section-label light">What Buyers Say</p>
           <h2 className="section-title">Trusted <span className="accent-light">Worldwide</span></h2>
           <p className="section-subtitle" style={{ marginBottom: 0 }}>From independent studios to multi-location salon chains, real results from real wholesale partners.</p>
