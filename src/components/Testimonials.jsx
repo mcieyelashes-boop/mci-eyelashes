@@ -35,7 +35,7 @@ function TestimonialCard({ item }) {
 
 export default function Testimonials() {
   const ref = useRef(null)
-  const inView = useInView(ref, { once: true, margin: '-80px' })
+  useInView(ref, { once: true, margin: '-80px' })
   return (
     <section ref={ref} className="testimonials-section">
       <div className="container">

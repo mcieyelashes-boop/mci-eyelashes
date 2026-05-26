@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 
 const links = [
@@ -13,6 +13,7 @@ export default function Navbar() {
   const [scrolled,   setScrolled]   = useState(false)
   const [menuOpen,   setMenuOpen]   = useState(false)
   const location = useLocation()
+  const navigate = useNavigate()
   const isHome = location.pathname === '/'
 
   useEffect(() => {
@@ -24,19 +25,32 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
-  useEffect(() => { setMenuOpen(false) }, [location])
-
-  const handleNav = (href) => {
-    setMenuOpen(false)
-    if (href.startsWith('/#')) {
-      const id = href.slice(2)
+  useEffect(() => {
+    if (location.pathname === '/' && location.hash) {
+      const id = location.hash.slice(1)
       setTimeout(() => {
         const el = document.getElementById(id)
         if (el) {
           const top = el.getBoundingClientRect().top + window.scrollY - 70
           window.scrollTo({ top, behavior: 'smooth' })
         }
-      }, 100)
+      }, 80)
+    }
+  }, [location.pathname, location.hash])
+
+  const handleNav = (href) => {
+    setMenuOpen(false)
+    if (href.startsWith('/#')) {
+      const id = href.slice(2)
+      if (location.pathname !== '/') {
+        navigate(`/#${id}`)
+        return
+      }
+      const el = document.getElementById(id)
+      if (el) {
+        const top = el.getBoundingClientRect().top + window.scrollY - 70
+        window.scrollTo({ top, behavior: 'smooth' })
+      }
     }
   }
 
@@ -61,7 +75,7 @@ export default function Navbar() {
         <nav className="nav-links">
           {links.map(link => (
             link.isRoute
-              ? <Link key={link.label} to={link.href} className="nav-link">{link.label}</Link>
+              ? <Link key={link.label} to={link.href} className="nav-link" onClick={() => setMenuOpen(false)}>{link.label}</Link>
               : <button key={link.label} className="nav-link" onClick={() => handleNav(link.href)}>{link.label}</button>
           ))}
         </nav>
@@ -88,7 +102,7 @@ export default function Navbar() {
           >
             {links.map(link => (
               link.isRoute
-                ? <Link key={link.label} to={link.href} className="nav-mobile-link">{link.label}</Link>
+                ? <Link key={link.label} to={link.href} className="nav-mobile-link" onClick={() => setMenuOpen(false)}>{link.label}</Link>
                 : <button key={link.label} className="nav-mobile-link" onClick={() => handleNav(link.href)}>{link.label}</button>
             ))}
             <button className="nav-mobile-cta" onClick={() => handleNav('/#contact')}>Request Wholesale</button>

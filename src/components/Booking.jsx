@@ -56,7 +56,7 @@ export default function Booking() {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '30px' }}>
               {[
                 { label: 'Phone', value: '+1 (555) 123-4567' },
-                { label: 'Email', value: 'hello@mcieyelashes.com' },
+                { label: 'Email', value: 'denis@mci-eyelashes.com' },
                 { label: 'Location', value: '123 Beauty Lane, Suite 10\nNew York, NY 10001' },
                 { label: 'Hours', value: 'Mon – Sat: 9am – 7pm\nSun: 10am – 5pm' },
               ].map(({ label, value }) => (

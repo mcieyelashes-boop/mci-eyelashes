@@ -31,7 +31,7 @@ const EMPTY_FORM = { firstName: '', lastName: '', email: '', company: '', countr
 export default function Contact() {
   const ref    = useRef(null)
   const formEl = useRef(null)
-  const inView = useInView(ref, { once: true, margin: '-80px' })
+  useInView(ref, { once: true, margin: '-80px' })
   const [sent, setSent]       = useState(false)
   const [loading, setLoading] = useState(false)
   const [error, setError]     = useState('')
@@ -42,6 +42,17 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault()
     setError('')
+
+    if (!e.currentTarget.checkValidity()) {
+      e.currentTarget.reportValidity()
+      return
+    }
+
+    if (!EJS_SERVICE || !EJS_TEMPLATE || !EJS_KEY) {
+      setError('Online form is not configured yet. Please email us directly at denis@mci-eyelashes.com')
+      return
+    }
+
     setLoading(true)
 
     const templateParams = {
@@ -56,12 +67,7 @@ export default function Contact() {
     }
 
     try {
-      if (EJS_SERVICE && EJS_TEMPLATE && EJS_KEY) {
-        await emailjs.send(EJS_SERVICE, EJS_TEMPLATE, templateParams, EJS_KEY)
-      } else {
-        await new Promise(r => setTimeout(r, 900))
-        console.warn('[Contact] EmailJS env vars not set; using simulated send.')
-      }
+      await emailjs.send(EJS_SERVICE, EJS_TEMPLATE, templateParams, EJS_KEY)
       setLoading(false)
       setSent(true)
     } catch (err) {
@@ -134,7 +140,7 @@ export default function Contact() {
                   <button className="btn-outline form-reset-btn" onClick={handleReset}>Send Another Inquiry</button>
                 </motion.div>
               ) : (
-                <form ref={formEl} onSubmit={handleSubmit} noValidate>
+                <form ref={formEl} onSubmit={handleSubmit}>
                   <div className="form-row">
                     <div className="form-group">
                       <label>First Name <span className="form-required">*</span></label>

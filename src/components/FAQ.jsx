@@ -104,7 +104,7 @@ function FAQItem({ faq, index }) {
 
 export default function FAQ() {
   const ref = useRef(null)
-  const inView = useInView(ref, { once: true, margin: '-80px' })
+  useInView(ref, { once: true, margin: '-80px' })
   const half = Math.ceil(faqs.length / 2)
 
   return (

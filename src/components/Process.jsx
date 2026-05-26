@@ -26,7 +26,7 @@ const steps = [
 
 export default function Process() {
   const ref = useRef(null)
-  const inView = useInView(ref, { once: true, margin: '-80px' })
+  useInView(ref, { once: true, margin: '-80px' })
 
   return (
     <section id="process" className="process-section">

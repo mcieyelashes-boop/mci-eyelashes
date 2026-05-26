@@ -69,7 +69,7 @@ const services = [
 
 export default function Services() {
   const ref = useRef(null)
-  const inView = useInView(ref, { once: true, margin: '-80px' })
+  useInView(ref, { once: true, margin: '-80px' })
 
   return (
     <section id="services" className="services-section" ref={ref}>

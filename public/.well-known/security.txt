@@ -1,0 +1,4 @@
+Contact: mailto:denis@mci-eyelashes.com
+Preferred-Languages: en, id
+Canonical: https://www.mci-eyelashes.com/.well-known/security.txt
+Policy: https://www.mci-eyelashes.com/

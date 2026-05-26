@@ -271,7 +271,7 @@ export default function BlogPost() {
                       <span style={{ fontSize: '9px', color: 'var(--teal-dark)', letterSpacing: '1.5px', textTransform: 'uppercase', display: 'block', marginBottom: '6px' }}>
                         {other.category}
                       </span>
-                      <span style={{ fontSize: '13px', color: 'var(--text-dark)', lineHeight: 1.4, fontFamily: 'Cormorant Garamond, serif', fontSize: '16px' }}>
+                      <span style={{ color: 'var(--text-dark)', lineHeight: 1.4, fontFamily: 'Cormorant Garamond, serif', fontSize: '16px' }}>
                         {other.title}
                       </span>
                     </Link>

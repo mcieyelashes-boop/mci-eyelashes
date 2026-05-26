@@ -74,7 +74,7 @@ Private label clients who add custom packaging typically retail at 20–40% abov
         heading: 'How to Order Wholesale from MCI Eyelashes',
         body: `MCI Eyelashes supplies mink and silk lashes to salons, distributors, and beauty brands worldwide. Our wholesale process:
 
-1. **Submit an inquiry** via our contact form or email hello@mci-eyelashes.com
+1. **Submit an inquiry** via our contact form or email denis@mci-eyelashes.com
 2. **Receive a catalog and pricing sheet** within 24 hours
 3. **Request samples** — we ship sample kits to qualified buyers
 4. **Place your first order** — MOQ starts at 50 units per style
@@ -94,7 +94,7 @@ We ship to 50+ countries with full tracking and insured international shipping. 
       },
       {
         q: 'Can I get a sample before placing a wholesale order?',
-        a: 'Yes. MCI Eyelashes offers sample kits for qualified wholesale buyers. Contact us at hello@mci-eyelashes.com with your business details to request a sample kit.',
+        a: 'Yes. MCI Eyelashes offers sample kits for qualified wholesale buyers. Contact us at denis@mci-eyelashes.com with your business details to request a sample kit.',
       },
     ],
   },
@@ -146,7 +146,7 @@ Most successful lash businesses combine models 1 and 2 — starting with wholesa
 - **Private label capability:** Can they add your branding?
 - **International shipping:** Full tracking and insurance for overseas orders
 
-MCI Eyelashes supplies 500+ beauty businesses worldwide with mink, silk, synthetic, and volume lash lines. MOQ starts at 30 units. Contact hello@mci-eyelashes.com for a wholesale catalog. For a detailed supplier evaluation checklist, read [how to choose an eyelash manufacturer](/blog/how-to-choose-eyelash-manufacturer).`,
+MCI Eyelashes supplies 500+ beauty businesses worldwide with mink, silk, synthetic, and volume lash lines. MOQ starts at 30 units. Contact denis@mci-eyelashes.com for a wholesale catalog. For a detailed supplier evaluation checklist, read [how to choose an eyelash manufacturer](/blog/how-to-choose-eyelash-manufacturer).`,
       },
       {
         heading: 'Step 3: Set Your Pricing Strategy',
@@ -275,7 +275,7 @@ For most emerging lash brands, **private label** is the right starting point. OE
 - Packaging complexity affects price (a simple kraft box costs less than a magnetic rigid box with foil stamp)
 - Custom development fees may apply for fully bespoke styles
 
-Contact hello@mci-eyelashes.com for a private label pricing sheet tailored to your requirements.`,
+Contact denis@mci-eyelashes.com for a private label pricing sheet tailored to your requirements.`,
       },
       {
         heading: 'How Long Does Private Label Take?',
@@ -296,7 +296,7 @@ Rush production is available for qualifying orders. Contact us for availability.
     faq: [
       {
         q: 'What is the minimum order for private label eyelashes at MCI?',
-        a: 'MOQ for private label eyelashes at MCI Eyelashes is negotiable depending on the style and packaging complexity. Standard private label orders typically start at 100–200 units per style. Contact us at hello@mci-eyelashes.com for a custom quote.',
+        a: 'MOQ for private label eyelashes at MCI Eyelashes is negotiable depending on the style and packaging complexity. Standard private label orders typically start at 100–200 units per style. Contact us at denis@mci-eyelashes.com for a custom quote.',
       },
       {
         q: 'Can I see a sample before placing a private label order?',
@@ -497,7 +497,7 @@ Volume lash trays typically contain 200–500 fans depending on curl and length.
       },
       {
         q: 'What is the MOQ for volume lashes at MCI Eyelashes?',
-        a: 'The minimum order quantity for 3D/5D volume lashes at MCI Eyelashes starts at 30 units per style — the lowest MOQ in our product range. Contact hello@mci-eyelashes.com for current pricing and available styles.',
+        a: 'The minimum order quantity for 3D/5D volume lashes at MCI Eyelashes starts at 30 units per style — the lowest MOQ in our product range. Contact denis@mci-eyelashes.com for current pricing and available styles.',
       },
     ],
   },
@@ -589,7 +589,7 @@ Do they provide commercial invoices, packing lists, and origin certificates? The
 - **Private label**: Full custom packaging and branding available — see our [private label OEM guide](/blog/private-label-eyelashes-oem-guide) for details
 - **References**: 500+ active wholesale partners globally
 
-Contact hello@mci-eyelashes.com to start a conversation.`,
+Contact denis@mci-eyelashes.com to start a conversation.`,
       },
     ],
     faq: [
@@ -683,7 +683,7 @@ Clear plastic cases. Good for salon professional lines where product visibility 
 4. **Bulk production** — Once approved, packaging is produced with your full order
 5. **Quality inspection** — Every order passes a 3-step quality check before shipping
 
-Contact hello@mci-eyelashes.com with your brand brief to get started.`,
+Contact denis@mci-eyelashes.com with your brand brief to get started.`,
       },
     ],
     faq: [

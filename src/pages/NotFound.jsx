@@ -7,9 +7,13 @@ export default function NotFound() {
 
   // Update document title
   useEffect(() => {
-    document.title = '404 — Page Not Found | MCI Eyelashes'
+    const robots = document.querySelector('meta[name="robots"]')
+    const previousRobots = robots?.getAttribute('content')
+    document.title = '404 - Page Not Found | MCI Eyelashes'
+    robots?.setAttribute('content', 'noindex, nofollow')
     return () => {
       document.title = 'MCI Eyelashes'
+      if (robots && previousRobots) robots.setAttribute('content', previousRobots)
     }
   }, [])
 

@@ -30,7 +30,7 @@ const certifications = ['ISO 9001', 'CE Certified', 'Cruelty-Free', 'FDA Complia
 
 export default function About() {
   const ref = useRef(null)
-  const inView = useInView(ref, { once: true, margin: '-80px' })
+  useInView(ref, { once: true, margin: '-80px' })
   return (
     <section id="about" className="about-section" ref={ref}>
       <div className="about-glow" style={{ width: '600px', height: '600px', top: '-200px', right: '-180px' }} />
