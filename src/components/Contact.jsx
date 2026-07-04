@@ -6,10 +6,31 @@ const EJS_SERVICE  = import.meta.env.VITE_EMAILJS_SERVICE_ID  || ''
 const EJS_TEMPLATE = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || ''
 const EJS_KEY      = import.meta.env.VITE_EMAILJS_PUBLIC_KEY  || ''
 
+// ─── Order tiers — only the Starter row is fully confirmed ───────────────────
+// CONFIRMED:  100 pairs/style MOQ · free sample (buyer pays shipping) · 5-day lead time
+// UNCONFIRMED (pending factory reply — DO NOT display specific claims):
+//   500+  tier: tiered lead time, volume pricing details
+//   1000+ tier: tiered lead time, account manager, packaging terms
+// ─────────────────────────────────────────────────────────────────────────────
 const tiers = [
-  { moq: '100',    label: 'Starter',     desc: 'Perfect for independent salons. Mix & match across all collections.' },
-  { moq: '500+',   label: 'Wholesale',   desc: 'Volume pricing, priority processing, and private label eligibility.', featured: true },
-  { moq: '1,000+', label: 'Distributor', desc: 'Dedicated account manager, custom packaging, container rates.' },
+  {
+    moq:   '100',
+    label: 'Starter',
+    desc:  'MOQ 100 pairs per style. Free sample for catalog styles — you cover shipping. 5-day production lead time.',
+  },
+  {
+    moq:     '500+',
+    label:   'Wholesale',
+    // UNCONFIRMED: volume pricing details, priority processing, private label eligibility threshold
+    desc:    'Larger volume orders — contact us for lead time and pricing details.',
+    featured: true,
+  },
+  {
+    moq:   '1,000+',
+    label: 'Distributor',
+    // UNCONFIRMED: dedicated account manager, custom packaging terms, container rates
+    desc:  'High-volume and distributor enquiries — reach out directly to discuss terms.',
+  },
 ]
 
 const details = [

@@ -1,38 +1,38 @@
 import { useRef, useState } from 'react'
 import { motion, useInView, AnimatePresence } from 'framer-motion'
 
+// ─── CONFIRMED offer data only — do NOT add unconfirmed figures ──────────────
+// MOQ:          100 pairs per style (mix & match within an order allowed)
+// Sample:       FREE for existing catalog styles — buyer pays shipping
+// Lead time:    5 working days for 100-pair orders
+//
+// UNCONFIRMED — pending factory confirmation (DO NOT DISPLAY):
+// • Lead time for 500+ pair orders — tiered, awaiting confirmation
+// • Lead time for 1,000+ pair orders — awaiting confirmation
+// • Custom sample policy (from buyer's reference photo): likely paid,
+//   refundable on first order — awaiting confirmation
+// • Custom / private-label packaging lead time — awaiting confirmation
+// ─────────────────────────────────────────────────────────────────────────────
 const faqs = [
   {
-    q: 'What is the minimum order quantity (MOQ) for wholesale eyelashes?',
-    a: 'MOQ starts at 30 units for 3D/5D volume lashes, 50 units for mink, silk, and colored lashes, and 100 units for synthetic lashes. OEM and private label MOQ is negotiable based on packaging complexity.',
+    q: 'What is your minimum order quantity?',
+    a: '100 pairs per style. You can mix and match styles within the same order to reach the minimum.',
   },
   {
-    q: 'Does MCI Eyelashes offer private label and OEM services?',
-    a: 'Yes. We provide full white-label manufacturing including custom box design, logo printing, lash tray customization, and dedicated account management. Lead time is typically 6–10 weeks from first contact to delivery.',
+    q: 'Can I get a sample before placing a full order?',
+    a: 'Yes — samples of our existing catalog styles are free. You cover the shipping cost. Reach out via WhatsApp or email to arrange yours.',
   },
   {
-    q: 'Do you ship internationally?',
-    a: 'Yes. MCI Eyelashes ships to 50+ countries worldwide with full tracking and insured international shipping. Standard wholesale orders ship within 3–7 business days of production completion.',
+    q: 'How long does production take?',
+    a: 'For orders of 100 pairs: 5 working days. For larger orders, production time varies — contact us for an exact timeline before you order.',
   },
   {
-    q: 'Are your lashes cruelty-free and vegan?',
-    a: 'Our silk, synthetic, and 3D/5D volume lash lines are 100% vegan and cruelty-free. Mink lashes are sourced through cruelty-free harvesting methods. ISO 9001, CE, and FDA-compliant documentation available for all product lines.',
+    q: 'Are you a factory or a reseller?',
+    a: 'Direct factory, based in Purbalingga, Indonesia. We welcome live video calls to our production floor — just ask.',
   },
   {
-    q: 'Can I request samples before placing a wholesale order?',
-    a: 'Yes. We offer sample kits for qualified wholesale buyers. Contact denis@mci-eyelashes.com with your business details. Sample kits are available for all product lines and are credited toward your first full order.',
-  },
-  {
-    q: 'What certifications do your products carry?',
-    a: 'All MCI Eyelashes products are ISO 9001 certified, CE certified, and FDA compliant. PETA-approved cruelty-free certifications are available for applicable product lines. Test reports and MSDS documentation provided upon request.',
-  },
-  {
-    q: 'How do I get wholesale pricing?',
-    a: 'Submit an inquiry via the contact form or email denis@mci-eyelashes.com. Our team will respond within 24 hours with a full product catalog, wholesale price sheet, and MOQ details tailored to your requirements.',
-  },
-  {
-    q: 'What is the lead time for custom OEM orders?',
-    a: 'Custom OEM and private label orders typically take 6–10 weeks: 1–2 days for inquiry review, 7–14 days for sample production, 7–14 days for packaging design approval, 14–21 days for production, and 5–14 days for shipping depending on destination.',
+    q: 'Do you offer private label or custom packaging?',
+    a: 'Yes — we can customise curl, length, material, and packaging. Send us a WhatsApp message or email to discuss your requirements.',
   },
 ]
 
