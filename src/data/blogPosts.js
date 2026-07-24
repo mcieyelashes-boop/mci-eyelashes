@@ -304,7 +304,7 @@ Rush production is available for qualifying orders. Contact us for availability.
       },
       {
         q: 'Do you provide FDA or CE documentation for private label products?',
-        a: 'Yes. MCI Eyelashes provides ISO 9001, CE, and FDA-compliant documentation for all products. We can supply test reports, MSDS sheets, and origin certificates to meet import requirements in your market.',
+        a: 'Import paperwork requirements vary by market. Tell us which country you are importing into and we will confirm exactly what documentation we can provide for your order before you commit. Contact denis@mci-eyelashes.com with your destination market.',
       },
     ],
   },
@@ -391,7 +391,7 @@ A gross margin above 65% is excellent for beauty retail. Below 50% indicates eit
 - **No clear lead time** — Standard production should be 14–21 days
 - **No physical address or verifiable factory** — Request factory photos or a video call
 
-MCI Eyelashes is ISO 9001 certified, CE certified, and FDA compliant. We welcome factory visits and video tours for qualifying clients.`,
+MCI Eyelashes is a direct factory in Purbalingga, Indonesia. We welcome live video tours of our production floor — just ask before you order.`,
       },
     ],
     faq: [
@@ -582,7 +582,6 @@ Do they provide commercial invoices, packing lists, and origin certificates? The
         body: `MCI Eyelashes is a factory-direct manufacturer based in Purbalingga, Indonesia.
 
 - **Factory tours**: Available via live video call — just ask, and we will walk you through the production floor
-- **Certifications**: ISO 9001, CE certified, FDA compliant, PETA approved
 - **Samples**: Free on existing catalog styles; you cover the shipping only
 - **Test orders**: MOQ is 100 pairs per style, and you can mix and match styles to reach it
 - **Lead times**: 5 working days production on 100-pair orders

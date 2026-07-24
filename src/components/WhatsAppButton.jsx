@@ -16,7 +16,7 @@ export default function WhatsAppButton() {
   const msg  = encodeURIComponent(
     "Hello MCI Eyelashes! I'm interested in wholesale eyelash products. Could you send me your catalog and pricing?"
   )
-  const href = `https://wa.me/6285743531798?text=${msg}`
+  const href = `https://wa.me/6281232378987?text=${msg}`
 
   return (
     <motion.div

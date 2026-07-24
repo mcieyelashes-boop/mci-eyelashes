@@ -28,7 +28,11 @@ const values = [
   { title: 'Low-Risk Start', desc: 'Begin at 100 pairs per style, mix and match styles, then scale as your orders grow.' },
   { title: 'Open Door', desc: 'Ask for a live video call and we will show you the floor while your order is being made.' },
 ]
-const certifications = ['ISO 9001', 'CE Certified', 'Cruelty-Free', 'FDA Compliant', 'PETA Approved']
+// Certification claims (ISO 9001, CE, FDA, PETA) removed pending proof of the
+// actual certificates. Do not re-add any of them until the owner supplies
+// scanned documents — false compliance claims carry legal risk in export
+// markets, unlike ordinary marketing copy.
+const certifications = []
 
 export default function About() {
   const ref = useRef(null)
@@ -46,10 +50,12 @@ export default function About() {
                 <div style={{ width: '56px', height: '1px', background: 'rgba(72,184,202,.18)' }} />
                 <p style={{ fontSize: '10px', letterSpacing: '5px', color: 'rgba(72,184,202,.28)', textTransform: 'uppercase', fontFamily: "'Montserrat',sans-serif" }}>Est. 2015</p>
               </div>
-              <div className="about-certs">
-                <p style={{ fontSize: '9px', letterSpacing: '2px', color: '#48B8CA', textTransform: 'uppercase', marginBottom: '8px', opacity: .65, fontFamily: "'Montserrat',sans-serif" }}>Certifications</p>
-                <div>{certifications.map(c => <span key={c} className="cert-tag">{c}</span>)}</div>
-              </div>
+              {certifications.length > 0 && (
+                <div className="about-certs">
+                  <p style={{ fontSize: '9px', letterSpacing: '2px', color: '#48B8CA', textTransform: 'uppercase', marginBottom: '8px', opacity: .65, fontFamily: "'Montserrat',sans-serif" }}>Certifications</p>
+                  <div>{certifications.map(c => <span key={c} className="cert-tag">{c}</span>)}</div>
+                </div>
+              )}
             </div>
           </motion.div>
 

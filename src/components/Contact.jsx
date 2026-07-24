@@ -35,7 +35,7 @@ const tiers = [
 
 const details = [
   { label: 'Email',     value: 'denis@mci-eyelashes.com', href: 'mailto:denis@mci-eyelashes.com' },
-  { label: 'WhatsApp',  value: '+62 - Chat Now',          href: 'https://wa.me/6285743531798' },
+  { label: 'WhatsApp',  value: '+62 812-3237-8987',       href: 'https://wa.me/6281232378987' },
   { label: 'Location',  value: 'Purbalingga, Indonesia' },
   { label: 'Response',  value: 'Within 24 hours' },
 ]
@@ -142,7 +142,9 @@ export default function Contact() {
             </div>
 
             <div className="contact-certs">
-              {['ISO 9001', 'CE Certified', 'FDA Compliant', 'Cruelty Free'].map(c => (
+              {/* Certification pills (ISO 9001, CE, FDA) removed pending proof of the
+                  actual certificates — replaced with owner-confirmed terms. */}
+              {['Factory Direct', 'MOQ 100 Pairs', 'Free Samples', '5-Day Production'].map(c => (
                 <span key={c} className="contact-cert-pill">{c}</span>
               ))}
             </div>
