@@ -161,10 +161,14 @@ const collections = [
   },
 ]
 
+// Only the Starter row reflects owner-confirmed terms (MOQ 100 pairs per style,
+// free catalog samples, 5 working days production). Discount percentages,
+// payment terms, and shipping perks for the higher tiers are UNCONFIRMED —
+// do not display specific figures until the owner confirms them.
 const tiers = [
-  { moq: '100+', label: 'Starter', discount: 'Standard', perks: ['Mix & match styles', 'All 5 collections', 'Standard packaging', '7–14 day shipping'] },
-  { moq: '500+', label: 'Growth', discount: '10% off', perks: ['Private label option', 'Custom packaging', 'Priority processing', 'Free samples'], featured: true },
-  { moq: '1,000+', label: 'Scale', discount: '20% off', perks: ['Full brand identity', 'Custom design', 'Net payment terms', 'Free shipping routes'] },
+  { moq: '100+', label: 'Starter', discount: 'Standard', perks: ['Mix & match styles', 'Free catalog samples', '5-day production', 'Private label available'] },
+  { moq: '500+', label: 'Growth', discount: 'Ask us', perks: ['Larger volume runs', 'Private label option', 'Custom packaging', 'Contact us for terms'], featured: true },
+  { moq: '1,000+', label: 'Scale', discount: 'Ask us', perks: ['High-volume production', 'Full brand identity', 'Custom design', 'Contact us for terms'] },
 ]
 
 // ─── COMPONENTS ──────────────────────────────────────────────────────────────

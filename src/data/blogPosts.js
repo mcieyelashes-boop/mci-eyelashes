@@ -20,7 +20,7 @@ export const blogPosts = [
 - Reusable 20–25 times with proper care
 - Available in natural, wispy, and dramatic styles
 
-**Wholesale MOQ at MCI:** 50 units per style`,
+**Wholesale MOQ at MCI:** 100 pairs per style`,
       },
       {
         heading: 'What Are Silk Lashes?',
@@ -33,7 +33,7 @@ export const blogPosts = [
 - Vegan and cruelty-free
 - Reusable 15–20 times
 
-**Wholesale MOQ at MCI:** 50 units per style`,
+**Wholesale MOQ at MCI:** 100 pairs per style`,
       },
       {
         heading: 'Mink vs Silk: Side-by-Side Comparison',
@@ -45,19 +45,19 @@ export const blogPosts = [
 | Vegan | No (cruelty-free sourced) | Yes |
 | Price point | Premium | Mid-range |
 | Best for | Natural look clients | Glam, editorial, volume |
-| MOQ (MCI) | 50 units | 50 units |`,
+| MOQ (MCI) | 100 pairs | 100 pairs |`,
       },
       {
         heading: 'Which Sells Better — Mink or Silk?',
-        body: `Based on data from 500+ salon and beauty brand partners across 50 countries, MCI Eyelashes reports that:
+        body: `Both sell well. Which one leads depends far more on your market than on the product itself.
 
-- **Mink lashes** account for approximately 45% of wholesale orders by value
-- **Silk lashes** account for approximately 35% of wholesale orders by value
-- The remaining 20% is split between 3D/5D volume and specialty styles
+- **Mink lashes** tend to lead where clients pay a premium for a soft, natural look
+- **Silk lashes** hold up well where buyers want a lighter everyday finish at a lower price point
+- **3D/5D volume and specialty styles** fill out the rest of most catalogs
 
 **Regional differences matter.** In North America and Europe, mink lashes tend to command higher retail prices and stronger margins. In Southeast Asia and the Middle East, silk and synthetic volume lashes see higher turnover due to preference for dramatic styles.
 
-**Recommendation:** Stock both. A healthy wholesale order typically includes 60% mink, 30% silk, and 10% specialty.`,
+**Recommendation:** Stock both. Most buyers start with a mink-heavy mix, then rebalance after the first reorder cycle shows what their own market actually wants.`,
       },
       {
         heading: 'Profit Margins: What to Expect',
@@ -77,10 +77,10 @@ Private label clients who add custom packaging typically retail at 20–40% abov
 1. **Submit an inquiry** via our contact form or email denis@mci-eyelashes.com
 2. **Receive a catalog and pricing sheet** within 24 hours
 3. **Request samples** — we ship sample kits to qualified buyers
-4. **Place your first order** — MOQ starts at 50 units per style
+4. **Place your first order** — MOQ is 100 pairs per style, mix and match allowed
 5. **Receive your order** — standard lead time 3–7 business days
 
-We ship to 50+ countries with full tracking and insured international shipping. For a full breakdown of costs, see our [wholesale eyelash pricing guide](/blog/wholesale-eyelash-pricing-guide). If you're considering custom branding, read our [private label OEM guide](/blog/private-label-eyelashes-oem-guide).`,
+We ship internationally with full tracking. For a full breakdown of costs, see our [wholesale eyelash pricing guide](/blog/wholesale-eyelash-pricing-guide). If you're considering custom branding, read our [private label OEM guide](/blog/private-label-eyelashes-oem-guide).`,
       },
     ],
     faq: [
@@ -90,7 +90,7 @@ We ship to 50+ countries with full tracking and insured international shipping. 
       },
       {
         q: 'What is the minimum order for wholesale mink lashes?',
-        a: 'The minimum order quantity (MOQ) for wholesale mink lashes at MCI Eyelashes is 50 units per style. For mixed orders across multiple styles, the 50-unit MOQ applies per style.',
+        a: 'The minimum order quantity (MOQ) for wholesale mink lashes at MCI Eyelashes is 100 pairs per style. You can mix and match styles within the same order to reach the minimum.',
       },
       {
         q: 'Can I get a sample before placing a wholesale order?',
@@ -146,7 +146,7 @@ Most successful lash businesses combine models 1 and 2 — starting with wholesa
 - **Private label capability:** Can they add your branding?
 - **International shipping:** Full tracking and insurance for overseas orders
 
-MCI Eyelashes supplies 500+ beauty businesses worldwide with mink, silk, synthetic, and volume lash lines. MOQ starts at 30 units. Contact denis@mci-eyelashes.com for a wholesale catalog. For a detailed supplier evaluation checklist, read [how to choose an eyelash manufacturer](/blog/how-to-choose-eyelash-manufacturer).`,
+MCI Eyelashes supplies salons, distributors, and beauty brands with mink, silk, synthetic, and volume lash lines. MOQ is 100 pairs per style. Contact denis@mci-eyelashes.com for a wholesale catalog. For a detailed supplier evaluation checklist, read [how to choose an eyelash manufacturer](/blog/how-to-choose-eyelash-manufacturer).`,
       },
       {
         heading: 'Step 3: Set Your Pricing Strategy',
@@ -296,7 +296,7 @@ Rush production is available for qualifying orders. Contact us for availability.
     faq: [
       {
         q: 'What is the minimum order for private label eyelashes at MCI?',
-        a: 'MOQ for private label eyelashes at MCI Eyelashes is negotiable depending on the style and packaging complexity. Standard private label orders typically start at 100–200 units per style. Contact us at denis@mci-eyelashes.com for a custom quote.',
+        a: 'MOQ at MCI Eyelashes is 100 pairs per style. Packaging complexity can affect lead time on private label runs, so contact us at denis@mci-eyelashes.com for a custom quote and an exact timeline before you order.',
       },
       {
         q: 'Can I see a sample before placing a private label order?',
@@ -330,7 +330,7 @@ Rush production is available for qualifying orders. Contact us for availability.
 | 3D/5D Volume | $3.00–$8.00 | $20–$55 | 72–85% |
 | Colored Lashes | $2.00–$5.00 | $15–$35 | 68–82% |
 
-*Prices based on standard MOQ orders. Volume discounts available at 500+ units per style.*`,
+*Prices based on standard MOQ orders. Contact us for volume pricing on larger runs.*`,
       },
       {
         heading: 'What Affects Wholesale Eyelash Prices?',
@@ -362,7 +362,7 @@ Factory-direct manufacturers like MCI Eyelashes offer significantly lower prices
 
 **Recommendation:** Source factory-direct whenever possible. Trading companies add a 20–40% margin on top of factory prices.
 
-MCI Eyelashes is a factory-direct manufacturer. MOQ starts at 30 units for 3D/5D volume and 50 units for mink, silk, and synthetic lines.`,
+MCI Eyelashes is a factory-direct manufacturer in Purbalingga, Indonesia. MOQ is 100 pairs per style across all lines, and you can mix and match styles to reach it.`,
       },
       {
         heading: 'How to Calculate Your Retail Margin',
@@ -371,7 +371,7 @@ MCI Eyelashes is a factory-direct manufacturer. MOQ starts at 30 units for 3D/5D
 **Gross Margin % = (Retail Price − Wholesale Cost) ÷ Retail Price × 100**
 
 Example:
-- Wholesale cost: $3.50/pair (mink, MOQ 50 units)
+- Wholesale cost: $3.50/pair (mink, MOQ 100 pairs)
 - Packaging: $0.60/unit
 - Shipping (pro-rated): $0.20/unit
 - Total landed cost: $4.30/unit
@@ -440,18 +440,18 @@ Unlike classic lash extensions (one extension per natural lash), volume fans cre
 | Weight per fan | Light | Ultra-light |
 | Application difficulty | Intermediate | Advanced |
 | Best for | Everyday wear, beginners | Mega volume, editorial |
-| Wholesale MOQ (MCI) | 30 units | 30 units |
+| Wholesale MOQ (MCI) | 100 pairs | 100 pairs |
 
 **Key insight:** Despite having more lashes per fan, a 5D fan can weigh the same as a 3D fan because the individual extensions are thinner. Well-made 5D fans should weigh no more than a single classic extension.`,
       },
       {
         heading: 'What Sells Better — 3D or 5D?',
-        body: `Based on MCI Eyelashes wholesale order data across 500+ global partners:
+        body: `Demand splits by market, but the broad pattern across the industry looks like this:
 
-- **3D volume** represents approximately 40% of volume lash orders — preferred by salons serving clients who want a natural-to-moderate volume look
-- **4D volume** represents approximately 30% — the sweet spot for most clients
-- **5D volume** represents approximately 20% — popular in markets where dramatic looks are trending (Middle East, Southeast Asia, editorial markets)
-- **2D and mixed fans** account for the remaining 10%
+- **3D volume** is the workhorse — preferred by salons serving clients who want a natural-to-moderate volume look
+- **4D volume** is the sweet spot for most clients
+- **5D volume** is strongest in markets where dramatic looks are trending (Middle East, Southeast Asia, editorial markets)
+- **2D and mixed fans** round out the range
 
 **Recommendation for new salon buyers:** Start with 3D and 4D. Add 5D once you have confirmed demand from your client base.`,
       },
@@ -497,7 +497,7 @@ Volume lash trays typically contain 200–500 fans depending on curl and length.
       },
       {
         q: 'What is the MOQ for volume lashes at MCI Eyelashes?',
-        a: 'The minimum order quantity for 3D/5D volume lashes at MCI Eyelashes starts at 30 units per style — the lowest MOQ in our product range. Contact denis@mci-eyelashes.com for current pricing and available styles.',
+        a: 'The minimum order quantity at MCI Eyelashes is 100 pairs per style, and you can mix and match styles within the same order to reach it. Contact denis@mci-eyelashes.com for current pricing and available styles.',
       },
     ],
   },
@@ -579,15 +579,14 @@ Do they provide commercial invoices, packing lists, and origin certificates? The
       },
       {
         heading: 'Why MCI Eyelashes Passes All 10 Questions',
-        body: `MCI Eyelashes is a factory-direct manufacturer with over 10 years of experience supplying 500+ beauty businesses across 50+ countries.
+        body: `MCI Eyelashes is a factory-direct manufacturer based in Purbalingga, Indonesia.
 
-- **Factory tours**: Available via video call or in-person for qualifying clients
+- **Factory tours**: Available via live video call — just ask, and we will walk you through the production floor
 - **Certifications**: ISO 9001, CE certified, FDA compliant, PETA approved
-- **Capacity**: Scalable from boutique orders to container-load volumes
-- **Lead times**: 3–7 business days standard, 6–10 weeks OEM
-- **Test orders**: MOQ starts at 30 units — no large commitment required
-- **Private label**: Full custom packaging and branding available — see our [private label OEM guide](/blog/private-label-eyelashes-oem-guide) for details
-- **References**: 500+ active wholesale partners globally
+- **Samples**: Free on existing catalog styles; you cover the shipping only
+- **Test orders**: MOQ is 100 pairs per style, and you can mix and match styles to reach it
+- **Lead times**: 5 working days production on 100-pair orders
+- **Private label**: Custom curl, length, material, and packaging — see our [private label OEM guide](/blog/private-label-eyelashes-oem-guide) for details
 
 Contact denis@mci-eyelashes.com to start a conversation.`,
       },
@@ -603,7 +602,7 @@ Contact denis@mci-eyelashes.com to start a conversation.`,
       },
       {
         q: 'Is it safe to order eyelash products from China?',
-        a: 'Yes, when working with a verified, certified manufacturer. The majority of the world\'s wholesale eyelash supply comes from Chinese factories. The key is supplier verification — certifications, factory visits, sample testing, and references. MCI Eyelashes ships to 50+ countries including the US, EU, and Australia with full compliance documentation.',
+        a: 'Yes, when working with a verified manufacturer. Much of the world\'s wholesale eyelash supply comes from Asian factories. The key is supplier verification — certifications, factory visits, sample testing, and references. MCI Eyelashes is based in Purbalingga, Indonesia, and we welcome a live video call to our production floor before you order.',
       },
     ],
   },
@@ -751,9 +750,9 @@ Budget: $300–$800 for a half-day professional shoot covers all three. The ROI 
         heading: 'Mistake 5: Ordering Too Much Stock Too Early',
         body: `Over-ordering inventory before validating demand is a capital trap. Many new lash businesses order 500–1,000 units of each style based on what they think will sell — and end up with dead stock.
 
-**The fix:** Start with the minimum order quantity (MOQ) across a wider range of styles. At 50 units per style across 6 styles, you have a diverse range without locking up too much capital. Reorder the winners; discontinue the slow movers.
+**The fix:** Start at the minimum order quantity and spread it across a wider range of styles rather than going deep on one. Reorder the winners; discontinue the slow movers.
 
-MCI Eyelashes MOQ starts at 30–50 units specifically to allow buyers to test their market before scaling.`,
+MCI Eyelashes sets MOQ at 100 pairs per style and lets you mix and match styles within one order, so you can test several styles at once before scaling.`,
       },
       {
         heading: 'Mistake 6: No Repeat Purchase Strategy',
@@ -912,7 +911,7 @@ MCI manufactures and supplies lash extension trays, strip lashes, and accessorie
     faq: [
       {
         q: 'What is the minimum order for wholesale eyelash extension supplies?',
-        a: 'MOQs vary by supplier. Direct manufacturers like MCI Eyelashes typically require 50–100 units per style for standard wholesale, with higher MOQs for private label (100–200 units). Distributors often have lower MOQs of 10–20 units but at slightly higher per-unit prices.',
+        a: 'MOQs vary by supplier. At MCI Eyelashes the MOQ is 100 pairs per style, and you can mix and match styles to reach it. Distributors often advertise lower MOQs of 10–20 units, but at higher per-unit prices because they buy from a factory first.',
       },
       {
         q: 'How do I find a reliable wholesale lash extension supplier?',
@@ -1048,7 +1047,7 @@ Colors print differently than they appear on screen. Request a printed mockup be
     faq: [
       {
         q: 'What is the minimum order for custom eyelash packaging?',
-        a: 'Most manufacturers require a minimum of 100–200 units for custom-printed packaging. Digital printing allows MOQs as low as 50 units but at a higher per-unit cost. At MCI Eyelashes, we offer custom packaging from 100 units with full branding.',
+        a: 'Most manufacturers require a minimum of 100–200 units for custom-printed packaging. Digital printing allows lower MOQs but at a higher per-unit cost. At MCI Eyelashes, custom packaging is available from our standard MOQ of 100 pairs per style with full branding.',
       },
       {
         q: 'How long does custom eyelash packaging take to produce?',
@@ -1290,11 +1289,10 @@ Market saturation is increasing. Over 2,000 new lash brands launched on Shopify 
 - Direct manufacturer pricing — no distributor markup
 
 **Our wholesale program includes:**
-- Free samples for qualified buyers
-- Dedicated account manager
-- Flexible MOQ starting at 50 units
-- 15–21 day standard production lead time
-- Air freight to your door within 10–15 days of dispatch
+- Free samples on existing catalog styles — you cover shipping only
+- MOQ of 100 pairs per style, with mix and match across styles
+- 5 working days production on 100-pair orders
+- A live video call to our production floor whenever you want one
 
 To request a product catalog, samples, or a wholesale pricing quote, visit our Contact page.`,
       },

@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { motion } from 'framer-motion'
+import { HOME_META } from '../utils/setMeta'
 
 export default function NotFound() {
   const { pathname } = useLocation()
@@ -12,7 +13,7 @@ export default function NotFound() {
     document.title = '404 - Page Not Found | MCI Eyelashes'
     robots?.setAttribute('content', 'noindex, nofollow')
     return () => {
-      document.title = 'MCI Eyelashes'
+      document.title = HOME_META.title
       if (robots && previousRobots) robots.setAttribute('content', previousRobots)
     }
   }, [])

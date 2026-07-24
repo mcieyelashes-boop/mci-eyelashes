@@ -1,11 +1,14 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 
+// Owner-confirmed claims only. "Ships to 50+ countries" and the
+// "500+ Global Partners" stat were fabricated and have been removed —
+// do not reintroduce a partner or country count without owner confirmation.
 const TRUST = [
   { icon: '+', text: 'No commitment required' },
   { icon: '+', text: '24h response guarantee' },
   { icon: '+', text: 'MOQ from 100 pairs' },
-  { icon: '+', text: 'Ships to 50+ countries' },
+  { icon: '+', text: 'Free catalog samples' },
 ]
 
 export default function CTABanner() {
@@ -46,13 +49,13 @@ export default function CTABanner() {
               </div>
               <div className="cta-stat-divider" />
               <div className="cta-stat">
-                <span className="cta-stat-num">500+</span>
-                <span className="cta-stat-label">Global Partners</span>
+                <span className="cta-stat-num">100</span>
+                <span className="cta-stat-label">Pairs MOQ</span>
               </div>
               <div className="cta-stat-divider" />
               <div className="cta-stat">
-                <span className="cta-stat-num">50+</span>
-                <span className="cta-stat-label">Countries</span>
+                <span className="cta-stat-num">5</span>
+                <span className="cta-stat-label">Days Production</span>
               </div>
             </div>
 

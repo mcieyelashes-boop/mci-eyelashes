@@ -7,7 +7,7 @@ import About from './components/About'
 import Services from './components/Services'
 import Gallery from './components/Gallery'
 import Process from './components/Process'
-import Testimonials from './components/Testimonials'
+import FactoryProof from './components/FactoryProof'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import CTABanner from './components/CTABanner'
@@ -29,7 +29,7 @@ function Home() {
       <Process />
       <About />
       <Services />
-      <Testimonials />
+      <FactoryProof />
       <FAQ />
       <CTABanner />
       <Contact />

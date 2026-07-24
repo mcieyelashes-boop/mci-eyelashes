@@ -20,15 +20,19 @@ export function setMeta({ title, description, canonical, ogTitle, ogDescription,
   if (twitterDescription) setAttr('meta[name="twitter:description"]', 'content', twitterDescription)
 }
 
-// Default homepage values — used to restore on route leave
+// Default homepage values — used to restore on route leave.
+// MUST stay in sync with the same tags in index.html, otherwise returning to
+// the homepage from a sub-route silently restores stale copy.
+// Only owner-confirmed figures belong here: MOQ 100 pairs/style, free catalog
+// samples (buyer pays shipping), 5 working days production on 100-pair orders.
 export const HOME_META = {
-  title:               'MCI Eyelashes',
-  description:         'MCI Eyelashes is a premium wholesale eyelash manufacturer supplying mink, silk, synthetic, and volume lashes to salons, distributors, and beauty brands in 50+ countries. Private label & OEM services available.',
+  title:               'MCI Eyelashes | Wholesale Lash Manufacturer, MOQ 100 Pairs',
+  description:         'Direct lash factory in Purbalingga, Indonesia. Mink, silk, synthetic and volume lashes from 100 pairs per style — free catalog samples, 5-day production, private label.',
   canonical:           `${BASE_URL}/`,
-  ogTitle:             'MCI Eyelashes | Premium Wholesale Eyelash Manufacturer & OEM Supplier',
-  ogDescription:       'Supplying premium handcrafted eyelashes to salons, distributors, and beauty brands worldwide. 500+ global partners across 50+ countries. Private label & OEM services.',
+  ogTitle:             'MCI Eyelashes | Wholesale Lash Manufacturer — MOQ 100 Pairs, Free Samples',
+  ogDescription:       'Factory-direct from Purbalingga, Indonesia — no middleman markup. Order from 100 pairs per style, get free samples on catalog styles, and ship in 5 working days. Private label and OEM available.',
   ogUrl:               `${BASE_URL}/`,
   ogImage:             `${BASE_URL}/hero-lashes.jpg`,
-  twitterTitle:        'MCI Eyelashes | Premium Wholesale Eyelash Manufacturer & OEM Supplier',
-  twitterDescription:  'Supplying premium handcrafted eyelashes to salons, distributors, and beauty brands worldwide. Private label & OEM services with competitive wholesale pricing.',
+  twitterTitle:        'MCI Eyelashes | Wholesale Lash Manufacturer — MOQ 100 Pairs, Free Samples',
+  twitterDescription:  'Factory-direct lashes from Purbalingga, Indonesia. From 100 pairs per style, free catalog samples, 5-day production, private label available.',
 }

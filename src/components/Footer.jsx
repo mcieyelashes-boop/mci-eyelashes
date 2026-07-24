@@ -1,6 +1,6 @@
 const footerLinks = {
   Collections: ['Soft Touch Lashes', '3D Luxe Lashes', 'Faux Mink - Protein Silk', 'Classic Human Hair', 'Under Lashes'],
-  Company:     ['About Us', 'Manufacturing Process', 'Gallery', 'Testimonials'],
+  Company:     ['About Us', 'Manufacturing Process', 'Gallery', 'Before You Order'],
   Support:     ['Wholesale Inquiry', 'Sample Request', 'Shipping & Lead Times', 'FAQ'],
 }
 
@@ -17,7 +17,7 @@ export default function Footer() {
             </span>
           </div>
           <p className="footer-tagline">
-            Premium wholesale eyelash collections for salons, spas, and distributors worldwide. MOQ 100 pairs. Private label from 500 units.
+            Factory-direct wholesale eyelash collections for salons, spas, and distributors. MOQ 100 pairs per style. Free samples on catalog styles.
           </p>
           <div className="footer-contact">
             <a href="mailto:denis@mci-eyelashes.com">denis@mci-eyelashes.com</a>
