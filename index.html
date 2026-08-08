@@ -385,7 +385,10 @@
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
 
-    <!-- NaraAI chat widget — answers wholesale FAQs (MOQ, samples, lead time) 24/7 -->
-    <script src="https://naraai.vercel.app/widget/naraai-widget.js" data-naraai-slug="mci-eyelashes" async></script>
+    <!-- NaraAI chat widget — answers wholesale FAQs (MOQ, samples, lead time) 24/7.
+         data-naraai-lang must match the reply_language set for this assistant in
+         the NaraAI dashboard (currently "en") — otherwise the AI replies in one
+         language while the button/placeholder/send-button text shows another. -->
+    <script src="https://naraai.vercel.app/widget/naraai-widget.js" data-naraai-slug="mci-eyelashes" data-naraai-lang="en" async></script>
   </body>
 </html>
