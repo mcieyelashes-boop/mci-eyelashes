@@ -1574,22 +1574,65 @@ section { padding: 120px 0; }
   overflow: hidden;
 }
 
-/* ── WHATSAPP BUTTON ── */
+/* ── WHATSAPP BUTTON ──
+   Position lives on .whatsapp-wrap (the fixed outer div), NOT on .whatsapp-float
+   itself — the anchor is forced to position:relative by Framer Motion's inline
+   style, so any bottom/right declared on .whatsapp-float would apply as a SECOND,
+   compounding relative offset on top of the wrapper's fixed position. Keep all
+   position/breakpoint overrides on .whatsapp-wrap only.
+   Stacked above the NaraAI chat bubble (bottom:20/right:20, ~48px tall) — see the
+   NaraAI override block below. Keep both anchored with the same right offset so
+   they read as one vertical stack. */
+.whatsapp-wrap { position: fixed; bottom: 84px; right: 20px; }
+
 .whatsapp-float {
-  position: fixed; bottom: 28px; right: 28px; z-index: 9999;
   display: flex; align-items: center; gap: 10px;
   background: #25D366; color: #fff;
   padding: 13px 20px 13px 16px;
   border-radius: 50px;
   box-shadow: 0 8px 28px rgba(37,211,102,.35), 0 2px 8px rgba(0,0,0,.2);
   font-size: 12px; font-weight: 700; letter-spacing: .06em;
-  text-decoration: none; transition: all .3s var(--ease-mci);
+  text-decoration: none; transition: background .3s var(--ease-mci), box-shadow .3s var(--ease-mci), border-radius .3s var(--ease-mci), transform .3s var(--ease-mci);
+  overflow: hidden;
 }
 .whatsapp-float:hover {
   background: #1ebe5d; transform: translateY(-3px);
+  border-radius: 10px;
   box-shadow: 0 12px 36px rgba(37,211,102,.48), 0 4px 12px rgba(0,0,0,.25);
 }
-.whatsapp-label { font-family: 'Montserrat', sans-serif; }
+.whatsapp-icon { flex-shrink: 0; transition: transform .3s var(--ease-mci); }
+.whatsapp-float:hover .whatsapp-icon { transform: scale(1.08); }
+
+/* Text-swap reveal: default label slides up and out, hover label slides in from below */
+.whatsapp-label-wrap {
+  position: relative; display: inline-block; overflow: hidden;
+  height: 14px; line-height: 14px;
+}
+.whatsapp-label {
+  font-family: 'Montserrat', sans-serif;
+  display: block; white-space: nowrap;
+  transition: transform .3s var(--ease-mci), opacity .3s var(--ease-mci);
+}
+.whatsapp-label-default { transform: translateY(0); opacity: 1; }
+.whatsapp-float:hover .whatsapp-label-default { transform: translateY(-150%); opacity: 0; }
+.whatsapp-label-hover {
+  position: absolute; top: 0; left: 0;
+  transform: translateY(150%); opacity: 0;
+}
+.whatsapp-float:hover .whatsapp-label-hover { transform: translateY(0); opacity: 1; }
+
+/* NaraAI chat widget — injected into this page's DOM by an external script
+   (see index.html), but its elements live here so we can safely reposition
+   them with !important to override the widget's inline styles. Keeps it as
+   the bottom item in the stack; WhatsApp sits above it. */
+button[aria-label="Buka chat NaraAI"] {
+  bottom: 20px !important;
+  right: 20px !important;
+}
+iframe[src*="naraai.vercel.app/c/"] {
+  bottom: 80px !important;
+  right: 20px !important;
+}
 
 /* ── RESPONSIVE ── */
 @media (max-width: 1024px) {
@@ -1686,9 +1729,10 @@ section { padding: 120px 0; }
   .footer-links { grid-template-columns: 1fr 1fr; }
   .footer-bottom { padding: 16px 20px; flex-direction: column; gap: 8px; text-align: center; }
 
-  /* WhatsApp button */
-  .whatsapp-label { display: none; }
-  .whatsapp-float { padding: 14px; border-radius: 50%; bottom: 20px; right: 20px; }
+  /* WhatsApp button — icon-only circle, still stacked above the NaraAI bubble */
+  .whatsapp-label-wrap { display: none; }
+  .whatsapp-float { padding: 14px; border-radius: 50%; }
+  .whatsapp-float:hover { border-radius: 50%; }
 }
 
 @media (max-width: 480px) {
@@ -2497,11 +2541,8 @@ section { padding: 120px 0; }
     padding-bottom: 30px;
   }
 
-  .whatsapp-float {
-    bottom: 16px;
-    right: 16px;
-    padding: 12px;
-  }
+  .whatsapp-wrap { bottom: 80px; right: 16px; }
+  .whatsapp-float { padding: 12px; }
 }
 
 .hero-section {
