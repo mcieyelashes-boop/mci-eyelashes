@@ -78,7 +78,7 @@ Private label clients who add custom packaging typically retail at 20–40% abov
 2. **Receive a catalog and pricing sheet** within 24 hours
 3. **Request samples** — we ship sample kits to qualified buyers
 4. **Place your first order** — MOQ is 100 pairs per style, mix and match allowed
-5. **Receive your order** — standard lead time 3–7 business days
+5. **Receive your order** — 5 working days production on 100-pair orders
 
 We ship internationally with full tracking. For a full breakdown of costs, see our [wholesale eyelash pricing guide](/blog/wholesale-eyelash-pricing-guide). If you're considering custom branding, read our [private label OEM guide](/blog/private-label-eyelashes-oem-guide).`,
       },
