@@ -1311,4 +1311,84 @@ To request a product catalog, samples, or a wholesale pricing quote, visit our C
       },
     ],
   },
+  {
+    slug: 'import-eyelashes-from-indonesia-guide',
+    title: 'How to Import Wholesale Eyelashes from Indonesia: A Buyer’s Guide',
+    metaDescription: 'A practical guide for salon owners and distributors importing wholesale eyelashes from Indonesia — shipping methods, customs basics, documents you need, and how to avoid the common first-order mistakes.',
+    category: 'Buyer Guide',
+    date: '2026-08-28',
+    readTime: '7 min read',
+    excerpt: 'Buying wholesale lashes from an Indonesian factory for the first time? Here’s what actually happens between placing your order and the box landing at your door — shipping options, customs paperwork, and the questions to ask before you pay a deposit.',
+    coverAlt: 'Wholesale eyelash shipment being prepared for international export from Indonesia',
+    sections: [
+      {
+        heading: 'The Import Process, Step by Step',
+        body: `Importing lashes wholesale follows roughly the same sequence regardless of which country you're buying from:
+
+1. **Inquiry and quote** — you send your target styles/quantities, the factory replies with pricing and lead time
+2. **Sample approval** — you confirm quality before committing to a full production run
+3. **Deposit and production** — factory begins manufacturing once your order and deposit are confirmed
+4. **Quality check and packing** — finished goods are inspected and packed for export
+5. **Shipping** — factory books freight (or you use your own forwarder) and provides tracking
+6. **Customs clearance** — your shipment clears customs in your destination country, duties/taxes may apply
+7. **Delivery** — goods arrive at your address or a bonded warehouse if you're a larger distributor`,
+      },
+      {
+        heading: 'Shipping Methods Compared',
+        body: `| Method | Typical transit | Best for |
+|--------|------------------|----------|
+| Express courier (DHL, FedEx, UPS) | 3–7 days | Sample orders, first wholesale orders, urgent restocks |
+| Air freight | 5–10 days | Mid-size wholesale orders where speed still matters |
+| Sea freight | 25–40 days | Large-volume distributor orders where cost per unit matters more than speed |
+
+Most first-time buyers start with express courier or air freight — it's slower to save on shipping than it is to lose a sale from an empty shelf.`,
+      },
+      {
+        heading: 'Customs, Duties, and Paperwork',
+        body: `Duty rates and import rules are set by your own country, not by the exporting factory — they vary by destination and by how your customs authority classifies eyelash products, so there's no single number that applies everywhere. A few things that apply broadly:
+
+- **Ask your factory for a commercial invoice and packing list** on every shipment — customs brokers need these to clear your goods
+- **Check your own country's de minimis threshold** — many countries don't charge duty below a certain order value, which matters for sample and small trial orders
+- **Use a customs broker for larger orders** — most express couriers (DHL, FedEx) include basic clearance, but a broker is worth it once you're importing regularly
+- **Confirm who's responsible for duties** before you order — factory-quoted prices are typically EXW or FOB (you handle destination duties), not landed-cost-inclusive, unless stated otherwise`,
+      },
+      {
+        heading: 'Common First-Order Mistakes',
+        body: `- **Skipping the sample stage** — always confirm quality on a small sample before committing to a full wholesale order
+- **Not confirming who pays for return shipping** if a sample doesn't work out
+- **Assuming the quoted price includes your country's duties and taxes** — ask explicitly
+- **Underestimating lead time on a first order** — factor in production time plus shipping, and order before you're actually out of stock
+- **Not getting terms in writing** — MOQ, price, lead time, and payment terms should be confirmed by email before you send a deposit`,
+      },
+      {
+        heading: 'Importing from MCI Eyelashes',
+        body: `MCI Eyelashes is a direct factory based in Purbalingga, Indonesia, and we work with international buyers regularly. Our wholesale terms:
+
+- **MOQ:** 100 pairs per style, mix and match allowed across styles
+- **Samples:** free on existing catalog styles — you cover shipping only
+- **Production:** 5 working days on 100-pair orders
+- **Factory verification:** we welcome a live video call to our production floor before you order
+
+Reach out via WhatsApp or email to get a quote and discuss shipping to your country.`,
+      },
+    ],
+    faq: [
+      {
+        q: 'Do I need a business license to import wholesale eyelashes?',
+        a: 'It depends on your country and how you plan to resell. Many small salon owners import as individuals for personal business use; larger volume importers typically need a registered business and import license. Check your local customs authority for your specific situation.',
+      },
+      {
+        q: 'Who pays customs duties on a wholesale eyelash order?',
+        a: 'Unless your supplier explicitly quotes a landed-cost or DDP (Delivered Duty Paid) price, the buyer is responsible for duties and taxes in their own country. Always confirm this with your supplier before ordering.',
+      },
+      {
+        q: 'What documents does a factory need to provide for customs clearance?',
+        a: 'At minimum, a commercial invoice and packing list. MCI Eyelashes provides both on every shipment — contact us if your courier or customs broker needs additional documentation.',
+      },
+      {
+        q: 'Can I get samples shipped before placing a wholesale order with MCI Eyelashes?',
+        a: 'Yes — samples on our existing catalog styles are free, you only cover the shipping cost. This lets you confirm quality before committing to the 100-pair MOQ.',
+      },
+    ],
+  },
 ]
