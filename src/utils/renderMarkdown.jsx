@@ -8,7 +8,7 @@ function parseInline(text) {
   const parts = text.split(/(\*\*.*?\*\*|\[.*?\]\(.*?\))/g)
   return parts.map((part, i) => {
     if (/^\*\*(.*)\*\*$/.test(part)) {
-      return <strong key={i} style={{ fontWeight: 600, color: 'var(--text-dark)' }}>{part.slice(2, -2)}</strong>
+      return <strong key={i} style={{ fontWeight: 600, color: 'var(--ink)' }}>{part.slice(2, -2)}</strong>
     }
     const linkMatch = part.match(/^\[(.*?)\]\((.*?)\)$/)
     if (linkMatch) {
@@ -38,7 +38,7 @@ function renderTable(lines) {
             {cols.map((col, i) => (
               <th key={i} style={{
                 textAlign: 'left', padding: '12px 16px',
-                background: 'var(--off-white)',
+                background: 'var(--off-white)', color: 'var(--ink)',
                 borderBottom: '2px solid var(--teal)',
                 fontSize: '10px', letterSpacing: '1.5px',
                 textTransform: 'uppercase', color: 'var(--teal-dark)', fontWeight: 600,
@@ -55,7 +55,7 @@ function renderTable(lines) {
               <tr key={ri} style={{ borderBottom: '1px solid var(--border-soft)' }}>
                 {cells.map((cell, ci) => (
                   <td key={ci} style={{
-                    padding: '12px 16px', color: 'var(--text-mid)',
+                    padding: '12px 16px', color: 'var(--ink-mid)',
                     verticalAlign: 'top',
                   }}>
                     {parseInline(cell)}
@@ -99,7 +99,7 @@ export function renderBody(body) {
       elements.push(
         <ul key={i} style={{ margin: '16px 0 16px 0', paddingLeft: '0', listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '8px' }}>
           {items.map((item, j) => (
-            <li key={j} style={{ display: 'flex', gap: '12px', alignItems: 'flex-start', fontSize: '14px', color: 'var(--text-mid)', lineHeight: 1.8 }}>
+            <li key={j} style={{ display: 'flex', gap: '12px', alignItems: 'flex-start', fontSize: '14px', color: 'var(--ink-mid)', lineHeight: 1.8 }}>
               <span style={{ width: '5px', height: '5px', borderRadius: '50%', background: 'var(--teal)', flexShrink: 0, marginTop: '9px' }} />
               <span>{parseInline(item)}</span>
             </li>
@@ -119,7 +119,7 @@ export function renderBody(body) {
       elements.push(
         <ol key={i} style={{ margin: '16px 0', paddingLeft: '0', listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '10px', counterReset: 'step' }}>
           {items.map((item, j) => (
-            <li key={j} style={{ display: 'flex', gap: '16px', alignItems: 'flex-start', fontSize: '14px', color: 'var(--text-mid)', lineHeight: 1.8 }}>
+            <li key={j} style={{ display: 'flex', gap: '16px', alignItems: 'flex-start', fontSize: '14px', color: 'var(--ink-mid)', lineHeight: 1.8 }}>
               <span style={{
                 minWidth: '26px', height: '26px', borderRadius: '50%',
                 background: 'var(--off-white)', border: '1px solid var(--teal)',
@@ -144,7 +144,7 @@ export function renderBody(body) {
 
     // Regular paragraph
     elements.push(
-      <p key={i} style={{ fontSize: '14px', color: 'var(--text-mid)', lineHeight: 1.9, marginBottom: '16px' }}>
+      <p key={i} style={{ fontSize: '14px', color: 'var(--ink-mid)', lineHeight: 1.9, marginBottom: '16px' }}>
         {parseInline(line)}
       </p>
     )

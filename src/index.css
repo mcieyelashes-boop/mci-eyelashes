@@ -34,6 +34,12 @@
   --text-mid:      rgba(255,255,255,0.52);
   --text-light:    rgba(255,255,255,0.30);
 
+  /* Text on WHITE/off-white sections (blog article body, blog cards) —
+     do not confuse with --text-dark/-mid above, which are white-on-navy. */
+  --ink:           #0F2430;
+  --ink-mid:       rgba(15,36,48,0.68);
+  --ink-light:     rgba(15,36,48,0.45);
+
   --shadow-glow:   0 0 40px rgba(72,184,202,0.22);
   --shadow-glow-lg:0 0 60px rgba(72,184,202,0.38);
   --ease-mci:      cubic-bezier(0.22, 1, 0.36, 1);

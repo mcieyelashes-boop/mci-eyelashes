@@ -121,7 +121,7 @@ export default function BlogList() {
                     }}>
                       {post.category}
                     </span>
-                    <span style={{ fontSize: '11px', color: 'var(--text-light)' }}>
+                    <span style={{ fontSize: '11px', color: 'var(--ink-light)' }}>
                       {new Date(post.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
                     </span>
                   </div>
@@ -130,7 +130,7 @@ export default function BlogList() {
                   <h2 style={{
                     fontFamily: 'Cormorant Garamond, serif',
                     fontSize: 'clamp(20px, 2vw, 26px)',
-                    color: 'var(--text-dark)',
+                    color: 'var(--ink)',
                     fontWeight: 400, lineHeight: 1.2,
                     marginBottom: '16px',
                   }}>
@@ -139,7 +139,7 @@ export default function BlogList() {
 
                   {/* Excerpt */}
                   <p style={{
-                    fontSize: '13px', color: 'var(--text-mid)',
+                    fontSize: '13px', color: 'var(--ink-mid)',
                     lineHeight: 1.8, marginBottom: '28px', flex: 1,
                   }}>
                     {post.excerpt}
@@ -147,7 +147,7 @@ export default function BlogList() {
 
                   {/* Footer */}
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', paddingTop: '20px', borderTop: '1px solid var(--border-soft)' }}>
-                    <span style={{ fontSize: '10px', color: 'var(--text-light)', letterSpacing: '1px' }}>
+                    <span style={{ fontSize: '10px', color: 'var(--ink-light)', letterSpacing: '1px' }}>
                       {post.readTime}
                     </span>
                     <Link

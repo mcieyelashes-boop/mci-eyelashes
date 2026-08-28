@@ -168,7 +168,7 @@ export default function BlogPost() {
             <article>
               {/* Lead */}
               <p style={{
-                fontSize: '16px', color: 'var(--text-mid)', lineHeight: 2,
+                fontSize: '16px', color: 'var(--ink-mid)', lineHeight: 2,
                 borderLeft: '3px solid var(--teal)',
                 paddingLeft: '24px', marginBottom: '56px',
                 fontFamily: 'Cormorant Garamond, serif',
@@ -183,7 +183,7 @@ export default function BlogPost() {
                   <h2 style={{
                     fontFamily: 'Cormorant Garamond, serif',
                     fontSize: 'clamp(22px, 2.5vw, 32px)',
-                    color: 'var(--text-dark)', fontWeight: 400,
+                    color: 'var(--ink)', fontWeight: 400,
                     marginBottom: '20px', lineHeight: 1.2,
                   }}>
                     {section.heading}
@@ -198,7 +198,7 @@ export default function BlogPost() {
                   <h2 style={{
                     fontFamily: 'Cormorant Garamond, serif',
                     fontSize: 'clamp(22px, 2.5vw, 32px)',
-                    color: 'var(--text-dark)', marginBottom: '32px',
+                    color: 'var(--ink)', marginBottom: '32px',
                   }}>
                     Frequently Asked Questions
                   </h2>
@@ -210,12 +210,12 @@ export default function BlogPost() {
                       }}>
                         <p style={{
                           fontFamily: 'Cormorant Garamond, serif',
-                          fontSize: '18px', color: 'var(--text-dark)',
+                          fontSize: '18px', color: 'var(--ink)',
                           fontWeight: 500, marginBottom: '10px', lineHeight: 1.3,
                         }}>
                           {q}
                         </p>
-                        <p style={{ fontSize: '13px', color: 'var(--text-mid)', lineHeight: 1.85 }}>
+                        <p style={{ fontSize: '13px', color: 'var(--ink-mid)', lineHeight: 1.85 }}>
                           {a}
                         </p>
                       </div>
@@ -279,7 +279,7 @@ export default function BlogPost() {
                       <span style={{ fontSize: '9px', color: 'var(--teal-dark)', letterSpacing: '1.5px', textTransform: 'uppercase', display: 'block', marginBottom: '6px' }}>
                         {other.category}
                       </span>
-                      <span style={{ color: 'var(--text-dark)', lineHeight: 1.4, fontFamily: 'Cormorant Garamond, serif', fontSize: '16px' }}>
+                      <span style={{ color: 'var(--ink)', lineHeight: 1.4, fontFamily: 'Cormorant Garamond, serif', fontSize: '16px' }}>
                         {other.title}
                       </span>
                     </Link>
