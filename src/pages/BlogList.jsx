@@ -48,7 +48,7 @@ export default function BlogList() {
           <motion.p
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
-            className="section-label section-label--light"
+            className="section-label light"
           >
             Resources
           </motion.p>
