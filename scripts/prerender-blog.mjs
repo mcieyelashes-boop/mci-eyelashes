@@ -18,6 +18,7 @@ import { readFileSync, writeFileSync, mkdirSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import { dirname, join } from 'node:path'
 import { blogPosts } from '../src/data/blogPosts.js'
+import { AUTHOR } from '../src/data/author.js'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const ROOT = join(__dirname, '..')
@@ -137,7 +138,13 @@ function postJsonLd(post, url) {
           description: post.metaDescription,
           datePublished: post.date,
           dateModified: post.date,
-          author: { '@type': 'Organization', name: 'MCI Eyelashes', url: BASE_URL },
+          author: {
+            '@type': 'Person',
+            name: AUTHOR.name,
+            jobTitle: AUTHOR.jobTitle,
+            url: AUTHOR.url,
+            worksFor: { '@type': 'Organization', name: 'MCI Eyelashes', url: BASE_URL },
+          },
           publisher: {
             '@type': 'Organization',
             name: 'MCI Eyelashes',
@@ -169,7 +176,7 @@ function postBodyHtml(post) {
   return `
     <article>
       <nav><a href="/">Home</a> &rsaquo; <a href="/blog">Blog</a> &rsaquo; <span>${escapeHtml(post.category)}</span></nav>
-      <p>${escapeHtml(post.category)} &middot; ${new Date(post.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })} &middot; ${escapeHtml(post.readTime)}</p>
+      <p>${escapeHtml(post.category)} &middot; ${new Date(post.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })} &middot; ${escapeHtml(post.readTime)} &middot; By ${escapeHtml(AUTHOR.name)}, ${escapeHtml(AUTHOR.jobTitle)}</p>
       <h1>${escapeHtml(post.title)}</h1>
       <p><em>${escapeHtml(post.excerpt)}</em></p>
       ${post.sections.map((s) => `<h2>${escapeHtml(s.heading)}</h2>\n${bodyToHtml(s.body)}`).join('\n')}

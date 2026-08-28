@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { useParams, Link, Navigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { blogPosts } from '../data/blogPosts'
+import { AUTHOR } from '../data/author'
 import { renderBody } from '../utils/renderMarkdown'
 import { setMeta, HOME_META } from '../utils/setMeta'
 
@@ -45,7 +46,13 @@ export default function BlogPost() {
             description: post.metaDescription,
             datePublished: post.date,
             dateModified: post.date,
-            author: { '@type': 'Organization', name: 'MCI Eyelashes', url: BASE_URL },
+            author: {
+              '@type': 'Person',
+              name: AUTHOR.name,
+              jobTitle: AUTHOR.jobTitle,
+              url: AUTHOR.url,
+              worksFor: { '@type': 'Organization', name: 'MCI Eyelashes', url: BASE_URL },
+            },
             publisher: {
               '@type': 'Organization',
               name: 'MCI Eyelashes',
@@ -132,6 +139,7 @@ export default function BlogPost() {
               {new Date(post.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
             </span>
             <span style={{ fontSize: '12px', color: 'rgba(255,255,255,0.3)' }}>{post.readTime}</span>
+            <span style={{ fontSize: '12px', color: 'rgba(255,255,255,0.3)' }}>By {AUTHOR.name}, {AUTHOR.jobTitle.replace(', MCI Eyelashes', '')}</span>
           </motion.div>
 
           {/* Title */}
