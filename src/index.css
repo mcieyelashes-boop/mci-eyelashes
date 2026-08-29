@@ -204,7 +204,7 @@ section { padding: 120px 0; }
 }
 .nav-logo-sub {
   color: rgba(247,231,164,.78); font-size: 8px; line-height: 1;
-  letter-spacing: .36em; text-transform: uppercase; font-weight: 600;
+  letter-spacing: .2em; text-transform: uppercase; font-weight: 600;
 }
 .nav-links { display: flex; align-items: center; gap: 42px; }
 .nav-link {
@@ -1851,7 +1851,7 @@ iframe[src*="naraai.vercel.app/c/"] {
   .nav-logo { gap: 8px; }
   .nav-logo img { height: 38px; width: 58px; }
   .nav-logo-name { font-size: 21px; }
-  .nav-logo-sub { font-size: 7px; letter-spacing: .32em; }
+  .nav-logo-sub { font-size: 7px; letter-spacing: .18em; }
 
   /* Hero */
   .hero-content { padding: 90px 0 60px; }
@@ -3073,7 +3073,7 @@ iframe[src*="naraai.vercel.app/c/"] {
   .nav-logo-sub,
   .navbar--home .nav-logo-sub {
     font-size: 6px;
-    letter-spacing: .28em;
+    letter-spacing: .18em;
   }
 
   .nav-hamburger {

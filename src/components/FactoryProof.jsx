@@ -45,7 +45,7 @@ export default function FactoryProof() {
   useInView(ref, { once: true, margin: '-80px' })
 
   return (
-    <section ref={ref} className="testimonials-section">
+    <section id="before-you-order" ref={ref} className="testimonials-section">
       <div className="container">
         <motion.div initial={false} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
           <p className="section-label light">Before You Order</p>

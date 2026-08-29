@@ -1,7 +1,28 @@
+// Every link previously pointed to the same "/#contact" href regardless of
+// label — clicking "Gallery" or "FAQ" from the footer landed on the contact
+// form, not Gallery or FAQ. Each link now goes to its actual section.
+// Collections all point to #products (individual product tabs aren't
+// URL-addressable — that would need a small feature, not a polish fix).
 const footerLinks = {
-  Collections: ['Soft Touch Lashes', '3D Luxe Lashes', 'Faux Mink - Protein Silk', 'Classic Human Hair', 'Under Lashes'],
-  Company:     ['About Us', 'Manufacturing Process', 'Gallery', 'Before You Order'],
-  Support:     ['Wholesale Inquiry', 'Sample Request', 'Shipping & Lead Times', 'FAQ'],
+  Collections: [
+    { label: 'Soft Touch Lashes',        href: '/#products' },
+    { label: '3D Luxe Lashes',           href: '/#products' },
+    { label: 'Faux Mink - Protein Silk', href: '/#products' },
+    { label: 'Classic Human Hair',       href: '/#products' },
+    { label: 'Under Lashes',             href: '/#products' },
+  ],
+  Company: [
+    { label: 'About Us',              href: '/#about' },
+    { label: 'Manufacturing Process', href: '/#process' },
+    { label: 'Gallery',               href: '/#gallery' },
+    { label: 'Before You Order',      href: '/#before-you-order' },
+  ],
+  Support: [
+    { label: 'Wholesale Inquiry',     href: '/#contact' },
+    { label: 'Sample Request',        href: '/#contact' },
+    { label: 'Shipping & Lead Times', href: '/#faq' },
+    { label: 'FAQ',                   href: '/#faq' },
+  ],
 }
 
 export default function Footer() {
@@ -29,8 +50,8 @@ export default function Footer() {
           {Object.entries(footerLinks).map(([group, links]) => (
             <div key={group}>
               <div className="footer-link-title">{group}</div>
-              {links.map(link => (
-                <a key={link} href="/#contact" className="footer-link">{link}</a>
+              {links.map(({ label, href }) => (
+                <a key={label} href={href} className="footer-link">{label}</a>
               ))}
             </div>
           ))}

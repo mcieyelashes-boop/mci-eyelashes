@@ -24,9 +24,9 @@ export default function Products() {
     <section id="products" className="prod-section" style={{ padding: '120px 0' }}>
       <div className="prod-inner">
         <motion.div className="prod-header" initial={false} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} ref={ref}>
-          <p className="section-label">Product Architecture</p>
-          <h2 className="section-title">Lash Systems <span className="accent-light">For Tomorrow's Brands</span></h2>
-          <p className="prod-subtitle">A focused wholesale matrix for salons, distributors, and private-label founders. Choose the finish, define the packaging, approve samples, then scale through one factory-direct partner.</p>
+          <p className="section-label">Our Collections</p>
+          <h2 className="section-title">Ten Lash Collections <span className="accent-light">Built to Order</span></h2>
+          <p className="prod-subtitle">For salons, distributors, and private-label founders — pick a style, request a free sample, and order direct from the factory.</p>
         </motion.div>
 
         <div className="prod-tabs-wrap">
