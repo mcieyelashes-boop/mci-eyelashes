@@ -94,7 +94,7 @@ export default function NotFound() {
             letterSpacing: '4px',
             textTransform: 'uppercase',
             color: 'var(--teal)',
-            fontFamily: "'Montserrat', sans-serif",
+            fontFamily: "'Bricolage Grotesque', sans-serif",
             marginBottom: '16px',
           }}
         >
@@ -189,7 +189,7 @@ export default function NotFound() {
             textTransform: 'uppercase',
             color: 'rgba(255,255,255,0.2)',
             marginBottom: '16px',
-            fontFamily: "'Montserrat', sans-serif",
+            fontFamily: "'Bricolage Grotesque', sans-serif",
           }}>
             Quick Links
           </p>
@@ -207,7 +207,7 @@ export default function NotFound() {
                   fontSize: '13px',
                   color: 'rgba(72,184,202,0.6)',
                   textDecoration: 'none',
-                  fontFamily: "'Montserrat', sans-serif",
+                  fontFamily: "'Bricolage Grotesque', sans-serif",
                   letterSpacing: '0.5px',
                   transition: 'color 0.2s',
                 }}

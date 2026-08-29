@@ -58,13 +58,20 @@ const IconExpress = () => (
   </svg>
 )
 
+// Owner-confirmed facts only (MOQ 100 pairs/style, 5-day production on
+// 100-pair orders, free catalog samples). This file previously stated
+// concrete MOQ/lead-time numbers for these six services — 500 units,
+// 1,000 units, "5-7 business days," "7-10 business days" — that were never
+// confirmed and contradicted the hedged language already used in
+// FactoryProof.jsx, Contact.jsx, and FAQ.jsx. Do not reintroduce a specific
+// number here without owner confirmation matching every other section.
 const services = [
-  { id: '01', Icon: IconPrivateLabel, name: 'Private Label', tag: 'Most Popular', desc: 'Your brand on our premium lashes. Custom labels, inserts, and packaging from 500 units. Full artwork support included.', highlights: ['Custom branding', 'From 500 units', 'Artwork support'] },
+  { id: '01', Icon: IconPrivateLabel, name: 'Private Label', tag: 'Most Popular', desc: 'Your brand on our premium lashes — custom labels, inserts, and packaging. Full artwork support included.', highlights: ['Custom branding', 'Contact us for MOQ', 'Artwork support'] },
   { id: '02', Icon: IconOEM, name: 'OEM Manufacturing', tag: 'Custom', desc: 'Bring your own lash design or work with our team to engineer entirely new styles, materials, and specifications.', highlights: ['Custom designs', 'Material sourcing', 'Prototype samples'] },
-  { id: '03', Icon: IconBulk, name: 'Bulk Wholesale', tag: 'Ready to Ship', desc: 'Order from 200+ in-stock styles across 5 collections. Mix and match. MOQ 100 pairs. Ships within 5-7 business days.', highlights: ['200+ styles', 'MOQ 100 pairs', '5-7 day shipping'] },
-  { id: '04', Icon: IconSample, name: 'Sample Program', tag: 'Try First', desc: 'Test quality before committing to bulk. Curated sample kits available for new wholesale partners with fast turnaround.', highlights: ['Quality assurance', 'Fast turnaround', 'All collections'] },
-  { id: '05', Icon: IconPackaging, name: 'Custom Packaging', tag: 'Brand Ready', desc: 'Full packaging design service for branded boxes, trays, inserts, and gift sets. Minimum runs from 1,000 units.', highlights: ['Box and insert design', 'From 1,000 units', 'Gift set options'] },
-  { id: '06', Icon: IconExpress, name: 'Express Production', tag: 'Fast Track', desc: 'Rush orders fulfilled in 7-10 business days. Priority manufacturing slot with dedicated quality inspection.', highlights: ['7-10 day lead time', 'Priority slot', 'QC inspection'] },
+  { id: '03', Icon: IconBulk, name: 'Bulk Wholesale', tag: 'Ready to Ship', desc: 'Order from 200+ in-stock styles across 5 collections. Mix and match styles to reach the 100-pair minimum.', highlights: ['200+ styles', 'MOQ 100 pairs', '5-day production'], featured: true },
+  { id: '04', Icon: IconSample, name: 'Sample Program', tag: 'Try First', desc: 'Test quality before committing to bulk. Free samples on existing catalog styles — you cover shipping only.', highlights: ['Free catalog samples', 'You cover shipping', 'All collections'] },
+  { id: '05', Icon: IconPackaging, name: 'Custom Packaging', tag: 'Brand Ready', desc: 'Full packaging design service for branded boxes, trays, inserts, and gift sets. Contact us for minimum runs and lead time.', highlights: ['Box and insert design', 'Contact us for MOQ', 'Gift set options'] },
+  { id: '06', Icon: IconExpress, name: 'Express Production', tag: 'Fast Track', desc: 'Need it sooner than 5 days? Contact us with your order size and deadline and we will confirm what is possible.', highlights: ['Contact us for timeline', 'Priority slot', 'QC inspection'] },
 ]
 
 export default function Services() {
@@ -84,11 +91,12 @@ export default function Services() {
 
         <motion.div className="services-grid" initial={false} animate="show" variants={{ hidden: {}, show: { transition: { staggerChildren: 0.08 } } }}>
           {services.map(s => (
-            <motion.div key={s.name} className="service-card" variants={{ hidden: { opacity: 0, y: 24 }, show: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] } } }}>
+            <motion.div key={s.name} className={`service-card${s.featured ? ' service-card--featured' : ''}`} variants={{ hidden: { opacity: 0, y: 24 }, show: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] } } }}>
+              {s.featured && <span className="service-featured-flag">Start Here</span>}
               <div className="service-icon-wrap"><s.Icon /></div>
               <div className="service-header-row">
                 <span className="service-id">{s.id}</span>
-                <span className="service-tag">{s.tag}</span>
+                <span className={`service-tag${s.featured ? ' service-tag--gold' : ''}`}>{s.tag}</span>
               </div>
               <h3 className="service-name">{s.name}</h3>
               <p className="service-desc">{s.desc}</p>

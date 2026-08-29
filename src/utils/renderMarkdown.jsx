@@ -31,7 +31,7 @@ function renderTable(lines) {
     <div style={{ overflowX: 'auto', margin: '28px 0' }}>
       <table style={{
         width: '100%', borderCollapse: 'collapse',
-        fontSize: '13px', fontFamily: 'Montserrat, sans-serif',
+        fontSize: '13px', fontFamily: 'Bricolage Grotesque, sans-serif',
       }}>
         <thead>
           <tr>

@@ -3,7 +3,9 @@
    Dark-first luxury theme
 ═══════════════════════════════════════════════════ */
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap');
+/* Fonts are loaded via a single non-blocking <link> in index.html
+   (preconnected, display=swap) — do not also @import here, it duplicates
+   the request and blocks CSS parsing until it resolves. */
 
 :root {
   --navy:        #0a1720;
@@ -15,6 +17,14 @@
   --teal-light:  #79CFDD;
   --teal-dark:   #2D97A9;
   --teal-deep:   #1A7A8A;
+
+  /* Gold — lifted directly from the brand-mark logo (public/brand-mark.svg),
+     not invented. Reserved for the site's single trust/peak moment
+     (FactoryProof) and "recommended" flags — a distinct hue from the teal
+     action color, used sparingly so it keeps its signal. */
+  --gold:        #E8C24A;
+  --gold-light:  #FFF0A8;
+  --gold-dark:   #B8891E;
 
   --white:       #FFFFFF;
   --off-white:   #F6FAFB;
@@ -51,7 +61,7 @@ html { scroll-behavior: smooth; }
 body {
   background-color: var(--navy);
   color: var(--text-on-dark);
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Bricolage Grotesque', sans-serif;
   font-weight: 300;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
@@ -79,7 +89,21 @@ body::before {
 
 h1, h2, h3, h4 { font-family: 'Cormorant Garamond', serif; font-weight: 400; }
 a { text-decoration: none; color: inherit; }
-button { cursor: pointer; font-family: 'Montserrat', sans-serif; }
+button { cursor: pointer; font-family: 'Bricolage Grotesque', sans-serif; }
+
+/* Keyboard focus — themed from the palette, not the browser default, and
+   scoped to :focus-visible so it only appears for keyboard/assistive-tech
+   navigation, not on every mouse click. Nav links, CTAs, and footer links
+   had no visible indicator at all before this. */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--teal-light);
+  outline-offset: 3px;
+}
 
 ::-webkit-scrollbar { width: 2px; }
 ::-webkit-scrollbar-track { background: var(--navy); }
@@ -300,7 +324,7 @@ section { padding: 120px 0; }
 
 .hero-fut-word {
   opacity: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Bricolage Grotesque', sans-serif;
   font-size: clamp(2.4rem, 6vw, 5.5rem);
   font-weight: 800;
   color: #fff;
@@ -314,7 +338,7 @@ section { padding: 120px 0; }
 .hero-fut-subtitle {
   opacity: 0;
   margin-top: 18px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Bricolage Grotesque', sans-serif;
   font-size: clamp(0.75rem, 1.4vw, 1.1rem);
   font-weight: 400;
   color: rgba(255,255,255,0.65);
@@ -335,7 +359,7 @@ section { padding: 120px 0; }
   background: none;
   border: 1px solid rgba(255,255,255,0.28);
   color: rgba(255,255,255,0.8);
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Bricolage Grotesque', sans-serif;
   font-size: 10px;
   font-weight: 500;
   letter-spacing: 0.22em;
@@ -474,7 +498,7 @@ section { padding: 120px 0; }
 .hero-3d-wrap { display: none !important; }
 /* MCI EYELASHES — large gold display heading on page 2 */
 .hero-brand-title {
-  font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Bricolage Grotesque', 'Helvetica Neue', Arial, sans-serif;
   font-size: clamp(52px, 7vw, 96px);
   font-weight: 800;
   letter-spacing: 0.12em;
@@ -580,7 +604,7 @@ section { padding: 120px 0; }
 .prod-sku-range { font-size: 10px; color: var(--text-on-dark-muted); letter-spacing: .06em; }
 .prod-panel-body { display: grid; grid-template-columns: 1fr 310px; border: 1px solid rgba(121,207,221,.14); position: relative; z-index: 1; backdrop-filter: blur(18px); }
 .prod-info { padding: 42px; background: rgba(255,255,255,.025); }
-.prod-name { font-family: 'Montserrat', sans-serif; font-size: 34px; font-weight: 700; color: #fff; margin-bottom: 8px; letter-spacing: -.01em; }
+.prod-name { font-family: 'Bricolage Grotesque', sans-serif; font-size: 34px; font-weight: 700; color: #fff; margin-bottom: 8px; letter-spacing: -.01em; }
 .prod-tagline { font-size: 10px; letter-spacing: .22em; text-transform: uppercase; color: var(--teal); margin-bottom: 20px; font-weight: 500; }
 .prod-desc { font-size: 13px; line-height: 1.9; color: var(--text-on-dark-mid); margin-bottom: 24px; font-weight: 300; }
 .prod-specs { list-style: none; margin-bottom: 24px; }
@@ -716,11 +740,11 @@ section { padding: 120px 0; }
 }
 .process-number {
   position: absolute; top: 18px; right: 20px;
-  color: rgba(121,207,221,.2); font-family: 'Montserrat', sans-serif;
+  color: rgba(121,207,221,.2); font-family: 'Bricolage Grotesque', sans-serif;
   font-size: 42px; font-weight: 700; line-height: 1;
 }
 .process-card h3,.process-card p { position: relative; z-index: 1; }
-.process-card h3 { color: #fff; font-family: 'Montserrat', sans-serif; font-size: 22px; line-height: 1.18; margin-bottom: 12px; }
+.process-card h3 { color: #fff; font-family: 'Bricolage Grotesque', sans-serif; font-size: 22px; line-height: 1.18; margin-bottom: 12px; }
 .process-card p { color: rgba(255,255,255,.54); font-size: 13px; line-height: 1.8; }
 .process-banner {
   position: relative; z-index: 1; margin-top: 64px; padding: 42px;
@@ -729,7 +753,7 @@ section { padding: 120px 0; }
   display: flex; align-items: center; justify-content: space-between; gap: 32px; flex-wrap: wrap;
 }
 .process-banner p {
-  color: #fff; font-family: 'Montserrat', sans-serif;
+  color: #fff; font-family: 'Bricolage Grotesque', sans-serif;
   font-size: clamp(24px, 3vw, 38px); line-height: 1.1;
   font-weight: 700; margin-bottom: 10px;
 }
@@ -794,6 +818,20 @@ section { padding: 120px 0; }
 .service-tag {
   font-size: 9px; letter-spacing: .18em; text-transform: uppercase;
   color: var(--teal); border: 1px solid rgba(72,184,202,.2); padding: 4px 10px;
+}
+/* First-time-buyer signal: MOQ 100 pairs is the confirmed, low-risk entry
+   point reinforced everywhere else on the site — flag it here too so the
+   six otherwise-equal cards don't leave a first-time buyer guessing. Gold
+   (not teal) so it reads as a distinct "start here," not just another action. */
+.service-card--featured::before { border-color: rgba(232,194,74,.32); }
+.service-card--featured:hover::before { border-color: rgba(232,194,74,.5); }
+.service-card--featured::after { background: linear-gradient(90deg, var(--gold), rgba(232,194,74,0)); }
+.service-tag--gold { color: var(--gold); border-color: rgba(232,194,74,.32); }
+.service-featured-flag {
+  position: absolute; top: 0; right: 0;
+  background: var(--gold); color: var(--navy);
+  font-size: 9px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
+  padding: 6px 14px;
 }
 .service-name { font-size: 24px; font-weight: 400; color: #fff; line-height: 1.2; }
 .service-desc { font-size: 13px; color: var(--text-on-dark-mid); line-height: 1.85; font-weight: 300; }
@@ -894,7 +932,18 @@ section { padding: 120px 0; }
 }
 
 /* ── TESTIMONIALS ── */
-.testimonials-section { background: var(--navy-mid); overflow: hidden; }
+.testimonials-section { background: var(--navy-mid); overflow: hidden; position: relative; }
+/* The site's one deliberate gold region — this section (FactoryProof) is the
+   trust/verification moment the page is built around, so it gets the one
+   atmospheric color break from the teal used everywhere else. A quiet
+   corner glow, not a wash — the point is a signal, not a redecoration. */
+.testimonials-section::before {
+  content: ''; position: absolute; top: -120px; right: -160px;
+  width: 480px; height: 480px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(232,194,74,.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+.testimonials-section .t-stat-num { color: var(--gold-light); }
 .t-track-wrap { position: relative; margin-top: 48px; }
 .t-fade { position: absolute; top: 0; bottom: 0; width: 120px; z-index: 2; pointer-events: none; }
 .t-fade.left { left: 0; background: linear-gradient(to right, var(--navy-mid), transparent); }
@@ -1013,7 +1062,7 @@ section { padding: 120px 0; }
 .contact-form input, .contact-form select, .contact-form textarea {
   width: 100%; padding: 12px 14px; background: rgba(255,255,255,.04);
   border: 1px solid rgba(72,184,202,.14); color: #fff;
-  font-family: 'Montserrat', sans-serif; font-size: 13px; outline: none;
+  font-family: 'Bricolage Grotesque', sans-serif; font-size: 13px; outline: none;
   border-radius: 0; transition: border-color .25s, background .25s, box-shadow .25s; font-weight: 300;
 }
 .contact-form input:focus, .contact-form select:focus, .contact-form textarea:focus {
@@ -1195,7 +1244,7 @@ section { padding: 120px 0; }
 .cat-series-toggle.open span:first-child { color: var(--teal-light); }
 .cat-sku-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); gap: 6px; padding-bottom: 18px; }
 .cat-sku-item { background: rgba(255,255,255,.03); border: 1px solid var(--border-white); padding: 8px 6px; text-align: center; }
-.cat-sku-code { font-size: 10px; color: rgba(255,255,255,.55); font-family: 'Montserrat', sans-serif; letter-spacing: .02em; }
+.cat-sku-code { font-size: 10px; color: rgba(255,255,255,.55); font-family: 'Bricolage Grotesque', sans-serif; letter-spacing: .02em; }
 
 /* Pricing tiers */
 .cat-pricing { background: var(--navy-mid); padding: 120px 52px; text-align: center; }
@@ -1206,7 +1255,7 @@ section { padding: 120px 0; }
 .cat-tier { background: var(--navy-card); border: 1px solid var(--border-dark); padding: 36px 30px; }
 .cat-tier.featured { border-color: var(--teal); box-shadow: 0 0 40px rgba(72,184,202,.14); }
 .cat-tier-moq { font-family: 'Cormorant Garamond', serif; font-size: 34px; color: #fff; font-weight: 400; margin-bottom: 6px; }
-.cat-tier-moq span { font-size: 13px; color: rgba(255,255,255,.35); font-family: 'Montserrat', sans-serif; margin-left: 6px; }
+.cat-tier-moq span { font-size: 13px; color: rgba(255,255,255,.35); font-family: 'Bricolage Grotesque', sans-serif; margin-left: 6px; }
 .cat-tier-label { font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: var(--teal-light); font-weight: 600; margin-bottom: 4px; }
 .cat-tier-discount { font-size: 12px; color: rgba(255,255,255,.4); margin-bottom: 20px; }
 .cat-tier-perks { list-style: none; display: flex; flex-direction: column; gap: 10px; }
@@ -1750,7 +1799,7 @@ section { padding: 120px 0; }
   height: 14px; line-height: 14px;
 }
 .whatsapp-label {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Bricolage Grotesque', sans-serif;
   display: block; white-space: nowrap;
   transition: transform .3s var(--ease-mci), opacity .3s var(--ease-mci);
 }
@@ -2820,7 +2869,7 @@ iframe[src*="naraai.vercel.app/c/"] {
 
 .hero-title {
   max-width: 640px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Bricolage Grotesque', sans-serif;
   font-size: clamp(42px, 4.8vw, 72px);
   line-height: 1.02;
   margin-bottom: 28px;

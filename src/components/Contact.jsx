@@ -166,42 +166,42 @@ export default function Contact() {
                 <form ref={formEl} onSubmit={handleSubmit}>
                   <div className="form-row">
                     <div className="form-group">
-                      <label>First Name <span className="form-required">*</span></label>
-                      <input required value={form.firstName} onChange={update('firstName')} placeholder="Jane" />
+                      <label htmlFor="cf-firstName">First Name <span className="form-required">*</span></label>
+                      <input id="cf-firstName" required value={form.firstName} onChange={update('firstName')} placeholder="Jane" />
                     </div>
                     <div className="form-group">
-                      <label>Last Name <span className="form-required">*</span></label>
-                      <input required value={form.lastName} onChange={update('lastName')} placeholder="Smith" />
+                      <label htmlFor="cf-lastName">Last Name <span className="form-required">*</span></label>
+                      <input id="cf-lastName" required value={form.lastName} onChange={update('lastName')} placeholder="Smith" />
                     </div>
                   </div>
 
                   <div className="form-group">
-                    <label>Business Email <span className="form-required">*</span></label>
-                    <input required type="email" value={form.email} onChange={update('email')} placeholder="jane@salon.com" />
+                    <label htmlFor="cf-email">Business Email <span className="form-required">*</span></label>
+                    <input id="cf-email" required type="email" value={form.email} onChange={update('email')} placeholder="jane@salon.com" />
                   </div>
 
                   <div className="form-row">
                     <div className="form-group">
-                      <label>Company / Brand</label>
-                      <input value={form.company} onChange={update('company')} placeholder="Glam Beauty Co." />
+                      <label htmlFor="cf-company">Company / Brand</label>
+                      <input id="cf-company" value={form.company} onChange={update('company')} placeholder="Glam Beauty Co." />
                     </div>
                     <div className="form-group">
-                      <label>Country <span className="form-required">*</span></label>
-                      <input required value={form.country} onChange={update('country')} placeholder="United States" />
+                      <label htmlFor="cf-country">Country <span className="form-required">*</span></label>
+                      <input id="cf-country" required value={form.country} onChange={update('country')} placeholder="United States" />
                     </div>
                   </div>
 
                   <div className="form-group">
-                    <label>Monthly Volume</label>
-                    <select value={form.volume} onChange={update('volume')}>
+                    <label htmlFor="cf-volume">Monthly Volume</label>
+                    <select id="cf-volume" value={form.volume} onChange={update('volume')}>
                       <option value="">Select order range</option>
                       {VOLUMES.map(v => <option key={v}>{v}</option>)}
                     </select>
                   </div>
 
                   <div className="form-group">
-                    <label>Message</label>
-                    <textarea rows={4} value={form.message} onChange={update('message')} placeholder="Tell us about your wholesale needs: product types, target market, or any custom requirements..." />
+                    <label htmlFor="cf-message">Message</label>
+                    <textarea id="cf-message" rows={4} value={form.message} onChange={update('message')} placeholder="Tell us about your wholesale needs: product types, target market, or any custom requirements..." />
                   </div>
 
                   {error && (

@@ -50,7 +50,7 @@
     <!-- Preconnect + Google Fonts (non-blocking) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&display=swap" />
 
     <!-- Preconnect CDN for WebGPU texture maps -->
     <link rel="preconnect" href="https://i.postimg.cc" crossorigin />
@@ -64,7 +64,11 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-    <!-- JSON-LD: Organization -->
+    <!-- JSON-LD: Organization.
+         numberOfEmployees and foundingDate were removed here — neither was
+         ever owner-confirmed, and foundingDate:2010 directly contradicted the
+         "Est. 2015" shown in About.jsx. Do not reintroduce without a figure
+         confirmed to match every other mention of it on the site. -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -78,11 +82,6 @@
       "sameAs": [
         "https://www.instagram.com/mcieyelashes"
       ],
-      "numberOfEmployees": {
-        "@type": "QuantitativeValue",
-        "minValue": 10
-      },
-      "foundingDate": "2010",
       "areaServed": "Worldwide",
       "knowsAbout": [
         "Eyelash Manufacturing",
@@ -103,7 +102,11 @@
     }
     </script>
 
-    <!-- JSON-LD: LocalBusiness (manufacturer signals) -->
+    <!-- JSON-LD: LocalBusiness (manufacturer signals).
+         openingHoursSpecification, currenciesAccepted, and paymentAccepted
+         were removed — none were ever owner-confirmed. Region set to match
+         the footer's own "Purbalingga, Central Java, Indonesia." Do not
+         reintroduce these fields without owner confirmation. -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -116,23 +119,16 @@
       "description": "MCI Eyelashes is a direct-factory wholesale eyelash manufacturer in Purbalingga, Indonesia, supplying handcrafted mink, silk, synthetic, and 3D/5D volume lashes to salons, distributors, and beauty brands. MOQ 100 pairs per style, free catalog samples, 5 working days production. Private label and OEM services available.",
       "address": {
         "@type": "PostalAddress",
-        "addressCountry": "ID",
-        "addressRegion": "Indonesia"
+        "addressLocality": "Purbalingga",
+        "addressRegion": "Central Java",
+        "addressCountry": "ID"
       },
       "geo": {
         "@type": "GeoCoordinates",
         "latitude": -7.3886,
         "longitude": 109.3378
       },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-        "opens": "09:00",
-        "closes": "17:00"
-      },
       "priceRange": "$$",
-      "currenciesAccepted": "USD, EUR, IDR",
-      "paymentAccepted": "Bank Transfer, Letter of Credit, PayPal",
       "areaServed": {
         "@type": "Place",
         "name": "Worldwide"

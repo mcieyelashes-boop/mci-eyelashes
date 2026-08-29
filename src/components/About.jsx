@@ -1,24 +1,5 @@
-import { useRef, useEffect, useState } from 'react'
+import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
-
-function AnimatedCounter({ target, suffix = '', duration = 2000 }) {
-  const [count, setCount] = useState(0)
-  const ref = useRef(null)
-  const inView = useInView(ref, { once: true })
-  useEffect(() => {
-    if (!inView) return
-    const start = Date.now()
-    const timer = setInterval(() => {
-      const elapsed = Date.now() - start
-      const progress = Math.min(elapsed / duration, 1)
-      const ease = 1 - Math.pow(1 - progress, 3)
-      setCount(Math.floor(ease * target))
-      if (progress >= 1) clearInterval(timer)
-    }, 16)
-    return () => clearInterval(timer)
-  }, [inView, target, duration])
-  return <span ref={ref}>{count}{suffix}</span>
-}
 
 // Owner-confirmed claims only. Partner counts, country counts, and units-shipped
 // figures were fabricated and have been removed — do not reintroduce them.
@@ -48,11 +29,11 @@ export default function About() {
               <div className="about-center">
                 <motion.p className="about-mci-bg" animate={{ opacity: [0.06, 0.12, 0.06] }} transition={{ duration: 4, repeat: Infinity }}>MCI</motion.p>
                 <div style={{ width: '56px', height: '1px', background: 'rgba(72,184,202,.18)' }} />
-                <p style={{ fontSize: '10px', letterSpacing: '5px', color: 'rgba(72,184,202,.28)', textTransform: 'uppercase', fontFamily: "'Montserrat',sans-serif" }}>Est. 2015</p>
+                <p style={{ fontSize: '10px', letterSpacing: '5px', color: 'rgba(72,184,202,.28)', textTransform: 'uppercase', fontFamily: "'Bricolage Grotesque',sans-serif" }}>Est. 2015</p>
               </div>
               {certifications.length > 0 && (
                 <div className="about-certs">
-                  <p style={{ fontSize: '9px', letterSpacing: '2px', color: '#48B8CA', textTransform: 'uppercase', marginBottom: '8px', opacity: .65, fontFamily: "'Montserrat',sans-serif" }}>Certifications</p>
+                  <p style={{ fontSize: '9px', letterSpacing: '2px', color: '#48B8CA', textTransform: 'uppercase', marginBottom: '8px', opacity: .65, fontFamily: "'Bricolage Grotesque',sans-serif" }}>Certifications</p>
                   <div>{certifications.map(c => <span key={c} className="cert-tag">{c}</span>)}</div>
                 </div>
               )}
@@ -70,16 +51,6 @@ export default function About() {
                   <p className="value-title">{title}</p>
                   <p className="value-desc">{desc}</p>
                 </motion.div>
-              ))}
-            </div>
-            <div className="about-stats-grid">
-              {[{ target: 100, suffix: '', label: 'Pairs Minimum' }, { target: 5, suffix: '', label: 'Days Production' }, { target: 10, suffix: '', label: 'Product Lines' }].map(({ target, suffix, label }) => (
-                <div key={label}>
-                  <p style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: '40px', color: '#48B8CA', fontWeight: 300, lineHeight: 1, marginBottom: '5px' }}>
-                    <AnimatedCounter target={target} suffix={suffix} />
-                  </p>
-                  <p className="about-stat-lbl" style={{ fontSize: '10px', letterSpacing: '2px', color: 'rgba(255,255,255,.28)', textTransform: 'uppercase' }}>{label}</p>
-                </div>
               ))}
             </div>
           </motion.div>

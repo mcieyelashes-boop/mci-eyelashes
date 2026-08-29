@@ -42,6 +42,9 @@ export default function CTABanner() {
           </div>
 
           <motion.div className="cta-banner-actions" initial={false} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.75, delay: 0.3 }}>
+            {/* MOQ/production-day stats live once, canonically, in FactoryProof —
+                repeating them here too (on top of the TRUST pills to the left)
+                was the same three facts stated a fourth time on one page. */}
             <div className="cta-stat-block">
               <div className="cta-stat">
                 <span className="cta-stat-num">24h</span>
@@ -49,13 +52,8 @@ export default function CTABanner() {
               </div>
               <div className="cta-stat-divider" />
               <div className="cta-stat">
-                <span className="cta-stat-num">100</span>
-                <span className="cta-stat-label">Pairs MOQ</span>
-              </div>
-              <div className="cta-stat-divider" />
-              <div className="cta-stat">
-                <span className="cta-stat-num">5</span>
-                <span className="cta-stat-label">Days Production</span>
+                <span className="cta-stat-num">10</span>
+                <span className="cta-stat-label">Product Lines</span>
               </div>
             </div>
 

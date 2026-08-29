@@ -168,11 +168,10 @@ export default function BlogPost() {
             <article>
               {/* Lead */}
               <p style={{
-                fontSize: '16px', color: 'var(--ink-mid)', lineHeight: 2,
-                borderLeft: '3px solid var(--teal)',
-                paddingLeft: '24px', marginBottom: '56px',
+                fontSize: '22px', color: 'var(--ink-mid)', lineHeight: 1.6,
+                marginBottom: '56px', maxWidth: '62ch',
                 fontFamily: 'Cormorant Garamond, serif',
-                fontStyle: 'italic',
+                fontWeight: 400, fontStyle: 'italic',
               }}>
                 {post.excerpt}
               </p>
@@ -254,7 +253,7 @@ export default function BlogPost() {
                     color: '#fff',
                     fontSize: '10px', letterSpacing: '2.5px',
                     textTransform: 'uppercase', fontWeight: 600,
-                    fontFamily: 'Montserrat, sans-serif',
+                    fontFamily: 'Bricolage Grotesque, sans-serif',
                   }}
                 >
                   Get Wholesale Pricing →
