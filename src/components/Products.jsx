@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react'
+import { useRef, useState, useEffect, useCallback } from 'react'
 import { motion, AnimatePresence, useInView } from 'framer-motion'
 
 const products = [
@@ -20,6 +20,65 @@ export default function Products() {
   const [active, setActive] = useState(0)
   const p = products[active]
 
+  // The tab bar overflows on most screens (10 tabs), but a plain
+  // overflow-x:auto div has no native click-and-drag scrolling on desktop —
+  // only touch/trackpad swipe works. With no visible scrollbar
+  // (scrollbar-width:none) and no other cue, mouse users had no way to
+  // reach the later tabs at all. This adds a manual grab-to-scroll handler
+  // plus fade cues that reflect real scroll position.
+  const tabsWrapRef = useRef(null)
+  const dragState = useRef({ down: false, startX: 0, startScroll: 0, moved: false })
+  const [fade, setFade] = useState({ left: false, right: false })
+
+  const updateFade = useCallback(() => {
+    const el = tabsWrapRef.current
+    if (!el) return
+    setFade({
+      left: el.scrollLeft > 4,
+      right: el.scrollLeft < el.scrollWidth - el.clientWidth - 4,
+    })
+  }, [])
+
+  useEffect(() => {
+    updateFade()
+    window.addEventListener('resize', updateFade)
+    return () => window.removeEventListener('resize', updateFade)
+  }, [updateFade])
+
+  const onPointerDown = (e) => {
+    const el = tabsWrapRef.current
+    dragState.current = { down: true, startX: e.clientX, startScroll: el.scrollLeft, moved: false }
+    // Can throw (NotFoundError) if the pointer is no longer active by the
+    // time this runs — a real edge case on rapid taps, not just a test
+    // artifact. Losing capture just means drag-tracking falls back to
+    // whatever the browser does natively; it shouldn't crash the handler.
+    try { el.setPointerCapture?.(e.pointerId) } catch { /* pointer already gone */ }
+    el.style.cursor = 'grabbing'
+  }
+  const onPointerMove = (e) => {
+    const s = dragState.current
+    if (!s.down) return
+    const dx = e.clientX - s.startX
+    if (Math.abs(dx) > 3) s.moved = true
+    tabsWrapRef.current.scrollLeft = s.startScroll - dx
+  }
+  const endDrag = () => {
+    dragState.current.down = false
+    if (tabsWrapRef.current) tabsWrapRef.current.style.cursor = 'grab'
+  }
+  // A drag that actually moved the row shouldn't also fire the tab's click.
+  // `moved` is consumed here rather than reset in endDrag: it needs to
+  // survive from pointerup to the click event that follows it (that's the
+  // whole point), but must not leak into a LATER click that never went
+  // through a pointerdown at all — a keyboard Enter/Space activation or a
+  // screen reader's synthesized click. Clearing it right after reading
+  // keeps it scoped to exactly the gesture that set it.
+  const onTabClick = (i) => {
+    const wasDrag = dragState.current.moved
+    dragState.current.moved = false
+    if (!wasDrag) setActive(i)
+  }
+
   return (
     <section id="products" className="prod-section" style={{ padding: '120px 0' }}>
       <div className="prod-inner">
@@ -29,15 +88,27 @@ export default function Products() {
           <p className="prod-subtitle">For salons, distributors, and private-label founders — pick a style, request a free sample, and order direct from the factory.</p>
         </motion.div>
 
-        <div className="prod-tabs-wrap">
-          <div className="prod-tabs">
-            {products.map((prod, i) => (
-              <button key={prod.id} className={`prod-tab${active === i ? ' active' : ''}`} onClick={() => setActive(i)}>
-                <span className="prod-tab-id">{prod.id}</span>
-                <span className="prod-tab-name">{prod.name}</span>
-              </button>
-            ))}
+        <div className="prod-tabs-outer">
+          <div
+            className="prod-tabs-wrap"
+            ref={tabsWrapRef}
+            onScroll={updateFade}
+            onPointerDown={onPointerDown}
+            onPointerMove={onPointerMove}
+            onPointerUp={endDrag}
+            onPointerLeave={endDrag}
+          >
+            <div className="prod-tabs">
+              {products.map((prod, i) => (
+                <button key={prod.id} className={`prod-tab${active === i ? ' active' : ''}`} onClick={() => onTabClick(i)}>
+                  <span className="prod-tab-id">{prod.id}</span>
+                  <span className="prod-tab-name">{prod.name}</span>
+                </button>
+              ))}
+            </div>
           </div>
+          {fade.left && <div className="prod-tabs-fade left" />}
+          {fade.right && <div className="prod-tabs-fade right" />}
         </div>
 
         <AnimatePresence mode="wait">
