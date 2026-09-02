@@ -31,19 +31,19 @@ export const landingPages = [
       {
         heading: 'OEM Eyelash Manufacturing',
         paragraphs: [
-          'For brands that want to sell eyelashes under their own name, MCI Eyelashes offers OEM manufacturing on our existing catalog styles — mink, silk, synthetic, human hair, and volume lashes — produced to your specification and packed for your brand.',
+          'For brands that want to sell eyelashes under their own name, MCI Eyelashes offers [OEM manufacturing](/eyelash-oem-indonesia) on our existing catalog styles — mink, silk, synthetic, human hair, and volume lashes — produced to your specification and packed for your brand.',
         ],
       },
       {
         heading: 'Private Label Eyelashes',
         paragraphs: [
-          'Beyond OEM on existing styles, we offer full private label development: custom curl, custom length, custom material blend, and custom packaging design. This is the same wholesale terms as our standard catalog — 100 pairs MOQ per style, mix and match across styles.',
+          'Beyond OEM on existing styles, we offer full [private label development](/private-label-eyelashes): custom curl, custom length, custom material blend, and custom packaging design. This is the same wholesale terms as our standard catalog — 100 pairs MOQ per style, mix and match across styles.',
         ],
       },
       {
         heading: 'Our Eyelash Materials',
         paragraphs: [
-          'MCI Eyelashes manufactures across four core materials, each suited to a different price point and finish:',
+          'MCI Eyelashes [handmakes](/handmade-eyelashes) across four core materials, each suited to a different price point and finish:',
         ],
         list: [
           'Mink lashes — ultra-soft, natural taper, our signature style',
@@ -55,7 +55,7 @@ export const landingPages = [
       {
         heading: 'MOQ & Production Lead Time',
         paragraphs: [
-          'Minimum order is 100 pairs per style, and you can mix and match styles within one order to reach that minimum. Standard 100-pair orders take 5 working days to produce. Larger or custom private-label orders vary — contact us for an exact timeline before you order.',
+          'Minimum order is 100 pairs per style, and you can mix and match styles within one [wholesale order](/wholesale-eyelashes) to reach that minimum. Standard 100-pair orders take 5 working days to produce. Larger or [custom private-label orders](/custom-eyelashes) vary — contact us for an exact timeline before you order.',
         ],
       },
       {
@@ -67,7 +67,7 @@ export const landingPages = [
       {
         heading: 'Why Brands Choose MCI Eyelashes',
         paragraphs: [
-          'Our position is straightforward: a factory-direct Indonesian manufacturer with one of the lower minimum order quantities in the industry, combined with private label capability and fast production. It’s built for new and growing lash brands that need real customization without committing to a 500+ or 1,000+ pair minimum on their first order.',
+          'Our position is straightforward: a [factory-direct Indonesian manufacturer](/eyelash-manufacturer-indonesia) in [Purbalingga](/eyelash-manufacturer-purbalingga) with one of the lower minimum order quantities in the industry, combined with private label capability and fast production. It’s built for new and growing lash brands that need real customization without committing to a 500+ or 1,000+ pair minimum on their first order.',
         ],
       },
     ],
