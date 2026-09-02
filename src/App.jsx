@@ -49,6 +49,13 @@ export default function App() {
           <Route path="/blog" element={<BlogList />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/eyelashes-factory-indonesia" element={<LandingPage slug="eyelashes-factory-indonesia" />} />
+          <Route path="/eyelash-manufacturer-indonesia" element={<LandingPage slug="eyelash-manufacturer-indonesia" />} />
+          <Route path="/private-label-eyelashes" element={<LandingPage slug="private-label-eyelashes" />} />
+          <Route path="/eyelash-oem-indonesia" element={<LandingPage slug="eyelash-oem-indonesia" />} />
+          <Route path="/custom-eyelashes" element={<LandingPage slug="custom-eyelashes" />} />
+          <Route path="/wholesale-eyelashes" element={<LandingPage slug="wholesale-eyelashes" />} />
+          <Route path="/eyelash-manufacturer-purbalingga" element={<LandingPage slug="eyelash-manufacturer-purbalingga" />} />
+          <Route path="/handmade-eyelashes" element={<LandingPage slug="handmade-eyelashes" />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>

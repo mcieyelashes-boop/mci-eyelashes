@@ -6,6 +6,24 @@ import { setMeta, HOME_META } from '../utils/setMeta'
 
 const BASE_URL = 'https://www.mci-eyelashes.com'
 
+// Inline [text](/path) links inside paragraph strings, for internal linking
+// between landing pages (e.g. "see our OEM eyelash manufacturing page").
+function parseInline(text) {
+  const parts = text.split(/(\[.*?\]\(.*?\))/g)
+  return parts.map((part, i) => {
+    const linkMatch = part.match(/^\[(.*?)\]\((.*?)\)$/)
+    if (linkMatch) {
+      const [, label, href] = linkMatch
+      return (
+        <Link key={i} to={href} style={{ color: 'var(--teal-light)', textDecoration: 'underline', textDecorationColor: 'rgba(72,184,202,.35)', textUnderlineOffset: '3px' }}>
+          {label}
+        </Link>
+      )
+    }
+    return part
+  })
+}
+
 export default function LandingPage({ slug }) {
   const page = landingPages.find(p => p.slug === slug)
 
@@ -141,7 +159,7 @@ export default function LandingPage({ slug }) {
                 </h2>
                 {section.paragraphs.map((p, j) => (
                   <p key={j} style={{ fontSize: '14px', color: 'var(--text-on-dark-mid)', lineHeight: 1.9, marginBottom: '14px' }}>
-                    {p}
+                    {parseInline(p)}
                   </p>
                 ))}
                 {section.list && (

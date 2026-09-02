@@ -44,6 +44,13 @@
     { "source": "/blog", "destination": "/blog.html" },
     { "source": "/blog/:slug", "destination": "/blog/:slug.html" },
     { "source": "/eyelashes-factory-indonesia", "destination": "/eyelashes-factory-indonesia.html" },
+    { "source": "/eyelash-manufacturer-indonesia", "destination": "/eyelash-manufacturer-indonesia.html" },
+    { "source": "/private-label-eyelashes", "destination": "/private-label-eyelashes.html" },
+    { "source": "/eyelash-oem-indonesia", "destination": "/eyelash-oem-indonesia.html" },
+    { "source": "/custom-eyelashes", "destination": "/custom-eyelashes.html" },
+    { "source": "/wholesale-eyelashes", "destination": "/wholesale-eyelashes.html" },
+    { "source": "/eyelash-manufacturer-purbalingga", "destination": "/eyelash-manufacturer-purbalingga.html" },
+    { "source": "/handmade-eyelashes", "destination": "/handmade-eyelashes.html" },
     { "source": "/((?!api/).*)", "destination": "/index.html" }
   ]
 }

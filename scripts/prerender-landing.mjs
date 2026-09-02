@@ -47,6 +47,10 @@ function jsonLd(page, url) {
   ]
 }
 
+function inline(text) {
+  return escapeHtml(text).replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>')
+}
+
 function bodyHtml(page) {
   return `
     <main>
@@ -61,7 +65,7 @@ function bodyHtml(page) {
         .map(
           (s) => `
       <h2>${escapeHtml(s.heading)}</h2>
-      ${s.paragraphs.map((p) => `<p>${escapeHtml(p)}</p>`).join('\n      ')}
+      ${s.paragraphs.map((p) => `<p>${inline(p)}</p>`).join('\n      ')}
       ${s.list ? `<ul>${s.list.map((i) => `<li>${escapeHtml(i)}</li>`).join('')}</ul>` : ''}`
         )
         .join('\n')}
