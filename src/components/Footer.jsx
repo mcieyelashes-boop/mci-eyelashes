@@ -13,6 +13,7 @@ const footerLinks = {
   ],
   Company: [
     { label: 'About Us',              href: '/#about' },
+    { label: 'Eyelash Factory Indonesia', href: '/eyelashes-factory-indonesia' },
     { label: 'Manufacturing Process', href: '/#process' },
     { label: 'Gallery',               href: '/#gallery' },
     { label: 'Before You Order',      href: '/#before-you-order' },

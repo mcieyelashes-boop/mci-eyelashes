@@ -10,36 +10,21 @@
 // SPA takes over the moment it loads (see main.jsx: createRoot().render(),
 // no hydrateRoot, so replacing the prerendered markup is safe).
 //
-// Output lands at dist/blog.html and dist/blog/<slug>.html — paired with
-// "cleanUrls": true in vercel.json so /blog and /blog/<slug> serve them
-// directly. Vercel serves matching static files before applying the SPA
-// rewrite, so these never fall through to index.html.
+// Output lands at dist/blog.html and dist/blog/<slug>.html, matched by
+// explicit rewrites in vercel.json ahead of the SPA catch-all.
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import { dirname, join } from 'node:path'
 import { blogPosts } from '../src/data/blogPosts.js'
 import { AUTHOR } from '../src/data/author.js'
+import { BASE_URL, escapeHtml, getAssetTags, renderPage } from './prerender-shared.mjs'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const ROOT = join(__dirname, '..')
 const DIST = join(ROOT, 'dist')
-const BASE_URL = 'https://www.mci-eyelashes.com'
 
 const distIndexHtml = readFileSync(join(DIST, 'index.html'), 'utf-8')
-
-// Pull the hashed script/link/modulepreload tags Vite injected into the real
-// build, so every prerendered page loads the exact same app bundle.
-const assetTags = [...distIndexHtml.matchAll(/<(script|link)[^>]+(?:src|href)="\/assets\/[^"]+"[^>]*>(?:<\/script>)?/g)]
-  .map((m) => m[0])
-  .join('\n    ')
-
-function escapeHtml(str) {
-  return String(str)
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
-}
+const assetTags = getAssetTags(distIndexHtml)
 
 // Minimal markdown-ish -> HTML converter for the subset actually used in
 // blogPosts.js body strings: **bold**, "- " bullets, "1. " numbered lists,
@@ -70,60 +55,6 @@ function bodyToHtml(body) {
       return `<p>${inline(lines.join(' '))}</p>`
     })
     .join('\n')
-}
-
-const HEAD_STATIC = `
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L2FC465XD9"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-L2FC465XD9');
-    </script>
-    <meta name="google-site-verification" content="amo9mKdHSCmbAfa8L6DbxlFgYyMDStnf9riYJrLIOEM" />
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=3" />
-    <link rel="alternate icon" type="image/png" href="/favicon-180.png?v=3" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap" />
-    <meta name="theme-color" content="#0a1720" />
-    <script type="application/ld+json">${JSON.stringify({
-      '@context': 'https://schema.org',
-      '@type': 'Organization',
-      name: 'MCI Eyelashes',
-      url: BASE_URL,
-      logo: `${BASE_URL}/favicon.svg`,
-    })}</script>`
-
-function page({ title, description, canonical, ogTitle, ogDescription, ogImage, jsonLd, bodyHtml }) {
-  return `<!doctype html>
-<html lang="en">
-  <head>${HEAD_STATIC}
-    <title>${escapeHtml(title)}</title>
-    <meta name="description" content="${escapeHtml(description)}" />
-    <link rel="canonical" href="${canonical}" />
-    <meta property="og:type" content="article" />
-    <meta property="og:site_name" content="MCI Eyelashes" />
-    <meta property="og:url" content="${canonical}" />
-    <meta property="og:title" content="${escapeHtml(ogTitle)}" />
-    <meta property="og:description" content="${escapeHtml(ogDescription)}" />
-    <meta property="og:image" content="${ogImage}" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="${escapeHtml(ogTitle)}" />
-    <meta name="twitter:description" content="${escapeHtml(ogDescription)}" />
-    <meta name="twitter:image" content="${ogImage}" />
-    ${jsonLd.map((obj) => `<script type="application/ld+json">${JSON.stringify(obj)}</script>`).join('\n    ')}
-    ${assetTags}
-  </head>
-  <body>
-    <div id="root">${bodyHtml}</div>
-  </body>
-</html>
-`
 }
 
 function postJsonLd(post, url) {
@@ -210,7 +141,7 @@ function listBodyHtml() {
 mkdirSync(join(DIST, 'blog'), { recursive: true })
 writeFileSync(
   join(DIST, 'blog.html'),
-  page({
+  renderPage({
     title: 'Blog | MCI Eyelashes — Wholesale Lash Industry Guides',
     description:
       'Expert guides for wholesale lash buyers, salon owners, and beauty entrepreneurs — from MOQ and pricing to private label manufacturing and brand building.',
@@ -220,6 +151,7 @@ writeFileSync(
     ogImage: `${BASE_URL}/hero-lashes.jpg`,
     jsonLd: [],
     bodyHtml: listBodyHtml(),
+    assetTags,
   })
 )
 
@@ -228,15 +160,17 @@ for (const post of blogPosts) {
   const url = `${BASE_URL}/blog/${post.slug}`
   writeFileSync(
     join(DIST, 'blog', `${post.slug}.html`),
-    page({
+    renderPage({
       title: `${post.title} | MCI Eyelashes Blog`,
       description: post.metaDescription,
       canonical: url,
       ogTitle: post.title,
       ogDescription: post.metaDescription,
       ogImage: `${BASE_URL}/hero-lashes.jpg`,
+      ogType: 'article',
       jsonLd: postJsonLd(post, url),
       bodyHtml: postBodyHtml(post),
+      assetTags,
     })
   )
 }

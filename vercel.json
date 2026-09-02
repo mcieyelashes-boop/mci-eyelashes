@@ -43,6 +43,7 @@
   "rewrites": [
     { "source": "/blog", "destination": "/blog.html" },
     { "source": "/blog/:slug", "destination": "/blog/:slug.html" },
+    { "source": "/eyelashes-factory-indonesia", "destination": "/eyelashes-factory-indonesia.html" },
     { "source": "/((?!api/).*)", "destination": "/index.html" }
   ]
 }

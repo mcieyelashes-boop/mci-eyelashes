@@ -1293,7 +1293,7 @@ Market saturation is increasing. Over 2,000 new lash brands launched on Shopify 
 - 5 working days production on 100-pair orders
 - A live video call to our production floor whenever you want one
 
-To request a product catalog, samples, or a wholesale pricing quote, visit our Contact page.`,
+To request a product catalog, samples, or a wholesale pricing quote, visit our Contact page. For a full breakdown of our factory, materials, and OEM/private label capabilities, see our [eyelashes factory Indonesia](/eyelashes-factory-indonesia) page.`,
       },
     ],
     faq: [
