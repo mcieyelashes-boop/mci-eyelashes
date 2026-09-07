@@ -249,7 +249,7 @@ For most emerging lash brands, **private label** is the right starting point. OE
 - Lash style (natural, wispy, dramatic, volume)
 - Fiber type (mink, silk, synthetic, PBT)
 - Band type (clear, black, invisible)
-- Length (6mm–18mm), curl (B, C, D, L), thickness
+- Length (6mm–18mm), curl (B, C, D, L — see our [eyelash curl types guide](/blog/eyelash-curl-types-explained) for what each looks like), thickness
 
 **Packaging:**
 - Box style (drawer, magnetic lid, window box, book-style)
@@ -1388,6 +1388,90 @@ Reach out via WhatsApp or email to get a quote and discuss shipping to your coun
       {
         q: 'Can I get samples shipped before placing a wholesale order with MCI Eyelashes?',
         a: 'Yes — samples on our existing catalog styles are free, you only cover the shipping cost. This lets you confirm quality before committing to the 100-pair MOQ.',
+      },
+    ],
+  },
+  {
+    slug: 'eyelash-curl-types-explained',
+    title: 'Eyelash Curl Types Explained: J, B, C, CC, D & U Curl Guide (2026)',
+    metaDescription: 'A complete guide to eyelash curl types — J, B, C, CC, D, and U curl — what each looks like, when it is used, and how to specify curl for a private label eyelash order.',
+    category: 'Technical Guide',
+    date: '2026-09-07',
+    readTime: '6 min read',
+    excerpt: 'From a barely-there J curl to a dramatic D curl, curl type is one of the biggest factors in how a lash style looks and performs. This guide breaks down each curl type and how to specify one for a private label order.',
+    coverAlt: 'Eyelash curl types comparison — J, B, C, CC, D, and U curl',
+    sections: [
+      {
+        heading: 'Why Curl Type Matters',
+        body: `Curl type is the shape of the lash fiber itself — how tightly it bends from base to tip. Independent of material or length, curl is what determines how much a lash lifts and opens the eye, and it's one of the standard specifications used across strip lashes, lash extensions, and private label development.
+
+Curl is usually labeled with a letter code: **J, B, C, CC, and D** are the most common, with **U curl** used for more specialized, tightly-curled styles. Knowing the difference matters whether you're picking a strip style off a catalog or briefing a factory on a custom private label design.`,
+      },
+      {
+        heading: 'J Curl',
+        body: `J curl is the straightest of the common curl types, with only a slight bend near the tip. It sits closest to an unenhanced natural lash line.
+
+- **Look:** Subtle, barely-there lift
+- **Best for:** Natural daytime styles, or clients whose natural lashes already have some curl and don't need much additional lift`,
+      },
+      {
+        heading: 'B Curl',
+        body: `B curl has slightly more curve than J, giving a touch more lift while still reading as natural.
+
+- **Look:** Soft, natural lift with a bit more definition than J
+- **Best for:** Understated everyday strip styles, and lower lash line applications where a dramatic curl would look out of place`,
+      },
+      {
+        heading: 'C Curl',
+        body: `C curl is the most widely used curl type across the industry. It has a rounded, open curve that visibly lifts and opens the eye without looking exaggerated.
+
+- **Look:** Natural but noticeably lifted — the industry's default "safe choice"
+- **Best for:** General-purpose wholesale stocking; C curl styles tend to suit the widest range of eye shapes and client preferences`,
+      },
+      {
+        heading: 'CC Curl',
+        body: `CC curl sits between C and D — more curl and lift than a standard C, without going as tight as a full D.
+
+- **Look:** Fuller, more lifted than C curl, but still rounded rather than sharply angled
+- **Best for:** Buyers who want a fuller look than C curl but find D curl too dramatic for their market`,
+      },
+      {
+        heading: 'D Curl',
+        body: `D curl is the most dramatic of the common curl types — a tight, sharply lifted curve that produces a pronounced "doll-eye" effect.
+
+- **Look:** Maximum lift and curl, very noticeable
+- **Best for:** Bold, editorial, and glam styles, and markets where dramatic volume lashes are the dominant trend`,
+      },
+      {
+        heading: 'U Curl (Perm / Semi-Permanent Curl)',
+        body: `U curl is an intensely rounded, near-circular curl, most associated with lash lift and perm services rather than standard strip lash or extension trays. It's a more specialized curl than J–D and shows up far less often in general wholesale catalogs.
+
+- **Look:** Very tight, rounded curl similar to a lash lift result
+- **Best for:** Specialty styles and services rather than everyday wholesale stocking`,
+      },
+      {
+        heading: 'Choosing a Curl for a Private Label Order',
+        body: `Curl style and intensity is one of the specifications MCI Eyelashes takes for [private label](/private-label-eyelashes) and [custom eyelash](/custom-eyelashes) orders. When briefing a curl type for a private label run, it helps to reference an existing tray or send a sample lash so the curl can be matched precisely rather than described only by letter code.
+
+Curl is only one part of a full private label specification — pair it with your [material choice](/blog/mink-vs-silk-lashes-wholesale-guide) and desired length before sending your brief for a quote.`,
+      },
+    ],
+    faq: [
+      {
+        q: 'What is the most popular eyelash curl type?',
+        a: 'C curl is generally considered the most versatile and widely used curl type across strip lashes and extensions — it offers a natural but visibly lifted look that suits a wide range of eye shapes.',
+      },
+      {
+        q: 'What is the difference between C and D curl?',
+        a: 'C curl gives a rounded, natural lift, while D curl is tighter and more dramatic, creating a more pronounced doll-eye effect.',
+      },
+      {
+        q: 'Can I specify a curl type for a private label eyelash order?',
+        a: 'Yes — curl style and intensity is one of the customizable specifications MCI Eyelashes takes for private label orders. Contact us with your reference tray or sample to match it precisely.',
+      },
+      {
+        q: 'What curl type is best for natural, everyday lashes?',
+        a: 'J or B curl typically gives the most natural, subtle look, closest to an unenhanced natural lash.',
       },
     ],
   },

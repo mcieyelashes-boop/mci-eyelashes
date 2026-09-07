@@ -51,6 +51,7 @@
     { "source": "/wholesale-eyelashes", "destination": "/wholesale-eyelashes.html" },
     { "source": "/eyelash-manufacturer-purbalingga", "destination": "/eyelash-manufacturer-purbalingga.html" },
     { "source": "/handmade-eyelashes", "destination": "/handmade-eyelashes.html" },
+    { "source": "/soft-touch-lashes-wholesale", "destination": "/soft-touch-lashes-wholesale.html" },
     { "source": "/((?!api/).*)", "destination": "/index.html" }
   ]
 }

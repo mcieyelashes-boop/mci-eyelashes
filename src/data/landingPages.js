@@ -443,4 +443,69 @@ export const landingPages = [
       { q: 'What is the MOQ for handmade eyelashes at MCI?', a: '100 pairs per style, mixed and matched across styles.' },
     ],
   },
+  {
+    slug: 'soft-touch-lashes-wholesale',
+    title: 'Soft Touch Lashes Wholesale | MCI Eyelashes',
+    metaDescription: 'Wholesale Soft Touch Lashes from MCI Eyelashes — Korean Synthetic and Human Hair, 7 series, 77 SKUs, 100-pair MOQ per style, factory direct from Indonesia.',
+    h1: 'Soft Touch Lashes Wholesale',
+    breadcrumbName: 'Soft Touch Lashes',
+    intro: 'Soft Touch Lashes is MCI Eyelashes’ bestselling collection — the industry standard for over 50 years, built from Korean Synthetic fiber and 100% sterilized Human Hair with tapered technology, available wholesale from a 100-pair MOQ per style.',
+    factSheet: [
+      { label: 'Collection', value: 'Soft Touch Lashes' },
+      { label: 'Status', value: 'Bestseller — industry standard for 50+ years' },
+      { label: 'Material', value: 'Korean Synthetic / Human Hair' },
+      { label: 'Series', value: '7 series, 77 SKUs' },
+      { label: 'MOQ', value: '100 pairs per style — mix & match allowed' },
+      { label: 'Samples', value: 'Free on existing catalog styles — buyer covers shipping' },
+    ],
+    sections: [
+      {
+        heading: 'What Is the Soft Touch Lashes Collection',
+        paragraphs: [
+          'Soft Touch Lashes is the industry standard MCI Eyelashes has produced for over 50 years — ultra lightweight and comfortable for all-day wear. The collection is built from High Quality Korean Synthetic Fiber and 100% sterilized Human Hair, with tapered technology used for extra drama on select styles.',
+        ],
+      },
+      {
+        heading: 'Seven Series Within Soft Touch',
+        paragraphs: [
+          'The collection spans 7 series and 77 SKUs total:',
+        ],
+        list: [
+          'Natural Series — 12 SKUs',
+          'Wispy Series — 12 SKUs',
+          'Volume Series — 12 SKUs',
+          'Extended Volume Series — 12 SKUs',
+          'Dramatic Series — 12 SKUs',
+          'Pro Series — 3 SKUs',
+          'Tappered Series — 14 SKUs',
+        ],
+      },
+      {
+        heading: 'Materials: Korean Synthetic Fiber & Human Hair',
+        paragraphs: [
+          'Soft Touch styles are produced in Korean Synthetic fiber and 100% sterilized Human Hair. For the full range of materials MCI works with across every collection — including mink and silk — see our [handmade eyelashes manufacturing](/handmade-eyelashes) page.',
+        ],
+      },
+      {
+        heading: 'MOQ, Samples & Ordering',
+        paragraphs: [
+          'Soft Touch Lashes ship at the standard 100-pair-per-style [wholesale](/wholesale-eyelashes) minimum, and you can mix and match across the 7 series to reach that minimum in one order. Free samples on existing Soft Touch styles are available — you only cover shipping. Browse full SKU listings for all 7 series on the [product catalogue](/catalogue).',
+        ],
+      },
+      {
+        heading: 'Private Label on Soft Touch Styles',
+        paragraphs: [
+          'Soft Touch styles can also be produced as [OEM](/eyelash-oem-indonesia) under your own brand, or developed into a fully [private label](/private-label-eyelashes) lash with custom curl, length, material, and packaging.',
+        ],
+      },
+    ],
+    faq: [
+      { q: 'What is Soft Touch Lashes?', a: 'Soft Touch Lashes is MCI Eyelashes’ bestselling collection — the industry standard for over 50 years, made from Korean Synthetic fiber and 100% sterilized Human Hair with tapered technology.' },
+      { q: 'What is the MOQ for Soft Touch Lashes?', a: '100 pairs per style, and you can mix and match across the 7 Soft Touch series to reach that minimum.' },
+      { q: 'How many styles are in the Soft Touch collection?', a: '77 SKUs across 7 series: Natural, Wispy, Volume, Extended Volume, Dramatic, Pro, and Tappered.' },
+      { q: 'What materials are Soft Touch Lashes made from?', a: 'Korean Synthetic fiber and 100% sterilized Human Hair.' },
+      { q: 'Can I get a sample of Soft Touch Lashes before ordering wholesale?', a: 'Yes — samples on existing Soft Touch catalog styles are free, you only cover shipping.' },
+      { q: 'Can Soft Touch styles be private labeled?', a: 'Yes — Soft Touch styles are available for OEM branding or full private label development with custom curl, length, material, and packaging.' },
+    ],
+  },
 ]

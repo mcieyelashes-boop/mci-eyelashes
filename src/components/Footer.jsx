@@ -5,7 +5,7 @@
 // URL-addressable — that would need a small feature, not a polish fix).
 const footerLinks = {
   Collections: [
-    { label: 'Soft Touch Lashes',        href: '/#products' },
+    { label: 'Soft Touch Lashes',        href: '/soft-touch-lashes-wholesale' },
     { label: '3D Luxe Lashes',           href: '/#products' },
     { label: 'Faux Mink - Protein Silk', href: '/#products' },
     { label: 'Classic Human Hair',       href: '/#products' },
