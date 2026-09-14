@@ -6,7 +6,7 @@
 const footerLinks = {
   Collections: [
     { label: 'Soft Touch Lashes',        href: '/soft-touch-lashes-wholesale' },
-    { label: '3D Luxe Lashes',           href: '/#products' },
+    { label: '3D Luxe Lashes',           href: '/3d-luxe-volume-lashes-wholesale' },
     { label: 'Faux Mink - Protein Silk', href: '/#products' },
     { label: 'Classic Human Hair',       href: '/#products' },
     { label: 'Under Lashes',             href: '/#products' },

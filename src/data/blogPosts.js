@@ -1453,7 +1453,7 @@ Curl is usually labeled with a letter code: **J, B, C, CC, and D** are the most 
         heading: 'Choosing a Curl for a Private Label Order',
         body: `Curl style and intensity is one of the specifications MCI Eyelashes takes for [private label](/private-label-eyelashes) and [custom eyelash](/custom-eyelashes) orders. When briefing a curl type for a private label run, it helps to reference an existing tray or send a sample lash so the curl can be matched precisely rather than described only by letter code.
 
-Curl is only one part of a full private label specification — pair it with your [material choice](/blog/mink-vs-silk-lashes-wholesale-guide) and desired length before sending your brief for a quote.`,
+Curl is only one part of a full private label specification — pair it with your [material choice](/blog/mink-vs-silk-lashes-wholesale-guide), desired length, and [band type](/blog/eyelash-band-types-explained) before sending your brief for a quote.`,
       },
     ],
     faq: [
@@ -1472,6 +1472,72 @@ Curl is only one part of a full private label specification — pair it with you
       {
         q: 'What curl type is best for natural, everyday lashes?',
         a: 'J or B curl typically gives the most natural, subtle look, closest to an unenhanced natural lash.',
+      },
+    ],
+  },
+  {
+    slug: 'eyelash-band-types-explained',
+    title: 'Eyelash Band Types Explained: Cotton, Silk & Clear Band Guide (2026)',
+    metaDescription: 'A guide to eyelash band types — cotton, thin/silk, and clear band — how each feels, how it applies, and how to specify band type for a private label eyelash order.',
+    category: 'Technical Guide',
+    date: '2026-09-14',
+    readTime: '6 min read',
+    excerpt: 'The band is the strip that holds a lash together and sits against the lash line — and it has just as much impact on comfort and finish as curl or material. This guide breaks down the common band types and how to specify one for a private label order.',
+    coverAlt: 'Eyelash band types comparison — cotton, thin, and clear band',
+    sections: [
+      {
+        heading: 'Why Band Type Matters',
+        body: `The band is the strip at the base of a lash that holds the individual fibers together and sits along the lash line when worn. Independent of curl or fiber material, band type affects how comfortable a lash feels, how easily it conforms to the eye shape, and how visible the base line is once applied.
+
+Band type is one of the standard specifications used across strip lashes, alongside curl and material — and it's a detail worth getting right whether you're picking a catalog style or briefing a factory on a private label design.`,
+      },
+      {
+        heading: 'Cotton Band',
+        body: `Cotton band is a flexible, fabric-based band — the traditional choice for strip lashes for decades.
+
+- **Feel:** Soft and pliable, moulds well to the natural curve of the eye
+- **Visibility:** More visible at the base than thinner alternatives, though still fine once applied with lash glue
+- **Best for:** General-purpose wholesale stocking, where flexibility and ease of application matter more than an invisible base line`,
+      },
+      {
+        heading: 'Thin / Silk Band',
+        body: `A thinner, more tapered band — sometimes marketed as "silk band" — reduces the width and thickness of the strip at the base.
+
+- **Feel:** Lighter and more flexible than a standard cotton band, sits closer to the natural lash line
+- **Visibility:** Less noticeable than cotton, without going fully clear
+- **Best for:** Buyers who want a more natural base line than cotton but don't need a fully transparent band`,
+      },
+      {
+        heading: 'Clear / Invisible Band',
+        body: `Clear band is made from a transparent material rather than a dyed fabric strip, so the base blends into the skin rather than reading as a visible black or brown line.
+
+- **Feel:** Typically more rigid than cotton, so it can take a little more care to seat against a curved lash line
+- **Visibility:** The most natural-looking base line of the common band types
+- **Best for:** Daytime and "your lashes but better" styles where an invisible base is the priority`,
+      },
+      {
+        heading: 'Choosing a Band for a Private Label Order',
+        body: `Band style is one of the specifications MCI Eyelashes takes for [private label](/private-label-eyelashes) and [custom eyelash](/custom-eyelashes) orders, alongside tray design. When briefing a band type for a private label run, it helps to send a reference lash or sample so the band width, flexibility, and finish can be matched precisely.
+
+Band is only one part of a full private label specification — pair it with your [curl type](/blog/eyelash-curl-types-explained) and material choice before sending your brief for a quote.`,
+      },
+    ],
+    faq: [
+      {
+        q: 'What is the most common eyelash band type?',
+        a: 'Cotton band is the traditional, most widely used band type for strip lashes, valued for its flexibility and ease of application.',
+      },
+      {
+        q: 'What is the difference between cotton and clear band?',
+        a: 'Cotton band is a soft, flexible fabric strip that is more visible at the base; clear band is a transparent material that blends into the skin for a more invisible finish, but is typically less flexible than cotton.',
+      },
+      {
+        q: 'Can I specify a band type for a private label eyelash order?',
+        a: 'Yes — band style is one of the customizable specifications MCI Eyelashes takes for private label orders, alongside curl, length, and material. Contact us with a reference sample to match it precisely.',
+      },
+      {
+        q: 'Which band type is best for a natural, invisible look?',
+        a: 'Clear band typically gives the most invisible base line, though a thin or silk band is a lighter-weight middle ground between cotton and clear.',
       },
     ],
   },

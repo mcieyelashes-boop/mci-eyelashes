@@ -508,4 +508,66 @@ export const landingPages = [
       { q: 'Can Soft Touch styles be private labeled?', a: 'Yes — Soft Touch styles are available for OEM branding or full private label development with custom curl, length, material, and packaging.' },
     ],
   },
+  {
+    slug: '3d-luxe-volume-lashes-wholesale',
+    title: '3D Volume Lashes Wholesale | 3D Luxe Collection | MCI Eyelashes',
+    metaDescription: 'Wholesale 3D Luxe volume lashes from MCI Eyelashes — Multi-Layer Synthetic construction, 5 pages of styles, 100-pair MOQ per style, factory direct from Indonesia.',
+    h1: '3D Volume Lashes Wholesale',
+    breadcrumbName: '3D Luxe Lashes',
+    intro: '3D Luxe Lashes is MCI Eyelashes’ premium volume collection — multi-layer construction built from Multi-Layer Synthetic fiber for maximum depth and drama, available wholesale from a 100-pair MOQ per style.',
+    factSheet: [
+      { label: 'Collection', value: '3D Luxe Lashes' },
+      { label: 'Status', value: 'Premium — high demand' },
+      { label: 'Material', value: 'Multi-Layer Synthetic' },
+      { label: 'Styles', value: '5 pages of styles' },
+      { label: 'MOQ', value: '100 pairs per style — mix & match allowed' },
+      { label: 'Samples', value: 'Free on existing catalog styles — buyer covers shipping' },
+    ],
+    sections: [
+      {
+        heading: 'What Is the 3D Luxe Lashes Collection',
+        paragraphs: [
+          '3D Luxe Lashes is MCI Eyelashes’ premium volume collection, built using multi-layer 3D construction to create extraordinary depth and fullness beyond what a single-layer strip lash can achieve. The collection is in high demand among buyers looking for a bolder, more dramatic finish than our [Soft Touch](/soft-touch-lashes-wholesale) styles.',
+        ],
+      },
+      {
+        heading: 'Multi-Layer Construction',
+        paragraphs: [
+          '3D Luxe styles are built from Multi-Layer Synthetic fiber, with layers stacked to add volume and dimension across the lash line. This construction is well suited to bridal, editorial, and event looks, and to clients who want a strip lash with maximum visual impact.',
+        ],
+      },
+      {
+        heading: 'Styles Within 3D Luxe',
+        paragraphs: [
+          'The collection spans 5 pages of styles. Full SKU listings for every page are available on the [product catalogue](/catalogue), organized for easy browsing and reordering.',
+        ],
+      },
+      {
+        heading: 'Material: Multi-Layer Synthetic',
+        paragraphs: [
+          '3D Luxe is produced in Multi-Layer Synthetic fiber. For the full range of materials MCI works with across every collection — including mink, silk, and human hair — see our [handmade eyelashes manufacturing](/handmade-eyelashes) page.',
+        ],
+      },
+      {
+        heading: 'MOQ, Samples & Ordering',
+        paragraphs: [
+          '3D Luxe Lashes ship at the standard 100-pair-per-style [wholesale](/wholesale-eyelashes) minimum, and you can mix and match across pages to reach that minimum in one order. Free samples on existing 3D Luxe styles are available — you only cover shipping.',
+        ],
+      },
+      {
+        heading: 'Private Label on 3D Luxe Styles',
+        paragraphs: [
+          '3D Luxe styles can also be produced as [OEM](/eyelash-oem-indonesia) under your own brand, or developed into a fully [private label](/private-label-eyelashes) lash with custom curl, length, material, and packaging.',
+        ],
+      },
+    ],
+    faq: [
+      { q: 'What is 3D Luxe Lashes?', a: '3D Luxe Lashes is MCI Eyelashes’ premium volume collection, using multi-layer 3D construction in Multi-Layer Synthetic fiber for extra depth and drama.' },
+      { q: 'What is the MOQ for 3D Luxe Lashes?', a: '100 pairs per style, and you can mix and match across the collection’s 5 pages of styles to reach that minimum.' },
+      { q: 'What material is the 3D Luxe collection made from?', a: 'Multi-Layer Synthetic fiber.' },
+      { q: 'Who is the 3D Luxe collection best suited for?', a: 'Buyers wanting a bolder, more dramatic finish than a standard strip lash — commonly used for bridal, editorial, and event looks.' },
+      { q: 'Can I get a sample of 3D Luxe Lashes before ordering wholesale?', a: 'Yes — samples on existing 3D Luxe catalog styles are free, you only cover shipping.' },
+      { q: 'Can 3D Luxe styles be private labeled?', a: 'Yes — 3D Luxe styles are available for OEM branding or full private label development with custom curl, length, material, and packaging.' },
+    ],
+  },
 ]

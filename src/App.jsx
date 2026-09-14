@@ -57,6 +57,7 @@ export default function App() {
           <Route path="/eyelash-manufacturer-purbalingga" element={<LandingPage slug="eyelash-manufacturer-purbalingga" />} />
           <Route path="/handmade-eyelashes" element={<LandingPage slug="handmade-eyelashes" />} />
           <Route path="/soft-touch-lashes-wholesale" element={<LandingPage slug="soft-touch-lashes-wholesale" />} />
+          <Route path="/3d-luxe-volume-lashes-wholesale" element={<LandingPage slug="3d-luxe-volume-lashes-wholesale" />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>

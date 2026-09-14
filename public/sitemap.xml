@@ -83,6 +83,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
+  <url>
+    <loc>https://www.mci-eyelashes.com/3d-luxe-volume-lashes-wholesale</loc>
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
 
   <url>
     <loc>https://www.mci-eyelashes.com/catalogue</loc>
@@ -181,6 +187,12 @@
   <url>
     <loc>https://www.mci-eyelashes.com/blog/eyelash-curl-types-explained</loc>
     <lastmod>2026-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.mci-eyelashes.com/blog/eyelash-band-types-explained</loc>
+    <lastmod>2026-09-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
