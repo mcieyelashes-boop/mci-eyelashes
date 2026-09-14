@@ -43,7 +43,7 @@ empty — don't invent extra items beyond this list without asking the owner.
 | # | Status | Slug | Primary keyword | Angle |
 |---|--------|------|------------------|-------|
 | C1 | done (2026-09-07) | `soft-touch-lashes-wholesale` | soft touch lashes wholesale | Product page for the real "Soft Touch Lashes" catalogue collection (Korean Synthetic/Human Hair, Bestseller) |
-| C2 | pending | `3d-luxe-volume-lashes-wholesale` | 3D volume lashes wholesale | Product page for the real "3D Luxe Lashes" collection (Multi-Layer Synthetic, Premium) |
+| C2 | done (2026-09-14) | `3d-luxe-volume-lashes-wholesale` | 3D volume lashes wholesale | Product page for the real "3D Luxe Lashes" collection (Multi-Layer Synthetic, Premium) |
 | C3 | pending | `faux-mink-lashes-wholesale` | faux mink lashes wholesale | Product page for the real "Faux Mink — Protein Silk" collection (Cruelty Free) |
 | C4 | pending | `human-hair-lashes-wholesale` | human hair lashes wholesale | Product page for the real "Classic — Human Hair" collection (100% Sterilized) |
 | C5 | pending | `under-lashes-wholesale` | under lashes wholesale | Product page for the real "Under Lashes" collection — low-competition longtail, unique category |
@@ -65,10 +65,11 @@ empty — don't invent extra items beyond this list without asking the owner.
 | E6 | pending | `eyelash-manufacturer-vs-wholesaler-vs-distributor` | eyelash manufacturer vs distributor | Clarifies supply-chain roles, links to the new distributor/new-brand persona commercial pages |
 | E7 | pending | `eyelash-supplier-red-flags` | how to vet an eyelash supplier | Buyer-protection angle: MOQ/lead-time terms to watch for, distinct from existing `how-to-choose-eyelash-manufacturer` |
 | E8 | done (2026-09-07) | `eyelash-curl-types-explained` | eyelash curl types | Technical reference: J/B/C/D/CC/U curl guide for spec'ing custom/private-label orders |
-| E9 | pending | `eyelash-band-types-explained` | eyelash band types | Technical reference: cotton vs silk vs clear band, complements curl guide |
+| E9 | done (2026-09-14) | `eyelash-band-types-explained` | eyelash band types | Technical reference: cotton vs silk vs clear band, complements curl guide |
 | E10 | pending | `how-to-calculate-wholesale-lash-profit-margin` | wholesale eyelash profit margin calculator | Worked example using generic/illustrative numbers only (no fabricated real MCI pricing) |
 
 ## Log
 
 - 2026-09-02 — Queue created. 0/20 done.
 - 2026-09-07 — Built C1 (`soft-touch-lashes-wholesale` landing page) and E8 (`eyelash-curl-types-explained` blog post). 2/20 done.
+- 2026-09-14 — Built C2 (`3d-luxe-volume-lashes-wholesale` landing page) and E9 (`eyelash-band-types-explained` blog post). 4/20 done.
