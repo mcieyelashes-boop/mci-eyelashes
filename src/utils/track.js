@@ -43,3 +43,24 @@ export function installLinkTracking() {
 export function pageRef(pathname = window.location.pathname) {
   return pathname === '/' ? 'home' : pathname.replace(/^\//, '')
 }
+
+// Tells the MCI Sales OS dashboard which page a contact-form inquiry came from,
+// so it can show "inquiries by page" next to the SEO numbers. Only the page path
+// and the chosen order range are sent: no name, email, company or message.
+// Sent as text/plain so the browser needs no preflight, and fire-and-forget: the
+// visitor's form has already gone through, so a failure here must change nothing.
+const INQUIRY_ENDPOINT = 'https://mci-eyelashes.site/api/inbound/site-event'
+
+export function reportInquiry(orderRange) {
+  try {
+    if (typeof window === 'undefined') return
+    fetch(INQUIRY_ENDPOINT, {
+      method: 'POST',
+      headers: { 'content-type': 'text/plain;charset=UTF-8' },
+      body: JSON.stringify({ page: pageRef(), order_range: orderRange || null }),
+      keepalive: true,
+    }).catch(() => {})
+  } catch {
+    // ignore: see above
+  }
+}
