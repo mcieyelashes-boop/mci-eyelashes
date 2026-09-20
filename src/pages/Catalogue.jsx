@@ -1,18 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { motion, useInView, AnimatePresence } from 'framer-motion'
 import { setMeta } from '../utils/setMeta'
-
-const CATALOGUE_META = {
-  title: 'Product Catalogue — MCI Eyelashes Wholesale',
-  description: 'Browse 200+ wholesale eyelash styles across 5 collections: Soft Touch, 3D Luxe, Faux Mink, Human Hair, Under Lashes. MOQ 100 pairs.',
-  canonical: 'https://www.mci-eyelashes.com/catalogue',
-  ogTitle: 'Product Catalogue - MCI Eyelashes Wholesale',
-  ogDescription: 'Browse 200+ wholesale eyelash styles across premium MCI Eyelashes collections. MOQ 100 pairs, private label and OEM available.',
-  ogUrl: 'https://www.mci-eyelashes.com/catalogue',
-  ogImage: 'https://www.mci-eyelashes.com/product-packaging-wide.png',
-  twitterTitle: 'Product Catalogue - MCI Eyelashes Wholesale',
-  twitterDescription: 'Browse 200+ wholesale eyelash styles, OEM options, and private-label ready collections.',
-}
+import { CATALOGUE_META } from '../data/pageMeta'
 
 // ─── DATA ────────────────────────────────────────────────────────────────────
 const collections = [

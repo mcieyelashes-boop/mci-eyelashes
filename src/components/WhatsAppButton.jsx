@@ -1,8 +1,11 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
+import { useLocation } from 'react-router-dom'
+import { pageRef } from '../utils/track'
 
 export default function WhatsAppButton() {
   const [visible, setVisible] = useState(false)
+  const { pathname } = useLocation()
 
   useEffect(() => {
     const onScroll = () => {
@@ -13,8 +16,10 @@ export default function WhatsAppButton() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
+  // The "[ref: ...]" tag says which page the visitor was on, so an inquiry that
+  // arrives on WhatsApp can be traced back to the page that produced it.
   const msg  = encodeURIComponent(
-    "Hello MCI Eyelashes! I'm interested in wholesale eyelash products. Could you send me your catalog and pricing?"
+    `Hello MCI Eyelashes! I'm interested in wholesale eyelash products. Could you send me your catalog and pricing? [ref: ${pageRef(pathname)}]`
   )
   const href = `https://wa.me/6281232378987?text=${msg}`
 

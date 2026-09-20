@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react'
 import { motion, useInView } from 'framer-motion'
 import emailjs from '@emailjs/browser'
+import { track, pageRef } from '../utils/track'
 
 const EJS_SERVICE  = import.meta.env.VITE_EMAILJS_SERVICE_ID  || ''
 const EJS_TEMPLATE = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || ''
@@ -82,7 +83,7 @@ export default function Contact() {
       company:      form.company || '-',
       country:      form.country,
       volume:       form.volume  || '-',
-      message:      form.message || '-',
+      message:      `${form.message || '-'}\n\n[page: ${pageRef()}]`,
       reply_to:     form.email,
       to_name:      'Denis',
     }
@@ -91,6 +92,7 @@ export default function Contact() {
       await emailjs.send(EJS_SERVICE, EJS_TEMPLATE, templateParams, EJS_KEY)
       setLoading(false)
       setSent(true)
+      track('generate_lead', { form: 'wholesale_inquiry', order_range: form.volume || 'not_given' })
     } catch (err) {
       console.error('[EmailJS]', err)
       setLoading(false)

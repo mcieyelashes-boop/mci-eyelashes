@@ -38,7 +38,7 @@ function renderTable(lines) {
             {cols.map((col, i) => (
               <th key={i} style={{
                 textAlign: 'left', padding: '12px 16px',
-                background: 'var(--off-white)', color: 'var(--ink)',
+                background: 'var(--off-white)',
                 borderBottom: '2px solid var(--teal)',
                 fontSize: '10px', letterSpacing: '1.5px',
                 textTransform: 'uppercase', color: 'var(--teal-dark)', fontWeight: 600,

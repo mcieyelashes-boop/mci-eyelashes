@@ -38,9 +38,12 @@ function Home() {
   )
 }
 
-export default function App() {
+// The routes and page chrome, without the router around them, so the build can
+// render this same tree on the server (entry-server.jsx wraps it in a
+// StaticRouter) and the browser can wrap it in BrowserRouter (App below).
+export function AppRoutes() {
   return (
-    <BrowserRouter>
+    <>
       <Navbar />
       <Suspense fallback={<div style={{ minHeight: '100vh', background: '#0a1720' }} />}>
         <Routes>
@@ -48,21 +51,23 @@ export default function App() {
           <Route path="/catalogue" element={<Catalogue />} />
           <Route path="/blog" element={<BlogList />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
-          <Route path="/eyelashes-factory-indonesia" element={<LandingPage slug="eyelashes-factory-indonesia" />} />
-          <Route path="/eyelash-manufacturer-indonesia" element={<LandingPage slug="eyelash-manufacturer-indonesia" />} />
-          <Route path="/private-label-eyelashes" element={<LandingPage slug="private-label-eyelashes" />} />
-          <Route path="/eyelash-oem-indonesia" element={<LandingPage slug="eyelash-oem-indonesia" />} />
-          <Route path="/custom-eyelashes" element={<LandingPage slug="custom-eyelashes" />} />
-          <Route path="/wholesale-eyelashes" element={<LandingPage slug="wholesale-eyelashes" />} />
-          <Route path="/eyelash-manufacturer-purbalingga" element={<LandingPage slug="eyelash-manufacturer-purbalingga" />} />
-          <Route path="/handmade-eyelashes" element={<LandingPage slug="handmade-eyelashes" />} />
-          <Route path="/soft-touch-lashes-wholesale" element={<LandingPage slug="soft-touch-lashes-wholesale" />} />
-          <Route path="/3d-luxe-volume-lashes-wholesale" element={<LandingPage slug="3d-luxe-volume-lashes-wholesale" />} />
+          {/* Every commercial landing page is a src/data/landingPages.js entry,
+              so a new page needs no route here. LandingPage renders NotFound
+              itself for a slug that is not in the data. */}
+          <Route path="/:slug" element={<LandingPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>
       <Footer />
       <WhatsAppButton />
+    </>
+  )
+}
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <AppRoutes />
     </BrowserRouter>
   )
 }

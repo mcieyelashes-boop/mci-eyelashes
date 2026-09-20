@@ -73,10 +73,12 @@
     {
       "@context": "https://schema.org",
       "@type": "Organization",
+      "@id": "https://www.mci-eyelashes.com/#organization",
       "name": "MCI Eyelashes",
       "alternateName": "MCI Lashes",
       "url": "https://www.mci-eyelashes.com",
       "logo": "https://www.mci-eyelashes.com/favicon.svg",
+      "telephone": "+62 812-3237-8987",
       "description": "MCI Eyelashes is a premium wholesale eyelash manufacturer supplying mink, silk, synthetic, and 3D/5D volume lashes to salons, distributors, and beauty brands worldwide. Private label and OEM services available.",
       "email": "denis@mci-eyelashes.com",
       "sameAs": [
@@ -97,6 +99,7 @@
         "@type": "ContactPoint",
         "contactType": "sales",
         "email": "denis@mci-eyelashes.com",
+        "telephone": "+62 812-3237-8987",
         "availableLanguage": "English"
       }
     }
@@ -105,17 +108,22 @@
     <!-- JSON-LD: LocalBusiness (manufacturer signals).
          openingHoursSpecification, currenciesAccepted, and paymentAccepted
          were removed — none were ever owner-confirmed. Region set to match
-         the footer's own "Purbalingga, Central Java, Indonesia." Do not
-         reintroduce these fields without owner confirmation. -->
+         the footer's own "Purbalingga, Central Java, Indonesia."
+         geo and priceRange were removed too: geo held the coordinates of the
+         middle of Purbalingga town, not of the factory, and priceRange was
+         never confirmed. Add geo back only with the factory's real address.
+         Do not reintroduce any of these fields without owner confirmation. -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": ["LocalBusiness", "Manufacturer"],
+      "@id": "https://www.mci-eyelashes.com/#business",
       "name": "MCI Eyelashes",
       "alternateName": "MCI Lashes",
       "image": "https://www.mci-eyelashes.com/hero-lashes.jpg",
       "url": "https://www.mci-eyelashes.com",
       "email": "denis@mci-eyelashes.com",
+      "telephone": "+62 812-3237-8987",
       "description": "MCI Eyelashes is a direct-factory wholesale eyelash manufacturer in Purbalingga, Indonesia, supplying handcrafted mink, silk, synthetic, and 3D/5D volume lashes to salons, distributors, and beauty brands. MOQ 100 pairs per style, free catalog samples, 5 working days production. Private label and OEM services available.",
       "address": {
         "@type": "PostalAddress",
@@ -123,12 +131,6 @@
         "addressRegion": "Central Java",
         "addressCountry": "ID"
       },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": -7.3886,
-        "longitude": 109.3378
-      },
-      "priceRange": "$$",
       "areaServed": {
         "@type": "Place",
         "name": "Worldwide"
@@ -159,10 +161,7 @@
       "name": "MCI Eyelashes",
       "url": "https://www.mci-eyelashes.com",
       "description": "Direct-factory wholesale eyelash manufacturer in Purbalingga, Indonesia. Mink, silk, synthetic, and volume lashes for salons, distributors, and beauty brands. MOQ 100 pairs per style.",
-      "publisher": {
-        "@type": "Organization",
-        "name": "MCI Eyelashes"
-      }
+      "publisher": { "@id": "https://www.mci-eyelashes.com/#organization" }
     }
     </script>
 
@@ -362,7 +361,7 @@
   <body>
     <noscript>
       <div style="font-family:sans-serif;padding:64px 24px;max-width:720px;margin:0 auto;line-height:1.7">
-        <h1>MCI Eyelashes — Wholesale Lash Manufacturer</h1>
+        <p style="font-size:1.6em;font-weight:600;margin:0 0 12px">Eyelashes Factory Indonesia — OEM &amp; Private Label Manufacturer | MCI Eyelashes</p>
         <p>We are a direct factory in Purbalingga, Indonesia, producing mink, silk, synthetic, volume, and human-hair lashes for salons, distributors, and beauty brands.</p>
         <ul style="line-height:1.9">
           <li><strong>MOQ 100 pairs per style</strong> — mix and match styles within one order.</li>

@@ -39,7 +39,7 @@ export default function Gallery() {
               initial={false}
               animate={inView ? { opacity: 1, y: 0 } : { opacity: 1, y: 0 }}
             >
-              <img src={item.image} alt={item.alt} loading="eager" />
+              <img src={item.image} alt={item.alt} loading="lazy" decoding="async" />
             </motion.article>
           ))}
         </div>

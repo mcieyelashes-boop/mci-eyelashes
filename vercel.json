@@ -1,4 +1,11 @@
 {
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/index.html", "destination": "/", "permanent": true },
+    { "source": "/index", "destination": "/", "permanent": true },
+    { "source": "/blog/:slug.html", "destination": "/blog/:slug", "permanent": true },
+    { "source": "/:slug.html", "destination": "/:slug", "permanent": true }
+  ],
   "headers": [
     {
       "source": "/(.*)",
@@ -41,18 +48,7 @@
     }
   ],
   "rewrites": [
-    { "source": "/blog", "destination": "/blog.html" },
     { "source": "/blog/:slug", "destination": "/blog/:slug.html" },
-    { "source": "/eyelashes-factory-indonesia", "destination": "/eyelashes-factory-indonesia.html" },
-    { "source": "/eyelash-manufacturer-indonesia", "destination": "/eyelash-manufacturer-indonesia.html" },
-    { "source": "/private-label-eyelashes", "destination": "/private-label-eyelashes.html" },
-    { "source": "/eyelash-oem-indonesia", "destination": "/eyelash-oem-indonesia.html" },
-    { "source": "/custom-eyelashes", "destination": "/custom-eyelashes.html" },
-    { "source": "/wholesale-eyelashes", "destination": "/wholesale-eyelashes.html" },
-    { "source": "/eyelash-manufacturer-purbalingga", "destination": "/eyelash-manufacturer-purbalingga.html" },
-    { "source": "/handmade-eyelashes", "destination": "/handmade-eyelashes.html" },
-    { "source": "/soft-touch-lashes-wholesale", "destination": "/soft-touch-lashes-wholesale.html" },
-    { "source": "/3d-luxe-volume-lashes-wholesale", "destination": "/3d-luxe-volume-lashes-wholesale.html" },
-    { "source": "/((?!api/).*)", "destination": "/index.html" }
+    { "source": "/:slug", "destination": "/:slug.html" }
   ]
 }

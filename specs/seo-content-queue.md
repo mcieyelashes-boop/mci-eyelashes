@@ -19,16 +19,22 @@ doesn't look like a spam burst to Google.
   process steps beyond what's already in the codebase.
 - Each item must take a genuinely distinct angle from every existing page
   (8 commercial + 13 blog + each other) — check for overlap before writing.
-- Commercial pages: add to `src/data/landingPages.js`, route in `src/App.jsx`,
-  rewrite in `vercel.json`, entry in `public/sitemap.xml`, at least one
-  inbound link (footer or a related page/post) and one outbound cross-link.
-- Educational pages: add to `src/data/blogPosts.js`, entry in
-  `public/sitemap.xml`, at least one inbound link from a related commercial
-  or blog page.
-- Before marking an item done: `vite build` clean, prerender scripts run
-  clean, 0 console errors on the new route (local preview), no mobile
-  (375px) horizontal overflow, then commit + push + verify the live URL
-  returns 200 with the right `<title>` before checking it off here.
+- Commercial pages: add ONE entry to `src/data/landingPages.js` — that is the
+  whole wiring. The route (`/:slug` in `src/App.jsx`), the rewrite
+  (`vercel.json`), the sitemap and `llms.txt` all follow from that data, so do
+  NOT add a `<Route>`, a rewrite, or a sitemap line by hand. `npm run build`
+  regenerates `public/sitemap.xml` and `public/llms.txt`; commit both. Also add
+  at least one inbound link (footer or a related page/post) and one outbound
+  cross-link.
+- Educational pages: add ONE entry to `src/data/blogPosts.js`. The sitemap and
+  `llms.txt` regenerate the same way (commit both). Also add at least one
+  inbound link from a related commercial or blog page.
+- Before marking an item done: `npm run build` clean (it runs the SEO-file
+  generator, both Vite builds and all prerender scripts), confirm the new URL
+  appears in `public/sitemap.xml` and `dist/<slug>.html` (commercial) or
+  `dist/blog/<slug>.html` (educational) exists with the right `<title>`, then
+  commit + push and verify the live URL returns 200 with the right `<title>`
+  before checking it off here.
 
 ## Weekly agent instructions
 

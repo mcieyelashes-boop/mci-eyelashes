@@ -1,8 +1,9 @@
 import { useEffect } from 'react'
-import { Link, Navigate } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { landingPages } from '../data/landingPages'
 import { setMeta, HOME_META } from '../utils/setMeta'
+import NotFound from './NotFound'
 
 const BASE_URL = 'https://www.mci-eyelashes.com'
 
@@ -24,7 +25,9 @@ function parseInline(text) {
   })
 }
 
-export default function LandingPage({ slug }) {
+export default function LandingPage({ slug: slugProp }) {
+  const params = useParams()
+  const slug = slugProp ?? params.slug
   const page = landingPages.find(p => p.slug === slug)
 
   useEffect(() => {
@@ -86,7 +89,10 @@ export default function LandingPage({ slug }) {
     }
   }, [page])
 
-  if (!page) return <Navigate to="/" replace />
+  // An unknown single-segment URL (/anything) lands here through the /:slug
+  // route. Redirecting to the homepage would tell Google every junk URL is a
+  // valid page, so it renders the real 404 page instead.
+  if (!page) return <NotFound />
 
   return (
     <>
