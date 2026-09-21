@@ -50,7 +50,7 @@ empty — don't invent extra items beyond this list without asking the owner.
 |---|--------|------|------------------|-------|
 | C1 | done (2026-09-07) | `soft-touch-lashes-wholesale` | soft touch lashes wholesale | Product page for the real "Soft Touch Lashes" catalogue collection (Korean Synthetic/Human Hair, Bestseller) |
 | C2 | done (2026-09-14) | `3d-luxe-volume-lashes-wholesale` | 3D volume lashes wholesale | Product page for the real "3D Luxe Lashes" collection (Multi-Layer Synthetic, Premium) |
-| C3 | pending | `faux-mink-lashes-wholesale` | faux mink lashes wholesale | Product page for the real "Faux Mink — Protein Silk" collection (Cruelty Free) |
+| C3 | done (2026-09-21) | `faux-mink-lashes-wholesale` | faux mink lashes wholesale | Product page for the real "Faux Mink — Protein Silk" collection (Cruelty Free) |
 | C4 | pending | `human-hair-lashes-wholesale` | human hair lashes wholesale | Product page for the real "Classic — Human Hair" collection (100% Sterilized) |
 | C5 | pending | `under-lashes-wholesale` | under lashes wholesale | Product page for the real "Under Lashes" collection — low-competition longtail, unique category |
 | C6 | pending | `low-moq-eyelash-manufacturer` | low MOQ eyelash manufacturer | The strategic positioning/moat page from blueprint §24 — "factory-direct + low MOQ + private label" as MCI's differentiator vs. Royal Korindah/Bio Takara scale |
@@ -63,7 +63,7 @@ empty — don't invent extra items beyond this list without asking the owner.
 
 | # | Status | Slug | Primary keyword | Angle |
 |---|--------|------|------------------|-------|
-| E1 | pending | `how-handmade-eyelashes-are-made` | how are eyelashes made | General industry education on handmade lash construction — framed as industry knowledge, not a claimed exact MCI internal process |
+| E1 | done (2026-09-21) | `how-handmade-eyelashes-are-made` | how are eyelashes made | General industry education on handmade lash construction — framed as industry knowledge, not a claimed exact MCI internal process |
 | E2 | pending | `private-label-eyelash-cost-guide` | private label eyelash manufacturing cost | What drives private label cost (MOQ, material, packaging, customization) — factors/framework, not invented price figures |
 | E3 | pending | `what-moq-should-a-new-lash-brand-order` | what MOQ for new lash brand | Decision guide for first-time brand founders on order size |
 | E4 | pending | `how-to-start-a-private-label-lash-brand` | how to start a private label lash brand | Step-by-step distinct from existing general `how-to-start-lash-business` post — private-label-specific path |
@@ -79,3 +79,4 @@ empty — don't invent extra items beyond this list without asking the owner.
 - 2026-09-02 — Queue created. 0/20 done.
 - 2026-09-07 — Built C1 (`soft-touch-lashes-wholesale` landing page) and E8 (`eyelash-curl-types-explained` blog post). 2/20 done.
 - 2026-09-14 — Built C2 (`3d-luxe-volume-lashes-wholesale` landing page) and E9 (`eyelash-band-types-explained` blog post). 4/20 done.
+- 2026-09-21 — Built C3 (`faux-mink-lashes-wholesale` landing page) and E1 (`how-handmade-eyelashes-are-made` blog post). 6/20 done.
