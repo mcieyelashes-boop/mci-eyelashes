@@ -1541,4 +1541,91 @@ Band is only one part of a full private label specification — pair it with you
       },
     ],
   },
+  {
+    slug: 'how-handmade-eyelashes-are-made',
+    title: 'How Are Handmade Eyelashes Made? A Look Inside Strip Lash Production (2026)',
+    metaDescription: 'How handmade eyelashes are made — from fiber selection and curling to hand-tying individual fibers onto a band. General industry guide to strip lash construction.',
+    category: 'Technical Guide',
+    date: '2026-09-21',
+    readTime: '7 min read',
+    excerpt: 'Machine-made lashes and handmade lashes look similar at a glance, but the construction process behind them is completely different. Here is a general look at how handmade strip lashes are put together, and why the technique matters for quality.',
+    coverAlt: 'Handmade eyelash strip lash production process',
+    sections: [
+      {
+        heading: 'Handmade vs. Machine-Made Lashes',
+        body: `Strip lashes are produced one of two ways: machine-made, where fiber is bonded to a band by automated equipment, or handmade, where each lash is assembled and shaped by a person.
+
+Machine-made lashes are faster and cheaper to produce, but the process tends to leave every lash in a batch looking close to identical — including a uniform taper that can read as less natural. Handmade production is slower, but it allows for the fiber placement, taper, and curl to be shaped by hand, style by style.
+
+This guide covers handmade strip lash construction as a general industry technique — not a claimed exact breakdown of any single factory's internal process, which varies by manufacturer.`,
+      },
+      {
+        heading: 'The General Handmade Lash-Making Process',
+        body: `While exact workflows differ between factories, handmade strip lash production generally follows the same broad stages across the industry:
+
+**1. Fiber preparation**
+Raw fiber — mink, silk, synthetic, or human hair — is sorted, cleaned, and curled to the target curl type before assembly begins.
+
+**2. Hand-tying onto the band**
+Individual fibers or small clusters are tied or bonded onto the band strip by hand, under magnification, building up the taper and density style by style rather than applying fiber uniformly by machine.
+
+**3. Shaping and trimming**
+The lash is trimmed and shaped to the target length profile — many styles taper from shorter fibers at the inner corner to longer fibers toward the outer corner for a more natural, lifted finish.
+
+**4. Quality inspection**
+Finished lashes are checked for symmetry (matching pairs), band integrity, and consistent curl before packing.
+
+Because each step involves a person rather than a machine, handmade production allows for far more variation in taper and density within a single style — which is part of why handmade lashes are generally regarded as more natural-looking than fully machine-made equivalents.`,
+      },
+      {
+        heading: 'Why Handmade Construction Matters for Quality',
+        body: `The hand-tying step is where most of the perceived quality difference comes from:
+
+- **Taper control** — a hand-built lash can vary fiber length gradually across the band, rather than jumping between machine-set lengths
+- **Curl consistency** — fiber can be checked and adjusted style by style rather than relying entirely on a single machine setting
+- **Comfort** — hand-placed fiber can be distributed to reduce weight at the band, which affects how a strip lash feels over a full day of wear
+
+None of this means machine-made lashes are low quality — they serve a different price point and consistency need. It does explain why handmade construction is the standard for most premium mink, silk, and human hair strip lash lines.`,
+      },
+      {
+        heading: 'Handmade Construction Across Materials',
+        body: `Handmade construction is used across the core lash fiber types buyers typically source wholesale:
+
+- **Mink** — ultra-soft, natural taper
+- **Silk** — glossy, dramatic finish
+- **Synthetic** — engineered uniformity at a lower price point
+- **Human hair** — 100% sterilized, the most natural blend
+
+MCI Eyelashes produces handmade strip and volume lashes across all four of these materials on its own production floor in Purbalingga, Indonesia. See our [handmade eyelashes manufacturing](/handmade-eyelashes) page for the full material range and wholesale terms.`,
+      },
+      {
+        heading: 'What to Ask When Sourcing Handmade Lashes',
+        body: `If a supplier markets a product as "handmade," it's reasonable to ask how that's verified before placing a wholesale order:
+
+- Can you see the production floor, in person or via video call?
+- Does the factory produce the lash itself, or is "handmade" a label applied by a reseller further down the supply chain?
+- Are quality checks documented at the inspection stage?
+
+MCI Eyelashes is a direct factory, not a trading company, and welcomes a live production-floor video call so buyers can see handmade construction before committing to an order. Read more about sourcing directly from a factory on our [eyelash manufacturer in Purbalingga](/eyelash-manufacturer-purbalingga) page.`,
+      },
+    ],
+    faq: [
+      {
+        q: 'What does "handmade" mean for eyelashes?',
+        a: 'It means individual fibers are tied or bonded onto the lash band by a person, rather than by automated machinery, which allows for more variation in taper, density, and curl within a single style.',
+      },
+      {
+        q: 'Are handmade lashes better quality than machine-made lashes?',
+        a: 'Handmade lashes are generally regarded as more natural-looking because taper and fiber placement can be adjusted by hand, style by style. Machine-made lashes are faster and cheaper to produce and suit a different price point — quality depends on the specific factory and materials either way.',
+      },
+      {
+        q: 'Can I verify that a lash is actually handmade before ordering wholesale?',
+        a: 'Ask the supplier for a factory video tour or in-person visit. MCI Eyelashes is a direct factory in Purbalingga, Indonesia, and offers a live production-floor video call to buyers before they order.',
+      },
+      {
+        q: 'What materials are handmade lashes made from?',
+        a: 'Common materials include mink, silk, synthetic fiber, and human hair. MCI Eyelashes produces handmade lashes across all four materials.',
+      },
+    ],
+  },
 ]

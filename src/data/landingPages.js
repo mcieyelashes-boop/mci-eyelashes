@@ -416,7 +416,7 @@ export const landingPages = [
       {
         heading: 'Handmade Lash Production',
         paragraphs: [
-          'MCI Eyelashes produces handmade strip and volume lashes rather than machine-only assembly — each style is built on our production floor in Purbalingga, Indonesia across mink, silk, synthetic, and human hair.',
+          'MCI Eyelashes produces handmade strip and volume lashes rather than machine-only assembly — each style is built on our production floor in Purbalingga, Indonesia across mink, silk, synthetic, and human hair. For a general look at how handmade strip lashes are constructed industry-wide, see [how handmade eyelashes are made](/blog/how-handmade-eyelashes-are-made).',
         ],
       },
       {
@@ -568,6 +568,73 @@ export const landingPages = [
       { q: 'Who is the 3D Luxe collection best suited for?', a: 'Buyers wanting a bolder, more dramatic finish than a standard strip lash — commonly used for bridal, editorial, and event looks.' },
       { q: 'Can I get a sample of 3D Luxe Lashes before ordering wholesale?', a: 'Yes — samples on existing 3D Luxe catalog styles are free, you only cover shipping.' },
       { q: 'Can 3D Luxe styles be private labeled?', a: 'Yes — 3D Luxe styles are available for OEM branding or full private label development with custom curl, length, material, and packaging.' },
+    ],
+  },
+  {
+    slug: 'faux-mink-lashes-wholesale',
+    title: 'Faux Mink Lashes Wholesale | Cruelty-Free Protein Silk | MCI Eyelashes',
+    metaDescription: 'Wholesale faux mink lashes from MCI Eyelashes — cruelty-free Protein Silk fiber, 3 collections, 100-pair MOQ per style, factory direct from Indonesia.',
+    h1: 'Faux Mink Lashes Wholesale',
+    breadcrumbName: 'Faux Mink Lashes',
+    intro: 'Faux Mink — Protein Silk is MCI Eyelashes’ cruelty-free collection — Protein Silk fiber engineered to deliver the look and feel of genuine mink without animal products, available wholesale from a 100-pair MOQ per style.',
+    factSheet: [
+      { label: 'Collection', value: 'Faux Mink — Protein Silk' },
+      { label: 'Status', value: 'Cruelty Free — Ethical Luxury' },
+      { label: 'Material', value: 'Protein Silk Fiber' },
+      { label: 'Series', value: '3 collections — full SKU list on request' },
+      { label: 'MOQ', value: '100 pairs per style — mix & match allowed' },
+      { label: 'Samples', value: 'Free on existing catalog styles — buyer covers shipping' },
+    ],
+    sections: [
+      {
+        heading: 'What Is the Faux Mink — Protein Silk Collection',
+        paragraphs: [
+          'Faux Mink — Protein Silk is MCI Eyelashes’ cruelty-free collection, built on protein silk fiber technology that delivers an ultra-soft, lightweight drape without any animal-derived material. It’s designed for vegan salons and premium retail buyers who want a mink-level finish with a fully cruelty-free product to put on the label.',
+        ],
+      },
+      {
+        heading: 'Cruelty-Free Without Compromising the Look',
+        paragraphs: [
+          'Genuine mink lashes are sourced from animal fur; faux mink styles replicate that same soft, natural taper using engineered protein silk fiber instead. The result is a lash that reads as premium and natural on the lash line, while giving buyers a 100% cruelty-free product for markets and clients who specifically look for it.',
+        ],
+      },
+      {
+        heading: 'Three Collections Within Faux Mink',
+        paragraphs: [
+          'The Faux Mink range spans three collections:',
+        ],
+        list: [
+          'Natural Collection — 6 SKUs',
+          'Wispy Collection — 6 SKUs',
+          'Volume Collection — 6 SKUs',
+        ],
+      },
+      {
+        heading: 'Material: Protein Silk Fiber',
+        paragraphs: [
+          'Faux Mink styles are produced in Protein Silk Fiber. For the full range of materials MCI works with across every collection — including mink, synthetic, and human hair — see our [handmade eyelashes manufacturing](/handmade-eyelashes) page.',
+        ],
+      },
+      {
+        heading: 'MOQ, Samples & Ordering',
+        paragraphs: [
+          'Faux Mink Lashes ship at the standard 100-pair-per-style [wholesale](/wholesale-eyelashes) minimum, and you can mix and match across the three collections to reach that minimum in one order. Free samples on existing Faux Mink styles are available — you only cover shipping. Full SKU listings are available on request; browse the collection overview on the [product catalogue](/catalogue).',
+        ],
+      },
+      {
+        heading: 'Private Label on Faux Mink Styles',
+        paragraphs: [
+          'Faux Mink styles can also be produced as [OEM](/eyelash-oem-indonesia) under your own brand, or developed into a fully [private label](/private-label-eyelashes) lash with custom curl, length, material, and packaging.',
+        ],
+      },
+    ],
+    faq: [
+      { q: 'What is Faux Mink — Protein Silk?', a: 'Faux Mink — Protein Silk is MCI Eyelashes’ cruelty-free collection, using protein silk fiber to replicate the soft, natural look of genuine mink without animal products.' },
+      { q: 'Is Faux Mink actually cruelty-free?', a: 'Yes — Faux Mink styles are made entirely from protein silk fiber, with no animal-derived material.' },
+      { q: 'What is the MOQ for Faux Mink Lashes?', a: '100 pairs per style, and you can mix and match across the three Faux Mink collections to reach that minimum.' },
+      { q: 'How many styles are in the Faux Mink collection?', a: 'Three collections — Natural, Wispy, and Volume — each with 6 SKUs. A full SKU listing is available on request.' },
+      { q: 'Can I get a sample of Faux Mink Lashes before ordering wholesale?', a: 'Yes — samples on existing Faux Mink catalog styles are free, you only cover shipping.' },
+      { q: 'Can Faux Mink styles be private labeled?', a: 'Yes — Faux Mink styles are available for OEM branding or full private label development with custom curl, length, material, and packaging.' },
     ],
   },
 ]
