@@ -67,7 +67,7 @@ export const landingPages = [
       {
         heading: 'Why Brands Choose MCI Eyelashes',
         paragraphs: [
-          'Our position is straightforward: a [factory-direct Indonesian manufacturer](/eyelash-manufacturer-indonesia) in [Purbalingga](/eyelash-manufacturer-purbalingga) with one of the lower minimum order quantities in the industry, combined with private label capability and fast production. It’s built for new and growing lash brands that need real customization without committing to a 500+ or 1,000+ pair minimum on their first order.',
+          'Our position is straightforward: a [factory-direct Indonesian manufacturer](/eyelash-manufacturer-indonesia) in [Purbalingga](/eyelash-manufacturer-purbalingga) with a 100-pair minimum per style, combined with private label capability and 5 working days production on standard orders. It’s built for new and growing lash brands that need real customization without committing to a large first order.',
         ],
       },
     ],
