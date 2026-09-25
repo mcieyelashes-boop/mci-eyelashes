@@ -142,9 +142,9 @@ mkdirSync(join(DIST, 'blog'), { recursive: true })
 writeFileSync(
   join(DIST, 'blog.html'),
   renderPage({
-    title: 'Blog | MCI Eyelashes — Wholesale Lash Industry Guides',
+    title: 'Blog | MCI Eyelashes: Wholesale Lash Industry Guides',
     description:
-      'Expert guides for wholesale lash buyers, salon owners, and beauty entrepreneurs — from MOQ and pricing to private label manufacturing and brand building.',
+      'Expert guides for wholesale lash buyers, salon owners, and beauty entrepreneurs, from MOQ and pricing to private label manufacturing and brand building.',
     canonical: `${BASE_URL}/blog`,
     ogTitle: 'Wholesale Lash Industry Guides | MCI Eyelashes Blog',
     ogDescription: 'Practical guides on starting a lash business, choosing a manufacturer, private label OEM, pricing strategy, and more.',

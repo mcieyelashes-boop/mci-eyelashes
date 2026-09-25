@@ -3,7 +3,7 @@
 // (scripts/prerender-routes.mjs writes the same values into the static HTML),
 // so what a crawler reads and what a browser ends up with cannot disagree.
 export const CATALOGUE_META = {
-  title: 'Product Catalogue — MCI Eyelashes Wholesale',
+  title: 'Product Catalogue | MCI Eyelashes Wholesale',
   description: 'Browse 200+ wholesale eyelash styles across 5 collections: Soft Touch, 3D Luxe, Faux Mink, Human Hair, Under Lashes. MOQ 100 pairs.',
   canonical: 'https://www.mci-eyelashes.com/catalogue',
   ogTitle: 'Product Catalogue - MCI Eyelashes Wholesale',
