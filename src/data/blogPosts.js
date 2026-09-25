@@ -2,11 +2,11 @@ export const blogPosts = [
   {
     slug: 'mink-vs-silk-lashes-wholesale-guide',
     title: 'Mink vs Silk Lashes: Complete Wholesale Guide for Salon Owners (2026)',
-    metaDescription: 'Mink vs silk lashes — which should you stock wholesale? Compare texture, durability, MOQ, and profit margins. Expert guide from a leading eyelash manufacturer.',
+    metaDescription: 'Mink vs silk lashes: which should you stock wholesale? Compare texture, durability, MOQ, and profit margins. Expert guide from a leading eyelash manufacturer.',
     category: 'Product Guide',
     date: '2026-04-10',
     readTime: '8 min read',
-    excerpt: 'Choosing between mink and silk lashes for your salon or beauty business? This guide breaks down the key differences in texture, durability, price point, and profit margin — so you can stock what your clients actually want.',
+    excerpt: 'Choosing between mink and silk lashes for your salon or beauty business? This guide breaks down the key differences in texture, durability, price point, and profit margin, so you can stock what your clients actually want.',
     coverAlt: 'Mink vs silk eyelashes comparison for wholesale buyers',
     sections: [
       {
@@ -15,23 +15,23 @@ export const blogPosts = [
 
 **Key characteristics:**
 - Ultra-soft texture that mimics natural lashes
-- Lightweight — clients report they "forget they're wearing them"
+- Lightweight: clients report they "forget they're wearing them"
 - Natural taper from base to tip
-- Reusable 20–25 times with proper care
+- Reusable 20-25 times with proper care
 - Available in natural, wispy, and dramatic styles
 
 **Wholesale MOQ at MCI:** 100 pairs per style`,
       },
       {
         heading: 'What Are Silk Lashes?',
-        body: `Despite the name, silk lashes are not made from real silk — they are crafted from a premium synthetic fiber designed to replicate the glossy, consistent look of silk. They deliver a bolder, more dramatic finish than mink.
+        body: `Despite the name, silk lashes are not made from real silk. They are crafted from a premium synthetic fiber designed to replicate the glossy, consistent look of silk. They deliver a bolder, more dramatic finish than mink.
 
 **Key characteristics:**
 - High-gloss, uniform finish
 - Consistent curl retention across styles
 - Available in multiple diameter options (0.05mm to 0.25mm)
 - Vegan and cruelty-free
-- Reusable 15–20 times
+- Reusable 15-20 times
 
 **Wholesale MOQ at MCI:** 100 pairs per style`,
       },
@@ -41,14 +41,14 @@ export const blogPosts = [
 |---------|-------------|-------------|
 | Texture | Ultra-soft, feathery | Glossy, uniform |
 | Finish | Natural, wispy | Dramatic, bold |
-| Reusability | 20–25 times | 15–20 times |
+| Reusability | 20-25 times | 15-20 times |
 | Vegan | No (cruelty-free sourced) | Yes |
 | Price point | Premium | Mid-range |
 | Best for | Natural look clients | Glam, editorial, volume |
 | MOQ (MCI) | 100 pairs | 100 pairs |`,
       },
       {
-        heading: 'Which Sells Better — Mink or Silk?',
+        heading: 'Which Sells Better: Mink or Silk?',
         body: `Both sell well. Which one leads depends far more on your market than on the product itself.
 
 - **Mink lashes** tend to lead where clients pay a premium for a soft, natural look
@@ -63,12 +63,12 @@ export const blogPosts = [
         heading: 'Profit Margins: What to Expect',
         body: `Wholesale eyelash margins are among the highest in the beauty supply category. Based on typical MCI wholesale pricing:
 
-- **Mink lashes:** Average wholesale cost $2.50–$5.00/pair; typical retail price $18–$40/pair
-- **Silk lashes:** Average wholesale cost $1.80–$3.50/pair; typical retail price $12–$28/pair
+- **Mink lashes:** Average wholesale cost $2.50-$5.00/pair; typical retail price $18-$40/pair
+- **Silk lashes:** Average wholesale cost $1.80-$3.50/pair; typical retail price $12-$28/pair
 
-Both product lines support **5x–10x markup** depending on brand positioning and market.
+Both product lines support **5x-10x markup** depending on brand positioning and market.
 
-Private label clients who add custom packaging typically retail at 20–40% above non-branded equivalents.`,
+Private label clients who add custom packaging typically retail at 20-40% above non-branded equivalents.`,
       },
       {
         heading: 'How to Order Wholesale from MCI Eyelashes',
@@ -76,9 +76,9 @@ Private label clients who add custom packaging typically retail at 20–40% abov
 
 1. **Submit an inquiry** via our contact form or email denis@mci-eyelashes.com
 2. **Receive a catalog and pricing sheet** within 24 hours
-3. **Request samples** — we ship sample kits to qualified buyers
-4. **Place your first order** — MOQ is 100 pairs per style, mix and match allowed
-5. **Receive your order** — 5 working days production on 100-pair orders
+3. **Request samples**. We ship sample kits to qualified buyers
+4. **Place your first order**: MOQ is 100 pairs per style, mix and match allowed
+5. **Receive your order**: 5 working days production on 100-pair orders
 
 We ship internationally with full tracking. For a full breakdown of costs, see our [wholesale eyelash pricing guide](/blog/wholesale-eyelash-pricing-guide). If you're considering custom branding, read our [private label OEM guide](/blog/private-label-eyelashes-oem-guide).`,
       },
@@ -86,7 +86,7 @@ We ship internationally with full tracking. For a full breakdown of costs, see o
     faq: [
       {
         q: 'Are mink lashes cruelty-free?',
-        a: 'MCI mink lashes are sourced through cruelty-free practices — fur is collected during the natural moulting season without harming the animals. Certifications are available upon request. For a 100% vegan option, our silk lash line is cruelty-free and vegan-certified.',
+        a: 'MCI mink lashes are sourced through cruelty-free practices, fur is collected during the natural moulting season without harming the animals. Certifications are available upon request. For a 100% vegan option, our silk lash line is cruelty-free and vegan-certified.',
       },
       {
         q: 'What is the minimum order for wholesale mink lashes?',
@@ -101,11 +101,11 @@ We ship internationally with full tracking. For a full breakdown of costs, see o
   {
     slug: 'how-to-start-lash-business',
     title: 'How to Start a Lash Business in 2026: Complete Guide for Beginners',
-    metaDescription: 'Learn how to start a lash business from scratch — from choosing suppliers and setting prices to private labeling and marketing. Step-by-step guide for 2026.',
+    metaDescription: 'Learn how to start a lash business from scratch, from choosing suppliers and setting prices to private labeling and marketing. Step-by-step guide for 2026.',
     category: 'Business Guide',
     date: '2026-04-05',
     readTime: '10 min read',
-    excerpt: 'Starting a lash business is one of the most accessible beauty ventures in 2026 — low startup cost, high margins, and a global market worth over $1.6 billion. Here is everything you need to know to launch successfully.',
+    excerpt: 'Starting a lash business is one of the most accessible beauty ventures in 2026, low startup cost, high margins, and a global market worth over $1.6 billion. Here is everything you need to know to launch successfully.',
     coverAlt: 'How to start a lash business guide 2026',
     sections: [
       {
@@ -117,8 +117,8 @@ We ship internationally with full tracking. For a full breakdown of costs, see o
 - Expansion of private label and white-label beauty brands via e-commerce
 - Social media driving awareness and demand
 
-**Average startup cost** for a wholesale lash reseller: $500–$2,000
-**Average gross margin** on wholesale lash products: 60–80%`,
+**Average startup cost** for a wholesale lash reseller: $500-$2,000
+**Average gross margin** on wholesale lash products: 60-80%`,
       },
       {
         heading: 'Step 1: Choose Your Business Model',
@@ -128,20 +128,20 @@ We ship internationally with full tracking. For a full breakdown of costs, see o
 Buy wholesale, sell retail (online store, market stalls, salon). Lowest barrier to entry. MOQ typically starts at 50 units.
 
 **2. Private label brand**
-Source from an OEM manufacturer, apply your own brand and packaging. Higher upfront cost but builds brand equity. MOQ typically 100–500 units.
+Source from an OEM manufacturer, apply your own brand and packaging. Higher upfront cost but builds brand equity. MOQ typically 100-500 units.
 
 **3. Lash salon / technician**
 Offer lash extension services directly to clients. Requires training and certification. High recurring revenue per client.
 
-Most successful lash businesses combine models 1 and 2 — starting with wholesale reselling and transitioning to private label as the brand grows.`,
+Most successful lash businesses combine models 1 and 2, starting with wholesale reselling and transitioning to private label as the brand grows.`,
       },
       {
         heading: 'Step 2: Find a Reliable Wholesale Supplier',
         body: `Your supplier is your most important business relationship. When evaluating wholesale eyelash manufacturers, check:
 
 - **Product quality:** Request samples before committing to a large order
-- **MOQ flexibility:** Look for suppliers with MOQ starting at 30–50 units
-- **Lead times:** Standard wholesale should ship within 3–7 business days
+- **MOQ flexibility:** Look for suppliers with MOQ starting at 30-50 units
+- **Lead times:** Standard wholesale should ship within 3-7 business days
 - **Certifications:** ISO 9001, CE, FDA compliance, cruelty-free
 - **Private label capability:** Can they add your branding?
 - **International shipping:** Full tracking and insurance for overseas orders
@@ -160,7 +160,7 @@ MCI Eyelashes supplies salons, distributors, and beauty brands with mink, silk, 
 - 5x markup → Retail price: $14.00
 
 **Value-based pricing (recommended):**
-- Premium mink lashes with private label packaging can retail for $25–$45/pair
+- Premium mink lashes with private label packaging can retail for $25-$45/pair
 - Customers pay for branding, not just the product
 
 **Key principle:** Never compete on price alone. Compete on brand, quality, and customer experience.`,
@@ -169,31 +169,31 @@ MCI Eyelashes supplies salons, distributors, and beauty brands with mink, silk, 
         heading: 'Step 4: Build Your Brand',
         body: `Before launching, you need:
 
-1. **Business name and logo** — Keep it elegant, memorable, and relevant to beauty
-2. **Packaging design** — Custom lash boxes are the single biggest brand differentiator; MCI offers full custom packaging
-3. **Online store** — Shopify is the industry standard for lash brands
-4. **Instagram presence** — The #1 acquisition channel for lash businesses
-5. **Photography** — Professional product and lifestyle shots are essential`,
+1. **Business name and logo**: Keep it elegant, memorable, and relevant to beauty
+2. **Packaging design**: Custom lash boxes are the single biggest brand differentiator; MCI offers full custom packaging
+3. **Online store**: Shopify is the industry standard for lash brands
+4. **Instagram presence**: The #1 acquisition channel for lash businesses
+5. **Photography**: Professional product and lifestyle shots are essential`,
       },
       {
         heading: 'Step 5: Launch and Scale',
         body: `Your first 90 days:
 
-- **Days 1–30:** Receive inventory, set up online store, begin organic Instagram content
-- **Days 31–60:** First paid Meta ads campaign ($10–$20/day), collect first customer reviews
-- **Days 61–90:** Analyze best-selling styles, reorder top performers, test new styles
+- **Days 1-30:** Receive inventory, set up online store, begin organic Instagram content
+- **Days 31-60:** First paid Meta ads campaign ($10-$20/day), collect first customer reviews
+- **Days 61-90:** Analyze best-selling styles, reorder top performers, test new styles
 
-Successful lash brands typically reach profitability within 3–6 months when following a disciplined launch strategy.`,
+Successful lash brands typically reach profitability within 3-6 months when following a disciplined launch strategy.`,
       },
     ],
     faq: [
       {
         q: 'How much money do I need to start a lash business?',
-        a: 'You can start a wholesale lash reseller business for as little as $500–$1,000, covering your first inventory order (50–100 pairs), basic packaging, and an e-commerce store. A private label brand with custom packaging typically requires $1,500–$5,000 for the initial setup.',
+        a: 'You can start a wholesale lash reseller business for as little as $500-$1,000, covering your first inventory order (50-100 pairs), basic packaging, and an e-commerce store. A private label brand with custom packaging typically requires $1,500-$5,000 for the initial setup.',
       },
       {
         q: 'Do I need a license to sell eyelashes?',
-        a: 'In most countries, a business license is required to sell cosmetics commercially. In the US, eyelash products must comply with FDA cosmetic regulations. We recommend consulting a local business attorney before launching. MCI Eyelashes provides product certifications (ISO, CE, FDA-compliant documentation) to all wholesale clients.',
+        a: 'In most countries, a business license is required to sell cosmetics commercially. In the US, eyelash products must comply with FDA cosmetic regulations. We recommend consulting a local business attorney before launching.',
       },
       {
         q: 'Where is the best place to sell lashes online?',
@@ -204,7 +204,7 @@ Successful lash brands typically reach profitability within 3–6 months when fo
   {
     slug: 'private-label-eyelashes-oem-guide',
     title: 'Private Label Eyelashes: Complete OEM Manufacturing Guide (2026)',
-    metaDescription: 'Everything you need to know about private label and OEM eyelash manufacturing — MOQ, custom packaging, lead times, and how to choose the right manufacturer.',
+    metaDescription: 'Everything you need to know about private label and OEM eyelash manufacturing, MOQ, custom packaging, lead times, and how to choose the right manufacturer.',
     category: 'OEM & Private Label',
     date: '2026-03-28',
     readTime: '9 min read',
@@ -213,7 +213,7 @@ Successful lash brands typically reach profitability within 3–6 months when fo
     sections: [
       {
         heading: 'What Is Private Label Eyelash Manufacturing?',
-        body: `Private label (also called white-label or OEM) eyelash manufacturing means an established manufacturer produces lash products to your specifications — and you sell them under your own brand name.
+        body: `Private label (also called white-label or OEM) eyelash manufacturing means an established manufacturer produces lash products to your specifications, and you sell them under your own brand name.
 
 You provide the brand identity. The manufacturer provides:
 - The product (lashes)
@@ -223,7 +223,7 @@ You provide the brand identity. The manufacturer provides:
 
 **Why private label?**
 - Build brand equity instead of reselling generic products
-- Higher retail margins (typically 20–40% above unbranded equivalents)
+- Higher retail margins (typically 20-40% above unbranded equivalents)
 - Customer loyalty to your brand, not the manufacturer
 - Full control over pricing and positioning`,
       },
@@ -235,8 +235,8 @@ You provide the brand identity. The manufacturer provides:
 |---|---|---|
 | Product | Existing manufacturer formula/style | Custom formula or style developed for you |
 | Packaging | Custom with your branding | Custom with your branding |
-| MOQ | Lower (often 50–200 units) | Higher (often 500–1,000 units) |
-| Lead time | Shorter (2–4 weeks) | Longer (4–12 weeks) |
+| MOQ | Lower (often 50-200 units) | Higher (often 500-1,000 units) |
+| Lead time | Shorter (2-4 weeks) | Longer (4-12 weeks) |
 | Cost | Lower | Higher |
 
 For most emerging lash brands, **private label** is the right starting point. OEM custom development makes sense once you have validated demand and a larger budget.`,
@@ -249,7 +249,7 @@ For most emerging lash brands, **private label** is the right starting point. OE
 - Lash style (natural, wispy, dramatic, volume)
 - Fiber type (mink, silk, synthetic, PBT)
 - Band type (clear, black, invisible)
-- Length (6mm–18mm), curl (B, C, D, L — see our [eyelash curl types guide](/blog/eyelash-curl-types-explained) for what each looks like), thickness
+- Length (6mm, 18mm), curl (B, C, D, L, see our [eyelash curl types guide](/blog/eyelash-curl-types-explained) for what each looks like), thickness
 
 **Packaging:**
 - Box style (drawer, magnetic lid, window box, book-style)
@@ -267,7 +267,7 @@ For most emerging lash brands, **private label** is the right starting point. OE
         heading: 'MOQ and Pricing',
         body: `MCI Eyelashes offers flexible MOQ for private label clients:
 
-- **Standard private label** (existing styles + custom packaging): MOQ negotiable, typically starting at 100–200 units per style
+- **Standard private label** (existing styles + custom packaging): MOQ negotiable, typically starting at 100-200 units per style
 - **Custom OEM development** (new style or formula): MOQ negotiable based on development scope
 
 **Cost factors:**
@@ -281,14 +281,14 @@ Contact denis@mci-eyelashes.com for a private label pricing sheet tailored to yo
         heading: 'How Long Does Private Label Take?',
         body: `Typical timeline for a private label order at MCI:
 
-1. **Inquiry and brief:** 1–2 days
-2. **Sample production:** 7–14 days
-3. **Sample approval:** 3–7 days (your review)
-4. **Packaging design and approval:** 7–14 days
-5. **Production:** 14–21 days
-6. **Shipping:** 5–14 days (depending on destination)
+1. **Inquiry and brief:** 1-2 days
+2. **Sample production:** 7-14 days
+3. **Sample approval:** 3-7 days (your review)
+4. **Packaging design and approval:** 7-14 days
+5. **Production:** 14-21 days
+6. **Shipping:** 5-14 days (depending on destination)
 
-**Total: approximately 6–10 weeks** from first contact to delivery.
+**Total: approximately 6-10 weeks** from first contact to delivery.
 
 Rush production is available for qualifying orders. Contact us for availability.`,
       },
@@ -311,11 +311,11 @@ Rush production is available for qualifying orders. Contact us for availability.
   {
     slug: 'wholesale-eyelash-pricing-guide',
     title: 'Wholesale Eyelash Pricing Guide: What to Expect in 2026',
-    metaDescription: 'Wholesale eyelash pricing guide 2026 — mink, silk, synthetic, and volume lash costs, MOQ requirements, and how to calculate your retail margins.',
+    metaDescription: 'Wholesale eyelash pricing guide 2026: mink, silk, synthetic, and volume lash costs, MOQ requirements, and how to calculate your retail margins.',
     category: 'Pricing & MOQ',
     date: '2026-03-20',
     readTime: '7 min read',
-    excerpt: 'Understanding wholesale eyelash pricing is essential before placing your first order. This guide covers typical costs for mink, silk, synthetic, and volume lashes — plus how to calculate retail margins and what to watch out for when comparing suppliers.',
+    excerpt: 'Understanding wholesale eyelash pricing is essential before placing your first order. This guide covers typical costs for mink, silk, synthetic, and volume lashes, plus how to calculate retail margins and what to watch out for when comparing suppliers.',
     coverAlt: 'Wholesale eyelash pricing guide 2026',
     sections: [
       {
@@ -324,11 +324,11 @@ Rush production is available for qualifying orders. Contact us for availability.
 
 | Product Type | Wholesale Price/Pair | Retail Price/Pair | Gross Margin |
 |---|---|---|---|
-| Mink Lashes | $2.50–$6.00 | $18–$45 | 70–85% |
-| Silk Lashes | $1.80–$4.50 | $12–$30 | 65–80% |
-| Synthetic Lashes | $0.80–$2.50 | $6–$18 | 60–75% |
-| 3D/5D Volume | $3.00–$8.00 | $20–$55 | 72–85% |
-| Colored Lashes | $2.00–$5.00 | $15–$35 | 68–82% |
+| Mink Lashes | $2.50-$6.00 | $18-$45 | 70-85% |
+| Silk Lashes | $1.80-$4.50 | $12-$30 | 65-80% |
+| Synthetic Lashes | $0.80-$2.50 | $6-$18 | 60-75% |
+| 3D/5D Volume | $3.00-$8.00 | $20-$55 | 72-85% |
+| Colored Lashes | $2.00-$5.00 | $15-$35 | 68-82% |
 
 *Prices based on standard MOQ orders. Contact us for volume pricing on larger runs.*`,
       },
@@ -340,10 +340,10 @@ Rush production is available for qualifying orders. Contact us for availability.
 Mink and 3D volume lashes are the most labor-intensive to produce and command the highest wholesale prices. Synthetic lashes are the most cost-effective.
 
 **2. Order volume (MOQ)**
-Ordering 50 units costs more per unit than ordering 500. The price break between 50 and 500 units is typically 15–30%.
+Ordering 50 units costs more per unit than ordering 500. The price break between 50 and 500 units is typically 15-30%.
 
 **3. Packaging**
-Unboxed (tray only) is cheapest. Custom branded packaging adds $0.30–$2.00+ per unit depending on complexity.
+Unboxed (tray only) is cheapest. Custom branded packaging adds $0.30-$2.00+ per unit depending on complexity.
 
 **4. Customization**
 Standard catalog styles are cheaper than custom styles requiring new mold development.
@@ -355,12 +355,12 @@ Factory-direct manufacturers like MCI Eyelashes offer significantly lower prices
         heading: 'MOQ Requirements by Supplier Type',
         body: `| Supplier Type | Typical MOQ | Price Level |
 |---|---|---|
-| Factory-direct manufacturer | 30–100 units/style | Lowest |
-| Trading company | 100–500 units/style | Mid |
-| Wholesale distributor | 10–50 units/style | Highest |
-| Alibaba agent | 100–1,000 units/style | Variable |
+| Factory-direct manufacturer | 30-100 units/style | Lowest |
+| Trading company | 100-500 units/style | Mid |
+| Wholesale distributor | 10-50 units/style | Highest |
+| Alibaba agent | 100-1,000 units/style | Variable |
 
-**Recommendation:** Source factory-direct whenever possible. Trading companies add a 20–40% margin on top of factory prices.
+**Recommendation:** Source factory-direct whenever possible. Trading companies add a 20-40% margin on top of factory prices.
 
 MCI Eyelashes is a factory-direct manufacturer in Purbalingga, Indonesia. MOQ is 100 pairs per style across all lines, and you can mix and match styles to reach it.`,
       },
@@ -384,20 +384,20 @@ A gross margin above 65% is excellent for beauty retail. Below 50% indicates eit
         heading: 'Red Flags When Comparing Suppliers',
         body: `Before placing a wholesale order, watch for these warning signs:
 
-- **No sample available** — Legitimate manufacturers always offer samples
-- **No certifications** — Ask for ISO, CE, or FDA documentation
-- **Unrealistically low prices** — Below $0.50/pair for mink is a quality red flag
-- **Minimum orders over 1,000 units** for a new buyer — Reputable factories accommodate smaller orders
-- **No clear lead time** — Standard production should be 14–21 days
-- **No physical address or verifiable factory** — Request factory photos or a video call
+- **No sample available**: Legitimate manufacturers always offer samples
+- **No certifications**: Ask for ISO, CE, or FDA documentation
+- **Unrealistically low prices**: Below $0.50/pair for mink is a quality red flag
+- **Minimum orders over 1,000 units** for a new buyer, Reputable factories accommodate smaller orders
+- **No clear lead time**: Standard production should be 14-21 days
+- **No physical address or verifiable factory**, Request factory photos or a video call
 
-MCI Eyelashes is a direct factory in Purbalingga, Indonesia. We welcome live video tours of our production floor — just ask before you order.`,
+MCI Eyelashes is a direct factory in Purbalingga, Indonesia. We welcome live video tours of our production floor, just ask before you order.`,
       },
     ],
     faq: [
       {
         q: 'What is the cheapest type of wholesale eyelash?',
-        a: 'Synthetic lashes are the most affordable wholesale eyelash option, typically ranging from $0.80 to $2.50 per pair at standard MOQ. They offer a bold, uniform look and are 100% vegan. MOQ at MCI Eyelashes for synthetic lashes is 100 units.',
+        a: 'Synthetic lashes are the most affordable wholesale eyelash option, typically ranging from $0.80 to $2.50 per pair at standard MOQ. They offer a bold, uniform look and are 100% vegan. MOQ at MCI Eyelashes is 100 pairs per style.',
       },
       {
         q: 'Do wholesale eyelash prices include packaging?',
@@ -405,14 +405,14 @@ MCI Eyelashes is a direct factory in Purbalingga, Indonesia. We welcome live vid
       },
       {
         q: 'How much should I charge for eyelashes at retail?',
-        a: 'Retail pricing depends on your market and brand positioning. A common benchmark: charge 5x–10x your landed cost (wholesale + packaging + shipping). Premium private label brands typically retail mink lashes at $25–$45/pair, while value-oriented brands price synthetic lashes at $8–$15/pair.',
+        a: 'Retail pricing depends on your market and brand positioning. A common benchmark: charge 5x-10x your landed cost (wholesale + packaging + shipping). Premium private label brands typically retail mink lashes at $25-$45/pair, while value-oriented brands price synthetic lashes at $8-$15/pair.',
       },
     ],
   },
   {
     slug: '3d-vs-5d-volume-lashes-guide',
     title: '3D vs 5D Volume Lashes: Which Should You Stock for Your Salon? (2026)',
-    metaDescription: '3D vs 5D volume lashes — what is the difference and which sells better? Compare fan size, weight, application, and wholesale pricing in this complete guide.',
+    metaDescription: '3D vs 5D volume lashes: what is the difference and which sells better? Compare fan size, weight, application, and wholesale pricing in this complete guide.',
     category: 'Product Guide',
     date: '2026-04-08',
     readTime: '6 min read',
@@ -427,7 +427,7 @@ Unlike classic lash extensions (one extension per natural lash), volume fans cre
 
 **Why volume lashes are growing:**
 - 62% of lash artists report volume applications as their most requested service (2025 industry survey)
-- Average service price is 40–60% higher than classic lash sets
+- Average service price is 40-60% higher than classic lash sets
 - Client retention is higher due to dramatic, lasting results`,
       },
       {
@@ -436,7 +436,7 @@ Unlike classic lash extensions (one extension per natural lash), volume fans cre
 |---------|-----------|-----------|
 | Extensions per fan | 3 | 5 |
 | Fullness level | Natural volume | Maximum drama |
-| Fan diameter | 0.05–0.07mm | 0.03–0.05mm |
+| Fan diameter | 0.05-0.07mm | 0.03-0.05mm |
 | Weight per fan | Light | Ultra-light |
 | Application difficulty | Intermediate | Advanced |
 | Best for | Everyday wear, beginners | Mega volume, editorial |
@@ -445,10 +445,10 @@ Unlike classic lash extensions (one extension per natural lash), volume fans cre
 **Key insight:** Despite having more lashes per fan, a 5D fan can weigh the same as a 3D fan because the individual extensions are thinner. Well-made 5D fans should weigh no more than a single classic extension.`,
       },
       {
-        heading: 'What Sells Better — 3D or 5D?',
+        heading: 'What Sells Better: 3D or 5D?',
         body: `Demand splits by market, but the broad pattern across the industry looks like this:
 
-- **3D volume** is the workhorse — preferred by salons serving clients who want a natural-to-moderate volume look
+- **3D volume** is the workhorse: preferred by salons serving clients who want a natural-to-moderate volume look
 - **4D volume** is the sweet spot for most clients
 - **5D volume** is strongest in markets where dramatic looks are trending (Middle East, Southeast Asia, editorial markets)
 - **2D and mixed fans** round out the range
@@ -460,14 +460,14 @@ Unlike classic lash extensions (one extension per natural lash), volume fans cre
         body: `Volume fans come in two forms:
 
 **Pre-made fans (recommended for wholesale):**
-- Manufactured to consistent spec — identical fan shape and weight every time
-- Faster application — lash artists save 30–40% on application time
-- Lower skill requirement — suitable for newer lash artists
+- Manufactured to consistent spec: identical fan shape and weight every time
+- Faster application: lash artists save 30-40% on application time
+- Lower skill requirement: suitable for newer lash artists
 - MCI pre-made fans: available in 3D, 4D, and 5D with ultra-light base for clean adhesion
 
 **Handmade fans:**
 - Created by the lash artist during application from loose extensions
-- Higher skill ceiling — experienced artists prefer the control
+- Higher skill ceiling: experienced artists prefer the control
 - More time-consuming
 - Better for bespoke, custom looks
 
@@ -479,21 +479,21 @@ For wholesale buyers supplying salons, pre-made fans offer the best combination 
 
 | Product | Wholesale Cost/Tray | Typical Retail/Tray | Margin |
 |---------|---------------------|---------------------|--------|
-| 3D Pre-made Fans | $4.00–$8.00 | $25–$55 | 75–85% |
-| 5D Pre-made Fans | $5.00–$10.00 | $30–$65 | 78–85% |
-| Mixed Fan Trays | $6.00–$12.00 | $35–$75 | 78–84% |
+| 3D Pre-made Fans | $4.00-$8.00 | $25-$55 | 75-85% |
+| 5D Pre-made Fans | $5.00-$10.00 | $30-$65 | 78-85% |
+| Mixed Fan Trays | $6.00-$12.00 | $35-$75 | 78-84% |
 
-Volume lash trays typically contain 200–500 fans depending on curl and length. Higher fan counts per tray = better value per application for lash artists.`,
+Volume lash trays typically contain 200-500 fans depending on curl and length. Higher fan counts per tray = better value per application for lash artists.`,
       },
     ],
     faq: [
       {
         q: 'What is the difference between 3D and 5D lashes?',
-        a: '3D lashes have 3 individual extensions per fan, while 5D lashes have 5. 5D fans create more fullness and drama. Despite having more extensions, a properly made 5D fan weighs no more than a 3D fan because the individual fibers are thinner (0.03–0.05mm vs 0.05–0.07mm).',
+        a: '3D lashes have 3 individual extensions per fan, while 5D lashes have 5. 5D fans create more fullness and drama. Despite having more extensions, a properly made 5D fan weighs no more than a 3D fan because the individual fibers are thinner (0.03-0.05mm vs 0.05-0.07mm).',
       },
       {
         q: 'Are volume lashes safe for natural lashes?',
-        a: 'Yes, when applied correctly. Volume fans should be ultra-lightweight — no heavier than a single classic extension. MCI volume fans are engineered to stay within safe weight limits. Proper isolation and application technique are key to preserving natural lash health.',
+        a: 'Yes, when applied correctly. Volume fans should be ultra-lightweight: no heavier than a single classic extension. MCI volume fans are engineered to stay within safe weight limits. Proper isolation and application technique are key to preserving natural lash health.',
       },
       {
         q: 'What is the MOQ for volume lashes at MCI Eyelashes?',
@@ -525,7 +525,7 @@ In the wholesale eyelash market, there are three types of suppliers:
 
 **2. Trading companies**
 - Buy from factories and resell
-- Higher prices (20–40% markup)
+- Higher prices (20-40% markup)
 - Less quality control visibility
 - Often misrepresent as factories
 
@@ -551,10 +551,10 @@ Important for scaling. A manufacturer who can only handle 1,000 units/month will
 Ask specifically: who inspects products, at what stage, and what is your defect rate? Reputable manufacturers have documented QC procedures.
 
 **5. What is your standard lead time?**
-Standard wholesale: 3–7 business days. Custom OEM: 6–10 weeks. Vague or excessively short answers ("2 days for any order") are red flags.
+Standard wholesale: 3-7 business days. Custom OEM: 6-10 weeks. Vague or excessively short answers ("2 days for any order") are red flags.
 
 **6. What is your defect and return policy?**
-Every manufacturer has defects occasionally. What matters is how they handle them — replacement, refund, or dispute?
+Every manufacturer has defects occasionally. What matters is how they handle them, replacement, refund, or dispute?
 
 **7. Can I start with a small test order?**
 Any reputable manufacturer will allow a small first order. Refusal to work with MOQ under 1,000 units for a new buyer is suspicious.
@@ -570,22 +570,22 @@ Do they provide commercial invoices, packing lists, and origin certificates? The
       },
       {
         heading: 'Red Flags to Watch For',
-        body: `- **No verifiable physical address** — Do a Google Maps check on the factory address
-- **Prices that seem impossibly low** — Below $0.50/pair for mink signals a quality problem
-- **No samples available** — Any legitimate manufacturer provides samples
-- **Pressure to pay 100% upfront** — Standard terms are 30–50% deposit, balance on shipment
-- **No certifications or only verbal claims** — Ask for scanned copies of actual certificates
-- **Slow or evasive communication** — Response time before an order reflects service after it`,
+        body: `- **No verifiable physical address**: Do a Google Maps check on the factory address
+- **Prices that seem impossibly low**: Below $0.50/pair for mink signals a quality problem
+- **No samples available**: Any legitimate manufacturer provides samples
+- **Pressure to pay 100% upfront**: Standard terms are 30-50% deposit, balance on shipment
+- **No certifications or only verbal claims**, Ask for scanned copies of actual certificates
+- **Slow or evasive communication**: Response time before an order reflects service after it`,
       },
       {
         heading: 'Why MCI Eyelashes Passes All 10 Questions',
         body: `MCI Eyelashes is a factory-direct manufacturer based in Purbalingga, Indonesia.
 
-- **Factory tours**: Available via live video call — just ask, and we will walk you through the production floor
+- **Factory tours**: Available via live video call: just ask, and we will walk you through the production floor
 - **Samples**: Free on existing catalog styles; you cover the shipping only
 - **Test orders**: MOQ is 100 pairs per style, and you can mix and match styles to reach it
 - **Lead times**: 5 working days production on 100-pair orders
-- **Private label**: Custom curl, length, material, and packaging — see our [private label OEM guide](/blog/private-label-eyelashes-oem-guide) for details
+- **Private label**: Custom curl, length, material, and packaging, see our [private label OEM guide](/blog/private-label-eyelashes-oem-guide) for details
 
 Contact denis@mci-eyelashes.com to start a conversation.`,
       },
@@ -601,7 +601,7 @@ Contact denis@mci-eyelashes.com to start a conversation.`,
       },
       {
         q: 'Is it safe to order eyelash products from China?',
-        a: 'Yes, when working with a verified manufacturer. Much of the world\'s wholesale eyelash supply comes from Asian factories. The key is supplier verification — certifications, factory visits, sample testing, and references. MCI Eyelashes is based in Purbalingga, Indonesia, and we welcome a live video call to our production floor before you order.',
+        a: 'Yes, when working with a verified manufacturer. Much of the world\'s wholesale eyelash supply comes from Asian factories. The key is supplier verification: certifications, factory visits, sample testing, and references. MCI Eyelashes is based in Purbalingga, Indonesia, and we welcome a live video call to our production floor before you order.',
       },
     ],
   },
@@ -612,16 +612,16 @@ Contact denis@mci-eyelashes.com to start a conversation.`,
     category: 'Brand & Packaging',
     date: '2026-03-15',
     readTime: '8 min read',
-    excerpt: 'Great lashes in bad packaging do not sell. Your box is the first thing customers see — it sets the price expectation before they even open it. Here is everything you need to know about custom eyelash packaging.',
+    excerpt: 'Great lashes in bad packaging do not sell. Your box is the first thing customers see. It sets the price expectation before they even open it. Here is everything you need to know about custom eyelash packaging.',
     coverAlt: 'Custom eyelash packaging design guide for private label brands',
     sections: [
       {
         heading: 'Why Packaging Is Your Most Important Brand Asset',
-        body: `In the beauty industry, packaging is not just a box — it is the product. Studies consistently show that:
+        body: `In the beauty industry, packaging is not just a box. It is the product. Studies consistently show that:
 
 - 72% of consumers say packaging design influences their purchase decision
-- Premium packaging allows a 20–40% higher retail price for identical products
-- Unboxing experience drives social sharing — critical for lash brands on Instagram and TikTok
+- Premium packaging allows a 20-40% higher retail price for identical products
+- Unboxing experience drives social sharing: critical for lash brands on Instagram and TikTok
 
 For private label lash brands, custom packaging is the single most effective way to justify a premium price point and build brand loyalty.`,
       },
@@ -659,15 +659,15 @@ Clear plastic cases. Good for salon professional lines where product visibility 
         body: `The printing and finishing choices have the biggest visual impact on perceived quality:
 
 **Printing methods:**
-- **CMYK full-color offset** — Best for complex designs, photography, gradients
-- **Pantone spot color** — Precise brand color matching, essential for consistent brand identity
+- **CMYK full-color offset**: Best for complex designs, photography, gradients
+- **Pantone spot color**: Precise brand color matching, essential for consistent brand identity
 
 **Finishing options (ranked by impact):**
-1. **Soft-touch matte lamination** — Velvet-like feel, very popular in beauty
-2. **Gold/silver foil stamping** — Premium, luxury signal, especially on logos
-3. **Embossing / debossing** — Adds tactile depth to logo or brand name
-4. **Spot UV varnish** — Gloss coating on specific elements (logo, graphics)
-5. **Hot stamping** — Metallic text or design elements
+1. **Soft-touch matte lamination**: Velvet-like feel, very popular in beauty
+2. **Gold/silver foil stamping**: Premium, luxury signal, especially on logos
+3. **Embossing / debossing**: Adds tactile depth to logo or brand name
+4. **Spot UV varnish**: Gloss coating on specific elements (logo, graphics)
+5. **Hot stamping**: Metallic text or design elements
 
 **Budget tip:** Matte lamination + 1 foil stamp element gives a luxury result at a fraction of full-specialty cost.`,
       },
@@ -675,11 +675,10 @@ Clear plastic cases. Good for salon professional lines where product visibility 
         heading: 'How to Order Custom Packaging from MCI',
         body: `MCI Eyelashes handles complete custom packaging as part of our private label service:
 
-1. **Brief submission** — Share your brand name, logo files (AI or EPS), color palette, and preferred box style
-2. **3D mockup** — We produce a digital 3D render of your packaging for approval (3–5 business days)
-3. **Physical sample** — A physical prototype is produced for final approval before bulk production (7–10 days)
-4. **Bulk production** — Once approved, packaging is produced with your full order
-5. **Quality inspection** — Every order passes a 3-step quality check before shipping
+1. **Brief submission**: Share your brand name, logo files (AI or EPS), color palette, and preferred box style
+2. **Confirm the details**: We come back to you on the box style, artwork and quantities before anything is produced
+3. **Approval**: You approve the final packaging design before bulk production starts
+4. **Bulk production**: Once approved, the packaging is produced with your order
 
 Contact denis@mci-eyelashes.com with your brand brief to get started.`,
       },
@@ -695,18 +694,18 @@ Contact denis@mci-eyelashes.com with your brand brief to get started.`,
       },
       {
         q: 'How long does custom packaging take?',
-        a: 'From design approval to packaging delivery, expect 3–4 weeks for standard rigid box styles. Rush production may be available for select styles. The packaging timeline is built into our standard OEM lead time of 6–10 weeks total.',
+        a: 'Packaging timing depends on the box style and how many rounds of approval you need. Tell us the style you want and we will confirm the timeline for your order before you commit. Contact denis@mci-eyelashes.com with your brief.',
       },
     ],
   },
   {
     slug: 'eyelash-business-mistakes',
     title: '7 Mistakes New Lash Business Owners Make (And How to Avoid Them)',
-    metaDescription: '7 common mistakes that kill new lash businesses — from choosing the wrong supplier to pricing too low. Learn what experienced lash entrepreneurs wish they knew at the start.',
+    metaDescription: '7 common mistakes that kill new lash businesses, from choosing the wrong supplier to pricing too low. Learn what experienced lash entrepreneurs wish they knew at the start.',
     category: 'Business Guide',
     date: '2026-03-10',
     readTime: '6 min read',
-    excerpt: 'Most lash businesses that fail do so in the first year — not because the market is too competitive, but because of preventable mistakes. Here are the seven most common errors and exactly how to avoid them.',
+    excerpt: 'Most lash businesses that fail do so in the first year, not because the market is too competitive, but because of preventable mistakes. Here are the seven most common errors and exactly how to avoid them.',
     coverAlt: 'Common eyelash business mistakes to avoid guide',
     sections: [
       {
@@ -715,7 +714,7 @@ Contact denis@mci-eyelashes.com with your brand brief to get started.`,
 
 Lash quality is everything. A $0.80/pair synthetic lash from an unverified source will have inconsistent curl, flimsy band, and shedding issues. One bad product batch can generate negative reviews that permanently damage a new brand.
 
-**The fix:** Order samples from 3–5 suppliers before committing. Test each for curl retention, band flexibility, symmetry, and packaging quality. The supplier with the best product at a fair price — not the cheapest product — is the right choice.`,
+**The fix:** Order samples from 3-5 suppliers before committing. Test each for curl retention, band flexibility, symmetry, and packaging quality. The supplier with the best product at a fair price, not the cheapest product, is the right choice.`,
       },
       {
         heading: 'Mistake 2: Pricing Too Low',
@@ -726,28 +725,28 @@ Lash quality is everything. A $0.80/pair synthetic lash from an unverified sourc
 - Signals low quality (customers use price as a proxy for quality)
 - Leaves no budget for marketing, packaging, or growth
 
-**The fix:** Price based on value, not cost. Calculate your total landed cost (wholesale + packaging + shipping + marketing allocation) then apply a 6–8x multiplier. A well-branded lash pair that costs $4 landed should retail for $24–$32.`,
+**The fix:** Price based on value, not cost. Calculate your total landed cost (wholesale + packaging + shipping + marketing allocation) then apply a 6-8x multiplier. A well-branded lash pair that costs $4 landed should retail for $24-$32.`,
       },
       {
         heading: 'Mistake 3: Skipping Private Label',
-        body: `Selling unbranded lashes means you are building equity for your supplier, not your business. Every sale is a one-time transaction — there is no brand recognition, no repeat purchase loyalty, and no ability to charge a premium.
+        body: `Selling unbranded lashes means you are building equity for your supplier, not your business. Every sale is a one-time transaction. There is no brand recognition, no repeat purchase loyalty, and no ability to charge a premium.
 
-**The fix:** Even a simple custom-printed box with your logo transforms a generic product into a branded experience. Private label MOQ is lower than most people think — often starting at 100–200 units. Read our [complete private label OEM guide](/blog/private-label-eyelashes-oem-guide) and [eyelash packaging design guide](/blog/eyelash-packaging-guide) to get started. The margin improvement from branded packaging typically pays for the investment within the first order cycle.`,
+**The fix:** Even a simple custom-printed box with your logo transforms a generic product into a branded experience. Private label MOQ is lower than most people think, often starting at 100-200 units. Read our [complete private label OEM guide](/blog/private-label-eyelashes-oem-guide) and [eyelash packaging design guide](/blog/eyelash-packaging-guide) to get started. The margin improvement from branded packaging typically pays for the investment within the first order cycle.`,
       },
       {
         heading: 'Mistake 4: Ignoring Photography',
         body: `Beauty is a visual category. Poor product photography is the single biggest conversion killer for lash brands on e-commerce and social media.
 
-**The fix:** Invest in professional photography before launch — not after. You need:
+**The fix:** Invest in professional photography before launch, not after. You need:
 - Clean white-background product shots (for e-commerce listings)
 - Lifestyle shots (lashes on model, close-up eye shots)
 - Flat-lay packaging shots (for Instagram)
 
-Budget: $300–$800 for a half-day professional shoot covers all three. The ROI from better photography is immediate and measurable.`,
+Budget: $300-$800 for a half-day professional shoot covers all three. The ROI from better photography is immediate and measurable.`,
       },
       {
         heading: 'Mistake 5: Ordering Too Much Stock Too Early',
-        body: `Over-ordering inventory before validating demand is a capital trap. Many new lash businesses order 500–1,000 units of each style based on what they think will sell — and end up with dead stock.
+        body: `Over-ordering inventory before validating demand is a capital trap. Many new lash businesses order 500-1,000 units of each style based on what they think will sell, and end up with dead stock.
 
 **The fix:** Start at the minimum order quantity and spread it across a wider range of styles rather than going deep on one. Reorder the winners; discontinue the slow movers.
 
@@ -755,13 +754,13 @@ MCI Eyelashes sets MOQ at 100 pairs per style and lets you mix and match styles 
       },
       {
         heading: 'Mistake 6: No Repeat Purchase Strategy',
-        body: `The most profitable lash businesses are not the ones with the most new customers — they are the ones with the highest customer lifetime value. A client who buys every 6 weeks is worth 8–9x more than a one-time buyer.
+        body: `The most profitable lash businesses are not the ones with the most new customers. They are the ones with the highest customer lifetime value. A client who buys every 6 weeks is worth 8-9x more than a one-time buyer.
 
 **The fix:**
 - Offer a subscription or loyalty program for professional buyers
-- Send replenishment reminders at 4–5 week intervals
+- Send replenishment reminders at 4-5 week intervals
 - Create a "lash of the month" seasonal collection to drive regular engagement
-- Build an email list from day one — email converts 3–5x better than social media`,
+- Build an email list from day one, email converts 3-5x better than social media`,
       },
       {
         heading: 'Mistake 7: Trying to Sell Everywhere at Once',
@@ -778,60 +777,60 @@ Master one channel first. The skills you build in one channel transfer to the ne
     faq: [
       {
         q: 'How much profit can you make from a lash business?',
-        a: 'Gross margins in the wholesale lash business typically range from 65–85% depending on product type and brand positioning. A lash brand selling $5,000/month in revenue at 70% gross margin generates $3,500 in gross profit. After platform fees, marketing, and shipping, net margins of 30–45% are achievable for well-run lash brands.',
+        a: 'Gross margins in the wholesale lash business typically range from 65-85% depending on product type and brand positioning. A lash brand selling $5,000/month in revenue at 70% gross margin generates $3,500 in gross profit. After platform fees, marketing, and shipping, net margins of 30-45% are achievable for well-run lash brands.',
       },
       {
         q: 'How long does it take to start making money from a lash business?',
-        a: 'Most lash reseller businesses can reach their first profitable month within 60–90 days if they follow a disciplined launch strategy: validate with small test orders, invest in photography, and drive initial sales through organic social content. Private label brands typically take 3–6 months to turn profitable due to the higher upfront investment in custom packaging and branding.',
+        a: 'Most lash reseller businesses can reach their first profitable month within 60-90 days if they follow a disciplined launch strategy: validate with small test orders, invest in photography, and drive initial sales through organic social content. Private label brands typically take 3-6 months to turn profitable due to the higher upfront investment in custom packaging and branding.',
       },
       {
         q: 'What is the best platform to sell lashes online?',
-        a: 'For most new lash businesses, the best starting platform is Shopify (for direct-to-consumer sales) combined with Instagram for traffic acquisition. Etsy is excellent for early validation due to built-in search traffic. Amazon FBA is best suited for higher-volume, price-competitive products. Most successful lash brands eventually sell across 2–3 channels.',
+        a: 'For most new lash businesses, the best starting platform is Shopify (for direct-to-consumer sales) combined with Instagram for traffic acquisition. Etsy is excellent for early validation due to built-in search traffic. Amazon FBA is best suited for higher-volume, price-competitive products. Most successful lash brands eventually sell across 2-3 channels.',
       },
     ],
   },
   {
     slug: 'eyelash-extension-supplies-wholesale',
     title: 'Eyelash Extension Supplies Wholesale: Complete Buyer\'s Guide for Lash Artists (2026)',
-    metaDescription: 'Everything lash artists need to know about buying eyelash extension supplies wholesale — from adhesives to tweezers, lash trays, and finding reliable manufacturers.',
+    metaDescription: 'Everything lash artists need to know about buying eyelash extension supplies wholesale, from adhesives to tweezers, lash trays, and finding reliable manufacturers.',
     category: 'Wholesale Tips',
     date: '2026-04-16',
     readTime: '9 min read',
-    excerpt: 'Buying eyelash extension supplies wholesale can cut your cost-per-client by 40–60%. This guide covers everything from lash trays and adhesives to tweezers and under-eye patches — and how to find a reliable wholesale supplier.',
-    coverAlt: 'Eyelash extension supplies wholesale — lash trays, tweezers, adhesives',
+    excerpt: 'Buying eyelash extension supplies wholesale can cut your cost-per-client by 40-60%. This guide covers everything from lash trays and adhesives to tweezers and under-eye patches, and how to find a reliable wholesale supplier.',
+    coverAlt: 'Eyelash extension supplies wholesale: lash trays, tweezers, adhesives',
     sections: [
       {
         heading: 'Why Buy Eyelash Extension Supplies Wholesale?',
-        body: `The difference between a lash artist earning $60,000/year and $100,000/year is often margin — not volume. Buying supplies wholesale is the single most impactful lever you can pull to increase your take-home income without adding clients.
+        body: `The difference between a lash artist earning $60,000/year and $100,000/year is often margin, not volume. Buying supplies wholesale is the single most impactful lever you can pull to increase your take-home income without adding clients.
 
 **Cost comparison: Retail vs. Wholesale**
-- Lash tray (retail): $18–$28 → Wholesale: $4–$9
-- Lash adhesive (retail): $22–$35 → Wholesale: $6–$12
+- Lash tray (retail): $18-$28 → Wholesale: $4-$9
+- Lash adhesive (retail): $22-$35 → Wholesale: $6-$12
 - Micro brushes (retail): $8/pack → Wholesale: $1.50/pack
 - Under-eye patches (retail): $12/100 → Wholesale: $3/100
 
-At 5 clients/day, the difference between retail and wholesale supply costs can easily reach **$800–$1,500/month** in saved expenses.`,
+At 5 clients/day, the difference between retail and wholesale supply costs can easily reach **$800-$1,500/month** in saved expenses.`,
       },
       {
         heading: 'Essential Eyelash Extension Supplies to Buy Wholesale',
         body: `**1. Individual Lash Trays**
 The most important supply item. Look for:
 - C, CC, D, DD curl options
-- Diameter range: 0.03–0.20mm
-- Length range: 8–16mm
+- Diameter range: 0.03-0.20mm
+- Length range: 8-16mm
 - Mixed or uniform trays
 
 **2. Lash Adhesives**
 Adhesive quality directly impacts retention and client satisfaction.
-- Retention time: 6–8 weeks is professional standard
-- Drying speed: 1–2 seconds for fast artists; 3–4 seconds for beginners
+- Retention time: 6-8 weeks is professional standard
+- Drying speed: 1-2 seconds for fast artists; 3-4 seconds for beginners
 - Humidity range: confirm before ordering
 
 **3. Lash Tweezers**
 - Straight tweezers for isolation
 - Curved/angled tweezers for volume fans
 - Boot tweezers for mega volume
-- Always buy stainless steel — titanium coating for premium
+- Always buy stainless steel: titanium coating for premium
 
 **4. Under-Eye Patches & Tape**
 - Hydrogel patches (most comfortable)
@@ -852,14 +851,14 @@ Request samples before placing bulk orders. Test adhesive retention over 4 weeks
 
 **Minimum Order Quantities (MOQ)**
 Reputable wholesale suppliers offer MOQs starting at:
-- Lash trays: 10–50 units per style
-- Adhesive: 6–12 units per case
-- Tweezers: 3–6 pairs
+- Lash trays: 10-50 units per style
+- Adhesive: 6-12 units per case
+- Tweezers: 3-6 pairs
 
 **Lead times & shipping**
-- Domestic warehouse: 3–7 days
-- Factory direct (from manufacturer): 10–21 days
-- Express air freight: 5–10 days (higher cost)
+- Domestic warehouse: 3-7 days
+- Factory direct (from manufacturer): 10-21 days
+- Express air freight: 5-10 days (higher cost)
 
 **Certifications**
 Look for ISO-certified manufacturing, MSDS/SDS sheets for adhesives, and cruelty-free certification if relevant to your brand.
@@ -869,10 +868,10 @@ A supplier confident in their product will offer returns on manufacturing defect
       },
       {
         heading: 'OEM & Private Label Lash Extension Supplies',
-        body: `Growing lash brands eventually want their logo on the products — not someone else's. Private label extension supplies allow you to:
+        body: `Growing lash brands eventually want their logo on the products, not someone else's. Private label extension supplies allow you to:
 
 - Build brand recognition with loyal clients
-- Command premium prices (20–40% markup over generic)
+- Command premium prices (20-40% markup over generic)
 - Create retail revenue streams beyond services
 
 **What can be private labeled?**
@@ -887,7 +886,7 @@ A supplier confident in their product will offer returns on manufacturing defect
 - Adhesives: 50 units per SKU
 - Complete starter kits: 50 sets
 
-Private label timeline from approval to delivery: 3–4 weeks for reorders, 6–8 weeks for new product development.`,
+Private label timeline from approval to delivery: 3-4 weeks for reorders, 6-8 weeks for new product development.`,
       },
       {
         heading: 'Where to Buy Eyelash Extension Supplies Wholesale',
@@ -898,10 +897,10 @@ Manufacturers like MCI Eyelashes supply directly to lash artists, salons, and di
 Distributors carry multiple brands and are better for mixed orders. Margins are slightly lower than factory direct but lead times are faster.
 
 **Option 3: Beauty trade shows**
-IECSC, America's Beauty Show, Premiere Orlando — ideal for sampling products and negotiating first-time wholesale accounts face-to-face.
+IECSC, America's Beauty Show, Premiere Orlando: ideal for sampling products and negotiating first-time wholesale accounts face-to-face.
 
 **Option 4: Online wholesale platforms**
-Platforms like Faire, Beauty Joint, and OleHenriksen wholesale carry lash supplies at wholesale prices with lower MOQs — better for beginners.
+Platforms like Faire, Beauty Joint, and OleHenriksen wholesale carry lash supplies at wholesale prices with lower MOQs, better for beginners.
 
 **MCI Eyelashes wholesale program:**
 MCI manufactures and supplies lash extension trays, strip lashes, and accessories directly to salons and beauty brands globally. Request a wholesale catalog at our contact page.`,
@@ -910,7 +909,7 @@ MCI manufactures and supplies lash extension trays, strip lashes, and accessorie
     faq: [
       {
         q: 'What is the minimum order for wholesale eyelash extension supplies?',
-        a: 'MOQs vary by supplier. At MCI Eyelashes the MOQ is 100 pairs per style, and you can mix and match styles to reach it. Distributors often advertise lower MOQs of 10–20 units, but at higher per-unit prices because they buy from a factory first.',
+        a: 'MOQs vary by supplier. At MCI Eyelashes the MOQ is 100 pairs per style, and you can mix and match styles to reach it. Distributors often advertise lower MOQs of 10-20 units, but at higher per-unit prices because they buy from a factory first.',
       },
       {
         q: 'How do I find a reliable wholesale lash extension supplier?',
@@ -918,32 +917,32 @@ MCI manufactures and supplies lash extension trays, strip lashes, and accessorie
       },
       {
         q: 'Can I private label eyelash extension supplies?',
-        a: 'Yes. Many manufacturers including MCI Eyelashes offer private label services for lash trays, adhesives, tweezers, and accessories. MOQs for private label are typically higher (100–200 units per SKU) and lead times are 4–8 weeks for initial orders.',
+        a: 'Yes. Many manufacturers including MCI Eyelashes offer private label services for lash trays, adhesives, tweezers, and accessories. MOQs for private label are typically higher (100-200 units per SKU) and lead times are 4-8 weeks for initial orders.',
       },
     ],
   },
   {
     slug: 'custom-eyelash-packaging-wholesale',
     title: 'Custom Eyelash Packaging Wholesale: How to Brand Your Lash Line (2026)',
-    metaDescription: 'Everything you need to know about custom eyelash packaging wholesale — box styles, materials, MOQs, and how to create packaging that sells itself on shelves and social media.',
+    metaDescription: 'Everything you need to know about custom eyelash packaging wholesale, box styles, materials, MOQs, and how to create packaging that sells itself on shelves and social media.',
     category: 'Branding',
     date: '2026-04-14',
     readTime: '7 min read',
-    excerpt: 'Your lash packaging is your brand\'s first impression. This guide breaks down every custom eyelash packaging option — from drawer boxes to magnetic lids — plus MOQs, materials, and what actually sells.',
-    coverAlt: 'Custom eyelash packaging wholesale — branded lash boxes',
+    excerpt: 'Your lash packaging is your brand\'s first impression. This guide breaks down every custom eyelash packaging option, from drawer boxes to magnetic lids, plus MOQs, materials, and what actually sells.',
+    coverAlt: 'Custom eyelash packaging wholesale: branded lash boxes',
     sections: [
       {
         heading: 'Why Custom Packaging Is Non-Negotiable for Lash Brands',
         body: `Lashes are a visual, tactile product sold in a visually saturated market. Custom packaging does four things generic packaging cannot:
 
 **1. Commands higher pricing**
-Consumers pay 20–40% more for lashes in premium custom packaging vs. plain generic boxes — even when the lash inside is identical.
+Consumers pay 20-40% more for lashes in premium custom packaging vs. plain generic boxes: even when the lash inside is identical.
 
 **2. Creates brand recognition**
 Custom packaging turns every unboxing into a brand impression. A client who buys from you once and sees your logo every morning in her drawer is a client who comes back.
 
 **3. Drives social sharing**
-Unboxing content is one of the highest-converting organic content types in beauty. Aesthetic packaging gets filmed and posted — free marketing.
+Unboxing content is one of the highest-converting organic content types in beauty. Aesthetic packaging gets filmed and posted, free marketing.
 
 **4. Enables retail placement**
 If you plan to sell in salons, boutiques, or beauty supply stores, custom branded packaging is required. Retailers don't shelve generic boxes.`,
@@ -951,35 +950,35 @@ If you plan to sell in salons, boutiques, or beauty supply stores, custom brande
       {
         heading: 'Types of Custom Eyelash Packaging',
         body: `**1. Drawer Box (Most Popular)**
-A sliding inner tray with a sleeve outer — the most common premium lash box style.
+A sliding inner tray with a sleeve outer, the most common premium lash box style.
 - Best for: strip lashes, individual lash sets
 - Materials: rigid cardboard, kraft paper, velvet lining
-- MOQ: 100–500 units
-- Cost range: $0.80–$2.50/unit at wholesale
+- MOQ: 100-500 units
+- Cost range: $0.80-$2.50/unit at wholesale
 
 **2. Magnetic Closure Box**
-Hinged lid with embedded magnetic closure — premium feel, higher cost.
+Hinged lid with embedded magnetic closure, premium feel, higher cost.
 - Best for: gift sets, luxury positioning
 - Materials: rigid board, soft-touch lamination, ribbon pull
-- MOQ: 200–500 units
-- Cost range: $1.50–$4.00/unit
+- MOQ: 200-500 units
+- Cost range: $1.50-$4.00/unit
 
 **3. Window Box**
 Box with a clear PVC or acetate window showing the lash.
 - Best for: retail display, consumer products
 - Materials: paperboard + PVC window
-- MOQ: 100–300 units
-- Cost range: $0.60–$1.80/unit
+- MOQ: 100-300 units
+- Cost range: $0.60-$1.80/unit
 
 **4. Compact/Dome Case**
-Circular or square clamshell case — great for bold, fashion-forward brands.
+Circular or square clamshell case: great for bold, fashion-forward brands.
 - Best for: wispy and dramatic lash styles
 - MOQ: 200+ units
 
 **5. Kraft/Eco Packaging**
-Unbleached paperboard with minimal print — perfect for sustainable-positioned brands.
-- MOQ: 100–200 units
-- Cost: $0.40–$1.20/unit`,
+Unbleached paperboard with minimal print: perfect for sustainable-positioned brands.
+- MOQ: 100-200 units
+- Cost: $0.40-$1.20/unit`,
       },
       {
         heading: 'Custom Printing Options',
@@ -989,10 +988,10 @@ Unbleached paperboard with minimal print — perfect for sustainable-positioned 
 Gold, silver, rose gold, or holographic foil pressed onto the surface. Adds a luxury feel at relatively low cost.
 
 **Embossing / Debossing**
-Raised or recessed logo/text — tactile and premium. Pairs well with matte lamination.
+Raised or recessed logo/text: tactile and premium. Pairs well with matte lamination.
 
 **Soft-touch lamination**
-A velvety matte surface finish. High-perceived value, very popular in 2025–2026.
+A velvety matte surface finish. High-perceived value, very popular in 2025-2026.
 
 **UV spot coating**
 Glossy finish applied to specific elements (logo, design) while the background stays matte. Creates dramatic contrast.
@@ -1001,34 +1000,34 @@ Glossy finish applied to specific elements (logo, design) while the background s
 Best for detailed artwork, gradients, photographs. Required for complex brand designs.
 
 **Digital printing**
-Lower MOQ option — good for sampling or limited-edition runs (50–100 units). Higher per-unit cost.`,
+Lower MOQ option: good for sampling or limited-edition runs (50-100 units). Higher per-unit cost.`,
       },
       {
         heading: 'MOQ and Pricing Guide for Custom Lash Packaging',
         body: `| Box Type | MOQ | Unit Cost (Wholesale) |
 |---|---|---|
-| Drawer box (standard) | 100–200 | $0.80–$1.80 |
-| Magnetic closure box | 200–500 | $1.50–$4.00 |
-| Window box | 100–300 | $0.60–$1.80 |
-| Kraft eco box | 100–200 | $0.40–$1.20 |
-| Compact/dome case | 200+ | $1.20–$3.00 |
+| Drawer box (standard) | 100-200 | $0.80-$1.80 |
+| Magnetic closure box | 200-500 | $1.50-$4.00 |
+| Window box | 100-300 | $0.60-$1.80 |
+| Kraft eco box | 100-200 | $0.40-$1.20 |
+| Compact/dome case | 200+ | $1.20-$3.00 |
 
 **Setup/tooling fees:**
-- Die-cutting: $80–$200 one-time
-- Foil stamp tooling: $60–$150 per color
-- Emboss/deboss die: $80–$180
+- Die-cutting: $80-$200 one-time
+- Foil stamp tooling: $60-$150 per color
+- Emboss/deboss die: $80-$180
 
 **Lead times:**
-- Sampling: 7–10 days
-- Production: 15–25 days
-- Express: 10–15 days (rush fee applies)`,
+- Sampling: 7-10 days
+- Production: 15-25 days
+- Express: 10-15 days (rush fee applies)`,
       },
       {
         heading: 'How to Design Packaging That Sells',
         body: `**Keep it legible at 3 feet**
 Your brand name and key product claim should be readable from across a table or shelf. Overly intricate designs lose clarity at distance.
 
-**Use 2–3 colors maximum**
+**Use 2-3 colors maximum**
 Color consistency builds brand recognition. Limit your palette and use it consistently across all SKUs.
 
 **Invest in the inside**
@@ -1046,27 +1045,27 @@ Colors print differently than they appear on screen. Request a printed mockup be
     faq: [
       {
         q: 'What is the minimum order for custom eyelash packaging?',
-        a: 'Most manufacturers require a minimum of 100–200 units for custom-printed packaging. Digital printing allows lower MOQs but at a higher per-unit cost. At MCI Eyelashes, custom packaging is available from our standard MOQ of 100 pairs per style with full branding.',
+        a: 'Most manufacturers require a minimum of 100-200 units for custom-printed packaging. Digital printing allows lower MOQs but at a higher per-unit cost. At MCI Eyelashes, custom packaging is available from our standard MOQ of 100 pairs per style with full branding.',
       },
       {
         q: 'How long does custom eyelash packaging take to produce?',
-        a: 'Standard production takes 15–25 days after artwork approval. Sampling takes 7–10 days. Rush orders can be completed in 10–15 days for an additional fee. Always factor in shipping time from your supplier\'s location.',
+        a: 'Standard production takes 15-25 days after artwork approval. Sampling takes 7-10 days. Rush orders can be completed in 10-15 days for an additional fee. Always factor in shipping time from your supplier\'s location.',
       },
       {
         q: 'Can I order custom packaging and lashes together as a bundle?',
-        a: 'Yes. MCI Eyelashes offers bundled orders — custom-manufactured lashes with your branded packaging — as a complete private label solution. This simplifies logistics and ensures lash-to-packaging fit accuracy.',
+        a: 'Yes. MCI Eyelashes offers bundled orders, custom-manufactured lashes with your branded packaging, as a complete private label solution. This simplifies logistics and ensures lash-to-packaging fit accuracy.',
       },
     ],
   },
   {
     slug: 'false-eyelashes-market-trends-2026',
     title: 'False Eyelash Market Trends 2026: What Buyers and Brands Need to Know',
-    metaDescription: 'The global false eyelash market is growing fast. Explore the key 2026 trends shaping lash manufacturing, wholesale buying, and brand strategy — from vegan lashes to AI customization.',
+    metaDescription: 'The global false eyelash market is growing fast. Explore the key 2026 trends shaping lash manufacturing, wholesale buying, and brand strategy, from vegan lashes to AI customization.',
     category: 'Industry Trends',
     date: '2026-04-12',
     readTime: '8 min read',
-    excerpt: 'The global false eyelash market is projected to exceed $2.1 billion by 2027. Here are the trends driving that growth — and what they mean for wholesalers, manufacturers, and lash brands entering the market.',
-    coverAlt: 'False eyelash market trends 2026 — lash industry growth',
+    excerpt: 'The global false eyelash market is projected to exceed $2.1 billion by 2027. Here are the trends driving that growth, and what they mean for wholesalers, manufacturers, and lash brands entering the market.',
+    coverAlt: 'False eyelash market trends 2026: lash industry growth',
     sections: [
       {
         heading: 'Global Eyelash Market Size & Growth',
@@ -1079,16 +1078,15 @@ Colors print differently than they appear on screen. Request a printed mockup be
 - Increasing acceptance of dramatic lash looks across all demographics
 
 **Top markets by volume:**
-1. North America — largest revenue market (35% share)
-2. Asia Pacific — fastest growing (China, South Korea, India, Indonesia)
-3. Europe — high demand for premium/luxury segment
-4. Middle East & Africa — growing salon culture
-
-Indonesia is one of the top-3 fastest-growing lash import markets globally — creating significant opportunity for Indonesian-based manufacturers like MCI Eyelashes.`,
+1. North America: largest revenue market (35% share)
+2. Asia Pacific: fastest growing (China, South Korea, India, Indonesia)
+3. Europe: high demand for premium/luxury segment
+4. Middle East & Africa: growing salon culture
+`,
       },
       {
         heading: 'Trend 1: Vegan & Cruelty-Free Lashes Dominate',
-        body: `The single biggest product shift in the lash industry over 2024–2026 is the move from animal-derived (mink, sable) lashes to **vegan and cruelty-free alternatives**.
+        body: `The single biggest product shift in the lash industry over 2024-2026 is the move from animal-derived (mink, sable) lashes to **vegan and cruelty-free alternatives**.
 
 **Why it's happening:**
 - Consumer awareness campaigns against fur farming
@@ -1097,18 +1095,18 @@ Indonesia is one of the top-3 fastest-growing lash import markets globally — c
 - No meaningful quality difference in premium synthetic vs. mink
 
 **What this means for buyers:**
-- Synthetic silk and faux-mink lashes now match mink quality at 30–40% lower cost
+- Synthetic silk and faux-mink lashes now match mink quality at 30-40% lower cost
 - Brands that can display "100% Vegan" on packaging have higher conversion rates
 - Cruelty-free certification (PETA, Leaping Bunny) is becoming a commercial requirement, not a niche positioning`,
       },
       {
         heading: 'Trend 2: Wispy & Natural Lash Styles Replace Dramatic',
-        body: `The era of heavy, dense strip lashes (dominant 2018–2022) has given way to a new aesthetic: **natural, wispy, and "your lashes but better"** styles.
+        body: `The era of heavy, dense strip lashes (dominant 2018-2022) has given way to a new aesthetic: **natural, wispy, and "your lashes but better"** styles.
 
 **The wispy lash characteristics:**
 - Feathered, uneven length (not perfectly uniform)
 - Mix of long and short lashes in a single strip
-- Lighter weight — wearable for day looks
+- Lighter weight: wearable for day looks
 - Easier to apply than dense dramatic styles
 
 **Top trending styles in 2026:**
@@ -1118,22 +1116,22 @@ Indonesia is one of the top-3 fastest-growing lash import markets globally — c
 4. Invisible band styles
 
 **Implication for wholesale buyers:**
-Stock lighter, more natural styles in addition to (or replacing) heavy glam lashes. Natural styles sell 2–3x faster in markets with younger buyers (18–28 demographic).`,
+Stock lighter, more natural styles in addition to (or replacing) heavy glam lashes. Natural styles sell 2-3x faster in markets with younger buyers (18-28 demographic).`,
       },
       {
         heading: 'Trend 3: Magnetic Lashes & Reusable Systems',
-        body: `Magnetic lashes — lashes that attach without glue using small embedded magnets — are the fastest-growing segment in strip lashes.
+        body: `Magnetic lashes, lashes that attach without glue using small embedded magnets, are the fastest-growing segment in strip lashes.
 
-**Market growth:** Magnetic lashes grew from ~3% of strip lash sales in 2021 to approximately 18–22% in 2026.
+**Market growth:** Magnetic lashes grew from ~3% of strip lash sales in 2021 to approximately 18-22% in 2026.
 
 **Why buyers love magnetic lashes:**
 - No adhesive = easier application
-- Reusable 30–60 times vs. 10–20 for traditional strip
-- Hypoallergenic — no glue-related allergic reactions
+- Reusable 30-60 times vs. 10-20 for traditional strip
+- Hypoallergenic: no glue-related allergic reactions
 - Growing demand among glue-sensitive clients
 
 **Wholesale opportunity:**
-Magnetic lash kits (lashes + eyeliner + applicator) retail at $25–$60 but have wholesale costs of $6–$14, making margins among the highest in the strip lash category.`,
+Magnetic lash kits (lashes + eyeliner + applicator) retail at $25-$60 but have wholesale costs of $6-$14, making margins among the highest in the strip lash category.`,
       },
       {
         heading: 'Trend 4: Direct-to-Consumer Brand Proliferation',
@@ -1155,7 +1153,7 @@ Market saturation is increasing. Over 2,000 new lash brands launched on Shopify 
       },
       {
         heading: 'Trend 5: Custom OEM for Mid-Size Brands',
-        body: `The fastest-growing segment of the B2B lash market is **mid-size brands (500–5,000 units/month)** moving from reselling wholesale stock to custom OEM.
+        body: `The fastest-growing segment of the B2B lash market is **mid-size brands (500-5,000 units/month)** moving from reselling wholesale stock to custom OEM.
 
 **What OEM clients want in 2026:**
 - Exclusive curl/style combinations not available to all resellers
@@ -1173,7 +1171,7 @@ Market saturation is increasing. Over 2,000 new lash brands launched on Shopify 
     faq: [
       {
         q: 'What is the size of the global false eyelash market in 2026?',
-        a: 'The global false eyelash market is estimated at approximately $1.8–2.0 billion in 2026, growing at ~8.5% annually. North America is the largest revenue market, while Asia Pacific is the fastest-growing region.',
+        a: 'The global false eyelash market is estimated at approximately $1.8-2.0 billion in 2026, growing at ~8.5% annually. North America is the largest revenue market, while Asia Pacific is the fastest-growing region.',
       },
       {
         q: 'Are vegan lashes better than mink lashes?',
@@ -1188,23 +1186,23 @@ Market saturation is increasing. Over 2,000 new lash brands launched on Shopify 
   {
     slug: 'eyelash-manufacturer-indonesia',
     title: 'Eyelash Manufacturer in Indonesia: Why Brands Source from Indonesian Factories',
-    metaDescription: 'Indonesia is one of the world\'s top eyelash manufacturing hubs. Discover why global beauty brands source lashes from Indonesian manufacturers — quality, pricing, MOQ, and what to look for.',
+    metaDescription: 'Indonesia is one of the world\'s top eyelash manufacturing hubs. Discover why global beauty brands source lashes from Indonesian manufacturers, quality, pricing, MOQ, and what to look for.',
     category: 'Sourcing Guide',
     date: '2026-04-18',
     readTime: '7 min read',
-    excerpt: 'Indonesia is home to some of the world\'s most skilled eyelash manufacturing operations. Here\'s why global brands source from Indonesian factories — and what to look for when choosing an Indonesian lash manufacturer.',
-    coverAlt: 'Eyelash manufacturer Indonesia — professional lash factory',
+    excerpt: 'Indonesia is home to some of the world\'s most skilled eyelash manufacturing operations. Here\'s why global brands source from Indonesian factories, and what to look for when choosing an Indonesian lash manufacturer.',
+    coverAlt: 'Eyelash manufacturer Indonesia: professional lash factory',
     sections: [
       {
         heading: 'Indonesia\'s Position in Global Lash Manufacturing',
         body: `Indonesia has emerged as one of the top three eyelash manufacturing countries globally, alongside China and South Korea. The Indonesian lash industry is particularly strong in:
 
-- **Handcrafted lash manufacturing** — Indonesian factories excel in artisan-quality handmade lashes with exceptional consistency
-- **Export volume** — Indonesia exports eyelashes to over 80 countries, with the US, EU, and Australia as the largest markets
-- **Quality-to-price ratio** — Indonesian manufacturing offers competitive pricing with higher average quality standards than budget-tier production
+- **Handcrafted lash manufacturing**: Indonesian factories excel in artisan-quality handmade lashes with exceptional consistency
+- **Export volume**: Indonesia exports eyelashes to over 80 countries, with the US, EU, and Australia as the largest markets
+- **Quality-to-price ratio**: Indonesian manufacturing offers competitive pricing with higher average quality standards than budget-tier production
 
 **Why global brands choose Indonesia:**
-1. Skilled handcraft labor — Indonesian lash makers undergo 3–6 months of specialized training
+1. Skilled handcraft labor: Indonesian lash makers undergo 3-6 months of specialized training
 2. Competitive pricing with no compromise on quality
 3. ISO-certified facilities growing rapidly
 4. Strong export infrastructure and established logistics routes
@@ -1222,7 +1220,7 @@ Market saturation is increasing. Over 2,000 new lash brands launched on Shopify 
 **Individual Lash Extension Trays**
 - C, CC, D, DD curl extensions for professional lash artists
 - Flat/ellipse lashes
-- Classic and volume (0.03–0.15mm diameter)
+- Classic and volume (0.03-0.15mm diameter)
 
 **3D / 5D / 6D Volume Fans**
 - Pre-made and promade fans
@@ -1257,24 +1255,24 @@ Market saturation is increasing. Over 2,000 new lash brands launched on Shopify 
       {
         heading: 'MOQ and Pricing: What to Expect',
         body: `**Standard wholesale (stock products):**
-- MOQ: 50–200 units per style
-- Unit price: $1.20–$5.00 depending on style and material
-- Lead time: 7–14 days (from stock) or 14–21 days (made to order)
+- MOQ: 50-200 units per style
+- Unit price: $1.20-$5.00 depending on style and material
+- Lead time: 7-14 days (from stock) or 14-21 days (made to order)
 
 **OEM / Custom products:**
-- MOQ: 100–500 units per style
-- Development time: 3–5 weeks for new styles
-- Unit price: $2.00–$8.00 depending on complexity
+- MOQ: 100-500 units per style
+- Development time: 3-5 weeks for new styles
+- Unit price: $2.00-$8.00 depending on complexity
 
 **Private label (custom packaging):**
-- Added cost: $0.50–$2.50 per unit for custom box
-- Packaging MOQ: 100–300 units
-- Total lead time: 4–6 weeks from artwork approval
+- Added cost: $0.50-$2.50 per unit for custom box
+- Packaging MOQ: 100-300 units
+- Total lead time: 4-6 weeks from artwork approval
 
 **Shipping options from Indonesia:**
-- Air freight: 5–10 days to US/EU
-- Sea freight: 25–40 days (for larger volume orders)
-- Express courier (DHL/FedEx): 3–7 days`,
+- Air freight: 5-10 days to US/EU
+- Sea freight: 25-40 days (for larger volume orders)
+- Express courier (DHL/FedEx): 3-7 days`,
       },
       {
         heading: 'MCI Eyelashes: Premium Indonesian Lash Manufacturer',
@@ -1285,10 +1283,10 @@ Market saturation is increasing. Over 2,000 new lash brands launched on Shopify 
 - Individual extension trays for professional lash artists
 - Custom OEM development from 100 units
 - Private label packaging design and production
-- Direct manufacturer pricing — no distributor markup
+- Direct manufacturer pricing: no distributor markup
 
 **Our wholesale program includes:**
-- Free samples on existing catalog styles — you cover shipping only
+- Free samples on existing catalog styles. You cover shipping only
 - MOQ of 100 pairs per style, with mix and match across styles
 - 5 working days production on 100-pair orders
 - A live video call to our production floor whenever you want one
@@ -1303,69 +1301,69 @@ To request a product catalog, samples, or a wholesale pricing quote, visit our C
       },
       {
         q: 'What is the minimum order quantity for an Indonesian lash manufacturer?',
-        a: 'MOQs vary by manufacturer. For standard wholesale stock, expect 50–200 units per style. For OEM/custom products, MOQs are typically 100–500 units. Private label packaging usually requires 100–300 units minimum.',
+        a: 'MOQs vary by manufacturer. For standard wholesale stock, expect 50-200 units per style. For OEM/custom products, MOQs are typically 100-500 units. Private label packaging usually requires 100-300 units minimum.',
       },
       {
         q: 'How long does shipping take from an Indonesian lash manufacturer?',
-        a: 'Air freight from Indonesia to the US or EU typically takes 5–10 days. Express courier (DHL/FedEx) takes 3–7 days. Sea freight is 25–40 days for larger volume orders.',
+        a: 'Air freight from Indonesia to the US or EU typically takes 5-10 days. Express courier (DHL/FedEx) takes 3-7 days. Sea freight is 25-40 days for larger volume orders.',
       },
     ],
   },
   {
     slug: 'import-eyelashes-from-indonesia-guide',
     title: 'How to Import Wholesale Eyelashes from Indonesia: A Buyer’s Guide',
-    metaDescription: 'A practical guide for salon owners and distributors importing wholesale eyelashes from Indonesia — shipping methods, customs basics, documents you need, and how to avoid the common first-order mistakes.',
+    metaDescription: 'A practical guide for salon owners and distributors importing wholesale eyelashes from Indonesia, shipping methods, customs basics, documents you need, and how to avoid the common first-order mistakes.',
     category: 'Buyer Guide',
     date: '2026-08-28',
     readTime: '7 min read',
-    excerpt: 'Buying wholesale lashes from an Indonesian factory for the first time? Here’s what actually happens between placing your order and the box landing at your door — shipping options, customs paperwork, and the questions to ask before you pay a deposit.',
+    excerpt: 'Buying wholesale lashes from an Indonesian factory for the first time? Here’s what actually happens between placing your order and the box landing at your door, shipping options, customs paperwork, and the questions to ask before you pay a deposit.',
     coverAlt: 'Wholesale eyelash shipment being prepared for international export from Indonesia',
     sections: [
       {
         heading: 'The Import Process, Step by Step',
         body: `Importing lashes wholesale follows roughly the same sequence regardless of which country you're buying from:
 
-1. **Inquiry and quote** — you send your target styles/quantities, the factory replies with pricing and lead time
-2. **Sample approval** — you confirm quality before committing to a full production run
-3. **Deposit and production** — factory begins manufacturing once your order and deposit are confirmed
-4. **Quality check and packing** — finished goods are inspected and packed for export
-5. **Shipping** — factory books freight (or you use your own forwarder) and provides tracking
-6. **Customs clearance** — your shipment clears customs in your destination country, duties/taxes may apply
-7. **Delivery** — goods arrive at your address or a bonded warehouse if you're a larger distributor`,
+1. **Inquiry and quote**. You send your target styles/quantities, the factory replies with pricing and lead time
+2. **Sample approval**. You confirm quality before committing to a full production run
+3. **Deposit and production**: factory begins manufacturing once your order and deposit are confirmed
+4. **Quality check and packing**: finished goods are inspected and packed for export
+5. **Shipping**: factory books freight (or you use your own forwarder) and provides tracking
+6. **Customs clearance**. Your shipment clears customs in your destination country, duties/taxes may apply
+7. **Delivery**: goods arrive at your address or a bonded warehouse if you're a larger distributor`,
       },
       {
         heading: 'Shipping Methods Compared',
         body: `| Method | Typical transit | Best for |
 |--------|------------------|----------|
-| Express courier (DHL, FedEx, UPS) | 3–7 days | Sample orders, first wholesale orders, urgent restocks |
-| Air freight | 5–10 days | Mid-size wholesale orders where speed still matters |
-| Sea freight | 25–40 days | Large-volume distributor orders where cost per unit matters more than speed |
+| Express courier (DHL, FedEx, UPS) | 3-7 days | Sample orders, first wholesale orders, urgent restocks |
+| Air freight | 5-10 days | Mid-size wholesale orders where speed still matters |
+| Sea freight | 25-40 days | Large-volume distributor orders where cost per unit matters more than speed |
 
-Most first-time buyers start with express courier or air freight — it's slower to save on shipping than it is to lose a sale from an empty shelf.`,
+Most first-time buyers start with express courier or air freight. It's slower to save on shipping than it is to lose a sale from an empty shelf.`,
       },
       {
         heading: 'Customs, Duties, and Paperwork',
-        body: `Duty rates and import rules are set by your own country, not by the exporting factory — they vary by destination and by how your customs authority classifies eyelash products, so there's no single number that applies everywhere. A few things that apply broadly:
+        body: `Duty rates and import rules are set by your own country, not by the exporting factory. They vary by destination and by how your customs authority classifies eyelash products, so there's no single number that applies everywhere. A few things that apply broadly:
 
-- **Ask your factory for a commercial invoice and packing list** on every shipment — customs brokers need these to clear your goods
-- **Check your own country's de minimis threshold** — many countries don't charge duty below a certain order value, which matters for sample and small trial orders
-- **Use a customs broker for larger orders** — most express couriers (DHL, FedEx) include basic clearance, but a broker is worth it once you're importing regularly
-- **Confirm who's responsible for duties** before you order — factory-quoted prices are typically EXW or FOB (you handle destination duties), not landed-cost-inclusive, unless stated otherwise`,
+- **Ask your factory for a commercial invoice and packing list** on every shipment, customs brokers need these to clear your goods
+- **Check your own country's de minimis threshold**. Many countries don't charge duty below a certain order value, which matters for sample and small trial orders
+- **Use a customs broker for larger orders**. Most express couriers (DHL, FedEx) include basic clearance, but a broker is worth it once you're importing regularly
+- **Confirm who's responsible for duties** before you order, factory-quoted prices are typically EXW or FOB (you handle destination duties), not landed-cost-inclusive, unless stated otherwise`,
       },
       {
         heading: 'Common First-Order Mistakes',
-        body: `- **Skipping the sample stage** — always confirm quality on a small sample before committing to a full wholesale order
+        body: `- **Skipping the sample stage**: always confirm quality on a small sample before committing to a full wholesale order
 - **Not confirming who pays for return shipping** if a sample doesn't work out
-- **Assuming the quoted price includes your country's duties and taxes** — ask explicitly
-- **Underestimating lead time on a first order** — factor in production time plus shipping, and order before you're actually out of stock
-- **Not getting terms in writing** — MOQ, price, lead time, and payment terms should be confirmed by email before you send a deposit`,
+- **Assuming the quoted price includes your country's duties and taxes**: ask explicitly
+- **Underestimating lead time on a first order**, factor in production time plus shipping, and order before you're actually out of stock
+- **Not getting terms in writing**: MOQ, price, lead time, and payment terms should be confirmed by email before you send a deposit`,
       },
       {
         heading: 'Importing from MCI Eyelashes',
         body: `MCI Eyelashes is a direct factory based in Purbalingga, Indonesia, and we work with international buyers regularly. Our wholesale terms:
 
 - **MOQ:** 100 pairs per style, mix and match allowed across styles
-- **Samples:** free on existing catalog styles — you cover shipping only
+- **Samples:** free on existing catalog styles. You cover shipping only
 - **Production:** 5 working days on 100-pair orders
 - **Factory verification:** we welcome a live video call to our production floor before you order
 
@@ -1383,27 +1381,27 @@ Reach out via WhatsApp or email to get a quote and discuss shipping to your coun
       },
       {
         q: 'What documents does a factory need to provide for customs clearance?',
-        a: 'At minimum, a commercial invoice and packing list. MCI Eyelashes provides both on every shipment — contact us if your courier or customs broker needs additional documentation.',
+        a: 'At minimum, a commercial invoice and packing list. MCI Eyelashes provides both on every shipment, contact us if your courier or customs broker needs additional documentation.',
       },
       {
         q: 'Can I get samples shipped before placing a wholesale order with MCI Eyelashes?',
-        a: 'Yes — samples on our existing catalog styles are free, you only cover the shipping cost. This lets you confirm quality before committing to the 100-pair MOQ.',
+        a: 'Yes: samples on our existing catalog styles are free, you only cover the shipping cost. This lets you confirm quality before committing to the 100-pair MOQ.',
       },
     ],
   },
   {
     slug: 'eyelash-curl-types-explained',
     title: 'Eyelash Curl Types Explained: J, B, C, CC, D & U Curl Guide (2026)',
-    metaDescription: 'A complete guide to eyelash curl types — J, B, C, CC, D, and U curl — what each looks like, when it is used, and how to specify curl for a private label eyelash order.',
+    metaDescription: 'A complete guide to eyelash curl types (J, B, C, CC, D, and U curl), what each looks like, when it is used, and how to specify curl for a private label eyelash order.',
     category: 'Technical Guide',
     date: '2026-09-07',
     readTime: '6 min read',
     excerpt: 'From a barely-there J curl to a dramatic D curl, curl type is one of the biggest factors in how a lash style looks and performs. This guide breaks down each curl type and how to specify one for a private label order.',
-    coverAlt: 'Eyelash curl types comparison — J, B, C, CC, D, and U curl',
+    coverAlt: 'Eyelash curl types comparison: J, B, C, CC, D, and U curl',
     sections: [
       {
         heading: 'Why Curl Type Matters',
-        body: `Curl type is the shape of the lash fiber itself — how tightly it bends from base to tip. Independent of material or length, curl is what determines how much a lash lifts and opens the eye, and it's one of the standard specifications used across strip lashes, lash extensions, and private label development.
+        body: `Curl type is the shape of the lash fiber itself, how tightly it bends from base to tip. Independent of material or length, curl is what determines how much a lash lifts and opens the eye, and it's one of the standard specifications used across strip lashes, lash extensions, and private label development.
 
 Curl is usually labeled with a letter code: **J, B, C, CC, and D** are the most common, with **U curl** used for more specialized, tightly-curled styles. Knowing the difference matters whether you're picking a strip style off a catalog or briefing a factory on a custom private label design.`,
       },
@@ -1425,26 +1423,26 @@ Curl is usually labeled with a letter code: **J, B, C, CC, and D** are the most 
         heading: 'C Curl',
         body: `C curl is the most widely used curl type across the industry. It has a rounded, open curve that visibly lifts and opens the eye without looking exaggerated.
 
-- **Look:** Natural but noticeably lifted — the industry's default "safe choice"
+- **Look:** Natural but noticeably lifted: the industry's default "safe choice"
 - **Best for:** General-purpose wholesale stocking; C curl styles tend to suit the widest range of eye shapes and client preferences`,
       },
       {
         heading: 'CC Curl',
-        body: `CC curl sits between C and D — more curl and lift than a standard C, without going as tight as a full D.
+        body: `CC curl sits between C and D, more curl and lift than a standard C, without going as tight as a full D.
 
 - **Look:** Fuller, more lifted than C curl, but still rounded rather than sharply angled
 - **Best for:** Buyers who want a fuller look than C curl but find D curl too dramatic for their market`,
       },
       {
         heading: 'D Curl',
-        body: `D curl is the most dramatic of the common curl types — a tight, sharply lifted curve that produces a pronounced "doll-eye" effect.
+        body: `D curl is the most dramatic of the common curl types, a tight, sharply lifted curve that produces a pronounced "doll-eye" effect.
 
 - **Look:** Maximum lift and curl, very noticeable
 - **Best for:** Bold, editorial, and glam styles, and markets where dramatic volume lashes are the dominant trend`,
       },
       {
         heading: 'U Curl (Perm / Semi-Permanent Curl)',
-        body: `U curl is an intensely rounded, near-circular curl, most associated with lash lift and perm services rather than standard strip lash or extension trays. It's a more specialized curl than J–D and shows up far less often in general wholesale catalogs.
+        body: `U curl is an intensely rounded, near-circular curl, most associated with lash lift and perm services rather than standard strip lash or extension trays. It's a more specialized curl than J, D and shows up far less often in general wholesale catalogs.
 
 - **Look:** Very tight, rounded curl similar to a lash lift result
 - **Best for:** Specialty styles and services rather than everyday wholesale stocking`,
@@ -1453,13 +1451,13 @@ Curl is usually labeled with a letter code: **J, B, C, CC, and D** are the most 
         heading: 'Choosing a Curl for a Private Label Order',
         body: `Curl style and intensity is one of the specifications MCI Eyelashes takes for [private label](/private-label-eyelashes) and [custom eyelash](/custom-eyelashes) orders. When briefing a curl type for a private label run, it helps to reference an existing tray or send a sample lash so the curl can be matched precisely rather than described only by letter code.
 
-Curl is only one part of a full private label specification — pair it with your [material choice](/blog/mink-vs-silk-lashes-wholesale-guide), desired length, and [band type](/blog/eyelash-band-types-explained) before sending your brief for a quote.`,
+Curl is only one part of a full private label specification, pair it with your [material choice](/blog/mink-vs-silk-lashes-wholesale-guide), desired length, and [band type](/blog/eyelash-band-types-explained) before sending your brief for a quote.`,
       },
     ],
     faq: [
       {
         q: 'What is the most popular eyelash curl type?',
-        a: 'C curl is generally considered the most versatile and widely used curl type across strip lashes and extensions — it offers a natural but visibly lifted look that suits a wide range of eye shapes.',
+        a: 'C curl is generally considered the most versatile and widely used curl type across strip lashes and extensions. It offers a natural but visibly lifted look that suits a wide range of eye shapes.',
       },
       {
         q: 'What is the difference between C and D curl?',
@@ -1467,7 +1465,7 @@ Curl is only one part of a full private label specification — pair it with you
       },
       {
         q: 'Can I specify a curl type for a private label eyelash order?',
-        a: 'Yes — curl style and intensity is one of the customizable specifications MCI Eyelashes takes for private label orders. Contact us with your reference tray or sample to match it precisely.',
+        a: 'Yes: curl style and intensity is one of the customizable specifications MCI Eyelashes takes for private label orders. Contact us with your reference tray or sample to match it precisely.',
       },
       {
         q: 'What curl type is best for natural, everyday lashes?',
@@ -1478,22 +1476,22 @@ Curl is only one part of a full private label specification — pair it with you
   {
     slug: 'eyelash-band-types-explained',
     title: 'Eyelash Band Types Explained: Cotton, Silk & Clear Band Guide (2026)',
-    metaDescription: 'A guide to eyelash band types — cotton, thin/silk, and clear band — how each feels, how it applies, and how to specify band type for a private label eyelash order.',
+    metaDescription: 'A guide to eyelash band types (cotton, thin/silk, and clear band), how each feels, how it applies, and how to specify band type for a private label eyelash order.',
     category: 'Technical Guide',
     date: '2026-09-14',
     readTime: '6 min read',
-    excerpt: 'The band is the strip that holds a lash together and sits against the lash line — and it has just as much impact on comfort and finish as curl or material. This guide breaks down the common band types and how to specify one for a private label order.',
-    coverAlt: 'Eyelash band types comparison — cotton, thin, and clear band',
+    excerpt: 'The band is the strip that holds a lash together and sits against the lash line, and it has just as much impact on comfort and finish as curl or material. This guide breaks down the common band types and how to specify one for a private label order.',
+    coverAlt: 'Eyelash band types comparison: cotton, thin, and clear band',
     sections: [
       {
         heading: 'Why Band Type Matters',
         body: `The band is the strip at the base of a lash that holds the individual fibers together and sits along the lash line when worn. Independent of curl or fiber material, band type affects how comfortable a lash feels, how easily it conforms to the eye shape, and how visible the base line is once applied.
 
-Band type is one of the standard specifications used across strip lashes, alongside curl and material — and it's a detail worth getting right whether you're picking a catalog style or briefing a factory on a private label design.`,
+Band type is one of the standard specifications used across strip lashes, alongside curl and material, and it's a detail worth getting right whether you're picking a catalog style or briefing a factory on a private label design.`,
       },
       {
         heading: 'Cotton Band',
-        body: `Cotton band is a flexible, fabric-based band — the traditional choice for strip lashes for decades.
+        body: `Cotton band is a flexible, fabric-based band, the traditional choice for strip lashes for decades.
 
 - **Feel:** Soft and pliable, moulds well to the natural curve of the eye
 - **Visibility:** More visible at the base than thinner alternatives, though still fine once applied with lash glue
@@ -1501,7 +1499,7 @@ Band type is one of the standard specifications used across strip lashes, alongs
       },
       {
         heading: 'Thin / Silk Band',
-        body: `A thinner, more tapered band — sometimes marketed as "silk band" — reduces the width and thickness of the strip at the base.
+        body: `A thinner, more tapered band, sometimes marketed as "silk band", reduces the width and thickness of the strip at the base.
 
 - **Feel:** Lighter and more flexible than a standard cotton band, sits closer to the natural lash line
 - **Visibility:** Less noticeable than cotton, without going fully clear
@@ -1519,7 +1517,7 @@ Band type is one of the standard specifications used across strip lashes, alongs
         heading: 'Choosing a Band for a Private Label Order',
         body: `Band style is one of the specifications MCI Eyelashes takes for [private label](/private-label-eyelashes) and [custom eyelash](/custom-eyelashes) orders, alongside tray design. When briefing a band type for a private label run, it helps to send a reference lash or sample so the band width, flexibility, and finish can be matched precisely.
 
-Band is only one part of a full private label specification — pair it with your [curl type](/blog/eyelash-curl-types-explained) and material choice before sending your brief for a quote.`,
+Band is only one part of a full private label specification, pair it with your [curl type](/blog/eyelash-curl-types-explained) and material choice before sending your brief for a quote.`,
       },
     ],
     faq: [
@@ -1533,7 +1531,7 @@ Band is only one part of a full private label specification — pair it with you
       },
       {
         q: 'Can I specify a band type for a private label eyelash order?',
-        a: 'Yes — band style is one of the customizable specifications MCI Eyelashes takes for private label orders, alongside curl, length, and material. Contact us with a reference sample to match it precisely.',
+        a: 'Yes: band style is one of the customizable specifications MCI Eyelashes takes for private label orders, alongside curl, length, and material. Contact us with a reference sample to match it precisely.',
       },
       {
         q: 'Which band type is best for a natural, invisible look?',
@@ -1544,7 +1542,7 @@ Band is only one part of a full private label specification — pair it with you
   {
     slug: 'how-handmade-eyelashes-are-made',
     title: 'How Are Handmade Eyelashes Made? A Look Inside Strip Lash Production (2026)',
-    metaDescription: 'How handmade eyelashes are made — from fiber selection and curling to hand-tying individual fibers onto a band. General industry guide to strip lash construction.',
+    metaDescription: 'How handmade eyelashes are made: from fiber selection and curling to hand-tying individual fibers onto a band. General industry guide to strip lash construction.',
     category: 'Technical Guide',
     date: '2026-09-21',
     readTime: '7 min read',
@@ -1555,46 +1553,46 @@ Band is only one part of a full private label specification — pair it with you
         heading: 'Handmade vs. Machine-Made Lashes',
         body: `Strip lashes are produced one of two ways: machine-made, where fiber is bonded to a band by automated equipment, or handmade, where each lash is assembled and shaped by a person.
 
-Machine-made lashes are faster and cheaper to produce, but the process tends to leave every lash in a batch looking close to identical — including a uniform taper that can read as less natural. Handmade production is slower, but it allows for the fiber placement, taper, and curl to be shaped by hand, style by style.
+Machine-made lashes are faster and cheaper to produce, but the process tends to leave every lash in a batch looking close to identical, including a uniform taper that can read as less natural. Handmade production is slower, but it allows for the fiber placement, taper, and curl to be shaped by hand, style by style.
 
-This guide covers handmade strip lash construction as a general industry technique — not a claimed exact breakdown of any single factory's internal process, which varies by manufacturer.`,
+This guide covers handmade strip lash construction as a general industry technique, not a claimed exact breakdown of any single factory's internal process, which varies by manufacturer.`,
       },
       {
         heading: 'The General Handmade Lash-Making Process',
         body: `While exact workflows differ between factories, handmade strip lash production generally follows the same broad stages across the industry:
 
 **1. Fiber preparation**
-Raw fiber — mink, silk, synthetic, or human hair — is sorted, cleaned, and curled to the target curl type before assembly begins.
+Raw fiber (mink, silk, synthetic, or human hair) is sorted, cleaned, and curled to the target curl type before assembly begins.
 
 **2. Hand-tying onto the band**
 Individual fibers or small clusters are tied or bonded onto the band strip by hand, under magnification, building up the taper and density style by style rather than applying fiber uniformly by machine.
 
 **3. Shaping and trimming**
-The lash is trimmed and shaped to the target length profile — many styles taper from shorter fibers at the inner corner to longer fibers toward the outer corner for a more natural, lifted finish.
+The lash is trimmed and shaped to the target length profile. Many styles taper from shorter fibers at the inner corner to longer fibers toward the outer corner for a more natural, lifted finish.
 
 **4. Quality inspection**
 Finished lashes are checked for symmetry (matching pairs), band integrity, and consistent curl before packing.
 
-Because each step involves a person rather than a machine, handmade production allows for far more variation in taper and density within a single style — which is part of why handmade lashes are generally regarded as more natural-looking than fully machine-made equivalents.`,
+Because each step involves a person rather than a machine, handmade production allows for far more variation in taper and density within a single style, which is part of why handmade lashes are generally regarded as more natural-looking than fully machine-made equivalents.`,
       },
       {
         heading: 'Why Handmade Construction Matters for Quality',
         body: `The hand-tying step is where most of the perceived quality difference comes from:
 
-- **Taper control** — a hand-built lash can vary fiber length gradually across the band, rather than jumping between machine-set lengths
-- **Curl consistency** — fiber can be checked and adjusted style by style rather than relying entirely on a single machine setting
-- **Comfort** — hand-placed fiber can be distributed to reduce weight at the band, which affects how a strip lash feels over a full day of wear
+- **Taper control**: a hand-built lash can vary fiber length gradually across the band, rather than jumping between machine-set lengths
+- **Curl consistency**: fiber can be checked and adjusted style by style rather than relying entirely on a single machine setting
+- **Comfort**: hand-placed fiber can be distributed to reduce weight at the band, which affects how a strip lash feels over a full day of wear
 
-None of this means machine-made lashes are low quality — they serve a different price point and consistency need. It does explain why handmade construction is the standard for most premium mink, silk, and human hair strip lash lines.`,
+None of this means machine-made lashes are low quality. They serve a different price point and consistency need. It does explain why handmade construction is the standard for most premium mink, silk, and human hair strip lash lines.`,
       },
       {
         heading: 'Handmade Construction Across Materials',
         body: `Handmade construction is used across the core lash fiber types buyers typically source wholesale:
 
-- **Mink** — ultra-soft, natural taper
-- **Silk** — glossy, dramatic finish
-- **Synthetic** — engineered uniformity at a lower price point
-- **Human hair** — 100% sterilized, the most natural blend
+- **Mink**: ultra-soft, natural taper
+- **Silk**: glossy, dramatic finish
+- **Synthetic**: engineered uniformity at a lower price point
+- **Human hair**: 100% sterilized, the most natural blend
 
 MCI Eyelashes produces handmade strip and volume lashes across all four of these materials on its own production floor in Purbalingga, Indonesia. See our [handmade eyelashes manufacturing](/handmade-eyelashes) page for the full material range and wholesale terms.`,
       },
@@ -1616,7 +1614,7 @@ MCI Eyelashes is a direct factory, not a trading company, and welcomes a live pr
       },
       {
         q: 'Are handmade lashes better quality than machine-made lashes?',
-        a: 'Handmade lashes are generally regarded as more natural-looking because taper and fiber placement can be adjusted by hand, style by style. Machine-made lashes are faster and cheaper to produce and suit a different price point — quality depends on the specific factory and materials either way.',
+        a: 'Handmade lashes are generally regarded as more natural-looking because taper and fiber placement can be adjusted by hand, style by style. Machine-made lashes are faster and cheaper to produce and suit a different price point, quality depends on the specific factory and materials either way.',
       },
       {
         q: 'Can I verify that a lash is actually handmade before ordering wholesale?',

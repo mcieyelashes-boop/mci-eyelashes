@@ -110,7 +110,7 @@ function pageFindings(page, ctx) {
   for (const unit of [...page.meta, ...page.body]) {
     add(textFindings(unit.text, ctx.allowed), unit.where)
     if (unit.heading) add(headingFindings(unit.text), unit.where)
-    if (unit.faq === 'a' && wordCount(unit.text) < 15) out.push({ rule: 'thin answer', severity: 'error', where: unit.where, text: `${wordCount(unit.text)} words. An FAQ answer should actually answer.` })
+    if (unit.faq === 'a' && wordCount(unit.text) < 8) out.push({ rule: 'thin answer', severity: 'error', where: unit.where, text: `${wordCount(unit.text)} words. Answer in a full sentence a reader can quote on its own.` })
   }
   add(rhythmFindings(page.text), 'whole page')
 
