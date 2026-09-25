@@ -17,6 +17,7 @@ export const blogPosts = [
 - Ultra-soft texture that mimics natural lashes
 - Lightweight enough that clients barely notice them
 - Natural taper from base to tip
+- Reusable 20-25 times with proper care
 - Available in natural, wispy, and dramatic styles
 
 **Wholesale MOQ at MCI:** 100 pairs per style`,

@@ -410,6 +410,7 @@ export const landingPages = [
       { label: 'Location', value: 'Purbalingga, Central Java, Indonesia' },
       { label: 'Materials', value: 'Mink, Silk, Synthetic, Human Hair' },
       { label: 'MOQ', value: '100 pairs per style' },
+      { label: 'Reusability', value: 'Mink styles reusable 20-25 times' },
     ],
     sections: [
       {
@@ -422,7 +423,7 @@ export const landingPages = [
         heading: 'Materials We Work With',
         paragraphs: ['Handmade construction is used across our core material range:'],
         list: [
-          'Mink lashes: ultra-soft, natural taper',
+          'Mink lashes: ultra-soft, natural taper, reusable 20-25 times',
           'Silk lashes: glossy, dramatic finish',
           'Synthetic lashes: durable, uniform, budget-friendly',
           'Human hair lashes: 100% sterilized, most natural',
@@ -438,6 +439,7 @@ export const landingPages = [
     faq: [
       { q: 'Are MCI Eyelashes handmade or machine-made?', a: 'Handmade: produced on our own production floor in Purbalingga, Indonesia.' },
       { q: 'What materials are the handmade lashes made from?', a: 'Our handmade lashes are made from mink, silk, synthetic, and human hair.' },
+      { q: 'How many times can handmade mink lashes be reused?', a: 'Our mink styles are reusable 20-25 times with proper care.' },
       { q: 'What is the MOQ for handmade eyelashes at MCI?', a: '100 pairs per style, mixed and matched across styles.' },
     ],
   },
