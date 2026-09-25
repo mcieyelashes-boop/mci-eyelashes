@@ -7,6 +7,11 @@ const EJS_SERVICE  = import.meta.env.VITE_EMAILJS_SERVICE_ID  || ''
 const EJS_TEMPLATE = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || ''
 const EJS_KEY      = import.meta.env.VITE_EMAILJS_PUBLIC_KEY  || ''
 
+// Until the three EmailJS values are set on the host the form cannot send, so
+// the panel says so and points to email and WhatsApp. Setting them brings the
+// form back with no code change.
+const FORM_ENABLED = Boolean(EJS_SERVICE && EJS_TEMPLATE && EJS_KEY)
+
 // ─── Order tiers — only the Starter row is fully confirmed ───────────────────
 // CONFIRMED:  100 pairs/style MOQ · free sample (buyer pays shipping) · 5-day lead time
 // UNCONFIRMED (pending factory reply — DO NOT display specific claims):
@@ -107,6 +112,15 @@ export default function Contact() {
     setForm(EMPTY_FORM)
   }
 
+  // The tag says which page the visitor was on, so the inquiry can be traced back.
+  const page = typeof window === 'undefined' ? 'home' : pageRef()
+  const mailHref = `mailto:denis@mci-eyelashes.com?subject=${encodeURIComponent('Wholesale inquiry')}&body=${encodeURIComponent(
+    `Hello MCI Eyelashes,\n\nProduct type:\nOrder size:\nCountry:\n\n[page: ${page}]`
+  )}`
+  const waHref = `https://wa.me/6281232378987?text=${encodeURIComponent(
+    `Hello MCI Eyelashes! I'm interested in wholesale eyelash products. Could you send me your catalog and pricing? [ref: ${page}]`
+  )}`
+
   return (
     <section id="contact" className="contact-section" ref={ref}>
       <div className="contact-glow" />
@@ -155,7 +169,17 @@ export default function Contact() {
 
           <motion.div initial={false} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.15 }}>
             <div className="contact-form">
-              {sent ? (
+              {!FORM_ENABLED ? (
+                <div className="form-success-state">
+                  <h3 className="form-success-title">Online form unavailable</h3>
+                  <p className="form-success-desc">
+                    Please email or message us on WhatsApp directly. Tell us the product type, order size and your country,
+                    and we reply within 24 hours with the catalog and price sheet.
+                  </p>
+                  <a className="btn-primary" href={mailHref}>Email us</a>
+                  <a className="btn-outline" href={waHref} target="_blank" rel="noopener noreferrer">WhatsApp us</a>
+                </div>
+              ) : sent ? (
                 <motion.div className="form-success-state" initial={{ opacity: 0, scale: 0.94 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }}>
                   <div className="form-success-check">OK</div>
                   <h3 className="form-success-title">Inquiry Sent</h3>
