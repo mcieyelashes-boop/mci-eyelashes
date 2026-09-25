@@ -29,6 +29,12 @@ doesn't look like a spam burst to Google.
 - Educational pages: add ONE entry to `src/data/blogPosts.js`. The sitemap and
   `llms.txt` regenerate the same way (commit both). Also add at least one
   inbound link from a related commercial or blog page.
+- Quality bar: read `specs/content-style.md` first. Every new page must pass
+  `npm run check:content` with zero errors (the build runs it and stops
+  otherwise), and the warnings must be read and dealt with. Never add a phrase
+  to `specs/confirmed-facts.json` or a slug to `specs/content-baseline.json`
+  yourself: those are owner-approved lists. If an item cannot pass without
+  inventing a fact or padding, mark it `held (reason)` instead of publishing it.
 - Before marking an item done: `npm run build` clean (it runs the SEO-file
   generator, both Vite builds and all prerender scripts), confirm the new URL
   appears in `public/sitemap.xml` and `dist/<slug>.html` (commercial) or
@@ -38,7 +44,7 @@ doesn't look like a spam burst to Google.
 
 ## Weekly agent instructions
 
-Each run: pick the next 1–2 `pending` items below (commercial/educational
+Each run: pick the next 1–2 `pending` items below (skip any `held`) (commercial/educational
 mix is fine, no fixed ratio per week), build them per the rules above, then
 edit this file to mark them `done` with the date and commit that edit too.
 If fewer than 2 pending items remain, do just those and note the queue is
@@ -53,7 +59,7 @@ empty — don't invent extra items beyond this list without asking the owner.
 | C3 | done (2026-09-21) | `faux-mink-lashes-wholesale` | faux mink lashes wholesale | Product page for the real "Faux Mink — Protein Silk" collection (Cruelty Free) |
 | C4 | pending | `human-hair-lashes-wholesale` | human hair lashes wholesale | Product page for the real "Classic — Human Hair" collection (100% Sterilized) |
 | C5 | pending | `under-lashes-wholesale` | under lashes wholesale | Product page for the real "Under Lashes" collection — low-competition longtail, unique category |
-| C6 | pending | `low-moq-eyelash-manufacturer` | low MOQ eyelash manufacturer | The strategic positioning/moat page from blueprint §24 — "factory-direct + low MOQ + private label" as MCI's differentiator vs. Royal Korindah/Bio Takara scale |
+| C6 | pending | `low-moq-eyelash-manufacturer` | low MOQ eyelash manufacturer | The strategic positioning/moat page from blueprint §24 — "factory-direct + low MOQ + private label" as MCI's differentiator vs. large-scale factories (do not name competitors) |
 | C7 | pending | `eyelash-distributor-indonesia` | eyelash distributor Indonesia | Persona page for distributors/resellers specifically (recurring bulk orders, mixed-style pallets) vs. brand builders |
 | C8 | pending | `eyelash-manufacturer-for-new-brands` | eyelash manufacturer for new brands | Persona page for first-time lash brand founders — low MOQ entry point, sample-first path |
 | C9 | pending | `eyelash-samples-catalogue-request` | eyelash sample request | Dedicated conversion page for the free-sample + catalogue-request intent (currently only a CTA block, not its own indexable page) |

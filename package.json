@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "node scripts/generate-seo-files.mjs && vite build && vite build --config vite.ssr.config.js && node scripts/prerender-routes.mjs && node scripts/prerender-blog.mjs && node scripts/prerender-landing.mjs",
+    "check:content": "node scripts/check-content-quality.mjs",
+    "build": "node scripts/check-content-quality.mjs && node scripts/generate-seo-files.mjs && vite build && vite build --config vite.ssr.config.js && node scripts/prerender-routes.mjs && node scripts/prerender-blog.mjs && node scripts/prerender-landing.mjs",
     "lint": "eslint .",
     "preview": "vite preview"
   },

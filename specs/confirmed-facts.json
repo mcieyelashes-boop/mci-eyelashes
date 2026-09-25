@@ -1,0 +1,10 @@
+{
+  "note": "Literal phrases the owner has confirmed (they appear in src/pages/Catalogue.jsx). The content gate lets these through its number and claim checks. Add a phrase here only after the owner confirms it.",
+  "allowedPhrases": [
+    "100%",
+    "50+ years",
+    "50 years",
+    "100 pairs",
+    "5 working days"
+  ]
+}
