@@ -15,8 +15,8 @@ export default function BlogList() {
   useEffect(() => {
     window.scrollTo(0, 0)
     setMeta({
-      title:              'Blog | MCI Eyelashes — Wholesale Lash Industry Guides',
-      description:        'Expert guides for wholesale lash buyers, salon owners, and beauty entrepreneurs — from MOQ and pricing to private label manufacturing and brand building.',
+      title:              'Blog | MCI Eyelashes: Wholesale Lash Industry Guides',
+      description:        'Expert guides for wholesale lash buyers, salon owners, and beauty entrepreneurs, from MOQ and pricing to private label manufacturing and brand building.',
       canonical:          `${BASE_URL}/blog`,
       ogTitle:            'Wholesale Lash Industry Guides | MCI Eyelashes Blog',
       ogDescription:      'Practical guides on starting a lash business, choosing a manufacturer, private label OEM, pricing strategy, and more.',
@@ -70,7 +70,7 @@ export default function BlogList() {
             transition={{ duration: 0.7, delay: 0.2 }}
             style={{ fontSize: '14px', color: 'rgba(255,255,255,0.45)', lineHeight: 1.9, maxWidth: '480px' }}
           >
-            Practical guides for salon owners, distributors, and beauty entrepreneurs — from pricing and MOQ to private label manufacturing.
+            Practical guides for salon owners, distributors, and beauty entrepreneurs, from pricing and MOQ to private label manufacturing.
           </motion.p>
         </div>
       </section>

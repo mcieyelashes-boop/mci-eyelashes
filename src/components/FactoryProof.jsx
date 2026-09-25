@@ -53,7 +53,7 @@ export default function FactoryProof() {
             Check Us Before You <span className="accent-light">Commit</span>
           </h2>
           <p className="section-subtitle" style={{ marginBottom: '44px' }}>
-            We are a factory, not a trading company. Here is how to verify that yourself — before you spend anything.
+            We are a factory, not a trading company. Here is how to verify that yourself, before you spend anything.
           </p>
         </motion.div>
 

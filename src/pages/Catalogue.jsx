@@ -82,7 +82,7 @@ const collections = [
   {
     id: '03',
     key: 'faux',
-    name: 'Faux Mink — Protein Silk',
+    name: 'Faux Mink - Protein Silk',
     tagline: 'Cruelty Free · Ultra-Soft',
     badge: 'Cruelty Free',
     heritage: 'Ethical Luxury',
@@ -108,7 +108,7 @@ const collections = [
   {
     id: '04',
     key: 'human',
-    name: 'Classic — Human Hair',
+    name: 'Classic - Human Hair',
     tagline: '100% Sterilized · Most Natural',
     badge: 'Ultra Natural',
     heritage: 'Premium Grade',
@@ -198,9 +198,9 @@ function CollectionPanel({ col }) {
           <p className="cat-panel-desc">{col.desc}</p>
           <div className="cat-specs">
             <div className="cat-spec-row"><span>Material</span><strong>{col.material}</strong></div>
-            <div className="cat-spec-row"><span>MOQ</span><strong>{col.moq} — mix & match allowed</strong></div>
+            <div className="cat-spec-row"><span>MOQ</span><strong>{col.moq}: mix & match allowed</strong></div>
             <div className="cat-spec-row"><span>Total styles</span><strong>{totalSkus} SKUs across {col.series.length} series</strong></div>
-            <div className="cat-spec-row"><span>Shipping</span><strong>7–14 business days worldwide</strong></div>
+            <div className="cat-spec-row"><span>Shipping</span><strong>7-14 business days worldwide</strong></div>
           </div>
           {col.note && (
             <div className="cat-note">{col.note}</div>
@@ -214,7 +214,7 @@ function CollectionPanel({ col }) {
         </div>
 
         <div className="cat-panel-right">
-          <div className="cat-series-label">Available Styles — {totalSkus} SKUs</div>
+          <div className="cat-series-label">Available Styles: {totalSkus} SKUs</div>
           {col.series.map((series, i) => (
             <div key={series.name} className="cat-series">
               <button
@@ -271,7 +271,7 @@ export default function Catalogue() {
           <h1 className="cat-title">Product <em>Catalogue</em></h1>
           <p className="cat-subtitle">
             200+ styles across 5 professional collections.<br />
-            MOQ 100 pairs · Private label from 500 units · Worldwide shipping 7–14 days.
+            MOQ 100 pairs · Private label from 500 units · Worldwide shipping 7-14 days.
           </p>
           <div className="cat-hero-stats">
             <div className="cat-stat"><span>5</span>Collections</div>
@@ -347,7 +347,7 @@ export default function Catalogue() {
       <section className="cat-final-cta">
         <div className="cat-final-inner">
           <h2>Ready to <em>Order?</em></h2>
-          <p>Send us your selection and estimated quantity — we'll reply with a full quotation within 24 hours.</p>
+          <p>Send us your selection and estimated quantity. We'll reply with a full quotation within 24 hours.</p>
           <div className="cat-final-btns">
             <a
               href="mailto:denis@mci-eyelashes.com?subject=Wholesale Order Inquiry&body=Hi Denis,%0D%0A%0D%0AI would like to place a wholesale order.%0D%0A%0D%0ACompany:%0D%0ACountry:%0D%0ACollections:%0D%0AQuantity:%0D%0A%0D%0AThank you"
@@ -356,7 +356,7 @@ export default function Catalogue() {
               Request a Quote
             </a>
             <a
-              href="mailto:denis@mci-eyelashes.com?subject=Sample Request — MCI Eyelashes"
+              href="mailto:denis@mci-eyelashes.com?subject=Sample Request: MCI Eyelashes"
               className="cat-cta-secondary"
             >
               Request Samples
@@ -365,7 +365,7 @@ export default function Catalogue() {
           <div className="cat-final-contact">
             <span>📧 denis@mci-eyelashes.com</span>
             <span>📍 Purbalingga, Central Java, Indonesia</span>
-            <span>🚚 Worldwide shipping 7–14 days</span>
+            <span>🚚 Worldwide shipping 7-14 days</span>
           </div>
         </div>
       </section>

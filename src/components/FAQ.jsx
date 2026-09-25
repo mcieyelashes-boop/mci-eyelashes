@@ -20,19 +20,19 @@ const faqs = [
   },
   {
     q: 'Can I get a sample before placing a full order?',
-    a: 'Yes — samples of our existing catalog styles are free. You cover the shipping cost. Reach out via WhatsApp or email to arrange yours.',
+    a: 'Yes: samples of our existing catalog styles are free. You cover the shipping cost. Reach out via WhatsApp or email to arrange yours.',
   },
   {
     q: 'How long does production take?',
-    a: 'For orders of 100 pairs: 5 working days. For larger orders, production time varies — contact us for an exact timeline before you order.',
+    a: 'For orders of 100 pairs: 5 working days. For larger orders, production time varies. Contact us for an exact timeline before you order.',
   },
   {
     q: 'Are you a factory or a reseller?',
-    a: 'Direct factory, based in Purbalingga, Indonesia. We welcome live video calls to our production floor — just ask.',
+    a: 'Direct factory, based in Purbalingga, Indonesia. We welcome live video calls to our production floor. Just ask.',
   },
   {
     q: 'Do you offer private label or custom packaging?',
-    a: 'Yes — we can customise curl, length, material, and packaging. Send us a WhatsApp message or email to discuss your requirements.',
+    a: 'Yes. We can customise curl, length, material, and packaging. Send us a WhatsApp message or email to discuss your requirements.',
   },
 ]
 

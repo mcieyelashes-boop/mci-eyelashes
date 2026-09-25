@@ -5,7 +5,7 @@ import { motion, useInView } from 'framer-motion'
 // figures were fabricated and have been removed — do not reintroduce them.
 const values = [
   { title: 'Factory Direct', desc: 'You buy straight from our production floor in Purbalingga, Indonesia. No trading company in between.' },
-  { title: 'Material Choice', desc: 'Korean synthetic fiber, protein silk, and sterilized human hair — you pick what fits your market.' },
+  { title: 'Material Choice', desc: 'Korean synthetic fiber, protein silk, and sterilized human hair. You pick what fits your market.' },
   { title: 'Low-Risk Start', desc: 'Begin at 100 pairs per style, mix and match styles, then scale as your orders grow.' },
   { title: 'Open Door', desc: 'Ask for a live video call and we will show you the floor while your order is being made.' },
 ]
@@ -44,7 +44,7 @@ export default function About() {
             <p className="section-label light">Manufacturing Identity</p>
             <h2 className="section-title">Beauty Supply With <span className="accent-light">Future Discipline</span></h2>
             <p className="section-subtitle" style={{ marginBottom: '16px' }}>MCI Eyelashes helps salons, distributors, and founders build lash products that feel premium from first sample to final packaging.</p>
-            <p className="section-subtitle" style={{ marginBottom: '44px' }}>We produce in-house in Purbalingga, Indonesia — so you get factory-direct pricing, OEM flexibility, and the option to watch your order being made.</p>
+            <p className="section-subtitle" style={{ marginBottom: '44px' }}>We produce in-house in Purbalingga, Indonesia, so you get factory-direct pricing, OEM flexibility, and the option to watch your order being made.</p>
             <div className="values-grid">
               {values.map(({ title, desc }, i) => (
                 <motion.div key={title} className="value-item" initial={false} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.3 + i * 0.1 }}>

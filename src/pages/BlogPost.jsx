@@ -242,7 +242,7 @@ export default function BlogPost() {
                   Ready to order wholesale?
                 </p>
                 <p style={{ fontSize: '12px', color: 'rgba(255,255,255,0.35)', lineHeight: 1.7, marginBottom: '24px' }}>
-                  Get a catalog, pricing sheet, and sample kit — our team responds within 24 hours.
+                  Get a catalog, pricing sheet, and sample kit. Our team responds within 24 hours.
                 </p>
                 <Link
                   to="/#contact"

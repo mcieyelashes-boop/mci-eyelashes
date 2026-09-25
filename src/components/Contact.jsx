@@ -22,20 +22,20 @@ const tiers = [
   {
     moq:   '100',
     label: 'Starter',
-    desc:  'MOQ 100 pairs per style. Free sample for catalog styles — you cover shipping. 5-day production lead time.',
+    desc:  'MOQ 100 pairs per style. Free sample for catalog styles. You cover shipping. 5-day production lead time.',
   },
   {
     moq:     '500+',
     label:   'Wholesale',
     // UNCONFIRMED: volume pricing details, priority processing, private label eligibility threshold
-    desc:    'Larger volume orders — contact us for lead time and pricing details.',
+    desc:    'Larger volume orders: contact us for lead time and pricing details.',
     featured: true,
   },
   {
     moq:   '1,000+',
     label: 'Distributor',
     // UNCONFIRMED: dedicated account manager, custom packaging terms, container rates
-    desc:  'High-volume and distributor enquiries — reach out directly to discuss terms.',
+    desc:  'High-volume and distributor enquiries: reach out directly to discuss terms.',
   },
 ]
 
@@ -160,7 +160,7 @@ export default function Contact() {
 
             <div className="contact-certs">
               {/* Certification pills (ISO 9001, CE, FDA) removed pending proof of the
-                  actual certificates — replaced with owner-confirmed terms. */}
+                  actual certificates: replaced with owner-confirmed terms. */}
               {['Factory Direct', 'MOQ 100 Pairs', 'Free Samples', '5-Day Production'].map(c => (
                 <span key={c} className="contact-cert-pill">{c}</span>
               ))}

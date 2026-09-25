@@ -66,10 +66,10 @@ const IconExpress = () => (
 // FactoryProof.jsx, Contact.jsx, and FAQ.jsx. Do not reintroduce a specific
 // number here without owner confirmation matching every other section.
 const services = [
-  { id: '01', Icon: IconPrivateLabel, name: 'Private Label', tag: 'Most Popular', desc: 'Your brand on our premium lashes — custom labels, inserts, and packaging. Full artwork support included.', highlights: ['Custom branding', 'Contact us for MOQ', 'Artwork support'] },
+  { id: '01', Icon: IconPrivateLabel, name: 'Private Label', tag: 'Most Popular', desc: 'Your brand on our premium lashes, custom labels, inserts, and packaging. Full artwork support included.', highlights: ['Custom branding', 'Contact us for MOQ', 'Artwork support'] },
   { id: '02', Icon: IconOEM, name: 'OEM Manufacturing', tag: 'Custom', desc: 'Bring your own lash design or work with our team to engineer entirely new styles, materials, and specifications.', highlights: ['Custom designs', 'Material sourcing', 'Prototype samples'] },
   { id: '03', Icon: IconBulk, name: 'Bulk Wholesale', tag: 'Ready to Ship', desc: 'Order from 200+ in-stock styles across 5 collections. Mix and match styles to reach the 100-pair minimum.', highlights: ['200+ styles', 'MOQ 100 pairs', '5-day production'], featured: true },
-  { id: '04', Icon: IconSample, name: 'Sample Program', tag: 'Try First', desc: 'Test quality before committing to bulk. Free samples on existing catalog styles — you cover shipping only.', highlights: ['Free catalog samples', 'You cover shipping', 'All collections'] },
+  { id: '04', Icon: IconSample, name: 'Sample Program', tag: 'Try First', desc: 'Test quality before committing to bulk. Free samples on existing catalog styles. You cover shipping only.', highlights: ['Free catalog samples', 'You cover shipping', 'All collections'] },
   { id: '05', Icon: IconPackaging, name: 'Custom Packaging', tag: 'Brand Ready', desc: 'Full packaging design service for branded boxes, trays, inserts, and gift sets. Contact us for minimum runs and lead time.', highlights: ['Box and insert design', 'Contact us for MOQ', 'Gift set options'] },
   { id: '06', Icon: IconExpress, name: 'Express Production', tag: 'Fast Track', desc: 'Need it sooner than 5 days? Contact us with your order size and deadline and we will confirm what is possible.', highlights: ['Contact us for timeline', 'Priority slot', 'QC inspection'] },
 ]

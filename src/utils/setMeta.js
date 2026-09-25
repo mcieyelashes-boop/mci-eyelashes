@@ -27,12 +27,12 @@ export function setMeta({ title, description, canonical, ogTitle, ogDescription,
 // samples (buyer pays shipping), 5 working days production on 100-pair orders.
 export const HOME_META = {
   title:               'MCI Eyelashes | Wholesale Lash Manufacturer, MOQ 100 Pairs',
-  description:         'Direct lash factory in Purbalingga, Indonesia. Mink, silk, synthetic and volume lashes from 100 pairs per style — free catalog samples, 5-day production, private label.',
+  description:         'Direct lash factory in Purbalingga, Indonesia. Mink, silk, synthetic and volume lashes from 100 pairs per style, free catalog samples, 5-day production, private label.',
   canonical:           `${BASE_URL}/`,
-  ogTitle:             'MCI Eyelashes | Wholesale Lash Manufacturer — MOQ 100 Pairs, Free Samples',
-  ogDescription:       'Factory-direct from Purbalingga, Indonesia — no middleman markup. Order from 100 pairs per style, get free samples on catalog styles, and ship in 5 working days. Private label and OEM available.',
+  ogTitle:             'MCI Eyelashes | Wholesale Lash Manufacturer, MOQ 100 Pairs, Free Samples',
+  ogDescription:       'Factory-direct from Purbalingga, Indonesia: no middleman markup. Order from 100 pairs per style, get free samples on catalog styles, and ship in 5 working days. Private label and OEM available.',
   ogUrl:               `${BASE_URL}/`,
   ogImage:             `${BASE_URL}/hero-lashes.jpg`,
-  twitterTitle:        'MCI Eyelashes | Wholesale Lash Manufacturer — MOQ 100 Pairs, Free Samples',
+  twitterTitle:        'MCI Eyelashes | Wholesale Lash Manufacturer, MOQ 100 Pairs, Free Samples',
   twitterDescription:  'Factory-direct lashes from Purbalingga, Indonesia. From 100 pairs per style, free catalog samples, 5-day production, private label available.',
 }
