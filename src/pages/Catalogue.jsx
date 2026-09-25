@@ -271,7 +271,7 @@ export default function Catalogue() {
           <h1 className="cat-title">Product <em>Catalogue</em></h1>
           <p className="cat-subtitle">
             200+ styles across 5 professional collections.<br />
-            MOQ 100 pairs · Private label from 500 units · Worldwide shipping 7-14 days.
+            MOQ 100 pairs per style, private label included · Worldwide shipping 7-14 days.
           </p>
           <div className="cat-hero-stats">
             <div className="cat-stat"><span>5</span>Collections</div>
