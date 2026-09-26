@@ -12,7 +12,7 @@ const footerLinks = {
     { label: 'Under Lashes',             href: '/#products' },
   ],
   Manufacturing: [
-    { label: 'Eyelash Factory Indonesia',       href: '/eyelashes-factory-indonesia' },
+    { label: 'Eyelash Factory Indonesia',       href: '/' },
     { label: 'Eyelash Manufacturer Indonesia',  href: '/eyelash-manufacturer-indonesia' },
     { label: 'Private Label Eyelashes',         href: '/private-label-eyelashes' },
     { label: 'Eyelash OEM Indonesia',           href: '/eyelash-oem-indonesia' },

@@ -197,7 +197,7 @@ Keep the plan disciplined: reorder what sells, drop what does not, and add new s
   },
   {
     slug: 'private-label-eyelashes-oem-guide',
-    title: 'Private Label Eyelashes: Complete OEM Manufacturing Guide (2026)',
+    title: 'Private Label vs OEM Eyelashes: How the Two Routes Differ',
     metaDescription: 'Everything you need to know about private label and OEM eyelash manufacturing, MOQ, custom packaging, lead times, and how to choose the right manufacturer.',
     category: 'OEM & Private Label',
     date: '2026-03-28',
@@ -579,7 +579,7 @@ For questions about paperwork, quality checks or payment terms, email denis@mci-
   },
   {
     slug: 'eyelash-packaging-guide',
-    title: 'Eyelash Packaging Guide: How to Design Custom Lash Boxes That Sell',
+    title: 'Eyelash Box Design Guide: Materials, Finishes and Layout',
     metaDescription: 'Custom eyelash packaging shapes how a private label lash brand is seen. This guide covers box styles, materials, printing options, and how to design packaging that stands out.',
     category: 'Brand & Packaging',
     date: '2026-03-15',
@@ -882,7 +882,7 @@ MCI manufactures and supplies eyelashes directly to salons, distributors and bea
   },
   {
     slug: 'custom-eyelash-packaging-wholesale',
-    title: 'Custom Eyelash Packaging Wholesale: How to Brand Your Lash Line (2026)',
+    title: 'Custom Eyelash Packaging Wholesale: Box Styles, MOQ, Timing',
     metaDescription: 'Everything you need to know about custom eyelash packaging wholesale, box styles, materials, MOQs, and how to create packaging that sells itself on shelves and social media.',
     category: 'Branding',
     date: '2026-04-14',
@@ -1098,122 +1098,6 @@ Choose OEM when you want to launch fast on proven styles. Choose private label w
       {
         q: 'What lash styles are trending in 2026?',
         a: 'Natural and wispy looks suit everyday wear, and volume styles suit clients who want more impact. Rather than following a trend list, order samples across natural, wispy and volume, and reorder the styles your own customers choose.',
-      },
-    ],
-  },
-  {
-    slug: 'eyelash-manufacturer-indonesia',
-    title: 'Eyelash Manufacturer in Indonesia: Why Brands Source from Indonesian Factories',
-    metaDescription: 'Indonesia has an established eyelash manufacturing industry. See why brands source lashes from Indonesian factories, and what to check on quality, MOQ and lead time.',
-    category: 'Sourcing Guide',
-    date: '2026-04-18',
-    readTime: '7 min read',
-    excerpt: 'Indonesia has an established eyelash manufacturing industry. Here is why brands source from Indonesian factories, and what to check when choosing an Indonesian lash manufacturer.',
-    coverAlt: 'Eyelash manufacturer Indonesia: professional lash factory',
-    sections: [
-      {
-        heading: 'Indonesia\\\'s Position in Global Lash Manufacturing',
-        body: `Indonesia has an established eyelash manufacturing industry, and Purbalingga in Central Java is one of its hubs. The industry is known for handmade work, and many factories export to buyers overseas.
-
-**Why brands consider Indonesia:**
-1. **Handcraft skill**: handmade lashes made by experienced hands, with consistency from batch to batch
-2. **Direct factory relationships**: you can deal with the manufacturer rather than a trading company
-3. **Flexible minimums**: many factories work with brands that are still growing
-4. **Established export routes**: lashes are shipped abroad by air, sea and courier
-5. **Room for customization**: curl, length, material and packaging can be built to your brief
-
-The point is not that every Indonesian factory is good. Check each one, as the sections below explain.`,
-      },
-      {
-        heading: 'What MCI Eyelashes Makes',
-        body: `Indonesian factories make handmade strip lashes and other lash products, with their own ranges and styles.
-
-At MCI Eyelashes we make handmade lashes in mink, silk, synthetic and human hair, organized in five collections:
-- Soft Touch
-- 3D Luxe
-- Faux Mink - Protein Silk
-- Classic - Human Hair
-- Under Lashes
-
-You can browse the collections in our [product catalogue](/catalogue). If you want a design of your own, we also offer [private label](/private-label-eyelashes) development and [OEM](/eyelash-oem-indonesia) on existing styles.`,
-      },
-      {
-        heading: 'What Makes a Good Indonesian Lash Manufacturer',
-        body: `Not every manufacturer operates at the same level. Here is how to tell a strong one from an average one:
-
-**Quality indicators:**
-- Quality control checkpoints during production, which the factory can describe
-- Consistent curl on the lashes you receive, batch after batch
-- A lash band that holds up with repeated wear
-- Documentation the factory can show you, not just claim
-
-**Operational indicators:**
-- A transparent factory: willing to do a video tour or send production photos
-- Clear communication in English
-- Stated lead times, and a record of meeting them
-- A sample program before a bulk order
-
-**Red flags:**
-- Extremely low pricing with no explanation
-- No samples before bulk orders
-- Inconsistent communication or delayed responses
-- Unable to provide factory documentation
-
-For a full checklist, read [how to choose an eyelash manufacturer](/blog/how-to-choose-eyelash-manufacturer).`,
-      },
-      {
-        heading: 'MOQ and Pricing: What to Expect',
-        body: `Minimum orders and prices differ by factory, by style and by material, so ask each supplier for the same brief and compare like with like.
-
-**Standard wholesale (existing styles):**
-- The MOQ is set per style, so ask whether styles can be mixed within one order
-- Price depends on the style and the material
-
-**OEM and custom products:**
-- Products developed for you usually need a higher commitment than existing styles, and take longer
-- Ask for the development time in writing
-
-**Custom packaging:**
-- Packaging adds cost and time, and the amount depends on the box style and finish
-
-**Shipping from Indonesia:**
-- Express courier is the fastest way to receive samples and small orders
-- Air freight suits mid-size orders where speed still matters
-- Sea freight is the slowest and suits large orders where cost per unit matters most
-
-At MCI Eyelashes the MOQ is 100 pairs per style, with mix and match allowed, and production for a 100-pair order takes 5 working days before shipping.`,
-      },
-      {
-        heading: 'MCI Eyelashes: A Direct Factory in Purbalingga',
-        body: `MCI Eyelashes is a direct eyelash factory in Purbalingga, Central Java, supplying wholesale, OEM and private label clients worldwide.
-
-**What we offer:**
-- Handmade lashes in mink, silk, synthetic and human hair
-- OEM on existing catalog styles, and private label development
-- Custom packaging designed for your brand
-- Direct manufacturer pricing, with no distributor markup
-
-**Our wholesale program includes:**
-- Free samples on existing catalog styles. You cover shipping only
-- MOQ of 100 pairs per style, with mix and match across styles
-- 5 working days production on 100-pair orders
-- A live video call to our production floor whenever you want one
-
-To request a product catalog, samples, or a wholesale pricing quote, visit our Contact page. For a full breakdown of our factory, materials, and OEM and private label capabilities, see our [eyelashes factory Indonesia](/eyelashes-factory-indonesia) page.`,
-      },
-    ],
-    faq: [
-      {
-        q: 'Is Indonesia a major eyelash manufacturing country?',
-        a: 'Indonesia has an established eyelash manufacturing industry, and Purbalingga in Central Java is one of its hubs. Its factories are known for handmade lashes and supply buyers overseas.',
-      },
-      {
-        q: 'What is the minimum order quantity for an Indonesian lash manufacturer?',
-        a: 'Minimums vary by manufacturer, style and material, so ask each one in writing. At MCI Eyelashes the minimum is 100 pairs per style, and you can mix and match styles within one order.',
-      },
-      {
-        q: 'How long does shipping take from an Indonesian lash manufacturer?',
-        a: 'It depends on the method and your destination. Express courier is the fastest, air freight suits mid-size orders, and sea freight is the slowest and suits large volumes. Ask the manufacturer for a shipping quote to your address before you order.',
       },
     ],
   },

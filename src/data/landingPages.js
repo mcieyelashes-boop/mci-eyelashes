@@ -4,161 +4,82 @@
 // facts go in factSheet/sections: see CLAUDE.md rule on fabricated content.
 export const landingPages = [
   {
-    slug: 'eyelashes-factory-indonesia',
-    title: 'Eyelashes Factory Indonesia | OEM & Private Label Manufacturer | MCI Eyelashes',
-    metaDescription: 'MCI Eyelashes is a direct eyelash factory in Purbalingga, Indonesia offering OEM, private label, and custom eyelash manufacturing from 100 pairs per style.',
-    h1: 'Eyelashes Factory Indonesia',
-    breadcrumbName: 'Eyelashes Factory Indonesia',
-    intro: 'MCI Eyelashes is a direct eyelash manufacturer based in Purbalingga, Central Java, Indonesia, producing handmade and custom eyelashes for beauty brands, distributors, salons, and wholesalers worldwide.',
-    factSheet: [
-      { label: 'Location', value: 'Purbalingga, Central Java, Indonesia' },
-      { label: 'MOQ', value: '100 pairs per style' },
-      { label: 'Production', value: '5 working days for 100-pair orders' },
-      { label: 'OEM', value: 'Available' },
-      { label: 'Private Label', value: 'Available: custom curl, length, material, packaging' },
-      { label: 'Materials', value: 'Mink, Silk, Synthetic, Human Hair' },
-      { label: 'Factory Verification', value: 'Live production-floor video call' },
-      { label: 'Samples', value: 'Free on existing catalog styles: buyer covers shipping' },
-    ],
-    sections: [
-      {
-        heading: 'Direct Eyelash Manufacturer in Indonesia',
-        paragraphs: [
-          'MCI Eyelashes is a direct factory, not a trading company or reseller. Every order is produced on our own production floor in Purbalingga, Central Java, one of Indonesia’s established eyelash manufacturing hubs. Working directly with the factory means no middleman markup and direct communication with the people making your product.',
-          'We supply salons, distributors, and beauty brands building their own eyelash line, from first-time buyers ordering a single style to distributors placing recurring wholesale orders.',
-        ],
-      },
-      {
-        heading: 'OEM Eyelash Manufacturing',
-        paragraphs: [
-          'For brands that want to sell eyelashes under their own name, MCI Eyelashes offers [OEM manufacturing](/eyelash-oem-indonesia) on our existing catalog styles (mink, silk, synthetic, human hair, and volume lashes), produced to your specification and packed for your brand.',
-        ],
-      },
-      {
-        heading: 'Private Label Eyelashes',
-        paragraphs: [
-          'Beyond OEM on existing styles, we offer full [private label development](/private-label-eyelashes): custom curl, custom length, custom material blend, and custom packaging design. This is the same wholesale terms as our standard catalog, 100 pairs MOQ per style, mix and match across styles.',
-        ],
-      },
-      {
-        heading: 'Our Eyelash Materials',
-        paragraphs: [
-          'MCI Eyelashes [handmakes](/handmade-eyelashes) across four core materials, each suited to a different price point and finish:',
-        ],
-        list: [
-          'Mink lashes: ultra-soft, natural taper, our signature style',
-          'Silk lashes: glossy, dramatic finish with consistent curl retention',
-          'Synthetic lashes: engineered uniformity at a lower price point',
-          'Human hair lashes: 100% sterilized, the most natural blend',
-        ],
-      },
-      {
-        heading: 'MOQ & Production Lead Time',
-        paragraphs: [
-          'Minimum order is 100 pairs per style, and you can mix and match styles within one [wholesale order](/wholesale-eyelashes) to reach that minimum. Standard 100-pair orders take 5 working days to produce. Larger or [custom private-label orders](/custom-eyelashes) vary, contact us for an exact timeline before you order.',
-        ],
-      },
-      {
-        heading: 'Custom Packaging',
-        paragraphs: [
-          'Private label and OEM orders can be packed in custom packaging designed for your brand. Reach out with your brand assets and packaging requirements and we’ll quote design and production together with your lash order.',
-        ],
-      },
-      {
-        heading: 'Why Brands Choose MCI Eyelashes',
-        paragraphs: [
-          'Our position is straightforward: a [factory-direct Indonesian manufacturer](/eyelash-manufacturer-indonesia) in [Purbalingga](/eyelash-manufacturer-purbalingga) with a 100-pair minimum per style, combined with private label capability and 5 working days production on standard orders. It’s built for new and growing lash brands that need real customization without committing to a large first order.',
-        ],
-      },
-    ],
-    faq: [
-      {
-        q: 'Is MCI Eyelashes a factory or a trading company?',
-        a: 'MCI Eyelashes is a direct factory based in Purbalingga, Indonesia, not a trading company or reseller. We welcome a live video call to our production floor before you order.',
-      },
-      {
-        q: 'Where is MCI Eyelashes located?',
-        a: 'MCI Eyelashes is located in Purbalingga, Central Java, Indonesia.',
-      },
-      {
-        q: 'What is the MOQ for MCI Eyelashes?',
-        a: '100 pairs per style, with mix and match allowed across styles within the same order.',
-      },
-      {
-        q: 'Does MCI Eyelashes offer private label eyelashes?',
-        a: 'Yes: custom curl, length, material, and packaging. Contact us with your requirements for a quote.',
-      },
-      {
-        q: 'Does MCI Eyelashes offer OEM manufacturing?',
-        a: 'Yes, OEM production is available on our existing catalog styles, packed for your brand.',
-      },
-      {
-        q: 'How long does production take?',
-        a: 'Standard 100-pair orders take 5 working days. Larger or custom orders vary: contact us for an exact timeline.',
-      },
-      {
-        q: 'Can buyers verify the factory before ordering?',
-        a: 'Yes. We welcome a live video call to our production floor at any time.',
-      },
-      {
-        q: 'Does MCI Eyelashes manufacture for international brands?',
-        a: 'Yes, we supply salons, distributors, and beauty brands worldwide.',
-      },
-    ],
-  },
-  {
     slug: 'eyelash-manufacturer-indonesia',
-    title: 'Eyelash Manufacturer Indonesia | MCI Eyelashes',
-    metaDescription: 'MCI Eyelashes is an Indonesian eyelash manufacturer supplying mink, silk, synthetic, and human hair lashes to salons, distributors, and beauty brands worldwide.',
-    h1: 'Eyelash Manufacturer Indonesia',
+    title: 'Eyelash Manufacturer Indonesia: Sourcing Guide | MCI Eyelashes',
+    metaDescription: 'Sourcing lashes from an eyelash manufacturer in Indonesia: why buyers choose Indonesian factories, how to vet one, MOQ, lead time and shipping.',
+    h1: 'Eyelash Manufacturer Indonesia: How to Source and What to Check',
     breadcrumbName: 'Eyelash Manufacturer Indonesia',
-    intro: 'Indonesia is one of the world’s established eyelash manufacturing countries, and MCI Eyelashes is a direct manufacturer within that industry, supplying mink, silk, synthetic, and human hair lashes to buyers around the world.',
+    intro: 'Indonesia has an established eyelash manufacturing industry, and Purbalingga in Central Java is one of its hubs. This page is for buyers deciding whether to source from an Indonesian factory: why buyers do it, how to tell a good manufacturer from an average one, and what minimums, lead times and shipping look like. MCI Eyelashes is one of those manufacturers, so we use our own terms as the worked example.',
     factSheet: [
       { label: 'Country', value: 'Indonesia' },
-      { label: 'Factory Location', value: 'Purbalingga, Central Java' },
+      { label: 'Factory location', value: 'Purbalingga, Central Java' },
       { label: 'Supplies', value: 'Salons, distributors, beauty brands, wholesalers' },
-      { label: 'Export', value: 'Worldwide' },
-      { label: 'MOQ', value: '100 pairs per style' },
-      { label: 'Materials', value: 'Mink, Silk, Synthetic, Human Hair' },
+      { label: 'MOQ', value: '100 pairs per style, mix & match allowed' },
+      { label: 'Production', value: '5 working days for 100-pair orders' },
+      { label: 'Shipping', value: 'Worldwide, 7-14 days' },
+      { label: 'Verification', value: 'Live video call to the production floor' },
     ],
     sections: [
       {
-        heading: 'Why Buyers Source Eyelashes from Indonesia',
+        heading: 'Why buyers source eyelashes from Indonesia',
         paragraphs: [
-          'Indonesia has a long-running eyelash manufacturing industry, with factory clusters producing handmade strip and volume lashes for export markets in North America, Europe, Australia, and the Middle East. Sourcing directly from an Indonesian manufacturer, instead of a reseller, typically means lower per-unit cost and direct communication with the people producing your order.',
+          'Indonesia is known for handmade strip lashes, made by experienced hands with consistency from batch to batch. Many factories export, so they are used to working with buyers abroad.',
+          'The practical reasons buyers give are simple. You can deal with the manufacturer directly instead of a trading company, which removes a middleman margin and puts you in touch with the people making your order. Many factories work with brands that are still growing, so minimums are within reach. And curl, length, material and packaging can be built to your brief.',
+          'None of that makes every Indonesian factory good. The next section is how to check the one you are talking to.',
         ],
       },
       {
-        heading: 'MCI Eyelashes as a Manufacturer',
-        paragraphs: [
-          'MCI Eyelashes operates as a direct factory in Purbalingga, Central Java, producing handmade lashes across four core materials and supplying both standard wholesale orders and custom OEM/private label runs.',
-        ],
+        heading: 'How to tell a strong manufacturer from an average one',
+        paragraphs: ['Ask these before you pay anything:'],
         list: [
-          'Mink lashes: ultra-soft, natural taper',
-          'Silk lashes: glossy, dramatic finish',
-          'Synthetic lashes: uniform, budget-friendly',
-          'Human hair lashes: 100% sterilized, most natural',
+          'Can I see the factory? A real manufacturer will do a video call from the production floor or send production photos. If they refuse, walk away.',
+          'Can I have samples first? A manufacturer confident in its product sends samples before a bulk order.',
+          'What is the minimum, and can styles be mixed? The answer should be per style and in writing.',
+          'How long does production take, and do you meet it? Ask for the lead time in writing.',
+          'What documents can you provide for my market? Ask for copies you can check, not logos on a website.',
+          'Will you answer in clear English? Slow or evasive replies before an order predict service after it.',
         ],
       },
       {
-        heading: 'Who MCI Manufactures For',
+        heading: 'What MCI Eyelashes makes',
         paragraphs: [
-          'We supply lash artists and salons buying for their own studio, distributors reselling wholesale, and beauty brands developing a private label or OEM lash line. Orders start at 100 pairs per style, with styles mixed and matched to reach that minimum.',
+          'We make handmade lashes in mink, silk, synthetic and human hair, organized in five collections: Soft Touch, 3D Luxe, Faux Mink - Protein Silk, Classic - Human Hair, and Under Lashes. You can browse them in the [product catalogue](/catalogue) or read about how they are made on our [handmade eyelashes](/handmade-eyelashes) page.',
+          'If you want a design of your own, we produce [OEM](/eyelash-oem-indonesia) on existing styles and develop [private label](/private-label-eyelashes) lashes to your own specification.',
         ],
       },
       {
-        heading: 'Manufacturing Capabilities',
+        heading: 'Minimums, lead time and shipping from Indonesia',
         paragraphs: [
-          'Beyond our standard catalog, MCI offers [OEM production](/eyelash-oem-indonesia) on existing styles and full [private label development](/private-label-eyelashes), custom curl, length, material, and packaging.',
+          'Minimums and prices differ by factory, style and material, so give every supplier the same brief and compare like with like. At MCI the minimum is 100 pairs per style, and you can mix styles in one order to reach it. Production for a 100-pair order takes 5 working days. Larger orders vary, so ask for a timeline before you order.',
+          'For shipping, express courier is the fastest way to receive samples and first orders, air freight suits mid-size orders where speed still matters, and sea freight suits large orders where cost per unit matters most. Our catalogue lists worldwide shipping at 7 to 14 days. For customs, duties and paperwork, read our guide to [importing eyelashes from Indonesia](/blog/import-eyelashes-from-indonesia-guide).',
         ],
+      },
+      {
+        heading: 'Who we manufacture for',
+        paragraphs: [
+          'We supply lash artists and salons buying for their own studio, distributors reselling wholesale, and beauty brands building a private label or OEM line. A first order can be small: one style from several collections, 100 pairs each, mixed in one shipment.',
+          'For our standard terms in one place, see [wholesale eyelashes](/wholesale-eyelashes). If you want to know more about the town where we work, read about our [factory in Purbalingga](/eyelash-manufacturer-purbalingga).',
+        ],
+      },
+      {
+        heading: 'A first order, step by step',
+        list: [
+          'Send an inquiry by email or WhatsApp with the product type, the order size and your country. We reply within 24 hours with the catalogue and price sheet.',
+          'Ask for samples. Samples on existing catalog styles are free, and you cover the shipping.',
+          'Ask for a live video call to the production floor if you want to see the factory before you pay.',
+          'Place the order at 100 pairs per style, mixing styles as you like.',
+          'Production takes 5 working days for a 100-pair order, then the order ships to you.',
+        ],
+        paragraphs: ['This is the route most first-time buyers take with us:'],
       },
     ],
     faq: [
-      { q: 'Is MCI Eyelashes based in Indonesia?', a: 'Yes: MCI Eyelashes is a direct factory in Purbalingga, Central Java, Indonesia.' },
-      { q: 'What materials does an Indonesian eyelash manufacturer like MCI use?', a: 'MCI manufactures in mink, silk, synthetic, and human hair.' },
-      { q: 'Does MCI Eyelashes export outside Indonesia?', a: 'Yes, we supply distributors, salons, and beauty brands worldwide.' },
-      { q: 'What is the minimum order for an Indonesian eyelash manufacturer like MCI?', a: '100 pairs per style, mixed and matched across styles.' },
-      { q: 'Can I verify that MCI is a real factory before ordering?', a: 'Yes. We welcome a live video call to our production floor in Purbalingga.' },
+      { q: 'Is MCI Eyelashes based in Indonesia?', a: 'Yes. MCI Eyelashes is a direct factory in Purbalingga, Central Java, Indonesia, supplying buyers worldwide.' },
+      { q: 'Why source eyelashes from an Indonesian manufacturer?', a: 'Buyers choose Indonesia for handmade lashes, direct contact with the factory instead of a trading company, minimums that suit growing brands, and room to customize the product.' },
+      { q: 'What is the minimum order for an Indonesian eyelash manufacturer like MCI?', a: 'At MCI the minimum is 100 pairs per style, and you can mix and match styles within one order. Other factories set their own minimums, so ask each one in writing.' },
+      { q: 'How long does shipping from Indonesia take?', a: 'It depends on the method and your destination. Express courier is fastest, sea freight is slowest. Our catalogue lists worldwide shipping at 7 to 14 days.' },
+      { q: 'Can I verify that MCI is a real factory before ordering?', a: 'Yes. We welcome a live video call to our production floor in Purbalingga before you send any money.' },
+      { q: 'What materials does MCI manufacture in?', a: 'We manufacture handmade lashes in four materials (mink, silk, synthetic, human hair) across five collections in our product catalogue.' },
     ],
   },
   {
