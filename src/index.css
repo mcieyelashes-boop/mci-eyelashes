@@ -2208,7 +2208,7 @@ iframe[src*="naraai.vercel.app/c/"] {
   padding: 32px;
   background:
     linear-gradient(180deg, rgba(121,207,221,.08), rgba(6,16,24,.18)),
-    url('/product-packaging-wide.png');
+    url('/product-packaging-wide.webp');
   background-size: cover;
   background-position: 58% center;
 }
@@ -2295,7 +2295,7 @@ iframe[src*="naraai.vercel.app/c/"] {
   aspect-ratio: 4 / 5;
   background:
     linear-gradient(180deg, rgba(6,16,24,.02), rgba(6,16,24,.78)),
-    url('/product-packaging-square.png');
+    url('/product-packaging-square.webp');
   background-size: cover;
   background-position: center center;
 }
@@ -2327,7 +2327,7 @@ iframe[src*="naraai.vercel.app/c/"] {
   padding: clamp(92px, 10vw, 152px) 0;
   background:
     linear-gradient(90deg, rgba(7,19,27,.96) 0%, rgba(7,19,27,.88) 48%, rgba(7,19,27,.68) 100%),
-    url('/product-packaging-wide.png'),
+    url('/product-packaging-wide.webp'),
     linear-gradient(180deg, #07131b 0%, #091a23 58%, #07131b 100%);
   background-size: cover, min(780px, 50vw) auto, cover;
   background-position: center, calc(100% - 190px) 12%, center;
@@ -2399,7 +2399,7 @@ iframe[src*="naraai.vercel.app/c/"] {
   padding: clamp(78px, 8vw, 128px) 0;
   background:
     linear-gradient(135deg, rgba(7,19,27,.9), rgba(7,19,27,.48)),
-    url('/product-packaging-wide.png'),
+    url('/product-packaging-wide.webp'),
     linear-gradient(135deg, rgba(121,207,221,.16), rgba(235,180,82,.08)),
     #081821;
   background-size: cover, min(920px, 64vw) auto, cover, cover;
@@ -2458,7 +2458,7 @@ iframe[src*="naraai.vercel.app/c/"] {
   .services-section {
     background:
       linear-gradient(180deg, rgba(7,19,27,.98), rgba(7,19,27,.88)),
-      url('/product-packaging-wide.png'),
+      url('/product-packaging-wide.webp'),
       linear-gradient(180deg, #07131b 0%, #091a23 58%, #07131b 100%);
     background-size: cover, min(680px, 86vw) auto, cover;
     background-position: center, center 20px, center;
@@ -2784,7 +2784,7 @@ iframe[src*="naraai.vercel.app/c/"] {
   inset: 0;
   z-index: 0;
   background:
-    url('/hero-cinematic.png');
+    url('/hero-cinematic.webp');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -2997,7 +2997,7 @@ iframe[src*="naraai.vercel.app/c/"] {
   }
 
   .hero-section::before {
-    background: url('/hero-cinematic.png');
+    background: url('/hero-cinematic.webp');
     background-size: cover;
     background-position: 62% center;
   }
@@ -3154,7 +3154,7 @@ iframe[src*="naraai.vercel.app/c/"] {
 
   .hero-section--image-only::before,
   .hero-section.hero-section--image-only::before {
-    background: url('/hero-cinematic.png');
+    background: url('/hero-cinematic.webp');
     background-size: cover;
     background-position: 55% center;
     filter: saturate(1.3) contrast(1.06) brightness(1.08);

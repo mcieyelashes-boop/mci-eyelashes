@@ -3,23 +3,23 @@ import { motion, useInView } from 'framer-motion'
 
 const galleryImages = [
   {
-    image: '/gallery-1.png',
+    image: '/gallery-1.webp',
     alt: 'Japanese robot beauty campaign on the ocean',
   },
   {
-    image: '/gallery-2.png',
+    image: '/gallery-2.webp',
     alt: 'Korean robot beauty campaign in cyberpunk rain',
   },
   {
-    image: '/gallery-3.png',
+    image: '/gallery-3.webp',
     alt: 'Redhead robot beauty campaign in snowy mountains',
   },
   {
-    image: '/gallery-4.png',
+    image: '/gallery-4.webp',
     alt: 'British robot beauty campaign in the desert',
   },
   {
-    image: '/gallery-5.png',
+    image: '/gallery-5.webp',
     alt: 'Spanish robot beauty campaign near a volcano',
   },
 ]
