@@ -8,8 +8,8 @@ const footerLinks = {
     { label: 'Soft Touch Lashes',        href: '/soft-touch-lashes-wholesale' },
     { label: '3D Luxe Lashes',           href: '/3d-luxe-volume-lashes-wholesale' },
     { label: 'Faux Mink - Protein Silk', href: '/faux-mink-lashes-wholesale' },
-    { label: 'Classic Human Hair',       href: '/#products' },
-    { label: 'Under Lashes',             href: '/#products' },
+    { label: 'Classic Human Hair',       href: '/human-hair-lashes-wholesale' },
+    { label: 'Under Lashes',             href: '/under-lashes-wholesale' },
   ],
   Manufacturing: [
     { label: 'Eyelash Factory Indonesia',       href: '/' },

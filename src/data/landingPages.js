@@ -567,4 +567,144 @@ export const landingPages = [
       { q: 'How long does a Faux Mink order take to produce?', a: 'Production for a 100-pair order takes 5 working days, before shipping to your country. Larger orders vary, so ask us for a timeline before you order.' },
     ],
   },
+  {
+    slug: 'human-hair-lashes-wholesale',
+    title: 'Human Hair Lashes Wholesale | MCI Eyelashes',
+    metaDescription: 'Wholesale human hair lashes from MCI Eyelashes: 100% sterilized human hair, three series, 100-pair MOQ per style, factory direct from Indonesia.',
+    h1: 'Human Hair Lashes Wholesale',
+    breadcrumbName: 'Human Hair Lashes',
+    intro: 'Classic - Human Hair is our most natural collection, 100% sterilized human hair across three series, sold wholesale from 100 pairs per style. This page explains who reaches for human hair over a synthetic finish, how the three series differ, and how to place a first order.',
+    factSheet: [
+      { label: 'Collection', value: 'Classic - Human Hair' },
+      { label: 'Status', value: 'Ultra Natural, Premium Grade' },
+      { label: 'Material', value: '100% Sterilized Human Hair' },
+      { label: 'Range', value: '3 series, 18 styles' },
+      { label: 'MOQ', value: '100 pairs per style, mix & match allowed' },
+      { label: 'Samples', value: 'Free on existing catalog styles, buyer covers shipping' },
+    ],
+    sections: [
+      {
+        heading: 'What Sets Human Hair Lashes Apart',
+        paragraphs: [
+          'Classic - Human Hair is built from 100% sterilized human hair, not a synthetic fiber. The strands move and catch light the way a wearer’s own lashes do, so the finish reads as hers, not as a strip lash sitting on top. Every batch is sterilized on our production floor in Purbalingga before it ships.',
+          'Synthetic fiber, including the Korean Synthetic used in our [Soft Touch](/soft-touch-lashes-wholesale) collection, has a uniform diameter and shine from strand to strand. Human hair keeps the small variation real lashes have, and that variation is exactly what a buyer wants when the brief is invisible, not bold.',
+        ],
+      },
+      {
+        heading: 'Who Should Choose Human Hair, and Who Should Look Elsewhere',
+        paragraphs: [
+          'Order this collection for bridal work, everyday wear, and any brand built around a natural-first look. If the brief calls for the lash to disappear rather than stand out, this is the collection to reach for.',
+          'Skip it if a client wants visible volume or a dramatic fan shape. That brief fits [3D Luxe Lashes](/3d-luxe-volume-lashes-wholesale), our multi-layer synthetic collection built for depth and drama. If a client wants the mink look without an animal-derived material, point them to [Faux Mink - Protein Silk](/faux-mink-lashes-wholesale) instead.',
+        ],
+      },
+      {
+        heading: 'Three Series, Eighteen Styles',
+        paragraphs: ['The collection is organized into three series so you can match the finish to the brief:'],
+        list: [
+          'Natural Series, six styles built for an everyday finish that reads as the wearer’s own lashes.',
+          'Wispy Series, six styles with a lighter, feathered taper for a softer line.',
+          'Volume Series, six styles with more strands per band for extra fullness that still reads as natural.',
+        ],
+      },
+      {
+        heading: 'Ordering Your First Human Hair Styles',
+        paragraphs: [
+          'The minimum is 100 pairs per style, and you can mix styles in one order to reach it. One style from Natural, one from Wispy and one from Volume adds up to a 300-pair first order, putting all three finishes in front of your own customers at once.',
+          'A full SKU listing for all eighteen styles is available on request. Once you know which series your market wants more of, ask for the complete style sheet and reorder from there.',
+        ],
+      },
+      {
+        heading: 'Testing Before You Commit',
+        paragraphs: [
+          'Free samples on existing Human Hair styles are available, and you only cover the shipping. Test a strand side by side with whatever you stock today: watch how it moves when the client blinks, whether the band sits flat against the lash line, and how the color reads under normal light rather than a ring light.',
+          'If you are not sure whether your customers want human hair or a synthetic finish, order one style of each and let a few real clients compare them before you place a full order.',
+        ],
+      },
+      {
+        heading: 'Private Label and Next Steps',
+        paragraphs: [
+          'If you want your own brand on these styles, choose [OEM](/eyelash-oem-indonesia) to put your packaging on an existing Human Hair style, or go further with [private label](/private-label-eyelashes) and set your own curl, length and material from scratch. A 100-pair order takes 5 working days to produce before it ships, and your country’s shipping time comes on top of that.',
+          'For the wider range, open the [product catalogue](/catalogue). For our standard terms in one place, read [wholesale eyelashes](/wholesale-eyelashes). If you want to see the factory before committing, ask for a live video call to our production floor.',
+        ],
+      },
+    ],
+    faq: [
+      { q: 'What is Classic - Human Hair?', a: 'Classic - Human Hair is our most natural collection, built from 100% sterilized human hair across three series instead of a synthetic fiber.' },
+      { q: 'What is the MOQ for Human Hair Lashes?', a: 'The minimum is 100 pairs per style, and you can mix and match across the three series to reach that minimum in one order.' },
+      { q: 'How many styles are in the Human Hair collection?', a: 'There are three series, Natural, Wispy and Volume, with six styles each, eighteen styles in total. A full style listing is available on request.' },
+      { q: 'Are Human Hair lashes sterilized?', a: 'Yes. Every batch of Classic - Human Hair is sterilized on our production floor in Purbalingga before it ships.' },
+      { q: 'Can I get a sample of Human Hair Lashes before ordering wholesale?', a: 'Yes. Samples on existing Human Hair catalog styles are free, and you only cover the shipping to your address.' },
+      { q: 'Which Human Hair style should a first order start with?', a: 'Start with one style from each series, Natural, Wispy and Volume, which makes a 300-pair order covering all three finishes. Reorder the styles your own customers choose most.' },
+      { q: 'Can Human Hair styles be private labeled?', a: 'Yes. Human Hair styles can be produced as OEM under your brand, or developed as private label with custom curl, length, material and packaging.' },
+    ],
+  },
+  {
+    slug: 'under-lashes-wholesale',
+    title: 'Under Lashes Wholesale | MCI Eyelashes',
+    metaDescription: 'Wholesale under lashes from MCI Eyelashes: Soft Touch Tapered-End technology for the lower lash line, 18 styles, 100-pair MOQ, factory direct from Indonesia.',
+    h1: 'Under Lashes Wholesale',
+    breadcrumbName: 'Under Lashes',
+    intro: 'Under Lashes is our specialty collection for the lower lash line, built with Soft Touch Tapered-End technology, sold wholesale from 100 pairs per style. This page explains what the category is, who stocks it, and how to add it to a first order.',
+    factSheet: [
+      { label: 'Collection', value: 'Under Lashes' },
+      { label: 'Status', value: 'Specialty, Unique Category' },
+      { label: 'Material', value: 'Soft Touch Tapered-End' },
+      { label: 'Range', value: '1 series, 18 styles' },
+      { label: 'MOQ', value: '100 pairs per style, mix & match allowed' },
+      { label: 'Samples', value: 'Free on existing catalog styles, buyer covers shipping' },
+    ],
+    sections: [
+      {
+        heading: 'What Under Lashes Are',
+        paragraphs: [
+          'Under Lashes are built for the lower lash line rather than the top. Soft Touch Tapered-End technology frames the under-eye with a soft line instead of leaving it bare next to a full top lash.',
+          'Most strip lash catalogues stop at the top line. Our own catalogue calls this a unique category, and it opens an additional retail opportunity for buyers who want to offer a complete eye look rather than a single product.',
+        ],
+      },
+      {
+        heading: 'Who Stocks Under Lashes, and Why',
+        paragraphs: [
+          'Salons that already sell a full top lash set add Under Lashes to complete the look for clients who want the whole eye styled, not just the top line. It sits alongside any of our top collections, [Soft Touch](/soft-touch-lashes-wholesale), [3D Luxe](/3d-luxe-volume-lashes-wholesale) or [Classic Human Hair](/human-hair-lashes-wholesale), as a paired addition rather than a separate purchase decision.',
+          'Distributors add it because a retailer who already carries the common top lash styles still has to source under lashes elsewhere, or skip the category. Carrying both saves that buyer a second supplier.',
+        ],
+      },
+      {
+        heading: 'Who Should Wait on This Collection',
+        paragraphs: [
+          'If your market has never seen a dedicated under-lash product before, introduce it as a pairing with a style your customers already buy, rather than as a standalone listing. A market that does not yet ask for it needs a short explanation before it needs a purchase button.',
+        ],
+      },
+      {
+        heading: 'The Under Lash Series',
+        paragraphs: ['The collection is one series, eighteen styles, all built on the same Soft Touch Tapered-End construction so a lower lash pairs cleanly with whichever top style your customer chooses.'],
+        list: [
+          'Pairs with any top lash collection in our catalogue for a complete eye look.',
+          'Sized and shaped for the lower lash line, not a top-lash style cut down.',
+          'Full SKU listing available on request.',
+        ],
+      },
+      {
+        heading: 'Ordering Your First Under Lash Styles',
+        paragraphs: [
+          'The minimum is 100 pairs per style, and you can mix Under Lash styles with any top collection in the same order to reach the combined minimum. A common first order pairs one Under Lash style with the top styles you already stock, so you can offer the complete look without a second supplier.',
+          'Samples on existing Under Lash styles cost nothing but the shipping. Try one next to whichever top style sells best for you, and see how the two sit together on a real client before you list the pairing.',
+        ],
+      },
+      {
+        heading: 'Private Label and Next Steps',
+        paragraphs: [
+          'Under Lash styles are open to the same two paths as the rest of our catalogue: your branding on an existing style through [OEM](/eyelash-oem-indonesia), or a design built from scratch through [private label](/private-label-eyelashes), specifying curl, length and packaging yourself. Production runs 5 working days for a 100-pair order, then your shipment travels on to its destination.',
+          'The [product catalogue](/catalogue) has the wider range, and [wholesale eyelashes](/wholesale-eyelashes) sets out our standard terms in one place. A live video call to our production floor is available any time you want to verify things before you commit.',
+        ],
+      },
+    ],
+    faq: [
+      { q: 'What are Under Lashes?', a: 'Under Lashes are MCI Eyelashes’ specialty collection built for the lower lash line, using Soft Touch Tapered-End technology instead of a top-lash style cut down to size.' },
+      { q: 'What is the MOQ for Under Lashes?', a: 'The minimum is 100 pairs per style, and you can mix Under Lash styles with any top collection in the same order to reach it.' },
+      { q: 'How many styles are in the Under Lashes collection?', a: 'There are eighteen styles in one series, the Under Lash Series. A full style listing is available on request.' },
+      { q: 'Do Under Lashes replace a top lash, or pair with one?', a: 'They pair with a top lash. Under Lashes are sized and shaped for the lower lash line, not as a standalone substitute for a top style.' },
+      { q: 'Can I get a sample of Under Lashes before ordering wholesale?', a: 'Yes. Samples on existing Under Lash catalog styles are free, and you only cover the shipping to your address.' },
+      { q: 'Can Under Lash styles be private labeled?', a: 'Yes. Under Lash styles can be produced as OEM under your brand, or developed as private label with custom curl, length, material and packaging.' },
+    ],
+  },
 ]
