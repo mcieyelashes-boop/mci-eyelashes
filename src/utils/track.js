@@ -64,3 +64,33 @@ export function reportInquiry(orderRange) {
     // ignore: see above
   }
 }
+
+// The same enquiry, this time filed as an actual CRM lead — the EmailJS send
+// above only reaches Denis's own inbox, so without this a self-submitted
+// enquiry (the warmest kind of lead there is) was invisible to Sales OS
+// unless someone added it by hand. Fire-and-forget for the same reason as
+// reportInquiry: the visitor's "Inquiry Sent" screen must never depend on it.
+const WHOLESALE_INQUIRY_ENDPOINT = 'https://mci-eyelashes.site/api/inbound/wholesale-inquiry'
+
+export function reportWholesaleInquiry(form) {
+  try {
+    if (typeof window === 'undefined') return
+    fetch(WHOLESALE_INQUIRY_ENDPOINT, {
+      method: 'POST',
+      headers: { 'content-type': 'text/plain;charset=UTF-8' },
+      body: JSON.stringify({
+        firstName: form.firstName,
+        lastName: form.lastName,
+        email: form.email,
+        company: form.company || null,
+        country: form.country,
+        volume: form.volume || null,
+        message: form.message || null,
+        page: pageRef(),
+      }),
+      keepalive: true,
+    }).catch(() => {})
+  } catch {
+    // ignore: see above
+  }
+}
