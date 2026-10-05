@@ -707,4 +707,70 @@ export const landingPages = [
       { q: 'Can Under Lash styles be private labeled?', a: 'Yes. Under Lash styles can be produced as OEM under your brand, or developed as private label with custom curl, length, material and packaging.' },
     ],
   },
+  {
+    slug: 'low-moq-eyelash-manufacturer',
+    title: 'Low MOQ Eyelash Manufacturer | MCI Eyelashes',
+    metaDescription: 'MCI Eyelashes sells factory direct with a 100-pair MOQ per style, mixed and matched, and the same minimum on private label and OEM orders.',
+    h1: 'Low MOQ Eyelash Manufacturer: How the Minimum Works Here',
+    breadcrumbName: 'Low MOQ Manufacturer',
+    intro: 'A minimum order quantity decides how small a first order can be. This page explains what MCI Eyelashes sets that number at, why selling factory direct keeps it there, and when a low per-style minimum actually matters to a buyer.',
+    factSheet: [
+      { label: 'MOQ', value: '100 pairs per style, mix & match allowed' },
+      { label: 'Sales route', value: 'Factory direct, no trading company' },
+      { label: 'Private label / OEM', value: 'Same 100-pair minimum as the catalog' },
+      { label: 'Samples', value: 'Free on existing catalog styles, buyer covers shipping' },
+      { label: 'Production', value: '5 working days for 100-pair orders' },
+      { label: 'Verification', value: 'Live production-floor video call' },
+    ],
+    sections: [
+      {
+        heading: 'What the minimum actually covers',
+        paragraphs: [
+          'A minimum order quantity is the smallest amount a factory agrees to produce in one run. At MCI Eyelashes that number is 100 pairs, and it applies per style rather than per order, so the styles you pick decide the shape of a first shipment, not the other way round.',
+          'Some factories set the minimum per order instead of per style, or raise it once a buyer asks for a specific curl, length or packaging. Ours stays at 100 pairs whether an order covers one style or a dozen, because the figure describes a single style run, not a quantity attached to the whole relationship.',
+        ],
+      },
+      {
+        heading: 'Why selling factory direct keeps the number this low',
+        paragraphs: [
+          'A trading company buys finished stock from a factory and adds its own margin and its own minimum on top of what the factory already set. Remove that layer and the number a buyer sees is the production floor’s own run size. MCI Eyelashes ships from its own production floor in Purbalingga, so the 100-pair figure is the batch our own team can turn around in five working days, not a quantity padded to protect someone else’s markup.',
+          'It also means the person answering an inquiry can say, the same day, whether a style is ready to ship, already in production, or needs scheduling. A reseller several steps removed from the factory usually has to check with someone else before answering that.',
+        ],
+      },
+      {
+        heading: 'Where a low per-style minimum matters, and where it will not decide much',
+        paragraphs: [
+          'A low minimum matters most to a brand that has not sold a given style before and wants to try more than one look without committing a full budget to a single guess. It also suits a salon or small distributor who wants a shelf with some variety on it, rather than one hundred pairs of a design nobody reorders.',
+          'It matters less to a buyer who already knows exactly what moves and wants a large run of one style. For that buyer, the minimum was never the obstacle. Price per pair at volume, and how quickly the same run repeats, carry more weight than how low the floor goes.',
+        ],
+        list: [
+          'Pick one style from each of several collections instead of a hundred pairs of a single design.',
+          'Treat the free sample as the first step and the 100-pair order as the second, not the other way round.',
+          'Ask what changes about the minimum once packaging becomes custom. At MCI, nothing does.',
+        ],
+      },
+      {
+        heading: 'Private label does not raise the floor',
+        paragraphs: [
+          'Some factories quote a workable minimum on stock styles, then raise it sharply once a buyer asks for a curl, length or packaging built to their own brief, because a custom setup costs more to run. At MCI Eyelashes, private label and [OEM](/eyelash-oem-indonesia) orders use the same 100-pair-per-style minimum as the standard catalog. Curl, length, material and packaging can all be set to your specification without the quantity changing.',
+          'What does change is the schedule. A design built from scratch takes longer to approve than picking an existing catalog style, so leave room for sample review and artwork sign-off ahead of any date you promise a retailer.',
+        ],
+      },
+      {
+        heading: 'Placing a first order against the real minimum',
+        paragraphs: [
+          'Start with samples on the styles under consideration. Samples on existing catalog styles are free, and you only cover the shipping, so there is no reason to commit pairs to a style before you have felt the fiber and checked the curl.',
+          'Once samples arrive, build the order around what you learned rather than around the minimum on its own. Three styles at 100 pairs each clears the floor on every one of them and still gives you three results to compare instead of a single bet.',
+          'Browse the full range in the [product catalogue](/catalogue), read the standard terms on [wholesale eyelashes](/wholesale-eyelashes), or ask for a live video call to the production floor before you send anything.',
+        ],
+      },
+    ],
+    faq: [
+      { q: 'What is MCI’s minimum order quantity?', a: '100 pairs per style, and you can mix styles within one order to reach that number instead of ordering 100 pairs of a single design.' },
+      { q: 'Does the minimum go up for private label or OEM orders?', a: 'No. Private label and OEM orders use the same 100-pair-per-style minimum as the standard catalog. What changes is the time needed for sample review and artwork sign-off, not the quantity.' },
+      { q: 'Why is this minimum lower than at some large factories?', a: 'MCI sells factory direct from its own production floor, so the minimum reflects one style’s real production run rather than a quantity set by a trading company on top of the factory’s own number.' },
+      { q: 'Can I test more than one style within the minimum?', a: 'Yes. The 100-pair minimum applies per style, so an order covering three styles at 100 pairs each is a 300-pair order, with every style individually meeting the minimum.' },
+      { q: 'Is a low MOQ manufacturer the right fit for every buyer?', a: 'Not necessarily. It suits a brand testing new styles or stocking variety. A buyer who already knows what sells in high volume should weigh price per pair and repeat lead time more heavily than how low the minimum goes.' },
+    ],
+  },
 ]

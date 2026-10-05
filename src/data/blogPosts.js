@@ -722,7 +722,7 @@ A single professional shoot can cover all three. The return from better photogra
 
 **The fix:** Start at the minimum order quantity and spread it across a wider range of styles rather than going deep on one. Reorder the winners; discontinue the slow movers.
 
-MCI Eyelashes sets MOQ at 100 pairs per style and lets you mix and match styles within one order, so you can test several styles at once before scaling.`,
+MCI Eyelashes sets MOQ at 100 pairs per style and lets you mix and match styles within one order, so you can test several styles at once before scaling. For a longer look at how to split that first order, read [what MOQ a new lash brand should order](/blog/what-moq-should-a-new-lash-brand-order).`,
       },
       {
         heading: 'Mistake 6: No Repeat Purchase Strategy',
@@ -1415,6 +1415,79 @@ MCI Eyelashes is a direct factory, not a trading company, and welcomes a live pr
       {
         q: 'What materials are handmade lashes made from?',
         a: 'Common materials include mink, silk, synthetic fiber, and human hair. MCI Eyelashes produces handmade lashes across all four materials.',
+      },
+    ],
+  },
+  {
+    slug: 'what-moq-should-a-new-lash-brand-order',
+    title: 'What MOQ Is Right for a New Lash Brand? A Sizing Guide',
+    metaDescription: 'A decision guide for first-time lash brands: how to split a 100-pair MOQ across styles, when a sample answers the question, and how the volume tiers differ.',
+    category: 'Pricing & MOQ',
+    date: '2026-10-05',
+    readTime: '7 min read',
+    excerpt: 'The minimum order at most factories does not move much once you ask. What a new brand actually controls is how that minimum gets split across styles, and that decision matters more than the number itself.',
+    coverAlt: 'A new lash brand founder comparing eyelash style samples before placing a first wholesale order',
+    sections: [
+      {
+        heading: 'The minimum is fixed. The mix is not.',
+        body: `At MCI Eyelashes the minimum order is 100 pairs per style, and that number does not change whether you pick one style or ten. So the question a new brand actually faces is not "can I afford the minimum," it is "how many styles should that minimum cover."
+
+A single style at 100 pairs is a smaller, faster decision. Three styles at 100 pairs each is a 300-pair order that still respects the floor on every one of them, and it gives you three outcomes to compare instead of one. Neither choice is automatically right. It depends on what you already know about your own market before you order.`,
+      },
+      {
+        heading: 'Questions worth answering before you set the mix',
+        body: `A few questions narrow the decision faster than guessing:
+
+- Do you already have interest in a specific look, from a waitlist, a presale, or clients asking for something by name?
+- Are you entering a market where you have no sales history at all, or adding a new category to a brand that already sells?
+- How many distinct looks does your audience actually need on day one, rather than how many exist in the catalog?
+- What does your budget cover once packaging and shipping are added on top of the lashes themselves?
+
+A brand with a waitlist for one specific style already has an answer: order that style at the minimum and treat the rest of the catalog as a later decision. A brand with no signal yet is better served by spreading the same minimum across a few looks and letting real orders decide the next one.`,
+      },
+      {
+        heading: 'How the volume tiers change the decision',
+        body: `MCI Eyelashes groups orders into three tiers. Starter begins at the 100-pair minimum and includes mix and match ordering across styles, free samples on existing catalog styles, five working days of production, and private label availability. Growth starts at 500 pairs and adds larger volume runs, a private label option, and custom packaging. Scale starts at 1,000 pairs and adds high-volume production, full brand identity work, and custom design.
+
+A new brand almost always belongs in Starter, not because the higher tiers are closed to new buyers, but because Growth and Scale assume you already know which styles are worth producing in that quantity. Exact terms for Growth and Scale are quoted once you share a target quantity, since packaging and customization change what a given volume costs to run.`,
+      },
+      {
+        heading: 'Sample first, order second',
+        body: `Before any pairs count toward the minimum, samples on existing catalog styles are free, and you only cover the shipping. That makes the sample stage the cheapest way to answer part of the mix question: which of the styles you are considering actually feel right once they are in hand, rather than on a screen.
+
+Order samples of every style you are weighing before you split the 100 pairs. A style that looked right in a photo can lose out once it sits next to the others.`,
+      },
+      {
+        heading: 'Two ways to divide a Starter order',
+        body: `**Wide:** pick one style from two or three different collections, for example one from [Soft Touch](/soft-touch-lashes-wholesale), one from [Faux Mink](/faux-mink-lashes-wholesale), and one from [Classic Human Hair](/human-hair-lashes-wholesale), each at 100 pairs. This suits a brand with no sales history yet, because it puts three different looks in front of real customers at once instead of betting everything on a single guess.
+
+**Narrow:** put the full minimum, and if needed more than one minimum, behind a single style you already have reason to believe in, such as one a salon has been asking for by name. This suits a brand that already has demand lined up and wants depth on that style rather than a spread it does not need yet.
+
+Neither path is more correct. The wide split buys you information; the narrow split buys you stock for a demand that already exists.`,
+      },
+      {
+        heading: 'Moving past a Starter order',
+        body: `Once a style proves itself, reorder it rather than replacing it with something new, and let the slower styles drop out of the next order instead of being replaced on a schedule. If you want your own brand on a style that sold well, [OEM](/eyelash-oem-indonesia) puts your packaging on the existing design, and [private label](/private-label-eyelashes) builds a new curl, length, material, or packaging around it, both at the same 100-pair minimum that started the order.
+
+For the full range to choose from before your first order, see the [product catalogue](/catalogue).`,
+      },
+    ],
+    faq: [
+      {
+        q: 'Is 100 pairs per style the minimum no matter how many styles I order?',
+        a: 'Yes. The minimum applies per style, so three styles at 100 pairs each is a 300-pair order, with each style individually meeting the minimum.',
+      },
+      {
+        q: 'Should a new brand start with one style or several?',
+        a: 'It depends on what you already know. Without existing demand for one specific look, spreading the minimum across two or three styles gives you more to compare. With a style you already know sells, one 100-pair order on that style is enough to start.',
+      },
+      {
+        q: 'What is the difference between the Starter, Growth and Scale tiers?',
+        a: 'Starter begins at 100 pairs and includes mix and match ordering, free catalog samples, five-day production and private label availability. Growth starts at 500 pairs and Scale at 1,000, both adding larger volume runs, custom packaging, or brand identity work, with exact terms quoted once you share a target quantity.',
+      },
+      {
+        q: 'Can I test a style with a sample before committing to the 100-pair minimum?',
+        a: 'Yes. Samples on existing catalog styles are free, and you only cover the shipping, so you can check a style before any pairs count toward the minimum.',
       },
     ],
   },

@@ -20,6 +20,7 @@ const footerLinks = {
     { label: 'Wholesale Eyelashes',             href: '/wholesale-eyelashes' },
     { label: 'Manufacturer in Purbalingga',     href: '/eyelash-manufacturer-purbalingga' },
     { label: 'Handmade Eyelashes',              href: '/handmade-eyelashes' },
+    { label: 'Low MOQ Eyelash Manufacturer',    href: '/low-moq-eyelash-manufacturer' },
   ],
   Company: [
     { label: 'About Us',              href: '/#about' },
