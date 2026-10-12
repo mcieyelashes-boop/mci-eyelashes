@@ -58,24 +58,24 @@ const collections = [
     desc: 'Multi-layer 3D construction creates extraordinary depth and volume. Perfect for bridal, editorial, events, and clients who want maximum impact.',
     series: [
       {
-        name: 'Page 01',
-        skus: ['BC 6000','BC 6005','BC 6020','BC 6070','BC 6072','BC 6077'],
+        name: 'IBC 6002 – 6033',
+        skus: ['IBC 6002', 'IBC 6005', 'IBC 6008', 'IBC 6017', 'IBC 6020', 'IBC 6033'],
       },
       {
-        name: 'Page 02',
-        skus: ['BC 6071','BC 6074','BC 6075','BC 6077','BC 6078','BC 6079'],
+        name: 'IBC 6051 – 6078',
+        skus: ['IBC 6051', 'IBC 6073', 'IBC 6074', 'IBC 6076', 'IBC 6077', 'IBC 6078'],
       },
       {
-        name: 'Page 03',
-        skus: ['BC 6080','BC 6086','BC 6110','BC 6120','BC 6111','BC 6112'],
+        name: 'IBC 6079 – 6127',
+        skus: ['IBC 6079', 'IBC 6080', 'IBC 6081', 'IBC 6109', 'IBC 6113', 'IBC 6127'],
       },
       {
-        name: 'Page 04',
-        skus: ['BC 6120','BC 6140','BC 6145','BC 6146','BC 6149','BC 6160'],
+        name: 'IBC 6128 – 6159',
+        skus: ['IBC 6128', 'IBC 6143', 'IBC 6144', 'IBC 6149', 'IBC 6150', 'IBC 6159'],
       },
       {
-        name: 'Page 05',
-        skus: ['BC 6160','BC 6161','BC 6165','BC 6168'],
+        name: 'IBC 6163 – 6184',
+        skus: ['IBC 6163', 'IBC 6166', 'IBC 6178', 'IBC 6180', 'IBC 6184'],
       },
     ],
   },
@@ -91,19 +91,30 @@ const collections = [
     desc: 'The look and feel of genuine mink without animal products. Protein silk technology delivers ultra-soft, lightweight drape. Ideal for vegan salons and premium retail.',
     series: [
       {
-        name: 'Natural Collection',
-        skus: ['FM Natural 01','FM Natural 02','FM Natural 03','FM Natural 04','FM Natural 05','FM Natural 06'],
+        name: 'FM 20 Series',
+        skus: ['FM 20-002', 'FM 20-003', 'FM 20-004', 'FM 20-008', 'FM 20-011', 'FM 20-014', 'FM 20-017', 'FM 20-018', 'FM 20-019', 'FM 20-020', 'FM 20-022', 'FM 20-023', 'FM 20-024', 'FM 20-025', 'FM 20-026', 'FM 20-027', 'FM 20-051'],
       },
       {
-        name: 'Wispy Collection',
-        skus: ['FM Wispy 01','FM Wispy 02','FM Wispy 03','FM Wispy 04','FM Wispy 05','FM Wispy 06'],
+        name: 'FM 21 Series',
+        skus: ['FM 21-027', 'FM 21-029', 'FM 21-030', 'FM 21-032', 'FM 21-035', 'FM 21-036', 'FM 21-055'],
       },
       {
-        name: 'Volume Collection',
-        skus: ['FM Volume 01','FM Volume 02','FM Volume 03','FM Volume 04','FM Volume 05','FM Volume 06'],
+        name: 'FM 22 Series',
+        skus: ['FM 22-065', 'FM 22-070', 'FM 22-073', 'FM 22-074', 'FM 22-075', 'FM 22-076', 'FM 22-077', 'FM 22-078', 'FM 22-079', 'FM 22-080', 'FM 22-081', 'FM 22-082', 'FM 22-083', 'FM 22-084', 'FM 22-090', 'FM 22-100', 'FM 22-110', 'FM 22-112', 'FM 22-134', 'FM 22-150', 'FM 22-152', 'FM 22-154', 'FM 22-155', 'FM 22-156', 'FM 22-157', 'FM 22-198', 'FM 22-199'],
+      },
+      {
+        name: 'C Series',
+        skus: ['C2', 'C3', 'C5'],
+      },
+      {
+        name: 'M Series',
+        skus: ['M1', 'M2', 'M3', 'M4', 'M5', 'M6', 'M7', 'M8', 'M9'],
+      },
+      {
+        name: 'Named Styles',
+        skus: ['DRAMA Q', '811', 'KIKI', 'FIFI', 'TOR 3', 'TOR 4'],
       },
     ],
-    note: 'Full SKU listing available on request. Contact us for complete Faux Mink catalogue.',
   },
   {
     id: '04',
@@ -117,19 +128,30 @@ const collections = [
     desc: 'For the absolute most natural look. 100% sterilized human hair that blends seamlessly. Every batch meets international cosmetic safety standards.',
     series: [
       {
-        name: 'Natural Series',
-        skus: ['CH Natural 01','CH Natural 02','CH Natural 03','CH Natural 04','CH Natural 05','CH Natural 06'],
+        name: 'IBC 1042 – 1088',
+        skus: ['IBC 1042', 'IBC 1047', 'IBC 1050', 'IBC 1051', 'IBC 1055', 'IBC 1056', 'IBC 1074', 'IBC 1078', 'IBC 1079', 'IBC 1080', 'IBC 1088'],
       },
       {
-        name: 'Wispy Series',
-        skus: ['CH Wispy 01','CH Wispy 02','CH Wispy 03','CH Wispy 04','CH Wispy 05','CH Wispy 06'],
+        name: 'IBC 1090 – 1153',
+        skus: ['IBC 1090', 'IBC 1094', 'IBC 1097', 'IBC 1106', 'IBC 1107', 'IBC 1110', 'IBC 1114', 'IBC 1116', 'IBC 1119', 'IBC 1120', 'IBC 1153'],
       },
       {
-        name: 'Volume Series',
-        skus: ['CH Volume 01','CH Volume 02','CH Volume 03','CH Volume 04','CH Volume 05','CH Volume 06'],
+        name: 'IBC 1171 – 1181',
+        skus: ['IBC 1171', 'IBC 1172', 'IBC 1173', 'IBC 1174', 'IBC 1175', 'IBC 1176', 'IBC 1177', 'IBC 1178', 'IBC 1179', 'IBC 1180', 'IBC 1181'],
+      },
+      {
+        name: 'IBC 1182 – 1203',
+        skus: ['IBC 1182', 'IBC 1183', 'IBC 1184', 'IBC 1185', 'IBC 1186', 'IBC 1196', 'IBC 1197', 'IBC 1198', 'IBC 1199', 'IBC 1201', 'IBC 1203'],
+      },
+      {
+        name: 'IBC 1204 – 1214',
+        skus: ['IBC 1204', 'IBC 1205', 'IBC 1206', 'IBC 1207', 'IBC 1208', 'IBC 1209', 'IBC 1210', 'IBC 1211', 'IBC 1212', 'IBC 1213', 'IBC 1214'],
+      },
+      {
+        name: 'IBC 1215 – 1256',
+        skus: ['IBC 1215', 'IBC 1216', 'IBC 1217', 'IBC 1218', 'IBC 1255', 'IBC 1256'],
       },
     ],
-    note: 'Full SKU listing available on request. Contact us for complete Human Hair catalogue.',
   },
   {
     id: '05',
@@ -247,6 +269,11 @@ function CollectionPanel({ col }) {
 }
 
 // ─── PAGE ─────────────────────────────────────────────────────────────────────
+const totalStyles = collections.reduce(
+  (sum, col) => sum + new Set(col.series.flatMap((s) => s.skus)).size,
+  0,
+)
+
 export default function Catalogue() {
   const [activeCol, setActiveCol] = useState(0)
   const headerRef = useRef(null)
@@ -270,12 +297,12 @@ export default function Catalogue() {
           <span className="cat-eyebrow">Wholesale Catalogue 2025</span>
           <h1 className="cat-title">Product <em>Catalogue</em></h1>
           <p className="cat-subtitle">
-            200+ styles across 5 professional collections.<br />
+            {totalStyles} styles across 5 professional collections.<br />
             MOQ 100 pairs per style, private label included · Worldwide shipping 7-14 days.
           </p>
           <div className="cat-hero-stats">
             <div className="cat-stat"><span>5</span>Collections</div>
-            <div className="cat-stat"><span>200+</span>Styles</div>
+            <div className="cat-stat"><span>{totalStyles}</span>Styles</div>
             <div className="cat-stat"><span>100</span>Min. Order</div>
             <div className="cat-stat"><span>24h</span>Quote Reply</div>
           </div>
