@@ -1215,6 +1215,7 @@ section { padding: 120px 0; }
   transition: all .28s;
 }
 .cat-hero-cta:hover { background: var(--teal-light); transform: translateY(-2px); }
+.cat-hero-btns { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; }
 
 /* Collection tabs */
 .cat-tabs-wrap { background: var(--navy); border-bottom: 1px solid var(--border-dark); position: sticky; top: 74px; z-index: 40; }

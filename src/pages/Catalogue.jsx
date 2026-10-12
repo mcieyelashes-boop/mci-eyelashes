@@ -306,12 +306,17 @@ export default function Catalogue() {
             <div className="cat-stat"><span>100</span>Min. Order</div>
             <div className="cat-stat"><span>24h</span>Quote Reply</div>
           </div>
+          <div className="cat-hero-btns">
           <a
             href="mailto:denis@mci-eyelashes.com?subject=Wholesale Catalogue Inquiry&body=Hi Denis,%0D%0A%0D%0AI'd like to request a quote.%0D%0A%0D%0ACompany:%0D%0ACountry:%0D%0ACollections interested in:%0D%0AEstimated quantity:%0D%0A%0D%0AThank you"
             className="cat-hero-cta"
           >
             Request a Quote
           </a>
+          <a href="/MCI-Eyelashes-Catalogue-2026.pdf" className="cat-cta-secondary" download>
+            Download PDF catalogue
+          </a>
+          </div>
         </motion.div>
       </section>
 
