@@ -57,7 +57,7 @@ export const landingPages = [
       {
         heading: 'Who we manufacture for',
         paragraphs: [
-          'We supply lash artists and salons buying for their own studio, distributors reselling wholesale, and beauty brands building a private label or OEM line. A first order can be small: one style from several collections, 100 pairs each, mixed in one shipment.',
+          'We supply lash artists and salons buying for their own studio, [distributors](/eyelash-distributor-indonesia) reselling wholesale, and beauty brands building a private label or OEM line. A first order can be small: one style from several collections, 100 pairs each, mixed in one shipment.',
           'For our standard terms in one place, see [wholesale eyelashes](/wholesale-eyelashes). If you want to know more about the town where we work, read about our [factory in Purbalingga](/eyelash-manufacturer-purbalingga).',
         ],
       },
@@ -771,6 +771,140 @@ export const landingPages = [
       { q: 'Why is this minimum lower than at some large factories?', a: 'MCI sells factory direct from its own production floor, so the minimum reflects one style’s real production run rather than a quantity set by a trading company on top of the factory’s own number.' },
       { q: 'Can I test more than one style within the minimum?', a: 'Yes. The 100-pair minimum applies per style, so an order covering three styles at 100 pairs each is a 300-pair order, with every style individually meeting the minimum.' },
       { q: 'Is a low MOQ manufacturer the right fit for every buyer?', a: 'Not necessarily. It suits a brand testing new styles or stocking variety. A buyer who already knows what sells in high volume should weigh price per pair and repeat lead time more heavily than how low the minimum goes.' },
+    ],
+  },
+  {
+    slug: 'eyelash-samples-catalogue-request',
+    title: 'Eyelash Sample Request | MCI Eyelashes',
+    metaDescription: 'How to request free eyelash samples and the MCI Eyelashes catalogue: what to tell us, what arrives, and how a sample turns into a wholesale order.',
+    h1: 'Eyelash Sample Request: Before Your First Wholesale Order',
+    breadcrumbName: 'Eyelash Samples',
+    intro: 'Most buyers do not place a wholesale order before they have held the lashes. A sample request is the step before that, and it works best when we know exactly what to send. This page sets out what to include in your request, what a free sample actually covers, and how a sample turns into your first 100-pair order.',
+    factSheet: [
+      { label: 'Request cost', value: 'Samples free on existing catalog styles, buyer covers shipping' },
+      { label: 'Reply time', value: 'Catalogue and price sheet within 24 hours' },
+      { label: 'Collections to choose from', value: 'Soft Touch, 3D Luxe, Faux Mink, Human Hair, Under Lashes' },
+      { label: 'First order after samples', value: '100 pairs per style, mix & match allowed' },
+      { label: 'Production', value: '5 working days for 100-pair orders' },
+      { label: 'Verification', value: 'Live production-floor video call, on request' },
+    ],
+    sections: [
+      {
+        heading: 'What to tell us in a sample request',
+        paragraphs: [
+          'A request moves faster when it answers a few questions before we have to ask them back. Say who you are: a salon, a distributor, or a brand building its own line. Name the collection and the specific styles you are curious about, rather than asking for a sample with nothing attached to it. Give us your destination country, since that decides how we quote shipping on the sample itself. And tell us the volume you expect to order once you have tested the product, even as a rough range, so we send a catalogue sized to where you are headed.',
+        ],
+      },
+      {
+        heading: 'What a free sample actually covers',
+        paragraphs: [
+          'Samples on existing catalog styles are free. You cover the cost of shipping them to you, and nothing else. There is no minimum quantity attached to a sample request itself. The 100-pair, mix-and-match minimum applies once you place a wholesale order, not while you are still deciding whether to place one.',
+          'A style built from scratch for private label is a different case, since it does not exist yet to sample. The section below on private label and OEM covers how we handle that.',
+        ],
+      },
+      {
+        heading: 'Choosing which styles to request',
+        paragraphs: [
+          'Picking blind rarely goes well. Our catalogue holds [five collections](/catalogue): [Soft Touch](/soft-touch-lashes-wholesale) in Korean synthetic and human hair, [3D Luxe](/3d-luxe-volume-lashes-wholesale) in multi-layer synthetic, [Faux Mink](/faux-mink-lashes-wholesale) in cruelty-free protein silk, [Classic Human Hair](/human-hair-lashes-wholesale), and [Under Lashes](/under-lashes-wholesale) for the lower lash line.',
+          'If your market already asks for a dramatic finish or a natural one, request one or two styles from the matching collection. If you do not know yet, request one style from three different collections and let a few real clients compare them before you commit pairs to any single look.',
+        ],
+      },
+      {
+        heading: 'From sample to first order',
+        paragraphs: [
+          'Once the samples arrive, test what you actually came to test: how the band sits, how the curl holds, how the fiber feels against skin. When you are ready to order, the minimum is 100 pairs per style, and you can mix styles within one order to reach it. Production for a 100-pair order takes 5 working days, and the full terms sit on our [wholesale eyelashes](/wholesale-eyelashes) page.',
+        ],
+      },
+      {
+        heading: 'Sampling before private label or OEM',
+        paragraphs: [
+          'If you want your own branding, start by sampling the closest existing style, even if the finished product will carry your own curl, length or packaging. For [OEM](/eyelash-oem-indonesia), that sample sits close to the finished product, since only the branding changes. For [private label](/private-label-eyelashes), the sample shows the base construction we build from before your specification is developed, which still tells you plenty about the fiber you are starting with.',
+        ],
+      },
+      {
+        heading: 'Before you commit to an order',
+        paragraphs: [
+          'A sample tells you about the product. It does not tell you whether the factory behind it is real. We offer a live video call to our production floor in [Purbalingga](/eyelash-manufacturer-purbalingga) for any buyer who wants to see where the order would be made before sending anything beyond the cost of shipping a sample.',
+        ],
+      },
+    ],
+    faq: [
+      { q: 'What should I include when I request eyelash samples?', a: 'Tell us whether you are a salon, distributor or brand, the specific collection and styles you want to test, your destination country, and the order size you expect once you decide.' },
+      { q: 'Are the eyelash samples actually free?', a: 'Yes. Samples on existing catalog styles are free, and you only pay for the shipping to your address.' },
+      { q: 'Is there a minimum order to request a sample?', a: 'No. The 100-pair, mix-and-match minimum applies to a wholesale order, not to a sample request, so you can test the product before committing to that quantity.' },
+      { q: 'How many styles can I request a sample of at once?', a: 'You can request samples from more than one collection at a time, which helps if you are deciding between a natural, dramatic or cruelty-free finish.' },
+      { q: 'Can I get a sample of a private label or OEM design?', a: 'You can sample the closest existing style first, since a private label design has to be developed before it exists to sample, while an OEM sample sits close to the finished branded product.' },
+      { q: 'How do I verify MCI Eyelashes before ordering?', a: 'Ask for a live video call to our production floor in Purbalingga, which we offer to any buyer before they commit beyond the cost of sample shipping.' },
+    ],
+  },
+  {
+    slug: 'eyelash-distributor-indonesia',
+    title: 'Eyelash Distributor Indonesia | MCI Eyelashes',
+    metaDescription: 'Sourcing as an eyelash distributor in Indonesia: how a mixed first order works, what factory direct changes about reordering, and how to verify the factory.',
+    h1: 'Eyelash Distributor Indonesia: Ordering as a Reseller',
+    breadcrumbName: 'Eyelash Distributor Indonesia',
+    intro: 'Distributors buy differently than a brand does. You are not developing a design, you are keeping shelves and clients supplied with styles that already sell. This page is for resellers and distributors sourcing from an eyelash manufacturer in Indonesia: how a mixed first order works, what factory direct changes about reordering, and how to verify us before a standing relationship.',
+    factSheet: [
+      { label: 'Buyer type', value: 'Distributors and resellers' },
+      { label: 'MOQ', value: '100 pairs per style, mix & match allowed' },
+      { label: 'Production', value: '5 working days for 100-pair orders' },
+      { label: 'Sales route', value: 'Factory direct, no trading company layer' },
+      { label: 'Samples', value: 'Free on existing catalog styles, buyer covers shipping' },
+      { label: 'Verification', value: 'Live production-floor video call' },
+    ],
+    sections: [
+      {
+        heading: 'Reselling an existing catalog, not developing a new one',
+        paragraphs: [
+          'A distributor\'s job is supply, not design. You are choosing from styles that already exist across our [five collections](/catalogue) rather than briefing a new curl, length or material from scratch. That keeps the decision simpler: pick the styles your market already asks for, confirm the minimum, and place the order. If you also want a design built for your own brand on top of distribution, that is a separate path, covered on our [private label](/private-label-eyelashes) page.',
+        ],
+      },
+      {
+        heading: 'What a mixed distributor order looks like',
+        paragraphs: [
+          'The minimum is 100 pairs per style, and you can mix styles across every collection to reach it in one shipment. A distributor carrying a range rarely wants one hundred pairs of a single design, so a first order commonly spreads across several bestsellers at once.',
+          'Production for that order takes 5 working days once the styles and quantities are confirmed, whether the order covers one style or a dozen.',
+        ],
+        list: [
+          'A few Soft Touch styles for everyday demand',
+          'A 3D Luxe style for customers who want more drama',
+          'A Faux Mink style for a market that asks about cruelty-free options',
+        ],
+      },
+      {
+        heading: 'Why factory direct changes how reorders get answered',
+        paragraphs: [
+          'A trading company has to check with the factory behind it before confirming whether a style is in stock, in production, or needs scheduling. MCI Eyelashes answers that directly, because the person replying to your inquiry works from the same production floor in [Purbalingga](/eyelash-manufacturer-purbalingga) that makes the order.',
+          'For a distributor placing repeat orders on a schedule, that difference shows up every time you reorder, not only on the first one.',
+        ],
+      },
+      {
+        heading: 'Volume beyond the standard minimum',
+        paragraphs: [
+          'Our catalogue sets out volume tiers above the 100-pair starting point for buyers placing larger, recurring orders. We do not publish fixed terms for those tiers here, because they depend on the styles, the mix and how the order repeats, so ask us directly once your reorder pattern is established.',
+          'What stays constant at every tier is the same mix-and-match rule: you are never forced into a single style to reach a larger number.',
+        ],
+      },
+      {
+        heading: 'Verifying the factory before a standing order',
+        paragraphs: [
+          'A distribution relationship runs on repeat trust, not a single transaction, so verify us before the first order rather than after a few have gone well. We offer a live video call to our production floor for exactly that reason. Ask to see the styles you plan to carry in production, not only finished stock on a shelf.',
+        ],
+      },
+      {
+        heading: 'Placing your first distributor order',
+        paragraphs: [
+          'Start with [samples](/eyelash-samples-catalogue-request) on the styles you expect to move fastest, rather than guessing from photos alone. Once you know which ones hold up, place the mixed order at 100 pairs per style and set a reorder point for each one based on how quickly it sells. Our [wholesale eyelashes](/wholesale-eyelashes) page sets out the standard terms this order follows.',
+        ],
+      },
+    ],
+    faq: [
+      { q: 'Who counts as a distributor for a wholesale eyelash order?', a: 'Anyone buying existing catalog styles to resell to salons, retailers or other buyers, rather than developing a new design for their own brand.' },
+      { q: 'Can a distributor mix styles across different collections in one order?', a: 'Yes. The 100-pair minimum applies per style, so a single order can combine styles from Soft Touch, 3D Luxe, Faux Mink, Human Hair and Under Lashes to reach it.' },
+      { q: 'Does buying factory direct change how fast I get an answer on stock?', a: 'Yes. Because we work from the same production floor that makes the order, we can tell you the same day whether a style is ready, in production or needs scheduling.' },
+      { q: 'Is there a discount for distributors ordering above the minimum?', a: 'Volume tiers exist above the 100-pair starting point, but we quote those terms directly once we know the styles and how the order repeats, rather than publishing a fixed figure.' },
+      { q: 'How can a distributor verify MCI Eyelashes before committing?', a: 'Ask for a live video call to our production floor in Purbalingga before placing a standing order, and ask to see the specific styles you plan to carry.' },
+      { q: 'What is the first step to ordering as an MCI distributor?', a: 'Request samples of the styles you expect to sell fastest, then place a mixed order at 100 pairs per style once you know which ones perform.' },
     ],
   },
 ]

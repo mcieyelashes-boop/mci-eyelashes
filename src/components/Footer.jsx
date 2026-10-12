@@ -21,6 +21,7 @@ const footerLinks = {
     { label: 'Manufacturer in Purbalingga',     href: '/eyelash-manufacturer-purbalingga' },
     { label: 'Handmade Eyelashes',              href: '/handmade-eyelashes' },
     { label: 'Low MOQ Eyelash Manufacturer',    href: '/low-moq-eyelash-manufacturer' },
+    { label: 'Eyelash Distributor Indonesia',   href: '/eyelash-distributor-indonesia' },
   ],
   Company: [
     { label: 'About Us',              href: '/#about' },
@@ -30,7 +31,7 @@ const footerLinks = {
   ],
   Support: [
     { label: 'Wholesale Inquiry',     href: '/#contact' },
-    { label: 'Sample Request',        href: '/#contact' },
+    { label: 'Sample Request',        href: '/eyelash-samples-catalogue-request' },
     { label: 'Shipping & Lead Times', href: '/#faq' },
     { label: 'FAQ',                   href: '/#faq' },
   ],
