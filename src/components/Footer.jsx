@@ -22,6 +22,8 @@ const footerLinks = {
     { label: 'Handmade Eyelashes',              href: '/handmade-eyelashes' },
     { label: 'Low MOQ Eyelash Manufacturer',    href: '/low-moq-eyelash-manufacturer' },
     { label: 'Eyelash Distributor Indonesia',   href: '/eyelash-distributor-indonesia' },
+    { label: 'Manufacturer for New Brands',     href: '/eyelash-manufacturer-for-new-brands' },
+    { label: 'Export & Shipping',               href: '/eyelash-manufacturer-export-shipping' },
   ],
   Company: [
     { label: 'About Us',              href: '/#about' },

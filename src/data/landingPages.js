@@ -907,4 +907,144 @@ export const landingPages = [
       { q: 'What is the first step to ordering as an MCI distributor?', a: 'Request samples of the styles you expect to sell fastest, then place a mixed order at 100 pairs per style once you know which ones perform.' },
     ],
   },
+  {
+    slug: 'eyelash-manufacturer-for-new-brands',
+    title: 'Eyelash Manufacturer for New Lash Brands | MCI Eyelashes',
+    metaDescription: 'A manufacturer built for a brand that does not exist yet: start with an OEM style at 100 pairs, test it, then move the proven one into private label.',
+    h1: 'Eyelash Manufacturer for New Lash Brands: Where to Start',
+    breadcrumbName: 'New Lash Brands',
+    intro: 'A new brand has no sales history to point to and no proof yet that a given style will sell. This page is for the founder placing a first order with nothing behind the brand except an idea: how to choose between OEM and private label with no product on shelf yet, what a first order actually needs beyond the lashes themselves, and how to test a style before it carries your name.',
+    factSheet: [
+      { label: 'Buyer type', value: 'First-time lash brand founders' },
+      { label: 'Fastest start', value: 'OEM on an existing catalogue style' },
+      { label: 'MOQ', value: '100 pairs per style, mix & match allowed' },
+      { label: 'Samples', value: 'Free on existing catalog styles, buyer covers shipping' },
+      { label: 'Production', value: '5 working days for 100-pair orders' },
+      { label: 'Verification', value: 'Live production-floor video call' },
+    ],
+    sections: [
+      {
+        heading: 'Two Routes Into a Brand That Does Not Exist Yet',
+        paragraphs: [
+          'A founder with no product yet has two realistic ways to put something on a shelf. OEM puts your packaging on a style we already make, so the lash itself is proven before your brand touches it. Private label builds a lash to your own curl, length, material and packaging from the start, which gives you a design nobody else sells but takes longer to reach a finished product. Read [OEM eyelash manufacturing](/eyelash-oem-indonesia) and [private label eyelashes](/private-label-eyelashes) for how each service works end to end.',
+          'Neither route needs a large order to start. Both use the same 100-pair-per-style minimum as our standard catalog, and you can mix styles to reach it on either path.',
+        ],
+      },
+      {
+        heading: 'Why OEM Usually Comes First for a New Brand',
+        paragraphs: [
+          'A design built from scratch is a bigger bet when you do not yet know what your market wants. OEM removes that bet: the style already exists and already works, so the only new variable is your branding. Launch on an OEM style, sell it, and see which look your customers actually reach for before you spend time developing a curl and length nobody has tested on a real client.',
+          'Private label still has its place for a new brand, especially when a founder already has a specific look in mind that nothing in a standard catalog matches. The two paths are not exclusive: a style that sells well under OEM is a strong candidate to redevelop as private label once you know it works.',
+        ],
+      },
+      {
+        heading: 'What a First Order Needs Beyond the Lashes',
+        paragraphs: [
+          'A lash order is only part of what a launch costs. Packaging, a brand name, a logo, and a place to sell from are decisions you make before you contact a factory, not after. MCI quotes and produces custom packaging as part of a private label order, and OEM styles ship under your branding on our standard tray, so decide your packaging direction early enough that it does not hold up your first production run.',
+          'A photography plan matters too. A lash looks very different in a flat product shot than on a real eye, and most buyers decide what to stock partly from how a style photographs, so plan to photograph your own samples rather than relying on a catalogue photo alone.',
+        ],
+      },
+      {
+        heading: 'Testing a Style Before It Carries Your Name',
+        paragraphs: [
+          'Samples on existing catalog styles are free, and you only cover the shipping. Order more than one style before you decide, because a style that reads well in a photo does not always read the same way once it sits on a real eye next to the others.',
+          'Put the samples in front of a few people you trust before you commit pairs to any single look, and watch how the band sits and how the curl holds through a normal day, not just on arrival. For the full range to choose from, see the [product catalogue](/catalogue), and request what you want to test through our [sample request page](/eyelash-samples-catalogue-request).',
+        ],
+      },
+      {
+        heading: 'Verifying Us Before Your First Payment',
+        paragraphs: [
+          'A first order to an overseas factory you have never dealt with is a reasonable thing to be careful about. Ask for a live video call to our production floor in [Purbalingga](/eyelash-manufacturer-purbalingga) before you send anything beyond the cost of shipping a sample, and use that call to see the specific style you are considering in production, not just finished stock on a shelf.',
+        ],
+      },
+      {
+        heading: 'Placing Your First Order as a New Brand',
+        paragraphs: ['A first order for a new brand usually follows this order:'],
+        list: [
+          'Decide whether OEM on an existing style or a private label design fits your timeline and budget.',
+          'Request samples of the styles you are weighing, free except for shipping.',
+          'Confirm your packaging direction, whether that is our standard OEM tray or a private label box built to your brief.',
+          'Place the order at the 100-pair-per-style minimum, mixing styles if you want more than one on shelf at once.',
+          'Production takes 5 working days for a 100-pair order, then your shipment goes out.',
+        ],
+      },
+    ],
+    faq: [
+      { q: 'Can a brand with no sales history order from MCI Eyelashes?', a: 'Yes. The minimum is 100 pairs per style whether you have sold lashes before or not, and samples let you test a style before you commit to that quantity.' },
+      { q: 'Should a new lash brand start with OEM or private label?', a: 'OEM is usually the faster, lower-risk start because the style already exists, while private label suits a founder with a specific design already in mind. Many brands move a proven OEM style into private label later.' },
+      { q: 'Do I need my own packaging ready before I place a first order?', a: 'Decide your packaging direction before you order, since it affects timing. OEM ships on our standard branded tray, while private label packaging is quoted and produced together with your lash order.' },
+      { q: 'How can a first-time founder verify MCI is a real factory?', a: 'Ask for a live video call to our production floor in Purbalingga before sending any payment beyond sample shipping, and ask to see the specific style you are considering in production.' },
+      { q: 'Can I move a style from OEM to private label once it sells?', a: 'Yes. A style that performs well under your branding through OEM is a reasonable candidate to redevelop with your own curl, length and packaging through private label.' },
+    ],
+  },
+  {
+    slug: 'eyelash-manufacturer-export-shipping',
+    title: 'Eyelash Manufacturer Export and Shipping | MCI Eyelashes',
+    metaDescription: 'How MCI Eyelashes exports wholesale orders worldwide: what we prepare for each shipment, how shipping method tracks your order size, and who pays duties.',
+    h1: 'Eyelash Manufacturer Export and Shipping: What to Know Before You Order',
+    breadcrumbName: 'Export and Shipping',
+    intro: 'Placing a first international order with a factory you have not bought from before raises questions that have nothing to do with the lashes themselves: who books the freight, who pays duty on arrival, and what paperwork actually clears customs. This page covers what MCI Eyelashes prepares for an export shipment, how the shipping method changes as your order grows, and what a first-time export buyer should have ready before placing an order.',
+    factSheet: [
+      { label: 'Export reach', value: 'Worldwide' },
+      { label: 'Shipping time', value: '7-14 days' },
+      { label: 'Shipping methods', value: 'Express courier, air freight, sea freight' },
+      { label: 'Export documents', value: 'Commercial invoice and packing list on every shipment' },
+      { label: 'Duties', value: 'Buyer’s responsibility unless a landed-cost price is agreed' },
+      { label: 'Verification', value: 'Live production-floor video call' },
+    ],
+    sections: [
+      {
+        heading: 'What MCI Prepares on Our Side of an Export Shipment',
+        paragraphs: [
+          'Every export shipment leaves our production floor in Purbalingga with a commercial invoice and a packing list, the two documents a customs broker needs to clear your goods on arrival. We pack and label the shipment, and we either book the freight ourselves or hand off to a forwarder you have already chosen, depending on how you prefer to run your logistics.',
+          'Our [product catalogue](/catalogue) lists worldwide shipping at 7 to 14 days. That window covers the shipping method itself, not production, so add the 5 working days a standard 100-pair order takes to produce before you count shipping days. For a buyer-side view of the same process, read our guide to [importing eyelashes from Indonesia](/blog/import-eyelashes-from-indonesia-guide).',
+        ],
+      },
+      {
+        heading: 'How the Right Shipping Method Tracks Your Order Size',
+        paragraphs: [
+          'A Starter order at the 100-pair minimum rarely justifies sea freight, since the saving per unit barely covers the extra weeks on the water for a shipment that small. Express courier or air freight suits that stage, where getting your first order and your samples in hand quickly matters more than shaving cost off a small box.',
+          'Once an order grows toward our Growth or Scale volume tiers, the balance shifts. A larger, heavier shipment makes the cost-per-unit saving on sea freight worth the longer transit, especially once you are reordering on a schedule rather than waiting on a single first shipment. Ask us for a shipping estimate at the volume you are actually placing, since the right method for 100 pairs is rarely the right method for a much larger order.',
+        ],
+      },
+      {
+        heading: 'Who Pays Duty, and Where to Find Your Own Rate',
+        paragraphs: [
+          'Unless we agree on a landed-cost price in writing, our quotes cover the lashes and the export shipment to your border, not the duty your own country charges on arrival. That duty rate is set by your customs authority, not by us, and it depends on how your country classifies eyelash products, so there is no single number we can quote that applies everywhere.',
+          'Check your own customs authority or a broker for the rate that applies to your shipment, and ask about any de minimis threshold your country sets, since a small sample order sometimes clears with no duty at all where a full wholesale order would not.',
+        ],
+      },
+      {
+        heading: 'What a First-Time Export Buyer Should Have Ready',
+        paragraphs: [
+          'Whether you need a registered business or an import license to bring lashes in commercially depends on your own country, so confirm that with your local authority before you place an order rather than after it ships. Decide where the shipment should land, a home or office address or a bonded warehouse if you already work with one, and have that address confirmed before production finishes so the shipment does not sit waiting on instructions.',
+          'Agree the shipping method and who books it in writing before you pay a deposit, since that decision affects both your cost and your delivery date.',
+        ],
+      },
+      {
+        heading: 'Verifying the Factory Behind Your Export Order',
+        paragraphs: [
+          'An export order travels further and takes longer to reach you than a domestic one, so verify the factory before you commit to the shipping and documentation above. We offer a live video call to our production floor in [Purbalingga](/eyelash-manufacturer-purbalingga) for any buyer who wants to see where an order would be made before paying beyond the cost of shipping a sample.',
+        ],
+      },
+      {
+        heading: 'Placing Your First Export Order',
+        paragraphs: ['An export order with us runs through the same steps regardless of destination:'],
+        list: [
+          'Send your country, the styles you want and your estimated quantity so we can quote shipping accurately.',
+          'Request [samples](/eyelash-samples-catalogue-request) on existing catalog styles, free except for the shipping cost.',
+          'Confirm the shipping method and who books it, along with whether duty is included or your responsibility.',
+          'Place the order at 100 pairs per style, mixed across styles if you want more than one.',
+          'Production takes 5 working days, then the shipment leaves with its commercial invoice and packing list attached.',
+        ],
+      },
+    ],
+    faq: [
+      { q: 'Does MCI Eyelashes ship wholesale orders outside Indonesia?', a: 'Yes. We export worldwide, and our catalogue lists shipping at 7 to 14 days depending on the method and your destination.' },
+      { q: 'What documents does MCI provide for customs clearance?', a: 'We provide a commercial invoice and a packing list on every export shipment, the documents a customs broker needs to clear your goods.' },
+      { q: 'Who pays import duty on an order from MCI Eyelashes?', a: 'Unless we agree on a landed-cost price in writing, duty on arrival is the buyer’s responsibility and is set by your own country’s customs authority.' },
+      { q: 'Which shipping method should a first export order use?', a: 'Express courier or air freight usually suits a first order at the 100-pair minimum, while sea freight becomes worth the longer transit once your orders grow larger and repeat on a schedule.' },
+      { q: 'How do I verify the factory before placing an export order?', a: 'Ask for a live video call to our production floor in Purbalingga before you pay anything beyond the cost of shipping a sample.' },
+    ],
+  },
 ]
