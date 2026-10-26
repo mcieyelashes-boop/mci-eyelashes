@@ -63,7 +63,7 @@ export const blogPosts = [
 - Premium mink usually supports a higher shelf price than silk, so check whether your customers will pay for that difference
 - Custom packaging under your own brand lets you price for the brand, not only the product
 
-We send a full catalog and price sheet after your inquiry, so you can work the numbers on your own styles.`,
+We send a full catalog and price sheet after your inquiry, so you can work the numbers on your own styles. For how this plays out across all four materials we manufacture, including Faux Mink and Human Hair, see our [eyelash material margin guide](/blog/which-eyelash-material-has-best-margin).`,
       },
       {
         heading: 'How to Order Wholesale from MCI Eyelashes',
@@ -1488,6 +1488,138 @@ For the full range to choose from before your first order, see the [product cata
       {
         q: 'Can I test a style with a sample before committing to the 100-pair minimum?',
         a: 'Yes. Samples on existing catalog styles are free, and you only cover the shipping, so you can check a style before any pairs count toward the minimum.',
+      },
+    ],
+  },
+  {
+    slug: 'eyelash-manufacturer-vs-wholesaler-vs-distributor',
+    title: 'Eyelash Manufacturer vs Wholesaler vs Distributor',
+    metaDescription: 'Manufacturer, wholesaler and distributor mean different things in the eyelash trade. Here is what each role controls and which one fits how you buy.',
+    category: 'Supplier Guide',
+    date: '2026-10-26',
+    readTime: '7 min read',
+    excerpt: 'Manufacturer, wholesaler and distributor get used as if they mean the same thing. They describe three different relationships to a wholesale eyelash order, and knowing which one you are dealing with, and which one you are, changes how you should buy.',
+    coverAlt: 'Comparing the manufacturer, wholesaler and distributor roles in the eyelash supply chain',
+    sections: [
+      {
+        heading: 'Three words buyers use as if they mean the same thing',
+        body: `Manufacturer, wholesaler and distributor get used interchangeably in everyday conversation. In a wholesale eyelash order they describe three different relationships to the product, and mixing them up is how a buyer ends up paying for a layer they never needed.
+
+A manufacturer makes the lash. MCI Eyelashes runs its own production floor in Purbalingga, Central Java, so ordering from us means buying from the hands that make the style, not from a reseller sitting on top of a factory somewhere else.
+
+A wholesaler buys in bulk and sells it on, usually in smaller bulk lots to salons, retailers or online stores. A wholesaler does not have to own a factory. Some buy straight from a manufacturer like MCI and add their own margin before the lashes reach a shelf.
+
+A distributor carries a catalog on an ongoing basis, often for a region or a market, and supplies a network of resellers rather than one storefront. A distributor's relationship with a factory tends to repeat on a schedule: standing orders, not a single purchase.`,
+      },
+      {
+        heading: 'Where MCI sits, and where you might sit',
+        body: `MCI Eyelashes is the manufacturer in this chain. We sell factory direct, with no trading company standing between your inquiry and the production floor that fills it. That role does not change no matter who places the order.
+
+Which of the other two roles fits you depends on what you plan to do with the order. Buying a mixed set of styles to stock and resell across your own channels makes you a wholesaler on that order. Planning to carry our catalog on a recurring basis and supply other resellers in your market puts you closer to a distributor, and our [distributor page](/eyelash-distributor-indonesia) covers how a mixed, recurring order works in practice.
+
+A third role sits outside that pair entirely: the brand builder who wants their own name on the package instead of reselling ours. That buyer works with us as a manufacturer offering [private label](/private-label-eyelashes) or [OEM](/eyelash-oem-indonesia) production, not as a wholesaler of someone else's finished product. Our [page for new lash brands](/eyelash-manufacturer-for-new-brands) walks through that path from a standing start.`,
+      },
+      {
+        heading: 'Why the layers change what you pay',
+        body: `Every layer between a factory and your shelf adds a margin, because each one is a business covering its own costs. A wholesaler who buys from MCI and resells to you is covering its own warehousing, staff and margin on top of what we quoted, which is a normal cost of working through that wholesaler, not a sign anyone did anything wrong.
+
+Buying factory direct removes one of those layers. It does not remove all of them, since you may still be a wholesaler or distributor yourself, adding your own margin before the lashes reach your own customer. What factory direct changes is how many hands the price has already passed through, and how directly you can ask about a style still in production rather than waiting on an answer that has to travel back through someone else first.`,
+      },
+      {
+        heading: 'Telling which one you are actually talking to',
+        body: `A supplier calling itself a manufacturer should be able to describe its own production floor, not someone else's. Ask where the lashes are actually made, and ask for a [live video call to the floor](/eyelash-manufacturer-purbalingga) if the answer is vague. A genuine manufacturer has nothing to hide in that call, because the floor on screen is the one making your order.
+
+Being a wholesaler or a distributor is not a lesser or dishonest thing to be. The distinction matters for your own planning rather than as a test of honesty: knowing whether a supplier is the factory or a layer on top of one tells you how much room there is to negotiate volume, how fast an answer on stock can travel back to you, and whether private label or OEM is even available through that relationship.`,
+      },
+      {
+        heading: 'Picking the role that fits your own order',
+        body: `Most buyers do not choose a role in the abstract. They place an order, and the role follows from what they do with it afterward. Start from the samples and catalog that match what you actually want to build, whether that is a reseller stocking a range, a distributor supplying a market, or a brand builder putting a name on a style.
+
+Request what you need through our [sample and catalogue page](/eyelash-samples-catalogue-request). The order you place will show you which of the three roles you are filling, usually faster than any amount of reading about the difference between them.`,
+      },
+    ],
+    faq: [
+      {
+        q: 'Is MCI Eyelashes a manufacturer, a wholesaler, or a distributor?',
+        a: 'MCI Eyelashes is the manufacturer. We run our own production floor in Purbalingga and sell factory direct, with no trading company between your inquiry and the people making your order.',
+      },
+      {
+        q: 'Can a wholesaler and a distributor buy from the same catalog?',
+        a: 'Yes. Both buy from the same 100-pair-per-style minimum and the same five collections. What differs is how they use the order afterward: a wholesaler typically resells a range once, while a distributor carries the catalog on a recurring basis for a market.',
+      },
+      {
+        q: 'Does buying factory direct mean I pay less than going through a wholesaler?',
+        a: 'It removes one layer of markup, since you are quoted by the manufacturer rather than by a business reselling what the manufacturer already quoted to them. It does not set your own resale price, which still depends on your market and your own costs.',
+      },
+      {
+        q: 'Which role should a first-time buyer plan to be?',
+        a: 'Most first-time buyers start as a reseller testing a few styles rather than committing to a distributor relationship on day one. Our pages for [new lash brands](/eyelash-manufacturer-for-new-brands) and for [distributors](/eyelash-distributor-indonesia) cover the two paths side by side.',
+      },
+    ],
+  },
+  {
+    slug: 'which-eyelash-material-has-best-margin',
+    title: 'Which Eyelash Material Gives the Best Resale Profit Margin?',
+    metaDescription: 'Synthetic, Faux Mink, Human Hair and Under Lashes each carry a different margin story for a reseller. Here is how to compare them beyond cost per pair.',
+    category: 'Product Guide',
+    date: '2026-10-26',
+    readTime: '8 min read',
+    excerpt: 'Margin is not fixed by what a material costs to buy. It is shaped by how each one lets you price, position and reorder. Here is how Synthetic, Faux Mink, Human Hair and our Under Lash material compare for a reseller.',
+    coverAlt: 'Comparing eyelash materials by resale margin potential for wholesale buyers',
+    sections: [
+      {
+        heading: 'Margin is not a property of the material alone',
+        body: `Ask which material has the best margin and the honest answer is: none of them, by themselves. Margin is the gap between what you pay per pair and what your own market pays you back, and a material only sets one side of that gap. The other side is set by how you price, package and position whatever you stock, and that half is entirely yours to control.
+
+What a material does change is how wide that gap can get before a customer notices. Some materials carry a story that supports a higher shelf price without you doing anything extra. Others compete on price because every reseller stocks something close to the same thing, which caps how much room you have before a customer looks elsewhere. Looking at MCI's four material lines through that lens tells you more about your likely margin than comparing cost per pair on its own.`,
+      },
+      {
+        heading: 'Synthetic: the widest market, the thinnest story',
+        body: `Our Soft Touch collection (Korean synthetic fiber and sterilized human hair, blended for an everyday look) and 3D Luxe collection (multi-layer synthetic, built for volume and drama) both sit in the category most resellers already stock. That is the collection's strength and its margin ceiling at the same time: a wide market to sell into, next to a wide field of other sellers offering something close to the same thing.
+
+Synthetic earns its margin through volume and through what you build around it, not through scarcity. Custom packaging under your own brand, covered on our [private label page](/private-label-eyelashes), is what turns a synthetic style from a commodity into something a customer pays your price for instead of shopping around.`,
+      },
+      {
+        heading: 'Faux Mink: a story that supports a higher price on its own',
+        body: `Our Faux Mink - Protein Silk collection carries a cruelty-free story built into the material itself: the soft, full look associated with fur, made from protein silk fiber instead. That story does real work for a reseller, because a customer who cares about it will pay more for the same softness once they know where it came from.
+
+The margin advantage here is not that protein silk costs less to produce. It is that the positioning gives you a reason to charge more than a plain synthetic style can on its own. Our [Faux Mink lashes page](/faux-mink-lashes-wholesale) sets out the collection in full, including which styles work best as a first order for a reseller leading with that story.`,
+      },
+      {
+        heading: 'Human Hair: the premium ceiling, only if you price it that way',
+        body: `Classic - Human Hair is positioned as the most natural option in our catalog, made from sterilized human hair that meets international cosmetic safety standards. It is the line most likely to support a premium shelf price, because the material itself sounds the most expensive of the four.
+
+That ceiling only becomes a margin if you actually price the finished style as premium rather than stocking it next to everything else at the same number. A reseller who buys Human Hair samples and prices them like the rest of the shelf is paying for a premium material and collecting a standard margin, which is the one real trap in this comparison.`,
+      },
+      {
+        heading: 'Under Lashes: margin protected by having no direct comparison',
+        body: `Under Lashes sit on the lower lash line rather than replacing a top lash, and almost nothing else in a typical wholesale catalog does the same job. A customer who wants that look cannot easily compare your price against five other sellers carrying the identical product, because few of them carry it at all.
+
+That lack of comparison is a margin advantage most buyers overlook. It has nothing to do with the material outperforming the others on quality and everything to do with the category carrying less price pressure in the first place. Our [Under Lashes page](/under-lashes-wholesale) covers how the product works and where it fits in a first order.`,
+      },
+      {
+        heading: 'Building a first order around margin, not just material',
+        body: `The 100-pair-per-style minimum applies the same way across all four lines, and mixing styles to reach it means you do not have to commit to one material before you know how your own market responds. A first order spread across two or three of these lines, tested through [samples](/eyelash-samples-catalogue-request) before you commit pairs to any single look, tells you which margin story actually holds up with your own customers.
+
+Compare the four on cost alone and Synthetic will usually look cheapest on paper. Compare them on what each one lets you charge, and the material with the best margin for you depends on which story your customers are willing to pay for, not on a fixed ranking that applies the same way to every reseller.`,
+      },
+    ],
+    faq: [
+      {
+        q: 'Does Human Hair always earn a higher margin than Synthetic?',
+        a: 'Not automatically. Human Hair supports a higher shelf price because of how it is positioned, but that only becomes a wider margin if you actually price the finished style as premium rather than matching it to your synthetic prices.',
+      },
+      {
+        q: 'Can I compare more than one material before committing to a full order?',
+        a: 'Yes. Samples on existing catalog styles are free, and you cover the shipping, so you can compare Synthetic, Faux Mink, Human Hair and Under Lash samples side by side before any pairs commit to a single material.',
+      },
+      {
+        q: 'Why does Faux Mink support a higher price than plain synthetic?',
+        a: 'Faux Mink carries a cruelty-free story built into the material itself, protein silk fiber shaped to give the soft, full look associated with fur. That story gives a customer a reason to pay more for the same softness, which plain synthetic does not carry on its own.',
+      },
+      {
+        q: 'Do Under Lashes carry a different margin story than top lash styles?',
+        a: 'Yes. Under Lashes compete with almost nothing else in a typical wholesale catalog, so a customer cannot easily compare your price against several other sellers carrying the identical product, which protects the margin regardless of the material cost.',
       },
     ],
   },

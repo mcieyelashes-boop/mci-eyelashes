@@ -856,7 +856,7 @@ export const landingPages = [
       {
         heading: 'Reselling an existing catalog, not developing a new one',
         paragraphs: [
-          'A distributor\'s job is supply, not design. You are choosing from styles that already exist across our [five collections](/catalogue) rather than briefing a new curl, length or material from scratch. That keeps the decision simpler: pick the styles your market already asks for, confirm the minimum, and place the order. If you also want a design built for your own brand on top of distribution, that is a separate path, covered on our [private label](/private-label-eyelashes) page.',
+          'A distributor\'s job is supply, not design. You are choosing from styles that already exist across our [five collections](/catalogue) rather than briefing a new curl, length or material from scratch. That keeps the decision simpler: pick the styles your market already asks for, confirm the minimum, and place the order. If you also want a design built for your own brand on top of distribution, that is a separate path, covered on our [private label](/private-label-eyelashes) page. If the terms manufacturer, wholesaler and distributor still blur together, our [guide to the three roles](/blog/eyelash-manufacturer-vs-wholesaler-vs-distributor) sets out what each one actually controls.',
         ],
       },
       {
