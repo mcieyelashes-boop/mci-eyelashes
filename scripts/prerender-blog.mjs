@@ -161,7 +161,9 @@ for (const post of blogPosts) {
   writeFileSync(
     join(DIST, 'blog', `${post.slug}.html`),
     renderPage({
-      title: `${post.title} | MCI Eyelashes Blog`,
+      // Google shows the site name on its own line, so the <title> carries no
+      // brand suffix; seoTitle is a shorter form for posts whose H1 runs long.
+      title: post.seoTitle ?? post.title,
       description: post.metaDescription,
       canonical: url,
       ogTitle: post.title,

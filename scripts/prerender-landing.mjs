@@ -6,6 +6,7 @@ import { readFileSync, writeFileSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import { dirname, join } from 'node:path'
 import { landingPages } from '../src/data/landingPages.js'
+import { photoAlt, photosFor, productSchema } from '../src/data/productPhotos.js'
 import { BASE_URL, escapeHtml, getAssetTags, renderPage } from './prerender-shared.mjs'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
@@ -16,10 +17,12 @@ const distIndexHtml = readFileSync(join(DIST, 'index.html'), 'utf-8')
 const assetTags = getAssetTags(distIndexHtml)
 
 function jsonLd(page, url) {
+  const product = productSchema(page.slug, url, BASE_URL)
   return [
     {
       '@context': 'https://schema.org',
       '@graph': [
+        ...(product ? [product] : []),
         {
           '@type': 'WebPage',
           '@id': url,
@@ -51,6 +54,18 @@ function inline(text) {
   return escapeHtml(text).replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>')
 }
 
+function photosHtml(slug) {
+  const photos = photosFor(slug)
+  if (!photos.length) return ''
+  const items = photos
+    .map(
+      (p) =>
+        `<figure><img src="${p.src}" alt="${escapeHtml(photoAlt(p))}" width="${p.width}" height="${p.height}" loading="lazy" decoding="async"><figcaption>${escapeHtml(p.code)}</figcaption></figure>`
+    )
+    .join('\n      ')
+  return `<h2>Styles from the catalogue</h2>\n      ${items}`
+}
+
 function bodyHtml(page) {
   return `
     <main>
@@ -61,12 +76,13 @@ function bodyHtml(page) {
       <dl>
         ${page.factSheet.map(({ label, value }) => `<dt>${escapeHtml(label)}</dt><dd>${escapeHtml(value)}</dd>`).join('\n        ')}
       </dl>
+      ${photosHtml(page.slug)}
       ${page.sections
         .map(
           (s) => `
       <h2>${escapeHtml(s.heading)}</h2>
       ${s.paragraphs.map((p) => `<p>${inline(p)}</p>`).join('\n      ')}
-      ${s.list ? `<ul>${s.list.map((i) => `<li>${escapeHtml(i)}</li>`).join('')}</ul>` : ''}`
+      ${s.list ? `<ul>${s.list.map((i) => `<li>${inline(i)}</li>`).join('')}</ul>` : ''}`
         )
         .join('\n')}
       <h2>Frequently Asked Questions</h2>

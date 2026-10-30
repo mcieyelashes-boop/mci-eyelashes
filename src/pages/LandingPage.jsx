@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { landingPages } from '../data/landingPages'
+import { photoAlt, photosFor, productSchema } from '../data/productPhotos'
 import { setMeta, HOME_META } from '../utils/setMeta'
 import NotFound from './NotFound'
 
@@ -29,6 +30,7 @@ export default function LandingPage({ slug: slugProp }) {
   const params = useParams()
   const slug = slugProp ?? params.slug
   const page = landingPages.find(p => p.slug === slug)
+  const photos = page ? photosFor(page.slug) : []
 
   useEffect(() => {
     if (page) {
@@ -52,9 +54,11 @@ export default function LandingPage({ slug: slugProp }) {
       const script = document.createElement('script')
       script.id = 'landing-ld'
       script.type = 'application/ld+json'
+      const product = productSchema(page.slug, url, BASE_URL)
       script.text = JSON.stringify({
         '@context': 'https://schema.org',
         '@graph': [
+          ...(product ? [product] : []),
           {
             '@type': 'WebPage',
             '@id': url,
@@ -151,6 +155,31 @@ export default function LandingPage({ slug: slugProp }) {
         </div>
       </section>
 
+      {photos.length > 0 && (
+        <section style={{ background: 'var(--navy)', padding: '8px 0 48px' }} aria-labelledby="landing-photos">
+          <div className="container">
+            <div style={{ maxWidth: '960px', margin: '0 auto' }}>
+              <h2 id="landing-photos" style={{ fontFamily: 'Cormorant Garamond, serif', fontWeight: 400, fontSize: 'clamp(22px, 2.4vw, 30px)', color: '#fff', marginBottom: '18px' }}>
+                Styles from the catalogue
+              </h2>
+              <div className="landing-photo-grid">
+                {photos.map((p) => (
+                  <figure key={p.code} style={{ margin: 0 }}>
+                    <div style={{ background: '#fff', padding: '14px' }}>
+                      <img src={p.src} alt={photoAlt(p)} width={p.width} height={p.height} loading="lazy" decoding="async" style={{ display: 'block', width: '100%', height: 'auto' }} />
+                    </div>
+                    <figcaption style={{ fontSize: '12px', letterSpacing: '.06em', color: 'rgba(255,255,255,.7)', marginTop: '8px' }}>{p.code}</figcaption>
+                  </figure>
+                ))}
+              </div>
+              <p style={{ fontSize: '13px', color: 'var(--text-on-dark-mid)', marginTop: '18px' }}>
+                Every style, with its code, is in the <Link to="/catalogue" style={{ color: 'var(--teal-light)', textDecoration: 'underline', textUnderlineOffset: '3px' }}>product catalogue</Link>.
+              </p>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Body */}
       <section style={{ background: 'var(--navy)', padding: '20px 0 80px' }}>
         <div className="container">
@@ -173,7 +202,7 @@ export default function LandingPage({ slug: slugProp }) {
                     {section.list.map((item, j) => (
                       <li key={j} style={{ display: 'flex', gap: '12px', alignItems: 'flex-start', fontSize: '14px', color: 'var(--text-on-dark-mid)', lineHeight: 1.8 }}>
                         <span style={{ width: '5px', height: '5px', borderRadius: '50%', background: 'var(--teal)', flexShrink: 0, marginTop: '9px' }} />
-                        <span>{item}</span>
+                        <span>{parseInline(item)}</span>
                       </li>
                     ))}
                   </ul>
@@ -220,6 +249,14 @@ export default function LandingPage({ slug: slugProp }) {
       </section>
 
       <style>{`
+        .landing-photo-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        @media (max-width: 860px) {
+          .landing-photo-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 520px) {
+          .landing-photo-grid { gap: 12px; }
+          .landing-photo-grid figure > div { padding: 8px !important; }
+        }
         @media (max-width: 640px) {
           .landing-fact-grid { grid-template-columns: 1fr !important; }
         }

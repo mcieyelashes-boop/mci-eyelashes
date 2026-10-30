@@ -98,7 +98,8 @@ function pageFindings(page, ctx) {
   const out = []
   const add = (list, where) => list.forEach((f) => out.push({ ...f, where: where ?? f.where }))
 
-  add(lengthFinding('title length', page.title, TITLE), 'title')
+  // The <title> Google shows: a post's seoTitle when it has one.
+  add(lengthFinding('title length', page.seoTitle ?? page.title, TITLE), 'title')
   add(lengthFinding('description length', page.metaDescription, DESCRIPTION), 'meta description')
 
   const keyword = ctx.keywords.get(page.slug)

@@ -2,6 +2,7 @@ export const blogPosts = [
   {
     slug: 'mink-vs-silk-lashes-wholesale-guide',
     title: 'Mink vs Silk Lashes: Complete Wholesale Guide for Salon Owners (2026)',
+    seoTitle: 'Mink vs Silk Lashes: A Wholesale Guide for Salons',
     metaDescription: 'Mink vs silk lashes: which should you stock wholesale? Compare texture, finish, MOQ and how to choose, from an eyelash factory in Purbalingga, Indonesia.',
     category: 'Product Guide',
     date: '2026-04-10',
@@ -96,6 +97,7 @@ For a look at how the cost of a wholesale order is built up, see our [wholesale 
   {
     slug: 'how-to-start-lash-business',
     title: 'How to Start a Lash Business in 2026: Complete Guide for Beginners',
+    seoTitle: 'How to Start a Lash Business: A Beginner’s Guide',
     metaDescription: 'Learn how to start a lash business from scratch, from choosing suppliers and setting prices to private labeling and marketing. Step-by-step guide for 2026.',
     category: 'Business Guide',
     date: '2026-04-05',
@@ -177,7 +179,9 @@ MCI Eyelashes supplies salons, distributors, and beauty brands with mink, silk, 
 - **Days 31-60:** Run a small paid Meta ads test, collect first customer reviews
 - **Days 61-90:** Analyze best-selling styles, reorder top performers, test new styles
 
-Keep the plan disciplined: reorder what sells, drop what does not, and add new styles one at a time.`,
+Keep the plan disciplined: reorder what sells, drop what does not, and add new styles one at a time.
+
+If you are choosing a supplier for your first stock, our [wholesale eyelashes](/wholesale-eyelashes) page sets out our terms, and the [low MOQ guide](/low-moq-eyelash-manufacturer) explains how a 100-pair minimum per style shapes a first order. Before you place it, read the [mistakes new lash business owners make](/blog/eyelash-business-mistakes) and our guide to [planning a lash range](/blog/false-eyelashes-market-trends-2026).`,
       },
     ],
     faq: [
@@ -292,6 +296,7 @@ Shipping time to your country comes on top of production time.`,
   {
     slug: 'wholesale-eyelash-pricing-guide',
     title: 'Wholesale Eyelash Pricing Guide: What Shapes the Price (2026)',
+    seoTitle: 'Wholesale Eyelash Pricing: What Shapes the Price',
     metaDescription: 'How wholesale eyelash pricing works: what drives the cost per pair, how MOQ and packaging change it, how to work out your margin, and supplier red flags.',
     category: 'Pricing & MOQ',
     date: '2026-03-20',
@@ -366,7 +371,9 @@ Replace the example with the real figures from your quotes. Then subtract what i
 - **No clear lead time**: Ask for the production time in writing
 - **No physical address or verifiable factory**: Request factory photos or a video call
 
-MCI Eyelashes is a direct factory in Purbalingga, Indonesia. We welcome live video tours of our production floor, just ask before you order.`,
+MCI Eyelashes is a direct factory in Purbalingga, Indonesia. We welcome live video tours of our production floor, just ask before you order.
+
+For our own terms, see [wholesale eyelashes](/wholesale-eyelashes), or ask for the price sheet through the [catalogue and sample request](/eyelash-samples-catalogue-request) page. If you are pricing a brand of your own, [how to start a lash business](/blog/how-to-start-lash-business) covers the steps around it.`,
       },
     ],
     faq: [
@@ -387,6 +394,7 @@ MCI Eyelashes is a direct factory in Purbalingga, Indonesia. We welcome live vid
   {
     slug: '3d-vs-5d-volume-lashes-guide',
     title: '3D vs 5D Volume Lashes: Which Should You Stock for Your Salon? (2026)',
+    seoTitle: '3D vs 5D Volume Lashes: Which to Stock in Your Salon',
     metaDescription: '3D vs 5D volume lashes: what is the difference and which sells better? Compare fan size, weight, application, and wholesale pricing in this complete guide.',
     category: 'Product Guide',
     date: '2026-04-08',
@@ -455,7 +463,9 @@ How to compare them fairly:
 - Ask whether the fans are pre-made or loose extensions
 - Add packaging and shipping to get your landed cost
 
-Contact denis@mci-eyelashes.com for current pricing and available styles. For a wider view of how cost turns into margin, read our [wholesale eyelash pricing guide](/blog/wholesale-eyelash-pricing-guide).`,
+Contact denis@mci-eyelashes.com for current pricing and available styles. For a wider view of how cost turns into margin, read our [wholesale eyelash pricing guide](/blog/wholesale-eyelash-pricing-guide).
+
+If your clients want volume from a strip lash rather than from extensions, our [3D Luxe collection](/3d-luxe-volume-lashes-wholesale) is built in multi-layer synthetic for that look. For the rest of a lash artist’s kit, see our guide to [eyelash extension supplies wholesale](/blog/eyelash-extension-supplies-wholesale).`,
       },
     ],
     faq: [
@@ -476,7 +486,8 @@ Contact denis@mci-eyelashes.com for current pricing and available styles. For a 
   {
     slug: 'how-to-choose-eyelash-manufacturer',
     title: 'How to Choose an Eyelash Manufacturer: 10 Questions to Ask Before You Order',
-    metaDescription: 'Choosing the right wholesale eyelash manufacturer is the most important decision for your lash business. Here are 10 essential questions to ask before placing your first order.',
+    seoTitle: 'How to Choose an Eyelash Manufacturer: 10 Questions',
+    metaDescription: 'Choosing a wholesale eyelash manufacturer shapes your whole lash business. Here are 10 questions to ask any factory before you place your first order.',
     category: 'Supplier Guide',
     date: '2026-04-01',
     readTime: '7 min read',
@@ -559,7 +570,9 @@ Do they provide commercial invoices, packing lists, and origin certificates? The
 - **Lead times**: 5 working days production on 100-pair orders
 - **Private label**: Custom curl, length, material, and packaging, see our [private label OEM guide](/blog/private-label-eyelashes-oem-guide) for details
 
-For questions about paperwork, quality checks or payment terms, email denis@mci-eyelashes.com and we will answer in writing before you commit.`,
+For questions about paperwork, quality checks or payment terms, email denis@mci-eyelashes.com and we will answer in writing before you commit.
+
+To see the same checks applied to Indonesian factories, read our [sourcing guide for eyelash manufacturers in Indonesia](/eyelash-manufacturer-indonesia), or go straight to the [catalogue and sample request](/eyelash-samples-catalogue-request).`,
       },
     ],
     faq: [
@@ -580,7 +593,7 @@ For questions about paperwork, quality checks or payment terms, email denis@mci-
   {
     slug: 'eyelash-packaging-guide',
     title: 'Eyelash Box Design Guide: Materials, Finishes and Layout',
-    metaDescription: 'Custom eyelash packaging shapes how a private label lash brand is seen. This guide covers box styles, materials, printing options, and how to design packaging that stands out.',
+    metaDescription: 'Custom eyelash packaging shapes how a private label lash brand is seen. This guide covers box styles, materials, printing and how to design a box that stands out.',
     category: 'Brand & Packaging',
     date: '2026-03-15',
     readTime: '8 min read',
@@ -652,7 +665,9 @@ Clear plastic cases. Good for salon professional lines where product visibility 
 3. **Approval**: You approve the final packaging design before bulk production starts
 4. **Bulk production**: Once approved, the packaging is produced with your order
 
-Contact denis@mci-eyelashes.com with your brand brief to get started.`,
+Contact denis@mci-eyelashes.com with your brand brief to get started.
+
+Packaging is part of every [private label](/private-label-eyelashes) program, and branded boxes can be added to an [OEM](/eyelash-oem-indonesia) order too. For box styles, minimums and timing in more detail, read [custom eyelash packaging wholesale](/blog/custom-eyelash-packaging-wholesale).`,
       },
     ],
     faq: [
@@ -673,7 +688,8 @@ Contact denis@mci-eyelashes.com with your brand brief to get started.`,
   {
     slug: 'eyelash-business-mistakes',
     title: '7 Mistakes New Lash Business Owners Make (And How to Avoid Them)',
-    metaDescription: '7 common mistakes that kill new lash businesses, from choosing the wrong supplier to pricing too low. Learn what experienced lash entrepreneurs wish they knew at the start.',
+    seoTitle: '7 Mistakes New Lash Business Owners Make',
+    metaDescription: 'Seven common mistakes that sink new lash businesses, such as choosing the wrong supplier or pricing too low, and what to do instead before you place an order.',
     category: 'Business Guide',
     date: '2026-03-10',
     readTime: '6 min read',
@@ -764,6 +780,7 @@ Master one channel first. The skills you build in one channel transfer to the ne
   {
     slug: 'eyelash-extension-supplies-wholesale',
     title: 'Eyelash Extension Supplies Wholesale: Complete Buyer\'s Guide for Lash Artists (2026)',
+    seoTitle: 'Eyelash Extension Supplies Wholesale: A Buyer’s Guide',
     metaDescription: 'Everything lash artists need to know about buying eyelash extension supplies wholesale, from adhesives to tweezers, lash trays, and finding reliable manufacturers.',
     category: 'Wholesale Tips',
     date: '2026-04-16',
@@ -862,7 +879,9 @@ A good place to sample products and negotiate first-time wholesale accounts face
 Online wholesale marketplaces often have lower minimums, which suits beginners.
 
 **MCI Eyelashes wholesale program:**
-MCI manufactures and supplies eyelashes directly to salons, distributors and beauty brands. Request a wholesale catalog through our contact page.`,
+MCI manufactures and supplies eyelashes directly to salons, distributors and beauty brands. Request a wholesale catalog through our contact page.
+
+MCI makes strip lashes, not extension tools or adhesives. If you want lashes to sell alongside your extension services, see our [wholesale eyelashes](/wholesale-eyelashes) terms and the [handmade eyelashes](/handmade-eyelashes) page for the materials we work with.`,
       },
     ],
     faq: [
@@ -883,7 +902,7 @@ MCI manufactures and supplies eyelashes directly to salons, distributors and bea
   {
     slug: 'custom-eyelash-packaging-wholesale',
     title: 'Custom Eyelash Packaging Wholesale: Box Styles, MOQ, Timing',
-    metaDescription: 'Everything you need to know about custom eyelash packaging wholesale, box styles, materials, MOQs, and how to create packaging that sells itself on shelves and social media.',
+    metaDescription: 'Custom eyelash packaging wholesale explained: box styles, materials, minimums, timing, and how to create packaging that sells on shelves and social media.',
     category: 'Branding',
     date: '2026-04-14',
     readTime: '7 min read',
@@ -987,7 +1006,9 @@ Clients open the box. A velvet tray, branded tissue paper, or a thank-you card c
 - A luxury salon line suits soft-touch lamination, an embossed logo and a magnetic closure
 
 **Always request a physical sample before bulk production**
-Colors print differently than they appear on screen. Request a printed mockup before approving the production run.`,
+Colors print differently than they appear on screen. Request a printed mockup before approving the production run.
+
+When your packaging brief is ready, send it with a [private label](/private-label-eyelashes) or [OEM](/eyelash-oem-indonesia) inquiry so the boxes and the lashes are planned together. Our [eyelash box design guide](/blog/eyelash-packaging-guide) covers materials and finishes.`,
       },
     ],
     faq: [
@@ -1008,6 +1029,7 @@ Colors print differently than they appear on screen. Request a printed mockup be
   {
     slug: 'false-eyelashes-market-trends-2026',
     title: 'False Eyelash Trends 2026: How to Plan a Lash Range Buyers Want',
+    seoTitle: 'False Eyelash Trends 2026: Planning a Lash Range',
     metaDescription: 'How to plan a wholesale lash range in 2026: reading trends without a market report, cruelty-free options, natural to volume looks, and growing into your own brand.',
     category: 'Buyer Guide',
     date: '2026-04-12',
@@ -1104,7 +1126,8 @@ Choose OEM when you want to launch fast on proven styles. Choose private label w
   {
     slug: 'import-eyelashes-from-indonesia-guide',
     title: 'How to Import Wholesale Eyelashes from Indonesia: A Buyer’s Guide',
-    metaDescription: 'A practical guide for salon owners and distributors importing wholesale eyelashes from Indonesia, shipping methods, customs basics, documents you need, and how to avoid the common first-order mistakes.',
+    seoTitle: 'How to Import Wholesale Eyelashes from Indonesia',
+    metaDescription: 'Importing wholesale eyelashes from Indonesia: shipping methods, customs basics, the documents you need, and the first-order mistakes salons and distributors make.',
     category: 'Buyer Guide',
     date: '2026-08-28',
     readTime: '7 min read',
@@ -1159,7 +1182,9 @@ Transit times depend on your destination and on customs clearance, so ask for a 
 - **Production:** 5 working days on 100-pair orders
 - **Factory verification:** we welcome a live video call to our production floor before you order
 
-Reach out via WhatsApp or email to get a quote and discuss shipping to your country.`,
+Reach out via WhatsApp or email to get a quote and discuss shipping to your country.
+
+Our [wholesale eyelashes](/wholesale-eyelashes) page has the full terms, and the [eyelash manufacturer Indonesia](/eyelash-manufacturer-indonesia) guide explains how to check a factory before your first shipment.`,
       },
     ],
     faq: [
@@ -1184,7 +1209,8 @@ Reach out via WhatsApp or email to get a quote and discuss shipping to your coun
   {
     slug: 'eyelash-curl-types-explained',
     title: 'Eyelash Curl Types Explained: J, B, C, CC, D & U Curl Guide (2026)',
-    metaDescription: 'A complete guide to eyelash curl types (J, B, C, CC, D, and U curl), what each looks like, when it is used, and how to specify curl for a private label eyelash order.',
+    seoTitle: 'Eyelash Curl Types Explained: J, B, C, CC, D and U',
+    metaDescription: 'Eyelash curl types explained (J, B, C, CC, D and U curl): what each looks like, when it is used, and how to specify curl for a private label eyelash order.',
     category: 'Technical Guide',
     date: '2026-09-07',
     readTime: '6 min read',
@@ -1268,6 +1294,7 @@ Curl is only one part of a full private label specification, pair it with your [
   {
     slug: 'eyelash-band-types-explained',
     title: 'Eyelash Band Types Explained: Cotton, Silk & Clear Band Guide (2026)',
+    seoTitle: 'Eyelash Band Types: Cotton, Silk and Clear Bands',
     metaDescription: 'A guide to eyelash band types (cotton, thin/silk, and clear band), how each feels, how it applies, and how to specify band type for a private label eyelash order.',
     category: 'Technical Guide',
     date: '2026-09-14',
@@ -1334,6 +1361,7 @@ Band is only one part of a full private label specification, pair it with your [
   {
     slug: 'how-handmade-eyelashes-are-made',
     title: 'How Are Handmade Eyelashes Made? A Look Inside Strip Lash Production (2026)',
+    seoTitle: 'How Handmade Eyelashes Are Made: Inside Production',
     metaDescription: 'How handmade eyelashes are made: from fiber selection and curling to hand-tying individual fibers onto a band. General industry guide to strip lash construction.',
     category: 'Technical Guide',
     date: '2026-09-21',

@@ -19,7 +19,7 @@ export default function BlogPost() {
 
       // Update all head meta tags for this article
       setMeta({
-        title:               `${post.title} | MCI Eyelashes Blog`,
+        title:               post.seoTitle ?? post.title,
         description:         post.metaDescription,
         canonical:           url,
         ogTitle:             post.title,
