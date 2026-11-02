@@ -572,7 +572,7 @@ Do they provide commercial invoices, packing lists, and origin certificates? The
 
 For questions about paperwork, quality checks or payment terms, email denis@mci-eyelashes.com and we will answer in writing before you commit.
 
-To see the same checks applied to Indonesian factories, read our [sourcing guide for eyelash manufacturers in Indonesia](/eyelash-manufacturer-indonesia), or go straight to the [catalogue and sample request](/eyelash-samples-catalogue-request).`,
+To see the same checks applied to Indonesian factories, read our [sourcing guide for eyelash manufacturers in Indonesia](/eyelash-manufacturer-indonesia), or go straight to the [catalogue and sample request](/eyelash-samples-catalogue-request). Once you have confirmed the factory itself, read how to [vet the MOQ and lead-time wording in a quote](/blog/eyelash-supplier-red-flags), a detail this list only touches on.`,
       },
     ],
     faq: [
@@ -1648,6 +1648,77 @@ Compare the four on cost alone and Synthetic will usually look cheapest on paper
       {
         q: 'Do Under Lashes carry a different margin story than top lash styles?',
         a: 'Yes. Under Lashes compete with almost nothing else in a typical wholesale catalog, so a customer cannot easily compare your price against several other sellers carrying the identical product, which protects the margin regardless of the material cost.',
+      },
+    ],
+  },
+  {
+    slug: 'eyelash-supplier-red-flags',
+    title: 'Eyelash Supplier Red Flags: How to Vet MOQ and Lead-Time Terms',
+    seoTitle: 'Eyelash Supplier Red Flags: MOQ and Lead Time',
+    metaDescription: 'Two eyelash suppliers can quote the same MOQ and lead time and mean different things by each. Here is what to check in that line of a quote before you pay.',
+    category: 'Supplier Guide',
+    date: '2026-11-02',
+    readTime: '7 min read',
+    excerpt: 'MOQ and lead time look like fixed numbers on a quote, but two suppliers can state the same figures and mean different things by both. Here is what to check in that line before you send a deposit.',
+    coverAlt: 'Buyer reading the MOQ and lead time terms on an eyelash supplier quote',
+    sections: [
+      {
+        heading: 'The Line on a Quote That Gets Read Too Fast',
+        body: `Checking whether a supplier runs a real factory rather than reselling someone else's stock is its own task, and our guide to [choosing an eyelash manufacturer](/blog/how-to-choose-eyelash-manufacturer) covers it well. A second risk sits in a part of the same quote that looks plain and gets read fast: the MOQ and lead time line.
+
+Those two figures decide your cash outlay and your launch date. A buyer who takes them at face value can end up with a bill, or a delivery date, that does not match what the quote seemed to promise. This guide covers what to check in that one line before you commit to it.`,
+      },
+      {
+        heading: 'Does the Minimum Count Per Style or Per Order?',
+        body: `A quoted minimum of 100 pairs can mean two different things depending on the supplier. Some count it per style, so an order of 100 pairs split five ways, 20 pairs each, satisfies it the same way one style at 500 pairs would. Others treat 100 pairs as a floor for the whole order and add a charge, or refuse the order outright, once you ask to split it across styles.
+
+Ask the supplier to put the answer in writing before you choose styles: does the minimum apply per style, and if you mix styles, is there a cap on how many you can combine in one order? MCI's minimum is 100 pairs per style, mixed and matched across the [catalogue](/catalogue), stated the same way to every buyer so you have something fixed to compare another quote against.`,
+      },
+      {
+        heading: 'What Does the Quoted Lead Time Actually Cover?',
+        body: `A single word, lead time, can describe three different moments: the day production finishes, the day the order is packed and ready, or the day a carrier actually picks it up. Suppliers do not always say which one they mean, and the gap between the first and the last can run several days on its own.
+
+Ask for the lead time to be stated against your exact order size rather than a figure quoted for someone else's smaller or larger run, since a timeline that holds for a sample rarely holds for a full production order. A 100-pair order at MCI takes 5 working days to produce, and shipping time is quoted on top of that as its own number, so the two are never folded together into one vague promise.`,
+      },
+      {
+        heading: 'A Number Said Out Loud Is Not a Number You Can Order Against',
+        body: `A sales conversation that goes well tends to sound generous: a smaller first order, a shorter wait, terms that bend because the supplier likes working with you. None of that protects your order unless it appears in the written quote or order confirmation you both sign off on.
+
+Ask for the MOQ and the lead time to be written into the document you pay a deposit against, naming your order size and styles rather than describing them in general terms. A supplier who was happy to say a figure out loud but resists writing the same figure down has given you your real answer, whatever the number was.`,
+      },
+      {
+        heading: 'Watch for a Minimum That Grows After You Commit',
+        body: `A low opening minimum can start a conversation and then expand once you are a few messages into it: a separate minimum per color, a separate one per packaging choice, or a surcharge for mixing styles that never appeared in the first quote. None of this shows up in the opening offer, so it is easy to miss until an order is nearly placed.
+
+Ask directly, before you pick styles, what changes the minimum: color, packaging, customization, or anything else. A supplier with one minimum stated the same way regardless of which styles you choose is far easier to plan a first order around than one whose number shifts with each choice you make.`,
+      },
+      {
+        heading: 'How MCI States These Terms',
+        body: `We write our own terms the same way for every buyer, so a quote from us is one you can check against this page: 100 pairs per style, mixed and matched freely across styles, and a 100-pair run finished in 5 working days before it ships. A sample of any catalogue style costs nothing beyond what you pay to ship it, so you can hold a style before deciding on quantity.
+
+To test these numbers yourself, request a quote through our [sample and catalogue page](/eyelash-samples-catalogue-request), or ask to join a call to the [Purbalingga](/eyelash-manufacturer-purbalingga) production floor and watch the order you are weighing actually being made. For the factory-legitimacy side of vetting a supplier, which this guide leaves to that page, read [how to choose an eyelash manufacturer](/blog/how-to-choose-eyelash-manufacturer); for how order size changes your margin once you have settled on terms, see our [wholesale eyelash pricing guide](/blog/wholesale-eyelash-pricing-guide).`,
+      },
+    ],
+    faq: [
+      {
+        q: 'Does a 100-pair eyelash MOQ usually apply per style or per order?',
+        a: 'It depends on the supplier, which is exactly why the answer belongs in writing before you order. Some count the minimum per style and let you mix styles to reach it, while others treat it as a single floor for the whole order. MCI counts it per style and lets you mix and match across the catalogue to reach it.',
+      },
+      {
+        q: 'What should a lead time quote actually state?',
+        a: 'It should name the exact order size the figure applies to and say plainly whether it covers production alone or production plus packing and dispatch. MCI quotes 5 working days of production for a 100-pair order and states shipping time as a separate figure.',
+      },
+      {
+        q: 'Is a verbal promise about MOQ or lead time enough to order against?',
+        a: 'No. Ask for the figure to appear in the written quote or order confirmation before any deposit goes out. A supplier willing to say a number out loud but not write it down has not actually committed to it.',
+      },
+      {
+        q: 'Can a quoted minimum grow after I have already started placing an order?',
+        a: 'It can, if the supplier adds a separate minimum per color, packaging option or customization partway through the conversation. Ask upfront what, if anything, changes the minimum so the number does not shift once you are committed.',
+      },
+      {
+        q: 'How can a buyer check MCI’s stated MOQ and lead time before ordering?',
+        a: 'Request a quote through the sample and catalogue page, or arrange a video tour of the production floor in Purbalingga, where the same 100-pairs-per-style minimum and 5-working-day production time apply to the order being filmed.',
       },
     ],
   },
