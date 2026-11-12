@@ -11,10 +11,10 @@ const collections = [
     name: 'Soft Touch Lashes',
     tagline: 'Natural · Wispy · Volume · Tappered',
     badge: 'Bestseller',
-    heritage: '50+ Years',
+    heritage: 'All-Day Wear',
     material: 'Korean Synthetic / Human Hair',
     moq: '100 pairs',
-    desc: 'The industry standard for over 50 years. Ultra lightweight and comfortable for all-day wear. High Quality Korean Synthetic Fiber and 100% sterilized Human Hair with tapered technology for extra drama.',
+    desc: 'Ultra lightweight and comfortable for all-day wear. High Quality Korean Synthetic Fiber and 100% sterilized Human Hair with tapered technology for extra drama.',
     series: [
       {
         name: 'Natural Series',

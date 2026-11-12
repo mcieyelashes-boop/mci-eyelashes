@@ -484,10 +484,10 @@ export const landingPages = [
     metaDescription: 'Wholesale Soft Touch Lashes from MCI Eyelashes, Korean Synthetic and Human Hair, 7 series, 77 SKUs, 100-pair MOQ per style, factory direct from Indonesia.',
     h1: 'Soft Touch Lashes Wholesale',
     breadcrumbName: 'Soft Touch Lashes',
-    intro: 'Soft Touch Lashes is MCI Eyelashes’ bestselling collection, the industry standard for over 50 years, built from Korean Synthetic fiber and 100% sterilized Human Hair with tapered technology, available wholesale from a 100-pair MOQ per style.',
+    intro: 'Soft Touch Lashes is MCI Eyelashes’ bestselling collection, built from Korean Synthetic fiber and 100% sterilized Human Hair with tapered technology, available wholesale from a 100-pair MOQ per style.',
     factSheet: [
       { label: 'Collection', value: 'Soft Touch Lashes' },
-      { label: 'Status', value: 'Bestseller: industry standard for 50+ years' },
+      { label: 'Status', value: 'Bestseller' },
       { label: 'Material', value: 'Korean Synthetic / Human Hair' },
       { label: 'Series', value: '7 series, 77 SKUs' },
       { label: 'MOQ', value: '100 pairs per style: mix & match allowed' },
@@ -497,7 +497,7 @@ export const landingPages = [
       {
         heading: 'Why Soft Touch is our bestseller',
         paragraphs: [
-          'Soft Touch has been the standard strip lash for over 50 years, light enough to forget you are wearing it and comfortable all day. We make it in High Quality Korean Synthetic fiber and in 100% sterilized human hair, and some series use tapered technology for extra drama at the tips.',
+          'Soft Touch is light enough to forget you are wearing it and comfortable all day. We make it in High Quality Korean Synthetic fiber and in 100% sterilized human hair, and some series use tapered technology for extra drama at the tips.',
           'It is the collection to start with when you do not yet know what your customers want, because one family of styles covers everyday wear right through to evening glam.',
         ],
       },
@@ -536,7 +536,7 @@ export const landingPages = [
       },
     ],
     faq: [
-      { q: 'What is Soft Touch Lashes?', a: 'Soft Touch Lashes is MCI Eyelashes’ bestselling collection, the industry standard for over 50 years, made from Korean Synthetic fiber and 100% sterilized Human Hair with tapered technology.' },
+      { q: 'What is Soft Touch Lashes?', a: 'Soft Touch Lashes is MCI Eyelashes’ bestselling collection, made from Korean Synthetic fiber and 100% sterilized Human Hair with tapered technology.' },
       { q: 'What is the MOQ for Soft Touch Lashes?', a: '100 pairs per style, and you can mix and match across the 7 Soft Touch series to reach that minimum.' },
       { q: 'How many styles are in the Soft Touch collection?', a: '77 SKUs across 7 series: Natural, Wispy, Volume, Extended Volume, Dramatic, Pro, and Tappered.' },
       { q: 'What materials are Soft Touch Lashes made from?', a: 'Soft Touch comes in High Quality Korean Synthetic fiber and in 100% sterilized human hair.' },
