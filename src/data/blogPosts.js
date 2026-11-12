@@ -1625,7 +1625,7 @@ The margin advantage here is not that protein silk costs less to produce. It is 
       },
       {
         heading: 'Human Hair: the premium ceiling, only if you price it that way',
-        body: `Classic - Human Hair is positioned as the most natural option in our catalog, made from sterilized human hair that meets international cosmetic safety standards. It is the line most likely to support a premium shelf price, because the material itself sounds the most expensive of the three.
+        body: `Classic - Human Hair is positioned as the most natural option in our catalog, made from sterilized human hair. It is the line most likely to support a premium shelf price, because the material itself sounds the most expensive of the three.
 
 That ceiling only becomes a margin if you actually price the finished style as premium rather than stocking it next to everything else at the same number. A reseller who buys Human Hair samples and prices them like the rest of the shelf is paying for a premium material and collecting a standard margin, which is the one real trap in this comparison.`,
       },

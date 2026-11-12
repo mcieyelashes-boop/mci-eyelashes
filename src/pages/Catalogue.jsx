@@ -125,7 +125,7 @@ const collections = [
     heritage: 'Premium Grade',
     material: '100% Sterilized Human Hair',
     moq: '100 pairs',
-    desc: 'For the absolute most natural look. 100% sterilized human hair that blends seamlessly. Every batch meets international cosmetic safety standards.',
+    desc: 'For the absolute most natural look. 100% sterilized human hair that blends seamlessly.',
     series: [
       {
         name: 'IBC 1042 – 1088',
