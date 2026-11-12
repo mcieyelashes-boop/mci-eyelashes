@@ -91,7 +91,7 @@ p { text-wrap: pretty; }
   gap: 24px clamp(32px, 6vw, 96px); align-items: end;
   margin-bottom: clamp(40px, 6vw, 72px);
 }
-.section-head--stack { grid-template-columns: 1fr; max-width: 760px; }
+.section-head--stack { grid-template-columns: minmax(0, 1fr); max-width: 760px; }
 
 /* ── Type ── */
 .eyebrow {
@@ -174,10 +174,13 @@ p { text-wrap: pretty; }
 /* ── Hero: the campaign image, full width, never cropped at the head ──
    The image is 16:9 with the head in the upper right. The frame keeps that
    ratio up to the viewport height and anchors the image to the top, so any
-   crop comes off the water at the bottom, never off the head. */
+   crop comes off the water at the bottom, never off the head. On narrow
+   screens the frame is taller than 16:9 and the sides are cropped instead:
+   the head sits between 54% and 86% of the image width, and 81% keeps all of
+   it in frame down to a 320px screen. */
 .hero { position: relative; background: var(--ink); }
-.hero-media { position: relative; width: 100%; aspect-ratio: 16 / 9; max-height: 100svh; min-height: min(64svh, 620px); overflow: hidden; }
-.hero-media img { width: 100%; height: 100%; object-fit: cover; object-position: 70% top; }
+.hero-media { position: relative; width: 100%; aspect-ratio: 16 / 9; max-height: max(100svh, 34vw); min-height: min(64svh, 620px, 150vw); overflow: hidden; }
+.hero-media img { width: 100%; height: 100%; object-fit: cover; object-position: 81% top; }
 .hero-media::after {
   content: ''; position: absolute; inset: auto 0 0 0; height: 34%;
   background: linear-gradient(180deg, rgba(7, 18, 26, 0) 0%, rgba(7, 18, 26, 0.72) 62%, var(--ink) 100%);
@@ -519,8 +522,8 @@ iframe[src*="naraai.vercel.app/c/"] { bottom: 80px !important; right: 20px !impo
 
 /* ── Responsive ── */
 @media (max-width: 1024px) {
-  .section-head, .intro-grid { grid-template-columns: 1fr; align-items: start; }
-  .collections { grid-template-columns: 1fr; }
+  .section-head, .intro-grid { grid-template-columns: minmax(0, 1fr); align-items: start; }
+  .collections { grid-template-columns: minmax(0, 1fr); }
   .collection-tabs { position: static; flex-direction: row; overflow-x: auto; border-top: 0; border-bottom: 1px solid var(--line); gap: 28px; scrollbar-width: none; margin: 0 calc(var(--gutter) * -1); padding: 0 var(--gutter); }
   .collection-tabs::-webkit-scrollbar { display: none; }
   .collection-tab { display: flex; gap: 8px; white-space: nowrap; border-bottom: 2px solid transparent; padding: 14px 0; flex-shrink: 0; }
@@ -532,13 +535,13 @@ iframe[src*="naraai.vercel.app/c/"] { bottom: 80px !important; right: 20px !impo
   .service-points { grid-column: 2 / 3; }
   .service .arrow-link { grid-column: 3 / 4; justify-self: end; align-self: end; }
   .service-name-cell { grid-column: 2 / -1; }
-  .faq-grid, .contact-grid, .about-grid { grid-template-columns: 1fr; }
+  .faq-grid, .contact-grid, .about-grid { grid-template-columns: minmax(0, 1fr); }
   .faq-head { position: static; }
   .about-photo { aspect-ratio: 16 / 10; }
-  .footer-inner { grid-template-columns: 1fr; }
-  .article-layout { grid-template-columns: 1fr; }
+  .footer-inner { grid-template-columns: minmax(0, 1fr); }
+  .article-layout { grid-template-columns: minmax(0, 1fr); }
   .article-aside { position: static; }
-  .cat-panel-body { grid-template-columns: 1fr; }
+  .cat-panel-body { grid-template-columns: minmax(0, 1fr); }
   .cat-plate .plate-grid { grid-template-columns: repeat(3, 1fr); }
 }
 
@@ -550,25 +553,25 @@ iframe[src*="naraai.vercel.app/c/"] { bottom: 80px !important; right: 20px !impo
   .ledger-item:nth-child(even), .step:nth-child(even) { padding-left: 16px; border-left: 1px solid var(--line); }
   .ledger-item:nth-child(n + 3), .step:nth-child(n + 3) { border-top: 1px solid var(--line); }
   .step .step-num { margin-bottom: 16px; font-size: 36px; }
-  .collection-body { grid-template-columns: 1fr; }
+  .collection-body { grid-template-columns: minmax(0, 1fr); }
   .plate-grid, .plate-grid[data-count='4'] { grid-template-columns: repeat(2, 1fr); }
   .campaign-grid { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 4px; scrollbar-width: none; }
   .campaign-grid::-webkit-scrollbar { display: none; }
   .campaign-card { flex: 0 0 68vw; scroll-snap-align: start; }
-  .proofs { grid-template-columns: 1fr; }
+  .proofs { grid-template-columns: minmax(0, 1fr); }
   .proof { grid-template-columns: 44px 1fr; padding: 22px 0; }
-  .materials { grid-template-columns: 1fr; }
+  .materials { grid-template-columns: minmax(0, 1fr); }
   .material { padding: 16px 0; border-bottom: 1px solid var(--line); }
   .material + .material { padding-left: 0; border-left: 0; }
-  .service { grid-template-columns: 1fr; gap: 10px; padding: 24px 0; }
+  .service { grid-template-columns: minmax(0, 1fr); gap: 10px; padding: 24px 0; }
   .service-num { padding-top: 0; }
   .service-name-cell, .service-desc, .service-points, .service .arrow-link { grid-column: 1 / -1; justify-self: start; }
   .faq-item p { padding-right: 0; }
   .contact-detail, .tier { grid-template-columns: 96px 1fr; }
-  .form-row { grid-template-columns: 1fr; }
+  .form-row { grid-template-columns: minmax(0, 1fr); }
   .footer-links { grid-template-columns: 1fr 1fr; }
-  .fact-grid { grid-template-columns: 1fr; }
-  .post-row { grid-template-columns: 1fr; gap: 8px; padding: 24px 0; }
+  .fact-grid { grid-template-columns: minmax(0, 1fr); }
+  .post-row { grid-template-columns: minmax(0, 1fr); gap: 8px; padding: 24px 0; }
   .post-row-meta { display: flex; gap: 14px; align-items: baseline; padding-top: 0; }
   .post-row-meta .chip { margin-bottom: 0; }
   .stat-row { grid-template-columns: repeat(2, 1fr); }
@@ -576,7 +579,7 @@ iframe[src*="naraai.vercel.app/c/"] { bottom: 80px !important; right: 20px !impo
   .stat-row > div + div { padding-left: 0; border-left: 0; }
   .stat-row > div:nth-child(even) { padding-left: 16px; border-left: 1px solid var(--line); }
   .stat-row > div:nth-child(n + 3) { border-top: 1px solid var(--line); }
-  .tier-grid { grid-template-columns: 1fr; }
+  .tier-grid { grid-template-columns: minmax(0, 1fr); }
   .cat-tier { padding: 28px 0 8px; }
   .cat-tier + .cat-tier { padding-left: 0; border-left: 0; border-top: 1px solid var(--line-2); }
   .cat-plate .plate-grid { grid-template-columns: repeat(2, 1fr); }
@@ -586,5 +589,5 @@ iframe[src*="naraai.vercel.app/c/"] { bottom: 80px !important; right: 20px !impo
 }
 
 @media (max-width: 420px) {
-  .footer-links { grid-template-columns: 1fr; }
+  .footer-links { grid-template-columns: minmax(0, 1fr); }
 }
