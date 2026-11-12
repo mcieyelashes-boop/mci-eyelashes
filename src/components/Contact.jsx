@@ -1,5 +1,4 @@
-import { useRef, useState } from 'react'
-import { motion, useInView } from 'framer-motion'
+import { useState } from 'react'
 import emailjs from '@emailjs/browser'
 import { track, pageRef, reportInquiry, reportWholesaleInquiry } from '../utils/track'
 
@@ -56,9 +55,6 @@ const VOLUMES = [
 const EMPTY_FORM = { firstName: '', lastName: '', email: '', company: '', country: '', volume: '', message: '' }
 
 export default function Contact() {
-  const ref    = useRef(null)
-  const formEl = useRef(null)
-  useInView(ref, { once: true, margin: '-80px' })
   const [sent, setSent]       = useState(false)
   const [loading, setLoading] = useState(false)
   const [error, setError]     = useState('')
@@ -123,132 +119,121 @@ export default function Contact() {
   )}`
 
   return (
-    <section id="contact" className="contact-section" ref={ref}>
-      <div className="contact-glow" />
-      <div className="contact-glow-2" />
+    <section id="contact" className="section section--rule">
       <div className="container">
-        <motion.div style={{ marginBottom: '52px' }} initial={false} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
-          <p className="section-label">Get In Touch</p>
-          <h2 className="section-title">Start Your <span className="accent-light">Wholesale</span> Partnership</h2>
-          <p className="section-subtitle">
+        <header className="section-head">
+          <div>
+            <p className="eyebrow">Get In Touch</p>
+            <h2 className="title">Start Your <em>Wholesale</em> Partnership</h2>
+          </div>
+          <p className="lede">
             Our team responds within 24 hours with a full product catalog, wholesale price sheet, and MOQ details tailored to your requirements.
           </p>
-        </motion.div>
+        </header>
 
         <div className="contact-grid">
-          <motion.div initial={false} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.1 }}>
-            <div className="contact-details">
-              {details.map(d => (
-                <div key={d.label} className="contact-detail-item">
-                  <div className="contact-detail-label">{d.label}</div>
-                  {d.href
-                    ? <a href={d.href} className="contact-detail-value contact-detail-link" target={d.href.startsWith('http') ? '_blank' : undefined} rel="noopener noreferrer">{d.value}</a>
-                    : <div className="contact-detail-value">{d.value}</div>
-                  }
+          <div>
+            <dl className="contact-details">
+              {details.map((d) => (
+                <div key={d.label} className="contact-detail">
+                  <dt>{d.label}</dt>
+                  <dd>
+                    {d.href
+                      ? <a href={d.href} target={d.href.startsWith('http') ? '_blank' : undefined} rel="noopener noreferrer">{d.value}</a>
+                      : d.value}
+                  </dd>
+                </div>
+              ))}
+            </dl>
+
+            <div className="tiers">
+              <p className="tiers-title">Order size, in pairs</p>
+              {tiers.map((t) => (
+                <div key={t.label} className="tier">
+                  <p className="tier-moq">{t.moq}</p>
+                  <div>
+                    <p className="tier-label">{t.label}</p>
+                    <p className="tier-desc">{t.desc}</p>
+                  </div>
                 </div>
               ))}
             </div>
+          </div>
 
-            <div className="contact-tiers">
-              {tiers.map(t => (
-                <div key={t.label} className={`tier-card${t.featured ? ' tier-featured' : ''}`}>
-                  <p className="tier-moq" style={{ fontFamily: "'Cormorant Garamond',serif" }}>{t.moq}</p>
-                  <p className="tier-label">{t.label}</p>
-                  <p className="tier-desc">{t.desc}</p>
+          <div className="contact-form">
+            {!FORM_ENABLED ? (
+              <div className="form-state">
+                <h3>Online form unavailable</h3>
+                <p>
+                  Please email or message us on WhatsApp directly. Tell us the product type, order size and your country,
+                  and we reply within 24 hours with the catalog and price sheet.
+                </p>
+                <div className="btn-row">
+                  <a className="btn" href={mailHref}>Email us</a>
+                  <a className="btn-ghost" href={waHref} target="_blank" rel="noopener noreferrer">WhatsApp us</a>
                 </div>
-              ))}
-            </div>
-
-            <div className="contact-certs">
-              {/* Certification pills (ISO 9001, CE, FDA) removed pending proof of the
-                  actual certificates: replaced with owner-confirmed terms. */}
-              {['Factory Direct', 'MOQ 100 Pairs', 'Free Samples', '5-Day Production'].map(c => (
-                <span key={c} className="contact-cert-pill">{c}</span>
-              ))}
-            </div>
-          </motion.div>
-
-          <motion.div initial={false} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.15 }}>
-            <div className="contact-form">
-              {!FORM_ENABLED ? (
-                <div className="form-success-state">
-                  <h3 className="form-success-title">Online form unavailable</h3>
-                  <p className="form-success-desc">
-                    Please email or message us on WhatsApp directly. Tell us the product type, order size and your country,
-                    and we reply within 24 hours with the catalog and price sheet.
-                  </p>
-                  <a className="btn-primary" href={mailHref}>Email us</a>
-                  <a className="btn-outline" href={waHref} target="_blank" rel="noopener noreferrer">WhatsApp us</a>
+              </div>
+            ) : sent ? (
+              <div className="form-state" role="status">
+                <h3>Inquiry Sent</h3>
+                <p>Thank you. Our team will respond within 24 hours with your personalized wholesale package.</p>
+                <p className="form-state-mail">denis@mci-eyelashes.com</p>
+                <button className="btn-ghost" onClick={handleReset}>Send Another Inquiry</button>
+              </div>
+            ) : (
+              <form onSubmit={handleSubmit}>
+                <div className="form-row">
+                  <div className="form-group">
+                    <label htmlFor="cf-firstName">First Name <span className="form-required">*</span></label>
+                    <input id="cf-firstName" required autoComplete="given-name" value={form.firstName} onChange={update('firstName')} placeholder="Jane" />
+                  </div>
+                  <div className="form-group">
+                    <label htmlFor="cf-lastName">Last Name <span className="form-required">*</span></label>
+                    <input id="cf-lastName" required autoComplete="family-name" value={form.lastName} onChange={update('lastName')} placeholder="Smith" />
+                  </div>
                 </div>
-              ) : sent ? (
-                <motion.div className="form-success-state" initial={{ opacity: 0, scale: 0.94 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }}>
-                  <div className="form-success-check">OK</div>
-                  <h3 className="form-success-title">Inquiry Sent</h3>
-                  <p className="form-success-desc">
-                    Thank you. Our team will respond within 24 hours with your personalized wholesale package.
-                  </p>
-                  <div className="form-success-email">denis@mci-eyelashes.com</div>
-                  <button className="btn-outline form-reset-btn" onClick={handleReset}>Send Another Inquiry</button>
-                </motion.div>
-              ) : (
-                <form ref={formEl} onSubmit={handleSubmit}>
-                  <div className="form-row">
-                    <div className="form-group">
-                      <label htmlFor="cf-firstName">First Name <span className="form-required">*</span></label>
-                      <input id="cf-firstName" required value={form.firstName} onChange={update('firstName')} placeholder="Jane" />
-                    </div>
-                    <div className="form-group">
-                      <label htmlFor="cf-lastName">Last Name <span className="form-required">*</span></label>
-                      <input id="cf-lastName" required value={form.lastName} onChange={update('lastName')} placeholder="Smith" />
-                    </div>
-                  </div>
 
+                <div className="form-group">
+                  <label htmlFor="cf-email">Business Email <span className="form-required">*</span></label>
+                  <input id="cf-email" required type="email" autoComplete="email" value={form.email} onChange={update('email')} placeholder="jane@salon.com" />
+                </div>
+
+                <div className="form-row">
                   <div className="form-group">
-                    <label htmlFor="cf-email">Business Email <span className="form-required">*</span></label>
-                    <input id="cf-email" required type="email" value={form.email} onChange={update('email')} placeholder="jane@salon.com" />
+                    <label htmlFor="cf-company">Company / Brand</label>
+                    <input id="cf-company" autoComplete="organization" value={form.company} onChange={update('company')} placeholder="Glam Beauty Co." />
                   </div>
-
-                  <div className="form-row">
-                    <div className="form-group">
-                      <label htmlFor="cf-company">Company / Brand</label>
-                      <input id="cf-company" value={form.company} onChange={update('company')} placeholder="Glam Beauty Co." />
-                    </div>
-                    <div className="form-group">
-                      <label htmlFor="cf-country">Country <span className="form-required">*</span></label>
-                      <input id="cf-country" required value={form.country} onChange={update('country')} placeholder="United States" />
-                    </div>
-                  </div>
-
                   <div className="form-group">
-                    <label htmlFor="cf-volume">Monthly Volume</label>
-                    <select id="cf-volume" value={form.volume} onChange={update('volume')}>
-                      <option value="">Select order range</option>
-                      {VOLUMES.map(v => <option key={v}>{v}</option>)}
-                    </select>
+                    <label htmlFor="cf-country">Country <span className="form-required">*</span></label>
+                    <input id="cf-country" required autoComplete="country-name" value={form.country} onChange={update('country')} placeholder="United States" />
                   </div>
+                </div>
 
-                  <div className="form-group">
-                    <label htmlFor="cf-message">Message</label>
-                    <textarea id="cf-message" rows={4} value={form.message} onChange={update('message')} placeholder="Tell us about your wholesale needs: product types, target market, or any custom requirements..." />
-                  </div>
+                <div className="form-group">
+                  <label htmlFor="cf-volume">Monthly Volume</label>
+                  <select id="cf-volume" value={form.volume} onChange={update('volume')}>
+                    <option value="">Select order range</option>
+                    {VOLUMES.map((v) => <option key={v}>{v}</option>)}
+                  </select>
+                </div>
 
-                  {error && (
-                    <motion.p className="form-error" initial={{ opacity: 0, y: -6 }} animate={{ opacity: 1, y: 0 }} style={{ color: '#f87171', fontSize: '13px', marginBottom: '12px' }}>
-                      {error}
-                    </motion.p>
-                  )}
+                <div className="form-group">
+                  <label htmlFor="cf-message">Message</label>
+                  <textarea id="cf-message" rows={4} value={form.message} onChange={update('message')} placeholder="Tell us about your wholesale needs: product types, target market, or any custom requirements..." />
+                </div>
 
-                  <button type="submit" className="btn-submit" disabled={loading}>
-                    {loading ? <span className="btn-submit-spinner" /> : 'Send Inquiry'}
-                  </button>
+                {error && <p className="form-error" role="alert">{error}</p>}
 
-                  <p className="form-privacy">
-                    Your information is kept private and never shared with third parties.
-                  </p>
-                </form>
-              )}
-            </div>
-          </motion.div>
+                <button type="submit" className="btn btn-submit" disabled={loading}>
+                  {loading ? <span className="btn-submit-spinner" aria-label="Sending" /> : 'Send Inquiry'}
+                </button>
+
+                <p className="form-privacy">
+                  Your information is kept private and never shared with third parties.
+                </p>
+              </form>
+            )}
+          </div>
         </div>
       </div>
     </section>

@@ -1,6 +1,3 @@
-import { useRef } from 'react'
-import { motion, useInView } from 'framer-motion'
-
 const steps = [
   {
     number: '01',
@@ -25,56 +22,36 @@ const steps = [
 ]
 
 export default function Process() {
-  const ref = useRef(null)
-  useInView(ref, { once: true, margin: '-80px' })
-
   return (
-    <section id="process" className="process-section">
+    <section id="process" className="section section--alt">
       <div className="container">
-        <motion.div
-          ref={ref}
-          className="process-header"
-          initial={false}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-        >
-          <p className="section-label light">Production Flow</p>
-          <h2 className="section-title">
-            From Vision To <span className="accent-light">Launch-Ready Lashes</span>
-          </h2>
-          <p className="section-subtitle">
+        <header className="section-head">
+          <div>
+            <p className="eyebrow">Production Flow</p>
+            <h2 className="title">From Vision To <em>Launch-Ready Lashes</em></h2>
+          </div>
+          <p className="lede">
             A cleaner path from concept to repeatable wholesale supply, built for private-label beauty brands.
           </p>
-        </motion.div>
+        </header>
 
-        <div className="process-flow">
-          {steps.map((step, i) => (
-            <motion.article
-              key={step.number}
-              className="process-card"
-              initial={false}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.12 + i * 0.1, ease: [0.22, 1, 0.36, 1] }}
-            >
-              <span className="process-number">{step.number}</span>
+        <ol className="steps">
+          {steps.map((step) => (
+            <li key={step.number} className="step">
+              <p className="step-num" aria-hidden="true">{step.number}</p>
               <h3>{step.title}</h3>
               <p>{step.description}</p>
-            </motion.article>
+            </li>
           ))}
-        </div>
+        </ol>
 
-        <motion.div
-          className="process-banner"
-          initial={false}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.55, ease: [0.22, 1, 0.36, 1] }}
-        >
+        <div className="closing-row">
           <div>
-            <p>Launch a private-label line with <span>one factory-direct team.</span></p>
+            <p>Launch a private-label line with <em>one factory-direct team.</em></p>
             <small>Samples, packaging, production, quality checks, and global shipping handled in one workflow.</small>
           </div>
-          <a href="#contact" className="btn-primary">Start Your Order</a>
-        </motion.div>
+          <a href="#contact" className="btn">Start Your Order</a>
+        </div>
       </div>
     </section>
   )

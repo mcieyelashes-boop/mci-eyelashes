@@ -1,6 +1,5 @@
 import { useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import { motion } from 'framer-motion'
 import { landingPages } from '../data/landingPages'
 import { photoAlt, photosFor, productSchema } from '../data/productPhotos'
 import { setMeta, HOME_META } from '../utils/setMeta'
@@ -17,7 +16,7 @@ function parseInline(text) {
     if (linkMatch) {
       const [, label, href] = linkMatch
       return (
-        <Link key={i} to={href} style={{ color: 'var(--teal-light)', textDecoration: 'underline', textDecorationColor: 'rgba(72,184,202,.35)', textUnderlineOffset: '3px' }}>
+        <Link key={i} to={href}>
           {label}
         </Link>
       )
@@ -99,168 +98,92 @@ export default function LandingPage({ slug: slugProp }) {
   if (!page) return <NotFound />
 
   return (
-    <>
-      {/* Hero */}
-      <section style={{ background: 'var(--navy-mid)', padding: '150px 0 90px', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
-        <div style={{
-          position: 'absolute', top: '-200px', left: '50%', transform: 'translateX(-50%)',
-          width: '600px', height: '600px', borderRadius: '50%',
-          background: 'radial-gradient(circle, rgba(72,184,202,.08) 0%, transparent 70%)',
-          pointerEvents: 'none',
-        }} />
-        <div className="container">
-          <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
-            <p style={{ fontSize: '10px', letterSpacing: '.3em', textTransform: 'uppercase', color: 'var(--teal-light)', fontWeight: 600, marginBottom: '20px' }}>
-              <Link to="/" style={{ color: 'inherit' }}>Home</Link> &rsaquo; {page.breadcrumbName}
-            </p>
-            <h1 style={{
-              fontFamily: 'Cormorant Garamond, serif', fontWeight: 300,
-              fontSize: 'clamp(36px, 5vw, 64px)', color: '#fff', lineHeight: 1.08,
-              marginBottom: '24px', maxWidth: '840px', marginLeft: 'auto', marginRight: 'auto',
-            }}>
-              {page.h1}
-            </h1>
-            <p style={{
-              fontSize: '15px', color: 'var(--text-on-dark-mid)', lineHeight: 1.9,
-              maxWidth: '680px', margin: '0 auto',
-            }}>
-              {page.intro}
-            </p>
-          </motion.div>
+    <main>
+      <section className="page-hero page-hero--long">
+        <div className="container container--narrow">
+          <p className="eyebrow">
+            <Link to="/">Home</Link> <span aria-hidden="true">/</span> {page.breadcrumbName}
+          </p>
+          <h1>{page.h1}</h1>
+          <p className="lede">{page.intro}</p>
+          <div className="btn-row">
+            <Link to="/#contact" className="btn">Get Wholesale Pricing</Link>
+            <Link to="/catalogue" className="btn-ghost">View Catalogue</Link>
+          </div>
         </div>
       </section>
 
-      {/* Fact sheet */}
-      <section style={{ background: 'var(--navy)', padding: '56px 0' }}>
-        <div className="container">
-          <div style={{
-            maxWidth: '960px', margin: '0 auto', background: 'var(--navy-card)',
-            border: '1px solid var(--border-dark)', padding: '8px',
-          }}>
-            <p style={{
-              fontSize: '10px', letterSpacing: '.2em', textTransform: 'uppercase',
-              color: 'var(--teal)', fontWeight: 600, padding: '18px 24px 6px',
-            }}>
-              MCI Factory at a Glance
-            </p>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)' }} className="landing-fact-grid">
+      <section className="section">
+        <div className="container container--narrow">
+          <div className="fact-sheet">
+            <dl className="fact-grid" aria-label="MCI Factory at a Glance">
               {page.factSheet.map(({ label, value }) => (
-                <div key={label} style={{ padding: '16px 24px', borderTop: '1px solid var(--border-white)' }}>
-                  <div style={{ fontSize: '10px', letterSpacing: '.08em', textTransform: 'uppercase', color: 'rgba(255,255,255,.35)', marginBottom: '4px' }}>{label}</div>
-                  <div style={{ fontSize: '13px', color: 'rgba(255,255,255,.88)', fontWeight: 500 }}>{value}</div>
+                <div key={label} className="fact">
+                  <dt>{label}</dt>
+                  <dd>{value}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+
+          {photos.length > 0 && (
+            <div style={{ marginTop: 'clamp(48px, 6vw, 72px)' }} aria-labelledby="landing-photos">
+              <h2 id="landing-photos" className="sub-title">Styles from the catalogue</h2>
+              <div className="plate">
+                <div className="plate-grid" data-count={photos.length}>
+                  {photos.map((p) => (
+                    <figure key={p.code} className="plate-item">
+                      <img src={p.src} alt={photoAlt(p)} width={p.width} height={p.height} loading="lazy" decoding="async" />
+                      <figcaption>{p.code}</figcaption>
+                    </figure>
+                  ))}
+                </div>
+              </div>
+              <p className="photo-note">
+                Every style, with its code, is in the <Link to="/catalogue" className="text-link">product catalogue</Link>.
+              </p>
+            </div>
+          )}
+
+          <div className="prose" style={{ marginTop: 'clamp(48px, 6vw, 72px)' }}>
+            {page.sections.map((section, i) => (
+              <section key={i}>
+                <h2>{section.heading}</h2>
+                {section.paragraphs.map((p, j) => (
+                  <p key={j}>{parseInline(p)}</p>
+                ))}
+                {section.list && (
+                  <ul>
+                    {section.list.map((item, j) => (
+                      <li key={j}>{parseInline(item)}</li>
+                    ))}
+                  </ul>
+                )}
+              </section>
+            ))}
+          </div>
+
+          <div style={{ marginTop: 'clamp(48px, 6vw, 72px)' }}>
+            <h2 className="sub-title">Frequently Asked Questions</h2>
+            <div className="qa-list">
+              {page.faq.map(({ q, a }, i) => (
+                <div key={i} className="qa">
+                  <h3>{q}</h3>
+                  <p>{a}</p>
                 </div>
               ))}
             </div>
           </div>
-        </div>
-      </section>
 
-      {photos.length > 0 && (
-        <section style={{ background: 'var(--navy)', padding: '8px 0 48px' }} aria-labelledby="landing-photos">
-          <div className="container">
-            <div style={{ maxWidth: '960px', margin: '0 auto' }}>
-              <h2 id="landing-photos" style={{ fontFamily: 'Cormorant Garamond, serif', fontWeight: 400, fontSize: 'clamp(22px, 2.4vw, 30px)', color: '#fff', marginBottom: '18px' }}>
-                Styles from the catalogue
-              </h2>
-              <div className="landing-photo-grid">
-                {photos.map((p) => (
-                  <figure key={p.code} style={{ margin: 0 }}>
-                    <div style={{ background: '#fff', padding: '14px' }}>
-                      <img src={p.src} alt={photoAlt(p)} width={p.width} height={p.height} loading="lazy" decoding="async" style={{ display: 'block', width: '100%', height: 'auto' }} />
-                    </div>
-                    <figcaption style={{ fontSize: '12px', letterSpacing: '.06em', color: 'rgba(255,255,255,.7)', marginTop: '8px' }}>{p.code}</figcaption>
-                  </figure>
-                ))}
-              </div>
-              <p style={{ fontSize: '13px', color: 'var(--text-on-dark-mid)', marginTop: '18px' }}>
-                Every style, with its code, is in the <Link to="/catalogue" style={{ color: 'var(--teal-light)', textDecoration: 'underline', textUnderlineOffset: '3px' }}>product catalogue</Link>.
-              </p>
+          <div className="cta-block">
+            <div>
+              <p className="cta-title">Request Catalogue &amp; Wholesale Price</p>
+              <p>Get a catalog, pricing sheet, and sample kit. Our team responds within 24 hours.</p>
             </div>
-          </div>
-        </section>
-      )}
-
-      {/* Body */}
-      <section style={{ background: 'var(--navy)', padding: '20px 0 80px' }}>
-        <div className="container">
-          <div style={{ maxWidth: '760px', margin: '0 auto' }}>
-            {page.sections.map((section, i) => (
-              <div key={i} style={{ marginBottom: '48px' }}>
-                <h2 style={{
-                  fontFamily: 'Cormorant Garamond, serif', fontWeight: 400,
-                  fontSize: 'clamp(22px, 2.4vw, 30px)', color: '#fff', marginBottom: '18px',
-                }}>
-                  {section.heading}
-                </h2>
-                {section.paragraphs.map((p, j) => (
-                  <p key={j} style={{ fontSize: '14px', color: 'var(--text-on-dark-mid)', lineHeight: 1.9, marginBottom: '14px' }}>
-                    {parseInline(p)}
-                  </p>
-                ))}
-                {section.list && (
-                  <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '8px', marginTop: '8px' }}>
-                    {section.list.map((item, j) => (
-                      <li key={j} style={{ display: 'flex', gap: '12px', alignItems: 'flex-start', fontSize: '14px', color: 'var(--text-on-dark-mid)', lineHeight: 1.8 }}>
-                        <span style={{ width: '5px', height: '5px', borderRadius: '50%', background: 'var(--teal)', flexShrink: 0, marginTop: '9px' }} />
-                        <span>{parseInline(item)}</span>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </div>
-            ))}
-
-            {/* FAQ */}
-            <div style={{ marginTop: '56px', paddingTop: '44px', borderTop: '1px solid var(--border-soft)' }}>
-              <h2 style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: 'clamp(22px,2.4vw,30px)', color: '#fff', marginBottom: '28px' }}>
-                Frequently Asked Questions
-              </h2>
-              <div style={{ display: 'flex', flexDirection: 'column' }}>
-                {page.faq.map(({ q, a }, i) => (
-                  <div key={i} style={{ padding: '20px 0', borderBottom: '1px solid var(--border-soft)' }}>
-                    <p style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '17px', color: '#fff', fontWeight: 500, marginBottom: '8px' }}>{q}</p>
-                    <p style={{ fontSize: '13px', color: 'var(--text-on-dark-mid)', lineHeight: 1.8 }}>{a}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* CTA */}
-            <div style={{ marginTop: '56px', textAlign: 'center', padding: '48px 32px', background: 'var(--navy-mid)', border: '1px solid var(--border-dark)' }}>
-              <p style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '24px', color: '#fff', marginBottom: '10px' }}>
-                Request Catalogue &amp; Wholesale Price
-              </p>
-              <p style={{ fontSize: '13px', color: 'rgba(255,255,255,.4)', marginBottom: '24px' }}>
-                Get a catalog, pricing sheet, and sample kit. Our team responds within 24 hours.
-              </p>
-              <Link
-                to="/#contact"
-                style={{
-                  display: 'inline-block', padding: '15px 34px', background: 'var(--teal)',
-                  color: 'var(--navy)', fontSize: '11px', letterSpacing: '.16em',
-                  textTransform: 'uppercase', fontWeight: 700,
-                }}
-              >
-                Get Wholesale Pricing →
-              </Link>
-            </div>
+            <Link to="/#contact" className="btn">Get Wholesale Pricing</Link>
           </div>
         </div>
       </section>
-
-      <style>{`
-        .landing-photo-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-        @media (max-width: 860px) {
-          .landing-photo-grid { grid-template-columns: repeat(2, 1fr); }
-        }
-        @media (max-width: 520px) {
-          .landing-photo-grid { gap: 12px; }
-          .landing-photo-grid figure > div { padding: 8px !important; }
-        }
-        @media (max-width: 640px) {
-          .landing-fact-grid { grid-template-columns: 1fr !important; }
-        }
-      `}</style>
-    </>
+    </main>
   )
 }

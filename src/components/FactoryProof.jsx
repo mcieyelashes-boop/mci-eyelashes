@@ -1,6 +1,3 @@
-import { useRef } from 'react'
-import { motion, useInView } from 'framer-motion'
-
 // ─── Owner-confirmed facts ONLY ──────────────────────────────────────────────
 // This section replaced a block of fabricated testimonials (invented names,
 // locations, and results like "+40% reorder rate"). Do not reintroduce social
@@ -33,53 +30,28 @@ const proofs = [
   },
 ]
 
-const stats = [
-  { num: '100',  label: 'Pairs Minimum' },
-  { num: '5',    label: 'Days Production' },
-  { num: 'Free', label: 'Catalog Samples' },
-  { num: '0',    label: 'Middlemen' },
-]
-
 export default function FactoryProof() {
-  const ref = useRef(null)
-  useInView(ref, { once: true, margin: '-80px' })
-
   return (
-    <section id="before-you-order" ref={ref} className="testimonials-section">
+    <section id="before-you-order" className="section section--alt">
       <div className="container">
-        <motion.div initial={false} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
-          <p className="section-label light">Before You Order</p>
-          <h2 className="section-title">
-            Check Us Before You <span className="accent-light">Commit</span>
-          </h2>
-          <p className="section-subtitle" style={{ marginBottom: '44px' }}>
+        <header className="section-head">
+          <div>
+            <p className="eyebrow">Before You Order</p>
+            <h2 className="title">Check Us Before You <em>Commit</em></h2>
+          </div>
+          <p className="lede">
             We are a factory, not a trading company. Here is how to verify that yourself, before you spend anything.
           </p>
-        </motion.div>
+        </header>
 
-        <div className="values-grid">
-          {proofs.map(({ title, desc }, i) => (
-            <motion.div
-              key={title}
-              className="value-item"
-              initial={false}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.15 + i * 0.1 }}
-            >
-              <p className="value-title">{title}</p>
-              <p className="value-desc">{desc}</p>
-            </motion.div>
+        <ol className="proofs">
+          {proofs.map(({ title, desc }) => (
+            <li key={title} className="proof">
+              <h3>{title}</h3>
+              <p>{desc}</p>
+            </li>
           ))}
-        </div>
-
-        <div className="t-stats-row">
-          {stats.map(({ num, label }) => (
-            <div key={label} className="t-stat">
-              <p className="t-stat-num" style={{ fontFamily: "'Cormorant Garamond',serif" }}>{num}</p>
-              <p className="t-stat-label">{label}</p>
-            </div>
-          ))}
-        </div>
+        </ol>
       </div>
     </section>
   )

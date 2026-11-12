@@ -1,5 +1,6 @@
 // Lightweight markdown renderer for blog post bodies.
 // Handles: paragraphs, **bold**, [text](url) links, tables, bullet lists, numbered lists.
+// It emits plain elements; the look comes from the .prose rules in index.css.
 
 import { Link } from 'react-router-dom'
 
@@ -8,15 +9,15 @@ function parseInline(text) {
   const parts = text.split(/(\*\*.*?\*\*|\[.*?\]\(.*?\))/g)
   return parts.map((part, i) => {
     if (/^\*\*(.*)\*\*$/.test(part)) {
-      return <strong key={i} style={{ fontWeight: 600, color: 'var(--ink)' }}>{part.slice(2, -2)}</strong>
+      return <strong key={i}>{part.slice(2, -2)}</strong>
     }
     const linkMatch = part.match(/^\[(.*?)\]\((.*?)\)$/)
     if (linkMatch) {
       const [, label, href] = linkMatch
       if (href.startsWith('/')) {
-        return <Link key={i} to={href} style={{ color: 'var(--teal-dark)', textDecoration: 'underline', textDecorationColor: 'rgba(0,150,160,0.3)', textUnderlineOffset: '3px' }}>{label}</Link>
+        return <Link key={i} to={href}>{label}</Link>
       }
-      return <a key={i} href={href} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--teal-dark)', textDecoration: 'underline', textDecorationColor: 'rgba(0,150,160,0.3)', textUnderlineOffset: '3px' }}>{label}</a>
+      return <a key={i} href={href} target="_blank" rel="noopener noreferrer">{label}</a>
     }
     return part
   })
@@ -28,39 +29,19 @@ function renderTable(lines) {
   const cols = header.split('|').slice(1, -1).map(c => c.trim())
 
   return (
-    <div style={{ overflowX: 'auto', margin: '28px 0' }}>
-      <table style={{
-        width: '100%', borderCollapse: 'collapse',
-        fontSize: '13px', fontFamily: 'Bricolage Grotesque, sans-serif',
-      }}>
+    <div className="table-wrap">
+      <table>
         <thead>
           <tr>
-            {cols.map((col, i) => (
-              <th key={i} style={{
-                textAlign: 'left', padding: '12px 16px',
-                background: 'var(--off-white)',
-                borderBottom: '2px solid var(--teal)',
-                fontSize: '10px', letterSpacing: '1.5px',
-                textTransform: 'uppercase', color: 'var(--teal-dark)', fontWeight: 600,
-              }}>
-                {col}
-              </th>
-            ))}
+            {cols.map((col, i) => <th key={i} scope="col">{col}</th>)}
           </tr>
         </thead>
         <tbody>
           {body.map((row, ri) => {
             const cells = row.split('|').slice(1, -1).map(c => c.trim())
             return (
-              <tr key={ri} style={{ borderBottom: '1px solid var(--border-soft)' }}>
-                {cells.map((cell, ci) => (
-                  <td key={ci} style={{
-                    padding: '12px 16px', color: 'var(--ink-mid)',
-                    verticalAlign: 'top',
-                  }}>
-                    {parseInline(cell)}
-                  </td>
-                ))}
+              <tr key={ri}>
+                {cells.map((cell, ci) => <td key={ci}>{parseInline(cell)}</td>)}
               </tr>
             )
           })}
@@ -97,13 +78,8 @@ export function renderBody(body) {
         i++
       }
       elements.push(
-        <ul key={i} style={{ margin: '16px 0 16px 0', paddingLeft: '0', listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '8px' }}>
-          {items.map((item, j) => (
-            <li key={j} style={{ display: 'flex', gap: '12px', alignItems: 'flex-start', fontSize: '14px', color: 'var(--ink-mid)', lineHeight: 1.8 }}>
-              <span style={{ width: '5px', height: '5px', borderRadius: '50%', background: 'var(--teal)', flexShrink: 0, marginTop: '9px' }} />
-              <span>{parseInline(item)}</span>
-            </li>
-          ))}
+        <ul key={i}>
+          {items.map((item, j) => <li key={j}>{parseInline(item)}</li>)}
         </ul>
       )
       continue
@@ -117,37 +93,21 @@ export function renderBody(body) {
         i++
       }
       elements.push(
-        <ol key={i} style={{ margin: '16px 0', paddingLeft: '0', listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '10px', counterReset: 'step' }}>
-          {items.map((item, j) => (
-            <li key={j} style={{ display: 'flex', gap: '16px', alignItems: 'flex-start', fontSize: '14px', color: 'var(--ink-mid)', lineHeight: 1.8 }}>
-              <span style={{
-                minWidth: '26px', height: '26px', borderRadius: '50%',
-                background: 'var(--off-white)', border: '1px solid var(--teal)',
-                display: 'flex', alignItems: 'center', justifyContent: 'center',
-                fontSize: '11px', color: 'var(--teal-dark)', fontWeight: 600, flexShrink: 0,
-              }}>
-                {j + 1}
-              </span>
-              <span style={{ paddingTop: '2px' }}>{parseInline(item)}</span>
-            </li>
-          ))}
+        <ol key={i}>
+          {items.map((item, j) => <li key={j}>{parseInline(item)}</li>)}
         </ol>
       )
       continue
     }
 
-    // Empty line — skip
+    // Empty line: skip
     if (line.trim() === '') {
       i++
       continue
     }
 
     // Regular paragraph
-    elements.push(
-      <p key={i} style={{ fontSize: '14px', color: 'var(--ink-mid)', lineHeight: 1.9, marginBottom: '16px' }}>
-        {parseInline(line)}
-      </p>
-    )
+    elements.push(<p key={i}>{parseInline(line)}</p>)
     i++
   }
 

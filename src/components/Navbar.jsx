@@ -1,114 +1,109 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
-import { motion, AnimatePresence } from 'framer-motion'
 
 const links = [
-  { label: 'Products',  href: '/#products' },
-  { label: 'Gallery',   href: '/#gallery' },
-  { label: 'Catalogue', href: '/catalogue', isRoute: true },
-  { label: 'Contact',   href: '/#contact' },
+  { label: 'Collections', href: '/#products' },
+  { label: 'Factory',     href: '/#about' },
+  { label: 'Catalogue',   href: '/catalogue', isRoute: true },
+  { label: 'Guides',      href: '/blog', isRoute: true },
+  { label: 'Contact',     href: '/#contact' },
 ]
 
+const NAV_OFFSET = 70
+
+function scrollToId(id) {
+  const el = document.getElementById(id)
+  if (!el) return
+  const top = el.getBoundingClientRect().top + window.scrollY - NAV_OFFSET
+  window.scrollTo({ top, behavior: 'smooth' })
+}
+
 export default function Navbar() {
-  const [scrolled,   setScrolled]   = useState(false)
-  const [menuOpen,   setMenuOpen]   = useState(false)
+  const [scrolled, setScrolled] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(false)
   const location = useLocation()
   const navigate = useNavigate()
-  const isHome = location.pathname === '/'
 
   useEffect(() => {
-    const onScroll = () => {
-      setScrolled(window.scrollY > 24)
-    }
+    const onScroll = () => setScrolled(window.scrollY > 24)
     onScroll()
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
+  // Arriving on the home page with a hash (from another page) scrolls to it.
   useEffect(() => {
     if (location.pathname === '/' && location.hash) {
       const id = location.hash.slice(1)
-      setTimeout(() => {
-        const el = document.getElementById(id)
-        if (el) {
-          const top = el.getBoundingClientRect().top + window.scrollY - 70
-          window.scrollTo({ top, behavior: 'smooth' })
-        }
-      }, 80)
+      const t = setTimeout(() => scrollToId(id), 80)
+      return () => clearTimeout(t)
     }
   }, [location.pathname, location.hash])
 
-  const handleNav = (href) => {
+  const handleHash = (e, href) => {
+    e.preventDefault()
     setMenuOpen(false)
-    if (href.startsWith('/#')) {
-      const id = href.slice(2)
-      if (location.pathname !== '/') {
-        navigate(`/#${id}`)
-        return
-      }
-      const el = document.getElementById(id)
-      if (el) {
-        const top = el.getBoundingClientRect().top + window.scrollY - 70
-        window.scrollTo({ top, behavior: 'smooth' })
-      }
+    const id = href.slice(2)
+    if (location.pathname !== '/') {
+      navigate(`/#${id}`)
+      return
     }
+    scrollToId(id)
   }
 
+  const renderLink = (link, className) =>
+    link.isRoute ? (
+      <Link
+        key={link.label}
+        to={link.href}
+        className={className}
+        aria-current={location.pathname.startsWith(link.href) ? 'page' : undefined}
+        onClick={() => setMenuOpen(false)}
+      >
+        {link.label}
+      </Link>
+    ) : (
+      <a key={link.label} href={link.href} className={className} onClick={(e) => handleHash(e, link.href)}>
+        {link.label}
+      </a>
+    )
+
   return (
-    <motion.header
-      className={`navbar ${scrolled ? 'scrolled' : ''} ${isHome ? 'navbar--home' : ''}`}
-      initial={{ opacity: 0, y: -16 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
-    >
+    <header className={`navbar${scrolled ? ' scrolled' : ''}${menuOpen ? ' menu-open' : ''}`}>
       <div className="nav-inner">
-        {/* Logo */}
-        <Link to="/" className="nav-logo">
-          <img src="/brand-mark.svg" alt="" aria-hidden="true" />
-          <span className="nav-logo-text">
-            <span className="nav-logo-name">MCI</span>
-            <span className="nav-logo-sub">Eyelashes</span>
-          </span>
+        {/* The owner's gold monogram, used exactly as supplied, with no wordmark beside it. */}
+        <Link to="/" className="nav-logo" aria-label="MCI Eyelashes home" onClick={() => setMenuOpen(false)}>
+          <img src="/logo-mci.png" alt="MCI Eyelashes" width="422" height="430" />
         </Link>
 
-        {/* Desktop links */}
-        <nav className="nav-links">
-          {links.map(link => (
-            link.isRoute
-              ? <Link key={link.label} to={link.href} className="nav-link" onClick={() => setMenuOpen(false)}>{link.label}</Link>
-              : <button key={link.label} className="nav-link" onClick={() => handleNav(link.href)}>{link.label}</button>
-          ))}
+        <nav className="nav-links" aria-label="Main">
+          {links.map((link) => renderLink(link, 'nav-link'))}
         </nav>
 
-        <button className="nav-cta" onClick={() => handleNav('/#contact')}>Request Wholesale</button>
+        <a href="/#contact" className="btn btn--sm nav-cta" onClick={(e) => handleHash(e, '/#contact')}>
+          Request Wholesale
+        </a>
 
-        {/* Hamburger */}
-        <button className="nav-hamburger" onClick={() => setMenuOpen(!menuOpen)} aria-label="Menu">
-          <span className={`ham-line ${menuOpen ? 'open' : ''}`} />
-          <span className={`ham-line ${menuOpen ? 'open' : ''}`} />
-          <span className={`ham-line ${menuOpen ? 'open' : ''}`} />
+        <button
+          className="nav-hamburger"
+          onClick={() => setMenuOpen((o) => !o)}
+          aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+          aria-expanded={menuOpen}
+        >
+          <span className="ham-line" />
+          <span className="ham-line" />
+          <span className="ham-line" />
         </button>
       </div>
 
-      {/* Mobile menu */}
-      <AnimatePresence>
-        {menuOpen && (
-          <motion.div
-            className="nav-mobile-menu"
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -10 }}
-            transition={{ duration: 0.2 }}
-          >
-            {links.map(link => (
-              link.isRoute
-                ? <Link key={link.label} to={link.href} className="nav-mobile-link" onClick={() => setMenuOpen(false)}>{link.label}</Link>
-                : <button key={link.label} className="nav-mobile-link" onClick={() => handleNav(link.href)}>{link.label}</button>
-            ))}
-            <button className="nav-mobile-cta" onClick={() => handleNav('/#contact')}>Request Wholesale</button>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </motion.header>
+      {menuOpen && (
+        <nav className="nav-mobile-menu" aria-label="Mobile">
+          {links.map((link) => renderLink(link, 'nav-mobile-link'))}
+          <a href="/#contact" className="btn" onClick={(e) => handleHash(e, '/#contact')}>
+            Request Wholesale
+          </a>
+        </nav>
+      )}
+    </header>
   )
 }

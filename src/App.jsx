@@ -10,7 +10,6 @@ import Process from './components/Process'
 import FactoryProof from './components/FactoryProof'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
-import CTABanner from './components/CTABanner'
 import WhatsAppButton from './components/WhatsAppButton'
 
 // Lazy-loaded pages
@@ -27,12 +26,11 @@ function Home() {
       <Hero />
       <Products />
       <Gallery />
-      <Process />
       <About />
-      <Services />
       <FactoryProof />
+      <Process />
+      <Services />
       <FAQ />
-      <CTABanner />
       <Contact />
     </>
   )
@@ -45,7 +43,7 @@ export function AppRoutes() {
   return (
     <>
       <Navbar />
-      <Suspense fallback={<div style={{ minHeight: '100vh', background: '#0a1720' }} />}>
+      <Suspense fallback={<div style={{ minHeight: '100vh', background: '#07121a' }} />}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/catalogue" element={<Catalogue />} />

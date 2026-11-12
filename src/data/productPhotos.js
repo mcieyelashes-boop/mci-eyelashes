@@ -248,3 +248,11 @@ export function productSchema(slug, pageUrl, baseUrl) {
     countryOfOrigin: 'ID',
   }
 }
+
+/** Photos per collection, for the home page and the catalogue. Under Lashes has none yet. */
+export const collectionPhotos = {
+  soft: COLLECTIONS.soft.photos,
+  threeD: COLLECTIONS.threeD.photos,
+  faux: COLLECTIONS.faux.photos,
+  human: COLLECTIONS.human.photos,
+}

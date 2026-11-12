@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState } from 'react'
-import { motion, useInView, AnimatePresence } from 'framer-motion'
+import { useEffect, useState } from 'react'
+import { collectionPhotos, photoAlt } from '../data/productPhotos'
 import { setMeta } from '../utils/setMeta'
 import { CATALOGUE_META } from '../data/pageMeta'
 
@@ -182,6 +182,12 @@ const tiers = [
   { moq: '1,000+', label: 'Scale', discount: 'Ask us', perks: ['High-volume production', 'Full brand identity', 'Custom design', 'Contact us for terms'] },
 ]
 
+// Which photo set (src/data/productPhotos.js) belongs to which collection key.
+const PHOTO_KEY = { soft: 'soft', '3d': 'threeD', faux: 'faux', human: 'human', classic: 'human' }
+
+const mailto = (subject, body) =>
+  `mailto:denis@mci-eyelashes.com?subject=${subject}${body ? `&body=${body}` : ''}`
+
 // ─── COMPONENTS ──────────────────────────────────────────────────────────────
 function SkuGrid({ skus }) {
   return (
@@ -196,42 +202,54 @@ function SkuGrid({ skus }) {
 }
 
 function CollectionPanel({ col }) {
-  const [openSeries, setOpenSeries] = useState(null)
+  const [openSeries, setOpenSeries] = useState(0)
   const totalSkus = col.series.reduce((a, s) => a + s.skus.length, 0)
+  const photos = collectionPhotos[PHOTO_KEY[col.key]] ?? []
 
   return (
     <div className="cat-panel">
-      {/* Header */}
       <div className="cat-panel-head">
-        <div className="cat-panel-num">{col.id}</div>
         <div className="cat-panel-info">
+          <div className="cat-panel-num">Collection {col.id}</div>
           <h2 className="cat-panel-name">{col.name}</h2>
           <p className="cat-panel-tagline">{col.tagline}</p>
         </div>
         <div className="cat-panel-meta">
-          <span className="cat-badge cat-badge-teal">{col.badge}</span>
-          <span className="cat-badge cat-badge-outline">{col.heritage}</span>
+          <span className="cat-badge cat-badge-gold">{col.badge}</span>
+          <span className="cat-badge">{col.heritage}</span>
         </div>
       </div>
 
-      {/* Body */}
+      {photos.length > 0 && (
+        <div className="plate cat-plate">
+          <div className="plate-grid">
+            {photos.map((photo) => (
+              <figure key={photo.code} className="plate-item">
+                <img src={photo.src} alt={photoAlt(photo)} width={photo.width} height={photo.height} loading="lazy" decoding="async" />
+                <figcaption>{photo.code}</figcaption>
+              </figure>
+            ))}
+          </div>
+        </div>
+      )}
+
       <div className="cat-panel-body">
         <div className="cat-panel-left">
-          <p className="cat-panel-desc">{col.desc}</p>
-          <div className="cat-specs">
-            <div className="cat-spec-row"><span>Material</span><strong>{col.material}</strong></div>
-            <div className="cat-spec-row"><span>MOQ</span><strong>{col.moq}: mix & match allowed</strong></div>
-            <div className="cat-spec-row"><span>Total styles</span><strong>{totalSkus} SKUs across {col.series.length} series</strong></div>
-            <div className="cat-spec-row"><span>Shipping</span><strong>7-14 business days worldwide</strong></div>
-          </div>
+          <p className="cat-panel-desc lede">{col.desc}</p>
+          <dl className="spec-list">
+            <div><dt>Material</dt><dd>{col.material}</dd></div>
+            <div><dt>MOQ</dt><dd>{col.moq}: mix &amp; match allowed</dd></div>
+            <div><dt>Total styles</dt><dd>{totalSkus} SKUs across {col.series.length} series</dd></div>
+            <div><dt>Shipping</dt><dd>7-14 business days worldwide</dd></div>
+          </dl>
           {col.note && (
             <div className="cat-note">{col.note}</div>
           )}
           <a
-            href={`mailto:denis@mci-eyelashes.com?subject=Catalogue Inquiry: ${col.name}&body=Hi Denis,%0D%0A%0D%0AI'm interested in ${col.name}.%0D%0A%0D%0ACompany:%0D%0AEstimated quantity:%0D%0AStyles interested in:%0D%0ADestination:%0D%0A%0D%0AThank you`}
-            className="cat-cta"
+            href={mailto(`Catalogue Inquiry: ${col.name}`, `Hi Denis,%0D%0A%0D%0AI'm interested in ${col.name}.%0D%0A%0D%0ACompany:%0D%0AEstimated quantity:%0D%0AStyles interested in:%0D%0ADestination:%0D%0A%0D%0AThank you`)}
+            className="btn"
           >
-            Request Quote for This Collection →
+            Request Quote for This Collection
           </a>
         </div>
 
@@ -241,25 +259,14 @@ function CollectionPanel({ col }) {
             <div key={series.name} className="cat-series">
               <button
                 className={`cat-series-toggle ${openSeries === i ? 'open' : ''}`}
+                aria-expanded={openSeries === i}
                 onClick={() => setOpenSeries(openSeries === i ? null : i)}
               >
                 <span>{series.name}</span>
                 <span className="cat-series-count">{series.skus.length} styles</span>
-                <span className="cat-series-arrow">{openSeries === i ? '−' : '+'}</span>
+                <span className="cat-series-arrow" aria-hidden="true">{openSeries === i ? '−' : '+'}</span>
               </button>
-              <AnimatePresence>
-                {openSeries === i && (
-                  <motion.div
-                    initial={{ height: 0, opacity: 0 }}
-                    animate={{ height: 'auto', opacity: 1 }}
-                    exit={{ height: 0, opacity: 0 }}
-                    transition={{ duration: 0.25 }}
-                    style={{ overflow: 'hidden' }}
-                  >
-                    <SkuGrid skus={series.skus} />
-                  </motion.div>
-                )}
-              </AnimatePresence>
+              {openSeries === i && <SkuGrid skus={series.skus} />}
             </div>
           ))}
         </div>
@@ -276,8 +283,6 @@ const totalStyles = collections.reduce(
 
 export default function Catalogue() {
   const [activeCol, setActiveCol] = useState(0)
-  const headerRef = useRef(null)
-  const headerInView = useInView(headerRef, { once: true })
 
   useEffect(() => {
     setMeta(CATALOGUE_META)
@@ -286,47 +291,41 @@ export default function Catalogue() {
 
   return (
     <main className="cat-page">
-      {/* Hero */}
-      <section className="cat-hero" ref={headerRef}>
-        <motion.div
-          className="cat-hero-inner"
-          initial={{ opacity: 0, y: 30 }}
-          animate={headerInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8 }}
-        >
-          <span className="cat-eyebrow">Wholesale Catalogue 2025</span>
-          <h1 className="cat-title">Product <em>Catalogue</em></h1>
-          <p className="cat-subtitle">
+      <section className="page-hero">
+        <div className="container">
+          <p className="eyebrow">Wholesale Catalogue 2026</p>
+          <h1>Product <em>Catalogue</em></h1>
+          <p className="lede">
             {totalStyles} styles across 5 professional collections.<br />
             MOQ 100 pairs per style, private label included · Worldwide shipping 7-14 days.
           </p>
-          <div className="cat-hero-stats">
-            <div className="cat-stat"><span>5</span>Collections</div>
-            <div className="cat-stat"><span>{totalStyles}</span>Styles</div>
-            <div className="cat-stat"><span>100</span>Min. Order</div>
-            <div className="cat-stat"><span>24h</span>Quote Reply</div>
+          <div className="btn-row">
+            <a
+              href={mailto('Wholesale Catalogue Inquiry', "Hi Denis,%0D%0A%0D%0AI'd like to request a quote.%0D%0A%0D%0ACompany:%0D%0ACountry:%0D%0ACollections interested in:%0D%0AEstimated quantity:%0D%0A%0D%0AThank you")}
+              className="btn"
+            >
+              Request a Quote
+            </a>
+            <a href="/MCI-Eyelashes-Catalogue-2026-v2.pdf" className="btn-ghost" download>
+              Download PDF catalogue
+            </a>
           </div>
-          <div className="cat-hero-btns">
-          <a
-            href="mailto:denis@mci-eyelashes.com?subject=Wholesale Catalogue Inquiry&body=Hi Denis,%0D%0A%0D%0AI'd like to request a quote.%0D%0A%0D%0ACompany:%0D%0ACountry:%0D%0ACollections interested in:%0D%0AEstimated quantity:%0D%0A%0D%0AThank you"
-            className="cat-hero-cta"
-          >
-            Request a Quote
-          </a>
-          <a href="/MCI-Eyelashes-Catalogue-2026-v2.pdf" className="cat-cta-secondary" download>
-            Download PDF catalogue
-          </a>
+          <div className="stat-row">
+            <div><span>5</span>Collections</div>
+            <div><span>{totalStyles}</span>Styles</div>
+            <div><span>100</span>Min. Order</div>
+            <div><span>24h</span>Quote Reply</div>
           </div>
-        </motion.div>
+        </div>
       </section>
 
-      {/* Collection tabs */}
       <div className="cat-tabs-wrap">
         <div className="cat-tabs">
           {collections.map((col, i) => (
             <button
               key={col.key}
               className={`cat-tab ${activeCol === i ? 'active' : ''}`}
+              aria-pressed={activeCol === i}
               onClick={() => setActiveCol(i)}
             >
               <span className="cat-tab-num">{col.id}</span>
@@ -336,27 +335,19 @@ export default function Catalogue() {
         </div>
       </div>
 
-      {/* Active collection */}
-      <div className="cat-content">
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={activeCol}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -10 }}
-            transition={{ duration: 0.35 }}
-          >
-            <CollectionPanel col={collections[activeCol]} />
-          </motion.div>
-        </AnimatePresence>
-      </div>
+      <section className="section">
+        <div className="container collection-panel" key={activeCol}>
+          <CollectionPanel col={collections[activeCol]} />
+        </div>
+      </section>
 
-      {/* Pricing tiers */}
-      <section className="cat-pricing">
-        <div className="cat-pricing-inner">
-          <div className="cat-eyebrow" style={{ justifyContent: 'center' }}>Wholesale Pricing</div>
-          <h2 className="cat-pricing-title">Volume <em>Tiers</em></h2>
-          <div className="cat-pricing-grid">
+      <section className="section section--alt">
+        <div className="container">
+          <header className="section-head section-head--stack">
+            <p className="eyebrow">Wholesale Pricing</p>
+            <h2 className="title">Volume <em>Tiers</em></h2>
+          </header>
+          <div className="tier-grid">
             {tiers.map(t => (
               <div key={t.label} className={`cat-tier ${t.featured ? 'featured' : ''}`}>
                 <div className="cat-tier-moq">{t.moq} <span>pairs</span></div>
@@ -369,35 +360,31 @@ export default function Catalogue() {
             ))}
           </div>
           <p className="cat-pricing-note">
-            All prices quoted per pair. Final pricing on request based on collection, style mix, and volume.
-            <a href="mailto:denis@mci-eyelashes.com?subject=Wholesale Pricing Inquiry"> Request price list →</a>
+            All prices quoted per pair. Final pricing on request based on collection, style mix, and volume.{' '}
+            <a href={mailto('Wholesale Pricing Inquiry')} className="text-link">Request price list</a>
           </p>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="cat-final-cta">
-        <div className="cat-final-inner">
-          <h2>Ready to <em>Order?</em></h2>
-          <p>Send us your selection and estimated quantity. We'll reply with a full quotation within 24 hours.</p>
-          <div className="cat-final-btns">
+      <section className="section cat-final">
+        <div className="container container--narrow">
+          <h2 className="display">Ready to <em>Order?</em></h2>
+          <p className="lede">Send us your selection and estimated quantity. We'll reply with a full quotation within 24 hours.</p>
+          <div className="btn-row">
             <a
-              href="mailto:denis@mci-eyelashes.com?subject=Wholesale Order Inquiry&body=Hi Denis,%0D%0A%0D%0AI would like to place a wholesale order.%0D%0A%0D%0ACompany:%0D%0ACountry:%0D%0ACollections:%0D%0AQuantity:%0D%0A%0D%0AThank you"
-              className="cat-cta-primary"
+              href={mailto('Wholesale Order Inquiry', 'Hi Denis,%0D%0A%0D%0AI would like to place a wholesale order.%0D%0A%0D%0ACompany:%0D%0ACountry:%0D%0ACollections:%0D%0AQuantity:%0D%0A%0D%0AThank you')}
+              className="btn"
             >
               Request a Quote
             </a>
-            <a
-              href="mailto:denis@mci-eyelashes.com?subject=Sample Request: MCI Eyelashes"
-              className="cat-cta-secondary"
-            >
+            <a href={mailto('Sample Request: MCI Eyelashes')} className="btn-ghost">
               Request Samples
             </a>
           </div>
           <div className="cat-final-contact">
-            <span>📧 denis@mci-eyelashes.com</span>
-            <span>📍 Purbalingga, Central Java, Indonesia</span>
-            <span>🚚 Worldwide shipping 7-14 days</span>
+            <span>denis@mci-eyelashes.com</span>
+            <span>Purbalingga, Central Java, Indonesia</span>
+            <span>Worldwide shipping 7-14 days</span>
           </div>
         </div>
       </section>
