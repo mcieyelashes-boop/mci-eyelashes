@@ -2,14 +2,14 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { collectionPhotos, photoAlt } from '../data/productPhotos'
 
-// Only the five collections in the product photo catalogues. Do not add a
-// collection here unless the owner confirms MCI sells it.
+// Only the four collections the owner sells. Under Lashes was removed at the
+// owner's request (November 2026). Do not add a collection here unless the
+// owner confirms MCI sells it.
 const products = [
   { id: '01', photos: 'soft', name: 'Soft Touch Lashes', tagline: '50+ Years Heritage', badge: 'Bestseller', skus: 'IBC 1044 to IBC 3016', desc: 'The industry standard for over 50 years. Ultra lightweight and comfortable for all-day wear, ideal for daily use and professional applications.', specs: ['Natural · Wispy · Volume series', 'Korean synthetic fiber', 'Tapered-end technology', '60+ styles available'], moq: '100 pairs' },
   { id: '02', photos: 'threeD', name: '3D Luxe Lashes', tagline: 'Premium Volume', badge: 'Premium', skus: 'IBC 6002 to IBC 6184', desc: 'Multi-layer 3D construction for extraordinary depth and volume. Perfect for bridal, editorial, and clients who want maximum impact.', specs: ['Multi-layer 3D construction', '29 styles available', 'Bridal · editorial · events', 'High drama finish'], moq: '100 pairs' },
   { id: '03', photos: 'faux', name: 'Faux Mink', tagline: 'Protein Silk · Ethical Luxury', badge: 'Cruelty Free', skus: 'FM 20-002 to FM 22-199', desc: 'Protein silk technology delivers the look of genuine mink without animal products. Ultra-soft, lightweight drape for vegan salons.', specs: ['100% cruelty free', 'Protein silk fiber', 'Mink-like softness', '100% vegan'], moq: '100 pairs' },
   { id: '04', photos: 'human', name: 'Human Hair Classic', tagline: '100% Sterilized · Most Natural', badge: 'Ultra Natural', skus: 'IBC 1042 to IBC 1256', desc: 'The absolute most natural look. 100% sterilized human hair that blends seamlessly with existing lashes.', specs: ['100% sterilized human hair', 'Hand-inspected before dispatch', 'Most natural appearance', 'Premium salon grade'], moq: '100 pairs' },
-  { id: '05', photos: null, name: 'Under Lashes', tagline: 'Lower Lash Line Specialty', badge: 'Specialty', skus: 'IBC 1052-U to IBC 6098-U', desc: 'Designed specifically for the lower lash line. A unique upsell for your salon with 18 distinct styles.', specs: ['Lower lash line design', 'Tapered-End technology', '18 styles available', 'Unique upsell'], moq: '100 pairs' },
 ]
 
 export default function Products() {
@@ -32,7 +32,7 @@ export default function Products() {
         <header className="section-head">
           <div>
             <p className="eyebrow">Our Collections</p>
-            <h2 className="title">Five Lash Collections <em>Built to Order</em></h2>
+            <h2 className="title">Four Lash Collections <em>Built to Order</em></h2>
           </div>
           <p className="lede">
             Every style has its own code. These are real lashes from the catalogue, photographed on white.

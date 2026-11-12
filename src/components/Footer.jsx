@@ -9,7 +9,6 @@ const footerLinks = {
     { label: '3D Luxe Lashes',           href: '/3d-luxe-volume-lashes-wholesale' },
     { label: 'Faux Mink - Protein Silk', href: '/faux-mink-lashes-wholesale' },
     { label: 'Classic Human Hair',       href: '/human-hair-lashes-wholesale' },
-    { label: 'Under Lashes',             href: '/under-lashes-wholesale' },
   ],
   Manufacturing: [
     { label: 'Eyelash Factory Indonesia',       href: '/' },
@@ -49,7 +48,7 @@ export default function Footer() {
         <div className="footer-inner">
           <div className="footer-brand">
             <div className="footer-logo">
-              <img src="/logo-mci.png" alt="MCI Eyelashes" width="422" height="430" loading="lazy" decoding="async" />
+              <img src="/logo-mci-192.webp" alt="MCI Eyelashes" width="192" height="196" loading="lazy" decoding="async" />
             </div>
             <p className="footer-tagline">
               Factory-direct wholesale eyelash collections for salons, spas, and distributors. MOQ 100 pairs per style. Free samples on catalog styles.

@@ -71,9 +71,11 @@ export default function Navbar() {
   return (
     <header className={`navbar${scrolled ? ' scrolled' : ''}${menuOpen ? ' menu-open' : ''}`}>
       <div className="nav-inner">
-        {/* The owner's gold monogram, used exactly as supplied, with no wordmark beside it. */}
+        {/* The owner's gold monogram with no wordmark beside it. logo-mci-192.webp is
+            the owner's public/logo-mci.png scaled down, with the grey checkerboard that
+            was baked into that file removed (owner approved the correction). */}
         <Link to="/" className="nav-logo" aria-label="MCI Eyelashes home" onClick={() => setMenuOpen(false)}>
-          <img src="/logo-mci.png" alt="MCI Eyelashes" width="422" height="430" />
+          <img src="/logo-mci-192.webp" alt="MCI Eyelashes" width="192" height="196" />
         </Link>
 
         <nav className="nav-links" aria-label="Main">

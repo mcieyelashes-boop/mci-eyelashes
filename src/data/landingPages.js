@@ -43,7 +43,7 @@ export const landingPages = [
       {
         heading: 'What MCI Eyelashes makes',
         paragraphs: [
-          'We make handmade lashes in mink, silk, synthetic and human hair, organized in five collections: Soft Touch, 3D Luxe, Faux Mink - Protein Silk, Classic - Human Hair, and Under Lashes. You can browse them in the [product catalogue](/catalogue) or read about how they are made on our [handmade eyelashes](/handmade-eyelashes) page.',
+          'We make handmade lashes in mink, silk, synthetic and human hair, organized in four collections: Soft Touch, 3D Luxe, Faux Mink - Protein Silk, and Classic - Human Hair. You can browse them in the [product catalogue](/catalogue) or read about how they are made on our [handmade eyelashes](/handmade-eyelashes) page.',
           'If you want a design of your own, we produce [OEM](/eyelash-oem-indonesia) on existing styles and develop [private label](/private-label-eyelashes) lashes to your own specification.',
         ],
       },
@@ -79,7 +79,7 @@ export const landingPages = [
       { q: 'What is the minimum order for an Indonesian eyelash manufacturer like MCI?', a: 'At MCI the minimum is 100 pairs per style, and you can mix and match styles within one order. Other factories set their own minimums, so ask each one in writing.' },
       { q: 'How long does shipping from Indonesia take?', a: 'It depends on the method and your destination. Express courier is fastest, sea freight is slowest. Our catalogue lists worldwide shipping at 7 to 14 days.' },
       { q: 'Can I verify that MCI is a real factory before ordering?', a: 'Yes. We welcome a live video call to our production floor in Purbalingga before you send any money.' },
-      { q: 'What materials does MCI manufacture in?', a: 'We manufacture handmade lashes in four materials (mink, silk, synthetic, human hair) across five collections in our product catalogue.' },
+      { q: 'What materials does MCI manufacture in?', a: 'We manufacture handmade lashes in four materials (mink, silk, synthetic, human hair) across four collections in our product catalogue.' },
     ],
   },
   {
@@ -293,7 +293,7 @@ export const landingPages = [
     metaDescription: 'MCI Eyelashes supplies wholesale eyelashes factory-direct from Indonesia, mink, silk, synthetic, and human hair lashes, MOQ 100 pairs per style, mix and match.',
     h1: 'Wholesale Eyelashes Supplier',
     breadcrumbName: 'Wholesale Eyelashes',
-    intro: 'MCI Eyelashes sells wholesale eyelashes factory direct from Purbalingga, Indonesia. This page puts our wholesale terms in one place and shows how salons, distributors and online sellers can build a first order from our five collections.',
+    intro: 'MCI Eyelashes sells wholesale eyelashes factory direct from Purbalingga, Indonesia. This page puts our wholesale terms in one place and shows how salons, distributors and online sellers can build a first order from our four collections.',
     factSheet: [
       { label: 'MOQ', value: '100 pairs per style, mix & match allowed' },
       { label: 'Production', value: '5 working days for 100-pair orders' },
@@ -315,14 +315,13 @@ export const landingPages = [
         paragraphs: ['Everything a wholesale buyer usually asks first:'],
       },
       {
-        heading: 'The five collections',
-        paragraphs: ['Our catalogue groups every style into five collections, so a first order means choosing a mix rather than searching a long list:'],
+        heading: 'The four collections',
+        paragraphs: ['Our catalogue groups every style into four collections, so a first order means choosing a mix rather than searching a long list:'],
         list: [
           '[Soft Touch](/soft-touch-lashes-wholesale): our bestseller in Korean Synthetic and human hair, in seven series.',
           '[3D Luxe](/3d-luxe-volume-lashes-wholesale): multi-layer synthetic volume for bridal, editorial and event looks.',
           '[Faux Mink, Protein Silk](/faux-mink-lashes-wholesale): the soft mink look without animal products.',
           '[Classic Human Hair](/human-hair-lashes-wholesale): 100% sterilized human hair for the most natural finish.',
-          '[Under Lashes](/under-lashes-wholesale): styles for the lower lash line that pair with any top lash.',
         ],
       },
       {
@@ -396,7 +395,7 @@ export const landingPages = [
       {
         heading: 'What we make on our Purbalingga floor',
         paragraphs: [
-          'We make handmade lashes in mink, silk, synthetic and human hair, organized into five collections in the [product catalogue](/catalogue). Wholesale orders start at 100 pairs per style, mixed across styles, with 5 working days of production for a 100-pair order. We also produce [OEM](/eyelash-oem-indonesia) and [private label](/private-label-eyelashes) lashes on the same floor.',
+          'We make handmade lashes in mink, silk, synthetic and human hair, organized into four collections in the [product catalogue](/catalogue). Wholesale orders start at 100 pairs per style, mixed across styles, with 5 working days of production for a 100-pair order. We also produce [OEM](/eyelash-oem-indonesia) and [private label](/private-label-eyelashes) lashes on the same floor.',
         ],
       },
       {
@@ -592,7 +591,6 @@ export const landingPages = [
         heading: 'Choosing your first 3D Luxe styles',
         paragraphs: [
           'Volume lashes are a matter of taste, so let samples do the choosing. Order a spread across the code ranges, try them on a few clients, and keep the two or three that people ask about.',
-          'If you sell to brides, pair a 3D Luxe style with one of our [Under Lashes](/under-lashes-wholesale) for a complete eye look. Under Lashes go in the same order, at 100 pairs per style.',
           'Tell your customers how to wear a heavier lash. Trim the band to the width of the eye from the outer end, and let the glue turn tacky before applying it, so the extra weight holds at the corners through a long event.',
         ],
       },
@@ -761,75 +759,6 @@ export const landingPages = [
     ],
   },
   {
-    slug: 'under-lashes-wholesale',
-    title: 'Under Lashes Wholesale | MCI Eyelashes',
-    metaDescription: 'Wholesale under lashes from MCI Eyelashes: Soft Touch Tapered-End technology for the lower lash line, 18 styles, 100-pair MOQ, factory direct from Indonesia.',
-    h1: 'Under Lashes Wholesale',
-    breadcrumbName: 'Under Lashes',
-    intro: 'Under Lashes is our specialty collection for the lower lash line, built with Soft Touch Tapered-End technology, sold wholesale from 100 pairs per style. This page explains what the category is, who stocks it, and how to add it to a first order.',
-    factSheet: [
-      { label: 'Collection', value: 'Under Lashes' },
-      { label: 'Status', value: 'Specialty, Unique Category' },
-      { label: 'Material', value: 'Soft Touch Tapered-End' },
-      { label: 'Range', value: '1 series, 18 styles' },
-      { label: 'MOQ', value: '100 pairs per style, mix & match allowed' },
-      { label: 'Samples', value: 'Free on existing catalog styles, buyer covers shipping' },
-    ],
-    sections: [
-      {
-        heading: 'What Under Lashes Are',
-        paragraphs: [
-          'Under Lashes are built for the lower lash line rather than the top. Soft Touch Tapered-End technology frames the under-eye with a soft line instead of leaving it bare next to a full top lash.',
-          'Most strip lash catalogues stop at the top line. Our own catalogue calls this a unique category, and it opens an additional retail opportunity for buyers who want to offer a complete eye look rather than a single product.',
-        ],
-      },
-      {
-        heading: 'Who Stocks Under Lashes, and Why',
-        paragraphs: [
-          'Salons that already sell a full top lash set add Under Lashes to complete the look for clients who want the whole eye styled, not just the top line. It sits alongside any of our top collections, [Soft Touch](/soft-touch-lashes-wholesale), [3D Luxe](/3d-luxe-volume-lashes-wholesale) or [Classic Human Hair](/human-hair-lashes-wholesale), as a paired addition rather than a separate purchase decision.',
-          'Distributors add it because a retailer who already carries the common top lash styles still has to source under lashes elsewhere, or skip the category. Carrying both saves that buyer a second supplier.',
-        ],
-      },
-      {
-        heading: 'Who Should Wait on This Collection',
-        paragraphs: [
-          'If your market has never seen a dedicated under-lash product before, introduce it as a pairing with a style your customers already buy, rather than as a standalone listing. A market that does not yet ask for it needs a short explanation before it needs a purchase button.',
-        ],
-      },
-      {
-        heading: 'The Under Lash Series',
-        paragraphs: ['The collection is one series, eighteen styles, all built on the same Soft Touch Tapered-End construction so a lower lash pairs cleanly with whichever top style your customer chooses.'],
-        list: [
-          'Pairs with any top lash collection in our catalogue for a complete eye look.',
-          'Sized and shaped for the lower lash line, not a top-lash style cut down.',
-          'Full SKU listing available on request.',
-        ],
-      },
-      {
-        heading: 'Ordering Your First Under Lash Styles',
-        paragraphs: [
-          'The minimum is 100 pairs per style, and you can mix Under Lash styles with any top collection in the same order to reach the combined minimum. A common first order pairs one Under Lash style with the top styles you already stock, so you can offer the complete look without a second supplier.',
-          'Samples on existing Under Lash styles cost nothing but the shipping. Try one next to whichever top style sells best for you, and see how the two sit together on a real client before you list the pairing.',
-        ],
-      },
-      {
-        heading: 'Private Label and Next Steps',
-        paragraphs: [
-          'Under Lash styles are open to the same two paths as the rest of our catalogue: your branding on an existing style through [OEM](/eyelash-oem-indonesia), or a design built from scratch through [private label](/private-label-eyelashes), specifying curl, length and packaging yourself. Production runs 5 working days for a 100-pair order, then your shipment travels on to its destination.',
-          'The [product catalogue](/catalogue) has the wider range, and [wholesale eyelashes](/wholesale-eyelashes) sets out our standard terms in one place. A live video call to our production floor is available any time you want to verify things before you commit.',
-        ],
-      },
-    ],
-    faq: [
-      { q: 'What are Under Lashes?', a: 'Under Lashes are MCI Eyelashes’ specialty collection built for the lower lash line, using Soft Touch Tapered-End technology instead of a top-lash style cut down to size.' },
-      { q: 'What is the MOQ for Under Lashes?', a: 'The minimum is 100 pairs per style, and you can mix Under Lash styles with any top collection in the same order to reach it.' },
-      { q: 'How many styles are in the Under Lashes collection?', a: 'There are eighteen styles in one series, the Under Lash Series. A full style listing is available on request.' },
-      { q: 'Do Under Lashes replace a top lash, or pair with one?', a: 'They pair with a top lash. Under Lashes are sized and shaped for the lower lash line, not as a standalone substitute for a top style.' },
-      { q: 'Can I get a sample of Under Lashes before ordering wholesale?', a: 'Yes. Samples on existing Under Lash catalog styles are free, and you only cover the shipping to your address.' },
-      { q: 'Can Under Lash styles be private labeled?', a: 'Yes. Under Lash styles can be produced as OEM under your brand, or developed as private label with custom curl, length, material and packaging.' },
-    ],
-  },
-  {
     slug: 'low-moq-eyelash-manufacturer',
     title: 'Low MOQ Eyelash Manufacturer | MCI Eyelashes',
     metaDescription: 'MCI Eyelashes sells factory direct with a 100-pair MOQ per style, mixed and matched, and the same minimum on private label and OEM orders.',
@@ -905,7 +834,7 @@ export const landingPages = [
     factSheet: [
       { label: 'Request cost', value: 'Samples free on existing catalog styles, buyer covers shipping' },
       { label: 'Reply time', value: 'Catalogue and price sheet within 24 hours' },
-      { label: 'Collections to choose from', value: 'Soft Touch, 3D Luxe, Faux Mink, Human Hair, Under Lashes' },
+      { label: 'Collections to choose from', value: 'Soft Touch, 3D Luxe, Faux Mink, Human Hair' },
       { label: 'First order after samples', value: '100 pairs per style, mix & match allowed' },
       { label: 'Production', value: '5 working days for 100-pair orders' },
       { label: 'Verification', value: 'Live production-floor video call, on request' },
@@ -927,7 +856,7 @@ export const landingPages = [
       {
         heading: 'Choosing which styles to request',
         paragraphs: [
-          'Picking blind rarely goes well. Our catalogue holds [five collections](/catalogue): [Soft Touch](/soft-touch-lashes-wholesale) in Korean synthetic and human hair, [3D Luxe](/3d-luxe-volume-lashes-wholesale) in multi-layer synthetic, [Faux Mink](/faux-mink-lashes-wholesale) in cruelty-free protein silk, [Classic Human Hair](/human-hair-lashes-wholesale), and [Under Lashes](/under-lashes-wholesale) for the lower lash line.',
+          'Picking blind rarely goes well. Our catalogue holds [four collections](/catalogue): [Soft Touch](/soft-touch-lashes-wholesale) in Korean synthetic and human hair, [3D Luxe](/3d-luxe-volume-lashes-wholesale) in multi-layer synthetic, [Faux Mink](/faux-mink-lashes-wholesale) in cruelty-free protein silk, and [Classic Human Hair](/human-hair-lashes-wholesale).',
           'If your market already asks for a dramatic finish or a natural one, request one or two styles from the matching collection. If you do not know yet, request one style from three different collections and let a few real clients compare them before you commit pairs to any single look.',
         ],
       },
@@ -978,7 +907,7 @@ export const landingPages = [
       {
         heading: 'Reselling an existing catalog, not developing a new one',
         paragraphs: [
-          'A distributor\'s job is supply, not design. You are choosing from styles that already exist across our [five collections](/catalogue) rather than briefing a new curl, length or material from scratch. That keeps the decision simpler: pick the styles your market already asks for, confirm the minimum, and place the order. If you also want a design built for your own brand on top of distribution, that is a separate path, covered on our [private label](/private-label-eyelashes) page. If the terms manufacturer, wholesaler and distributor still blur together, our [guide to the three roles](/blog/eyelash-manufacturer-vs-wholesaler-vs-distributor) sets out what each one actually controls.',
+          'A distributor\'s job is supply, not design. You are choosing from styles that already exist across our [four collections](/catalogue) rather than briefing a new curl, length or material from scratch. That keeps the decision simpler: pick the styles your market already asks for, confirm the minimum, and place the order. If you also want a design built for your own brand on top of distribution, that is a separate path, covered on our [private label](/private-label-eyelashes) page. If the terms manufacturer, wholesaler and distributor still blur together, our [guide to the three roles](/blog/eyelash-manufacturer-vs-wholesaler-vs-distributor) sets out what each one actually controls.',
         ],
       },
       {
@@ -1022,7 +951,7 @@ export const landingPages = [
     ],
     faq: [
       { q: 'Who counts as a distributor for a wholesale eyelash order?', a: 'Anyone buying existing catalog styles to resell to salons, retailers or other buyers, rather than developing a new design for their own brand.' },
-      { q: 'Can a distributor mix styles across different collections in one order?', a: 'Yes. The 100-pair minimum applies per style, so a single order can combine styles from Soft Touch, 3D Luxe, Faux Mink, Human Hair and Under Lashes to reach it.' },
+      { q: 'Can a distributor mix styles across different collections in one order?', a: 'Yes. The 100-pair minimum applies per style, so a single order can combine styles from Soft Touch, 3D Luxe, Faux Mink and Human Hair to reach it.' },
       { q: 'Does buying factory direct change how fast I get an answer on stock?', a: 'Yes. Because we work from the same production floor that makes the order, we can tell you the same day whether a style is ready, in production or needs scheduling.' },
       { q: 'Is there a discount for distributors ordering above the minimum?', a: 'Volume tiers exist above the 100-pair starting point, but we quote those terms directly once we know the styles and how the order repeats, rather than publishing a fixed figure.' },
       { q: 'How can a distributor verify MCI Eyelashes before committing?', a: 'Ask for a live video call to our production floor in Purbalingga before placing a standing order, and ask to see the specific styles you plan to carry.' },

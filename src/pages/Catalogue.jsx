@@ -153,23 +153,6 @@ const collections = [
       },
     ],
   },
-  {
-    id: '05',
-    key: 'under',
-    name: 'Under Lashes',
-    tagline: 'Lower Lash Line · Tapered-End Tech',
-    badge: 'Specialty',
-    heritage: 'Unique Category',
-    material: 'Soft Touch Tapered-End',
-    moq: '100 pairs',
-    desc: 'Designed specifically for the lower lash line. Soft Touch Tapered-End technology creates natural under-eye framing. A unique product that opens an additional retail opportunity.',
-    series: [
-      {
-        name: 'Under Lash Series',
-        skus: ['IBC 1052-U','IBC 6082-U','IBC 6083-U','IBC 6084-U','IBC 6085-U','IBC 6086-U','IBC 6087-U','IBC 6088-U','IBC 6089-U','IBC 6090-U','IBC 6091-U','IBC 6092-U','IBC 6093-U','IBC 6094-U','IBC 6095-U','IBC 6096-U','IBC 6097-U','IBC 6098-U'],
-      },
-    ],
-  },
 ]
 
 // Only the Starter row reflects owner-confirmed terms (MOQ 100 pairs per style,
@@ -296,7 +279,7 @@ export default function Catalogue() {
           <p className="eyebrow">Wholesale Catalogue 2026</p>
           <h1>Product <em>Catalogue</em></h1>
           <p className="lede">
-            {totalStyles} styles across 5 professional collections.<br />
+            {totalStyles} styles across {collections.length} professional collections.<br />
             MOQ 100 pairs per style, private label included · Worldwide shipping 7-14 days.
           </p>
           <div className="btn-row">
@@ -311,7 +294,7 @@ export default function Catalogue() {
             </a>
           </div>
           <div className="stat-row">
-            <div><span>5</span>Collections</div>
+            <div><span>{collections.length}</span>Collections</div>
             <div><span>{totalStyles}</span>Styles</div>
             <div><span>100</span>Min. Order</div>
             <div><span>24h</span>Quote Reply</div>

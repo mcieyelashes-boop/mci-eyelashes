@@ -1573,7 +1573,7 @@ Request what you need through our [sample and catalogue page](/eyelash-samples-c
       },
       {
         q: 'Can a wholesaler and a distributor buy from the same catalog?',
-        a: 'Yes. Both buy from the same 100-pair-per-style minimum and the same five collections. What differs is how they use the order afterward: a wholesaler typically resells a range once, while a distributor carries the catalog on a recurring basis for a market.',
+        a: 'Yes. Both buy from the same 100-pair-per-style minimum and the same four collections. What differs is how they use the order afterward: a wholesaler typically resells a range once, while a distributor carries the catalog on a recurring basis for a market.',
       },
       {
         q: 'Does buying factory direct mean I pay less than going through a wholesaler?',
@@ -1588,18 +1588,18 @@ Request what you need through our [sample and catalogue page](/eyelash-samples-c
   {
     slug: 'which-eyelash-material-has-best-margin',
     title: 'Which Eyelash Material Gives the Best Resale Profit Margin?',
-    metaDescription: 'Synthetic, Faux Mink, Human Hair and Under Lashes each carry a different margin story for a reseller. Here is how to compare them beyond cost per pair.',
+    metaDescription: 'Synthetic, Faux Mink and Human Hair each carry a different margin story for a reseller. Here is how to compare them beyond cost per pair.',
     category: 'Product Guide',
     date: '2026-10-26',
     readTime: '8 min read',
-    excerpt: 'Margin is not fixed by what a material costs to buy. It is shaped by how each one lets you price, position and reorder. Here is how Synthetic, Faux Mink, Human Hair and our Under Lash material compare for a reseller.',
+    excerpt: 'Margin is not fixed by what a material costs to buy. It is shaped by how each one lets you price, position and reorder. Here is how Synthetic, Faux Mink and Human Hair compare for a reseller.',
     coverAlt: 'Comparing eyelash materials by resale margin potential for wholesale buyers',
     sections: [
       {
         heading: 'Margin is not a property of the material alone',
         body: `Ask which material has the best margin and the honest answer is: none of them, by themselves. Margin is the gap between what you pay per pair and what your own market pays you back, and a material only sets one side of that gap. The other side is set by how you price, package and position whatever you stock, and that half is entirely yours to control.
 
-What a material does change is how wide that gap can get before a customer notices. Some materials carry a story that supports a higher shelf price without you doing anything extra. Others compete on price because every reseller stocks something close to the same thing, which caps how much room you have before a customer looks elsewhere. Looking at MCI's four material lines through that lens tells you more about your likely margin than comparing cost per pair on its own.`,
+What a material does change is how wide that gap can get before a customer notices. Some materials carry a story that supports a higher shelf price without you doing anything extra. Others compete on price because every reseller stocks something close to the same thing, which caps how much room you have before a customer looks elsewhere. Looking at MCI's three material lines through that lens tells you more about your likely margin than comparing cost per pair on its own.`,
       },
       {
         heading: 'Synthetic: the widest market, the thinnest story',
@@ -1615,21 +1615,15 @@ The margin advantage here is not that protein silk costs less to produce. It is 
       },
       {
         heading: 'Human Hair: the premium ceiling, only if you price it that way',
-        body: `Classic - Human Hair is positioned as the most natural option in our catalog, made from sterilized human hair that meets international cosmetic safety standards. It is the line most likely to support a premium shelf price, because the material itself sounds the most expensive of the four.
+        body: `Classic - Human Hair is positioned as the most natural option in our catalog, made from sterilized human hair that meets international cosmetic safety standards. It is the line most likely to support a premium shelf price, because the material itself sounds the most expensive of the three.
 
 That ceiling only becomes a margin if you actually price the finished style as premium rather than stocking it next to everything else at the same number. A reseller who buys Human Hair samples and prices them like the rest of the shelf is paying for a premium material and collecting a standard margin, which is the one real trap in this comparison.`,
       },
       {
-        heading: 'Under Lashes: margin protected by having no direct comparison',
-        body: `Under Lashes sit on the lower lash line rather than replacing a top lash, and almost nothing else in a typical wholesale catalog does the same job. A customer who wants that look cannot easily compare your price against five other sellers carrying the identical product, because few of them carry it at all.
-
-That lack of comparison is a margin advantage most buyers overlook. It has nothing to do with the material outperforming the others on quality and everything to do with the category carrying less price pressure in the first place. Our [Under Lashes page](/under-lashes-wholesale) covers how the product works and where it fits in a first order.`,
-      },
-      {
         heading: 'Building a first order around margin, not just material',
-        body: `The 100-pair-per-style minimum applies the same way across all four lines, and mixing styles to reach it means you do not have to commit to one material before you know how your own market responds. A first order spread across two or three of these lines, tested through [samples](/eyelash-samples-catalogue-request) before you commit pairs to any single look, tells you which margin story actually holds up with your own customers.
+        body: `The 100-pair-per-style minimum applies the same way across all three lines, and mixing styles to reach it means you do not have to commit to one material before you know how your own market responds. A first order spread across two or all three of these lines, tested through [samples](/eyelash-samples-catalogue-request) before you commit pairs to any single look, tells you which margin story actually holds up with your own customers.
 
-Compare the four on cost alone and Synthetic will usually look cheapest on paper. Compare them on what each one lets you charge, and the material with the best margin for you depends on which story your customers are willing to pay for, not on a fixed ranking that applies the same way to every reseller.`,
+Compare the three on cost alone and Synthetic will usually look cheapest on paper. Compare them on what each one lets you charge, and the material with the best margin for you depends on which story your customers are willing to pay for, not on a fixed ranking that applies the same way to every reseller.`,
       },
     ],
     faq: [
@@ -1639,15 +1633,11 @@ Compare the four on cost alone and Synthetic will usually look cheapest on paper
       },
       {
         q: 'Can I compare more than one material before committing to a full order?',
-        a: 'Yes. Samples on existing catalog styles are free, and you cover the shipping, so you can compare Synthetic, Faux Mink, Human Hair and Under Lash samples side by side before any pairs commit to a single material.',
+        a: 'Yes. Samples on existing catalog styles are free, and you cover the shipping, so you can compare Synthetic, Faux Mink and Human Hair samples side by side before any pairs commit to a single material.',
       },
       {
         q: 'Why does Faux Mink support a higher price than plain synthetic?',
         a: 'Faux Mink carries a cruelty-free story built into the material itself, protein silk fiber shaped to give the soft, full look associated with fur. That story gives a customer a reason to pay more for the same softness, which plain synthetic does not carry on its own.',
-      },
-      {
-        q: 'Do Under Lashes carry a different margin story than top lash styles?',
-        a: 'Yes. Under Lashes compete with almost nothing else in a typical wholesale catalog, so a customer cannot easily compare your price against several other sellers carrying the identical product, which protects the margin regardless of the material cost.',
       },
     ],
   },
