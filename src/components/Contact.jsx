@@ -6,10 +6,59 @@ const EJS_SERVICE  = import.meta.env.VITE_EMAILJS_SERVICE_ID  || ''
 const EJS_TEMPLATE = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || ''
 const EJS_KEY      = import.meta.env.VITE_EMAILJS_PUBLIC_KEY  || ''
 
-// Until the three EmailJS values are set on the host the form cannot send, so
-// the panel says so and points to email and WhatsApp. Setting them brings the
-// form back with no code change.
-const FORM_ENABLED = Boolean(EJS_SERVICE && EJS_TEMPLATE && EJS_KEY)
+// How an inquiry reaches the inbox.
+//
+// 1. If the three EmailJS values are set on the host, EmailJS sends it.
+// 2. Otherwise it goes through FormSubmit, a mail relay that needs no account
+//    and no keys: the form posts to the address below and FormSubmit forwards
+//    it. The very first submission makes FormSubmit email that address an
+//    "Activate Form" link. Until the owner clicks it, nothing is forwarded.
+//
+// Either way the inquiry is also filed in Sales OS the moment the visitor
+// presses send (see handleSubmit), so a mail failure cannot lose a lead.
+const INBOX = 'denis@mci-eyelashes.com'
+const FORMSUBMIT_URL = `https://formsubmit.co/ajax/${INBOX}`
+const USE_EMAILJS = Boolean(EJS_SERVICE && EJS_TEMPLATE && EJS_KEY)
+
+async function sendByEmailJS(form) {
+  await emailjs.send(EJS_SERVICE, EJS_TEMPLATE, {
+    from_name:  `${form.firstName} ${form.lastName}`.trim(),
+    from_email: form.email,
+    company:    form.company || '-',
+    country:    form.country,
+    volume:     form.volume  || '-',
+    message:    `${form.message || '-'}\n\n[page: ${pageRef()}]`,
+    reply_to:   form.email,
+    to_name:    'Denis',
+  }, EJS_KEY)
+}
+
+async function sendByFormSubmit(form) {
+  const name = `${form.firstName} ${form.lastName}`.trim()
+  const res = await fetch(FORMSUBMIT_URL, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+    body: JSON.stringify({
+      _subject:  `Wholesale inquiry from ${name} (${form.country})`,
+      _replyto:  form.email,
+      _template: 'table',
+      _captcha:  'false',
+      Name:      name,
+      Email:     form.email,
+      Company:   form.company || '-',
+      Country:   form.country,
+      'Monthly volume': form.volume || '-',
+      Message:   form.message || '-',
+      Page:      pageRef(),
+    }),
+  })
+  const data = await res.json().catch(() => ({}))
+  // FormSubmit answers 200 with success "false" when it refuses a message
+  // (for example while the form is still waiting to be activated).
+  if (!res.ok || String(data.success) !== 'true') {
+    throw new Error(data.message || `FormSubmit answered ${res.status}`)
+  }
+}
 
 // ─── Order tiers — only the Starter row is fully confirmed ───────────────────
 // CONFIRMED:  100 pairs/style MOQ · free sample (buyer pays shipping) · 5-day lead time
@@ -52,7 +101,8 @@ const VOLUMES = [
   '1,000+ pairs',
 ]
 
-const EMPTY_FORM = { firstName: '', lastName: '', email: '', company: '', country: '', volume: '', message: '' }
+// `website` is a honeypot: people never see it, bots fill it in.
+const EMPTY_FORM = { firstName: '', lastName: '', email: '', company: '', country: '', volume: '', message: '', website: '' }
 
 export default function Contact() {
   const [sent, setSent]       = useState(false)
@@ -71,35 +121,26 @@ export default function Contact() {
       return
     }
 
-    if (!EJS_SERVICE || !EJS_TEMPLATE || !EJS_KEY) {
-      setError('Online form is not configured yet. Please email us directly at denis@mci-eyelashes.com')
+    // A filled honeypot means a bot. Show it success and send nothing.
+    if (form.website) {
+      setSent(true)
       return
     }
 
     setLoading(true)
-
-    const templateParams = {
-      from_name:    `${form.firstName} ${form.lastName}`.trim(),
-      from_email:   form.email,
-      company:      form.company || '-',
-      country:      form.country,
-      volume:       form.volume  || '-',
-      message:      `${form.message || '-'}\n\n[page: ${pageRef()}]`,
-      reply_to:     form.email,
-      to_name:      'Denis',
-    }
+    // File the lead first, so it is kept even if the email below fails.
+    reportWholesaleInquiry(form)
 
     try {
-      await emailjs.send(EJS_SERVICE, EJS_TEMPLATE, templateParams, EJS_KEY)
+      await (USE_EMAILJS ? sendByEmailJS(form) : sendByFormSubmit(form))
       setLoading(false)
       setSent(true)
       track('generate_lead', { form: 'wholesale_inquiry', order_range: form.volume || 'not_given' })
       reportInquiry(form.volume)
-      reportWholesaleInquiry(form)
     } catch (err) {
-      console.error('[EmailJS]', err)
+      console.error('[inquiry]', err)
       setLoading(false)
-      setError('Something went wrong. Please email us directly at denis@mci-eyelashes.com')
+      setError('We could not send your inquiry just now. Please reach us directly instead:')
     }
   }
 
@@ -161,19 +202,7 @@ export default function Contact() {
           </div>
 
           <div className="contact-form">
-            {!FORM_ENABLED ? (
-              <div className="form-state">
-                <h3>Online form unavailable</h3>
-                <p>
-                  Please email or message us on WhatsApp directly. Tell us the product type, order size and your country,
-                  and we reply within 24 hours with the catalog and price sheet.
-                </p>
-                <div className="btn-row">
-                  <a className="btn" href={mailHref}>Email us</a>
-                  <a className="btn-ghost" href={waHref} target="_blank" rel="noopener noreferrer">WhatsApp us</a>
-                </div>
-              </div>
-            ) : sent ? (
+            {sent ? (
               <div className="form-state" role="status">
                 <h3>Inquiry Sent</h3>
                 <p>Thank you. Our team will respond within 24 hours with your personalized wholesale package.</p>
@@ -222,7 +251,21 @@ export default function Contact() {
                   <textarea id="cf-message" rows={4} value={form.message} onChange={update('message')} placeholder="Tell us about your wholesale needs: product types, target market, or any custom requirements..." />
                 </div>
 
-                {error && <p className="form-error" role="alert">{error}</p>}
+                <div className="form-trap" aria-hidden="true">
+                  <label htmlFor="cf-website">Website</label>
+                  <input id="cf-website" name="website" tabIndex={-1} autoComplete="off" value={form.website} onChange={update('website')} />
+                </div>
+
+                {error && (
+                  <div className="form-error" role="alert">
+                    <p>{error}</p>
+                    <p>
+                      <a className="text-link" href={mailHref}>Email us</a>
+                      {' or '}
+                      <a className="text-link" href={waHref} target="_blank" rel="noopener noreferrer">WhatsApp us</a>
+                    </p>
+                  </div>
+                )}
 
                 <button type="submit" className="btn btn-submit" disabled={loading}>
                   {loading ? <span className="btn-submit-spinner" aria-label="Sending" /> : 'Send Inquiry'}
