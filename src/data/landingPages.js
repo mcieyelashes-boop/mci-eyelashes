@@ -318,7 +318,7 @@ export const landingPages = [
         heading: 'The four collections',
         paragraphs: ['Our catalogue groups every style into four collections, so a first order means choosing a mix rather than searching a long list:'],
         list: [
-          '[Soft Touch](/soft-touch-lashes-wholesale): our bestseller in Korean Synthetic and human hair, in seven series.',
+          '[Soft Touch](/soft-touch-lashes-wholesale): Korean Synthetic and human hair, in seven series.',
           '[3D Luxe](/3d-luxe-volume-lashes-wholesale): multi-layer synthetic volume for bridal, editorial and event looks.',
           '[Faux Mink, Protein Silk](/faux-mink-lashes-wholesale): the soft mink look without animal products.',
           '[Classic Human Hair](/human-hair-lashes-wholesale): 100% sterilized human hair for the most natural finish.',
@@ -484,10 +484,9 @@ export const landingPages = [
     metaDescription: 'Wholesale Soft Touch Lashes from MCI Eyelashes, Korean Synthetic and Human Hair, 7 series, 77 SKUs, 100-pair MOQ per style, factory direct from Indonesia.',
     h1: 'Soft Touch Lashes Wholesale',
     breadcrumbName: 'Soft Touch Lashes',
-    intro: 'Soft Touch Lashes is MCI Eyelashes’ bestselling collection, built from Korean Synthetic fiber and 100% sterilized Human Hair with tapered technology, available wholesale from a 100-pair MOQ per style.',
+    intro: 'Soft Touch Lashes is MCI Eyelashes’ everyday collection, built from Korean Synthetic fiber and 100% sterilized Human Hair with tapered technology, available wholesale from a 100-pair MOQ per style.',
     factSheet: [
       { label: 'Collection', value: 'Soft Touch Lashes' },
-      { label: 'Status', value: 'Bestseller' },
       { label: 'Material', value: 'Korean Synthetic / Human Hair' },
       { label: 'Series', value: '7 series, 77 SKUs' },
       { label: 'MOQ', value: '100 pairs per style: mix & match allowed' },
@@ -495,7 +494,7 @@ export const landingPages = [
     ],
     sections: [
       {
-        heading: 'Why Soft Touch is our bestseller',
+        heading: 'Why Soft Touch is the collection to start with',
         paragraphs: [
           'Soft Touch is light enough to forget you are wearing it and comfortable all day. We make it in High Quality Korean Synthetic fiber and in 100% sterilized human hair, and some series use tapered technology for extra drama at the tips.',
           'It is the collection to start with when you do not yet know what your customers want, because one family of styles covers everyday wear right through to evening glam.',
@@ -536,7 +535,7 @@ export const landingPages = [
       },
     ],
     faq: [
-      { q: 'What is Soft Touch Lashes?', a: 'Soft Touch Lashes is MCI Eyelashes’ bestselling collection, made from Korean Synthetic fiber and 100% sterilized Human Hair with tapered technology.' },
+      { q: 'What is Soft Touch Lashes?', a: 'Soft Touch Lashes is MCI Eyelashes’ everyday collection, made from Korean Synthetic fiber and 100% sterilized Human Hair with tapered technology.' },
       { q: 'What is the MOQ for Soft Touch Lashes?', a: '100 pairs per style, and you can mix and match across the 7 Soft Touch series to reach that minimum.' },
       { q: 'How many styles are in the Soft Touch collection?', a: '77 SKUs across 7 series: Natural, Wispy, Volume, Extended Volume, Dramatic, Pro, and Tappered.' },
       { q: 'What materials are Soft Touch Lashes made from?', a: 'Soft Touch comes in High Quality Korean Synthetic fiber and in 100% sterilized human hair.' },
@@ -554,7 +553,7 @@ export const landingPages = [
     intro: '3D Luxe is our premium volume collection: multi-layer synthetic lashes built for depth and impact, sold wholesale from 100 pairs per style. This page explains how the layered construction differs from a single-layer strip, who it suits, and how to choose from its 29 styles.',
     factSheet: [
       { label: 'Collection', value: '3D Luxe Lashes' },
-      { label: 'Status', value: 'Premium: high demand' },
+      { label: 'Status', value: 'Premium' },
       { label: 'Material', value: 'Multi-Layer Synthetic' },
       { label: 'Styles', value: '29 styles in 5 code ranges' },
       { label: 'MOQ', value: '100 pairs per style: mix & match allowed' },
@@ -912,7 +911,7 @@ export const landingPages = [
       {
         heading: 'What a mixed distributor order looks like',
         paragraphs: [
-          'The minimum is 100 pairs per style, and you can mix styles across every collection to reach it in one shipment. A distributor carrying a range rarely wants one hundred pairs of a single design, so a first order commonly spreads across several bestsellers at once.',
+          'The minimum is 100 pairs per style, and you can mix styles across every collection to reach it in one shipment. A distributor carrying a range rarely wants one hundred pairs of a single design, so a first order commonly spreads across several styles at once.',
           'Production for that order takes 5 working days once the styles and quantities are confirmed, whether the order covers one style or a dozen.',
         ],
         list: [
