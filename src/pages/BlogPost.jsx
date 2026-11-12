@@ -4,6 +4,7 @@ import { blogPosts } from '../data/blogPosts'
 import { AUTHOR } from '../data/author'
 import { renderBody } from '../utils/renderMarkdown'
 import { setMeta, HOME_META } from '../utils/setMeta'
+import { ogImageFor } from '../data/ogImages'
 
 const BASE_URL = 'https://www.mci-eyelashes.com'
 
@@ -24,7 +25,7 @@ export default function BlogPost() {
         ogTitle:             post.title,
         ogDescription:       post.metaDescription,
         ogUrl:               url,
-        ogImage:             `${BASE_URL}/hero-lashes.jpg`,
+        ogImage:             ogImageFor(post.slug, BASE_URL),
         twitterTitle:        post.title,
         twitterDescription:  post.metaDescription,
       })
@@ -43,6 +44,7 @@ export default function BlogPost() {
             '@id': url,
             headline: post.title,
             description: post.metaDescription,
+            image: ogImageFor(post.slug, BASE_URL),
             datePublished: post.date,
             dateModified: post.date,
             author: {

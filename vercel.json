@@ -1,6 +1,7 @@
 {
   "trailingSlash": false,
   "redirects": [
+    { "source": "/:path*", "has": [{ "type": "host", "value": "mci-eyelashes.vercel.app" }], "destination": "https://www.mci-eyelashes.com/:path*", "permanent": true },
     { "source": "/index.html", "destination": "/", "permanent": true },
     { "source": "/index", "destination": "/", "permanent": true },
     { "source": "/eyelashes-factory-indonesia", "destination": "/", "permanent": true },

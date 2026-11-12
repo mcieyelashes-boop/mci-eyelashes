@@ -16,6 +16,7 @@ import { readFileSync, writeFileSync, mkdirSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import { dirname, join } from 'node:path'
 import { blogPosts } from '../src/data/blogPosts.js'
+import { ogImageFor } from '../src/data/ogImages.js'
 import { AUTHOR } from '../src/data/author.js'
 import { BASE_URL, escapeHtml, getAssetTags, renderPage } from './prerender-shared.mjs'
 
@@ -168,7 +169,7 @@ for (const post of blogPosts) {
       canonical: url,
       ogTitle: post.title,
       ogDescription: post.metaDescription,
-      ogImage: `${BASE_URL}/hero-lashes.jpg`,
+      ogImage: ogImageFor(post.slug, BASE_URL),
       ogType: 'article',
       jsonLd: postJsonLd(post, url),
       bodyHtml: postBodyHtml(post),

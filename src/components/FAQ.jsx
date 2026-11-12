@@ -24,6 +24,10 @@ const faqs = [
     a: 'For orders of 100 pairs: 5 working days. For larger orders, production time varies. Contact us for an exact timeline before you order.',
   },
   {
+    q: 'How do I get your prices?',
+    a: 'Choose the styles you want from the catalogue first, then send us the style codes. We send the price for the styles you chose.',
+  },
+  {
     q: 'Are you a factory or a reseller?',
     a: 'Direct factory, based in Purbalingga, Indonesia. We welcome live video calls to our production floor. Just ask.',
   },

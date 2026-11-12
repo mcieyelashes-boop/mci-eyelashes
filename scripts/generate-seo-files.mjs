@@ -16,16 +16,27 @@ import { dirname, join } from 'node:path'
 import { landingPages } from '../src/data/landingPages.js'
 import { blogPosts } from '../src/data/blogPosts.js'
 import { BASE_URL, escapeHtml } from './prerender-shared.mjs'
+import { collectionPhotos, photosFor } from '../src/data/productPhotos.js'
 
 const PUBLIC = join(dirname(fileURLToPath(import.meta.url)), '..', 'public')
 
 const latestPost = blogPosts.map((p) => p.date).sort().at(-1)
 
+// Images are listed only where they are in the page's own HTML when it loads,
+// so Google Images can tie each lash photo to the page that shows it.
+const photoPaths = (photos) => photos.map((p) => p.src)
+const homeImages = [
+  '/hero-cinematic.webp',
+  ...photoPaths(collectionPhotos.soft),
+  '/gallery-1.webp', '/gallery-2.webp', '/gallery-3.webp', '/gallery-4.webp', '/gallery-5.webp',
+  '/product-packaging-square.webp',
+]
+
 const urls = [
-  { path: '/' },
-  { path: '/catalogue' },
+  { path: '/', images: homeImages },
+  { path: '/catalogue', images: photoPaths(collectionPhotos.soft) },
   { path: '/blog', lastmod: latestPost },
-  ...landingPages.map((p) => ({ path: `/${p.slug}` })),
+  ...landingPages.map((p) => ({ path: `/${p.slug}`, images: photoPaths(photosFor(p.slug)) })),
   ...blogPosts.map((p) => ({ path: `/blog/${p.slug}`, lastmod: p.date })),
 ]
 
@@ -36,12 +47,15 @@ for (const { path } of urls) {
   seen.add(path)
 }
 
+const imageTags = (images = []) =>
+  images.map((src) => `\n    <image:image><image:loc>${escapeHtml(BASE_URL + src)}</image:loc></image:image>`).join('')
+
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 ${urls
   .map(
-    ({ path, lastmod }) =>
-      `  <url>\n    <loc>${escapeHtml(BASE_URL + path)}</loc>${lastmod ? `\n    <lastmod>${lastmod}</lastmod>` : ''}\n  </url>`,
+    ({ path, lastmod, images }) =>
+      `  <url>\n    <loc>${escapeHtml(BASE_URL + path)}</loc>${lastmod ? `\n    <lastmod>${lastmod}</lastmod>` : ''}${imageTags(images)}\n  </url>`,
   )
   .join('\n')}
 </urlset>

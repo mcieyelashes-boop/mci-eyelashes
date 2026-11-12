@@ -1,10 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.mci-eyelashes.com/</loc>
+    <image:image><image:loc>https://www.mci-eyelashes.com/hero-cinematic.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/ibc-1044.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/ibc-1059.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/ibc-1075.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/ibc-1089.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/ibc-1102.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/ibc-3001.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/gallery-1.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/gallery-2.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/gallery-3.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/gallery-4.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/gallery-5.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/product-packaging-square.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.mci-eyelashes.com/catalogue</loc>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/ibc-1044.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/ibc-1059.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/ibc-1075.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/ibc-1089.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/ibc-1102.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/ibc-3001.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.mci-eyelashes.com/blog</loc>
@@ -12,42 +31,98 @@
   </url>
   <url>
     <loc>https://www.mci-eyelashes.com/eyelash-manufacturer-indonesia</loc>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/ibc-1044.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/ibc-1042.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/fm-22-075.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/ibc-6020.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.mci-eyelashes.com/private-label-eyelashes</loc>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/ibc-1044.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/ibc-1042.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/fm-22-075.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/ibc-6020.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.mci-eyelashes.com/eyelash-oem-indonesia</loc>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/ibc-1044.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/ibc-1042.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/fm-22-075.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/ibc-6020.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.mci-eyelashes.com/custom-eyelashes</loc>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/ibc-1044.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/ibc-1042.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/fm-22-075.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/ibc-6020.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.mci-eyelashes.com/wholesale-eyelashes</loc>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/ibc-1044.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/ibc-1042.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/fm-22-075.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/ibc-6020.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.mci-eyelashes.com/eyelash-manufacturer-purbalingga</loc>
   </url>
   <url>
     <loc>https://www.mci-eyelashes.com/handmade-eyelashes</loc>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/ibc-1044.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/ibc-1042.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/fm-22-075.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/ibc-6020.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.mci-eyelashes.com/soft-touch-lashes-wholesale</loc>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/ibc-1044.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/ibc-1059.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/ibc-1075.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/ibc-1089.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/ibc-1102.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/ibc-3001.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.mci-eyelashes.com/3d-luxe-volume-lashes-wholesale</loc>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/ibc-6002.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/ibc-6020.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/ibc-6076.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/ibc-6081.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/ibc-6143.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/ibc-6163.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.mci-eyelashes.com/faux-mink-lashes-wholesale</loc>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/fm-20-002.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/fm-21-032.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/fm-22-075.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/fm-22-083.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/fm-22-154.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/fm-20-018.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.mci-eyelashes.com/human-hair-lashes-wholesale</loc>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/ibc-1042.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/ibc-1199.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/ibc-1174.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/ibc-1181.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/ibc-1204.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/ibc-1211.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.mci-eyelashes.com/low-moq-eyelash-manufacturer</loc>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/ibc-1044.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/ibc-1042.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/fm-22-075.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/ibc-6020.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.mci-eyelashes.com/eyelash-samples-catalogue-request</loc>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/ibc-1044.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/ibc-1042.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/fm-22-075.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.mci-eyelashes.com/products/ibc-6020.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.mci-eyelashes.com/eyelash-distributor-indonesia</loc>

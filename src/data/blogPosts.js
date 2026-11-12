@@ -191,7 +191,7 @@ If you are choosing a supplier for your first stock, our [wholesale eyelashes](/
       },
       {
         q: 'Do I need a license to sell eyelashes?',
-        a: 'In most countries, a business license is required to sell cosmetics commercially. In the US, eyelash products must comply with FDA cosmetic regulations. We recommend consulting a local business attorney before launching.',
+        a: 'In most countries, a business license is required to sell cosmetics commercially. In the US, eyelash products fall under federal cosmetics rules. We recommend consulting a local business attorney before launching.',
       },
       {
         q: 'Where is the best place to sell lashes online?',
@@ -288,7 +288,7 @@ Shipping time to your country comes on top of production time.`,
         a: 'Yes. Samples on existing catalog styles are free, and you cover the shipping. For a custom private label design, contact us at denis@mci-eyelashes.com and we will agree how to sample it before you commit to a full order.',
       },
       {
-        q: 'Do you provide FDA or CE documentation for private label products?',
+        q: 'Do you provide import documentation for private label products?',
         a: 'Import paperwork requirements vary by market. Tell us which country you are importing into and we will confirm exactly what documentation we can provide for your order before you commit. Contact denis@mci-eyelashes.com with your destination market.',
       },
     ],
@@ -356,7 +356,7 @@ Here is an example with made-up numbers, for illustration only:
 - Shipping (pro-rated): 0.25 per unit
 - Landed cost: 3.75 per unit
 - Retail price: 20.00
-- Gross margin: (20.00 minus 3.75) divided by 20.00 = about 81%
+- Gross margin: (20.00 minus 3.75) divided by 20.00, so 16.25 of every 20.00 is kept before other costs
 
 Replace the example with the real figures from your quotes. Then subtract what is not in the formula: advertising, platform and payment fees, returns and discounts. A margin that looks large before those costs can be thin after them.`,
       },
@@ -561,6 +561,14 @@ Do they provide commercial invoices, packing lists, and origin certificates? The
 - **Slow or evasive communication**: Response time before an order reflects service after it`,
       },
       {
+        heading: 'How to Compare Two Quotes Side by Side',
+        body: `Two quotes are only comparable when they describe the same order. Before you put the numbers next to each other, check that both suppliers quoted the same style, the same material, the same quantity per style and the same packaging. A quote that leaves packaging out will always look cheaper than one that includes it.
+
+Then check what each price covers. Ask whether shipping is included, who pays duties at your border, and whether the sample cost comes off your first order. Write the answers into one table with a row per supplier.
+
+The cheapest row is not always the best one. A supplier who answers every question in writing has shown you how they will behave when something goes wrong with an order.`,
+      },
+      {
         heading: 'How MCI Eyelashes Answers These Questions',
         body: `MCI Eyelashes is a factory-direct manufacturer based in Purbalingga, Indonesia. Here is how we answer the questions we can answer on this page:
 
@@ -672,8 +680,8 @@ Packaging is part of every [private label](/private-label-eyelashes) program, an
     ],
     faq: [
       {
-        q: 'What is the minimum order for custom eyelash packaging?',
-        a: 'Packaging minimums depend on the box style and how complex the design is, and simpler boxes generally need lower quantities than elaborate ones. Contact us for a specific quote based on your design requirements.',
+        q: 'How many boxes do I have to order for a custom design?',
+        a: 'At MCI Eyelashes the minimum for custom packaging is 100 pairs, the same as the lash minimum. Contact us for the lead time on your design.',
       },
       {
         q: 'Do I need to provide my own design for custom packaging?',
@@ -847,7 +855,7 @@ Ask the minimum for each item. Reputable wholesale suppliers state their minimum
 Ask every supplier for a written delivery time to your address.
 
 **Documentation**
-Ask for safety data sheets (MSDS/SDS) for adhesives, and for documentation behind any cruelty-free claim.
+Ask for safety data sheets for adhesives, and for documentation behind any cruelty-free claim.
 
 **Return and defect policy**
 A supplier confident in their product will offer returns on manufacturing defects. No defect policy is a red flag.`,
@@ -1014,7 +1022,7 @@ When your packaging brief is ready, send it with a [private label](/private-labe
     faq: [
       {
         q: 'What is the minimum order for custom eyelash packaging?',
-        a: 'Packaging minimums depend on the box style and the printing method, and digital printing allows lower minimums at a higher cost per unit. At MCI Eyelashes, custom packaging is quoted with your lash order, which starts at 100 pairs per style.',
+        a: 'At MCI Eyelashes the minimum for custom packaging is 100 pairs, ordered together with your lashes. Elsewhere in the industry, packaging minimums depend on the box style and the printing method.',
       },
       {
         q: 'How long does custom eyelash packaging take to produce?',
@@ -1335,6 +1343,8 @@ Band type is one of the standard specifications used across strip lashes, alongs
       {
         heading: 'Choosing a Band for a Private Label Order',
         body: `Band style is one of the specifications MCI Eyelashes takes for [private label](/private-label-eyelashes) and [custom eyelash](/custom-eyelashes) orders, alongside tray design. When briefing a band type for a private label run, it helps to send a reference lash or sample so the band width, flexibility, and finish can be matched precisely.
+
+A band brief that gets a clean first sample usually states four things: the band material (cotton, thin or clear), the width you want, how flexible it should feel when bent to the eye, and whether the band should be black or clear. If you already sell a style your customers like, say which part of its band they like and which part they complain about. That tells the sample maker more than a specification alone.
 
 Band is only one part of a full private label specification, pair it with your [curl type](/blog/eyelash-curl-types-explained) and material choice before sending your brief for a quote.`,
       },
