@@ -54,7 +54,7 @@ writeFileSync(join(PUBLIC, 'sitemap.xml'), sitemap)
 // Every fact below is owner-confirmed; do not add one that is not.
 const llms = `# MCI Eyelashes
 
-> MCI Eyelashes is a direct eyelash manufacturer based in Purbalingga, Central Java, Indonesia. It makes mink, silk, synthetic and human-hair eyelashes for salons, distributors and beauty brands worldwide, and offers OEM and private label manufacturing.
+> MCI Eyelashes is a direct eyelash manufacturer based in Purbalingga, Central Java, Indonesia. It makes protein silk (faux mink), synthetic and human-hair eyelashes for salons, distributors and beauty brands worldwide, and offers OEM and private label manufacturing.
 
 Key facts:
 - Minimum order: 100 pairs per style, styles can be mixed and matched.

@@ -43,7 +43,7 @@ export const landingPages = [
       {
         heading: 'What MCI Eyelashes makes',
         paragraphs: [
-          'We make handmade lashes in mink, silk, synthetic and human hair, organized in four collections: Soft Touch, 3D Luxe, Faux Mink - Protein Silk, and Classic - Human Hair. You can browse them in the [product catalogue](/catalogue) or read about how they are made on our [handmade eyelashes](/handmade-eyelashes) page.',
+          'We make handmade lashes in protein silk, synthetic and human hair, organized in four collections: Soft Touch, 3D Luxe, Faux Mink - Protein Silk, and Classic - Human Hair. You can browse them in the [product catalogue](/catalogue) or read about how they are made on our [handmade eyelashes](/handmade-eyelashes) page.',
           'If you want a design of your own, we produce [OEM](/eyelash-oem-indonesia) on existing styles and develop [private label](/private-label-eyelashes) lashes to your own specification.',
         ],
       },
@@ -79,7 +79,7 @@ export const landingPages = [
       { q: 'What is the minimum order for an Indonesian eyelash manufacturer like MCI?', a: 'At MCI the minimum is 100 pairs per style, and you can mix and match styles within one order. Other factories set their own minimums, so ask each one in writing.' },
       { q: 'How long does shipping from Indonesia take?', a: 'It depends on the method and your destination. Express courier is fastest, sea freight is slowest. Our catalogue lists worldwide shipping at 7 to 14 days.' },
       { q: 'Can I verify that MCI is a real factory before ordering?', a: 'Yes. We welcome a live video call to our production floor in Purbalingga before you send any money.' },
-      { q: 'What materials does MCI manufacture in?', a: 'We manufacture handmade lashes in four materials (mink, silk, synthetic, human hair) across four collections in our product catalogue.' },
+      { q: 'What materials does MCI manufacture in?', a: 'We manufacture handmade lashes in three materials (protein silk, synthetic, human hair) across four collections in our product catalogue.' },
     ],
   },
   {
@@ -111,7 +111,7 @@ export const landingPages = [
         list: [
           'The look you want, plus a photo or the style in our [catalogue](/catalogue) that comes closest to it.',
           'Curl and length: how lifted the lash should look, and the longest and shortest hair along the band.',
-          'Material: mink, silk, synthetic or human hair, and whether your label will need to say cruelty-free.',
+          'Material: protein silk, synthetic or human hair, and whether your label will need to say cruelty-free.',
           'Band: how thick and how flexible, if you have a preference. Our guide to [eyelash band types](/blog/eyelash-band-types-explained) explains the options.',
           'Packaging: box style, tray, inserts, and any artwork you already have.',
           'Quantities: how many styles you plan to launch with, and roughly how many pairs of each.',
@@ -164,7 +164,7 @@ export const landingPages = [
       { label: 'MOQ', value: '100 pairs per style' },
       { label: 'Production', value: '5 working days for 100-pair orders' },
       { label: 'Location', value: 'Purbalingga, Central Java, Indonesia' },
-      { label: 'Materials', value: 'Mink, Silk, Synthetic, Human Hair' },
+      { label: 'Materials', value: 'Protein Silk (Faux Mink), Synthetic, Human Hair' },
       { label: 'Packaging', value: 'Custom branding available' },
     ],
     sections: [
@@ -234,7 +234,7 @@ export const landingPages = [
     factSheet: [
       { label: 'Customizable', value: 'Curl, length, density, material, band, packaging' },
       { label: 'MOQ', value: '100 pairs per style' },
-      { label: 'Materials', value: 'Mink, Silk, Synthetic, Human Hair' },
+      { label: 'Materials', value: 'Protein Silk (Faux Mink), Synthetic, Human Hair' },
       { label: 'Location', value: 'Purbalingga, Central Java, Indonesia' },
       { label: 'Reference', value: 'Any catalogue style or a photo of the lash you want' },
     ],
@@ -253,7 +253,7 @@ export const landingPages = [
           'Curl: how much lift the lash has. Buyers usually describe it in plain words, such as natural, lifted or dramatic, and our guide to [eyelash curl types](/blog/eyelash-curl-types-explained) shows how the terms are used.',
           'Length and shape: the longest hair, the shortest, and where along the band the length peaks. A lash that peaks at the outer corner gives a lifted, cat-eye shape, while an even length reads rounder.',
           'Density: how many hairs sit on the band. More density means more volume, and also more weight on the lid.',
-          'Material: mink, silk, synthetic or human hair. Each has its own feel and finish, compared on our [handmade eyelashes](/handmade-eyelashes) page.',
+          'Material: protein silk, synthetic or human hair. Each has its own feel and finish, compared on our [handmade eyelashes](/handmade-eyelashes) page.',
           'Band: its thickness and flexibility. A thin, flexible band is easier for beginners to apply, as our guide to [eyelash band types](/blog/eyelash-band-types-explained) explains.',
           'Packaging: the box and tray the lash ships in, if it is going to retail under your name.',
         ],
@@ -290,7 +290,7 @@ export const landingPages = [
   {
     slug: 'wholesale-eyelashes',
     title: 'Wholesale Eyelashes Supplier | MCI Eyelashes',
-    metaDescription: 'MCI Eyelashes supplies wholesale eyelashes factory-direct from Indonesia, mink, silk, synthetic, and human hair lashes, MOQ 100 pairs per style, mix and match.',
+    metaDescription: 'MCI Eyelashes supplies wholesale eyelashes factory-direct from Indonesia, protein silk, synthetic, and human hair lashes, MOQ 100 pairs per style, mix and match.',
     h1: 'Wholesale Eyelashes Supplier',
     breadcrumbName: 'Wholesale Eyelashes',
     intro: 'MCI Eyelashes sells wholesale eyelashes factory direct from Purbalingga, Indonesia. This page puts our wholesale terms in one place and shows how salons, distributors and online sellers can build a first order from our four collections.',
@@ -298,7 +298,7 @@ export const landingPages = [
       { label: 'MOQ', value: '100 pairs per style, mix & match allowed' },
       { label: 'Production', value: '5 working days for 100-pair orders' },
       { label: 'Samples', value: 'Free on existing catalog styles, buyer covers shipping' },
-      { label: 'Materials', value: 'Mink, Silk, Synthetic, Human Hair' },
+      { label: 'Materials', value: 'Protein Silk (Faux Mink), Synthetic, Human Hair' },
       { label: 'Buyers', value: 'Salons, distributors, beauty brands' },
     ],
     sections: [
@@ -395,7 +395,7 @@ export const landingPages = [
       {
         heading: 'What we make on our Purbalingga floor',
         paragraphs: [
-          'We make handmade lashes in mink, silk, synthetic and human hair, organized into four collections in the [product catalogue](/catalogue). Wholesale orders start at 100 pairs per style, mixed across styles, with 5 working days of production for a 100-pair order. We also produce [OEM](/eyelash-oem-indonesia) and [private label](/private-label-eyelashes) lashes on the same floor.',
+          'We make handmade lashes in protein silk, synthetic and human hair, organized into four collections in the [product catalogue](/catalogue). Wholesale orders start at 100 pairs per style, mixed across styles, with 5 working days of production for a 100-pair order. We also produce [OEM](/eyelash-oem-indonesia) and [private label](/private-label-eyelashes) lashes on the same floor.',
         ],
       },
       {
@@ -418,14 +418,14 @@ export const landingPages = [
   {
     slug: 'handmade-eyelashes',
     title: 'Handmade Eyelashes Manufacturer Indonesia | MCI Eyelashes',
-    metaDescription: 'MCI Eyelashes produces handmade eyelashes in Purbalingga, Indonesia, mink, silk, synthetic, and human hair styles, factory direct, MOQ 100 pairs per style.',
+    metaDescription: 'MCI Eyelashes produces handmade eyelashes in Purbalingga, Indonesia, protein silk, synthetic, and human hair styles, factory direct, MOQ 100 pairs per style.',
     h1: 'Handmade Eyelashes Manufacturer Indonesia',
     breadcrumbName: 'Handmade Eyelashes',
-    intro: 'MCI Eyelashes makes handmade eyelashes on our own floor in Purbalingga, Indonesia, in mink, silk, synthetic and human hair. This page explains what handmade means for the lash you sell, how the four materials differ, and how to judge handmade quality from a sample.',
+    intro: 'MCI Eyelashes makes handmade eyelashes on our own floor in Purbalingga, Indonesia, in protein silk, synthetic and human hair. This page explains what handmade means for the lash you sell, how the four materials differ, and how to judge handmade quality from a sample.',
     factSheet: [
       { label: 'Production Method', value: 'Handmade' },
       { label: 'Location', value: 'Purbalingga, Central Java, Indonesia' },
-      { label: 'Materials', value: 'Mink, Silk, Synthetic, Human Hair' },
+      { label: 'Materials', value: 'Protein Silk (Faux Mink), Synthetic, Human Hair' },
       { label: 'MOQ', value: '100 pairs per style' },
       { label: 'Reusability', value: 'Mink styles reusable 20-25 times' },
     ],
@@ -473,8 +473,7 @@ export const landingPages = [
     ],
     faq: [
       { q: 'Are MCI Eyelashes handmade or machine-made?', a: 'They are handmade, tied by hand on our own production floor in Purbalingga, Indonesia.' },
-      { q: 'What materials are the handmade lashes made from?', a: 'Our handmade lashes are made from mink, silk, synthetic fibre and human hair.' },
-      { q: 'How many times can handmade mink lashes be reused?', a: 'Our mink styles can be reused 20-25 times with proper care and gentle cleaning.' },
+      { q: 'What materials are the handmade lashes made from?', a: 'Our handmade lashes are made from protein silk, synthetic fibre and human hair.' },
       { q: 'What is the MOQ for handmade eyelashes at MCI?', a: 'The minimum is 100 pairs per style, and styles can be mixed and matched in one order.' },
       { q: 'How can I tell if a lash is really handmade?', a: 'Bend the band and look along it. A handmade band follows the curve, and the hairs sit evenly with tapered tips.' },
     ],
@@ -632,7 +631,7 @@ export const landingPages = [
         heading: 'Who faux mink suits, and who it does not',
         paragraphs: [
           'Faux mink is the right choice when your customers ask for a soft, lightweight lash and also care that no animal product is involved. That describes vegan-minded salons, premium retail shelves, and brands that want a cruelty-free line they can put on the label.',
-          'It is not the right choice if a customer specifically asks for real mink. For that, look at our mink styles on the [handmade eyelashes](/handmade-eyelashes) page. If you are unsure which of your customers is which, order samples of both and let a few real clients compare them.',
+          'It is not the right choice if a customer specifically asks for real mink: Faux Mink is protein silk, not fur. If you are unsure how your customers will take to it, order samples and let a few real clients try them.',
         ],
       },
       {

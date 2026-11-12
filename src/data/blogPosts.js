@@ -64,7 +64,7 @@ export const blogPosts = [
 - Premium mink usually supports a higher shelf price than silk, so check whether your customers will pay for that difference
 - Custom packaging under your own brand lets you price for the brand, not only the product
 
-We send a full catalog and price sheet after your inquiry, so you can work the numbers on your own styles. For how this plays out across all four materials we manufacture, including Faux Mink and Human Hair, see our [eyelash material margin guide](/blog/which-eyelash-material-has-best-margin).`,
+We send a full catalog and price sheet after your inquiry, so you can work the numbers on your own styles. For how this plays out across the materials we manufacture, including Faux Mink and Human Hair, see our [eyelash material margin guide](/blog/which-eyelash-material-has-best-margin).`,
       },
       {
         heading: 'How to Order Wholesale from MCI Eyelashes',
@@ -142,7 +142,7 @@ Most successful lash businesses combine models 1 and 2, starting with wholesale 
 - **Private label capability:** Can they add your branding?
 - **International shipping:** Ask how overseas orders are packed and tracked
 
-MCI Eyelashes supplies salons, distributors, and beauty brands with mink, silk, synthetic, and volume lash lines. MOQ is 100 pairs per style, and production for a 100-pair order takes 5 working days. Contact denis@mci-eyelashes.com for a wholesale catalog. For a detailed supplier checklist, read [how to choose an eyelash manufacturer](/blog/how-to-choose-eyelash-manufacturer).`,
+MCI Eyelashes supplies salons, distributors, and beauty brands with protein silk, synthetic, human hair, and volume lash lines. MOQ is 100 pairs per style, and production for a 100-pair order takes 5 working days. Contact denis@mci-eyelashes.com for a wholesale catalog. For a detailed supplier checklist, read [how to choose an eyelash manufacturer](/blog/how-to-choose-eyelash-manufacturer).`,
       },
       {
         heading: 'Step 3: Set Your Pricing Strategy',
@@ -216,7 +216,7 @@ If you are choosing a supplier for your first stock, our [wholesale eyelashes](/
 At MCI Eyelashes a private label order can include:
 - Custom curl
 - Custom length
-- The material of your choice: mink, silk, synthetic or human hair
+- The material of your choice: protein silk, synthetic or human hair
 - Custom packaging designed for your brand
 
 **Why private label?**
@@ -248,7 +248,7 @@ Read more on our [private label eyelashes](/private-label-eyelashes) and [OEM ey
 
 **Length.** Give us the lengths you want for each style.
 
-**Material.** Mink, silk, synthetic or human hair. Our [mink vs silk guide](/blog/mink-vs-silk-lashes-wholesale-guide) helps you choose between the first two.
+**Material.** Protein silk, synthetic or human hair. Our [mink vs silk guide](/blog/mink-vs-silk-lashes-wholesale-guide) helps you choose between the first two.
 
 **Packaging.** Boxes and inserts designed for your brand. Send your brand assets and your packaging requirements, and we quote the design and the production together with your lash order.
 
@@ -1442,7 +1442,7 @@ MCI Eyelashes is a direct factory, not a trading company, and welcomes a live pr
       },
       {
         q: 'What materials are handmade lashes made from?',
-        a: 'Common materials include mink, silk, synthetic fiber, and human hair. MCI Eyelashes produces handmade lashes across all four materials.',
+        a: 'Common materials include mink, silk, synthetic fiber, and human hair. MCI Eyelashes produces handmade lashes in protein silk, synthetic fiber and human hair.',
       },
     ],
   },
