@@ -34,10 +34,9 @@ const HEAD_STATIC = `
     <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=3" />
     <link rel="alternate icon" type="image/png" href="/favicon-180.png?v=3" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap" />
-    <meta name="theme-color" content="#0a1720" />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/bricolage-grotesque-latin.woff2" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/cormorant-garamond-latin.woff2" crossorigin />
+    <meta name="theme-color" content="#07121a" />
     <script type="application/ld+json">${JSON.stringify({
       '@context': 'https://schema.org',
       '@type': 'Organization',

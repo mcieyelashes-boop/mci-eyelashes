@@ -99,7 +99,8 @@ function addJsonLd(html, data) {
 // The shell also preloads the homepage hero image at high priority.
 // Only the homepage draws it, so every other page would download it for nothing.
 function dropHeroPreload(html) {
-  return must(html, /[ \t]*<link rel="preload" as="image"[^>]*href="\/hero-cinematic\.webp"[^>]*>\n?/, '', 'hero image preload')
+  const phone = must(html, /[ \t]*<link rel="preload" as="image"[^>]*href="\/hero-cinematic-phone\.webp"[^>]*>\n?/, '', 'phone hero image preload')
+  return must(phone, /[ \t]*<link rel="preload" as="image"[^>]*href="\/hero-cinematic\.webp"[^>]*>\n?/, '', 'hero image preload')
 }
 
 const stripHomeOnly = (html) => dropHeroPreload(dropNoscript(dropJsonLd(html, ['ItemList', 'FAQPage'])))

@@ -13,7 +13,11 @@ export default function Hero() {
   return (
     <>
       <section id="hero" className="hero" aria-label="MCI Eyelashes campaign image">
-        <div className="hero-media">
+        {/* Phones get a crop of the same picture (its right-hand part, where the
+            head is) at well under half the weight. The breakpoint must match the
+            object-position rule for .hero-media img in index.css. */}
+        <picture className="hero-media">
+          <source media="(max-width: 760px)" srcSet="/hero-cinematic-phone.webp" width="860" height="807" />
           <img
             src="/hero-cinematic.webp"
             alt="MCI Eyelashes campaign: a robot woman with long lashes rising from the sea at sunset"
@@ -22,7 +26,7 @@ export default function Hero() {
             fetchPriority="high"
             decoding="async"
           />
-        </div>
+        </picture>
       </section>
 
       <section className="intro" aria-labelledby="intro-title">
