@@ -1,5 +1,5 @@
 {
-  "note": "Literal phrases the owner has confirmed (they appear in src/pages/Catalogue.jsx or were confirmed in chat). The content gate lets these through its number and claim checks. Add a phrase here only after the owner confirms it. November 2026: the owner withdrew the \"50 years\" claim. Do not bring it back. Same for \"bestseller\", \"most popular\" and \"high demand\": there are no sales yet to base them on. Also withdrawn: \"meets international cosmetic safety standards\" (no test report on file) and the \"World-Class\" slogan.",
+  "note": "Literal phrases the owner has confirmed (they appear in src/pages/Catalogue.jsx or were confirmed in chat). The content gate lets these through its number and claim checks. Add a phrase here only after the owner confirms it. November 2026: the owner withdrew the \"50 years\" claim. Do not bring it back. Same for \"bestseller\", \"most popular\" and \"high demand\": there are no sales yet to base them on. Also withdrawn: \"meets international cosmetic safety standards\" (no test report on file) and the \"World-Class\" slogan. The founding year is unknown: the owner said 2015 (once printed in the catalogue PDF) is wrong and has not yet given the real year. Do not state a year.",
   "allowedPhrases": [
     "100%",
     "100 pairs",

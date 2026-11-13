@@ -6,8 +6,9 @@
     { "source": "/index", "destination": "/", "permanent": true },
     { "source": "/eyelashes-factory-indonesia", "destination": "/", "permanent": true },
     { "source": "/blog/eyelash-manufacturer-indonesia", "destination": "/eyelash-manufacturer-indonesia", "permanent": true },
-    { "source": "/MCI-Eyelashes-Catalogue-2026.pdf", "destination": "/MCI-Eyelashes-Catalogue-2026-v3.pdf", "permanent": true },
-    { "source": "/MCI-Eyelashes-Catalogue-2026-v2.pdf", "destination": "/MCI-Eyelashes-Catalogue-2026-v3.pdf", "permanent": true },
+    { "source": "/MCI-Eyelashes-Catalogue-2026.pdf", "destination": "/MCI-Eyelashes-Catalogue-2026-v4.pdf", "permanent": true },
+    { "source": "/MCI-Eyelashes-Catalogue-2026-v3.pdf", "destination": "/MCI-Eyelashes-Catalogue-2026-v4.pdf", "permanent": true },
+    { "source": "/MCI-Eyelashes-Catalogue-2026-v2.pdf", "destination": "/MCI-Eyelashes-Catalogue-2026-v4.pdf", "permanent": true },
     { "source": "/under-lashes-wholesale", "destination": "/catalogue", "permanent": true },
     { "source": "/blog/:slug.html", "destination": "/blog/:slug", "permanent": true },
     { "source": "/:slug.html", "destination": "/:slug", "permanent": true }

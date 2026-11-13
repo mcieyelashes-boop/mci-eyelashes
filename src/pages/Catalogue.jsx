@@ -92,7 +92,7 @@ const collections = [
     series: [
       {
         name: 'FM 20 Series',
-        skus: ['FM 20-002', 'FM 20-003', 'FM 20-004', 'FM 20-008', 'FM 20-011', 'FM 20-014', 'FM 20-017', 'FM 20-018', 'FM 20-019', 'FM 20-020', 'FM 20-022', 'FM 20-023', 'FM 20-024', 'FM 20-025', 'FM 20-026', 'FM 20-027', 'FM 20-051'],
+        skus: ['FM 20-002', 'FM 20-003', 'FM 20-004', 'FM 20-008', 'FM 20-011', 'FM 20-014', 'FM 20-017', 'FM 20-018', 'FM 20-019', 'FM 20-020', 'FM 20-022', 'FM 20-023', 'FM 20-024', 'FM 20-025', 'FM 20-026', 'FM 20-027'],
       },
       {
         name: 'FM 21 Series',
@@ -100,7 +100,7 @@ const collections = [
       },
       {
         name: 'FM 22 Series',
-        skus: ['FM 22-065', 'FM 22-070', 'FM 22-073', 'FM 22-074', 'FM 22-075', 'FM 22-076', 'FM 22-077', 'FM 22-078', 'FM 22-079', 'FM 22-080', 'FM 22-081', 'FM 22-082', 'FM 22-083', 'FM 22-084', 'FM 22-090', 'FM 22-100', 'FM 22-110', 'FM 22-112', 'FM 22-134', 'FM 22-150', 'FM 22-152', 'FM 22-154', 'FM 22-155', 'FM 22-156', 'FM 22-157', 'FM 22-198', 'FM 22-199'],
+        skus: ['FM 22-065', 'FM 22-070', 'FM 22-073', 'FM 22-074', 'FM 22-075', 'FM 22-076', 'FM 22-077', 'FM 22-078', 'FM 22-079', 'FM 22-080', 'FM 22-081', 'FM 22-082', 'FM 22-083', 'FM 22-084', 'FM 22-090', 'FM 22-100', 'FM 22-110', 'FM 22-112', 'FM 22-150', 'FM 22-152', 'FM 22-154', 'FM 22-155', 'FM 22-156', 'FM 22-157', 'FM 22-198', 'FM 22-199'],
       },
       {
         name: 'C Series',
@@ -289,7 +289,7 @@ export default function Catalogue() {
             >
               Request a Quote
             </a>
-            <a href="/MCI-Eyelashes-Catalogue-2026-v3.pdf" className="btn-ghost" download>
+            <a href="/MCI-Eyelashes-Catalogue-2026-v4.pdf" className="btn-ghost" download>
               Download PDF catalogue
             </a>
           </div>

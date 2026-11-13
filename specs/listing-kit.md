@@ -19,7 +19,7 @@ models match listings by those three, and small differences split the credit.
 | Email | denis@mci-eyelashes.com |
 | Website | https://www.mci-eyelashes.com |
 | Instagram | https://www.instagram.com/mci.eyelashes |
-| Year founded | `[year]` |
+| Year founded | `[year]` (not 2015: the owner said that year in the old PDF was wrong) |
 | Opening hours | `[days and hours, with time zone WIB]` |
 | Number of employees | `[number or range]` |
 
@@ -41,7 +41,7 @@ MCI Eyelashes is a direct eyelash factory in Purbalingga, Indonesia. We make str
 
 MCI Eyelashes is a direct eyelash factory in Purbalingga, Central Java, Indonesia. We are a manufacturer, not a trading company, and we sell wholesale to salons, distributors and beauty brands worldwide.
 
-Our catalogue has 236 strip lash styles in four collections: Soft Touch (Korean synthetic fiber), 3D Luxe (multi-layer volume), Faux Mink (protein silk, cruelty free) and Human Hair Classic (100% sterilized human hair).
+Our catalogue has 234 strip lash styles in four collections: Soft Touch (Korean synthetic fiber), 3D Luxe (multi-layer volume), Faux Mink (protein silk, cruelty free) and Human Hair Classic (100% sterilized human hair).
 
 The minimum order is 100 pairs per style, and you can mix styles to reach it. Samples of catalogue styles are free; you pay shipping. A 100-pair order is produced in 5 working days. We also make OEM and private label lashes with your own packaging, from the same 100-pair minimum.
 
