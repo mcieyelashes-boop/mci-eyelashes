@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
-import { collectionPhotos, photoAlt } from '../data/productPhotos'
+import { collectionPhotos, photoAlt, photoSrcSet } from '../data/productPhotos'
+import { useTabs } from '../utils/useTabs'
 import { setMeta } from '../utils/setMeta'
 import { CATALOGUE_META } from '../data/pageMeta'
 
@@ -208,7 +209,7 @@ function CollectionPanel({ col }) {
           <div className="plate-grid">
             {photos.map((photo) => (
               <figure key={photo.code} className="plate-item">
-                <img src={photo.src} alt={photoAlt(photo)} width={photo.width} height={photo.height} loading="lazy" decoding="async" />
+                <img src={photo.src} srcSet={photoSrcSet(photo)} sizes="(max-width: 760px) 45vw, (max-width: 1024px) 30vw, 190px" alt={photoAlt(photo)} width={photo.width} height={photo.height} loading="lazy" decoding="async" />
                 <figcaption>{photo.code}</figcaption>
               </figure>
             ))}
@@ -265,7 +266,7 @@ const totalStyles = collections.reduce(
 )
 
 export default function Catalogue() {
-  const [activeCol, setActiveCol] = useState(0)
+  const { active: activeCol, listProps, tabProps, panelProps } = useTabs(collections.length, 'catalogue')
 
   useEffect(() => {
     setMeta(CATALOGUE_META)
@@ -277,7 +278,7 @@ export default function Catalogue() {
       <section className="page-hero">
         <div className="container">
           <p className="eyebrow">Wholesale Catalogue 2026</p>
-          <h1>Product <em>Catalogue</em></h1>
+          <h1 id="content" tabIndex={-1}>Product <em>Catalogue</em></h1>
           <p className="lede">
             {totalStyles} styles across {collections.length} professional collections.<br />
             MOQ 100 pairs per style, private label included · Worldwide shipping 7-14 days.
@@ -303,14 +304,9 @@ export default function Catalogue() {
       </section>
 
       <div className="cat-tabs-wrap">
-        <div className="cat-tabs">
+        <div className="cat-tabs scroll-fade" aria-label="Collections" {...listProps}>
           {collections.map((col, i) => (
-            <button
-              key={col.key}
-              className={`cat-tab ${activeCol === i ? 'active' : ''}`}
-              aria-pressed={activeCol === i}
-              onClick={() => setActiveCol(i)}
-            >
+            <button key={col.key} className="cat-tab" {...tabProps(i)}>
               <span className="cat-tab-num">{col.id}</span>
               <span className="cat-tab-name">{col.name}</span>
             </button>
@@ -319,7 +315,7 @@ export default function Catalogue() {
       </div>
 
       <section className="section">
-        <div className="container collection-panel" key={activeCol}>
+        <div className="container collection-panel" key={activeCol} {...panelProps}>
           <CollectionPanel col={collections[activeCol]} />
         </div>
       </section>
@@ -336,7 +332,7 @@ export default function Catalogue() {
                 <div className="cat-tier-moq">{t.moq} <span>pairs</span></div>
                 <div className="cat-tier-label">{t.label}</div>
                 <div className="cat-tier-discount">{t.discount}</div>
-                <ul className="cat-tier-perks">
+                <ul className="cat-tier-perks" role="list">
                   {t.perks.map(p => <li key={p}>{p}</li>)}
                 </ul>
               </div>

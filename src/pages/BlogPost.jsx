@@ -106,7 +106,7 @@ export default function BlogPost() {
             <span>{post.readTime}</span>
             <span>By {AUTHOR.name}, {AUTHOR.jobTitle.replace(', MCI Eyelashes', '')}</span>
           </div>
-          <h1>{post.title}</h1>
+          <h1 id="content" tabIndex={-1}>{post.title}</h1>
         </div>
       </section>
 

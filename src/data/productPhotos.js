@@ -229,6 +229,9 @@ export function photosFor(slug) {
   return MIXED_SLUGS.has(slug) ? MIXED : []
 }
 
+/** A 400px-wide copy of every photo sits next to it as <name>-400.webp. */
+export const photoSrcSet = (p) => `${p.src.replace(/\.webp$/, '-400.webp')} 400w, ${p.src} ${p.width}w`
+
 /** Alt text that says what the photo shows. */
 export const photoAlt = (p) => `${p.code} strip lashes from the ${p.collection} collection, on a white background`
 

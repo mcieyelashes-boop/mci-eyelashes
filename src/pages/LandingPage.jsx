@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { landingPages } from '../data/landingPages'
-import { photoAlt, photosFor, productSchema } from '../data/productPhotos'
+import { photoAlt, photoSrcSet, photosFor, productSchema } from '../data/productPhotos'
 import { setMeta, HOME_META } from '../utils/setMeta'
 import NotFound from './NotFound'
 
@@ -104,7 +104,7 @@ export default function LandingPage({ slug: slugProp }) {
           <p className="eyebrow">
             <Link to="/">Home</Link> <span aria-hidden="true">/</span> {page.breadcrumbName}
           </p>
-          <h1>{page.h1}</h1>
+          <h1 id="content" tabIndex={-1}>{page.h1}</h1>
           <p className="lede">{page.intro}</p>
           <div className="btn-row">
             <Link to="/#contact" className="btn">Get Wholesale Pricing</Link>
@@ -116,7 +116,7 @@ export default function LandingPage({ slug: slugProp }) {
       <section className="section">
         <div className="container container--narrow">
           <div className="fact-sheet">
-            <dl className="fact-grid" aria-label="MCI Eyelashes at a Glance">
+            <dl className="fact-grid">
               {page.factSheet.map(({ label, value }) => (
                 <div key={label} className="fact">
                   <dt>{label}</dt>
@@ -127,13 +127,13 @@ export default function LandingPage({ slug: slugProp }) {
           </div>
 
           {photos.length > 0 && (
-            <div style={{ marginTop: 'clamp(48px, 6vw, 72px)' }} aria-labelledby="landing-photos">
+            <div style={{ marginTop: 'clamp(48px, 6vw, 72px)' }}>
               <h2 id="landing-photos" className="sub-title">Styles from the catalogue</h2>
               <div className="plate">
                 <div className="plate-grid" data-count={photos.length}>
                   {photos.map((p) => (
                     <figure key={p.code} className="plate-item">
-                      <img src={p.src} alt={photoAlt(p)} width={p.width} height={p.height} loading="lazy" decoding="async" />
+                      <img src={p.src} srcSet={photoSrcSet(p)} sizes="(max-width: 760px) 45vw, 260px" alt={photoAlt(p)} width={p.width} height={p.height} loading="lazy" decoding="async" />
                       <figcaption>{p.code}</figcaption>
                     </figure>
                   ))}

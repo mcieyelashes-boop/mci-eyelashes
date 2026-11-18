@@ -29,7 +29,7 @@ export default function BlogList() {
       <section className="page-hero">
         <div className="container">
           <p className="eyebrow">Resources</p>
-          <h1>Wholesale Lash <em>Industry Guides</em></h1>
+          <h1 id="content" tabIndex={-1}>Wholesale Lash <em>Industry Guides</em></h1>
           <p className="lede">
             Practical guides for salon owners, distributors, and beauty entrepreneurs, from pricing and MOQ to private label manufacturing.
           </p>

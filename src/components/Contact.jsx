@@ -1,6 +1,7 @@
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
 import { track, pageRef, reportInquiry, reportWholesaleInquiry } from '../utils/track'
+import { useFieldErrors } from '../utils/useFieldErrors'
 
 const EJS_SERVICE  = import.meta.env.VITE_EMAILJS_SERVICE_ID  || ''
 const EJS_TEMPLATE = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || ''
@@ -109,6 +110,9 @@ export default function Contact() {
   const [loading, setLoading] = useState(false)
   const [error, setError]     = useState('')
   const [form, setForm]       = useState(EMPTY_FORM)
+  const formRef      = useRef(null)
+  const announcerRef = useRef(null)
+  useFieldErrors(formRef, announcerRef, sent)
 
   const update = k => e => setForm(f => ({ ...f, [k]: e.target.value }))
 
@@ -116,10 +120,9 @@ export default function Contact() {
     e.preventDefault()
     setError('')
 
-    if (!e.currentTarget.checkValidity()) {
-      e.currentTarget.reportValidity()
-      return
-    }
+    // The browser has already checked the required fields, shown their errors and
+    // moved focus to the first one before this handler runs; this is a safety net.
+    if (!e.currentTarget.checkValidity()) return
 
     // A filled honeypot means a bot. Show it success and send nothing.
     if (form.website) {
@@ -202,45 +205,50 @@ export default function Contact() {
           </div>
 
           <div className="contact-form">
+            <p ref={announcerRef} className="visually-hidden" aria-live="polite" />
             {sent ? (
               <div className="form-state" role="status">
                 <h3>Inquiry Sent</h3>
                 <p>Thank you. Our team will respond within 24 hours with your personalized wholesale package.</p>
                 <p className="form-state-mail">denis@mci-eyelashes.com</p>
-                <button className="btn-ghost" onClick={handleReset}>Send Another Inquiry</button>
+                <button type="button" className="btn-ghost" onClick={handleReset}>Send Another Inquiry</button>
               </div>
             ) : (
-              <form onSubmit={handleSubmit}>
+              <form ref={formRef} onSubmit={handleSubmit} aria-label="Wholesale inquiry">
                 <div className="form-row">
                   <div className="form-group">
-                    <label htmlFor="cf-firstName">First Name <span className="form-required">*</span></label>
-                    <input id="cf-firstName" required autoComplete="given-name" value={form.firstName} onChange={update('firstName')} placeholder="Jane" />
+                    <label htmlFor="cf-firstName">First Name <span className="form-required" aria-hidden="true">*</span></label>
+                    <input id="cf-firstName" name="firstName" required autoComplete="given-name" data-error="cf-firstName-error" value={form.firstName} onChange={update('firstName')} placeholder="Jane" />
+                    <p id="cf-firstName-error" className="field-error">Enter your first name.</p>
                   </div>
                   <div className="form-group">
-                    <label htmlFor="cf-lastName">Last Name <span className="form-required">*</span></label>
-                    <input id="cf-lastName" required autoComplete="family-name" value={form.lastName} onChange={update('lastName')} placeholder="Smith" />
+                    <label htmlFor="cf-lastName">Last Name <span className="form-required" aria-hidden="true">*</span></label>
+                    <input id="cf-lastName" name="lastName" required autoComplete="family-name" data-error="cf-lastName-error" value={form.lastName} onChange={update('lastName')} placeholder="Smith" />
+                    <p id="cf-lastName-error" className="field-error">Enter your last name.</p>
                   </div>
                 </div>
 
                 <div className="form-group">
-                  <label htmlFor="cf-email">Business Email <span className="form-required">*</span></label>
-                  <input id="cf-email" required type="email" autoComplete="email" value={form.email} onChange={update('email')} placeholder="jane@salon.com" />
+                  <label htmlFor="cf-email">Business Email <span className="form-required" aria-hidden="true">*</span></label>
+                  <input id="cf-email" name="email" required type="email" inputMode="email" autoComplete="email" autoCorrect="off" autoCapitalize="none" spellCheck={false} data-error="cf-email-error" value={form.email} onChange={update('email')} placeholder="jane@salon.com" />
+                  <p id="cf-email-error" className="field-error">Enter an email address, for example name@company.com.</p>
                 </div>
 
                 <div className="form-row">
                   <div className="form-group">
                     <label htmlFor="cf-company">Company / Brand</label>
-                    <input id="cf-company" autoComplete="organization" value={form.company} onChange={update('company')} placeholder="Glam Beauty Co." />
+                    <input id="cf-company" name="company" autoComplete="organization" value={form.company} onChange={update('company')} placeholder="Glam Beauty Co." />
                   </div>
                   <div className="form-group">
-                    <label htmlFor="cf-country">Country <span className="form-required">*</span></label>
-                    <input id="cf-country" required autoComplete="country-name" value={form.country} onChange={update('country')} placeholder="United States" />
+                    <label htmlFor="cf-country">Country <span className="form-required" aria-hidden="true">*</span></label>
+                    <input id="cf-country" name="country" required autoComplete="country-name" data-error="cf-country-error" value={form.country} onChange={update('country')} placeholder="United States" />
+                    <p id="cf-country-error" className="field-error">Enter the country you are ordering for.</p>
                   </div>
                 </div>
 
                 <div className="form-group">
                   <label htmlFor="cf-volume">Monthly Volume</label>
-                  <select id="cf-volume" value={form.volume} onChange={update('volume')}>
+                  <select id="cf-volume" name="volume" value={form.volume} onChange={update('volume')}>
                     <option value="">Select order range</option>
                     {VOLUMES.map((v) => <option key={v}>{v}</option>)}
                   </select>
@@ -248,7 +256,7 @@ export default function Contact() {
 
                 <div className="form-group">
                   <label htmlFor="cf-message">Message</label>
-                  <textarea id="cf-message" rows={4} value={form.message} onChange={update('message')} placeholder="Tell us about your wholesale needs: product types, target market, or any custom requirements..." />
+                  <textarea id="cf-message" name="message" rows={4} value={form.message} onChange={update('message')} placeholder="Tell us about your wholesale needs: product types, target market, or any custom requirements..." />
                 </div>
 
                 <div className="form-trap" aria-hidden="true">
@@ -268,7 +276,7 @@ export default function Contact() {
                 )}
 
                 <button type="submit" className="btn btn-submit" disabled={loading}>
-                  {loading ? <span className="btn-submit-spinner" aria-label="Sending" /> : 'Send Inquiry'}
+                  {loading ? <><span className="btn-submit-spinner" aria-hidden="true" /><span className="visually-hidden">Sending</span></> : 'Send Inquiry'}
                 </button>
 
                 <p className="form-privacy">

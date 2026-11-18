@@ -35,7 +35,7 @@ export default function Process() {
           </p>
         </header>
 
-        <ol className="steps">
+        <ol className="steps" role="list">
           {steps.map((step) => (
             <li key={step.number} className="step">
               <p className="step-num" aria-hidden="true">{step.number}</p>

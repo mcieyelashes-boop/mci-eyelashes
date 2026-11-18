@@ -1,6 +1,6 @@
-import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { collectionPhotos, photoAlt } from '../data/productPhotos'
+import { collectionPhotos, photoAlt, photoSrcSet } from '../data/productPhotos'
+import { useTabs } from '../utils/useTabs'
 
 // Only the four collections the owner sells. Under Lashes was removed at the
 // owner's request (November 2026). Do not add a collection here unless the
@@ -12,19 +12,13 @@ const products = [
   { id: '04', photos: 'human', name: 'Human Hair Classic', tagline: '100% Sterilized · Most Natural', badge: 'Ultra Natural', skus: 'IBC 1042 to IBC 1256', desc: 'The absolute most natural look. 100% sterilized human hair that blends seamlessly with existing lashes.', specs: ['100% sterilized human hair', 'Hand-inspected before dispatch', 'Most natural appearance', 'Premium salon grade'], moq: '100 pairs' },
 ]
 
+// Rendered width of one photo in the 3-column plate (2 columns on phones).
+const PLATE_SIZES = '(max-width: 760px) 45vw, 290px'
+
 export default function Products() {
-  const [active, setActive] = useState(0)
+  const { active, listProps, tabProps, panelProps } = useTabs(products.length, 'collection')
   const p = products[active]
   const photos = p.photos ? collectionPhotos[p.photos] : []
-
-  const onKeyDown = (e) => {
-    const step = { ArrowDown: 1, ArrowRight: 1, ArrowUp: -1, ArrowLeft: -1 }[e.key]
-    if (!step) return
-    e.preventDefault()
-    const next = (active + step + products.length) % products.length
-    setActive(next)
-    document.getElementById(`collection-tab-${next}`)?.focus()
-  }
 
   return (
     <section id="products" className="section section--rule">
@@ -40,18 +34,9 @@ export default function Products() {
         </header>
 
         <div className="collections">
-          <div className="collection-tabs" role="tablist" aria-label="Lash collections" onKeyDown={onKeyDown}>
+          <div className="collection-tabs scroll-fade" aria-label="Lash collections" {...listProps}>
             {products.map((prod, i) => (
-              <button
-                key={prod.id}
-                id={`collection-tab-${i}`}
-                role="tab"
-                aria-selected={active === i}
-                aria-controls="collection-panel"
-                tabIndex={active === i ? 0 : -1}
-                className="collection-tab"
-                onClick={() => setActive(i)}
-              >
+              <button key={prod.id} className="collection-tab" {...tabProps(i)}>
                 <span className="collection-tab-num">{prod.id}</span>
                 <span className="collection-tab-name">{prod.name}</span>
                 <span className="collection-tab-mark" aria-hidden="true">&rarr;</span>
@@ -59,19 +44,13 @@ export default function Products() {
             ))}
           </div>
 
-          <div
-            key={p.id}
-            id="collection-panel"
-            role="tabpanel"
-            aria-labelledby={`collection-tab-${active}`}
-            className="collection-panel"
-          >
+          <div key={p.id} className="collection-panel" {...panelProps}>
             {photos.length > 0 ? (
               <div className="plate">
                 <div className="plate-grid">
                   {photos.map((photo) => (
                     <figure key={photo.code} className="plate-item">
-                      <img src={photo.src} alt={photoAlt(photo)} width={photo.width} height={photo.height} loading="lazy" decoding="async" />
+                      <img src={photo.src} srcSet={photoSrcSet(photo)} sizes={PLATE_SIZES} alt={photoAlt(photo)} width={photo.width} height={photo.height} loading="lazy" decoding="async" />
                       <figcaption>{photo.code}</figcaption>
                     </figure>
                   ))}

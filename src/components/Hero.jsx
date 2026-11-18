@@ -15,7 +15,7 @@ const terms = [
 export default function Hero() {
   return (
     <>
-      <section id="hero" className="hero" aria-label="MCI Eyelashes campaign image">
+      <section id="hero" className="hero">
         {/* Phones get a crop of the same picture (its right-hand part, where the
             head is) at well under half the weight. The breakpoint must match the
             object-position rule for .hero-media img in index.css. */}
@@ -32,12 +32,12 @@ export default function Hero() {
         </picture>
       </section>
 
-      <section className="intro" aria-labelledby="intro-title">
+      <section className="intro">
         <div className="container">
           <div className="intro-grid">
             <div>
               <p className="eyebrow">Purbalingga, Indonesia</p>
-              <h1 id="intro-title">
+              <h1 id="content" tabIndex={-1}>
                 Eyelashes Made in Purbalingga, Indonesia
                 <em>Wholesale, OEM &amp; Private Label</em>
               </h1>

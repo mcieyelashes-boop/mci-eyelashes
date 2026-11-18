@@ -34,7 +34,7 @@ export default function About() {
               Our lashes are made by partner workshops in Purbalingga, Indonesia, that we manage. You get one contact from first sample to shipment, OEM flexibility, and the option of a video call from the workshop floor.
             </p>
 
-            <dl className="materials" aria-label="Materials you can choose">
+            <dl className="materials">
               {materials.map(({ label, name }) => (
                 <div key={name} className="material">
                   <dt><span>{label}</span></dt>

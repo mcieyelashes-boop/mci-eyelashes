@@ -46,7 +46,7 @@ export default function FactoryProof() {
           </p>
         </header>
 
-        <ol className="proofs">
+        <ol className="proofs" role="list">
           {proofs.map(({ title, desc }) => (
             <li key={title} className="proof">
               <h3>{title}</h3>

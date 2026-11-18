@@ -44,12 +44,22 @@
   --nav-h: 72px;
   --gutter: clamp(20px, 4vw, 48px);
   --section: clamp(72px, 10vw, 136px);
+
+  /* The site has one, dark, theme. Declaring it makes the browser draw its own
+     UI in dark too: form controls, the <select> list, autofill and scrollbars. */
+  color-scheme: dark;
+  accent-color: var(--gold);
+  scrollbar-color: var(--ivory-3) var(--ink-2);
 }
 
 /* ── Reset ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-html { scroll-behavior: smooth; scroll-padding-top: calc(var(--nav-h) + 8px); -webkit-text-size-adjust: 100%; }
+html {
+  scroll-padding-top: calc(var(--nav-h) + 8px);
+  -webkit-text-size-adjust: 100%;
+  @media (prefers-reduced-motion: no-preference) { scroll-behavior: smooth; }
+}
 
 body {
   font-family: var(--sans);
@@ -78,10 +88,22 @@ p { text-wrap: pretty; }
   overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
-  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+/* Hidden visually, kept for screen readers. Focusable content inside it (the
+   skip link) becomes visible while focused. */
+.visually-hidden:where(:not(:focus-within, :active)) {
+  position: absolute !important; clip-path: inset(50%) !important; overflow: hidden !important;
+  width: 1px !important; height: 1px !important; margin: -1px !important; padding: 0 !important;
+  border: 0 !important; white-space: nowrap !important;
 }
+
+.skip-link {
+  position: fixed; inset: 12px auto auto 12px; z-index: 200;
+  padding: 12px 18px; background: var(--gold); color: var(--ink);
+  font-size: 14px; font-weight: 700; border-radius: 2px;
+}
+
+/* Headings that are skip-link targets get focus from script, not from Tab. */
+[tabindex="-1"]:focus { outline: none; }
 
 /* ── Layout ── */
 .container { width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 var(--gutter); }
@@ -127,7 +149,8 @@ p { text-wrap: pretty; }
   transition: background 0.25s var(--ease), color 0.25s var(--ease), border-color 0.25s var(--ease), transform 0.25s var(--ease);
 }
 .btn { background: var(--gold); color: var(--ink); border-color: var(--gold); }
-.btn:hover { background: var(--gold-hi); border-color: var(--gold-hi); transform: translateY(-1px); }
+.btn:hover { background: var(--gold-hi); border-color: var(--gold-hi); }
+@media (prefers-reduced-motion: no-preference) { .btn:hover { transform: translateY(-1px); } }
 .btn-ghost { color: var(--ivory); border-color: var(--line-2); }
 .btn-ghost:hover { border-color: var(--ivory); background: rgba(243, 238, 227, 0.06); }
 .btn--sm { min-height: 42px; padding: 10px 20px; font-size: 12px; }
@@ -152,28 +175,49 @@ p { text-wrap: pretty; }
 .nav-inner { height: 100%; max-width: 1240px; margin: 0 auto; padding: 0 var(--gutter); display: flex; align-items: center; gap: clamp(24px, 4vw, 56px); }
 .nav-logo { display: flex; align-items: center; flex-shrink: 0; }
 .nav-logo img { width: 42px; height: 43px; object-fit: contain; }
-.nav-links { display: flex; align-items: center; gap: clamp(20px, 2.6vw, 36px); margin-right: auto; }
+.nav-links { margin-right: auto; }
+.nav-links ul { display: flex; align-items: center; gap: clamp(20px, 2.6vw, 36px); }
 .nav-link {
   font-size: 14px; font-weight: 500; letter-spacing: 0.02em; color: var(--ivory);
   padding: 8px 0; border-bottom: 1px solid transparent; transition: color 0.2s, border-color 0.2s;
 }
 .nav-link:hover, .nav-link[aria-current='page'] { color: var(--gold-hi); border-bottom-color: rgba(240, 219, 147, 0.5); }
-.nav-hamburger { display: none; width: 44px; height: 44px; margin-left: auto; flex-direction: column; align-items: center; justify-content: center; gap: 6px; }
-.ham-line { width: 22px; height: 1.5px; background: var(--ivory); transition: transform 0.25s var(--ease), opacity 0.2s; }
+
+/* Phone menu: a native popover opened by the Menu button (see Navbar.jsx). */
+.nav-menu-button {
+  display: none; align-items: center; gap: 10px; margin-left: auto;
+  min-height: 44px; padding: 0 4px; font-size: 14px; font-weight: 600; letter-spacing: 0.04em; color: var(--ivory);
+}
+.ham { display: flex; flex-direction: column; gap: 6px; }
+.ham-line { width: 22px; height: 1.5px; background: var(--ivory); }
 .menu-open .ham-line:nth-child(1) { transform: translateY(7.5px) rotate(45deg); }
 .menu-open .ham-line:nth-child(2) { opacity: 0; }
 .menu-open .ham-line:nth-child(3) { transform: translateY(-7.5px) rotate(-45deg); }
-.nav-mobile-menu { display: none; }
+@media (prefers-reduced-motion: no-preference) {
+  .ham-line { transition: transform 0.25s var(--ease), opacity 0.2s; }
+}
+
+/* Reset the browser's centred-box popover styling. Only the open state may set
+   display, otherwise the closed popover would show. :is() keeps the rule valid
+   where the polyfill's .\:popover-open class stands in for :popover-open. */
+.nav-mobile-menu {
+  position: fixed; inset: var(--nav-h) 0 auto 0; margin: 0;
+  inline-size: 100%; max-inline-size: none; max-block-size: calc(100dvh - var(--nav-h)); overflow: auto;
+  padding: 8px var(--gutter) 28px; border: 0; border-bottom: 1px solid var(--line);
+  background: rgba(7, 18, 26, 0.98); color: var(--ivory);
+}
+.nav-mobile-menu:is(:popover-open, .\:popover-open) { display: flex; flex-direction: column; }
+.nav-mobile-menu::backdrop { background: transparent; }
+.nav-mobile-link { display: block; font-family: var(--serif); font-size: 28px; color: var(--ivory); padding: 14px 0; border-bottom: 1px solid var(--line); }
+.nav-mobile-link[aria-current='page'] { color: var(--gold-hi); }
+.nav-mobile-menu .btn { margin-top: 24px; }
 
 @media (max-width: 860px) {
   .nav-links, .nav-cta { display: none; }
-  .nav-hamburger { display: flex; }
-  .nav-mobile-menu {
-    display: flex; flex-direction: column; padding: 8px var(--gutter) 28px;
-    background: rgba(7, 18, 26, 0.98); border-bottom: 1px solid var(--line);
-  }
-  .nav-mobile-link { font-family: var(--serif); font-size: 28px; color: var(--ivory); text-align: left; padding: 14px 0; border-bottom: 1px solid var(--line); }
-  .nav-mobile-menu .btn { margin-top: 24px; }
+  .nav-menu-button { display: flex; }
+}
+@media (min-width: 861px) {
+  .nav-mobile-menu:is(:popover-open, .\:popover-open) { display: none; }
 }
 
 /* ── Hero: the campaign image, full width, never cropped at the head ──
@@ -216,13 +260,18 @@ p { text-wrap: pretty; }
 .collection-tab:hover { color: var(--ivory); }
 .collection-tab-num { font-size: 12px; font-weight: 600; letter-spacing: 0.1em; font-variant-numeric: tabular-nums; }
 .collection-tab-name { font-family: var(--serif); font-size: 24px; line-height: 1.15; }
-.collection-tab-mark { font-size: 16px; opacity: 0; transform: translateX(-6px); transition: opacity 0.2s, transform 0.25s var(--ease); }
+.collection-tab-mark { font-size: 16px; opacity: 0; transition: opacity 0.2s; }
+@media (prefers-reduced-motion: no-preference) {
+  .collection-tab-mark { translate: -6px 0; transition: opacity 0.2s, translate 0.25s var(--ease); }
+}
 .collection-tab[aria-selected='true'] { color: var(--ivory); }
 .collection-tab[aria-selected='true'] .collection-tab-num,
 .collection-tab[aria-selected='true'] .collection-tab-mark { color: var(--gold); }
-.collection-tab[aria-selected='true'] .collection-tab-mark { opacity: 1; transform: none; }
+.collection-tab[aria-selected='true'] .collection-tab-mark { opacity: 1; translate: none; }
 
-.collection-panel { animation: panel-in 0.4s var(--ease); }
+@media (prefers-reduced-motion: no-preference) {
+  .collection-panel { animation: panel-in 0.4s var(--ease); }
+}
 @keyframes panel-in { from { opacity: 0; transform: translateY(8px); } }
 
 .plate { background: var(--paper); color: var(--paper-ink); border-radius: 2px; padding: clamp(14px, 2vw, 24px); }
@@ -253,8 +302,11 @@ p { text-wrap: pretty; }
 .campaign { background: var(--ink); }
 .campaign-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 4px; }
 .campaign-card { overflow: hidden; aspect-ratio: 3 / 4; background: var(--ink-3); }
-.campaign-card img { width: 100%; height: 100%; object-fit: cover; object-position: center 12%; transition: transform 0.9s var(--ease); }
-.campaign-card:hover img { transform: scale(1.04); }
+.campaign-card img { width: 100%; height: 100%; object-fit: cover; object-position: center 12%; }
+@media (prefers-reduced-motion: no-preference) {
+  .campaign-card img { transition: scale 0.9s var(--ease); }
+  .campaign-card:hover img { scale: 1.04; }
+}
 
 /* ── Process ── */
 .steps { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--line-2); }
@@ -311,12 +363,25 @@ p { text-wrap: pretty; }
 .faq-head .lede { margin: 20px 0 28px; }
 .faq-list { border-top: 1px solid var(--line-2); }
 .faq-item { border-bottom: 1px solid var(--line); }
-.faq-item summary { display: flex; justify-content: space-between; align-items: center; gap: 24px; padding: 24px 0; cursor: pointer; list-style: none; font-family: var(--serif); font-size: clamp(21px, 2vw, 26px); line-height: 1.2; color: var(--ivory); transition: color 0.2s; }
+.faq-item summary {
+  display: flex; align-items: baseline; gap: 16px; padding: 24px 0; cursor: pointer; list-style: none;
+  font-family: var(--serif); font-size: clamp(21px, 2vw, 26px); line-height: 1.2; color: var(--ivory); transition: color 0.2s;
+}
 .faq-item summary::-webkit-details-marker { display: none; }
-.faq-item summary::after { content: '+'; font-family: var(--sans); font-weight: 300; font-size: 26px; line-height: 1; color: var(--gold); transition: transform 0.3s var(--ease); flex-shrink: 0; }
-.faq-item[open] summary::after { transform: rotate(45deg); }
+/* Marker sits just before the question, where the eye starts reading it. */
+.faq-item summary::before {
+  content: '+' / ''; font-family: var(--sans); font-weight: 300; font-size: 26px; line-height: 0.8;
+  color: var(--gold); flex-shrink: 0; inline-size: 1ch;
+}
+.faq-item[open] summary::before { rotate: 45deg; }
 .faq-item summary:hover { color: var(--gold-hi); }
-.faq-item p { padding: 0 48px 26px 0; max-width: 64ch; }
+@media (prefers-reduced-motion: no-preference) {
+  .faq-item summary::before { transition: rotate 0.3s var(--ease); }
+  /* Browsers with ::details-content and interpolate-size slide the answer open. */
+  .faq-item::details-content { interpolate-size: allow-keywords; overflow: clip; contain: layout; transition: block-size 0.3s ease-in-out, content-visibility 0.3s; transition-behavior: allow-discrete; }
+  .faq-item:not([open])::details-content { block-size: 0; }
+}
+.faq-item p { padding: 0 48px 26px calc(1ch + 16px); max-width: 64ch; }
 
 /* ── Contact ── */
 .contact-grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: clamp(32px, 6vw, 96px); align-items: start; }
@@ -348,12 +413,17 @@ p { text-wrap: pretty; }
 .form-group select { appearance: none; background-image: linear-gradient(45deg, transparent 50%, var(--gold) 50%), linear-gradient(135deg, var(--gold) 50%, transparent 50%); background-position: calc(100% - 20px) 22px, calc(100% - 14px) 22px; background-size: 6px 6px; background-repeat: no-repeat; padding-right: 40px; }
 .form-group select option { background: var(--ink); color: var(--ivory); }
 .form-group input::placeholder, .form-group textarea::placeholder { color: var(--ivory-3); opacity: 0.75; }
-.form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: var(--gold); box-shadow: 0 0 0 3px rgba(217, 184, 95, 0.2); }
+.form-group input:focus-visible, .form-group select:focus-visible, .form-group textarea:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; border-color: var(--gold); }
+/* Errors show only after the visitor has used the field or tried to send (see useFieldErrors.js). */
+.form-group :is(input, select, textarea):user-invalid { border-color: #ff9d8a; }
+.field-error { display: none; margin-top: 8px; color: #ff9d8a; font-size: 14px; line-height: 1.45; }
+.form-group :user-invalid ~ .field-error { display: block; }
 .form-trap { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
 .form-error { color: #ff9d8a; font-size: 14px; margin-bottom: 14px; }
 .btn-submit { width: 100%; }
 .btn-submit:disabled { opacity: 0.6; cursor: wait; }
 .btn-submit-spinner { width: 18px; height: 18px; border: 2px solid rgba(7, 18, 26, 0.3); border-top-color: var(--ink); border-radius: 50%; animation: spin 0.8s linear infinite; }
+@media (prefers-reduced-motion: reduce) { .btn-submit-spinner { animation-duration: 2.4s; } }
 @keyframes spin { to { transform: rotate(360deg); } }
 .form-privacy { font-size: 13px; color: var(--ivory-3); margin-top: 14px; }
 .form-state { display: flex; flex-direction: column; align-items: flex-start; gap: 16px; }
@@ -370,7 +440,7 @@ p { text-wrap: pretty; }
 .footer-contact a { color: var(--teal); }
 .footer-contact a:hover { color: var(--ivory); }
 .footer-links { display: grid; grid-template-columns: 1fr 1.4fr 1fr 1fr; gap: 40px 32px; }
-.footer-link-title { font-size: 12px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
+.footer-link-title { font-family: var(--sans); font-size: 12px; font-weight: 600; line-height: 1.4; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
 .footer-link { display: block; padding: 5px 0; color: var(--ivory-2); transition: color 0.2s; }
 .footer-link:hover { color: var(--ivory); }
 .footer-bottom { max-width: 1240px; margin: clamp(48px, 6vw, 72px) auto 0; padding: 24px var(--gutter) 32px; border-top: 1px solid var(--line); display: flex; justify-content: space-between; gap: 12px 32px; flex-wrap: wrap; font-size: 13px; color: var(--ivory-3); }
@@ -455,11 +525,12 @@ p { text-wrap: pretty; }
 .cat-tabs-wrap { position: sticky; top: var(--nav-h); z-index: 20; background: rgba(7, 18, 26, 0.96); border-bottom: 1px solid var(--line); backdrop-filter: blur(10px); }
 .cat-tabs { max-width: 1240px; margin: 0 auto; padding: 0 var(--gutter); display: flex; gap: clamp(20px, 3vw, 40px); overflow-x: auto; scrollbar-width: none; }
 .cat-tabs::-webkit-scrollbar { display: none; }
-.cat-tab { display: flex; align-items: baseline; gap: 10px; padding: 18px 0 16px; border-bottom: 2px solid transparent; color: var(--ivory-3); white-space: nowrap; transition: color 0.2s, border-color 0.2s; }
+.cat-tab { position: relative; flex: none; display: flex; align-items: baseline; gap: 10px; padding: 18px 0 16px; color: var(--ivory-3); white-space: nowrap; transition: color 0.2s; }
 .cat-tab:hover { color: var(--ivory); }
-.cat-tab.active { color: var(--ivory); border-bottom-color: var(--gold); }
+.cat-tab[aria-selected='true'] { color: var(--ivory); }
+.cat-tab[aria-selected='true']::after { content: ''; position: absolute; inset: auto 0 0; border-block-end: 2px solid var(--gold); }
 .cat-tab-num { font-size: 12px; font-weight: 600; letter-spacing: 0.1em; }
-.cat-tab.active .cat-tab-num { color: var(--gold); }
+.cat-tab[aria-selected='true'] .cat-tab-num { color: var(--gold); }
 .cat-tab-name { font-family: var(--serif); font-size: 21px; }
 
 .cat-panel-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 20px 40px; flex-wrap: wrap; margin-bottom: clamp(28px, 4vw, 44px); }
@@ -511,15 +582,20 @@ p { text-wrap: pretty; }
 /* ── WhatsApp button ──
    Stacked above the NaraAI chat bubble (bottom:20/right:20, about 48px tall).
    Both share the same right offset so they read as one vertical stack. */
-.whatsapp-wrap { position: fixed; bottom: 84px; right: 20px; z-index: 90; transition: opacity 0.3s var(--ease), transform 0.3s var(--ease); }
-.whatsapp-wrap[data-visible='false'] { opacity: 0; transform: translateY(8px); pointer-events: none; }
+.whatsapp-wrap { position: fixed; bottom: 84px; right: 20px; z-index: 90; transition: opacity 0.3s var(--ease); }
+.whatsapp-wrap[data-visible='false'] { opacity: 0; pointer-events: none; }
+@media (prefers-reduced-motion: no-preference) {
+  .whatsapp-wrap { transition: opacity 0.3s var(--ease), translate 0.3s var(--ease); }
+  .whatsapp-wrap[data-visible='false'] { translate: 0 8px; }
+  .whatsapp-float:hover { translate: 0 -2px; }
+}
 .whatsapp-float {
   display: flex; align-items: center; gap: 10px; min-height: 48px; padding: 12px 20px 12px 16px;
   background: #1fa855; color: #fff; border-radius: 999px;
   font-size: 13px; font-weight: 700; letter-spacing: 0.06em;
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.38); transition: background 0.2s, transform 0.25s var(--ease);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.38); transition: background 0.2s, translate 0.25s var(--ease);
 }
-.whatsapp-float:hover { background: #23bd60; transform: translateY(-2px); }
+.whatsapp-float:hover { background: #23bd60; }
 
 /* NaraAI chat widget: injected by an external script (see index.html). Its
    elements are repositioned here with !important to beat its inline styles. */
@@ -532,8 +608,8 @@ iframe[src*="naraai.vercel.app/c/"] { bottom: 80px !important; right: 20px !impo
   .collections { grid-template-columns: minmax(0, 1fr); }
   .collection-tabs { position: static; flex-direction: row; overflow-x: auto; border-top: 0; border-bottom: 1px solid var(--line); gap: 28px; scrollbar-width: none; margin: 0 calc(var(--gutter) * -1); padding: 0 var(--gutter); }
   .collection-tabs::-webkit-scrollbar { display: none; }
-  .collection-tab { display: flex; gap: 8px; white-space: nowrap; border-bottom: 2px solid transparent; padding: 14px 0; flex-shrink: 0; }
-  .collection-tab[aria-selected='true'] { border-bottom-color: var(--gold); }
+  .collection-tab { position: relative; display: flex; gap: 8px; white-space: nowrap; padding: 14px 0; flex: none; }
+  .collection-tab[aria-selected='true']::after { content: ''; position: absolute; inset: auto 0 0; border-block-end: 2px solid var(--gold); }
   .collection-tab-name { font-size: 21px; }
   .collection-tab-mark { display: none; }
   .service { grid-template-columns: 40px minmax(0, 1fr) minmax(0, 1fr); }
@@ -563,7 +639,7 @@ iframe[src*="naraai.vercel.app/c/"] { bottom: 80px !important; right: 20px !impo
   .plate-grid, .plate-grid[data-count='4'] { grid-template-columns: repeat(2, 1fr); }
   /* The phone hero file is already cropped around the head (see Hero.jsx). */
   .hero-media img { object-position: 50% top; }
-  .campaign-grid { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 4px; scrollbar-width: none; }
+  .campaign-grid { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; overscroll-behavior-x: contain; gap: 4px; scrollbar-width: none; }
   .campaign-grid::-webkit-scrollbar { display: none; }
   .campaign-card { flex: 0 0 68vw; scroll-snap-align: start; }
   .proofs { grid-template-columns: minmax(0, 1fr); }
@@ -592,10 +668,28 @@ iframe[src*="naraai.vercel.app/c/"] { bottom: 80px !important; right: 20px !impo
   .cat-tier + .cat-tier { padding-left: 0; border-left: 0; border-top: 1px solid var(--line-2); }
   .cat-plate .plate-grid { grid-template-columns: repeat(2, 1fr); }
   .btn-row .btn, .btn-row .btn-ghost { flex: 1 1 100%; }
-  .whatsapp-float span { display: none; }
+  /* Icon only on phones; the text stays as the button's name for screen readers. */
+  .whatsapp-float span { position: absolute; clip-path: inset(50%); width: 1px; height: 1px; overflow: hidden; white-space: nowrap; }
   .whatsapp-float { padding: 12px; width: 48px; justify-content: center; }
 }
 
 @media (max-width: 420px) {
   .footer-links { grid-template-columns: minmax(0, 1fr); }
 }
+
+/* ── Scrolling tab rows: fade an edge only while there are more tabs past it ── */
+@property --fade-start { syntax: "<length>"; inherits: false; initial-value: 0px; }
+@property --fade-end { syntax: "<length>"; inherits: false; initial-value: 0px; }
+.scroll-fade {
+  --fade-size: 3rem;
+  scroll-padding-inline: var(--fade-size);
+  mask:
+    linear-gradient(black, black) no-clip subtract,
+    linear-gradient(to right, black, transparent) 0 0 / var(--fade-start) 100% no-repeat no-clip,
+    linear-gradient(to right, transparent, black) 100% 0 / var(--fade-end) 100% no-repeat no-clip;
+  animation: reveal-fade-start linear both, hide-fade-end linear both;
+  animation-timeline: scroll(self inline);
+  animation-range: 0 var(--fade-size), calc(100% - var(--fade-size)) 100%;
+}
+@keyframes reveal-fade-start { to { --fade-start: var(--fade-size); } }
+@keyframes hide-fade-end { from { --fade-end: var(--fade-size); } }

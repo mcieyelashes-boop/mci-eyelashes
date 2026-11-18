@@ -8,7 +8,7 @@ const galleryImages = [
 
 export default function Gallery() {
   return (
-    <section id="gallery" className="campaign" aria-label="MCI Eyelashes campaign gallery">
+    <section id="gallery" className="campaign">
       <div className="campaign-grid">
         {galleryImages.map((item) => (
           <figure key={item.image} className="campaign-card">

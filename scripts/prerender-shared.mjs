@@ -37,6 +37,7 @@ const HEAD_STATIC = `
     <link rel="preload" as="font" type="font/woff2" href="/fonts/bricolage-grotesque-latin.woff2" crossorigin />
     <link rel="preload" as="font" type="font/woff2" href="/fonts/cormorant-garamond-latin.woff2" crossorigin />
     <meta name="theme-color" content="#07121a" />
+    <meta name="color-scheme" content="dark" />
     <script type="application/ld+json">${JSON.stringify({
       '@context': 'https://schema.org',
       '@type': 'Organization',

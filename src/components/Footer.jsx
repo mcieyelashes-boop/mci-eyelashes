@@ -61,7 +61,7 @@ export default function Footer() {
           <nav className="footer-links" aria-label="Footer">
             {Object.entries(footerLinks).map(([group, links]) => (
               <div key={group}>
-                <div className="footer-link-title">{group}</div>
+                <h2 className="footer-link-title">{group}</h2>
                 {links.map(({ label, href }) => (
                   <a key={label} href={href} className="footer-link">{label}</a>
                 ))}

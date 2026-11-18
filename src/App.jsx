@@ -22,7 +22,7 @@ const NotFound     = lazy(() => import('./pages/NotFound'))
 
 function Home() {
   return (
-    <>
+    <main>
       <Hero />
       <Products />
       <Gallery />
@@ -32,7 +32,7 @@ function Home() {
       <Services />
       <FAQ />
       <Contact />
-    </>
+    </main>
   )
 }
 

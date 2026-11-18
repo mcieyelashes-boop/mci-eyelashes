@@ -6,6 +6,12 @@ import { installLinkTracking } from './utils/track'
 
 installLinkTracking()
 
+// The phone menu is a native popover (Baseline since January 2025). Older
+// browsers get the polyfill; browsers with native support never download it.
+if (!Object.hasOwn(HTMLElement.prototype, 'popover')) {
+  import('@oddbird/popover-polyfill')
+}
+
 const container = document.getElementById('root')
 const app = (
   <StrictMode>

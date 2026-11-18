@@ -30,7 +30,7 @@ export default function Services() {
           </p>
         </header>
 
-        <ul className="services">
+        <ul className="services" role="list">
           {services.map((s) => (
             <li key={s.name} className={`service${s.featured ? ' service--featured' : ''}`}>
               <span className="service-num">{s.id}</span>
@@ -40,10 +40,10 @@ export default function Services() {
                 <span className="service-tag">{s.tag}</span>
               </div>
               <p className="service-desc">{s.desc}</p>
-              <ul className="service-points">
+              <ul className="service-points" role="list">
                 {s.highlights.map((h) => <li key={h}>{h}</li>)}
               </ul>
-              <a href="#contact" className="arrow-link" aria-label={`Get a quote for ${s.name}`}>Get Quote</a>
+              <a href="#contact" className="arrow-link">Get Quote<span className="visually-hidden"> for {s.name}</span></a>
             </li>
           ))}
         </ul>

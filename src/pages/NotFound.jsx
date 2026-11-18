@@ -22,7 +22,7 @@ export default function NotFound() {
       <div className="container container--narrow">
         <p className="notfound-num" aria-hidden="true">404</p>
         <p className="eyebrow">Page Not Found</p>
-        <h1>This page doesn't exist</h1>
+        <h1 id="content" tabIndex={-1}>This page doesn't exist</h1>
         <p className="lede">
           The URL <code>{pathname}</code> could not be found. It may have moved, been deleted, or never existed.
         </p>

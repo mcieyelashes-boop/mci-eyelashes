@@ -29,7 +29,6 @@ export default function WhatsAppButton() {
         target="_blank"
         rel="noopener noreferrer"
         className="whatsapp-float"
-        aria-label="Chat on WhatsApp"
         tabIndex={visible ? 0 : -1}
       >
         <svg className="whatsapp-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
