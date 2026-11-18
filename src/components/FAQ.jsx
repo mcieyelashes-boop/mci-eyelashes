@@ -28,8 +28,8 @@ const faqs = [
     a: 'Choose the styles you want from the catalogue first, then send us the style codes. We send the price for the styles you chose.',
   },
   {
-    q: 'Are you a factory or a reseller?',
-    a: 'Direct factory, based in Purbalingga, Indonesia. We welcome live video calls to our production floor. Just ask.',
+    q: 'Where are your lashes made?',
+    a: 'In Purbalingga, Indonesia, by partner workshops that we manage. You deal with one contact at MCI from sample to shipment, and you can ask for a live video call from the partner workshop floor before you order.',
   },
   {
     q: 'Do you offer private label or custom packaging?',

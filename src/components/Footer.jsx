@@ -10,8 +10,8 @@ const footerLinks = {
     { label: 'Faux Mink - Protein Silk', href: '/faux-mink-lashes-wholesale' },
     { label: 'Classic Human Hair',       href: '/human-hair-lashes-wholesale' },
   ],
-  Manufacturing: [
-    { label: 'Eyelash Factory Indonesia',       href: '/' },
+  Production: [
+    { label: 'Eyelashes from Indonesia',        href: '/' },
     { label: 'Eyelash Manufacturer Indonesia',  href: '/eyelash-manufacturer-indonesia' },
     { label: 'Private Label Eyelashes',         href: '/private-label-eyelashes' },
     { label: 'Eyelash OEM Indonesia',           href: '/eyelash-oem-indonesia' },
@@ -26,7 +26,7 @@ const footerLinks = {
   ],
   Company: [
     { label: 'About Us',              href: '/#about' },
-    { label: 'Manufacturing Process', href: '/#process' },
+    { label: 'Production Process',    href: '/#process' },
     { label: 'Gallery',               href: '/#gallery' },
     { label: 'Before You Order',      href: '/#before-you-order' },
     { label: 'Guides',                href: '/blog' },
@@ -51,7 +51,7 @@ export default function Footer() {
               <img src="/logo-mci-192.webp" alt="MCI Eyelashes" width="192" height="196" loading="lazy" decoding="async" />
             </div>
             <p className="footer-tagline">
-              Factory-direct wholesale eyelash collections for salons, spas, and distributors. MOQ 100 pairs per style. Free samples on catalog styles.
+              Wholesale eyelash collections made in Purbalingga, Indonesia, for salons, spas, and distributors. MOQ 100 pairs per style. Free samples on catalog styles.
             </p>
             <div className="footer-contact">
               <a href="mailto:denis@mci-eyelashes.com">denis@mci-eyelashes.com</a>
@@ -71,7 +71,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="footer-bottom">
-        <span>Copyright {YEAR} MCI Eyelashes - Purbalingga, Central Java, Indonesia</span>
+        <span>Copyright {YEAR} MCI Eyelashes - Est. 2019 - Purbalingga, Central Java, Indonesia</span>
         <span>Worldwide wholesale - mci-eyelashes.com</span>
       </div>
     </footer>

@@ -1,12 +1,15 @@
 import { Link } from 'react-router-dom'
 
-// The four terms the owner has confirmed. They are stated here once, in full,
+// The four terms the owner has confirmed. MCI does not own a factory: the
+// lashes are made by partner workshops in Purbalingga that MCI manages (owner,
+// November 2026). Never write 'factory direct', 'own floor' or 'in-house'.
+// The four terms: They are stated here once, in full,
 // so the sections below do not have to keep repeating them.
 const terms = [
   { term: 'Minimum order', value: '100 pairs', note: 'Per style. Mix and match styles to reach it.' },
   { term: 'Production',    value: '5 working days', note: 'On a 100-pair order.' },
   { term: 'Samples',       value: 'Free', note: 'On existing catalog styles. You cover shipping.' },
-  { term: 'Supply',        value: 'Factory direct', note: 'Made in Purbalingga, Indonesia. No trading company.' },
+  { term: 'Made in',       value: 'Purbalingga', note: 'By partner workshops in Central Java, Indonesia, that we manage.' },
 ]
 
 export default function Hero() {
@@ -35,13 +38,13 @@ export default function Hero() {
             <div>
               <p className="eyebrow">Purbalingga, Indonesia</p>
               <h1 id="intro-title">
-                Eyelashes Factory Indonesia
-                <em>OEM &amp; Private Label Manufacturer</em>
+                Eyelashes Made in Purbalingga, Indonesia
+                <em>Wholesale, OEM &amp; Private Label</em>
               </h1>
             </div>
             <div>
               <p className="lede">
-                For salons, distributors, and private-label founders. Pick a style, request a free sample, and order direct from the factory.
+                For salons, distributors, and private-label founders. Pick a style, request a free sample, and order with one contact from sample to shipment.
               </p>
               <div className="btn-row">
                 <a href="#contact" className="btn">Request Wholesale Pricing</a>

@@ -9,7 +9,7 @@ export const landingPages = [
     metaDescription: 'Sourcing lashes from an eyelash manufacturer in Indonesia: why buyers choose Indonesian factories, how to vet one, MOQ, lead time and shipping.',
     h1: 'Eyelash Manufacturer Indonesia: How to Source and What to Check',
     breadcrumbName: 'Eyelash Manufacturer Indonesia',
-    intro: 'Indonesia has an established eyelash manufacturing industry, and Purbalingga in Central Java is one of its hubs. This page is for buyers deciding whether to source from an Indonesian factory: why buyers do it, how to tell a good manufacturer from an average one, and what minimums, lead times and shipping look like. MCI Eyelashes is one of those manufacturers, so we use our own terms as the worked example.',
+    intro: 'Indonesia has an established eyelash manufacturing industry, and Purbalingga in Central Java is one of its hubs. This page is for buyers deciding whether to source from an Indonesian factory: why buyers do it, how to tell a good manufacturer from an average one, and what minimums, lead times and shipping look like. MCI Eyelashes supplies lashes made by partner workshops in Purbalingga, so we use our own terms as the worked example.',
     factSheet: [
       { label: 'Country', value: 'Indonesia' },
       { label: 'Factory location', value: 'Purbalingga, Central Java' },
@@ -17,7 +17,7 @@ export const landingPages = [
       { label: 'MOQ', value: '100 pairs per style, mix & match allowed' },
       { label: 'Production', value: '5 working days for 100-pair orders' },
       { label: 'Shipping', value: 'Worldwide, 7-14 days' },
-      { label: 'Verification', value: 'Live video call to the production floor' },
+      { label: 'Verification', value: 'Live video call from the partner workshop floor' },
     ],
     sections: [
       {
@@ -41,9 +41,9 @@ export const landingPages = [
         ],
       },
       {
-        heading: 'What MCI Eyelashes makes',
+        heading: 'What MCI Eyelashes supplies',
         paragraphs: [
-          'We make handmade lashes in protein silk, synthetic and human hair, organized in four collections: Soft Touch, 3D Luxe, Faux Mink - Protein Silk, and Classic - Human Hair. You can browse them in the [product catalogue](/catalogue) or read about how they are made on our [handmade eyelashes](/handmade-eyelashes) page.',
+          'We supply handmade lashes in protein silk, synthetic and human hair, organized in four collections: Soft Touch, 3D Luxe, Faux Mink - Protein Silk, and Classic - Human Hair. You can browse them in the [product catalogue](/catalogue) or read about how they are made on our [handmade eyelashes](/handmade-eyelashes) page.',
           'If you want a design of your own, we produce [OEM](/eyelash-oem-indonesia) on existing styles and develop [private label](/private-label-eyelashes) lashes to your own specification.',
         ],
       },
@@ -55,7 +55,7 @@ export const landingPages = [
         ],
       },
       {
-        heading: 'Who we manufacture for',
+        heading: 'Who we supply',
         paragraphs: [
           'We supply lash artists and salons buying for their own studio, [distributors](/eyelash-distributor-indonesia) reselling wholesale, and beauty brands building a private label or OEM line. A first order can be small: one style from several collections, 100 pairs each, mixed in one shipment.',
           'For our standard terms in one place, see [wholesale eyelashes](/wholesale-eyelashes). If you want to know more about the town where we work, read about our [factory in Purbalingga](/eyelash-manufacturer-purbalingga).',
@@ -66,7 +66,7 @@ export const landingPages = [
         list: [
           'Send an inquiry by email or WhatsApp with the product type, the order size and your country. We reply within 24 hours with the catalogue and price sheet.',
           'Ask for samples. Samples on existing catalog styles are free, and you cover the shipping.',
-          'Ask for a live video call to the production floor if you want to see the factory before you pay.',
+          'Ask for a live video call from the partner workshop floor if you want to see where your lashes are made before you pay.',
           'Place the order at 100 pairs per style, mixing styles as you like.',
           'Production takes 5 working days for a 100-pair order, then the order ships to you.',
         ],
@@ -74,28 +74,28 @@ export const landingPages = [
       },
     ],
     faq: [
-      { q: 'Is MCI Eyelashes based in Indonesia?', a: 'Yes. MCI Eyelashes is a direct factory in Purbalingga, Central Java, Indonesia, supplying buyers worldwide.' },
+      { q: 'Is MCI Eyelashes based in Indonesia?', a: 'Yes. MCI Eyelashes is based in Purbalingga, Central Java, Indonesia, and works with partner workshops there, supplying buyers worldwide.' },
       { q: 'Why source eyelashes from an Indonesian manufacturer?', a: 'Buyers choose Indonesia for handmade lashes, direct contact with the factory instead of a trading company, minimums that suit growing brands, and room to customize the product.' },
       { q: 'What is the minimum order for an Indonesian eyelash manufacturer like MCI?', a: 'At MCI the minimum is 100 pairs per style, and you can mix and match styles within one order. Other factories set their own minimums, so ask each one in writing.' },
       { q: 'How long does shipping from Indonesia take?', a: 'It depends on the method and your destination. Express courier is fastest, sea freight is slowest. Our catalogue lists worldwide shipping at 7 to 14 days.' },
-      { q: 'Can I verify that MCI is a real factory before ordering?', a: 'Yes. We welcome a live video call to our production floor in Purbalingga before you send any money.' },
-      { q: 'What materials does MCI manufacture in?', a: 'We manufacture handmade lashes in three materials (protein silk, synthetic, human hair) across four collections in our product catalogue.' },
+      { q: 'Can I verify where MCI lashes are made before ordering?', a: 'Yes. We welcome a live video call from our partner workshop’s floor in Purbalingga before you send any money.' },
+      { q: 'What materials does MCI supply?', a: 'We supply handmade lashes in three materials (protein silk, synthetic, human hair) across four collections in our product catalogue.' },
     ],
   },
   {
     slug: 'private-label-eyelashes',
     title: 'Private Label Eyelashes Manufacturer | MCI Eyelashes',
-    metaDescription: 'MCI Eyelashes offers private label eyelash manufacturing with custom curl, length, material, and packaging, MOQ 100 pairs per style, factory direct from Indonesia.',
+    metaDescription: 'MCI Eyelashes offers private label eyelash manufacturing with custom curl, length, material, and packaging, MOQ 100 pairs per style, made in Purbalingga, Indonesia.',
     h1: 'Private Label Eyelashes Manufacturer',
     breadcrumbName: 'Private Label Eyelashes',
-    intro: 'Private label at MCI Eyelashes means a lash built to your brief and packed as your product: your curl, your length, your material, in packaging that carries your brand. It runs from our factory in Purbalingga, Indonesia, at the same 100-pair minimum per style as our catalogue. This page walks through how a program runs, what to send us, and when private label is more than you need.',
+    intro: 'Private label at MCI Eyelashes means a lash built to your brief and packed as your product: your curl, your length, your material, in packaging that carries your brand. It is made by our partner workshops in Purbalingga, Indonesia, at the same 100-pair minimum per style as our catalogue. This page walks through how a program runs, what to send us, and when private label is more than you need.',
     factSheet: [
       { label: 'Service', value: 'Private label eyelash manufacturing' },
       { label: 'MOQ', value: '100 pairs per style' },
       { label: 'Customizable', value: 'Curl, length, material, band, packaging' },
       { label: 'Location', value: 'Purbalingga, Central Java, Indonesia' },
       { label: 'Samples', value: 'Free on existing catalog styles, buyer covers shipping' },
-      { label: 'Verification', value: 'Live production-floor video call' },
+      { label: 'Verification', value: 'Live video call from the partner workshop floor' },
     ],
     sections: [
       {
@@ -138,7 +138,7 @@ export const landingPages = [
       {
         heading: 'Checking us before you commit',
         paragraphs: [
-          'You are trusting a factory with your brand, so check us first. Ask for a live video call to our production floor in Purbalingga and watch work in progress, not a showroom. Samples of our existing styles cost nothing but the shipping, which lets you judge our handwork before you spend anything on development.',
+          'You are trusting a supplier with your brand, so check us first. Ask for a live video call from our partner workshop’s floor in Purbalingga and watch work in progress, not a showroom. Samples of our existing styles cost nothing but the shipping, which lets you judge our handwork before you spend anything on development.',
           'For our standard terms, see [wholesale eyelashes](/wholesale-eyelashes). For a longer comparison of the two branded routes, read [private label vs OEM eyelashes](/blog/private-label-eyelashes-oem-guide).',
         ],
       },
@@ -149,7 +149,7 @@ export const landingPages = [
       { q: 'Can my private label lashes come in my own packaging?', a: 'Yes. The box, tray, inserts and printed artwork can all carry your brand. Ask for the packaging timeline with your quote.' },
       { q: 'What is the difference between private label and OEM at MCI?', a: 'Private label develops a lash to your own design. OEM puts your branding on one of our existing catalogue styles, which is faster.' },
       { q: 'What should I send to start a private label order?', a: 'Send the look you want, the curl and length, the material, any band preference, your packaging direction and planned quantities. Say which points are still open.' },
-      { q: 'Can I see the factory before a private label order?', a: 'Yes. We welcome a live video call to our production floor in Purbalingga before you send any money.' },
+      { q: 'Can I see where the lashes are made before a private label order?', a: 'Yes. We welcome a live video call from our partner workshop’s floor in Purbalingga before you send any money.' },
     ],
   },
   {
@@ -158,7 +158,7 @@ export const landingPages = [
     metaDescription: 'MCI Eyelashes offers OEM eyelash manufacturing in Indonesia. Your branding on our existing catalog styles, MOQ 100 pairs, 5 working days production.',
     h1: 'Eyelash OEM Manufacturer Indonesia',
     breadcrumbName: 'Eyelash OEM Indonesia',
-    intro: 'OEM at MCI Eyelashes means we make one of our existing catalogue styles and pack it as your product, from our factory in Purbalingga, Indonesia. The lash design is already proven, so the only new work is your branding. The minimum is 100 pairs per style, and a 100-pair order takes 5 working days to produce.',
+    intro: 'OEM at MCI Eyelashes means we make one of our existing catalogue styles and pack it as your product, from our partner workshops in Purbalingga, Indonesia. The lash design is already proven, so the only new work is your branding. The minimum is 100 pairs per style, and a 100-pair order takes 5 working days to produce.',
     factSheet: [
       { label: 'Service', value: 'OEM eyelash manufacturing' },
       { label: 'MOQ', value: '100 pairs per style' },
@@ -227,10 +227,10 @@ export const landingPages = [
   {
     slug: 'custom-eyelashes',
     title: 'Custom Eyelashes Manufacturer | MCI Eyelashes',
-    metaDescription: 'MCI Eyelashes manufactures custom eyelashes: curl, length, material, and packaging built to your specification, factory direct from Indonesia, MOQ 100 pairs.',
+    metaDescription: 'MCI Eyelashes supplies custom eyelashes: curl, length, material, and packaging built to your specification, made in Purbalingga, Indonesia, MOQ 100 pairs.',
     h1: 'Custom Eyelashes: How to Specify Your Lash',
     breadcrumbName: 'Custom Eyelashes',
-    intro: 'Custom eyelashes start with a specification. This page is a practical guide to writing one: which choices make up a lash, how to describe each so the factory makes what you picture, and how to use our existing styles as a reference point. We make custom lashes at our factory in Purbalingga, Indonesia, from 100 pairs per style.',
+    intro: 'Custom eyelashes start with a specification. This page is a practical guide to writing one: which choices make up a lash, how to describe each so the workshop makes what you picture, and how to use our existing styles as a reference point. Our partner workshops in Purbalingga, Indonesia, make custom lashes from 100 pairs per style.',
     factSheet: [
       { label: 'Customizable', value: 'Curl, length, density, material, band, packaging' },
       { label: 'MOQ', value: '100 pairs per style' },
@@ -290,10 +290,10 @@ export const landingPages = [
   {
     slug: 'wholesale-eyelashes',
     title: 'Wholesale Eyelashes Supplier | MCI Eyelashes',
-    metaDescription: 'MCI Eyelashes supplies wholesale eyelashes factory-direct from Indonesia, protein silk, synthetic, and human hair lashes, MOQ 100 pairs per style, mix and match.',
+    metaDescription: 'MCI Eyelashes supplies wholesale eyelashes made in Purbalingga, Indonesia, protein silk, synthetic, and human hair lashes, MOQ 100 pairs per style, mix and match.',
     h1: 'Wholesale Eyelashes Supplier',
     breadcrumbName: 'Wholesale Eyelashes',
-    intro: 'MCI Eyelashes sells wholesale eyelashes factory direct from Purbalingga, Indonesia. This page puts our wholesale terms in one place and shows how salons, distributors and online sellers can build a first order from our four collections.',
+    intro: 'MCI Eyelashes sells wholesale eyelashes made in Purbalingga, Indonesia. This page puts our wholesale terms in one place and shows how salons, distributors and online sellers can build a first order from our four collections.',
     factSheet: [
       { label: 'MOQ', value: '100 pairs per style, mix & match allowed' },
       { label: 'Production', value: '5 working days for 100-pair orders' },
@@ -310,7 +310,7 @@ export const landingPages = [
           'Production: 5 working days for a 100-pair order. Ask for the timeline on larger orders.',
           'Shipping: worldwide, listed in our catalogue at 7 to 14 days.',
           'Replies: within 24 hours by email or WhatsApp, with the catalogue and price sheet.',
-          'Verification: a live video call to our production floor before you pay, if you want one.',
+          'Verification: a live video call from our partner workshop’s floor before you pay, if you want one.',
         ],
         paragraphs: ['Everything a wholesale buyer usually asks first:'],
       },
@@ -356,17 +356,17 @@ export const landingPages = [
   {
     slug: 'eyelash-manufacturer-purbalingga',
     title: 'Eyelash Manufacturer in Purbalingga, Indonesia | MCI Eyelashes',
-    metaDescription: 'MCI Eyelashes is a direct eyelash manufacturer based in Purbalingga, Central Java, Indonesia, one of the country’s established eyelash production hubs.',
+    metaDescription: 'MCI Eyelashes is an eyelash supplier based in Purbalingga, Central Java, Indonesia, one of the country’s established eyelash production hubs.',
     h1: 'Eyelash Manufacturer in Purbalingga, Indonesia',
     breadcrumbName: 'Eyelash Manufacturer Purbalingga',
-    intro: 'Purbalingga, a regency in Central Java, is one of the places in Indonesia best known for handmade false eyelashes and hairpieces. MCI Eyelashes is a direct factory there. This page explains what the town means for a buyer, how to check a factory from abroad, and how to work with us across time zones.',
+    intro: 'Purbalingga, a regency in Central Java, is one of the places in Indonesia best known for handmade false eyelashes and hairpieces. MCI Eyelashes is based there and works with partner workshops in the town. This page explains what the town means for a buyer, how to check a supplier from abroad, and how to work with us across time zones.',
     factSheet: [
       { label: 'City', value: 'Purbalingga, Central Java, Indonesia' },
       { label: 'Factory Type', value: 'Direct manufacturer' },
       { label: 'Time zone', value: 'Western Indonesia Time, UTC+7' },
       { label: 'MOQ', value: '100 pairs per style' },
       { label: 'Production', value: '5 working days for 100-pair orders' },
-      { label: 'Verification', value: 'Live production-floor video call' },
+      { label: 'Verification', value: 'Live video call from the partner workshop floor' },
     ],
     sections: [
       {
@@ -377,8 +377,8 @@ export const landingPages = [
         ],
       },
       {
-        heading: 'Checking a Purbalingga factory from abroad',
-        paragraphs: ['A video call to the production floor is the quickest check you can make without flying in. When you are on the call with us, ask to see:'],
+        heading: 'Checking a Purbalingga supplier from abroad',
+        paragraphs: ['A video call from the workshop floor is the quickest check you can make without flying in. When you are on the call with us, ask to see:'],
         list: [
           'Workers tying lashes by hand at their stations, rather than a room of finished stock.',
           'A style from your shortlist being made, so you know your sample came from this floor.',
@@ -393,15 +393,15 @@ export const landingPages = [
         ],
       },
       {
-        heading: 'What we make on our Purbalingga floor',
+        heading: 'What our Purbalingga workshops make',
         paragraphs: [
-          'We make handmade lashes in protein silk, synthetic and human hair, organized into four collections in the [product catalogue](/catalogue). Wholesale orders start at 100 pairs per style, mixed across styles, with 5 working days of production for a 100-pair order. We also produce [OEM](/eyelash-oem-indonesia) and [private label](/private-label-eyelashes) lashes on the same floor.',
+          'We supply handmade lashes in protein silk, synthetic and human hair, organized into four collections in the [product catalogue](/catalogue). Wholesale orders start at 100 pairs per style, mixed across styles, with 5 working days of production for a 100-pair order. We also produce [OEM](/eyelash-oem-indonesia) and [private label](/private-label-eyelashes) lashes with the same workshops.',
         ],
       },
       {
         heading: 'Visiting in person',
         paragraphs: [
-          'If you want to see the factory in person, a visit can be discussed on request. A video call and a set of free samples, for which you pay only the shipping, usually answer the important questions before a trip is needed.',
+          'If you want to see a workshop in person, a visit can be discussed on request. A video call and a set of free samples, for which you pay only the shipping, usually answer the important questions before a trip is needed.',
           'If you are comparing several Indonesian suppliers, our [sourcing guide for Indonesian eyelash manufacturers](/eyelash-manufacturer-indonesia) lists the questions to ask each one.',
         ],
       },
@@ -409,19 +409,19 @@ export const landingPages = [
     faq: [
       { q: 'Where in Indonesia is MCI Eyelashes located?', a: 'MCI Eyelashes is located in Purbalingga, a regency in Central Java, Indonesia.' },
       { q: 'Is Purbalingga a known location for eyelash manufacturing?', a: 'Yes. Purbalingga is home to many Indonesian eyelash and hairpiece makers, MCI Eyelashes among them.' },
-      { q: 'Can I visit or verify the Purbalingga factory?', a: 'We offer a live video call to our production floor for buyers who want to verify before ordering, and in-person visits can be discussed on request.' },
-      { q: 'What time zone is the Purbalingga factory in?', a: 'We work on Western Indonesia Time, which is UTC+7, and reply to every inquiry within 24 hours.' },
-      { q: 'What should I ask to see on a factory video call?', a: 'Ask to see lashes being tied by hand, a style from your shortlist in production, and where orders are checked and packed.' },
+      { q: 'Can I visit or verify the Purbalingga workshops?', a: 'We offer a live video call from our partner workshop’s floor for buyers who want to verify before ordering, and in-person visits can be discussed on request.' },
+      { q: 'What time zone does MCI Eyelashes work in?', a: 'We work on Western Indonesia Time, which is UTC+7, and reply to every inquiry within 24 hours.' },
+      { q: 'What should I ask to see on a workshop video call?', a: 'Ask to see lashes being tied by hand, a style from your shortlist in production, and where orders are checked and packed.' },
       { q: 'Do you ship from Purbalingga to buyers outside Indonesia?', a: 'Yes. We ship worldwide, and our catalogue lists delivery at 7 to 14 days once production is finished.' },
     ],
   },
   {
     slug: 'handmade-eyelashes',
     title: 'Handmade Eyelashes Manufacturer Indonesia | MCI Eyelashes',
-    metaDescription: 'MCI Eyelashes produces handmade eyelashes in Purbalingga, Indonesia, protein silk, synthetic, and human hair styles, factory direct, MOQ 100 pairs per style.',
+    metaDescription: 'Handmade eyelashes from partner workshops in Purbalingga, Indonesia: protein silk, synthetic and human hair styles, MOQ 100 pairs per style.',
     h1: 'Handmade Eyelashes Manufacturer Indonesia',
     breadcrumbName: 'Handmade Eyelashes',
-    intro: 'MCI Eyelashes makes handmade eyelashes on our own floor in Purbalingga, Indonesia, in protein silk, synthetic and human hair. This page explains what handmade means for the lash you sell, how the four materials differ, and how to judge handmade quality from a sample.',
+    intro: 'MCI Eyelashes supplies handmade eyelashes made by partner workshops in Purbalingga, Indonesia, in protein silk, synthetic and human hair. This page explains what handmade means for the lash you sell, how the four materials differ, and how to judge handmade quality from a sample.',
     factSheet: [
       { label: 'Production Method', value: 'Handmade' },
       { label: 'Location', value: 'Purbalingga, Central Java, Indonesia' },
@@ -472,7 +472,7 @@ export const landingPages = [
       },
     ],
     faq: [
-      { q: 'Are MCI Eyelashes handmade or machine-made?', a: 'They are handmade, tied by hand on our own production floor in Purbalingga, Indonesia.' },
+      { q: 'Are MCI Eyelashes handmade or machine-made?', a: 'They are handmade, tied by hand in our partner workshops in Purbalingga, Indonesia.' },
       { q: 'What materials are the handmade lashes made from?', a: 'Our handmade lashes are made from protein silk, synthetic fibre and human hair.' },
       { q: 'What is the MOQ for handmade eyelashes at MCI?', a: 'The minimum is 100 pairs per style, and styles can be mixed and matched in one order.' },
       { q: 'How can I tell if a lash is really handmade?', a: 'Bend the band and look along it. A handmade band follows the curve, and the hairs sit evenly with tapered tips.' },
@@ -481,7 +481,7 @@ export const landingPages = [
   {
     slug: 'soft-touch-lashes-wholesale',
     title: 'Soft Touch Lashes Wholesale | MCI Eyelashes',
-    metaDescription: 'Wholesale Soft Touch Lashes from MCI Eyelashes, Korean Synthetic and Human Hair, 7 series, 77 SKUs, 100-pair MOQ per style, factory direct from Indonesia.',
+    metaDescription: 'Wholesale Soft Touch Lashes from MCI Eyelashes, Korean Synthetic and Human Hair, 7 series, 77 SKUs, 100-pair MOQ per style, made in Purbalingga, Indonesia.',
     h1: 'Soft Touch Lashes Wholesale',
     breadcrumbName: 'Soft Touch Lashes',
     intro: 'Soft Touch Lashes is MCI Eyelashes’ everyday collection, built from Korean Synthetic fiber and 100% sterilized Human Hair with tapered technology, available wholesale from a 100-pair MOQ per style.',
@@ -547,7 +547,7 @@ export const landingPages = [
   {
     slug: '3d-luxe-volume-lashes-wholesale',
     title: '3D Volume Lashes Wholesale | 3D Luxe Collection | MCI Eyelashes',
-    metaDescription: 'Wholesale 3D Luxe volume lashes from MCI Eyelashes: multi-layer synthetic, 29 styles in five code ranges, 100-pair MOQ per style, factory direct from Indonesia.',
+    metaDescription: 'Wholesale 3D Luxe volume lashes from MCI Eyelashes: multi-layer synthetic, 29 styles in five code ranges, 100-pair MOQ per style, made in Purbalingga, Indonesia.',
     h1: '3D Volume Lashes Wholesale',
     breadcrumbName: '3D Luxe Lashes',
     intro: '3D Luxe is our premium volume collection: multi-layer synthetic lashes built for depth and impact, sold wholesale from 100 pairs per style. This page explains how the layered construction differs from a single-layer strip, who it suits, and how to choose from its 29 styles.',
@@ -612,7 +612,7 @@ export const landingPages = [
   {
     slug: 'faux-mink-lashes-wholesale',
     title: 'Faux Mink Lashes Wholesale | Cruelty-Free | MCI Eyelashes',
-    metaDescription: 'Wholesale faux mink lashes in cruelty-free Protein Silk. Three collections of six styles, 100-pair MOQ per style, free samples, factory direct from Indonesia.',
+    metaDescription: 'Wholesale faux mink lashes in cruelty-free Protein Silk. Three collections of six styles, 100-pair MOQ per style, free samples, made in Purbalingga, Indonesia.',
     h1: 'Faux Mink Lashes Wholesale',
     breadcrumbName: 'Faux Mink Lashes',
     intro: 'Faux Mink - Protein Silk is our cruelty-free collection: Protein Silk fiber made to give the look and feel of genuine mink without animal products. It is sold wholesale from 100 pairs per style, and this page explains who it suits, how to choose your first styles, and how to order.',
@@ -670,7 +670,7 @@ export const landingPages = [
         paragraphs: [
           'Production for a 100-pair order takes 5 working days, and shipping to your country comes on top of that. Our catalogue lists worldwide shipping at 7 to 14 days. Larger orders vary, so ask us for a timeline before you order.',
           'If you want faux mink under your own name, we can produce it as [OEM](/eyelash-oem-indonesia) on the existing styles, or develop it as [private label](/private-label-eyelashes) with your curl, length and packaging. You can also review the whole range in the [product catalogue](/catalogue), or see the wider [wholesale eyelash terms](/wholesale-eyelashes).',
-          'Not sure the factory is real? Ask for a live video call to the production floor before you send any money.',
+          'Want to see where the lashes are made? Ask for a live video call from the partner workshop floor before you send any money.',
         ],
       },
     ],
@@ -688,7 +688,7 @@ export const landingPages = [
   {
     slug: 'human-hair-lashes-wholesale',
     title: 'Human Hair Lashes Wholesale | MCI Eyelashes',
-    metaDescription: 'Wholesale human hair lashes from MCI Eyelashes: 100% sterilized human hair, three series, 100-pair MOQ per style, factory direct from Indonesia.',
+    metaDescription: 'Wholesale human hair lashes from MCI Eyelashes: 100% sterilized human hair, three series, 100-pair MOQ per style, made in Purbalingga, Indonesia.',
     h1: 'Human Hair Lashes Wholesale',
     breadcrumbName: 'Human Hair Lashes',
     intro: 'Classic - Human Hair is our most natural collection, 100% sterilized human hair across three series, sold wholesale from 100 pairs per style. This page explains who reaches for human hair over a synthetic finish, how the three series differ, and how to place a first order.',
@@ -704,7 +704,7 @@ export const landingPages = [
       {
         heading: 'What Sets Human Hair Lashes Apart',
         paragraphs: [
-          'Classic - Human Hair is built from 100% sterilized human hair, not a synthetic fiber. The strands move and catch light the way a wearer’s own lashes do, so the finish reads as hers, not as a strip lash sitting on top. Every batch is sterilized on our production floor in Purbalingga before it ships.',
+          'Classic - Human Hair is built from 100% sterilized human hair, not a synthetic fiber. The strands move and catch light the way a wearer’s own lashes do, so the finish reads as hers, not as a strip lash sitting on top. Every batch is sterilized at our partner workshop in Purbalingga before it ships.',
           'Synthetic fiber, including the Korean Synthetic used in our [Soft Touch](/soft-touch-lashes-wholesale) collection, has a uniform diameter and shine from strand to strand. Human hair keeps the small variation real lashes have, and that variation is exactly what a buyer wants when the brief is invisible, not bold.',
         ],
       },
@@ -742,7 +742,7 @@ export const landingPages = [
         heading: 'Private Label and Next Steps',
         paragraphs: [
           'If you want your own brand on these styles, choose [OEM](/eyelash-oem-indonesia) to put your packaging on an existing Human Hair style, or go further with [private label](/private-label-eyelashes) and set your own curl, length and material from scratch. A 100-pair order takes 5 working days to produce before it ships, and your country’s shipping time comes on top of that.',
-          'For the wider range, open the [product catalogue](/catalogue). For our standard terms in one place, read [wholesale eyelashes](/wholesale-eyelashes). If you want to see the factory before committing, ask for a live video call to our production floor.',
+          'For the wider range, open the [product catalogue](/catalogue). For our standard terms in one place, read [wholesale eyelashes](/wholesale-eyelashes). If you want to see where the lashes are made before committing, ask for a live video call from our partner workshop’s floor.',
         ],
       },
     ],
@@ -750,7 +750,7 @@ export const landingPages = [
       { q: 'What is Classic - Human Hair?', a: 'Classic - Human Hair is our most natural collection, built from 100% sterilized human hair across three series instead of a synthetic fiber.' },
       { q: 'What is the MOQ for Human Hair Lashes?', a: 'The minimum is 100 pairs per style, and you can mix and match across the three series to reach that minimum in one order.' },
       { q: 'How many styles are in the Human Hair collection?', a: 'There are three series, Natural, Wispy and Volume, with six styles each, eighteen styles in total. A full style listing is available on request.' },
-      { q: 'Are Human Hair lashes sterilized?', a: 'Yes. Every batch of Classic - Human Hair is sterilized on our production floor in Purbalingga before it ships.' },
+      { q: 'Are Human Hair lashes sterilized?', a: 'Yes. Every batch of Classic - Human Hair is sterilized at our partner workshop in Purbalingga before it ships.' },
       { q: 'Can I get a sample of Human Hair Lashes before ordering wholesale?', a: 'Yes. Samples on existing Human Hair catalog styles are free, and you only cover the shipping to your address.' },
       { q: 'Which Human Hair style should a first order start with?', a: 'Start with one style from each series, Natural, Wispy and Volume, which makes a 300-pair order covering all three finishes. Reorder the styles your own customers choose most.' },
       { q: 'Can Human Hair styles be private labeled?', a: 'Yes. Human Hair styles can be produced as OEM under your brand, or developed as private label with custom curl, length, material and packaging.' },
@@ -759,17 +759,17 @@ export const landingPages = [
   {
     slug: 'low-moq-eyelash-manufacturer',
     title: 'Low MOQ Eyelash Manufacturer | MCI Eyelashes',
-    metaDescription: 'MCI Eyelashes sells factory direct with a 100-pair MOQ per style, mixed and matched, and the same minimum on private label and OEM orders.',
+    metaDescription: 'MCI Eyelashes supplies lashes made in Purbalingga with a 100-pair MOQ per style, mixed and matched, and the same minimum on private label and OEM orders.',
     h1: 'Low MOQ Eyelash Manufacturer: How the Minimum Works Here',
     breadcrumbName: 'Low MOQ Manufacturer',
-    intro: 'A minimum order quantity decides how small a first order can be. This page explains what MCI Eyelashes sets that number at, why selling factory direct keeps it there, and when a low per-style minimum actually matters to a buyer.',
+    intro: 'A minimum order quantity decides how small a first order can be. This page explains what MCI Eyelashes sets that number at, why working directly with the workshops keeps it there, and when a low per-style minimum actually matters to a buyer.',
     factSheet: [
       { label: 'MOQ', value: '100 pairs per style, mix & match allowed' },
-      { label: 'Sales route', value: 'Factory direct, no trading company' },
+      { label: 'Sales route', value: 'Direct with our partner workshops' },
       { label: 'Private label / OEM', value: 'Same 100-pair minimum as the catalog' },
       { label: 'Samples', value: 'Free on existing catalog styles, buyer covers shipping' },
       { label: 'Production', value: '5 working days for 100-pair orders' },
-      { label: 'Verification', value: 'Live production-floor video call' },
+      { label: 'Verification', value: 'Live video call from the partner workshop floor' },
     ],
     sections: [
       {
@@ -780,10 +780,10 @@ export const landingPages = [
         ],
       },
       {
-        heading: 'Why selling factory direct keeps the number this low',
+        heading: 'Why working directly with the workshops keeps the number this low',
         paragraphs: [
-          'A trading company buys finished stock from a factory and adds its own margin and its own minimum on top of what the factory already set. Remove that layer and the number a buyer sees is the production floor’s own run size. MCI Eyelashes ships from its own production floor in Purbalingga, so the 100-pair figure is the batch our own team can turn around in five working days, not a quantity padded to protect someone else’s markup.',
-          'It also means the person answering an inquiry can say, the same day, whether a style is ready to ship, already in production, or needs scheduling. A reseller several steps removed from the factory usually has to check with someone else before answering that.',
+          'Each extra seller between a buyer and the workshop adds its own margin and its own minimum on top of what the workshop already set. MCI Eyelashes works directly with its partner workshops in Purbalingga, so the 100-pair figure is the batch a workshop can turn around in five working days, not a quantity padded along a longer chain.',
+          'It also means the person answering an inquiry can say, the same day, whether a style is ready to ship, already in production, or needs scheduling. A seller several steps removed from the workshop usually has to check with more people before answering that.',
         ],
       },
       {
@@ -810,14 +810,14 @@ export const landingPages = [
         paragraphs: [
           'Start with samples on the styles under consideration. Samples on existing catalog styles are free, and you only cover the shipping, so there is no reason to commit pairs to a style before you have felt the fiber and checked the curl.',
           'Once samples arrive, build the order around what you learned rather than around the minimum on its own. Three styles at 100 pairs each clears the floor on every one of them and still gives you three results to compare instead of a single bet.',
-          'Browse the full range in the [product catalogue](/catalogue), read the standard terms on [wholesale eyelashes](/wholesale-eyelashes), or ask for a live video call to the production floor before you send anything.',
+          'Browse the full range in the [product catalogue](/catalogue), read the standard terms on [wholesale eyelashes](/wholesale-eyelashes), or ask for a live video call from the partner workshop floor before you send anything.',
         ],
       },
     ],
     faq: [
       { q: 'What is MCI’s minimum order quantity?', a: '100 pairs per style, and you can mix styles within one order to reach that number instead of ordering 100 pairs of a single design.' },
       { q: 'Does the minimum go up for private label or OEM orders?', a: 'No. Private label and OEM orders use the same 100-pair-per-style minimum as the standard catalog. What changes is the time needed for sample review and artwork sign-off, not the quantity.' },
-      { q: 'Why is this minimum lower than at some large factories?', a: 'MCI sells factory direct from its own production floor, so the minimum reflects one style’s real production run rather than a quantity set by a trading company on top of the factory’s own number.' },
+      { q: 'Why is this minimum lower than at some large factories?', a: 'MCI works directly with its partner workshops in Purbalingga, so the minimum reflects one style’s real production run rather than a quantity raised along a longer chain of sellers.' },
       { q: 'Can I test more than one style within the minimum?', a: 'Yes. The 100-pair minimum applies per style, so an order covering three styles at 100 pairs each is a 300-pair order, with every style individually meeting the minimum.' },
       { q: 'Is a low MOQ manufacturer the right fit for every buyer?', a: 'Not necessarily. It suits a brand testing new styles or stocking variety. A buyer who already knows what sells in high volume should weigh price per pair and repeat lead time more heavily than how low the minimum goes.' },
     ],
@@ -835,7 +835,7 @@ export const landingPages = [
       { label: 'Collections to choose from', value: 'Soft Touch, 3D Luxe, Faux Mink, Human Hair' },
       { label: 'First order after samples', value: '100 pairs per style, mix & match allowed' },
       { label: 'Production', value: '5 working days for 100-pair orders' },
-      { label: 'Verification', value: 'Live production-floor video call, on request' },
+      { label: 'Verification', value: 'Live video call from the partner workshop floor, on request' },
     ],
     sections: [
       {
@@ -873,7 +873,7 @@ export const landingPages = [
       {
         heading: 'Before you commit to an order',
         paragraphs: [
-          'A sample tells you about the product. It does not tell you whether the factory behind it is real. We offer a live video call to our production floor in [Purbalingga](/eyelash-manufacturer-purbalingga) for any buyer who wants to see where the order would be made before sending anything beyond the cost of shipping a sample.',
+          'A sample tells you about the product. It does not tell you where it is made. We offer a live video call from our partner workshop’s floor in [Purbalingga](/eyelash-manufacturer-purbalingga) for any buyer who wants to see where the order would be made before sending anything beyond the cost of shipping a sample.',
         ],
       },
     ],
@@ -883,23 +883,23 @@ export const landingPages = [
       { q: 'Is there a minimum order to request a sample?', a: 'No. The 100-pair, mix-and-match minimum applies to a wholesale order, not to a sample request, so you can test the product before committing to that quantity.' },
       { q: 'How many styles can I request a sample of at once?', a: 'You can request samples from more than one collection at a time, which helps if you are deciding between a natural, dramatic or cruelty-free finish.' },
       { q: 'Can I get a sample of a private label or OEM design?', a: 'You can sample the closest existing style first, since a private label design has to be developed before it exists to sample, while an OEM sample sits close to the finished branded product.' },
-      { q: 'How do I verify MCI Eyelashes before ordering?', a: 'Ask for a live video call to our production floor in Purbalingga, which we offer to any buyer before they commit beyond the cost of sample shipping.' },
+      { q: 'How do I verify MCI Eyelashes before ordering?', a: 'Ask for a live video call from our partner workshop’s floor in Purbalingga, which we offer to any buyer before they commit beyond the cost of sample shipping.' },
     ],
   },
   {
     slug: 'eyelash-distributor-indonesia',
     title: 'Eyelash Distributor Indonesia | MCI Eyelashes',
-    metaDescription: 'Sourcing as an eyelash distributor in Indonesia: how a mixed first order works, what factory direct changes about reordering, and how to verify the factory.',
+    metaDescription: 'Sourcing as an eyelash distributor in Indonesia: how a mixed first order works, what a direct line to the workshops changes about reordering, and how to verify us.',
     h1: 'Eyelash Distributor Indonesia: Ordering as a Reseller',
     breadcrumbName: 'Eyelash Distributor Indonesia',
-    intro: 'Distributors buy differently than a brand does. You are not developing a design, you are keeping shelves and clients supplied with styles that already sell. This page is for resellers and distributors sourcing from an eyelash manufacturer in Indonesia: how a mixed first order works, what factory direct changes about reordering, and how to verify us before a standing relationship.',
+    intro: 'Distributors buy differently than a brand does. You are not developing a design, you are keeping shelves and clients supplied with styles that already sell. This page is for resellers and distributors sourcing from an eyelash manufacturer in Indonesia: how a mixed first order works, what a direct line to the workshops changes about reordering, and how to verify us before a standing relationship.',
     factSheet: [
       { label: 'Buyer type', value: 'Distributors and resellers' },
       { label: 'MOQ', value: '100 pairs per style, mix & match allowed' },
       { label: 'Production', value: '5 working days for 100-pair orders' },
-      { label: 'Sales route', value: 'Factory direct, no trading company layer' },
+      { label: 'Sales route', value: 'Direct with our partner workshops' },
       { label: 'Samples', value: 'Free on existing catalog styles, buyer covers shipping' },
-      { label: 'Verification', value: 'Live production-floor video call' },
+      { label: 'Verification', value: 'Live video call from the partner workshop floor' },
     ],
     sections: [
       {
@@ -921,9 +921,9 @@ export const landingPages = [
         ],
       },
       {
-        heading: 'Why factory direct changes how reorders get answered',
+        heading: 'Why a direct line to the workshops changes how reorders get answered',
         paragraphs: [
-          'A trading company has to check with the factory behind it before confirming whether a style is in stock, in production, or needs scheduling. MCI Eyelashes answers that directly, because the person replying to your inquiry works from the same production floor in [Purbalingga](/eyelash-manufacturer-purbalingga) that makes the order.',
+          'A seller far from production has to pass your question along a chain before confirming whether a style is in stock, in production, or needs scheduling. MCI Eyelashes asks the partner workshop in [Purbalingga](/eyelash-manufacturer-purbalingga) directly, because the person replying to your inquiry is the one who manages that workshop’s orders.',
           'For a distributor placing repeat orders on a schedule, that difference shows up every time you reorder, not only on the first one.',
         ],
       },
@@ -935,9 +935,9 @@ export const landingPages = [
         ],
       },
       {
-        heading: 'Verifying the factory before a standing order',
+        heading: 'Verifying us before a standing order',
         paragraphs: [
-          'A distribution relationship runs on repeat trust, not a single transaction, so verify us before the first order rather than after a few have gone well. We offer a live video call to our production floor for exactly that reason. Ask to see the styles you plan to carry in production, not only finished stock on a shelf.',
+          'A distribution relationship runs on repeat trust, not a single transaction, so verify us before the first order rather than after a few have gone well. We offer a live video call from our partner workshop’s floor for exactly that reason. Ask to see the styles you plan to carry in production, not only finished stock on a shelf.',
         ],
       },
       {
@@ -950,9 +950,9 @@ export const landingPages = [
     faq: [
       { q: 'Who counts as a distributor for a wholesale eyelash order?', a: 'Anyone buying existing catalog styles to resell to salons, retailers or other buyers, rather than developing a new design for their own brand.' },
       { q: 'Can a distributor mix styles across different collections in one order?', a: 'Yes. The 100-pair minimum applies per style, so a single order can combine styles from Soft Touch, 3D Luxe, Faux Mink and Human Hair to reach it.' },
-      { q: 'Does buying factory direct change how fast I get an answer on stock?', a: 'Yes. Because we work from the same production floor that makes the order, we can tell you the same day whether a style is ready, in production or needs scheduling.' },
+      { q: 'Does a direct line to the workshops change how fast I get an answer on stock?', a: 'Yes. Because we deal directly with the workshop that makes the order, we can tell you the same day whether a style is ready, in production or needs scheduling.' },
       { q: 'Is there a discount for distributors ordering above the minimum?', a: 'Volume tiers exist above the 100-pair starting point, but we quote those terms directly once we know the styles and how the order repeats, rather than publishing a fixed figure.' },
-      { q: 'How can a distributor verify MCI Eyelashes before committing?', a: 'Ask for a live video call to our production floor in Purbalingga before placing a standing order, and ask to see the specific styles you plan to carry.' },
+      { q: 'How can a distributor verify MCI Eyelashes before committing?', a: 'Ask for a live video call from our partner workshop’s floor in Purbalingga before placing a standing order, and ask to see the specific styles you plan to carry.' },
       { q: 'What is the first step to ordering as an MCI distributor?', a: 'Request samples of the styles you expect to sell fastest, then place a mixed order at 100 pairs per style once you know which ones perform.' },
     ],
   },
@@ -969,7 +969,7 @@ export const landingPages = [
       { label: 'MOQ', value: '100 pairs per style, mix & match allowed' },
       { label: 'Samples', value: 'Free on existing catalog styles, buyer covers shipping' },
       { label: 'Production', value: '5 working days for 100-pair orders' },
-      { label: 'Verification', value: 'Live production-floor video call' },
+      { label: 'Verification', value: 'Live video call from the partner workshop floor' },
     ],
     sections: [
       {
@@ -1003,7 +1003,7 @@ export const landingPages = [
       {
         heading: 'Verifying Us Before Your First Payment',
         paragraphs: [
-          'A first order to an overseas factory you have never dealt with is a reasonable thing to be careful about. Ask for a live video call to our production floor in [Purbalingga](/eyelash-manufacturer-purbalingga) before you send anything beyond the cost of shipping a sample, and use that call to see the specific style you are considering in production, not just finished stock on a shelf.',
+          'A first order to an overseas factory you have never dealt with is a reasonable thing to be careful about. Ask for a live video call from our partner workshop’s floor in [Purbalingga](/eyelash-manufacturer-purbalingga) before you send anything beyond the cost of shipping a sample, and use that call to see the specific style you are considering in production, not just finished stock on a shelf.',
         ],
       },
       {
@@ -1022,7 +1022,7 @@ export const landingPages = [
       { q: 'Can a brand with no sales history order from MCI Eyelashes?', a: 'Yes. The minimum is 100 pairs per style whether you have sold lashes before or not, and samples let you test a style before you commit to that quantity.' },
       { q: 'Should a new lash brand start with OEM or private label?', a: 'OEM is usually the faster, lower-risk start because the style already exists, while private label suits a founder with a specific design already in mind. Many brands move a proven OEM style into private label later.' },
       { q: 'Do I need my own packaging ready before I place a first order?', a: 'Decide your packaging direction before you order, since it affects timing. OEM ships on our standard branded tray, while private label packaging is quoted and produced together with your lash order.' },
-      { q: 'How can a first-time founder verify MCI is a real factory?', a: 'Ask for a live video call to our production floor in Purbalingga before sending any payment beyond sample shipping, and ask to see the specific style you are considering in production.' },
+      { q: 'How can a first-time founder verify MCI before ordering?', a: 'Ask for a live video call from our partner workshop’s floor in Purbalingga before sending any payment beyond sample shipping, and ask to see the specific style you are considering in production.' },
       { q: 'Can I move a style from OEM to private label once it sells?', a: 'Yes. A style that performs well under your branding through OEM is a reasonable candidate to redevelop with your own curl, length and packaging through private label.' },
     ],
   },
@@ -1032,20 +1032,20 @@ export const landingPages = [
     metaDescription: 'How MCI Eyelashes exports wholesale orders worldwide: what we prepare for each shipment, how shipping method tracks your order size, and who pays duties.',
     h1: 'Eyelash Manufacturer Export and Shipping: What to Know Before You Order',
     breadcrumbName: 'Export and Shipping',
-    intro: 'Placing a first international order with a factory you have not bought from before raises questions that have nothing to do with the lashes themselves: who books the freight, who pays duty on arrival, and what paperwork actually clears customs. This page covers what MCI Eyelashes prepares for an export shipment, how the shipping method changes as your order grows, and what a first-time export buyer should have ready before placing an order.',
+    intro: 'Placing a first international order with a supplier you have not bought from before raises questions that have nothing to do with the lashes themselves: who books the freight, who pays duty on arrival, and what paperwork actually clears customs. This page covers what MCI Eyelashes prepares for an export shipment, how the shipping method changes as your order grows, and what a first-time export buyer should have ready before placing an order.',
     factSheet: [
       { label: 'Export reach', value: 'Worldwide' },
       { label: 'Shipping time', value: '7-14 days' },
       { label: 'Shipping methods', value: 'Express courier, air freight, sea freight' },
       { label: 'Export documents', value: 'Commercial invoice and packing list on every shipment' },
       { label: 'Duties', value: 'Buyer’s responsibility unless a landed-cost price is agreed' },
-      { label: 'Verification', value: 'Live production-floor video call' },
+      { label: 'Verification', value: 'Live video call from the partner workshop floor' },
     ],
     sections: [
       {
         heading: 'What MCI Prepares on Our Side of an Export Shipment',
         paragraphs: [
-          'Every export shipment leaves our production floor in Purbalingga with a commercial invoice and a packing list, the two documents a customs broker needs to clear your goods on arrival. We pack and label the shipment, and we either book the freight ourselves or hand off to a forwarder you have already chosen, depending on how you prefer to run your logistics.',
+          'Every export shipment leaves Purbalingga with a commercial invoice and a packing list, the two documents a customs broker needs to clear your goods on arrival. We pack and label the shipment, and we either book the freight ourselves or hand off to a forwarder you have already chosen, depending on how you prefer to run your logistics.',
           'Our [product catalogue](/catalogue) lists worldwide shipping at 7 to 14 days. That window covers the shipping method itself, not production, so add the 5 working days a standard 100-pair order takes to produce before you count shipping days. For a buyer-side view of the same process, read our guide to [importing eyelashes from Indonesia](/blog/import-eyelashes-from-indonesia-guide).',
         ],
       },
@@ -1071,9 +1071,9 @@ export const landingPages = [
         ],
       },
       {
-        heading: 'Verifying the Factory Behind Your Export Order',
+        heading: 'Verifying Where Your Export Order Is Made',
         paragraphs: [
-          'An export order travels further and takes longer to reach you than a domestic one, so verify the factory before you commit to the shipping and documentation above. We offer a live video call to our production floor in [Purbalingga](/eyelash-manufacturer-purbalingga) for any buyer who wants to see where an order would be made before paying beyond the cost of shipping a sample.',
+          'An export order travels further and takes longer to reach you than a domestic one, so verify where the lashes are made before you commit to the shipping and documentation above. We offer a live video call from our partner workshop’s floor in [Purbalingga](/eyelash-manufacturer-purbalingga) for any buyer who wants to see where an order would be made before paying beyond the cost of shipping a sample.',
         ],
       },
       {
@@ -1093,7 +1093,7 @@ export const landingPages = [
       { q: 'What documents does MCI provide for customs clearance?', a: 'We provide a commercial invoice and a packing list on every export shipment, the documents a customs broker needs to clear your goods.' },
       { q: 'Who pays import duty on an order from MCI Eyelashes?', a: 'Unless we agree on a landed-cost price in writing, duty on arrival is the buyer’s responsibility and is set by your own country’s customs authority.' },
       { q: 'Which shipping method should a first export order use?', a: 'Express courier or air freight usually suits a first order at the 100-pair minimum, while sea freight becomes worth the longer transit once your orders grow larger and repeat on a schedule.' },
-      { q: 'How do I verify the factory before placing an export order?', a: 'Ask for a live video call to our production floor in Purbalingga before you pay anything beyond the cost of shipping a sample.' },
+      { q: 'How do I verify where the lashes are made before placing an export order?', a: 'Ask for a live video call from our partner workshop’s floor in Purbalingga before you pay anything beyond the cost of shipping a sample.' },
     ],
   },
 ]

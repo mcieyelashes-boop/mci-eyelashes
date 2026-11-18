@@ -1,4 +1,4 @@
-// Draws one 1200x630 share image per blog post into public/og/<slug>.jpg and
+// Draws one 1200x630 share image per blog post into public/og/<slug>-<version>.jpg and
 // records which posts have one in src/data/ogImages.js.
 //
 // This is NOT part of the build: it needs Playwright and the two brand fonts,
@@ -22,6 +22,8 @@ const OUT = join(ROOT, 'public', 'og')
 const FONT_DIR = process.env.FONT_DIR
 if (!FONT_DIR) throw new Error('Set FONT_DIR to a folder whose node_modules has the two @fontsource packages.')
 const force = process.argv.includes('--force')
+// Bump this when the design or wording of the images changes.
+const VERSION = 'v2'
 
 const b64 = (file) => readFileSync(file).toString('base64')
 const font = (pkg, file) => b64(join(FONT_DIR, 'node_modules', pkg, 'files', file))
@@ -43,7 +45,7 @@ h1{font-family:BrandSerif;font-weight:500;line-height:1.04;letter-spacing:-.01em
 </style></head><body>
 <p class="eyebrow">${esc(post.category)}</p>
 <h1 style="font-size:${post.title.length > 70 ? 62 : post.title.length > 48 ? 72 : 84}px">${esc(post.title)}</h1>
-<div class="foot"><span class="brand"><img src="data:image/webp;base64,${logo}" alt="">MCI Eyelashes</span><span>Eyelash factory in <span class="gold">Purbalingga, Indonesia</span></span></div>
+<div class="foot"><span class="brand"><img src="data:image/webp;base64,${logo}" alt="">MCI Eyelashes</span><span>Eyelashes made in <span class="gold">Purbalingga, Indonesia</span></span></div>
 </body></html>`
 
 mkdirSync(OUT, { recursive: true })
@@ -53,7 +55,7 @@ const browser = await chromium.launch()
 const page = await browser.newPage({ viewport: { width: 1200, height: 630 } })
 let made = 0
 for (const post of blogPosts) {
-  const file = join(OUT, `${post.slug}.jpg`)
+  const file = join(OUT, `${post.slug}-${VERSION}.jpg`)
   if (existsSync(file) && !force) continue
   await page.setContent(html(post), { waitUntil: 'load' })
   await page.evaluate(() => document.fonts.ready)
@@ -62,10 +64,10 @@ for (const post of blogPosts) {
 }
 await browser.close()
 
-const have = new Set(readdirSync(OUT).filter((f) => f.endsWith('.jpg')).map((f) => f.slice(0, -4)))
+const have = new Set(readdirSync(OUT).filter((f) => f.endsWith(`-${VERSION}.jpg`)).map((f) => f.slice(0, -(VERSION.length + 5))))
 const slugs = blogPosts.map((p) => p.slug).filter((s) => have.has(s))
 writeFileSync(
   join(ROOT, 'src', 'data', 'ogImages.js'),
-  `// Written by scripts/make-og-images.mjs. Posts listed here have their own share\n// image at /og/<slug>.jpg; any other post uses the site-wide one.\nconst WITH_IMAGE = new Set(${JSON.stringify(slugs, null, 2)})\n\nexport const ogImageFor = (slug, baseUrl) =>\n  WITH_IMAGE.has(slug) ? \`\${baseUrl}/og/\${slug}.jpg\` : \`\${baseUrl}/hero-lashes.jpg\`\n`,
+  `// Written by scripts/make-og-images.mjs. Posts listed here have their own share\n// image at /og/<slug>-<version>.jpg; any other post uses the site-wide one.\nconst WITH_IMAGE = new Set(${JSON.stringify(slugs, null, 2)})\n\nexport const ogImageFor = (slug, baseUrl) =>\n  WITH_IMAGE.has(slug) ? \`\${baseUrl}/og/\${slug}-${VERSION}.jpg\` : \`\${baseUrl}/hero-lashes.jpg\`\n`,
 )
 console.log(`share images: ${made} drawn, ${slugs.length} of ${blogPosts.length} posts covered`)

@@ -1,5 +1,5 @@
 // Written by scripts/make-og-images.mjs. Posts listed here have their own share
-// image at /og/<slug>.jpg; any other post uses the site-wide one.
+// image at /og/<slug>-<version>.jpg; any other post uses the site-wide one.
 const WITH_IMAGE = new Set([
   "mink-vs-silk-lashes-wholesale-guide",
   "how-to-start-lash-business",
@@ -23,4 +23,4 @@ const WITH_IMAGE = new Set([
 ])
 
 export const ogImageFor = (slug, baseUrl) =>
-  WITH_IMAGE.has(slug) ? `${baseUrl}/og/${slug}.jpg` : `${baseUrl}/hero-lashes.jpg`
+  WITH_IMAGE.has(slug) ? `${baseUrl}/og/${slug}-v2.jpg` : `${baseUrl}/hero-lashes.jpg`

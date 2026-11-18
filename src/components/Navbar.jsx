@@ -3,7 +3,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom'
 
 const links = [
   { label: 'Collections', href: '/#products' },
-  { label: 'Factory',     href: '/#about' },
+  { label: 'About',       href: '/#about' },
   { label: 'Catalogue',   href: '/catalogue', isRoute: true },
   { label: 'Guides',      href: '/blog', isRoute: true },
   { label: 'Contact',     href: '/#contact' },

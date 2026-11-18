@@ -4,8 +4,10 @@
 // proof here until the owner supplies real, attributable customer quotes.
 //
 // Confirmed and safe to state:
-//   • Direct factory in Purbalingga, Indonesia — not a trading company
-//   • Live video call to the production floor available on request
+//   • Lashes are made by partner workshops in Purbalingga that MCI manages.
+//     MCI has no factory of its own: never say 'factory', 'own floor' or
+//     'not a trading company' about MCI.
+//   • Live video call from the partner workshop floor available on request
 //   • Free samples on existing catalog styles; buyer covers shipping
 //   • MOQ 100 pairs per style, mix and match allowed
 //   • 5 working days production on 100-pair orders
@@ -13,8 +15,8 @@
 
 const proofs = [
   {
-    title: 'See the Production Floor',
-    desc: 'Book a live video call and we walk you through the factory in Purbalingga, Indonesia, while you watch.',
+    title: 'See Where It Is Made',
+    desc: 'Book a live video call from the partner workshop floor in Purbalingga, Indonesia, and watch lashes being made.',
   },
   {
     title: 'Test Before You Buy',
@@ -40,7 +42,7 @@ export default function FactoryProof() {
             <h2 className="title">Check Us Before You <em>Commit</em></h2>
           </div>
           <p className="lede">
-            We are a factory, not a trading company. Here is how to verify that yourself, before you spend anything.
+            Our lashes are made by partner workshops in Purbalingga that we manage. Here is how to check us yourself, before you spend anything.
           </p>
         </header>
 

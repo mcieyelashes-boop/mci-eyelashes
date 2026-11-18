@@ -25,13 +25,13 @@ export default function About() {
           </div>
 
           <div className="about-copy">
-            <p className="eyebrow">The Factory</p>
-            <h2 className="title">Made In-House In <em>Purbalingga</em></h2>
+            <p className="eyebrow">About MCI · Est. 2019</p>
+            <h2 className="title">Made In <em>Purbalingga</em></h2>
             <p className="lede">
               MCI Eyelashes helps salons, distributors, and founders build lash products that feel premium from first sample to final packaging.
             </p>
             <p className="lede">
-              We produce in-house in Purbalingga, Indonesia, so you get factory-direct pricing, OEM flexibility, and the option to watch your order being made.
+              Our lashes are made by partner workshops in Purbalingga, Indonesia, that we manage. You get one contact from first sample to shipment, OEM flexibility, and the option of a video call from the workshop floor.
             </p>
 
             <dl className="materials" aria-label="Materials you can choose">

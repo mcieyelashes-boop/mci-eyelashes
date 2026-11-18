@@ -72,7 +72,7 @@ function bodyHtml(page) {
       <nav><a href="/">Home</a> &rsaquo; <span>${escapeHtml(page.breadcrumbName)}</span></nav>
       <h1>${escapeHtml(page.h1)}</h1>
       <p>${escapeHtml(page.intro)}</p>
-      <h2>MCI Factory at a Glance</h2>
+      <h2>MCI Eyelashes at a Glance</h2>
       <dl>
         ${page.factSheet.map(({ label, value }) => `<dt>${escapeHtml(label)}</dt><dd>${escapeHtml(value)}</dd>`).join('\n        ')}
       </dl>

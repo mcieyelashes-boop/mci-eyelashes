@@ -12,7 +12,7 @@ const steps = [
   {
     number: '03',
     title: 'Precision Production',
-    description: 'Approved styles move into controlled manufacturing with batch checks for curl consistency, fiber placement, hygiene, and packaging finish.',
+    description: 'Approved styles move into production at our partner workshops, with batch checks for curl consistency, fiber placement, hygiene, and packaging finish.',
   },
   {
     number: '04',
@@ -47,7 +47,7 @@ export default function Process() {
 
         <div className="closing-row">
           <div>
-            <p>Launch a private-label line with <em>one factory-direct team.</em></p>
+            <p>Launch a private-label line with <em>one contact from start to finish.</em></p>
             <small>Samples, packaging, production, quality checks, and global shipping handled in one workflow.</small>
           </div>
           <a href="#contact" className="btn">Start Your Order</a>

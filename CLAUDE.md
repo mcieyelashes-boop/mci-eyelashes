@@ -1,6 +1,6 @@
 # MCI Eyelashes — company website
 
-Real business site (B2B wholesale eyelash **manufacturer**, not a salon). React 19 + Vite SPA, repo `mcieyelashes-boop/mci-eyelashes`, auto-deploys to Vercel → production domain `www.mci-eyelashes.com` (DNS at Domainesia).
+Real business site (B2B wholesale eyelash **supplier**, not a salon). MCI is one person, established 2019, with no factory or office of its own: the lashes are made by partner workshops in Purbalingga that MCI manages. The site once claimed "direct factory, own production floor, not a trading company"; that was false and was removed in November 2026. Never write it again. React 19 + Vite SPA, repo `mcieyelashes-boop/mci-eyelashes`, auto-deploys to Vercel → production domain `www.mci-eyelashes.com` (DNS at Domainesia).
 
 Rules learned the hard way here:
 

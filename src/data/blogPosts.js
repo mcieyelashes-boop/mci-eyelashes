@@ -64,7 +64,7 @@ export const blogPosts = [
 - Premium mink usually supports a higher shelf price than silk, so check whether your customers will pay for that difference
 - Custom packaging under your own brand lets you price for the brand, not only the product
 
-We send a full catalog and price sheet after your inquiry, so you can work the numbers on your own styles. For how this plays out across the materials we manufacture, including Faux Mink and Human Hair, see our [eyelash material margin guide](/blog/which-eyelash-material-has-best-margin).`,
+We send a full catalog and price sheet after your inquiry, so you can work the numbers on your own styles. For how this plays out across the materials we supply, including Faux Mink and Human Hair, see our [eyelash material margin guide](/blog/which-eyelash-material-has-best-margin).`,
       },
       {
         heading: 'How to Order Wholesale from MCI Eyelashes',
@@ -86,7 +86,7 @@ For a look at how the cost of a wholesale order is built up, see our [wholesale 
       },
       {
         q: 'What is the minimum order for wholesale mink lashes?',
-        a: 'The minimum order quantity (MOQ) for wholesale mink lashes at MCI Eyelashes is 100 pairs per style. You can mix and match styles within the same order to reach the minimum.',
+        a: 'The minimum order quantity (MOQ) for wholesale lashes at MCI Eyelashes is 100 pairs per style. You can mix and match styles within the same order to reach the minimum.',
       },
       {
         q: 'Can I get a sample before placing a wholesale order?',
@@ -112,7 +112,7 @@ For a look at how the cost of a wholesale order is built up, see our [wholesale 
 - Salons buy lashes both for extension services and for retail
 - Private label and white-label brands can be sold entirely online
 - Social media shows off the finished look better than most beauty products
-- A new business can start small, because a factory like ours sells from 100 pairs per style
+- A new business can start small, because a supplier like us sells from 100 pairs per style
 
 The rest of this guide walks through the decisions in the order you will meet them.`,
       },
@@ -329,7 +329,7 @@ Lashes on a plain tray cost less than lashes in a custom branded box. The price 
 Existing catalog styles cost less to make than styles developed from scratch.
 
 **5. Supplier type**
-A factory-direct manufacturer such as MCI Eyelashes sells without a middleman margin, which a trading company or distributor has to add.`,
+A supplier that works directly with its workshops, such as MCI Eyelashes, has fewer margins in the chain than a seller further from production.`,
       },
       {
         heading: 'MOQ Requirements by Supplier Type',
@@ -340,9 +340,9 @@ A factory-direct manufacturer such as MCI Eyelashes sells without a middleman ma
 - **Wholesale distributor:** often sells in small quantities, at a higher price per pair
 - **Marketplace agent:** minimums and prices vary widely, and so does quality
 
-**Recommendation:** Source factory-direct whenever possible.
+**Recommendation:** Source as close to production as you can, and ask every supplier where the lashes are made.
 
-MCI Eyelashes is a factory-direct manufacturer in Purbalingga, Indonesia. MOQ is 100 pairs per style across all lines, and you can mix and match styles to reach it.`,
+MCI Eyelashes is a supplier in Purbalingga, Indonesia, working directly with partner workshops. MOQ is 100 pairs per style across all lines, and you can mix and match styles to reach it.`,
       },
       {
         heading: 'How to Calculate Your Retail Margin',
@@ -371,7 +371,7 @@ Replace the example with the real figures from your quotes. Then subtract what i
 - **No clear lead time**: Ask for the production time in writing
 - **No physical address or verifiable factory**: Request factory photos or a video call
 
-MCI Eyelashes is a direct factory in Purbalingga, Indonesia. We welcome live video tours of our production floor, just ask before you order.
+MCI Eyelashes is based in Purbalingga, Indonesia, and works with partner workshops there. We welcome live video calls from the partner workshop floor, just ask before you order.
 
 For our own terms, see [wholesale eyelashes](/wholesale-eyelashes), or ask for the price sheet through the [catalogue and sample request](/eyelash-samples-catalogue-request) page. If you are pricing a brand of your own, [how to start a lash business](/blog/how-to-start-lash-business) covers the steps around it.`,
       },
@@ -500,7 +500,7 @@ If your clients want volume from a strip lash rather than from extensions, our [
 
 In the wholesale eyelash market, there are three types of suppliers:
 
-**1. Factory-direct manufacturers** (for example, MCI Eyelashes)
+**1. Factory-direct manufacturers and suppliers that work directly with workshops** (MCI Eyelashes is the second kind)
 - Own the production facility
 - No middleman margin, and more control over quality
 - Direct communication with the production team
@@ -517,7 +517,7 @@ In the wholesale eyelash market, there are three types of suppliers:
 - Usually the highest price per pair
 - A poor fit for serious wholesale buyers
 
-Always verify that you are dealing with a factory-direct manufacturer before placing a significant order.`,
+Always verify where the lashes are actually made before placing a significant order.`,
       },
       {
         heading: '10 Questions to Ask Before You Order',
@@ -570,9 +570,9 @@ The cheapest row is not always the best one. A supplier who answers every questi
       },
       {
         heading: 'How MCI Eyelashes Answers These Questions',
-        body: `MCI Eyelashes is a factory-direct manufacturer based in Purbalingga, Indonesia. Here is how we answer the questions we can answer on this page:
+        body: `MCI Eyelashes is a supplier based in Purbalingga, Indonesia, working with partner workshops that we manage. Here is how we answer the questions we can answer on this page:
 
-- **Factory tours**: Available via live video call: just ask, and we will walk you through the production floor
+- **Workshop tours**: Available via live video call: just ask, and we will show you the partner workshop floor
 - **Samples**: Free on existing catalog styles; you cover the shipping only
 - **Test orders**: MOQ is 100 pairs per style, and you can mix and match styles to reach it
 - **Lead times**: 5 working days production on 100-pair orders
@@ -594,7 +594,7 @@ To see the same checks applied to Indonesian factories, read our [sourcing guide
       },
       {
         q: 'Is it safe to order eyelash products from China?',
-        a: 'Yes, when you work with a verified manufacturer anywhere. The key is supplier verification: documents, factory visits, sample testing, and references. MCI Eyelashes is based in Purbalingga, Indonesia, and we welcome a live video call to our production floor before you order.',
+        a: 'Yes, when you work with a verified manufacturer anywhere. The key is supplier verification: documents, factory visits, sample testing, and references. MCI Eyelashes is based in Purbalingga, Indonesia, and we welcome a live video call from our partner workshop floor before you order.',
       },
     ],
   },
@@ -875,7 +875,7 @@ MCI does not manufacture adhesives, tweezers or patches. For those items, ask a 
       {
         heading: 'Where to Buy Eyelash Extension Supplies Wholesale',
         body: `**Option 1: Direct from a manufacturer (usually the best price)**
-Manufacturers like MCI Eyelashes supply directly to lash artists, salons, and distributors with no middleman markup. This suits buyers who can order in the manufacturer's minimum quantities.
+Suppliers close to production, like MCI Eyelashes, sell to lash artists, salons, and distributors with fewer markups in the chain. This suits buyers who can order in the minimum quantities the supplier sets.
 
 **Option 2: Wholesale distributors**
 Distributors carry several brands and suit mixed orders. Prices are usually higher than factory direct, but delivery is often faster.
@@ -887,9 +887,9 @@ A good place to sample products and negotiate first-time wholesale accounts face
 Online wholesale marketplaces often have lower minimums, which suits beginners.
 
 **MCI Eyelashes wholesale program:**
-MCI manufactures and supplies eyelashes directly to salons, distributors and beauty brands. Request a wholesale catalog through our contact page.
+MCI supplies eyelashes, made by partner workshops in Purbalingga, to salons, distributors and beauty brands. Request a wholesale catalog through our contact page.
 
-MCI makes strip lashes, not extension tools or adhesives. If you want lashes to sell alongside your extension services, see our [wholesale eyelashes](/wholesale-eyelashes) terms and the [handmade eyelashes](/handmade-eyelashes) page for the materials we work with.`,
+MCI supplies strip lashes, not extension tools or adhesives. If you want lashes to sell alongside your extension services, see our [wholesale eyelashes](/wholesale-eyelashes) terms and the [handmade eyelashes](/handmade-eyelashes) page for the materials we work with.`,
       },
     ],
     faq: [
@@ -1183,12 +1183,12 @@ Transit times depend on your destination and on customs clearance, so ask for a 
       },
       {
         heading: 'Importing from MCI Eyelashes',
-        body: `MCI Eyelashes is a direct factory based in Purbalingga, Indonesia, and we work with international buyers regularly. Our wholesale terms:
+        body: `MCI Eyelashes is based in Purbalingga, Indonesia, and ships to international buyers. Our wholesale terms:
 
 - **MOQ:** 100 pairs per style, mix and match allowed across styles
 - **Samples:** free on existing catalog styles. You cover shipping only
 - **Production:** 5 working days on 100-pair orders
-- **Factory verification:** we welcome a live video call to our production floor before you order
+- **Verification:** we welcome a live video call from our partner workshop floor before you order
 
 Reach out via WhatsApp or email to get a quote and discuss shipping to your country.
 
@@ -1424,7 +1424,7 @@ None of this means machine-made lashes are low quality. They serve a different p
 - **Synthetic**: engineered uniformity at a lower price point
 - **Human hair**: 100% sterilized, the most natural blend
 
-MCI Eyelashes produces handmade strip and volume lashes across all four of these materials on its own production floor in Purbalingga, Indonesia. See our [handmade eyelashes manufacturing](/handmade-eyelashes) page for the full material range and wholesale terms.`,
+MCI Eyelashes supplies handmade strip lashes in protein silk, synthetic fiber and human hair, made by partner workshops in Purbalingga, Indonesia. See our [handmade eyelashes manufacturing](/handmade-eyelashes) page for the full material range and wholesale terms.`,
       },
       {
         heading: 'What to Ask When Sourcing Handmade Lashes',
@@ -1434,7 +1434,7 @@ MCI Eyelashes produces handmade strip and volume lashes across all four of these
 - Does the factory produce the lash itself, or is "handmade" a label applied by a reseller further down the supply chain?
 - Are quality checks documented at the inspection stage?
 
-MCI Eyelashes is a direct factory, not a trading company, and welcomes a live production-floor video call so buyers can see handmade construction before committing to an order. Read more about sourcing directly from a factory on our [eyelash manufacturer in Purbalingga](/eyelash-manufacturer-purbalingga) page.`,
+MCI Eyelashes works with partner workshops in Purbalingga and welcomes a live video call from the workshop floor so buyers can see handmade construction before committing to an order. Read more on our [eyelash manufacturer in Purbalingga](/eyelash-manufacturer-purbalingga) page.`,
       },
     ],
     faq: [
@@ -1448,11 +1448,11 @@ MCI Eyelashes is a direct factory, not a trading company, and welcomes a live pr
       },
       {
         q: 'Can I verify that a lash is actually handmade before ordering wholesale?',
-        a: 'Ask the supplier for a factory video tour or in-person visit. MCI Eyelashes is a direct factory in Purbalingga, Indonesia, and offers a live production-floor video call to buyers before they order.',
+        a: 'Ask the supplier for a factory video tour or in-person visit. MCI Eyelashes works with partner workshops in Purbalingga, Indonesia, and offers a live video call from the workshop floor to buyers before they order.',
       },
       {
         q: 'What materials are handmade lashes made from?',
-        a: 'Common materials include mink, silk, synthetic fiber, and human hair. MCI Eyelashes produces handmade lashes in protein silk, synthetic fiber and human hair.',
+        a: 'Common materials include mink, silk, synthetic fiber, and human hair. MCI Eyelashes supplies handmade lashes in protein silk, synthetic fiber and human hair.',
       },
     ],
   },
@@ -1543,7 +1543,7 @@ For the full range to choose from before your first order, see the [product cata
         heading: 'Three words buyers use as if they mean the same thing',
         body: `Manufacturer, wholesaler and distributor get used interchangeably in everyday conversation. In a wholesale eyelash order they describe three different relationships to the product, and mixing them up is how a buyer ends up paying for a layer they never needed.
 
-A manufacturer makes the lash. MCI Eyelashes runs its own production floor in Purbalingga, Central Java, so ordering from us means buying from the hands that make the style, not from a reseller sitting on top of a factory somewhere else.
+A manufacturer makes the lash. MCI Eyelashes does not own a production floor: we manage partner workshops in Purbalingga, Central Java, so ordering from us puts one contact between you and the hands that make the style.
 
 A wholesaler buys in bulk and sells it on, usually in smaller bulk lots to salons, retailers or online stores. A wholesaler does not have to own a factory. Some buy straight from a manufacturer like MCI and add their own margin before the lashes reach a shelf.
 
@@ -1551,7 +1551,7 @@ A distributor carries a catalog on an ongoing basis, often for a region or a mar
       },
       {
         heading: 'Where MCI sits, and where you might sit',
-        body: `MCI Eyelashes is the manufacturer in this chain. We sell factory direct, with no trading company standing between your inquiry and the production floor that fills it. That role does not change no matter who places the order.
+        body: `MCI Eyelashes sits one step from production in this chain. We are a supplier that manages partner workshops in Purbalingga, so your inquiry goes from us straight to the workshop that fills it. That role does not change no matter who places the order.
 
 Which of the other two roles fits you depends on what you plan to do with the order. Buying a mixed set of styles to stock and resell across your own channels makes you a wholesaler on that order. Planning to carry our catalog on a recurring basis and supply other resellers in your market puts you closer to a distributor, and our [distributor page](/eyelash-distributor-indonesia) covers how a mixed, recurring order works in practice.
 
@@ -1565,7 +1565,7 @@ Buying factory direct removes one of those layers. It does not remove all of the
       },
       {
         heading: 'Telling which one you are actually talking to',
-        body: `A supplier calling itself a manufacturer should be able to describe its own production floor, not someone else's. Ask where the lashes are actually made, and ask for a [live video call to the floor](/eyelash-manufacturer-purbalingga) if the answer is vague. A genuine manufacturer has nothing to hide in that call, because the floor on screen is the one making your order.
+        body: `Any supplier should be able to tell you exactly where its lashes are made, and whether that floor is its own or belongs to a partner. Ask where the lashes are actually made, and ask for a [live video call to the floor](/eyelash-manufacturer-purbalingga) if the answer is vague. An honest supplier has nothing to hide in that call, because the floor on screen is the one making your order.
 
 Being a wholesaler or a distributor is not a lesser or dishonest thing to be. The distinction matters for your own planning rather than as a test of honesty: knowing whether a supplier is the factory or a layer on top of one tells you how much room there is to negotiate volume, how fast an answer on stock can travel back to you, and whether private label or OEM is even available through that relationship.`,
       },
@@ -1579,7 +1579,7 @@ Request what you need through our [sample and catalogue page](/eyelash-samples-c
     faq: [
       {
         q: 'Is MCI Eyelashes a manufacturer, a wholesaler, or a distributor?',
-        a: 'MCI Eyelashes is the manufacturer. We run our own production floor in Purbalingga and sell factory direct, with no trading company between your inquiry and the people making your order.',
+        a: 'MCI Eyelashes is a supplier that manages partner workshops in Purbalingga. We do not own the production floor, and we say so. Your inquiry goes from us straight to the workshop making your order.',
       },
       {
         q: 'Can a wholesaler and a distributor buy from the same catalog?',
@@ -1696,7 +1696,7 @@ Ask directly, before you pick styles, what changes the minimum: color, packaging
         heading: 'How MCI States These Terms',
         body: `We write our own terms the same way for every buyer, so a quote from us is one you can check against this page: 100 pairs per style, mixed and matched freely across styles, and a 100-pair run finished in 5 working days before it ships. A sample of any catalogue style costs nothing beyond what you pay to ship it, so you can hold a style before deciding on quantity.
 
-To test these numbers yourself, request a quote through our [sample and catalogue page](/eyelash-samples-catalogue-request), or ask to join a call to the [Purbalingga](/eyelash-manufacturer-purbalingga) production floor and watch the order you are weighing actually being made. For the factory-legitimacy side of vetting a supplier, which this guide leaves to that page, read [how to choose an eyelash manufacturer](/blog/how-to-choose-eyelash-manufacturer); for how order size changes your margin once you have settled on terms, see our [wholesale eyelash pricing guide](/blog/wholesale-eyelash-pricing-guide).`,
+To test these numbers yourself, request a quote through our [sample and catalogue page](/eyelash-samples-catalogue-request), or ask to join a call to the [Purbalingga](/eyelash-manufacturer-purbalingga) partner workshop floor and watch the order you are weighing actually being made. For the factory-legitimacy side of vetting a supplier, which this guide leaves to that page, read [how to choose an eyelash manufacturer](/blog/how-to-choose-eyelash-manufacturer); for how order size changes your margin once you have settled on terms, see our [wholesale eyelash pricing guide](/blog/wholesale-eyelash-pricing-guide).`,
       },
     ],
     faq: [
@@ -1718,7 +1718,7 @@ To test these numbers yourself, request a quote through our [sample and catalogu
       },
       {
         q: 'How can a buyer check MCI’s stated MOQ and lead time before ordering?',
-        a: 'Request a quote through the sample and catalogue page, or arrange a video tour of the production floor in Purbalingga, where the same 100-pairs-per-style minimum and 5-working-day production time apply to the order being filmed.',
+        a: 'Request a quote through the sample and catalogue page, or arrange a video call from the partner workshop floor in Purbalingga, where the same 100-pairs-per-style minimum and 5-working-day production time apply to the order being filmed.',
       },
     ],
   },

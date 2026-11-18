@@ -289,7 +289,7 @@ export default function Catalogue() {
             >
               Request a Quote
             </a>
-            <a href="/MCI-Eyelashes-Catalogue-2026-v4.pdf" className="btn-ghost" download>
+            <a href="/MCI-Eyelashes-Catalogue-2026-v5.pdf" className="btn-ghost" download>
               Download PDF catalogue
             </a>
           </div>

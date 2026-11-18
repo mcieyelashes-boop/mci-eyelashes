@@ -27,16 +27,16 @@ export function setMeta({ title, description, canonical, ogTitle, ogDescription,
 // samples (buyer pays shipping), 5 working days production on 100-pair orders.
 // Must match the <head> in index.html: this is what client-side navigation
 // back to the home page restores, so a mismatch shows Google two home titles.
-const HOME_TITLE = 'Eyelashes Factory Indonesia: OEM & Private Label | MCI Eyelashes'
+const HOME_TITLE = 'Eyelashes Made in Purbalingga, Indonesia: OEM & Private Label | MCI Eyelashes'
 
 export const HOME_META = {
   title:               HOME_TITLE,
-  description:         'MCI Eyelashes is an Indonesian eyelash manufacturer in Purbalingga offering OEM, private label, custom eyelashes and wholesale production from 100 pairs per style.',
+  description:         'MCI Eyelashes supplies wholesale, OEM and private label eyelashes made by partner workshops in Purbalingga, Indonesia, from 100 pairs per style.',
   canonical:           `${BASE_URL}/`,
   ogTitle:             HOME_TITLE,
-  ogDescription:       'MCI Eyelashes is a direct eyelash manufacturer in Purbalingga, Indonesia, producing handmade and custom eyelashes for beauty brands, distributors, salons, and wholesalers worldwide.',
+  ogDescription:       'MCI Eyelashes supplies wholesale, OEM and private label eyelashes made by partner workshops in Purbalingga, Indonesia, from 100 pairs per style.',
   ogUrl:               `${BASE_URL}/`,
   ogImage:             `${BASE_URL}/hero-lashes.jpg`,
   twitterTitle:        HOME_TITLE,
-  twitterDescription:  'MCI Eyelashes is a direct eyelash manufacturer in Purbalingga, Indonesia, OEM, private label, custom eyelashes, wholesale from 100 pairs per style.',
+  twitterDescription:  'MCI Eyelashes supplies wholesale, OEM and private label eyelashes made by partner workshops in Purbalingga, Indonesia, from 100 pairs per style.',
 }

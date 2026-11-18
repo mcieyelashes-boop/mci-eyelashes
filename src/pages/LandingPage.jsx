@@ -116,7 +116,7 @@ export default function LandingPage({ slug: slugProp }) {
       <section className="section">
         <div className="container container--narrow">
           <div className="fact-sheet">
-            <dl className="fact-grid" aria-label="MCI Factory at a Glance">
+            <dl className="fact-grid" aria-label="MCI Eyelashes at a Glance">
               {page.factSheet.map(({ label, value }) => (
                 <div key={label} className="fact">
                   <dt>{label}</dt>
