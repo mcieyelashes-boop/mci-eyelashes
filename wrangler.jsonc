@@ -11,7 +11,7 @@
 // when deploying by hand.
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "mci-eyelashes",
+  "name": "mci-eyelashes1",
   "compatibility_date": "2026-11-01",
   "assets": {
     "directory": "./dist",

@@ -70,7 +70,7 @@ for (const h of vercel.headers) {
     blocks.push([path, ...h.headers.map(({ key, value }) => `  ${key}: ${value}`)].join('\n'))
   }
 }
-for (const host of (process.env.PAGES_HOSTS || 'mci-eyelashes.mci-eyelashes.workers.dev,mci-eyelashes.pages.dev').split(',').map((s) => s.trim()).filter(Boolean)) {
+for (const host of (process.env.PAGES_HOSTS || 'mci-eyelashes1.mci-eyelashes.workers.dev,mci-eyelashes.pages.dev').split(',').map((s) => s.trim()).filter(Boolean)) {
   blocks.push(`https://${host}/*\n  X-Robots-Tag: noindex`)
   blocks.push(`https://:preview.${host}/*\n  X-Robots-Tag: noindex`)
 }
