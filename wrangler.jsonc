@@ -2,16 +2,17 @@
 //
 // The site is static: Cloudflare serves the files in dist/ directly, with no
 // Worker code. The connected GitHub repository is built by Workers Builds on
-// every push to master; `wrangler deploy` runs the build command below first.
+// every push to master.
 // dist/_headers and dist/_redirects (written by the build from vercel.json)
 // carry the security headers and redirects.
+//
+// The build itself is run by Cloudflare (build command "npm run build" in the
+// Worker's Build settings), so `wrangler deploy` only uploads dist/. Build first
+// when deploying by hand.
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "mci-eyelashes",
   "compatibility_date": "2026-11-01",
-  "build": {
-    "command": "npm run build"
-  },
   "assets": {
     "directory": "./dist",
     // /catalogue is served from catalogue.html; unknown URLs get 404.html with a 404 status.
