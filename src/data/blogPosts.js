@@ -629,7 +629,7 @@ For private label lash brands, custom packaging is one of the most effective way
 | **Kraft tray** | Simple kraft paper tray | Eco brands, budget | Low |
 | **Clear acrylic case** | Fully transparent case | Salon professional lines | Mid-high |
 
-**Most popular for private label brands:** Magnetic lid (luxury feel, Instagram-friendly) and drawer box (high perceived value, great unboxing experience).`,
+**Two common choices for private label brands:** the magnetic lid (luxury feel, photographs well) and the drawer box (high perceived value, a good unboxing moment).`,
       },
       {
         heading: 'Packaging Materials',
@@ -793,7 +793,7 @@ Master one channel first. The skills you build in one channel transfer to the ne
     category: 'Wholesale Tips',
     date: '2026-04-16',
     readTime: '9 min read',
-    excerpt: 'Buying eyelash extension supplies wholesale can lower your cost per client. This guide covers lash trays, adhesives, tweezers and under-eye patches, and how to find a reliable supplier.',
+    excerpt: 'Buying eyelash extension supplies wholesale can lower your cost per client. This guide covers what a lash studio buys most often, from lash trays to under-eye patches, and how to find a reliable supplier.',
     coverAlt: 'Eyelash extension supplies wholesale: lash trays, tweezers, adhesives',
     sections: [
       {
@@ -805,7 +805,7 @@ Master one channel first. The skills you build in one channel transfer to the ne
 - Consistent product from one supplier, so your results do not change from batch to batch
 - The option to build a retail range for clients on top of your services
 
-Work out your real cost per client before you buy: lash trays, adhesive, patches and consumables all count. Then compare it with wholesale quotes for the same items.`,
+Work out your real cost per client before you buy, counting everything a treatment uses up, not only the lashes. Then compare it with wholesale quotes for the same items.`,
       },
       {
         heading: 'Essential Eyelash Extension Supplies to Buy Wholesale',
@@ -875,7 +875,7 @@ MCI does not manufacture adhesives, tweezers or patches. For those items, ask a 
       {
         heading: 'Where to Buy Eyelash Extension Supplies Wholesale',
         body: `**Option 1: Direct from a manufacturer (usually the best price)**
-Suppliers close to production, like MCI Eyelashes, sell to lash artists, salons, and distributors with fewer markups in the chain. This suits buyers who can order in the minimum quantities the supplier sets.
+Suppliers close to production, like MCI Eyelashes, sell to lash artists and salons as well as distributors, with fewer markups in the chain. This suits buyers who can order in the minimum quantities the supplier sets.
 
 **Option 2: Wholesale distributors**
 Distributors carry several brands and suit mixed orders. Prices are usually higher than factory direct, but delivery is often faster.

@@ -118,8 +118,11 @@ export function rhythmFindings(body) {
   const [worst, count] = [...openers].sort((a, b) => b[1] - a[1])[0] ?? ['', 0]
   if (count >= 5) out.push({ rule: 'repeated opener', severity: 'warn', text: `${count} sentences start with "${worst}".` })
 
-  const bold = (body.match(/\*\*/g) ?? []).length / 2
-  if (bold > 8) out.push({ rule: 'bold overuse', severity: 'warn', text: `${Math.round(bold)} bold phrases.` })
+  // Bold that labels a line (a list item's term, a table's row name, a short
+  // sub-heading) is structure, not emphasis. Only bold inside running text counts.
+  const label = /^(?:\s*(?:[-*]|\d+\.|\|)?\s*)\*\*[^*\n]+\*\*/gm
+  const bold = (body.replace(label, '').match(/\*\*/g) ?? []).length / 2
+  if (bold > 8) out.push({ rule: 'bold overuse', severity: 'warn', text: `${Math.round(bold)} bold phrases inside running text.` })
 
   const quotes = (body.match(/["“”]/g) ?? []).length / 2
   if (quotes > 6) out.push({ rule: 'quote marks', severity: 'warn', text: `${Math.round(quotes)} quoted phrases. Quote only real speech or titles.` })

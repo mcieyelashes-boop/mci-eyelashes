@@ -1,0 +1,51 @@
+# Checks www.mci-eyelashes.com every 6 hours. When a check fails, the run
+# fails and GitHub emails the repository owner ("Run failed: Site check").
+# Run it by hand from the Actions tab with "Run workflow".
+name: Site check
+
+on:
+  schedule:
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check the live site
+        shell: bash
+        run: |
+          set +e -u   # report every failed check, not only the first
+          fail=0
+          bad() { echo "::error::$1"; fail=1; }
+          get() { curl -sS --retry 2 --retry-delay 20 --max-time 30 -o page.html -w '%{http_code} %{redirect_url}' "$1"; }
+
+          # Pages answer 200 and are the real site.
+          for path in / /catalogue /blog /private-label-eyelashes /sitemap.xml /robots.txt /MCI-Eyelashes-Catalogue-2026-v5.pdf; do
+            read -r code _ <<<"$(get "https://www.mci-eyelashes.com$path")"
+            echo "$code  $path"
+            [ "$code" = 200 ] || bad "$path answered $code instead of 200"
+          done
+          get https://www.mci-eyelashes.com/ >/dev/null
+          grep -q 'MCI Eyelashes' page.html || bad 'The home page does not mention MCI Eyelashes'
+
+          # Claims the owner removed must never come back.
+          for phrase in 'own factory' 'own production floor' 'not a trading company' 'Est. 2015' '50 years'; do
+            grep -qi "$phrase" page.html && bad "The home page says \"$phrase\" again"
+          done
+
+          # The bare domain sends visitors to www.
+          read -r code to <<<"$(get https://mci-eyelashes.com/catalogue)"
+          echo "$code  mci-eyelashes.com/catalogue -> $to"
+          [ "$code" = 301 ] && [ "$to" = https://www.mci-eyelashes.com/catalogue ] || bad "mci-eyelashes.com answered $code ($to) instead of a 301 to www"
+
+          # The contact form's mail relay is up.
+          read -r code _ <<<"$(get https://formsubmit.co/)"
+          echo "$code  formsubmit.co"
+          [ "$code" = 200 ] || bad "FormSubmit (the contact form's mail relay) answered $code"
+
+          exit $fail
