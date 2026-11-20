@@ -1,20 +1,25 @@
 // Cloudflare Workers settings for www.mci-eyelashes.com.
 //
-// The site is static: Cloudflare serves the files in dist/ directly, with no
-// Worker code. The connected GitHub repository is built by Workers Builds on
-// every push to master.
+// The site is static: Cloudflare serves the files in dist/. The only code,
+// worker/index.js, redirects mci-eyelashes.com to www.mci-eyelashes.com; it runs
+// for page requests only, so images, fonts and scripts never invoke it.
+// The connected GitHub repository is built by Workers Builds on every push
+// to master.
 // dist/_headers and dist/_redirects (written by the build from vercel.json)
 // carry the security headers and redirects.
 //
 // The build itself is run by Cloudflare (build command "npm run build" in the
-// Worker's Build settings), so `wrangler deploy` only uploads dist/. Build first
+// Worker's Build settings), so `wrangler deploy` only uploads dist/ and worker/. Build first
 // when deploying by hand.
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "mci-eyelashes",
   "compatibility_date": "2026-11-01",
+  "main": "worker/index.js",
   "assets": {
     "directory": "./dist",
+    "binding": "ASSETS",
+    "run_worker_first": ["/*", "!/assets/*", "!/fonts/*", "!/products/*", "!/og/*"],
     // /catalogue is served from catalogue.html; unknown URLs get 404.html with a 404 status.
     "html_handling": "auto-trailing-slash",
     "not_found_handling": "404-page"
