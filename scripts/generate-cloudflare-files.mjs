@@ -1,4 +1,5 @@
-// Writes dist/_headers and dist/_redirects for Cloudflare Pages from vercel.json,
+// Writes dist/_headers and dist/_redirects for Cloudflare (Workers static assets
+// and Pages read the same two files) from vercel.json,
 // so the site's redirects and security headers live in one place and the same
 // build can be hosted on either service.
 //
@@ -6,8 +7,8 @@
 // is skipped here: it serves /page from page.html, redirects /page.html to /page,
 // and answers unknown URLs with 404.html and a 404 status.
 //
-// PAGES_HOSTS (optional, comma separated, e.g. "mci-eyelashes.pages.dev") marks the
-// project's own *.pages.dev addresses noindex, so search engines only index
+// PAGES_HOSTS (optional, comma separated) marks the project's own *.workers.dev
+// and *.pages.dev addresses noindex, so search engines only index
 // www.mci-eyelashes.com.
 import { readFileSync, writeFileSync, readdirSync, statSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
@@ -69,7 +70,7 @@ for (const h of vercel.headers) {
     blocks.push([path, ...h.headers.map(({ key, value }) => `  ${key}: ${value}`)].join('\n'))
   }
 }
-for (const host of (process.env.PAGES_HOSTS || 'mci-eyelashes.pages.dev').split(',').map((s) => s.trim()).filter(Boolean)) {
+for (const host of (process.env.PAGES_HOSTS || 'mci-eyelashes.mci-eyelashes.workers.dev,mci-eyelashes.pages.dev').split(',').map((s) => s.trim()).filter(Boolean)) {
   blocks.push(`https://${host}/*\n  X-Robots-Tag: noindex`)
   blocks.push(`https://:preview.${host}/*\n  X-Robots-Tag: noindex`)
 }
