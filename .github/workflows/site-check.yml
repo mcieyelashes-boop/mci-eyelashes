@@ -43,9 +43,10 @@ jobs:
           echo "$code  mci-eyelashes.com/catalogue -> $to"
           [ "$code" = 301 ] && [ "$to" = https://www.mci-eyelashes.com/catalogue ] || bad "mci-eyelashes.com answered $code ($to) instead of a 301 to www"
 
-          # The contact form's mail relay is up.
+          # The contact form's mail relay is up. FormSubmit's bot protection answers
+          # GitHub's servers with 403, so only no answer or a 5xx counts as down.
           read -r code _ <<<"$(get https://formsubmit.co/)"
           echo "$code  formsubmit.co"
-          [ "$code" = 200 ] || bad "FormSubmit (the contact form's mail relay) answered $code"
+          case "$code" in 000|5??) bad "FormSubmit (the contact form's mail relay) answered $code" ;; esac
 
           exit $fail
