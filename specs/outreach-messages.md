@@ -20,10 +20,38 @@ Fakta yang boleh dipakai:
 
 Paling cocok dengan MOQ 100 pasang:
 1. Brand bulu mata kecil di Instagram/TikTok (1.000 sampai 50.000 follower) yang
-   sudah jualan strip lashes. Cari tagar seperti #lashbrand, #lashbusiness,
-   #minklashesvendor, #lashvendor, #privatelabellashes.
+   sudah jualan strip lashes.
 2. Pemilik salon/lash artist yang ingin punya brand sendiri.
 3. Toko online kecantikan di Shopify/Etsy yang menjual strip lashes.
+
+### Kata kunci pencarian
+
+Cari kata yang dipakai PEMBELI, bukan penjual. Tagar seperti #lashvendor,
+#minklashesvendor, #wholesalelashes dan #privatelabellashes sebagian besar diisi
+supplier lain (pesaing), jadi jangan dipakai untuk mencari lead.
+
+Instagram / TikTok (brand kecil dan yang baru mulai):
+- #lashbrand, #lashline, #mylashline, #newlashbrand, #lashlaunch
+- #lashboss, #lashbusiness, #lashbusinessowner
+- #stripLashes, #falselashes, #lashshop, #lashboutique
+- kalimat di bio atau caption: "lash line launching", "shop my lashes",
+  "link in bio to shop lashes"
+
+Salon dan lash artist (calon brand sendiri):
+- #lashartist, #lashtech, #lashstudio, #lashextensions + nama kota
+  (misalnya "lash studio London", "lash studio Dubai")
+- #mua dan #makeupartist yang juga menjual bulu mata di bio
+
+Toko online:
+- Shopify: cari di Google `"lashes" "add to cart" site:myshopify.com`
+- Etsy: cari "false lashes", "strip lashes", "lash bundle", lalu lihat toko yang
+  ulasannya puluhan sampai ratusan (sudah jualan, tapi belum besar)
+- Google: `"lash brand" "founder"` atau `"our lashes" "handmade"` + negara
+
+Cara cepat menilai satu akun dalam 30 detik:
+- Mereka menjual strip lashes sendiri (bukan hanya jasa pasang)? Ya = lanjut.
+- Ada email atau WhatsApp di bio? Ya = kirim email, bukan DM.
+- Postingan terakhir lebih dari 3 bulan lalu? Lewati, kemungkinan sudah tidak aktif.
 
 Hindari dulu: distributor besar dan brand besar. Mereka minta bukti (pelanggan,
 sertifikat, volume) yang belum MCI punya.
